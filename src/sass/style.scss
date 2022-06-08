@@ -1,0 +1,24 @@
+@import 'base/var';
+@import 'base/reset';
+@import 'base/fontSet';
+@import 'mixin/mixin';
+@import 'component/btn';
+// @import 'page/about';
+// @import 'page/front_page';
+// @import 'page/game';
+// @import 'page/index';
+// @import 'page/member_center';
+// @import 'page/planet';
+// @import 'page/rocket_intro';
+// @import 'page/reserve';
+// @import 'page/shopping_cart';
+
+
+// 請各為html檔名取的跟我scss一樣
+
+*{
+    box-sizing: border-box;
+}
+.testAAAAAAA{
+    margin:20px;
+}
