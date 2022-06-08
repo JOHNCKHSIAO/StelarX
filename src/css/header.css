@@ -1,0 +1,20 @@
+header {
+  margin-top: 80px;
+  margin-bottom: 120px;
+  background: #000;
+  width: 100%;
+  margin: 0 auto;
+}
+header ul {
+  display: flex;
+  text-align: center;
+}
+header ul li a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+header ul li img {
+  width: 180px;
+}
+
+/*# sourceMappingURL=header.css.map */
