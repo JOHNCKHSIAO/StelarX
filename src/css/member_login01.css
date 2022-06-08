@@ -54,7 +54,8 @@ table {
 }
 
 html {
-  font-family: "Roboto", sans-serif; /* 預設字體 */
+  font-family: "Roboto", sans-serif;
+  /* 預設字體 */
   font-size: 6.26%;
   line-height: 1.6;
 }
@@ -202,12 +203,4 @@ p {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #00072E;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=member_login01.css.map */

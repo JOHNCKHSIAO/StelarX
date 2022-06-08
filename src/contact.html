@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>聯絡我們</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
     @@include("./layout/header.html")
-    <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+    <div class="bg1440">
+        <div class="bg1440_earth">
+            <div class="wrapper1080">
+                <h1 class="big_tith1">聯絡我們</h1>
+                <h2 class="big_tith2">Any questions want to ask?</h2>
+                <div class="qa title2">Q & A</div>
+                <div class="qanda1080">
+                    <div class="qanda">
+                        <div class="qa_up">
+                            <h4 class="ques">Q：問題1</h4>
+                            <img src="images/qa_down.svg" alt="">
+                        </div>
+                        <div class="qa_down">
+                            <h4 class="answer">答案1</h4>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
+    <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+    <script src="js/contact.js"></script>
     @@include("./layout/footer.html")
 </body>
+
 </html>
