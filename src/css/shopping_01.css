@@ -203,12 +203,11 @@ p {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
-* {
-  box-sizing: border-box;
-}
-
+<<<<<<< HEAD
 body {
-  background-color: #00072E;
+  background-color: rgb(231, 77, 77);
 }
 
-/*# sourceMappingURL=style.css.map */
+=======
+>>>>>>> dev
+/*# sourceMappingURL=shopping_01.css.map */
