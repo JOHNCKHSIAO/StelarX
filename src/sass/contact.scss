@@ -1,0 +1,10 @@
+@import 'base/var';
+@import 'base/reset';
+@import 'base/fontSet';
+@import 'mixin/mixin';
+@import 'component/btn';
+
+.bg1440_earth{
+    background-image: url("../images/qaearth.jpg");
+background-repeat: no-repeat;
+}
