@@ -44,7 +44,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -54,7 +54,7 @@ table {
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   /* 預設字體 */
   font-size: 6.26%;
   line-height: 1.6;
@@ -119,11 +119,13 @@ p {
   width: 380px;
   height: 70px;
 }
+
 .btn_cta h5 {
   text-align: center;
   line-height: 70px;
   font-weight: 600;
 }
+
 .btn_cta h5 .btn_radius {
   color: #EEEEEE;
   border: 2px solid #EEEEEE;
@@ -131,8 +133,10 @@ p {
   text-decoration: none;
   border-radius: 50px;
 }
+
 .btn_cta h5 .btn_radius:hover {
   border: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
@@ -140,19 +144,23 @@ p {
   width: 380px;
   height: 70px;
 }
+
 .btn_general h5 {
   text-align: center;
   line-height: 70px;
   font-weight: 600;
 }
+
 .btn_general h5 .btn_square {
   color: #EEEEEE;
   border: 2px solid #EEEEEE;
   display: block;
   text-decoration: none;
 }
+
 .btn_general h5 .btn_square:hover {
   border: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
   border: 2px solid linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
@@ -161,17 +169,20 @@ p {
   width: 380px;
   height: 70px;
 }
+
 .btn_status h5 {
   text-align: center;
   line-height: 70px;
   font-weight: 600;
 }
+
 .btn_status h5 .btn_square {
   color: #EEEEEE;
   border: 2px solid #EEEEEE;
   display: block;
   text-decoration: none;
 }
+
 .btn_status h5 .btn_square:hover {
   color: #00072E;
   border: 0;
@@ -182,6 +193,7 @@ p {
   width: 200px;
   height: 200px;
 }
+
 .btn_main .btn_circle_text {
   text-align: center;
   line-height: 200px;
@@ -190,6 +202,7 @@ p {
   height: 200px;
   font-size: 24rem;
 }
+
 .btn_main .btn_circle_text .btn_circle {
   width: 100%;
   height: 100%;
@@ -198,57 +211,11 @@ p {
   text-decoration: none;
   border-radius: 50%;
 }
+
 .btn_main .btn_circle_text .btn_circle:hover {
-  box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+          box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
-
-body {
-  background-color: #00072E;
-  color: white;
-}
-
-.top_image h2 {
-  width: 500px;
-  transform: translate(100%, -700%);
-  font-size: 48px;
-  color: black;
-}
-
-.wrapper {
-  width: 1080px;
-  margin: 0 auto;
-}
-.wrapper .commodity {
-  margin-top: 120px;
-}
-.wrapper .commodity .small_title {
-  display: flex;
-  align-items: flex-end;
-  width: 400px;
-  border-bottom: 3px solid #987A4D;
-  padding-bottom: 24px;
-}
-.wrapper .commodity .small_title h6 {
-  margin-left: 10px;
-}
-.wrapper .commodity ul {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 48px;
-}
-.wrapper .commodity ul li {
-  text-align: center;
-}
-.wrapper .commodity ul li img {
-  width: 350px;
-  height: 360px;
-}
-.wrapper .commodity ul li h4 {
-  margin-top: 40px;
-}
-.wrapper .commodity ul li h5 {
-  margin-top: 24px;
-}
-
-/*# sourceMappingURL=shopping_01.css.map */
+/*# sourceMappingURL=booking_02.css.map */
