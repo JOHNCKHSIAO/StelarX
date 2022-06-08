@@ -208,4 +208,16 @@ p {
   background-repeat: no-repeat;
 }
 
+.qanda1080 {
+  width: 1080px;
+  margin: 0 auto;
+}
+.qanda1080 .qa_up {
+  display: flex;
+}
+.qanda1080 .qa_up img {
+  width: 30px;
+  height: 30px;
+}
+
 /*# sourceMappingURL=contact.css.map */
