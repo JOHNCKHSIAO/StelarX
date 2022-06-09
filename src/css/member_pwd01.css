@@ -261,30 +261,21 @@ p {
   color: #EEEEEE;
   font-size: 22rem;
   position: absolute;
-  top: 50%;
+  top: 55%;
   right: 5%;
 }
-.input_div_password i:hover {
-  cursor: pointer;
-}
 
-.member-login {
+.member-forget {
   width: 1080px;
   margin: 0 auto;
-  position: relative;
 }
-.member-login .member-login-title-up {
-  color: #EEEEEE;
-  text-align: center;
-  margin-bottom: 18px;
-}
-.member-login .member-login-title-bottom {
-  padding: 1px;
+.member-forget .member-forget-title {
+  box-sizing: content-box;
   color: #EEEEEE;
   text-align: center;
   position: relative;
 }
-.member-login .member-login-title-bottom::before {
+.member-forget .member-forget-title::before {
   content: "";
   display: block;
   width: 150px;
@@ -295,33 +286,16 @@ p {
   left: 50%;
   transform: translate(-50%, 0);
 }
-.member-login .input-area-member-login {
+.member-forget .input-area-member-forget {
   display: flex;
   justify-content: space-around;
   margin-top: 72px;
+  margin-bottom: 48px;
 }
-.member-login .forget-password {
-  color: #EEEEEE;
-  text-align: right;
-  display: block;
-  position: absolute;
-  bottom: 18%;
-  right: 0;
-}
-.member-login .password-wrong {
-  color: #8B2323;
-  margin-top: 10px;
-  margin-left: 30px;
-  opacity: 0;
-}
-.member-login .opacity1 {
-  opacity: 1;
-}
-.member-login .btn_container {
+.member-forget .btn_container {
   width: 380px;
   height: 70px;
   margin: 0 auto;
-  margin-top: 20px;
 }
 
-/*# sourceMappingURL=member_login01.css.map */
+/*# sourceMappingURL=member_pwd01.css.map */
