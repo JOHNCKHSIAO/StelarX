@@ -13,7 +13,7 @@
     font-size: 24rem;
     padding-left: 10px;
 
-margin-bottom: $spacing_32px;
+    margin-bottom: $spacing_32px;
 
     ;
 
@@ -37,7 +37,7 @@ margin-bottom: $spacing_32px;
         // 聯絡我們
         .qa_tith1 {
             text-align: center;
-            margin-top: $spacing_120px;
+            // margin-top: $spacing_120px;
             font-weight: 700;
             color: $white;
         }
@@ -107,13 +107,14 @@ margin-bottom: $spacing_32px;
                 .my_tra_tit1 {
                     color: $gold;
                     font-weight: 700;
-                   
+
                 }
-                .my_traline{
+
+                .my_traline {
                     margin: 0 auto;
                     margin-top: $spacing_24px;
                     width: 288px;
-                border: 1px solid $gold;
+                    border: 1px solid $gold;
                 }
 
                 // 免費預約諮詢
@@ -142,9 +143,10 @@ margin-bottom: $spacing_32px;
                 justify-content: space-between;
 
                 .my_traNaTelLeft {
-margin-top: $spacing_80px;
+                    margin-top: $spacing_80px;
                     text-align: left;
-// 姓名
+
+                    // 姓名
                     .my_tra_name {
                         color: $white;
                     }
@@ -155,7 +157,8 @@ margin-top: $spacing_80px;
                     margin-top: $spacing_80px;
 
                     text-align: left;
-// 電話
+
+                    // 電話
                     .my_tra_tel {
                         color: $white;
 
@@ -198,8 +201,8 @@ margin-top: $spacing_80px;
                         border: 0;
                         padding-left: 10px;
                         font-size: 24rem;
-                    
-margin-bottom: $spacing_32px;
+
+                        margin-bottom: $spacing_32px;
 
                     }
 
@@ -225,6 +228,8 @@ margin-bottom: $spacing_32px;
                 .my_tra_mes {
                     width: 100%;
                     height: 300px;
+                    font-size: 24rem;
+                    padding-left: 10px;
                 }
 
             }
@@ -232,8 +237,9 @@ margin-bottom: $spacing_32px;
             // 按鈕
             .btn_cta {
                 margin-top: $spacing_80px;
+
                 .marginBtn {
-                        margin: 0 auto;
+                    margin: 0 auto;
                 }
 
             }
