@@ -58,6 +58,7 @@ html {
   /* 預設字體 */
   font-size: 6.26%;
   line-height: 1.6;
+  box-sizing: border-box;
 }
 
 /* 以下為h1-h6 */
@@ -115,16 +116,14 @@ p {
   font-size: 14rem;
 }
 
-.btn_cta {
-  width: 380px;
-  height: 70px;
-}
 .btn_cta h5 {
   text-align: center;
   line-height: 70px;
   font-weight: 600;
 }
 .btn_cta h5 .btn_radius {
+  width: 380px;
+  height: 70px;
   color: #EEEEEE;
   border: 2px solid #EEEEEE;
   display: block;
@@ -132,29 +131,26 @@ p {
   border-radius: 50px;
 }
 .btn_cta h5 .btn_radius:hover {
-  border: 0;
+  border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
-.btn_general {
-  width: 380px;
-  height: 70px;
-}
 .btn_general h5 {
   text-align: center;
   line-height: 70px;
   font-weight: 600;
 }
 .btn_general h5 .btn_square {
+  width: 380px;
+  height: 70px;
   color: #EEEEEE;
   border: 2px solid #EEEEEE;
   display: block;
   text-decoration: none;
 }
 .btn_general h5 .btn_square:hover {
-  border: 0;
+  border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-  border: 2px solid linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
 .btn_status {
@@ -186,8 +182,6 @@ p {
   text-align: center;
   line-height: 200px;
   font-weight: 600;
-  width: 200px;
-  height: 200px;
   font-size: 24rem;
 }
 .btn_main .btn_circle_text .btn_circle {
