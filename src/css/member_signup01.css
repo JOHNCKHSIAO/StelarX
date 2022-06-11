@@ -296,19 +296,18 @@ p {
   outline: #987A4D;
 }
 
-.member-login {
+.member-register {
   width: 1080px;
   margin: 0 auto;
-  position: relative;
+  border: 1px solid white;
 }
-.member-login .member-login-title {
-  padding: 1px;
-  color: #EEEEEE;
+.member-register .member-register-title {
   text-align: center;
-  line-height: 1.5;
+  color: #EEEEEE;
   position: relative;
+  line-height: 1.5;
 }
-.member-login .member-login-title::before {
+.member-register .member-register-title::before {
   content: "";
   display: block;
   width: 150px;
@@ -319,33 +318,73 @@ p {
   left: 50%;
   transform: translate(-50%, 0);
 }
-.member-login .input-area-member-login {
+.member-register .input-area-member-register {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 72px;
 }
-.member-login .forget-password {
-  color: #EEEEEE;
-  text-align: right;
-  display: block;
-  position: absolute;
-  bottom: 18%;
-  right: 0;
+.member-register .input-area-member-register .input_div {
+  margin-bottom: 40px;
 }
-.member-login .password-wrong {
+.member-register .input-area-member-register .input_div_password {
+  margin-bottom: 40px;
+}
+.member-register .input-area-member-register .account-check-message {
   color: #8B2323;
   margin-top: 10px;
   margin-left: 30px;
   opacity: 0;
 }
-.member-login .opacity1 {
-  opacity: 1;
+.member-register .input-area-member-register .id-check-message {
+  color: #8B2323;
+  margin-top: 10px;
+  margin-left: 30px;
+  opacity: 0;
 }
-.member-login .btn_container {
+.member-register .input-area-member-register .password-wrong {
+  color: #8B2323;
+  margin-top: 10px;
+  margin-left: 30px;
+  opacity: 1;
+  display: none;
+}
+.member-register .btn_container {
   width: 380px;
-  height: 70px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 48px;
 }
 
-/*# sourceMappingURL=member_login01.css.map */
+.displayblock {
+  display: block;
+}
+
+#password_div {
+  opacity: 1;
+}
+
+#checkPassword_div {
+  opacity: 1;
+}
+
+#lastName_div {
+  opacity: 1;
+}
+
+#name_div {
+  opacity: 1;
+}
+
+#email_div {
+  opacity: 1;
+}
+
+#cell_div {
+  opacity: 1;
+}
+
+#businessNumber_div {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=member_signup01.css.map */
