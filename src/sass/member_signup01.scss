@@ -4,3 +4,99 @@
 @import 'mixin/mixin';
 @import 'component/btn';
 @import 'component/input';
+.member-register{
+    width:1080px;
+    margin: 0 auto;
+    
+    border:1px solid white;
+    // .member-register-title-up{
+    //     text-align: center;
+    //     color:$white;
+    //     margin-bottom: 20px;
+    // }
+    .member-register-title{
+        text-align:center;
+        color:$white;
+        position: relative;
+        line-height: 1.5;
+        &::before{
+            content: "";
+            display:block;
+            width:150px;
+            border-bottom: 1px solid $white;
+            position:absolute;
+            top:100%;
+            margin-top:10px;
+            left:50%;
+            transform: translate(-50%,0);
+        }
+    }
+    .input-area-member-register{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: $spacing_48px+24px;
+        .input_div{
+            margin-bottom: 40px;
+        }
+        .input_div_password{
+        margin-bottom: 40px;
+        }
+
+        .account-check-message{
+            color:$error_red;
+            margin-top: 10px;
+            margin-left: 30px;
+            opacity:0;
+        }
+        .id-check-message{
+            color:$error_red;
+            margin-top: 10px;
+            margin-left: 30px;
+            opacity:0;
+        }
+        .password-wrong{
+            color:$error_red;
+            margin-top: 10px;
+            margin-left: 30px;
+            opacity:1;
+            display:none;
+
+        }
+        
+    }
+    .btn_container{
+        width:380px;
+        margin:0 auto;
+        margin-top: 48px;
+
+    }
+
+}
+// .displaynone{
+//     display:none;
+// }
+.displayblock{
+    display:block;
+}
+#password_div{
+    opacity: 1;
+}
+#checkPassword_div{
+    opacity: 1;
+}
+#lastName_div{
+    opacity: 1;
+}
+#name_div{
+    opacity: 1;
+}
+#email_div{
+    opacity: 1;
+}
+#cell_div{
+    opacity: 1;
+}
+#businessNumber_div{
+    opacity: 1;
+}

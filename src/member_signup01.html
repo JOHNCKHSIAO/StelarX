@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/member_signup01.css">
     <title>會員註冊</title>
 </head>
@@ -15,53 +16,62 @@
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
     <section class="member-register">
-        <h2 class="member-register-title-up">一起出發吧！</h2>
-        <h2 class="member-register-title-bottom">又是一次嶄新的旅程</h2>
+        <h2 class="member-register-title">歡迎來到StelarX<br>開始您的太空旅遊！</h2>
+        <!-- <h2 class="member-register-title-bottom"></h2> -->
         <form action="">
             <div class="input-area-member-register">
-                <div class="input_div">
-                    <label for=""><h5>帳號</h5></label>
-                    <input type="text">
+                <div class="input_div" id="account_div">
+                    <label for="account_input"><h5>帳號</h5></label>
+                    <input type="text" id="account_input">
+                    <p class="account-check-message" id="accountCheck_message">這個帳號已經有人使用了，請試試別的名稱!</p>
                 </div>
-                <div class="input_div">
-                    <label for=""><h5>ID</h5></label>
-                    <input type="text">
+                <div class="input_div" id="id_div">
+                    <label for="id_input"><h5>ID</h5></label>
+                    <input type="text" id="id_input">
+                    <p class="id-check-message" id="idCheck_message">您已經申請過我們的會員，請點選會員登入!</p>
                 </div>
-                <div class="input_div_password">
-                    <label for=""><h5>密碼</h5></label>
-                    <input type="password"><i class="fa-solid fa-eye-slash"></i>   
+                <div class="input_div_password displaynone" id="password_div">
+                    <label for="password_input"><h5>密碼</h5></label>
+                    <input type="password"id="password_input"><i class="fa-solid fa-eye-slash"></i>   
                 </div>
-                <div class="input_div_password">
-                    <label for=""><h5>確認密碼</h5></label>
-                    <input type="password"><i class="fa-solid fa-eye-slash"></i>
-                    <p class="password-wrong">與密碼不符! 請重新輸入!!</p>
+                <div class="input_div_password displaynone" id="checkPassword_div">
+                    <label for="checkPassword_input"><h5>確認密碼</h5></label>
+                    <input type="password" id="checkPassword_input"><i class="fa-solid fa-eye-slash"></i>
+                    <p class="password-wrong" id="checkPassword_message">與密碼不符! 請重新輸入!!</p>
                 </div>
-                <div class="input_div">
+                <div class="input_div displaynone" id="lastName_div">
                     <label for=""><h5>姓</h5></label>
                     <input type="text">
                 </div>
-                <div class="input_div">
+                <div class="input_div displaynone" id="name_div">
                     <label for=""><h5>名字</h5></label>
                     <input type="text">
                 </div>
-                <div class="input_div">
+                <div class="input_div displaynone" id="email_div">
                     <label for=""><h5>E-mail</h5></label>
                     <input type="text">
                 </div>
-                <div class="input_div">
+                <div class="input_div displaynone" id="cell_div">
                     <label for=""><h5>手機</h5></label>
                     <input type="text">
                 </div>
-                <div class="input_div_full">
+                <div class="input_div_full displaynone" id="businessNumber_div">
                     <label for=""><h5>公司識別碼(商務旅客必填)</h5></label>
                     <input type="text">
                 </div>
-
+            </div>
+            <div class="btn_container" id="submitBtn">
+                <div class="btn_general">
+                    <h5>
+                        <a href="" class="btn_square">下一步</a>
+                    </h5>
+                </div>
             </div>
         </form>
 
     </section>
 
     @@include("./layout/footer.html")
+    <script src="./js/member_signup01.js"></script>
 </body>
 </html>

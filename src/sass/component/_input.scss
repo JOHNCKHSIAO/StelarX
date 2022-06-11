@@ -12,7 +12,7 @@
     }
     input{
         display:block;
-        width:532px;
+        width:530px;
         height:85px;
         background-color:#191F42;
         border:#191F42;
@@ -45,7 +45,7 @@
         }
     }
     input{
-            width:532px;
+            width:530px;
             height:85px;
             background-color:#191F42;
             border:#191F42;
@@ -72,4 +72,35 @@
             cursor: pointer;
         }
     }
+}
+.input_div_full{
+    box-sizing: content-box;
+    label{
+        display: block;
+        // border:1px solid yellow;
+        padding-left: 30px;
+        margin-bottom:$spacing_20px;
+        h5{
+            color:$white;
+        }
+    }
+    input{
+        display:block;
+        width:1080px;
+        height:85px;
+        background-color:#191F42;
+        border:#191F42;
+        border-radius: 5px;
+        font-size:22px;
+        padding-left: 30px;
+        color:$white;
+        &:focus{
+            background-color:#987A4D;
+            border:#987A4D;
+            outline:#987A4D;;
+
+        }
+
+    }
+
 }
