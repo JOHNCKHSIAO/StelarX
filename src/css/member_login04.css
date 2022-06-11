@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+.mileCity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.mileCity h6 {
+  color: #EEEEEE;
+}
+
+.date2022 {
+  background: #EEEEEE;
+  width: 235px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.date2022 h5 {
+  text-align: center;
+  font-weight: 700;
+  color: #987A4D;
+  line-height: 64px;
+  margin: 64px 0;
+}
+
+.mainMile {
+  margin-top: 80px;
+}
+.mainMile .mileCard {
+  width: 500px;
+  margin-top: 12px;
+  padding: 10px;
+  background: #00072E;
+}
+.mainMile .mileCard .mileCardUp {
+  color: #987A4D;
+  line-height: 64px 64px;
+  font-weight: 700;
+  font-size: 24rem;
+  text-align: center;
+  cursor: pointer;
+  line-height: 48px;
+}
+.mainMile .mileCard .mileCardDown {
+  margin: 12px 0;
+  display: none;
+}
+.mainMile .mileCard .mileCardDown .mileCardDown_Flex {
+  display: flex;
+  justify-content: space-around;
+}
+.mainMile .mileCard .mileCardDown .mileCardDown_Flex .mileCardLeft {
+  display: flex;
+}
+.mainMile .mileCard .mileCardDown .mileCardDown_Flex .mileCardRight {
+  display: flex;
+}
+
+.mileBar {
+  margin-top: 24px;
+}
+.mileBar .progress {
+  width: 450px;
+  height: 20px;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  border: 3px solid #EEEEEE;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+.mileBar h5 {
+  margin-top: 12px;
+  color: #EEEEEE;
+  text-align: center;
+}
+
+.login04_1440 {
+  background: black;
+}
+.login04_1440 .login04_1080 {
+  width: 1080px;
+  margin: 0 auto;
+  border: 1px solid rgb(255, 255, 255);
+}
+.login04_1440 .login04_1080 h3 {
+  text-align: center;
+  color: #EEEEEE;
+}
+.login04_1440 .login04_1080 .login04Line {
+  background-color: #EEEEEE;
+  height: 2px;
+  width: 190px;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+.login04_1440 .login04_1080 .membMileSVG {
+  padding: 80px 0;
+  display: flex;
+  gap: 75px;
+}
+.login04_1440 .login04_1080 .membMileSVG .membMile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=member_login04.css.map */
