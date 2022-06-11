@@ -1,0 +1,106 @@
+//先用一層div包住 裡面有label 還有input
+.input_div{
+    box-sizing: content-box;
+    label{
+        display: block;
+        // border:1px solid yellow;
+        padding-left: 30px;
+        margin-bottom:$spacing_20px;
+        h5{
+            color:$white;
+        }
+    }
+    input{
+        display:block;
+        width:530px;
+        height:85px;
+        background-color:#191F42;
+        border:#191F42;
+        border-radius: 5px;
+        font-size:22px;
+        padding-left: 30px;
+        color:$white;
+        &:focus{
+            background-color:#987A4D;
+            border:#987A4D;
+            outline:#987A4D;;
+
+        }
+
+    }
+
+}
+//先用一層div包住 裡面有label 還有input
+.input_div_password{
+    // border:1px solid pink;
+    position: relative;
+    label{
+        display:block;
+        // border:1px solid yellow;
+        padding-left: 30px;
+        margin-bottom:$spacing_20px;
+        h5{
+            color:$white;
+            // border:1px solid green;
+        }
+    }
+    input{
+            width:530px;
+            height:85px;
+            background-color:#191F42;
+            border:#191F42;
+            border-radius: 5px;
+            font-size:22px;
+            padding-left: 30px;
+            color:$white;
+            &:focus{
+                background-color:#987A4D;
+                border:#987A4D;
+                outline:#987A4D;;
+    
+            }
+    
+
+    }
+    i{
+        color:$white;
+        font-size:22rem;
+        position:absolute;
+        top:50%;
+        right:5%;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.input_div_full{
+    box-sizing: content-box;
+    label{
+        display: block;
+        // border:1px solid yellow;
+        padding-left: 30px;
+        margin-bottom:$spacing_20px;
+        h5{
+            color:$white;
+        }
+    }
+    input{
+        display:block;
+        width:1080px;
+        height:85px;
+        background-color:#191F42;
+        border:#191F42;
+        border-radius: 5px;
+        font-size:22px;
+        padding-left: 30px;
+        color:$white;
+        &:focus{
+            background-color:#987A4D;
+            border:#987A4D;
+            outline:#987A4D;;
+
+        }
+
+    }
+
+}

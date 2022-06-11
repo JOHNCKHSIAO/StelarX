@@ -203,149 +203,27 @@ p {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
-.input_div {
-  box-sizing: content-box;
-}
-.input_div label {
-  display: block;
-  padding-left: 30px;
-  margin-bottom: 20px;
-}
-.input_div label h5 {
-  color: #EEEEEE;
-}
-.input_div input {
-  display: block;
-  width: 530px;
-  height: 85px;
-  background-color: #191F42;
-  border: #191F42;
-  border-radius: 5px;
-  font-size: 22px;
-  padding-left: 30px;
-  color: #EEEEEE;
-}
-.input_div input:focus {
-  background-color: #987A4D;
-  border: #987A4D;
-  outline: #987A4D;
-}
-
-.input_div_password {
-  position: relative;
-}
-.input_div_password label {
-  display: block;
-  padding-left: 30px;
-  margin-bottom: 20px;
-}
-.input_div_password label h5 {
-  color: #EEEEEE;
-}
-.input_div_password input {
-  width: 530px;
-  height: 85px;
-  background-color: #191F42;
-  border: #191F42;
-  border-radius: 5px;
-  font-size: 22px;
-  padding-left: 30px;
-  color: #EEEEEE;
-}
-.input_div_password input:focus {
-  background-color: #987A4D;
-  border: #987A4D;
-  outline: #987A4D;
-}
-.input_div_password i {
-  color: #EEEEEE;
-  font-size: 22rem;
-  position: absolute;
-  top: 50%;
-  right: 5%;
-}
-.input_div_password i:hover {
-  cursor: pointer;
-}
-
-.input_div_full {
-  box-sizing: content-box;
-}
-.input_div_full label {
-  display: block;
-  padding-left: 30px;
-  margin-bottom: 20px;
-}
-.input_div_full label h5 {
-  color: #EEEEEE;
-}
-.input_div_full input {
-  display: block;
-  width: 1080px;
-  height: 85px;
-  background-color: #191F42;
-  border: #191F42;
-  border-radius: 5px;
-  font-size: 22px;
-  padding-left: 30px;
-  color: #EEEEEE;
-}
-.input_div_full input:focus {
-  background-color: #987A4D;
-  border: #987A4D;
-  outline: #987A4D;
-}
-
-.member-login {
+.member-register2 {
   width: 1080px;
   margin: 0 auto;
-  position: relative;
 }
-.member-login .member-login-title {
-  padding: 1px;
+.member-register2 .member-register2-title {
   color: #EEEEEE;
   text-align: center;
-  line-height: 1.5;
-  position: relative;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
-.member-login .member-login-title::before {
-  content: "";
-  display: block;
-  width: 150px;
-  border-bottom: 1px solid #EEEEEE;
-  position: absolute;
-  top: 100%;
-  margin-top: 10px;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.member-login .input-area-member-login {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 72px;
-}
-.member-login .forget-password {
-  color: #EEEEEE;
-  text-align: right;
-  display: block;
-  position: absolute;
-  bottom: 18%;
-  right: 0;
-}
-.member-login .password-wrong {
-  color: #8B2323;
-  margin-top: 10px;
-  margin-left: 30px;
-  opacity: 0;
-}
-.member-login .opacity1 {
-  opacity: 1;
-}
-.member-login .btn_container {
-  width: 380px;
-  height: 70px;
+.member-register2 .message-area {
+  background-color: rgba(51, 51, 51, 0.7);
+  width: 832px;
+  height: 180px;
   margin: 0 auto;
-  margin-top: 20px;
+  padding-top: 50px;
+}
+.member-register2 .message-area h4 {
+  text-align: center;
+  color: #EEEEEE;
+  line-height: 1.5;
 }
 
-/*# sourceMappingURL=member_login01.css.map */
+/*# sourceMappingURL=member_signup02.css.map */
