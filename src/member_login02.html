@@ -4,11 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/member_login02.css">
+    <title>會員中心</title>
 </head>
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+    <section class="member-login02-wrapper">
+        <section class="member-info">   
+            <h2>
+                歡迎回到 StelarX<br>繼續探索我的太空旅程！ 
+            </h2>
+            <img src="./images/member_login/member_card.jpg" alt="">
+            <h5>商務會員</h5>
+            <p>您在 2050/07/08 成為我們的會員！</p>
+            <div class="btn_container">
+                <div class="btn_cta">
+                    <h5>
+                        <a href="" class="btn_radius">修改個人資料</a>
+                    </h5>
+                </div>
+            </div>
+        </section>
+        <span class="decorate-line"></span>
+
+        <section class="member-mile">
+            <div class="mile-wrapper">
+                <div class="mile-circle">
+                    <h3>您已累積1200萬哩程！</h3>
+                    <div class="circle-outer">
+                        <div class="circle-inner">
+                            <p>1200</p><span>萬</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mile-square">
+                    <h3>我的哩程</h3>
+                    <div class="number-area">
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                        <h6></h6>
+                        <h6>萬公里</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_container">
+                <div class="btn_cta">
+                    <h5>
+                        <a href="" class="btn_radius">查詢航程明細</a>
+                    </h5>
+                </div>
+            </div>
+        </section>
+        <span class="decorate-line"></span>
+
+        <section class="memeber-shop">
+            <h2>購物中心</h2>
+            <h5>取貨編號 : ABCDE12345</h5>
+            <img src="./images/member_login/star.jpg" alt="">
+            <div class="btn_container">
+                <div class="btn_cta">
+                    <h5>
+                        <a href="" class="btn_radius">查看購物明細</a>
+                    </h5>
+                </div>
+            </div>
+        </section>
+        <span class="decorate-line"></span>
+
+        <section class="member-message">
+            <h2>訊息中心</h2>
+            <div class="message-wrapper">
+                <div class="message-center">
+                    <div class="messages">
+                        <h5>2022-6-12訂單明細</h5>
+                        <p>2022/6/12</p>
+                    </div>
+                    <div class="messages">
+                        <h5>2022-6-12訂單明細</h5>
+                        <p>2022/6/12</p>
+                    </div>
+                    
+                    <div class="btn_container">
+                        <div class="btn_cta">
+                            <h5>
+                                <a href="" class="btn_radius">查看訊息</a>
+                            </h5>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="textarea-div">
+                    <h5>留言給我們</h5>
+                    <form action="">
+                        <textarea name="" id="" cols="30" rows="10">
+
+                        </textarea>
+                        <div class="btn_container">
+                            <div class="btn_cta">
+                                <h5>
+                                    <a href="" class="btn_radius">送出</a>
+                                </h5>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </section>
 
     @@include("./layout/footer.html")
 </body>

@@ -1,0 +1,146 @@
+.my_tra_in {
+  width: 500px;
+  height: 70px;
+  font-size: 24rem;
+  padding-left: 10px;
+  margin-bottom: 32px;
+}
+
+.bg1440 {
+  line-height: 1.6;
+  background: linear-gradient(#000000 50%, #00072E 100%);
+}
+.bg1440 .wrapper1080 {
+  background-size: contain;
+  background-image: url("../images/qa/qaearth.jpg");
+  background-repeat: no-repeat;
+  width: 1080px;
+  margin: 0 auto;
+}
+.bg1440 .wrapper1080 .qa_tith1 {
+  text-align: center;
+  font-weight: 700;
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .qa_tith2 {
+  text-align: center;
+  margin-top: 70px;
+  font-weight: 500;
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .qa {
+  text-align: center;
+  margin-top: 500px;
+  font-weight: 500;
+  color: #987A4D;
+}
+.bg1440 .wrapper1080 .qanda1080 {
+  padding: 15px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.bg1440 .wrapper1080 .qanda1080 .qa_up {
+  cursor: pointer;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.bg1440 .wrapper1080 .qanda1080 .qa_up .ques {
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .qanda1080 .qa_up img {
+  transition: all 0.5s;
+}
+.bg1440 .wrapper1080 .qanda1080 .qaline {
+  margin: 24px 0;
+  background: #EEEEEE;
+  height: 2px;
+}
+.bg1440 .wrapper1080 .qanda1080 .qa_down {
+  display: none;
+}
+.bg1440 .wrapper1080 .qanda1080 .qa_down .answer {
+  font-weight: 400;
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt {
+  text-align: center;
+}
+.bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt .my_tra_tit1 {
+  color: #987A4D;
+  font-weight: 700;
+}
+.bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt .my_traline {
+  margin: 0 auto;
+  margin-top: 24px;
+  width: 288px;
+  border: 1px solid #987A4D;
+}
+.bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt .my_tra_tit2 {
+  color: #EEEEEE;
+  font-weight: 500;
+  margin-top: 80px;
+}
+.bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt .my_tra_tit3 {
+  color: #EEEEEE;
+  margin-top: 24px;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traNaTel {
+  display: flex;
+  justify-content: space-between;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelLeft {
+  margin-top: 80px;
+  text-align: left;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelLeft .my_tra_name {
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelRight {
+  margin-top: 80px;
+  text-align: left;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelRight .my_tra_tel {
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele {
+  display: flex;
+  justify-content: space-between;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleLeft {
+  text-align: left;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleLeft .my_tra_email {
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleRight {
+  text-align: left;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleRight .my_tra_pla {
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleRight .my_pla_sel {
+  width: 500px;
+  height: 70px;
+  border: 0;
+  padding-left: 10px;
+  font-size: 24rem;
+  margin-bottom: 32px;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_tra_down .my_tra_text {
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_tra_down .my_tra_mes {
+  width: 100%;
+  height: 300px;
+  font-size: 24rem;
+  padding-left: 10px;
+}
+.bg1440 .wrapper1080 .my_tra_form .btn_cta {
+  margin-top: 80px;
+}
+.bg1440 .wrapper1080 .my_tra_form .btn_cta .marginBtn {
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=contact.css.map */

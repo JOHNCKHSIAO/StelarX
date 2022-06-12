@@ -1,0 +1,254 @@
+@import 'base/var';
+// @import 'base/reset';
+// @import 'base/fontSet';
+// @import 'mixin/mixin';
+// @import 'component/btn';
+
+// 共用input
+
+// 表單input輸入框
+.my_tra_in {
+    width: 500px;
+    height: 70px;
+    font-size: 24rem;
+    padding-left: 10px;
+
+    margin-bottom: $spacing_32px;
+
+    ;
+
+}
+
+// 共用input
+
+
+.bg1440 {
+    line-height: 1.6;
+    background: linear-gradient(#000000 50%, $blue 100%);
+
+
+    .wrapper1080 {
+        background-size: contain;
+        background-image: url("../images/qa/qaearth.jpg");
+        background-repeat: no-repeat;
+        width: 1080px;
+        margin: 0 auto;
+
+        // 聯絡我們
+        .qa_tith1 {
+            text-align: center;
+            // margin-top: $spacing_120px;
+            font-weight: 700;
+            color: $white;
+        }
+
+        // any 
+        .qa_tith2 {
+            text-align: center;
+            margin-top: 70px;
+            font-weight: 500;
+            color: $white;
+        }
+
+        // Q&A
+        .qa {
+            text-align: center;
+            margin-top: 500px;
+            font-weight: 500;
+            color: $gold;
+        }
+
+        .qanda1080 {
+            padding: 15px;
+            // border: 1px solid $white;
+            margin-top: $spacing_48px;
+            margin-bottom: $spacing_48px;
+
+            .qa_up {
+                cursor: pointer;
+                margin-top: $spacing_48px;
+                display: flex;
+                justify-content: space-between;
+
+                .ques {
+                    color: $white;
+                }
+
+                img {
+                    transition: all .5s;
+                }
+
+            }
+
+            .qaline {
+                margin: $spacing_24px 0;
+                background: $white;
+                height: 2px;
+            }
+
+            .qa_down {
+                display: none;
+
+                .answer {
+                    font-weight: 400;
+                    color: $white;
+                }
+            }
+        }
+
+        // 我的星際旅程1080外框
+        .my_tra_1080 {
+            // border: 1px solid blanchedalmond;
+
+            .my_tra_txt {
+                text-align: center;
+
+                // 我的星際旅程
+                .my_tra_tit1 {
+                    color: $gold;
+                    font-weight: 700;
+
+                }
+
+                .my_traline {
+                    margin: 0 auto;
+                    margin-top: $spacing_24px;
+                    width: 288px;
+                    border: 1px solid $gold;
+                }
+
+                // 免費預約諮詢
+                .my_tra_tit2 {
+                    color: $white;
+                    font-weight: 500;
+                    margin-top: $spacing_80px;
+
+                }
+
+                // 提供您欲搭乘的路線
+                .my_tra_tit3 {
+                    color: $white;
+                    margin-top: $spacing_24px;
+                }
+            }
+        }
+
+        // 表單開始
+        .my_tra_form {
+
+
+
+            .my_traNaTel {
+                display: flex;
+                justify-content: space-between;
+
+                .my_traNaTelLeft {
+                    margin-top: $spacing_80px;
+                    text-align: left;
+
+                    // 姓名
+                    .my_tra_name {
+                        color: $white;
+                    }
+
+                }
+
+                .my_traNaTelRight {
+                    margin-top: $spacing_80px;
+
+                    text-align: left;
+
+                    // 電話
+                    .my_tra_tel {
+                        color: $white;
+
+                    }
+                }
+
+
+
+
+            }
+
+
+            .my_traEmPlSele {
+                display: flex;
+                justify-content: space-between;
+
+
+                .my_traEmPlSeleLeft {
+                    text-align: left;
+
+
+                    .my_tra_email {
+                        color: $white;
+
+                    }
+                }
+
+                .my_traEmPlSeleRight {
+                    text-align: left;
+
+                    .my_tra_pla {
+                        color: $white;
+
+                    }
+
+                    // 下拉選星球
+                    .my_pla_sel {
+                        width: 500px;
+                        height: 70px;
+                        border: 0;
+                        padding-left: 10px;
+                        font-size: 24rem;
+
+                        margin-bottom: $spacing_32px;
+
+                    }
+
+                }
+
+
+
+
+
+            }
+
+
+
+
+            .my_tra_down {
+                .my_tra_text {
+                    color: $white;
+
+                }
+
+                // 告訴我們您的期待 留言
+
+                .my_tra_mes {
+                    width: 100%;
+                    height: 300px;
+                    font-size: 24rem;
+                    padding-left: 10px;
+                }
+
+            }
+
+            // 按鈕
+            .btn_cta {
+                margin-top: $spacing_80px;
+
+                .marginBtn {
+                    margin: 0 auto;
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+
+}
