@@ -1,12 +1,12 @@
 @import 'base/var';
-// @import 'base/reset';
-// @import 'base/fontSet';
+@import 'base/reset';
+@import 'base/fontSet';
 // @import 'mixin/mixin';
 // @import 'component/btn';
 
 
 // 共用--------------------------------------------------
-* {
+* {line-height: 1.6;
     box-sizing: border-box;
 }
 

@@ -1,4 +1,123 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  /* 預設字體 */
+  font-size: 6.26%;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* 以下為h1-h6 */
+/*字體寬度自己要加上喔*/
+h1 {
+  font-size: 64rem;
+}
+
+h2 {
+  font-size: 36rem;
+}
+
+h3 {
+  font-size: 32rem;
+}
+
+h4 {
+  font-size: 28rem;
+}
+
+h5 {
+  font-size: 24rem;
+}
+
+h6 {
+  font-size: 20rem;
+}
+
+p {
+  font-size: 18rem;
+}
+
+/* 以下為title */
+.title1 {
+  font-size: 120rem;
+}
+
+.title2 {
+  font-size: 48rem;
+}
+
+.title3 {
+  font-size: 40rem;
+}
+
+.title4 {
+  font-size: 22rem;
+}
+
+.title5 {
+  font-size: 16rem;
+}
+
+.title6 {
+  font-size: 14rem;
+}
+
 * {
+  line-height: 1.6;
   box-sizing: border-box;
 }
 
