@@ -1,25 +1,53 @@
+
 html{
     font-family: 'Roboto', sans-serif; /* 預設字體 */
     font-size: 6.26%;
     line-height: 1.6;
+    box-sizing: border-box;
     }
     /* 以下為h1-h6 */
     
     /*字體寬度自己要加上喔*/
     
-    h1{font-size: 64rem;}
-    h2{font-size: 36rem;}
-    h3{font-size: 32rem;}
-    h4{font-size: 28rem;}
-    h5{font-size: 24rem;}
-    h6{font-size: 20rem;}
-    p{font-size: 18rem;}
+    h1{font-size: 64rem;
+        line-height: 1.6;
+    }
+    h2{font-size: 36rem;
+        line-height: 1.6;
+    }
+    h3{font-size: 32rem;
+        line-height: 1.6;
+    }
+    h4{font-size: 28rem;
+        line-height: 1.6;
+    }
+    h5{font-size: 24rem;
+        line-height: 1.6;
+    }
+    h6{font-size: 20rem;
+        line-height: 1.6;
+    }
+    p{font-size: 18rem;
+        line-height: 1.6;
+    }
     
     /* 以下為title */
     
-    .title1{font-size: 120rem;}
-    .title2{font-size: 48rem;}
-    .title3{font-size: 40rem;}
-    .title4{font-size: 22rem;}
-    .title5{font-size: 16rem;}
-    .title6{font-size: 14rem;}
+    .title1{font-size: 120rem;
+        line-height: 1.6;
+    }
+    .title2{font-size: 48rem;
+        line-height: 1.6;
+    }
+    .title3{font-size: 40rem;
+        line-height: 1.6;
+    }
+    .title4{font-size: 22rem;
+        line-height: 1.6;
+    }
+    .title5{font-size: 16rem;
+        line-height: 1.6;
+    }
+    .title6{font-size: 14rem;
+        line-height: 1.6;
+    }
