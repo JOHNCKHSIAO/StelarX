@@ -16,30 +16,30 @@
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
     <section class="member-register">
-        <h2 class="member-register-title">歡迎來到StelarX<br>開始您的太空旅遊！</h2>
+        <h5 class="member-register-title">歡迎來到StelarX<br>開始您的太空旅遊！</h5>
         <!-- <h2 class="member-register-title-bottom"></h2> -->
         <form action="">
             <div class="input-area-member-register">
                 <div class="input_div" id="account_div">
                     <label for="account_input"><h5>帳號</h5></label>
                     <input type="text" id="account_input">
-                    <p class="account-check-message" id="accountCheck_message">這個帳號已經有人使用了，請試試別的名稱!</p>
+                    <p class="account-check-message" id="accountCheck_message">本帳號已經有人使用，請試試別的名稱!</p>
                 </div>
                 <div class="input_div" id="id_div">
                     <label for="id_input"><h5>ID</h5></label>
                     <input type="text" id="id_input">
-                    <p class="id-check-message" id="idCheck_message">您已經申請過我們的會員，請點選會員登入!</p>
+                    <p class="id-check-message" id="idCheck_message">您已是我們的會員，請點選會員登入!</p>
                 </div>
-                <div class="input_div_password displaynone" id="password_div">
+                <div class="input_div_password" id="password_div">
                     <label for="password_input"><h5>密碼</h5></label>
                     <input type="password"id="password_input"><i class="fa-solid fa-eye-slash"></i>   
                 </div>
-                <div class="input_div_password displaynone" id="checkPassword_div">
+                <div class="input_div_password" id="checkPassword_div">
                     <label for="checkPassword_input"><h5>確認密碼</h5></label>
                     <input type="password" id="checkPassword_input"><i class="fa-solid fa-eye-slash"></i>
                     <p class="password-wrong" id="checkPassword_message">與密碼不符! 請重新輸入!!</p>
                 </div>
-                <div class="input_div displaynone" id="lastName_div">
+                <div class="input_div" id="lastName_div">
                     <label for=""><h5>姓</h5></label>
                     <input type="text">
                 </div>
@@ -72,6 +72,6 @@
     </section>
 
     @@include("./layout/footer.html")
-    <script src="./js/member_signup01.js"></script>
+    <!-- <script src="./js/member_signup01.js"></script> -->
 </body>
 </html>
