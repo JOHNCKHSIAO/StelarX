@@ -2,4 +2,395 @@
 @import 'base/reset';
 @import 'base/fontSet';
 @import 'mixin/mixin';
+<<<<<<< HEAD
 @import 'component/btn';
+
+body{
+    background-color: $blue;
+    color: $white;
+}
+
+
+// -------------------------------- 火箭引擎 --------------------------------
+
+.rocket-engine{
+    img{
+        display: block;
+        margin: auto;
+    }
+
+    .engine-info{
+        width: 1080px;
+        margin: auto;
+        display: flex;
+        
+        .info-left{
+            color: $gold;
+            font-family: serif;
+            font-family: $rob_Serif;
+            font-weight: 500;
+            
+            h1{
+                margin: $spacing_120px 0 $spacing_64px $spacing_80px;
+            }
+            span{
+                margin-left: 240px;
+            }
+        }
+
+        .info-right{
+            margin-left: auto;
+
+            h5{
+                display: flex;
+            }
+            ul{
+                margin: $spacing_80px;
+            }
+            li{
+                margin-bottom: $spacing_24px;
+            }
+        }
+    }
+}
+
+
+// -------------------------------- 火箭資訊 --------------------------------
+
+.rocket-info{
+
+
+    // -------------- 火箭資訊_上方數據 --------------
+    .info-data{
+        width: 1080px;
+        margin: auto;
+        h1{
+            font-weight: 700;
+            margin-bottom: $spacing_12px;
+        }
+        h5{
+            font-weight: 500;
+            text-align: right;
+            color: #a0a0a0;
+        }
+
+        .data-top{
+            display: flex;
+            margin-top: $spacing_80px;
+            align-items: center;
+            justify-content: center;
+            
+            .weight{
+                margin-right: $spacing_40px;
+            }
+        }
+
+        .data-bottom{
+            margin: $spacing_80px 0 $spacing_120px 0;
+
+            ul{
+                display: flex;
+                justify-content: center;
+                
+                li{
+                    display: flex;
+                    align-items: center;
+                    margin: 0 $spacing_120px;
+
+                    .diameter{
+                        margin-right: $spacing_40px;
+                    }
+                    .height{
+                        margin-right: $spacing_40px;
+                    }
+                }
+            }        
+        }
+    }
+
+    // -------------- 火箭資訊_整支火箭 --------------
+    .rocket-rocket{
+        width: 1080px;
+        margin: auto;
+        display: flex;
+
+        .rocket-left{    
+        }
+
+        .rocket-right{
+            width: 500px;
+            margin-left: auto;
+            
+            .eqpt-top{
+                margin-bottom: $spacing_120px;
+
+                img{
+                    display: block;
+                    margin: auto;
+                    margin-top: 200px;
+                }
+                h3{
+                    color: $gold;
+                    font-weight: 500;
+                    text-align: center;
+                    margin: $spacing_80px 0;
+                }
+                .eqpt-detail{                
+                    ul{
+                        display: flex;
+                        width: 380px;
+                        margin: auto;
+                        margin-bottom: $spacing_64px;
+                        border-bottom: 1px solid $white;
+
+                        li{
+                            flex-grow: 1;
+                            margin-bottom: $spacing_24px;
+                        }
+                        li:nth-child(n+2){
+                            text-align: right;
+                        }
+                        li:last-child{
+                            flex-basis: $spacing_80px;
+                            flex-grow: 0;
+                        }
+                    }
+                    ul:first-child{
+                        margin-bottom: $spacing_40px;
+                    }
+                }
+                h6{
+                    width: 430px;
+                    margin: auto;
+                    line-height: 1.6;
+                }
+            }
+
+            .eqpt-bottom{       
+                img{
+                    display: block;
+                    margin: auto;
+                }
+                h3{
+                    color: $gold;
+                    font-weight: 500;
+                    text-align: center;
+                    margin: $spacing_80px 0;
+                }
+                h6{
+                    width: 430px;
+                    margin: auto;
+                    line-height: 1.6;
+                    margin-bottom: $spacing_80px;
+                }
+
+                .eqpt-detail{                
+                    ul{
+                        display: flex;
+                        width: 380px;
+                        margin: auto;
+                        margin-bottom: $spacing_40px;
+                        border-bottom: 1px solid $white;
+
+                        li{
+                            flex-grow: 1;
+                            margin-bottom: $spacing_24px;
+                        }
+                        li:nth-child(n+2){
+                            text-align: right;
+                        }
+                        li:last-child{
+                            flex-basis: $spacing_80px;
+                            flex-grow: 0;
+                        }
+                    }  
+                }
+            }
+        }
+    }
+}
+
+// -------------------------------- 火箭艙 --------------------------------
+
+.rocket-cabin{
+    h1{
+        color: $gold;
+        font-family: $rob_Serif;
+        font-weight: 500;
+        text-align: center;
+        margin: 160px 0 $spacing_80px 0;
+    }
+
+    // -------------- 火箭艙_觸控面板 --------------
+    .cabin-intro-top{
+        margin: auto;
+        width: 1440px;
+        // height: 700px;
+        // background-image: url('../images/rocket/cabin_intro.jpg');
+
+        position: relative;
+        
+        .intro-toggle{
+            display: block;
+            height: 40px;
+            width: 40px;
+            margin: auto;
+            border-radius: 50%;
+            background-color: $gold;
+        }
+        .intro-pop{
+            display: block;
+            background: $linear;
+            margin-top: 12px;
+            text-align: center;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 25px;
+        }
+        .intro-toggle1{
+            width: 300px;
+            position: absolute;
+            top: 50px;
+            left: 400px;
+        }
+        .intro-toggle2{
+            width: 300px;
+            position: absolute;
+            top: 250px;
+            left: 130px;
+        }
+        .intro-toggle3{
+            width: 300px;
+            position: absolute;
+            top: 300px;
+            right: 100px;
+        }
+        .intro-toggle4{
+            width: 300px;
+            position: absolute;
+            top: 450px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        h4{
+           font-weight: 500;           
+           position: absolute;
+           line-height: 1.6;
+           bottom: $spacing_40px;
+           left: 180px;
+        }
+    }
+
+    // -------------- 火箭艙_簡介 --------------
+    .cabin-intro-bottom{
+        width: 1440px;
+        margin: auto;
+        margin-top: 180px;
+        margin-bottom: 220px;
+        
+        .bottom-bg{
+            width: 1260px;
+            height: 500px;
+            background: $linear;
+
+            ul{
+                position: relative;
+
+                li{
+                    width: 450px;
+                    line-height: 1.6;
+                    text-align: center;
+
+                    position: absolute;
+                    left: 250px;
+                    bottom: -600px;
+                          
+                    h5{
+                        margin: $spacing_40px 0;
+                    }
+                }
+                li:last-child{
+                    position: absolute;
+                    left: 740px;
+                    top: -100px;
+                }
+            }
+        }
+    }
+}
+
+// -------------------------------- 火箭_管家 --------------------------------
+
+.rocket-bodyguard{
+    text-align: center;
+
+    h2{
+        font-weight: 500;
+    }
+    .sep-line{
+        width: 150px;
+        height: 3px;
+        background-color: $gold;
+        display: block;
+        margin: $spacing_24px auto;
+    }
+    h5{
+        margin-bottom: $spacing_64px;
+    }
+    ul{
+        display: flex;
+        width: 1080px;
+        margin: 0 auto $spacing_80px;
+
+        li{
+            flex-grow: 1;
+
+            h4{
+               font-weight: 700;
+               margin: $spacing_48px 0 $spacing_40px 0; 
+            }
+            h6{
+                line-height: 1.6;
+            }
+        }
+        li:nth-child(2){
+            position: relative;
+        }
+        li:nth-child(2)::before{
+            content: '';
+            display: block;
+            width: 1px;
+            height: 250px;
+            background-color: $gold;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        li:nth-child(2)::after{
+            content: '';
+            display: block;
+            width: 1px;
+            height: 250px;
+            background-color: $gold;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+}
+
+// -------------------------------- 火箭_加值服務 -----------------------------
+
+.rocket-plus{
+    
+}
+=======
+@import 'component/btn';
+>>>>>>> dev
