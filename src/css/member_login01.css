@@ -116,12 +116,12 @@ p {
 }
 
 .btn_cta {
-  width: 380px;
-  height: 70px;
+  width: 240px;
+  height: 40px;
 }
 .btn_cta h5 {
   text-align: center;
-  line-height: 70px;
+  line-height: 40px;
   font-weight: 600;
 }
 .btn_cta h5 .btn_radius {
@@ -213,11 +213,12 @@ p {
 }
 .input_div label h5 {
   color: #EEEEEE;
+  font-size: 14px;
 }
 .input_div input {
   display: block;
-  width: 530px;
-  height: 85px;
+  width: 260px;
+  height: 40px;
   background-color: #191F42;
   border: #191F42;
   border-radius: 5px;
@@ -241,10 +242,11 @@ p {
 }
 .input_div_password label h5 {
   color: #EEEEEE;
+  font-size: 14px;
 }
 .input_div_password input {
-  width: 530px;
-  height: 85px;
+  width: 260px;
+  height: 40px;
   background-color: #191F42;
   border: #191F42;
   border-radius: 5px;
@@ -302,7 +304,7 @@ p {
   position: relative;
 }
 .member-login .member-login-title {
-  padding: 1px;
+  font-size: 24px;
   color: #EEEEEE;
   text-align: center;
   line-height: 1.5;
@@ -320,6 +322,8 @@ p {
   transform: translate(-50%, 0);
 }
 .member-login .input-area-member-login {
+  width: 550px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   margin-top: 72px;
@@ -342,8 +346,8 @@ p {
   opacity: 1;
 }
 .member-login .btn_container {
-  width: 380px;
-  height: 70px;
+  width: 260px;
+  height: 40px;
   margin: 0 auto;
   margin-top: 20px;
 }
