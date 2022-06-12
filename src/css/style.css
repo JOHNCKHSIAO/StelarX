@@ -128,6 +128,13 @@ p {
   line-height: 1.6;
 }
 
+<<<<<<< HEAD
+.btn_cta {
+  width: 380px;
+  height: 70px;
+}
+=======
+>>>>>>> dev
 .btn_cta h5 {
   text-align: center;
   line-height: 70px;
