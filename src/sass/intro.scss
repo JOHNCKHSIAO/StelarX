@@ -1,0 +1,60 @@
+@import 'base/var';
+@import 'base/reset';
+@import 'base/fontSet';
+@import 'mixin/mixin';
+@import 'component/btn';
+
+body{
+    position: relative;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    // outline: 2px solid rgb(136, 255, 0);
+}
+
+.wrapper{
+    width: 1080px;
+    height:100vh;
+    // outline: 2px solid rgb(232, 255, 240);
+    margin: 0 auto;
+    position: relative;
+   
+}
+
+.intro{
+    position:absolute;
+    width: 1080px;
+    // height: 355px;
+    // margin: -150px 0 0 -250px;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: space-between;
+    align-items: center;
+
+    .title{
+        color: #eeeeee;
+        align-items: center;
+
+        img{
+            width: 350px;
+            margin: 40px 0;
+        }
+
+        h6{
+            padding-top: 16px;
+        }
+    }
+
+    .enter{
+        display: flex;
+
+        .btn_main_w:nth-child(2){
+            margin-left: 56px;
+        }
+    }
+}
+
