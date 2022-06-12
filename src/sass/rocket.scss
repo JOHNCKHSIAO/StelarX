@@ -2,7 +2,7 @@
 @import 'base/reset';
 @import 'base/fontSet';
 @import 'mixin/mixin';
-// @import 'component/btn';
+@import 'component/btn';
 
 body{
     color: $white;
@@ -384,5 +384,11 @@ body{
 // -------------------------------- 火箭_加值服務 -----------------------------
 
 .rocket-plus{
+
+    .plus-slider{
+        
+
+    }
+    
     
 }

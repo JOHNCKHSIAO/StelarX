@@ -8,12 +8,13 @@
         margin-bottom:$spacing_20px;
         h5{
             color:$white;
+            font-size: 14px;
         }
     }
     input{
         display:block;
-        width:530px;
-        height:85px;
+        width:260px;
+        height:40px;
         background-color:#191F42;
         border:#191F42;
         border-radius: 5px;
@@ -41,12 +42,13 @@
         margin-bottom:$spacing_20px;
         h5{
             color:$white;
+            font-size: 14px;
             // border:1px solid green;
         }
     }
     input{
-            width:530px;
-            height:85px;
+            width:260px;
+            height:40px;
             background-color:#191F42;
             border:#191F42;
             border-radius: 5px;
