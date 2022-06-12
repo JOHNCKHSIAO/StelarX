@@ -3,3 +3,54 @@
 @import 'base/fontSet';
 @import 'mixin/mixin';
 @import 'component/btn';
+@import 'component/input';
+.member-forget02{
+    // border:1px solid white;
+    width:1080px;
+    margin:0 auto;
+    // border:1px solid white;
+    .member-forget02-title{
+        box-sizing: content-box;
+        // border: 1px solid white;
+        color:$white;
+        text-align: center;
+        position: relative;
+        &::before{
+            content: "";
+            display:block;
+            width:150px;
+            border-bottom: 1px solid $white;
+            position:absolute;
+            top:100%;
+            margin-top:20px;
+            left:50%;
+            transform: translate(-50%,0);
+        }
+    }
+    .input-area-member-forget02{
+        display: flex;
+        //  border:1px solid white;
+         justify-content: space-around;
+         margin-top: $spacing_48px+24px;//24px被底線占掉了
+     }
+     .password-wrong{
+         color:$error_red;
+         margin-top: 10px;
+         margin-left: 30px;
+         opacity:0;
+     }
+     .opacity1{
+        opacity:1;
+     }
+     .btn_container{
+        // border: 1px solid gold;
+        width: 380px;
+        height: 70px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    
+    }
+
+
+    
