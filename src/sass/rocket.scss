@@ -2,11 +2,9 @@
 @import 'base/reset';
 @import 'base/fontSet';
 @import 'mixin/mixin';
-<<<<<<< HEAD
-@import 'component/btn';
+// @import 'component/btn';
 
 body{
-    background-color: $blue;
     color: $white;
 }
 
@@ -26,7 +24,6 @@ body{
         
         .info-left{
             color: $gold;
-            font-family: serif;
             font-family: $rob_Serif;
             font-weight: 500;
             
@@ -162,7 +159,6 @@ body{
                 h6{
                     width: 430px;
                     margin: auto;
-                    line-height: 1.6;
                 }
             }
 
@@ -180,7 +176,6 @@ body{
                 h6{
                     width: 430px;
                     margin: auto;
-                    line-height: 1.6;
                     margin-bottom: $spacing_80px;
                 }
 
@@ -244,8 +239,11 @@ body{
             margin-top: 12px;
             text-align: center;
             height: 80px;
-            line-height: 80px;
             border-radius: 25px;
+            
+            h6{
+                line-height: 80px;
+            }
         }
         .intro-toggle1{
             width: 300px;
@@ -276,7 +274,6 @@ body{
         h4{
            font-weight: 500;           
            position: absolute;
-           line-height: 1.6;
            bottom: $spacing_40px;
            left: 180px;
         }
@@ -299,7 +296,6 @@ body{
 
                 li{
                     width: 450px;
-                    line-height: 1.6;
                     text-align: center;
 
                     position: absolute;
@@ -351,7 +347,6 @@ body{
                margin: $spacing_48px 0 $spacing_40px 0; 
             }
             h6{
-                line-height: 1.6;
             }
         }
         li:nth-child(2){
@@ -391,6 +386,3 @@ body{
 .rocket-plus{
     
 }
-=======
-@import 'component/btn';
->>>>>>> dev
