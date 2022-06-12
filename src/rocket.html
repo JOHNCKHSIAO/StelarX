@@ -4,11 +4,292 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/rocket.css">
     <title></title>
 </head>
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+
+
+
+    <!--------------------------- 火箭引擎 --------------------------->
+    <article class="rocket-engine">
+
+        <img src="./images/rocket/rocket_engine.jpg" alt="">
+
+        <section class="engine-info">
+
+            <section class="info-left">
+
+                <h1>Merlin - Z</h1>
+                <span class="title2">噴射引擎</span>
+
+            </section>
+
+            <section class="info-right">
+                <h5>
+                    <ul>
+                        <li>真空推力</li>
+                        <li>海平面推力</li>
+                        <li>推重比</li>
+                        <li>燃燒室壓力</li>
+                        <li>真空比衝</li>
+                        <li>海平面比衝</li>
+                    </ul>
+                    <ul>
+                        <li>914 kN</li>
+                        <li>845 kN</li>
+                        <li>180.1</li>
+                        <li>9.7 MPa</li>
+                        <li>311 s</li>
+                        <li>282 s</li>
+                    </ul>
+                </h5>
+            </section>
+        </section>
+    </article>
+
+    <!--------------------------- 火箭資訊 --------------------------->
+    <article class="rocket-info">
+
+        <!-------------- 火箭資訊_上方數據 -------------->
+        <section class="info-data">
+
+            <section class="data-top">
+
+                <section class="weight">
+                    <img src="./images/rocket/weight.png" alt="">
+                </section>
+                <section>
+                    <h1>2165 噸</h1>
+                    <h5>WEIGHT</h5>
+                </section>
+
+            </section>
+
+            <section class="data-bottom">
+
+                <ul>
+                    <li>
+                        <section class="diameter">
+                            <img src="./images/rocket/diameter.png" alt="">
+                        </section>
+                        <section>
+                            <h1>21 米</h1>
+                            <h5>DIAMETER</h5>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="height">
+                            <img src="./images/rocket/height.png" alt="">
+                        </section>
+                        <section>
+                            <h1>117 米</h1>
+                            <h5>HEIGHT</h5>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+
+        </section>
+
+        <!-------------- 火箭資訊_整支火箭 -------------->
+        <section class="rocket-rocket">
+
+            <section class="rocket-left">
+                <img src="./images/rocket/rocket.png" alt="">
+            </section>
+
+            <section class="rocket-right">
+
+                <section class="eqpt-top">
+
+                    <img src="./images/rocket/rocket_eqpt_1.png" alt="">
+                    <h3>真空發動機</h3>
+
+                    <section class="eqpt-detail">
+                        <h5>
+                            <ul>
+                                <li>燃燒時間</li>
+                                <li>375</li>
+                                <li>秒</li>
+                            </ul>
+                            <ul>
+                                <li>推力</li>
+                                <li>801</li>
+                                <li>千牛</li>
+                            </ul>
+                        </h5>
+                    </section>
+
+                    <h6>由單個 Merlin 真空發動機提供動力，將Stellar X 的有效載荷送至所需軌道。第二級發動機在級分離後幾秒鐘點燃，並且可以多次重新啟動以將多個有效載荷放置到不同的軌道上。為了獲得最大的可靠性，第二級具有冗餘點火器系統。與第一級一樣，第二級由高強度鋁鋰合金製成。</h6>
+                
+                </section>
+
+                <section class="eqpt-bottom">
+
+                    <img src="./images/rocket/rocket_eqpt_2.png" alt="">
+                    <h3>梅林引擎</h3>
+                    <h6>七個第一級 Merlin發動機集中在一起，在飛行過程中可以確保維持穩定動力，保持高速於宇宙間行駛。</h6>
+
+                    <section class="eqpt-detail">
+                        <h5>
+                            <ul>
+                                <li>燃燒時間</li>
+                                <li>180</li>
+                                <li>秒</li>
+                            </ul>
+                            <ul>
+                                <li>海平面推力</li>
+                                <li>5,885</li>
+                                <li>千牛</li>
+                            </ul>
+                            <ul>
+                                <li>真空推力</li>
+                                <li>6,672</li>
+                                <li>千牛</li>
+                            </ul>
+                        </h5>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </article>
+
+    <!--------------------------- 火箭艙 --------------------------->
+
+    <article class="rocket-cabin">
+
+        <h1>AETHER GX</h1>
+
+        <!-------------- 火箭艙_觸控面板 -------------->
+        <section class="cabin-intro-top">
+
+            <img src="./images/rocket/cabin_intro.jpg" alt="">
+
+            <section class="intro-toggle1">
+                <span class="intro-toggle"></span>
+                <span class="intro-pop">
+                    <h6>零重力握把</h6>
+                </span>
+            </section>
+
+            <section class="intro-toggle2">
+                <span class="intro-toggle"></span>
+                <span class="intro-pop">
+                    <h6>寬敞落地景觀窗</h6>
+                </span>
+            </section>
+
+            <section class="intro-toggle3">
+                <span class="intro-toggle"></span>
+                <span class="intro-pop">
+                    <h6>航班資訊儀表</h6>
+                </span>
+            </section>
+
+            <section class="intro-toggle4">
+                <span class="intro-toggle"></span>
+                <span class="intro-pop">
+                    <h6>主控台</h6>
+                </span>
+            </section>
+
+            <h4>整體座艙寬敞舒適，<br>身體皆可伸展，舒緩坐在辦公一整天的辛勞！</h4>
+
+        </section>
+
+        <!-------------- 火箭艙_簡介 -------------->
+        <section class="cabin-intro-bottom">
+
+            <section class="bottom-bg">
+                <ul>
+                    <li>
+                        <h5>大座位寬敞舒適<br>
+                            讓您上班路不在擁擠在捷運車廂<br>
+                            下班累了一天可以坐在椅子上好好休息
+                        </h5>
+                        <img src="./images/rocket/cabin_passenger.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/rocket/cabin_seat.jpg" alt="">
+                        <h5>
+                            讓商務乘客都說讚的穩定運輸系統<br>
+                            0 事故、0 誤點<br>
+                            上班族最值得信賴的交通系統
+                        </h5>
+                    </li>
+                </ul>
+            </section>        
+        </section>
+    </article>
+
+
+    <!--------------------------- 火箭_管家 --------------------------->
+
+    <article class="rocket-bodyguard">
+        
+        <h2>專屬管家服務</h2>
+        <span class="sep-line"></span>
+        <h5>由管家進行一對一的服務，隨時隨地完成您的需求，享受頂級奢華的尊榮感</h5>
+
+        <ul>
+            <li>
+                <img src="./images/rocket/icon_guard_night.png" alt="">
+                <h4>提供客製化過夜包</h4>
+                <h6>因應喜好調整艙位設置<br>
+                    在星際旅途之中<br>
+                    打造放鬆身心的第二個家！</h6>
+            </li>
+            <li>
+                <img src="./images/rocket/icon_guard_tour.png" alt="">
+                <h4>引領貴賓進行艙內導覽</h4>
+                <h6>探索火箭工藝之美<br>
+                    並於航行期間全程開放設施使用<br>
+                    酒吧、交誼廳、親子空間！</h6>
+            </li>
+            <li>
+                <img src="./images/rocket/icon_guard_serve.png" alt="">
+                <h4>享受專屬的加值服務</h4>
+                <h6>創造前所未有的新體驗<br>
+                    太空漫步、座艙景觀室<br>
+                    與無邊界泳池！</h6>
+            </li>
+        </ul>
+    </article>
+
+    <!--------------------------- 火箭_加值服務 --------------------------->
+
+    <article class="rocket-plus">
+        
+        
+
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @@include("./layout/footer.html")
 </body>
