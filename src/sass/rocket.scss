@@ -8,6 +8,73 @@ body{
     color: $white;
 }
 
+// -------------------------------- 火箭進版 --------------------------------
+
+.rocket-fv{
+    height: 875px;
+    background-image: url('../images/rocket/rocket-fv-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: $spacing_120px;
+
+    .fv-main{
+        width: 650px;
+        height: 450px;
+        margin: $spacing_120px auto 0;
+        background: linear-gradient(180deg, #ffffff20 0%, #ffffff00 100%);
+        font-weight: 500;
+        
+        position: relative;
+        
+        .title2{
+            text-align: center;
+            line-height: 1;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -140px;
+            margin: auto; 
+        }
+        .title1{
+            font-family: $rob_Serif;
+            text-align: center;
+            line-height: 1;
+            
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -48px;
+            margin: auto;
+        }
+        h5{
+            text-align: center;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 180px;
+            margin: auto;
+        }        
+    }
+    
+    .rocket-data{
+        border: 2px solid red;
+        width: 1080px;
+        height: 150px;
+        margin: auto;
+
+
+
+
+
+
+    }
+}
+
+
+
+
+// -------------------------------- 火箭介紹 --------------------------------
 
 // -------------------------------- 火箭引擎 --------------------------------
 
@@ -385,10 +452,19 @@ body{
 
 .rocket-plus{
 
-    .plus-slider{
-        
+    width: 1440px;
+    height: 750px;
+    margin: auto;
+    background: $linear;
 
-    }
-    
-    
+    //https://www.w3schools.com/howto/howto_js_slideshow.asp
+    //https://medium.com/雪狐窩在雜誌社/網頁圖片輪播-775c756dc4c3
+    //https://bootstrap5.hexschool.com/docs/5.0/components/carousel/#via-javascript
+   
 }
+
+// -------------------------------- 火箭_更多連結 -----------------------------
+
+
+//https://www.youtube.com/watch?v=1Aq9OJuS3ok
+
