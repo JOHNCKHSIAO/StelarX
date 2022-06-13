@@ -4,5 +4,56 @@
 @import 'mixin/mixin';
 @import 'component/btn';
 body{
-    background-color: rgb(231, 77, 77);
+    background-color: #00072E;
+    color: white;
+}
+.top_image{
+    img{
+
+    }
+    h2{
+        width: 500px;
+        transform: translate(100%,-700%);
+        font-size: 48px;
+        color: black;
+    }
+}
+.wrapper{
+    width: 1080px;
+    margin: 0 auto;
+    .commodity{    
+        margin-top: 120px;
+        .small_title{
+            display: flex;
+            align-items: flex-end;
+            width: 400px;
+            border-bottom: 3px solid #987A4D;
+            padding-bottom: 24px;
+            h3{
+
+            }
+            h6{
+                margin-left: 10px;
+            }
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+            li{
+                text-align: center;
+                img{
+                    width: 350px;
+                    height: 360px;
+                }
+                h4{
+                    margin-top: 40px;
+                }
+                h5{
+                    margin-top: 24px;
+                }
+            }
+        }
+
+    }
 }
