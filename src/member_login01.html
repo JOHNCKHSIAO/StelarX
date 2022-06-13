@@ -16,7 +16,7 @@
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
     <section class="member-login" >
-        <h2 class="member-login-title">一起出發吧！<br>又是一次嶄新的旅程</h2>
+        <h5 class="member-login-title">一起出發吧！<br>又是一次嶄新的旅程</h5>
         <!-- <h2 class="member-login-title-bottom">又是一次嶄新的旅程</h2> -->
         <form action="">
             <div class="input-area-member-login">
@@ -25,19 +25,15 @@
                     <input type="text">
                 </div>
                 <div class="input_div_password">
-                    <label for=""><h5>再次輸入新密碼</h5></label>
+                    <label for=""><h5>密碼</h5></label>
                         <input type="password"><i class="fa-solid fa-eye-slash"></i>
-                    <p class="password-wrong">帳號或密碼錯誤</p>
+                    <p class="title6 password-wrong">帳號或密碼錯誤</p>
                 </div>
             </div>
-            <a href="./member_pwd01.html" class="forget-password"><h6>忘記密碼?</h6></a>
-            <div class="btn_container">
-                <div class="btn_cta">
-                    <h5>
-                        <a href="" class="btn_radius">登入</a>
-                    </h5>
-                </div>
-            </div>
+            <a href="./member_pwd01.html" class="forget-password"><h6 class="title6">忘記密碼?</h6></a>
+            <button class="btn_cta_submit btn">
+                <div class="aLink" href="#">登入<img src="./images/ctz_dec.png" alt=""></div>
+            </button>
         </form>
         
     </section>
