@@ -58,73 +58,85 @@ html {
   /* 預設字體 */
   font-size: 6.26%;
   line-height: 1.6;
+  box-sizing: border-box;
 }
 
 /* 以下為h1-h6 */
 /*字體寬度自己要加上喔*/
 h1 {
   font-size: 64rem;
+  line-height: 1.6;
 }
 
 h2 {
   font-size: 36rem;
+  line-height: 1.6;
 }
 
 h3 {
   font-size: 32rem;
+  line-height: 1.6;
 }
 
 h4 {
   font-size: 28rem;
+  line-height: 1.6;
 }
 
 h5 {
   font-size: 24rem;
+  line-height: 1.6;
 }
 
 h6 {
   font-size: 20rem;
+  line-height: 1.6;
 }
 
 p {
   font-size: 18rem;
+  line-height: 1.6;
 }
 
 /* 以下為title */
 .title1 {
   font-size: 120rem;
+  line-height: 1.6;
 }
 
 .title2 {
   font-size: 48rem;
+  line-height: 1.6;
 }
 
 .title3 {
   font-size: 40rem;
+  line-height: 1.6;
 }
 
 .title4 {
   font-size: 22rem;
+  line-height: 1.6;
 }
 
 .title5 {
   font-size: 16rem;
+  line-height: 1.6;
 }
 
 .title6 {
   font-size: 14rem;
+  line-height: 1.6;
 }
 
-.btn_cta {
-  width: 380px;
-  height: 70px;
-}
 .btn_cta h5 {
   text-align: center;
-  line-height: 70px;
+  line-height: 40px;
   font-weight: 600;
 }
 .btn_cta h5 .btn_radius {
+  width: 380px;
+  height: 70px;
   color: #EEEEEE;
   border: 2px solid #EEEEEE;
   display: block;
@@ -132,29 +144,26 @@ p {
   border-radius: 50px;
 }
 .btn_cta h5 .btn_radius:hover {
-  border: 0;
+  border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
-.btn_general {
-  width: 380px;
-  height: 70px;
-}
 .btn_general h5 {
   text-align: center;
   line-height: 70px;
   font-weight: 600;
 }
 .btn_general h5 .btn_square {
+  width: 380px;
+  height: 70px;
   color: #EEEEEE;
   border: 2px solid #EEEEEE;
   display: block;
   text-decoration: none;
 }
 .btn_general h5 .btn_square:hover {
-  border: 0;
+  border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-  border: 2px solid linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
 .btn_status {
@@ -186,8 +195,6 @@ p {
   text-align: center;
   line-height: 200px;
   font-weight: 600;
-  width: 200px;
-  height: 200px;
   font-size: 24rem;
 }
 .btn_main .btn_circle_text .btn_circle {
@@ -210,7 +217,227 @@ p {
 }
 .member-login02-wrapper .member-info {
   width: 100%;
-  border: 1px solid yellow;
+}
+.member-login02-wrapper .member-info .member-info-title {
+  color: #EEEEEE;
+  line-height: 1.5;
+  text-align: center;
+  position: relative;
+}
+.member-login02-wrapper .member-info .member-info-title::before {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 1px solid #EEEEEE;
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.member-login02-wrapper .member-info img {
+  display: block;
+  width: 563px;
+  border-radius: 26px;
+  margin: 0 auto;
+  margin-top: 36px;
+}
+.member-login02-wrapper .member-info .member-type {
+  color: #EEEEEE;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 20px;
+}
+.member-login02-wrapper .member-info p {
+  color: #EEEEEE;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.member-login02-wrapper .decorate-line {
+  width: 1084px;
+  height: 2px;
+  border-top: 1px solid #987A4D;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.member-login02-wrapper .member-mile .mile-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  width: 950px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.member-login02-wrapper .member-mile .mile-wrapper .mile-circle {
+  border: 1px solid green;
+}
+.member-login02-wrapper .member-mile .mile-wrapper .mile-circle h3 {
+  color: #EEEEEE;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.member-login02-wrapper .member-mile .mile-wrapper .mile-circle .circle-outer {
+  width: 352px;
+  height: 352px;
+  background-color: rgba(238, 238, 238, 0.6);
+  border-radius: 50%;
+  padding-top: 20px;
+}
+.member-login02-wrapper .member-mile .mile-wrapper .mile-circle .circle-outer .circle-inner {
+  width: 312px;
+  height: 312px;
+  background: #00072E;
+  margin-left: 20px;
+  border-radius: 50%;
+  line-height: 312px;
+}
+.member-login02-wrapper .member-mile .mile-wrapper .mile-circle .circle-outer .circle-inner .bignumber {
+  font-size: 80rem;
+  color: #EEEEEE;
+  margin-left: 50px;
+}
+.member-login02-wrapper .member-mile .mile-wrapper .mile-circle .circle-outer .circle-inner span {
+  font-size: 30rem;
+  color: #EEEEEE;
+}
+.member-login02-wrapper .member-mile .mile-wrapper .mile-square {
+  align-items: center;
+  border: 1px solid white;
+  width: 520px;
+  height: 240px;
+  border-radius: 5px;
+  margin-top: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.member-login02-wrapper .member-mile .mile-wrapper .mile-square h3 {
+  color: #EEEEEE;
+  text-align: center;
+}
+.member-login02-wrapper .member-mile .mile-wrapper .mile-square .number-area {
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid green;
+  margin-top: 80px;
+}
+.member-login02-wrapper .member-mile .mile-wrapper .mile-square .number-area h6 {
+  color: black;
+  background: #EEEEEE;
+  border-radius: 5px;
+  margin: 3px;
+  width: 31px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+}
+.member-login02-wrapper .member-mile .mile-wrapper .mile-square .number-area span {
+  color: white;
+  margin: 5px;
+  font-size: 20px;
+  line-height: 40px;
+}
+.member-login02-wrapper .memeber-shop .memeber-shop-title {
+  color: #EEEEEE;
+  line-height: 1.5;
+  text-align: center;
+  position: relative;
+}
+.member-login02-wrapper .memeber-shop .memeber-shop-title::before {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 1px solid #EEEEEE;
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.member-login02-wrapper .memeber-shop h5 {
+  color: #EEEEEE;
+  text-align: center;
+  margin-top: 48px;
+}
+.member-login02-wrapper .memeber-shop img {
+  width: 350px;
+  display: block;
+  margin: 80px auto 80px auto;
+}
+.member-login02-wrapper .member-message .member-message-title {
+  color: #EEEEEE;
+  line-height: 1.5;
+  text-align: center;
+  position: relative;
+}
+.member-login02-wrapper .member-message .member-message-title::before {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 1px solid #EEEEEE;
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.member-login02-wrapper .member-message .message-wrapper {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.member-login02-wrapper .member-message .message-wrapper .message-center {
+  width: 493px;
+  border: 1px solid #987A4D;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 20px;
+}
+.member-login02-wrapper .member-message .message-wrapper .message-center .messages {
+  width: 363px;
+  height: 44px;
+  background: #EEEEEE;
+  border-radius: 15px 15px 15px 0;
+  margin-bottom: 80px;
+  position: relative;
+  line-height: 2;
+  padding-right: 20px;
+}
+.member-login02-wrapper .member-message .message-wrapper .message-center .messages h5 {
+  text-align: right;
+}
+.member-login02-wrapper .member-message .message-wrapper .message-center .messages p {
+  color: #EEEEEE;
+  position: absolute;
+  top: 100%;
+  right: 0%;
+}
+.member-login02-wrapper .member-message .message-wrapper .textarea-div {
+  width: 493px;
+  border: 1px solid #987A4D;
+  padding-top: 48px;
+}
+.member-login02-wrapper .member-message .message-wrapper .textarea-div h5 {
+  color: #EEEEEE;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.member-login02-wrapper .member-message .message-wrapper .textarea-div form textarea {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  width: 365px;
+  height: 170px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  font-family: "Roboto";
+}
+.member-login02-wrapper .btn_container {
+  width: 240px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=member_login02.css.map */

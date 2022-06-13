@@ -1,3 +1,317 @@
+<<<<<<< HEAD
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  /* 預設字體 */
+  font-size: 6.26%;
+  line-height: 1.6;
+}
+
+/* 以下為h1-h6 */
+/*字體寬度自己要加上喔*/
+h1 {
+  font-size: 64rem;
+}
+
+h2 {
+  font-size: 36rem;
+}
+
+h3 {
+  font-size: 32rem;
+}
+
+h4 {
+  font-size: 28rem;
+}
+
+h5 {
+  font-size: 24rem;
+}
+
+h6 {
+  font-size: 20rem;
+}
+
+p {
+  font-size: 18rem;
+}
+
+/* 以下為title */
+.title1 {
+  font-size: 120rem;
+}
+
+.title2 {
+  font-size: 48rem;
+}
+
+.title3 {
+  font-size: 40rem;
+}
+
+.title4 {
+  font-size: 22rem;
+}
+
+.title5 {
+  font-size: 16rem;
+}
+
+.title6 {
+  font-size: 14rem;
+}
+
+.btn_cta {
+  width: 380px;
+  height: 70px;
+}
+.btn_cta h5 {
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+}
+.btn_cta h5 .btn_radius {
+  color: #EEEEEE;
+  border: 2px solid #EEEEEE;
+  display: block;
+  text-decoration: none;
+  border-radius: 50px;
+}
+.btn_cta h5 .btn_radius:hover {
+  border: 0;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_general {
+  width: 380px;
+  height: 70px;
+}
+.btn_general h5 {
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+}
+.btn_general h5 .btn_square {
+  color: #EEEEEE;
+  border: 2px solid #EEEEEE;
+  display: block;
+  text-decoration: none;
+}
+.btn_general h5 .btn_square:hover {
+  border: 0;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  border: 2px solid linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_genera2 {
+  width: 380px;
+  height: 70px;
+}
+.btn_genera2 h5 {
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+}
+.btn_genera2 h5 .btn_square {
+  color: #EEEEEE;
+  border: 0;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  border: 2px solid linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  display: block;
+  text-decoration: none;
+}
+
+.btn_status {
+  width: 380px;
+  height: 70px;
+}
+.btn_status h5 {
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+}
+.btn_status h5 .btn_square {
+  color: #EEEEEE;
+  border: 2px solid #EEEEEE;
+  display: block;
+  text-decoration: none;
+}
+.btn_status h5 .btn_square:hover {
+  color: #00072E;
+  border: 0;
+  background: #EEEEEE;
+}
+
+.btn_main {
+  width: 200px;
+  height: 200px;
+}
+.btn_main .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  font-size: 24rem;
+}
+.btn_main .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btn_main .btn_circle_text .btn_circle:hover {
+  box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+body {
+  color: white;
+  background-color: white;
+}
+
+.wrapper {
+  width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #00072E;
+}
+.wrapper .icon_top {
+  margin-top: 64px;
+}
+.wrapper h2 {
+  margin: 40px 0 40px 0;
+}
+.wrapper .plant {
+  margin-top: 120px;
+}
+.wrapper main {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+.wrapper main .item_1 {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #987A4D;
+}
+.wrapper main .personal_information {
+  display: flex;
+  justify-content: space-around;
+  margin: 24px 0 64px 0;
+}
+.wrapper main .item_2 {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #987A4D;
+}
+.wrapper main .item_2 h6:first-child {
+  margin-left: 35px;
+}
+.wrapper main .item_2 h6:last-child {
+  margin-left: 410px;
+}
+.wrapper main .commodity {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 24px;
+  margin-top: 24px;
+  border-bottom: 2px solid #987A4D;
+}
+.wrapper main .commodity img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.wrapper main .commodity .align {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.wrapper main .commodity .align h6 {
+  line-height: 1.6;
+}
+.wrapper main .calculate {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/shopping_cart/Rectangle\ 517.png);
+  margin-top: 120px;
+}
+.wrapper main .calculate h5:first-child {
+  margin-left: 50px;
+}
+.wrapper main .calculate h5:last-child {
+  margin-left: 410px;
+}
+
+.btn_genera2 {
+  margin: 0 auto;
+  margin-top: 64px;
+}
+
+/*# sourceMappingURL=shopping_04.css.map */
+=======
 /* Error: expected selector.
  *   ,
  * 1 | <<<<<<< HEAD
@@ -16,3 +330,4 @@ body::before {
   border-bottom: 2px solid black;
   content: "Error: expected selector.\a   \2577 \a 1 \2502  <<<<<<< HEAD\d\a   \2502  ^\a   \2575 \a   src\\sass\\component\\_btn.scss 1:1  @import\a   src\\sass\\shopping_04.scss 5:9     root stylesheet";
 }
+>>>>>>> dev

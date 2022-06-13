@@ -18,7 +18,6 @@
         text-align:center;
         color:$white;
         position: relative;
-        line-height: 1.5;
         &::before{
             content: "";
             display:block;
@@ -32,38 +31,32 @@
         }
     }
     .input-area-member-register{
+        width:540px;
+        border:1px solid yellow;
+        margin: 0 auto;
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: $spacing_48px+24px;
-        .input_div{
-            margin-bottom: 40px;
-        }
-        .input_div_password{
-        margin-bottom: 40px;
-        }
-
         .account-check-message{
+            font-size:14px;
             color:$error_red;
-            margin-top: 10px;
-            margin-left: 30px;
-            opacity:0;
+            margin-top: 20px;
+            opacity:1;
         }
         .id-check-message{
+            font-size:14px;
             color:$error_red;
-            margin-top: 10px;
-            margin-left: 30px;
-            opacity:0;
+            margin-top: 20px;
+            opacity:1;
         }
         .password-wrong{
+            font-size:14px;
             color:$error_red;
-            margin-top: 10px;
-            margin-left: 30px;
+            margin-top: 20px;
             opacity:1;
-            display:none;
-
         }
-        
+     
     }
     .btn_container{
         width:380px;

@@ -18,7 +18,8 @@
     // }
     .member-login-title{
         // border:1px solid white;
-        padding:1px;
+        font-size: 24px;
+                // padding:1px;
         color:$white;
         text-align: center;
         line-height: 1.5;
@@ -38,6 +39,9 @@
     }
 
     .input-area-member-login{
+        width:550px;
+        // border:1px solid white;
+        margin: 0 auto;
         display:flex;
         // border:1px solid white;
         justify-content: space-around;
@@ -62,8 +66,8 @@
      }
     .btn_container{
         // border: 1px solid gold;
-        width: 380px;
-        height: 70px;
+        width: 260px;
+        height: 40px;
         margin: 0 auto;
         margin-top: 20px;
     }
