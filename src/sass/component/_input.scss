@@ -1,0 +1,111 @@
+//先用一層div包住 裡面有label 還有input
+$h5LableFontSize:14px;
+$inputWidth:260px;
+$inputHeight:40px;
+$inputFontSize:18px;
+$labelSpaceing:15px;
+.input_div{
+    box-sizing: content-box;
+    label{
+        display: block;
+        // border:1px solid yellow;
+        margin-bottom:$labelSpaceing;
+        h5{
+            color:$white;
+            font-size: $h5LableFontSize;
+        }
+    }
+    input{
+        display:block;
+        width:$inputWidth;
+        height:$inputHeight;
+        background-color:#191F42;
+        border:#191F42;
+        border-radius: 5px;
+        font-size:$inputFontSize;
+        padding-left: 15px;
+        color:$white;
+        &:focus{
+            background-color:#987A4D;
+            border:#987A4D;
+            outline:#987A4D;;
+
+        }
+
+    }
+
+}
+
+//先用一層div包住 裡面有label 還有input
+.input_div_password{
+    // border:1px solid pink;
+    position: relative;
+    label{
+        display:block;
+        // border:1px solid yellow;
+        margin-bottom:$labelSpaceing;
+        h5{
+            color:$white;
+            font-size:$h5LableFontSize;
+            // border:1px solid green;
+        }
+    }
+    input{
+            width:$inputWidth;
+            height:$inputHeight;
+            background-color:#191F42;
+            border:#191F42;
+            border-radius: 5px;
+            font-size:$inputFontSize;
+            padding-left: 15px;
+            color:$white;
+            &:focus{
+                background-color:#987A4D;
+                border:#987A4D;
+                outline:#987A4D;;
+    
+            }
+    }
+    i{
+        color:$white;
+        font-size:10rem;
+        position:absolute;
+        top:43%;
+        right:5%;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.input_div_full{
+    box-sizing: content-box;
+    label{
+        display: block;
+        // border:1px solid yellow;
+        margin-bottom:$labelSpaceing;
+       
+        h5{
+            color:$white;
+            font-size: $h5LableFontSize;
+        }
+    }
+    input{
+        display:block;
+        width:540px;
+        height:40px;
+        background-color:#191F42;
+        border:#191F42;
+        border-radius: 5px;
+        font-size:$inputFontSize;
+        padding-left: 15px;
+        color:$white;
+        &:focus{
+            background-color:#987A4D;
+            border:#987A4D;
+            outline:#987A4D;;
+        }
+
+    }
+
+}

@@ -1,0 +1,505 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  /* 預設字體 */
+  font-size: 6.26%;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* 以下為h1-h6 */
+/*字體寬度自己要加上喔*/
+h1 {
+  font-size: 64rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 36rem;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 32rem;
+  line-height: 1.6;
+}
+
+h4 {
+  font-size: 28rem;
+  line-height: 1.6;
+}
+
+h5 {
+  font-size: 24rem;
+  line-height: 1.6;
+}
+
+h6 {
+  font-size: 20rem;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
+/* 以下為title */
+.title1 {
+  font-size: 120rem;
+  line-height: 1.6;
+}
+
+.title2 {
+  font-size: 48rem;
+  line-height: 1.6;
+}
+
+.title3 {
+  font-size: 40rem;
+  line-height: 1.6;
+}
+
+.title4 {
+  font-size: 22rem;
+  line-height: 1.6;
+}
+
+.title5 {
+  font-size: 16rem;
+  line-height: 1.6;
+}
+
+.title6 {
+  font-size: 14rem;
+  line-height: 1.6;
+}
+
+.btn_cta {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.btn_cta:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_cta_submit {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  background: #00072E;
+  cursor: pointer;
+}
+.btn_cta_submit:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta_submit .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta_submit .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_general {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+.btn_general:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+}
+
+.btn_general_sumbmit {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  cursor: pointer;
+}
+.btn_general_sumbmit:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general_sumbmit .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+}
+
+.btn_status {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+.btn_status .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+}
+.btn_status .btn_square:hover {
+  background: #EEEEEE;
+  color: #00072E;
+}
+
+.btn_status_submit {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  padding: 0;
+  cursor: pointer;
+}
+.btn_status_submit .btn_square {
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+}
+.btn_status_submit .btn_square:hover {
+  background: #EEEEEE;
+  color: #00072E;
+}
+
+.btn_main {
+  width: 200px;
+  height: 200px;
+}
+.btn_main .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  font-size: 24rem;
+}
+.btn_main .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btn_main .btn_circle_text .btn_circle:hover {
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_main_w {
+  width: 200px;
+  height: 200px;
+}
+.btn_main_w .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  font-size: 24rem;
+}
+.btn_main_w .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #00072E;
+  background: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btn_main_w .btn_circle_text .btn_circle:hover {
+  box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+  color: #EEEEEE;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.input_div {
+  box-sizing: content-box;
+}
+.input_div label {
+  display: block;
+  margin-bottom: 15px;
+}
+.input_div label h5 {
+  color: #EEEEEE;
+  font-size: 14px;
+}
+.input_div input {
+  display: block;
+  width: 260px;
+  height: 40px;
+  background-color: #191F42;
+  border: #191F42;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 15px;
+  color: #EEEEEE;
+}
+.input_div input:focus {
+  background-color: #987A4D;
+  border: #987A4D;
+  outline: #987A4D;
+}
+
+.input_div_password {
+  position: relative;
+}
+.input_div_password label {
+  display: block;
+  margin-bottom: 15px;
+}
+.input_div_password label h5 {
+  color: #EEEEEE;
+  font-size: 14px;
+}
+.input_div_password input {
+  width: 260px;
+  height: 40px;
+  background-color: #191F42;
+  border: #191F42;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 15px;
+  color: #EEEEEE;
+}
+.input_div_password input:focus {
+  background-color: #987A4D;
+  border: #987A4D;
+  outline: #987A4D;
+}
+.input_div_password i {
+  color: #EEEEEE;
+  font-size: 10rem;
+  position: absolute;
+  top: 43%;
+  right: 5%;
+}
+.input_div_password i:hover {
+  cursor: pointer;
+}
+
+.input_div_full {
+  box-sizing: content-box;
+}
+.input_div_full label {
+  display: block;
+  margin-bottom: 15px;
+}
+.input_div_full label h5 {
+  color: #EEEEEE;
+  font-size: 14px;
+}
+.input_div_full input {
+  display: block;
+  width: 540px;
+  height: 40px;
+  background-color: #191F42;
+  border: #191F42;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 15px;
+  color: #EEEEEE;
+}
+.input_div_full input:focus {
+  background-color: #987A4D;
+  border: #987A4D;
+  outline: #987A4D;
+}
+
+.member-register {
+  width: 1080px;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+.member-register .member-register-title {
+  text-align: center;
+  color: #EEEEEE;
+  position: relative;
+}
+.member-register .member-register-title::before {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 1px solid #EEEEEE;
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.member-register .input-area-member-register {
+  width: 540px;
+  border: 1px solid yellow;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+.member-register .input-area-member-register .account-check-message {
+  font-size: 14px;
+  color: #8B2323;
+  margin-top: 20px;
+  opacity: 1;
+}
+.member-register .input-area-member-register .id-check-message {
+  font-size: 14px;
+  color: #8B2323;
+  margin-top: 20px;
+  opacity: 1;
+}
+.member-register .input-area-member-register .password-wrong {
+  font-size: 14px;
+  color: #8B2323;
+  margin-top: 20px;
+  opacity: 1;
+}
+.member-register .btn_container {
+  width: 380px;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+
+.displayblock {
+  display: block;
+}
+
+#password_div {
+  opacity: 1;
+}
+
+#checkPassword_div {
+  opacity: 1;
+}
+
+#lastName_div {
+  opacity: 1;
+}
+
+#name_div {
+  opacity: 1;
+}
+
+#email_div {
+  opacity: 1;
+}
+
+#cell_div {
+  opacity: 1;
+}
+
+#businessNumber_div {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=member_signup01.css.map */

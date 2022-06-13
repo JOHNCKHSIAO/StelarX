@@ -1,51 +1,105 @@
-
-
+//宣告一些變數
+$btnFontSize:14px;
+$btnWidth:200px;
+$btnHeight:36px;
+$btnFontWeight:600;
 //這是圓角按鈕
 .btn_cta {
-    width: 380px;
-    height: 70px;
-
-    h5 {
-        text-align: center;
-        line-height: 70px;
-        font-weight: 600;
-        .btn_radius {
-            color: $white;
-            border: 2px solid $white;
-            display: block;
-            text-decoration: none;
-            border-radius: 50px;
-            &:hover {
-                border: 0;
-                background: $linear;
-            }
-        }
+    width: $btnWidth;
+    height: $btnHeight; 
+    border: 1px solid $white;
+    border-radius: 50px;
+    cursor: pointer;
+    &:hover {
+        border-color: $blue;
+        background: $linear;
     }
+    .aLink{
+        display: block;
+        // border:1px solid yellow;
+        margin: 0 auto;
+        text-decoration: none;
+        font-weight: $btnFontWeight;
+        line-height: $btnHeight;
+        color: $white;
+        font-size: $btnFontSize;
+        text-align: center;
+        position: relative; 
+        img{
+            width:10px;
+            position: absolute;
+            top:36%;
+            right:10%
+        } 
+    }
+   
+  
 }
+
+//這是圓角按鈕
+//用button  sumbit表單用的
+
+.btn_cta_submit {
+    width: $btnWidth;
+    height:$btnHeight; 
+    border: 1px solid $white;
+    border-radius: 50px;
+    background: $blue;
+    cursor: pointer;
+    &:hover {
+        border-color: $blue;
+        background: $linear;
+    }
+    .aLink{
+        display: block;
+        // border:1px solid yellow;
+        margin: 0 auto;
+        text-decoration: none;
+        font-weight: $btnFontWeight;
+        line-height:$btnHeight;
+        color: $white;
+        font-size: $btnFontSize;
+        text-align: center;
+        position: relative; 
+        img{
+            width:10px;
+            position: absolute;
+            top:36%;
+            right:10%
+        } 
+    }
+   
+  
+}
+
+
+
+
+
 //這是方形按鈕 有漸層
 .btn_general {
-    width: 380px;
-    height: 70px;
-
-    h5 {
+    width:$btnWidth;
+    height:$btnHeight; 
+    border: 1px solid $white;
+    cursor: pointer;
+    &:hover {
+        border-color: $blue;
+        background: $linear;
+    }
+    .btn_square{
+        display: block;
+        // border:1px solid yellow;
+        margin: 0 auto;
+        text-decoration: none;
+        font-weight: $btnFontWeight;
+        line-height: $btnHeight;
+        color: $white;
+        font-size: $btnFontSize;
         text-align: center;
-        line-height: 70px;
-        font-weight: 600;
-        .btn_square {
-            color: $white;
-            border: 2px solid $white;
-            display: block;
-            text-decoration: none;
-
-            &:hover {
-                border: 0;
-                background: $linear;
-                border: 2px solid $linear;
-            }
-        }
     }
 }
 
+<<<<<<< HEAD
 .btn_genera2 {
     width: 380px;
     height: 70px;
@@ -64,30 +118,85 @@
         }
     }
 }
+=======
+////方形漸層按鈕 submit用
+
+.btn_general_sumbmit {
+    width: $btnWidth;
+    height: $btnHeight; 
+    border: 1px solid $white;
+    background: $blue;
+    cursor: pointer;
+    &:hover {
+        border-color: $blue;
+        background: $linear;
+    }
+    .btn_square{
+        display: block;
+        // border:1px solid yellow;
+        margin: 0 auto;
+        text-decoration: none;
+        font-weight: $btnFontWeight;
+        line-height: $btnHeight;
+        color: $white;
+        font-size: $btnFontSize;
+        text-align: center;
+    }
+}
+
+
+
+
+>>>>>>> dev
 ////這是方形按鈕 無漸層
 
 .btn_status {
-    width: 380px;
-    height: 70px;
-
-    h5 {
+    width: $btnWidth;
+    height:$btnHeight; 
+    border: 1px solid $white;
+    cursor: pointer;
+    .btn_square{
+        display: block;
+        // border:1px solid yellow;
+        margin: 0 auto;
+        text-decoration: none;
+        font-weight: $btnFontWeight;
+        line-height: $btnHeight;
+        color: $white;
+        font-size: $btnFontSize;
         text-align: center;
-        line-height: 70px;
-        font-weight: 600;
-        .btn_square {
-            color: $white;
-            border: 2px solid $white;
-            display: block;
-            text-decoration: none;
-
-            &:hover {
-                color: $blue;
-                border: 0;
-                background: $white;
-            }
+        &:hover {
+            background: $white;
+            color: $blue;
         }
     }
 }
+
+////這是方形按鈕 無漸層 sumbmit專用
+
+.btn_status_submit {
+    width: $btnWidth;
+    height:$btnHeight; 
+    border: 1px solid $white;
+    background: $blue;
+    padding: 0;
+    cursor: pointer;
+    .btn_square{
+        width:100%;
+        height:100%;
+        font-weight: $btnFontWeight;
+        line-height: $btnHeight;
+        color: $white;
+        font-size: $btnFontSize;
+        text-align: center;
+        &:hover {
+            background: $white;
+            color: $blue;
+        }
+    }
+}
+
+
 
 //這是導覽頁圓型按鈕 有漸層
 .btn_main {
@@ -98,21 +207,52 @@
         text-align: center;
         line-height: 200px;
         font-weight: 600;
+        font-size: 24rem;
+
+        .btn_circle {
+            width: 100%;
+            height: 100%;
+            display: block;
+
+            color: $white;
+
+            text-decoration: none;
+            border-radius: 50%;
+
+            &:hover {
+                // box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+                background: $linear;
+            }
+        }
+    }
+}
+
+//這是導覽頁圓型按鈕 有漸層 //前導頁專用
+.btn_main_w {
+    width: 200px;
+    height: 200px;
+
+    .btn_circle_text {
+        text-align: center;
+        line-height: 200px;
+        font-weight: 600;
         width: 200px;
         height: 200px;
-        font-size:24rem ;
+        font-size:24rem;
+        
         .btn_circle {
             width: 100%;
             height: 100%;
             display: block;
          
-            color: $white;
-            
+            color: $blue;
+            background:$white;
             text-decoration: none;
             border-radius: 50%;
 
             &:hover {
                 box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+                color: $white;
                 background: $linear;
             }
         }
