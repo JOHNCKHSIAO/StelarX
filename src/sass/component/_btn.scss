@@ -99,6 +99,26 @@ $btnFontWeight:600;
     }
 }
 
+<<<<<<< HEAD
+.btn_genera2 {
+    width: 380px;
+    height: 70px;
+
+    h5 {
+        text-align: center;
+        line-height: 70px;
+        font-weight: 600;
+        .btn_square {
+            color: $white;
+            border: 0;
+            background: $linear;
+            border: 2px solid $linear;
+            display: block;
+            text-decoration: none;
+        }
+    }
+}
+=======
 ////方形漸層按鈕 submit用
 
 .btn_general_sumbmit {
@@ -127,6 +147,7 @@ $btnFontWeight:600;
 
 
 
+>>>>>>> dev
 ////這是方形按鈕 無漸層
 
 .btn_status {
