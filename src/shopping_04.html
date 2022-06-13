@@ -4,12 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shopping_04.css">
     <title></title>
 </head>
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
-
+    <div class="wrapper">
+        <img class="icon_top" src="./images/shopping_cart/icon.png" alt="">
+        <h2>兌換完成</h2>
+        <h5>取貨編號 : ITEM0001 </h5>
+        <img class="plant" src="./images/shopping_cart/Group 1245.png" alt="">
+        <main>
+            <div class="item_1">
+                <h6>取貨日期</h6>
+                <h6>取貨人</h6>
+                <h6>電話</h6>
+                <h6>取貨星球</h6>
+            </div>
+            <div class="personal_information">
+                <h6>2052/07/15</h6>
+                <h6>蘇貞昌</h6>
+                <h6>0987878787</h6>
+                <h6>地球</h6>
+            </div>
+            <div class="item_2">
+                <h6>商品</h6>
+                <h6>數量</h6>
+            </div>
+            <div class="commodity">
+                <img src="./images/shopping_cart/t-shirt_01.jpg" alt="">
+                <div class="align">
+                    <h6>LOGO 印花短袖Ｔ恤<br>(FREE SIZE 中性款）</h6>
+                    <h6>1</h6>
+                </div>
+            </div>
+            <div class="commodity">
+                <img src="./images/shopping_cart/candle_01.png" alt="">
+                <div class="align">
+                    <h6>歐若拉香氛</h6>
+                    <h6>1</h6>
+                </div>
+            </div>
+            <div class="calculate">
+                <h5>剩餘哩數</h5>
+                <h5>33,000 哩</h5>
+            </div>
+        </main>
+    </div>
+    <div class="btn_genera2">
+        <h5>
+            <a class="btn_square" href="#">會員管理</a>
+        </h5>
+    </div>
     @@include("./layout/footer.html")
 </body>
 </html>
