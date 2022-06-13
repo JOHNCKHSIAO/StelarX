@@ -14,25 +14,92 @@
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
-    <div class="" index1440>
+    <div class="index1440">
         <div class="index1080">
             <!-- 星球旋轉 -->
             <div class="index-showcase">
-                <span class="title1">MARS</span>
-                <h2>選擇你的星際旅程</h2>
-                <h5>火星擁有豐富資源, 僅次於地球的純熟生態，成為第一個開發且高成熟業區的商務行星。</h5>
-            <p><a href="#">看更多時刻表</a></p>
-            
+                <div class="title1 index_gold index_tac">MARS</div>
+                <h2 class="index_white index_tac">選擇你的星際旅程</h2>
+                <h5 class="index_white index_tac">火星擁有豐富資源, 僅次於地球的純熟生態，成為第一個開發且高成熟業區的商務行星。</h5>
+                <p class="index_white index_tac"><a class="index_white index_tac" href="#">看更多時刻表</a></p>
+
             </div>
-            <div class="index-brief"></div>
-            <div class="index-features"></div>
-            <div class="index-video"></div>
-            <div class="index-quiz"></div>
-            <div class="index-news"></div>
+            <!-- 太空運輸領航者 -->
+            <div class="index-brief">
+                <h3 class="index_white index_mt120 index_tac index_fw500">太空運輸領航者</h3>
+                <h6 class="index_white index_mt40 index_tac index_fw500">the expert of space exploration</h6>
+                <h6 class="index_white index_tac index_fw500">乘載你的太空夢想 Carry Your Dreams</h6>
+                <h6 class="index_white index_tac index_fw500">市場唯一第一家以商務客群為主的火箭預約系統</h6>
+                <h6 class="index_white index_tac index_fw500">唯一承包八大行星航空站點的太空運輸品牌</h6>
+                <h3 class="index_white index_mt40 index_tac index_fw700">WELCOME ON BOARD!</h3>
+
+            </div>
+
+            <!-- 四大服務icon -->
+            <div class="index-features">
+                <div class="featuresFlex index_mt120">
+                    <div class="featIcon">
+                        <img src="images/index/features1.png" alt="">
+                        <h5 class="index_gold index_fw500 index_mt24">選擇航程星球</h5>
+                    </div>
+                    <div class="featIcon">
+                        <img src="images/index/features2.png" alt="">
+                        <h5 class="index_gold index_fw500 index_mt24">頂級商務艙別</h5>
+                    </div>
+                    <div class="featIcon">
+                        <img src="images/index/features3.png" alt="">
+                        <h5 class="index_gold index_fw500 index_mt24">盡享星際旅程</h5>
+                    </div>
+                    <div class="featIcon">
+                        <img src="images/index/features4.png" alt="">
+                        <h5 class="index_gold index_fw500 index_mt24">你的命定星球</h5>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 影片插入 -->
+            <div class="index-video">
+                <h6 class="index_white index_taL index_fw500">Stelar X 最新研發的 Merlin - Z 型豪華客艙火箭，</h6>
+                <h6 class="index_white index_taL index_fw500">全長約 117 米，相當於2座自由女神。</h6>
+                <video id="index-youtube" src="images/index/Crew Dragon _ Interior (720p).mp4" width="1080"
+                    controls="controls" poster=""></video>
+
+                    <!-- <video id="myMovie" width="640">
+                        <source src="images/index/Crew Dragon _ Interior (720p).mp4">
+                    </video> -->
+
+                <!-- 火箭介紹按鈕 -->
+
+                <!-- 火箭介紹按鈕 -->
+
+            </div>
+            <div class="index-quiz">
+                <h1 class="index_tac index_white">Select Your Planet</h1>
+                <h6 class="index_tac index_white">除了人類居住的地球，宇宙中還有數不清的美麗星球等著被發現</h6>
+                <h6 class="index_tac index_white">Stellar X 讓顧客不再對環遊太空只是夢想, 而是實現你的星際旅程</h6>
+                <h6 class="index_tac index_white">找尋你的命定星球！！</h6>
+                <!-- 星際測驗按鈕 -->
+                <!-- 星際測驗按鈕 -->
+                <div class="quizPlanetFlex">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="index-news">
+                <div class="title1">NEWS</div>
+
+            </div>
             <div class="index-tour"></div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 
+    <script src="js/index.js"></script>
     @@include("./layout/footer.html")
 </body>
 

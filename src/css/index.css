@@ -1,3 +1,61 @@
+.index_mt120 {
+  margin-top: 120px;
+}
 
+.index_mt24 {
+  margin-top: 24px;
+}
+
+.index_mt40 {
+  margin-top: 40px;
+}
+
+.index_white {
+  color: #EEEEEE;
+}
+
+.index_gold {
+  color: #987A4D;
+}
+
+.index_tac {
+  text-align: center;
+}
+
+.index_taL {
+  text-align: left;
+}
+
+.index_fw400 {
+  font-weight: 400;
+}
+
+.index_fw500 {
+  font-weight: 500;
+}
+
+.index_fw700 {
+  font-weight: 700;
+}
+
+.index1440 .index1080 {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.index-features .featuresFlex {
+  display: flex;
+  justify-content: space-around;
+}
+.index-features .featuresFlex .featIcon {
+  border: 1px solid #EEEEEE;
+  width: 150px;
+}
+.index-features .featuresFlex .featIcon img {
+  margin: 0 auto;
+  display: block;
+  width: 76px;
+  height: 76px;
+}
 
 /*# sourceMappingURL=index.css.map */
