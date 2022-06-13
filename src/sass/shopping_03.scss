@@ -3,3 +3,162 @@
 @import 'base/fontSet';
 @import 'mixin/mixin';
 @import 'component/btn';
+body{
+    color: white;
+}
+.shopping-list{
+    width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+    h3{
+        
+    }
+    .commodity{
+        .on_title{
+            padding: 64px 0 24px 0;
+            border-bottom: 2px solid #987A4D;
+            display: flex;
+            h5:first-child{
+                padding-left: 75px;
+            }
+            h5:nth-child(2){
+                padding-left: 560px;
+            }
+            h5:last-child{
+                padding-left: 240px;
+            }
+        }
+        ul{
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 2px solid #987A4D;
+                padding: 64px 0;
+                img{
+                    display: block;
+                    height: 200px;
+                    width: 200px;
+                }
+                .wrap{
+                    display: flex;
+                    width: 800px;
+                    justify-content: space-between;
+                    h5{
+                    }
+                    .wrap_in{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 420px;
+                        .click_num{
+                            display: flex;
+                            justify-content: space-between;
+                            width: 120px;
+                            .reduce{
+                                display: block;
+                                width: 27px;
+                                height: 27px;
+                                border-radius: 13.5px;
+                                background-color: #987A4D;
+                                font-size: 40px;
+                                text-align: center;
+                                line-height: 20px;
+                            }
+                            .add{
+                                display: block;
+                                width: 27px;
+                                height: 27px;
+                                border-radius: 13.5px;
+                                background-color: #987A4D;
+                                font-size: 30px;
+                                text-align: center;
+                                line-height: 27px;
+                            }
+                        }
+                        h3:last-child{
+                            margin-left: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h2{
+        text-align: right;
+        margin-top: 64px;
+        color: #987A4D;
+    }
+    .button_in{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        color: white;
+        h2{
+            color: white;
+        }
+    }   
+}
+.com-form{
+    width: 1080px;
+    margin: 0 auto;
+    margin-top: 120px;
+    h3{
+        text-align: center;
+    }
+    .lattice_1{
+        margin-top: 64px;
+        h5{
+            padding-left: 10px;
+        }
+        .lattice_in{
+            background-color: #191F42;
+            height: 85px;
+            margin-top: 24px;
+            border-radius: 10px;
+            h5{
+                line-height: 85px;
+                padding-left: 10px;
+            }
+        }
+    }
+    .lattice_2{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+        .lattice_left{
+            h5{
+                padding-left: 10px;
+            }
+            .lattice{
+                width: 530px;
+                height: 85px;
+                border: 1px solid white;
+                border-radius: 10px;
+                margin-top: 24px;
+                h6{
+                    font-size: 50px;
+                    right: 0;
+                }
+            }
+        }
+        .lattice_right{
+            h5{
+                padding-left: 10px;
+            }
+            .lattice{
+                width: 530px;
+                height: 85px;
+                border: 1px solid white;
+                border-radius: 10px;
+                margin-top: 24px;
+                h6{
+
+                }
+            }
+        }
+    }
+    .btn_genera2{
+        margin: 0 auto;
+        margin-top: 64px;
+    }
+}
