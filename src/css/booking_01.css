@@ -130,26 +130,16 @@ p {
 }
 
 .btn_cta h5 {
-<<<<<<< HEAD
-=======
   font-size: 14px;
->>>>>>> dev
   text-align: center;
   line-height: 70px;
   font-weight: 600;
 }
 .btn_cta h5 .btn_radius {
-<<<<<<< HEAD
-  width: 380px;
-  height: 70px;
-  color: #EEEEEE;
-  border: 2px solid #EEEEEE;
-=======
   width: 200px;
   height: 70px;
   color: #EEEEEE;
   border: 1px solid #EEEEEE;
->>>>>>> dev
   display: block;
   text-decoration: none;
   border-radius: 50px;
@@ -160,18 +150,7 @@ p {
 }
 
 .btn_general h5 {
-<<<<<<< HEAD
-  text-align: center;
-  line-height: 70px;
-  font-weight: 600;
-}
-.btn_general h5 .btn_square {
-  width: 380px;
-  height: 70px;
-  color: #EEEEEE;
-  border: 2px solid #EEEEEE;
-=======
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   line-height: 46px;
   font-weight: 600;
@@ -181,7 +160,6 @@ p {
   height: 46px;
   color: #EEEEEE;
   border: 1px solid #EEEEEE;
->>>>>>> dev
   display: block;
   text-decoration: none;
 }
@@ -191,29 +169,18 @@ p {
 }
 
 .btn_status {
-<<<<<<< HEAD
-  width: 380px;
-  height: 70px;
-}
-.btn_status h5 {
-=======
   width: 200px;
   height: 70px;
 }
 .btn_status h5 {
   font-size: 14px;
->>>>>>> dev
   text-align: center;
   line-height: 70px;
   font-weight: 600;
 }
 .btn_status h5 .btn_square {
   color: #EEEEEE;
-<<<<<<< HEAD
-  border: 2px solid #EEEEEE;
-=======
   border: 1px solid #EEEEEE;
->>>>>>> dev
   display: block;
   text-decoration: none;
 }
@@ -272,8 +239,6 @@ p {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
-<<<<<<< HEAD
-=======
 .booking-process {
   width: 900px;
   display: flex;
@@ -379,5 +344,4 @@ p {
   color: #eeeeee;
 }
 
->>>>>>> dev
 /*# sourceMappingURL=booking_01.css.map */
