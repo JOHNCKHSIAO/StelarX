@@ -130,15 +130,16 @@ p {
 }
 
 .btn_cta h5 {
+  font-size: 14px;
   text-align: center;
   line-height: 70px;
   font-weight: 600;
 }
 .btn_cta h5 .btn_radius {
-  width: 380px;
+  width: 200px;
   height: 70px;
   color: #EEEEEE;
-  border: 2px solid #EEEEEE;
+  border: 1px solid #EEEEEE;
   display: block;
   text-decoration: none;
   border-radius: 50px;
@@ -149,15 +150,16 @@ p {
 }
 
 .btn_general h5 {
+  font-size: 18px;
   text-align: center;
-  line-height: 70px;
+  line-height: 46px;
   font-weight: 600;
 }
 .btn_general h5 .btn_square {
-  width: 380px;
-  height: 70px;
+  width: 250px;
+  height: 46px;
   color: #EEEEEE;
-  border: 2px solid #EEEEEE;
+  border: 1px solid #EEEEEE;
   display: block;
   text-decoration: none;
 }
@@ -167,17 +169,18 @@ p {
 }
 
 .btn_status {
-  width: 380px;
+  width: 200px;
   height: 70px;
 }
 .btn_status h5 {
+  font-size: 14px;
   text-align: center;
   line-height: 70px;
   font-weight: 600;
 }
 .btn_status h5 .btn_square {
   color: #EEEEEE;
-  border: 2px solid #EEEEEE;
+  border: 1px solid #EEEEEE;
   display: block;
   text-decoration: none;
 }
@@ -236,45 +239,109 @@ p {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
-body {
-  position: relative;
-  background-image: url(../img/bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: auto;
-}
-
-.wrapper {
-  width: 1080px;
-  height: 100vh;
-  margin: 0 auto;
-  position: relative;
-}
-
-.intro {
-  position: absolute;
-  width: 1080px;
+.booking-process {
+  width: 900px;
   display: flex;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   justify-content: space-between;
-  align-items: center;
+  margin: 0 auto;
 }
-.intro .title {
+.booking-process .booking-process_each {
+  color: #987A4D;
+}
+.booking-process .booking-process_each:not(:last-child) .process-circle ::after {
+  content: "";
+  width: 75px;
+  border-bottom: #987A4D dashed;
+  position: absolute;
+  top: 50%;
+  right: -110%;
+}
+.booking-process .booking-process_each .main {
+  background-color: #987A4D;
   color: #eeeeee;
-  align-items: center;
 }
-.intro .title img {
-  width: 350px;
-  margin: 35px 0;
+.booking-process .booking-process_each .process-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: #987A4D 2px solid;
+  border-radius: 50px;
+  margin-bottom: 16px;
 }
-.intro .enter {
-  display: flex;
+.booking-process .booking-process_each .process-circle h2 {
+  font-size: 28px;
+  line-height: 80px;
+  text-align: center;
 }
-.intro .enter .btn_main_w:nth-child(2) {
-  margin-left: 56px;
+.booking-process .booking-process_each h6 {
+  font-size: 18px;
+  text-align: center;
+  color: #eeeeee;
 }
 
-/*# sourceMappingURL=intro.css.map */
+.booking-status {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 900px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.booking-status .selector_title {
+  position: relative;
+}
+.booking-status .selector_title ::after {
+  content: "";
+  height: 1px;
+  width: 150px;
+  border-bottom: #eeeeee solid;
+  position: absolute;
+  top: 120%;
+  right: 41.5%;
+}
+.booking-status .selector_title h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #eeeeee;
+}
+.booking-status .selector {
+  width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.booking-status .btn_general {
+  text-align: center;
+}
+.booking-status p {
+  font-size: 16px;
+  color: #EEEEEE;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.booking-selection {
+  width: 900px;
+  display: flex;
+  color: #eeeeee;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.booking-selection .selection-setting {
+  width: 450px;
+}
+.booking-selection .title2 {
+  font-family: Roboto Serif;
+}
+.booking-selection h5 {
+  padding-bottom: 40px;
+}
+.booking-selection a {
+  font-size: 28px;
+  color: #eeeeee;
+}
+
+/*# sourceMappingURL=booking_01.css.map */
