@@ -9,6 +9,7 @@
 .btn_cta {
 
     h5 {
+        font-size: 14px;
         text-align: center;
         line-height: 70px;
         font-weight: 600;
@@ -16,10 +17,10 @@
         
 
         .btn_radius {
-            width: 380px;
+            width: 200px;
             height: 70px;
             color: $white;
-            border: 2px solid $white;
+            border: 1px solid $white;
             display: block;
             text-decoration: none;
             border-radius: 50px;
@@ -37,16 +38,16 @@
 
 
     h5 {
+        font-size: 18px;
         text-align: center;
-        line-height: 70px;
+        line-height: 46px;
         font-weight: 600;
 
         .btn_square {
-
-            width: 380px;
-            height: 70px;
+            width: 250px;
+            height: 46px;
             color: $white;
-            border: 2px solid $white;
+            border: 1px solid $white;
             display: block;
             text-decoration: none;
 
@@ -62,17 +63,18 @@
 ////這是方形按鈕 無漸層
 
 .btn_status {
-    width: 380px;
+    width: 200px;
     height: 70px;
 
     h5 {
+        font-size: 14px;
         text-align: center;
         line-height: 70px;
         font-weight: 600;
 
         .btn_square {
             color: $white;
-            border: 2px solid $white;
+            border: 1px solid $white;
             display: block;
             text-decoration: none;
 
