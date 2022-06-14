@@ -1,33 +1,12 @@
 //宣告一些變數
-$btnFontSize:14px;
-$btnWidth:200px;
-$btnHeight:36px;
+$btnFontSize:16px;
+$btnWidth:250px;
+$btnHeight:46px;
 $btnFontWeight:600;
+
 //這是圓角按鈕
+//超連結跟div共用這個樣式
 .btn_cta {
-
-    h5 {
-        font-size: 14px;
-        text-align: center;
-        line-height: 70px;
-        font-weight: 600;
-
-        
-
-        .btn_radius {
-            width: 200px;
-            height: 70px;
-            color: $white;
-            border: 1px solid $white;
-            display: block;
-            text-decoration: none;
-            border-radius: 50px;
-
-            &:hover {
-                border-color: $blue;
-                background: $linear;
-            }
-        }
     width: $btnWidth;
     height: $btnHeight; 
     border: 1px solid $white;
@@ -56,12 +35,10 @@ $btnFontWeight:600;
         } 
     }
    
-  
 }
 
 //這是圓角按鈕
 //用button  sumbit表單用的
-
 .btn_cta_submit {
     width: $btnWidth;
     height:$btnHeight; 
@@ -91,47 +68,12 @@ $btnFontWeight:600;
             right:10%
         } 
     }
-   
-  
 }
 
+//方形有漸層按鈕
+//超連結跟div共用這一樣式
 
-
-
-
-//這是方形按鈕 有漸層
 .btn_general {
-<<<<<<< HEAD
-
-
-    h5 {
-        font-size: 16px;
-        text-align: center;
-        line-height: 46px;
-        font-weight: 600;
-
-        .btn_square {
-            width: 250px;
-            height: 46px;
-            color: $white;
-            border: 1px solid $white;
-            display: block;
-            text-decoration: none;
-
-            &:hover {
-                border-color: $blue;
-                background: $linear;
-
-            }
-        }
-    }
-}
-
-////這是方形按鈕 無漸層
-
-.btn_status {
-    width: 200px;
-=======
     width:$btnWidth;
     height:$btnHeight; 
     border: 1px solid $white;
@@ -153,32 +95,7 @@ $btnFontWeight:600;
     }
 }
 
-<<<<<<< HEAD
-.btn_genera2 {
-    width: 380px;
->>>>>>> 3aa802d2886066188706a95c72ce2d3c414247e6
-    height: 70px;
 
-    h5 {
-        font-size: 14px;
-        text-align: center;
-        line-height: 70px;
-        font-weight: 600;
-        .btn_square {
-            color: $white;
-<<<<<<< HEAD
-            border: 1px solid $white;
-=======
-            border: 0;
-            background: $linear;
-            border: 2px solid $linear;
->>>>>>> 3aa802d2886066188706a95c72ce2d3c414247e6
-            display: block;
-            text-decoration: none;
-        }
-    }
-}
-=======
 ////方形漸層按鈕 submit用
 
 .btn_general_sumbmit {
@@ -207,7 +124,6 @@ $btnFontWeight:600;
 
 
 
->>>>>>> dev
 ////這是方形按鈕 無漸層
 
 .btn_status {
@@ -255,6 +171,8 @@ $btnFontWeight:600;
         }
     }
 }
+
+
 
 
 
