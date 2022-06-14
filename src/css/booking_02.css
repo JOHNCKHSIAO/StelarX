@@ -1,0 +1,509 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  /* 預設字體 */
+  font-size: 6.26%;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* 以下為h1-h6 */
+/*字體寬度自己要加上喔*/
+h1 {
+  font-size: 64rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 36rem;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 32rem;
+  line-height: 1.6;
+}
+
+h4 {
+  font-size: 28rem;
+  line-height: 1.6;
+}
+
+h5 {
+  font-size: 24rem;
+  line-height: 1.6;
+}
+
+h6 {
+  font-size: 20rem;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
+/* 以下為title */
+.title1 {
+  font-size: 120rem;
+  line-height: 1.6;
+}
+
+.title2 {
+  font-size: 48rem;
+  line-height: 1.6;
+}
+
+.title3 {
+  font-size: 40rem;
+  line-height: 1.6;
+}
+
+.title4 {
+  font-size: 22rem;
+  line-height: 1.6;
+}
+
+.title5 {
+  font-size: 16rem;
+  line-height: 1.6;
+}
+
+.title6 {
+  font-size: 14rem;
+  line-height: 1.6;
+}
+
+.btn_cta {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.btn_cta:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_cta_submit {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  background: #00072E;
+  cursor: pointer;
+}
+.btn_cta_submit:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta_submit .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta_submit .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_general {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+.btn_general:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+}
+
+.btn_general_sumbmit {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  cursor: pointer;
+}
+.btn_general_sumbmit:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general_sumbmit .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+}
+
+.btn_status {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+.btn_status .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+}
+.btn_status .btn_square:hover {
+  background: #EEEEEE;
+  color: #00072E;
+}
+
+.btn_status_submit {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  padding: 0;
+  cursor: pointer;
+}
+.btn_status_submit .btn_square {
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+}
+.btn_status_submit .btn_square:hover {
+  background: #EEEEEE;
+  color: #00072E;
+}
+
+.btn_main {
+  width: 200px;
+  height: 200px;
+}
+.btn_main .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  font-size: 24rem;
+}
+.btn_main .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btn_main .btn_circle_text .btn_circle:hover {
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_main_w {
+  width: 200px;
+  height: 200px;
+}
+.btn_main_w .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  font-size: 24rem;
+}
+.btn_main_w .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #00072E;
+  background: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btn_main_w .btn_circle_text .btn_circle:hover {
+  box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+  color: #EEEEEE;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+body {
+  background-color: #fff;
+  color: #fff;
+}
+
+.wrapper {
+  width: 1080px;
+  height: 1925px;
+  background-color: #191F42;
+  margin: 0 auto;
+}
+
+.booking-status {
+  padding-top: 64px;
+  text-align: center;
+}
+.booking-status h2::after {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  content: "";
+  border-bottom: 2px solid white;
+}
+.booking-status .status_out {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+.booking-status .status_out .status_left {
+  text-align: center;
+}
+.booking-status .status_out .status_left .btn {
+  width: 350px;
+  height: 75px;
+  color: white;
+  border: none;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  cursor: pointer;
+  margin-top: 24px;
+}
+.booking-status .status_out .status_right {
+  text-align: center;
+}
+.booking-status .status_out .status_right .btn {
+  width: 350px;
+  height: 75px;
+  color: white;
+  border: none;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.booking-cabin {
+  margin-top: 80px;
+  font-weight: 700;
+}
+.booking-cabin h2 {
+  text-align: center;
+}
+.booking-cabin h2::after {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  content: "";
+  border-bottom: 2px solid white;
+}
+.booking-cabin .btn_out {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+.booking-cabin .btn_out .btn {
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.booking-cabin .btn_out .btn img {
+  display: block;
+  width: 100%;
+}
+.booking-cabin .btn_out .btn .word_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.booking-cabin .btn_out .btn .black_text {
+  color: black;
+}
+.booking-cabin .btn_out .btn .black_text h2::after {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  content: "";
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.booking-calendar {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 120px;
+}
+.booking-calendar h2 {
+  text-align: center;
+}
+
+.container {
+  width: 700px;
+  height: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  /* background-color: #fff; */
+}
+
+.fc .fc-toolbar-title {
+  padding-left: 100px;
+}
+
+.fc-daygrid-dot-event .fc-event-title {
+  color: #00FF0A;
+}
+
+.fc-daygrid-event-dot {
+  display: none;
+}
+
+.fc-direction-ltr .fc-daygrid-event .fc-event-time {
+  display: none;
+}
+
+.fc-direction-ltr .fc-button-group > .fc-button:not(:last-child) {
+  width: 20px;
+}
+
+.fc-direction-ltr .fc-button-group > .fc-button:not(:first-child) {
+  width: 20px;
+}
+
+.fc .fc-daygrid-day-frame {
+  height: 60px;
+}
+
+.lattice_1 {
+  display: flex;
+  justify-content: space-around;
+  background-color: #262d52;
+}
+.lattice_1 h5 {
+  line-height: 85px;
+}
+
+.main_button {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  border-bottom: 2px solid #987A4D;
+  padding-bottom: 64px;
+}
+.main_button .btn_status {
+  width: 300px;
+  height: 60px;
+}
+.main_button .btn_status a {
+  line-height: 60px;
+  font-size: 20px;
+}
+.main_button .btn_general {
+  width: 300px;
+  height: 60px;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  border: none;
+}
+.main_button .btn_general a {
+  line-height: 60px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=booking_02.css.map */

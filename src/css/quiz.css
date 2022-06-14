@@ -57,73 +57,85 @@ html {
   font-family: "Roboto", sans-serif; /* 預設字體 */
   font-size: 6.26%;
   line-height: 1.6;
+  box-sizing: border-box;
 }
 
 /* 以下為h1-h6 */
 /*字體寬度自己要加上喔*/
 h1 {
   font-size: 64rem;
+  line-height: 1.6;
 }
 
 h2 {
   font-size: 36rem;
+  line-height: 1.6;
 }
 
 h3 {
   font-size: 32rem;
+  line-height: 1.6;
 }
 
 h4 {
   font-size: 28rem;
+  line-height: 1.6;
 }
 
 h5 {
   font-size: 24rem;
+  line-height: 1.6;
 }
 
 h6 {
   font-size: 20rem;
+  line-height: 1.6;
 }
 
 p {
   font-size: 18rem;
+  line-height: 1.6;
 }
 
 /* 以下為title */
 .title1 {
   font-size: 120rem;
+  line-height: 1.6;
 }
 
 .title2 {
   font-size: 48rem;
+  line-height: 1.6;
 }
 
 .title3 {
   font-size: 40rem;
+  line-height: 1.6;
 }
 
 .title4 {
   font-size: 22rem;
+  line-height: 1.6;
 }
 
 .title5 {
   font-size: 16rem;
+  line-height: 1.6;
 }
 
 .title6 {
   font-size: 14rem;
+  line-height: 1.6;
 }
 
-.btn_cta {
-  width: 380px;
-  height: 70px;
-}
 .btn_cta h5 {
   text-align: center;
   line-height: 70px;
   font-weight: 600;
 }
 .btn_cta h5 .btn_radius {
+  width: 380px;
+  height: 70px;
   color: #EEEEEE;
   border: 2px solid #EEEEEE;
   display: block;
@@ -131,29 +143,26 @@ p {
   border-radius: 50px;
 }
 .btn_cta h5 .btn_radius:hover {
-  border: 0;
+  border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
-.btn_general {
-  width: 380px;
-  height: 70px;
-}
 .btn_general h5 {
   text-align: center;
   line-height: 70px;
   font-weight: 600;
 }
 .btn_general h5 .btn_square {
+  width: 380px;
+  height: 70px;
   color: #EEEEEE;
   border: 2px solid #EEEEEE;
   display: block;
   text-decoration: none;
 }
 .btn_general h5 .btn_square:hover {
-  border: 0;
+  border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-  border: 2px solid linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
 .btn_status {
@@ -185,8 +194,6 @@ p {
   text-align: center;
   line-height: 200px;
   font-weight: 600;
-  width: 200px;
-  height: 200px;
   font-size: 24rem;
 }
 .btn_main .btn_circle_text .btn_circle {
@@ -206,18 +213,19 @@ body {
   background-color: #00072E;
 }
 
-.quiz01 {
-  width: 1084px;
-  margin: auto;
-  font-family: "Roboto Serif", serif;
-  margin-top: 120px;
-  margin-bottom: 120px;
+/*------- 照片固定參數 -------*/
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
+/*------ 固定文字 -----*/
 .title3 {
   color: #EEEEEE;
 }
 
+/*------- 文字敘述section -------*/
 .text_side {
   width: 590px;
   margin: auto;
@@ -225,84 +233,133 @@ body {
   line-height: 1.3;
 }
 
+/*------- 分隔線section -------*/
 .hrgold {
   background-color: #987A4D;
   width: 150px;
   border: 1px solid #987A4D;
 }
 
-.allimg {
-  width: 100%;
-  margin-top: 64px;
-  display: flex;
-}
-
-img {
+/*------- 文字主要參數 -------*/
+#wold_quiz {
   width: 300px;
   height: 300px;
+  line-height: 7.5;
+  text-align: center;
   border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
 }
 
-.playBlock {
+/*----------- 文字hover顯示 -----------*/
+#WoldHover:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-out;
+}
+#WoldHover:hover #wold_quiz {
+  background-color: rgba(31, 31, 31, 0.4);
+  display: block;
+  box-shadow: 0 0 60px rgba(255, 255, 255, 0.9);
+}
+
+/*-------------- 第一題測驗遊戲 --------------*/
+.quiz01 {
+  width: 1084px;
+  margin: auto;
+  font-family: "Roboto Serif", serif;
+  /*------- 圖片選項section -------*/
+}
+.quiz01 .allimg {
+  width: 100%;
+  display: flex;
+  margin-top: 64px;
+  padding-left: 110px;
+  /*----------- 玩樂路線 -----------*/
+  /*----------- 放鬆路線 -----------*/
+}
+.quiz01 .allimg .playBlock {
   width: 300px;
   height: 300px;
-  margin-left: 120px;
   margin-right: 250px;
   position: relative;
 }
-
-.relaxBlock {
+.quiz01 .allimg .relaxBlock {
   width: 300px;
   height: 300px;
   position: relative;
 }
 
-#titlePlay {
+/*-------------- 第二題(放鬆)測驗遊戲 --------------*/
+.quiz02_1 {
+  width: 1084px;
+  margin: auto;
+  font-family: "Roboto Serif", serif;
+  /*-------------- 圖片選項section --------------*/
+}
+.quiz02_1 .all_twoimg {
+  width: 100%;
+  margin-top: 64px;
+  padding-left: 10px;
+  display: flex;
+  /*----------- 海島度假 -----------*/
+  /*----------- 鑽石雨 -----------*/
+  /*----------- 夜賞極光 -----------*/
+}
+.quiz02_1 .all_twoimg .island {
   width: 300px;
   height: 300px;
-  line-height: 7.5;
-  text-align: center;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  display: none;
+  margin-right: 80px;
+  position: relative;
 }
-
-#titleRelax {
+.quiz02_1 .all_twoimg .diamond {
   width: 300px;
   height: 300px;
-  line-height: 7.5;
-  text-align: center;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  margin-right: 80px;
+  position: relative;
+}
+.quiz02_1 .all_twoimg .aurora {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+/*-------------- 第二(玩樂)題測驗遊戲 --------------*/
+.quiz02_2 {
+  width: 1084px;
   margin: auto;
-  display: none;
+  font-family: "Roboto Serif", serif;
+  /*-------------- 圖片選項section --------------*/
 }
-
-.playBlock:hover .play {
-  box-shadow: 0 0 70px rgba(255, 255, 255, 0.9);
+.quiz02_2 .all_twoimg {
+  width: 100%;
+  margin-top: 64px;
+  padding-left: 10px;
+  display: flex;
+  /*----------- 飛船競賽 -----------*/
+  /*----------- 極地探險 -----------*/
+  /*----------- 火山探險 -----------*/
 }
-
-.playBlock:hover #titlePlay {
-  background-color: rgba(31, 31, 31, 0.4);
-  display: block;
+.quiz02_2 .all_twoimg .spaceship {
+  width: 300px;
+  height: 300px;
+  margin-right: 80px;
+  position: relative;
 }
-
-.relaxBlock:hover .relax {
-  box-shadow: 0 0 70px rgba(255, 255, 255, 0.9);
+.quiz02_2 .all_twoimg .polar {
+  width: 300px;
+  height: 300px;
+  margin-right: 80px;
+  position: relative;
 }
-
-.relaxBlock:hover #titleRelax {
-  background-color: rgba(31, 31, 31, 0.4);
-  display: block;
+.quiz02_2 .all_twoimg .volcano {
+  width: 300px;
+  height: 300px;
+  position: relative;
 }
 
 /*# sourceMappingURL=quiz.css.map */
