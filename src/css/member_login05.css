@@ -323,19 +323,17 @@ p {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
-.member-login02-wrapper {
+.member_login05 {
   width: 1080px;
   margin: 0 auto;
 }
-.member-login02-wrapper .member-info {
-  width: 100%;
-}
-.member-login02-wrapper .member-info .member-info-title {
-  color: #EEEEEE;
+.member_login05 .member_login05-title {
   text-align: center;
+  color: #EEEEEE;
   position: relative;
+  margin-bottom: 100px;
 }
-.member-login02-wrapper .member-info .member-info-title::before {
+.member_login05 .member_login05-title::before {
   content: "";
   display: block;
   width: 150px;
@@ -346,214 +344,90 @@ p {
   left: 50%;
   transform: translate(-50%, 0);
 }
-.member-login02-wrapper .member-info .vip-card {
-  display: block;
-  width: 563px;
-  border-radius: 26px;
+.member_login05 .shopping-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #191F42;
+  width: 1080px;
+  height: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 20px 0;
+}
+.member_login05 .shopping-item .shopping-number {
+  color: #987A4D;
+  line-height: 60px;
+}
+.member_login05 .shopping-item .shopping-date {
+  color: #987A4D;
+  line-height: 60px;
+}
+.member_login05 .shopping-detail .wrapper {
+  width: 1080px;
   margin: 0 auto;
-  margin-top: 60px;
-}
-.member-login02-wrapper .member-info .member-type {
-  color: #EEEEEE;
   text-align: center;
-  margin-top: 48px;
-  margin-bottom: 20px;
+  background-color: #191F42;
+  padding-top: 20px;
+  padding-bottom: 80px;
 }
-.member-login02-wrapper .member-info p {
+.member_login05 .shopping-detail .wrapper h5 {
   color: #EEEEEE;
-  text-align: center;
-  margin-bottom: 48px;
 }
-.member-login02-wrapper .member-info .btn {
+.member_login05 .shopping-detail .wrapper h6 {
+  color: #EEEEEE;
+}
+.member_login05 .shopping-detail .wrapper main {
+  width: 700px;
   margin: 0 auto;
-}
-.member-login02-wrapper .decorate-line {
-  width: 1084px;
-  height: 2px;
-  border-top: 1px solid #987A4D;
   margin-top: 120px;
-  margin-bottom: 120px;
 }
-.member-login02-wrapper .member-mile .btn {
-  margin: 0 auto;
-}
-.member-login02-wrapper .member-mile .mile-wrapper {
+.member_login05 .shopping-detail .wrapper main .item_1 {
   display: flex;
-  justify-content: space-between;
-  width: 950px;
-  margin: 0 auto;
-  margin-bottom: 48px;
+  justify-content: space-around;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #987A4D;
 }
-.member-login02-wrapper .member-mile .mile-wrapper .mile-circle h3 {
-  color: #EEEEEE;
-  text-align: center;
-  margin-bottom: 24px;
+.member_login05 .shopping-detail .wrapper main .personal_information {
+  display: flex;
+  justify-content: space-around;
+  margin: 24px 0 64px 0;
 }
-.member-login02-wrapper .member-mile .mile-wrapper .mile-circle .circle-outer {
-  width: 352px;
-  height: 352px;
-  background-color: rgba(238, 238, 238, 0.6);
-  border-radius: 50%;
-  padding-top: 20px;
+.member_login05 .shopping-detail .wrapper main .item_2 {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #987A4D;
 }
-.member-login02-wrapper .member-mile .mile-wrapper .mile-circle .circle-outer .circle-inner {
-  width: 312px;
-  height: 312px;
-  background: #00072E;
-  margin-left: 20px;
-  border-radius: 50%;
-  line-height: 312px;
+.member_login05 .shopping-detail .wrapper main .item_2 h6:first-child {
+  margin-left: 35px;
 }
-.member-login02-wrapper .member-mile .mile-wrapper .mile-circle .circle-outer .circle-inner .bignumber {
-  font-size: 80rem;
-  color: #EEEEEE;
-  margin-left: 50px;
+.member_login05 .shopping-detail .wrapper main .item_2 h6:last-child {
+  margin-left: 410px;
 }
-.member-login02-wrapper .member-mile .mile-wrapper .mile-circle .circle-outer .circle-inner span {
-  font-size: 30rem;
-  color: #EEEEEE;
-}
-.member-login02-wrapper .member-mile .mile-wrapper .mile-square {
+.member_login05 .shopping-detail .wrapper main .commodity {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  width: 520px;
-  height: 240px;
-  border-radius: 5px;
-  margin-top: 100px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  padding-bottom: 24px;
+  margin-top: 24px;
+  margin-bottom: 80px;
 }
-.member-login02-wrapper .member-mile .mile-wrapper .mile-square h3 {
-  color: #EEEEEE;
-  text-align: center;
-}
-.member-login02-wrapper .member-mile .mile-wrapper .mile-square .number-area {
-  display: flex;
-  border-radius: 5px;
-  margin-top: 65px;
-}
-.member-login02-wrapper .member-mile .mile-wrapper .mile-square .number-area h6 {
-  color: black;
-  background: #EEEEEE;
-  border-radius: 5px;
-  margin: 3px;
-  width: 31px;
-  height: 40px;
-  font-size: 20px;
-  text-align: center;
-  line-height: 40px;
-}
-.member-login02-wrapper .member-mile .mile-wrapper .mile-square .number-area span {
-  color: white;
-  margin: 5px;
-  font-size: 20px;
-  line-height: 40px;
-}
-.member-login02-wrapper .memeber-shop .btn {
-  margin: 0 auto;
-}
-.member-login02-wrapper .memeber-shop .memeber-shop-title {
-  color: #EEEEEE;
-  text-align: center;
-  position: relative;
-}
-.member-login02-wrapper .memeber-shop .memeber-shop-title::before {
-  content: "";
+.member_login05 .shopping-detail .wrapper main .commodity img {
   display: block;
-  width: 150px;
-  border-bottom: 1px solid #EEEEEE;
-  position: absolute;
-  top: 100%;
-  margin-top: 10px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  width: 100px;
+  height: 100px;
 }
-.member-login02-wrapper .memeber-shop h5 {
-  color: #EEEEEE;
-  text-align: center;
-  margin-top: 48px;
-}
-.member-login02-wrapper .memeber-shop .star {
-  width: 350px;
-  display: block;
-  margin: 80px auto 80px auto;
-}
-.member-login02-wrapper .member-message .member-message-title {
-  color: #EEEEEE;
-  text-align: center;
-  position: relative;
-}
-.member-login02-wrapper .member-message .member-message-title::before {
-  content: "";
-  display: block;
-  width: 150px;
-  border-bottom: 1px solid #EEEEEE;
-  position: absolute;
-  top: 100%;
-  margin-top: 10px;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.member-login02-wrapper .member-message .message-wrapper {
-  margin-top: 92px;
+.member_login05 .shopping-detail .wrapper main .commodity .align {
   display: flex;
   justify-content: space-between;
+  width: 400px;
 }
-.member-login02-wrapper .member-message .message-wrapper .btn {
-  margin: 0 auto;
-}
-.member-login02-wrapper .member-message .message-wrapper .message-center {
-  width: 493px;
-  border: 1px solid #987A4D;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 20px;
-  border-radius: 15px;
-}
-.member-login02-wrapper .member-message .message-wrapper .message-center .messages {
-  width: 363px;
-  height: 44px;
-  background: #EEEEEE;
-  border-radius: 15px 15px 15px 0;
-  margin: 0 auto;
-  margin-bottom: 80px;
-  position: relative;
-  line-height: 2;
-  padding-right: 20px;
-}
-.member-login02-wrapper .member-message .message-wrapper .message-center .messages h5 {
-  text-align: right;
-}
-.member-login02-wrapper .member-message .message-wrapper .message-center .messages p {
-  color: #EEEEEE;
-  position: absolute;
-  top: 100%;
-  right: 0%;
-}
-.member-login02-wrapper .member-message .message-wrapper .textarea-div {
-  width: 493px;
-  border: 1px solid #987A4D;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  border-radius: 15px;
-}
-.member-login02-wrapper .member-message .message-wrapper .textarea-div h5 {
-  color: #EEEEEE;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.member-login02-wrapper .member-message .message-wrapper .textarea-div form textarea {
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  width: 365px;
-  height: 160px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 20px;
-  font-family: "Roboto";
+.member_login05 .shopping-detail .wrapper main .commodity .align h6 {
+  line-height: 1.6;
 }
 
-/*# sourceMappingURL=member_login02.css.map */
+.displaynone {
+  display: none;
+}
+
+/*# sourceMappingURL=member_login05.css.map */
