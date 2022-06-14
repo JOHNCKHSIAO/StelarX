@@ -3,3 +3,11 @@
 @import 'base/fontSet';
 @import 'mixin/mixin';
 @import 'component/btn';
+
+.planet-intro{
+    width: 900px;
+    display: flex;
+    outline: yellow solid 1px;
+    justify-content: space-between;
+    margin: 0 auto;
+}

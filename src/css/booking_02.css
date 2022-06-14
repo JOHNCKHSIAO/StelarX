@@ -4,7 +4,7 @@
  *     |                    ^
  *     '
  *   src\sass\component\_btn.scss 135:20  @import
- *   src\sass\booking_01.scss 5:9         root stylesheet */
+ *   src\sass\booking_02.scss 5:9         root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a     \2577 \a 135 \2502      width:$btnWidth;\d\a     \2502                     ^\a     \2575 \a   src\\sass\\component\\_btn.scss 135:20  @import\a   src\\sass\\booking_01.scss 5:9         root stylesheet';
+  content: 'Error: expected "{".\a     \2577 \a 135 \2502      width:$btnWidth;\d\a     \2502                     ^\a     \2575 \a   src\\sass\\component\\_btn.scss 135:20  @import\a   src\\sass\\booking_02.scss 5:9         root stylesheet';
 }
