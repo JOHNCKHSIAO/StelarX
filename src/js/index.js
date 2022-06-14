@@ -5,10 +5,7 @@ $(document).scroll(function () {
     // var bottomnuml = window.innerHeight - (topnuml + $("#index-youtube").height());
     if ($(document).scrollTop() >  ($("#index-youtube").offset().top -  window.innerHeight)) {
         $("#index-youtube").get(0).play();
-
-
-    } 
-    
+    }  
     
     else {
 
@@ -18,3 +15,18 @@ console.log(topnuml)
 console.log($(document).scrollTop())
 // console.log(bottomnuml);
 });
+
+// 輪播動畫
+const swiper = new Swiper('.swiper', {
+   
+    direction: 'vertical',
+    loop: true,
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    
+   
+  });
