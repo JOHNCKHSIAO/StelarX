@@ -7,18 +7,11 @@
 .member-register{
     width:1080px;
     margin: 0 auto;
-    
-    border:1px solid white;
-    // .member-register-title-up{
-    //     text-align: center;
-    //     color:$white;
-    //     margin-bottom: 20px;
-    // }
+    // border:1px solid white;
     .member-register-title{
         text-align:center;
         color:$white;
         position: relative;
-        line-height: 1.5;
         &::before{
             content: "";
             display:block;
@@ -26,56 +19,47 @@
             border-bottom: 1px solid $white;
             position:absolute;
             top:100%;
-            margin-top:10px;
+            margin-top:15px;
             left:50%;
             transform: translate(-50%,0);
         }
     }
     .input-area-member-register{
+        width:550px;
+        // border:1px solid yellow;
+        margin: 0 auto;
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: $spacing_48px+24px;
-        .input_div{
-            margin-bottom: 40px;
-        }
-        .input_div_password{
-        margin-bottom: 40px;
-        }
-
+        margin-top: $spacing_48px+15px;
         .account-check-message{
             color:$error_red;
-            margin-top: 10px;
-            margin-left: 30px;
+            margin-top: 20px;
             opacity:0;
         }
         .id-check-message{
             color:$error_red;
-            margin-top: 10px;
-            margin-left: 30px;
+            margin-top: 20px;
             opacity:0;
         }
         .password-wrong{
             color:$error_red;
-            margin-top: 10px;
-            margin-left: 30px;
-            opacity:1;
-            display:none;
-
+            margin-top: 20px;
+            opacity:0;
         }
-        
+    
+     
     }
-    .btn_container{
-        width:380px;
-        margin:0 auto;
-        margin-top: 48px;
+    .btn{
+       margin: 0 auto;
+       margin-top: 60px;
 
     }
 
 }
-// .displaynone{
-//     display:none;
-// }
+.displaynone{
+    display:none;
+}
 .displayblock{
     display:block;
 }
@@ -93,10 +77,13 @@
 }
 #email_div{
     opacity: 1;
+    margin-top: 45px;
 }
 #cell_div{
     opacity: 1;
+    margin-top: 45px;
 }
 #businessNumber_div{
     opacity: 1;
+    margin-top: 45px;
 }

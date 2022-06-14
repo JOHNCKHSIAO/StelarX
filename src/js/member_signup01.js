@@ -16,6 +16,7 @@
     let checkPassword_div = document.querySelector("#checkPassword_div");
     let checkPassword_input = document.querySelector("#checkPassword_input");
     let checkPassword_message = document.querySelector("#checkPassword_message");
+    console.log(checkPassword_message);
     let lastName_div = document.querySelector("#lastName_div");
     let name_div = document.querySelector("#name_div");
     let email_div = document.querySelector("#email_div");
@@ -36,11 +37,29 @@
     id_input.addEventListener("blur",()=>{
         idCheck_message.style.opacity="0";
     })
+    checkPassword_input.addEventListener("focus",()=>{
+        checkPassword_message.style.opacity="1";
+    })
+    checkPassword_input.addEventListener("blur",()=>{
+        checkPassword_message.style.opacity="0";
+    })
+   
     submitBtn.addEventListener("click",(e)=>{
-        e.preventDefault();
-        submitBtn.setAttribute("data-step","step1");
-        password_div.classList.remove("displaynone");
-        checkPassword_div.classList.remove("displaynone");
+        // submitBtn.setAttribute("data-step","step1");
+        let account=account_input.value;
+        let id=id_input.value;
+        console.log(account,id);
+        if(!(account=="" || id =="") ){
+            password_div.classList.remove("displaynone");
+            checkPassword_div.classList.remove("displaynone");
+            submitBtn.setAttribute("data-step","step1");
+        }else if(submitBtn.hasAttribute("data-step")){
+
+        }else{
+            alert("請輸入帳號或ID")
+        }
+     
+
     })
 
 

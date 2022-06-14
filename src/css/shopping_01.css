@@ -157,6 +157,24 @@ p {
   border: 2px solid linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
+.btn_genera2 {
+  width: 380px;
+  height: 70px;
+}
+.btn_genera2 h5 {
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+}
+.btn_genera2 h5 .btn_square {
+  color: #EEEEEE;
+  border: 0;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  border: 2px solid linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  display: block;
+  text-decoration: none;
+}
+
 .btn_status {
   width: 380px;
   height: 70px;
@@ -204,7 +222,51 @@ p {
 }
 
 body {
-  background-color: rgb(231, 77, 77);
+  background-color: #00072E;
+  color: white;
+}
+
+.top_image h2 {
+  width: 500px;
+  transform: translate(100%, -700%);
+  font-size: 48px;
+  color: black;
+}
+
+.wrapper {
+  width: 1080px;
+  margin: 0 auto;
+}
+.wrapper .commodity {
+  margin-top: 120px;
+}
+.wrapper .commodity .small_title {
+  display: flex;
+  align-items: flex-end;
+  width: 400px;
+  border-bottom: 3px solid #987A4D;
+  padding-bottom: 24px;
+}
+.wrapper .commodity .small_title h6 {
+  margin-left: 10px;
+}
+.wrapper .commodity ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+.wrapper .commodity ul li {
+  text-align: center;
+}
+.wrapper .commodity ul li img {
+  width: 350px;
+  height: 360px;
+}
+.wrapper .commodity ul li h4 {
+  margin-top: 40px;
+}
+.wrapper .commodity ul li h5 {
+  margin-top: 24px;
 }
 
 /*# sourceMappingURL=shopping_01.css.map */

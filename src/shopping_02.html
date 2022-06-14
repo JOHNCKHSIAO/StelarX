@@ -4,12 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shopping_02.css">
     <title></title>
 </head>
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
-
+    <div class="main_top">
+        <div class="left_image">
+            <img class="img_1" src="./images/shopping_cart/t-shirt_01.jpg" alt="">
+            <div class="Small_img">
+                <img src="./images/shopping_cart/t-shirt_02.jpg" alt="">
+                <img src="./images/shopping_cart/t-shirt_03.jpg" alt="">
+            </div>
+        </div>
+        <div class="right_word">
+            <div class="commodity_title">
+                <h3>品牌T恤</h3>
+                <h4>( FREE SIZE 中性款 ）</h4>
+                <p>・使用特殊加工，表面具適度光澤感的天竺素材。<br>
+                    ・落肩、繭型剪裁和較長的袖子。<br>
+                    ・具高質感的時尚寬版剪裁新款T恤。</p>
+                <p>・商品貨號：abc8787</p>
+            </div>
+            <div class="exchange">
+                <div class="click_num">
+                    <div class="reduce">-</div>
+                    <h3>1</h3>
+                    <div class="add">+</div>
+                </div>
+                <div class="Redeem_now">
+                    <h3>5,000 哩</h3>
+                    <h6>立即兌換</h6>
+                </div>
+            </div>
+            <div class="mileage">
+                <h3>剩餘里程數 33,000 哩</h3>
+            </div>
+        </div>
+    </div>
+    <div class="main_button">
+        <div class="btn_status">
+            <h5>
+                <a class="btn_square" href="#">繼續選購</a>
+            </h5>
+        </div>
+        <div class="btn_genera2">
+            <h5>
+                <a class="btn_square" href="#">加入購物車</a>
+            </h5>
+        </div>
+    </div>
+    <div class="main_bottom">
+        <h3>YOU MAY ALSO LIKE</h3>
+        <ul>
+            <li>
+                <img src="./images/shopping_cart/baseball_cap_01.png" alt="">
+                <h4>復古老帽</h4>
+                <h5>5,000 哩</h5>
+            </li>
+            <li>
+                <img src="./images/shopping_cart/opened_wine_02.png" alt="">
+                <h4>星河葡萄酒</h4>
+                <h5>5,000 哩</h5>
+            </li>
+            <li>
+                <img src="./images/shopping_cart/tote_bag_01.png" alt="">
+                <h4>環保帆布袋</h4>
+                <h5>5,000 哩</h5>
+            </li>
+        </ul>
+    </div>
+    
     @@include("./layout/footer.html")
 </body>
 </html>
