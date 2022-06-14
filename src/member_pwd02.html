@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/member_pwd02.css">
-    <title></title>
+    <title>重設密碼</title>
 </head>
 <body>
     @@include("./layout/header.html")
     <section class="member-forget02">
-        <h2 class="member-forget02-title">請重新設定密碼並確認</h2><!--記得要做轉換-->
+        <h5 class="member-forget02-title">請重新設定密碼並確認</h5><!--記得要做轉換-->
         <form action="">
             <div class="input-area-member-forget02">
                 <div class="input_div_password">
@@ -25,16 +25,12 @@
                 <div class="input_div_password">
                     <label for=""><h5>再次輸入新密碼</h5></label>
                         <input type="password"><i class="fa-solid fa-eye-slash"></i>
-                    <p class="password-wrong">與密碼不符! 請重新輸入!!</p>
+                    <p class="password-wrong title6">與密碼不符! 請重新輸入!!</p>
                 </div>
                
             </div>
-            <div class="btn_container">
-                <div class="btn_general">
-                    <h5>
-                        <a href="" class="btn_square">發送認證信</a>
-                    </h5>
-                </div>
+            <div class="btn_general btn">
+                <div class="btn_square">確認密碼</div>
             </div>
         </form>
     </section>

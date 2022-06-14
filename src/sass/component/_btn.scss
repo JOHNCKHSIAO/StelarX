@@ -1,9 +1,13 @@
+
 //宣告一些變數
-$btnFontSize:14px;
-$btnWidth:200px;
-$btnHeight:36px;
+$btnFontSize:16px;
+$btnWidth:250px;
+$btnHeight:46px;
 $btnFontWeight:600;
+
+
 //這是圓角按鈕
+//超連結跟div共用這個樣式
 .btn_cta {
     width: $btnWidth;
     height: $btnHeight; 
@@ -33,12 +37,10 @@ $btnFontWeight:600;
         } 
     }
    
-  
 }
 
 //這是圓角按鈕
 //用button  sumbit表單用的
-
 .btn_cta_submit {
     width: $btnWidth;
     height:$btnHeight; 
@@ -68,15 +70,11 @@ $btnFontWeight:600;
             right:10%
         } 
     }
-   
-  
 }
 
+//方形有漸層按鈕
+//超連結跟div共用這一樣式
 
-
-
-
-//這是方形按鈕 有漸層
 .btn_general {
     width:$btnWidth;
     height:$btnHeight; 
@@ -98,6 +96,7 @@ $btnFontWeight:600;
         text-align: center;
     }
 }
+
 
 ////方形漸層按鈕 submit用
 
@@ -174,6 +173,8 @@ $btnFontWeight:600;
         }
     }
 }
+
+
 
 
 
