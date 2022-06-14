@@ -19,7 +19,7 @@ body{
 
     .fv-main{
         width: 650px;
-        height: 450px;
+        height: 400px;
         margin: $spacing_120px auto 0;
         background: linear-gradient(180deg, #ffffff20 0%, #ffffff00 100%);
         font-weight: 500;
@@ -58,27 +58,75 @@ body{
     }
     
     .rocket-data{
-        border: 2px solid red;
         width: 1080px;
-        height: 150px;
         margin: auto;
 
+        ul{
+            display: flex;
 
+            li{
+                width: 300px;
+                margin: auto;
+                text-align: center;
 
-
-
-
+                h1{
+                    font-weight: 500;
+                    color: $gold;
+                }
+            }
+        }
     }
 }
 
-
-
-
 // -------------------------------- 火箭介紹 --------------------------------
+
+
+.rocket-about{
+    width: 1440px;
+    height: 850px;
+    margin: auto;
+    //缺星空背景
+
+    position: relative;
+
+    img{
+        position: absolute;
+        right: 0;
+        top: 80px;
+    }
+    .about-aether{
+        width: 800px;
+        height: 530px;
+        background-color: rgb(0, 0, 0, 50%);
+
+        position: absolute;
+        top: 200px;
+
+        h2{
+            font-weight: 500;
+            margin: $spacing_80px 0 0 250px;
+        }
+        span{
+            display: block;
+            width: 470px;
+            height: 2px;
+            background-color: $gold;
+            margin: $spacing_40px 0 $spacing_40px 250px;
+        }
+        h6{
+            width: 415px;
+            margin-left: 310px;
+        }
+    } 
+}
+
 
 // -------------------------------- 火箭引擎 --------------------------------
 
 .rocket-engine{
+
+    //缺星空背景
+
     img{
         display: block;
         margin: auto;
@@ -122,6 +170,8 @@ body{
 // -------------------------------- 火箭資訊 --------------------------------
 
 .rocket-info{
+    
+    //缺背景
 
 
     // -------------- 火箭資訊_上方數據 --------------
@@ -421,7 +471,6 @@ body{
         }
         li:nth-child(2)::before{
             content: '';
-            display: block;
             width: 1px;
             height: 250px;
             background-color: $gold;
@@ -434,7 +483,6 @@ body{
         }
         li:nth-child(2)::after{
             content: '';
-            display: block;
             width: 1px;
             height: 250px;
             background-color: $gold;

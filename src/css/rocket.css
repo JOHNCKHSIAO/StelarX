@@ -129,62 +129,149 @@ p {
   line-height: 1.6;
 }
 
-.btn_cta h5 {
-  text-align: center;
-  line-height: 40px;
-  font-weight: 600;
-}
-.btn_cta h5 .btn_radius {
-  width: 380px;
-  height: 70px;
-  color: #EEEEEE;
-  border: 2px solid #EEEEEE;
-  display: block;
-  text-decoration: none;
+.btn_cta {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
   border-radius: 50px;
+  cursor: pointer;
 }
-.btn_cta h5 .btn_radius:hover {
+.btn_cta:hover {
   border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
 }
 
-.btn_general h5 {
-  text-align: center;
-  line-height: 70px;
-  font-weight: 600;
+.btn_cta_submit {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  background: #00072E;
+  cursor: pointer;
 }
-.btn_general h5 .btn_square {
-  width: 380px;
-  height: 70px;
-  color: #EEEEEE;
-  border: 2px solid #EEEEEE;
-  display: block;
-  text-decoration: none;
-}
-.btn_general h5 .btn_square:hover {
+.btn_cta_submit:hover {
   border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta_submit .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta_submit .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_general {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+.btn_general:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+}
+
+.btn_general_sumbmit {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  cursor: pointer;
+}
+.btn_general_sumbmit:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general_sumbmit .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
 }
 
 .btn_status {
-  width: 380px;
-  height: 70px;
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
 }
-.btn_status h5 {
-  text-align: center;
-  line-height: 70px;
-  font-weight: 600;
-}
-.btn_status h5 .btn_square {
-  color: #EEEEEE;
-  border: 2px solid #EEEEEE;
+.btn_status .btn_square {
   display: block;
+  margin: 0 auto;
   text-decoration: none;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
 }
-.btn_status h5 .btn_square:hover {
-  color: #00072E;
-  border: 0;
+.btn_status .btn_square:hover {
   background: #EEEEEE;
+  color: #00072E;
+}
+
+.btn_status_submit {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  padding: 0;
+  cursor: pointer;
+}
+.btn_status_submit .btn_square {
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  line-height: 36px;
+  color: #EEEEEE;
+  font-size: 14px;
+  text-align: center;
+}
+.btn_status_submit .btn_square:hover {
+  background: #EEEEEE;
+  color: #00072E;
 }
 
 .btn_main {
@@ -249,7 +336,7 @@ body {
 }
 .rocket-fv .fv-main {
   width: 650px;
-  height: 450px;
+  height: 400px;
   margin: 120px auto 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1254901961) 0%, rgba(255, 255, 255, 0) 100%);
   font-weight: 500;
@@ -283,10 +370,54 @@ body {
   margin: auto;
 }
 .rocket-fv .rocket-data {
-  border: 2px solid red;
   width: 1080px;
-  height: 150px;
   margin: auto;
+}
+.rocket-fv .rocket-data ul {
+  display: flex;
+}
+.rocket-fv .rocket-data ul li {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.rocket-fv .rocket-data ul li h1 {
+  font-weight: 500;
+  color: #987A4D;
+}
+
+.rocket-about {
+  width: 1440px;
+  height: 850px;
+  margin: auto;
+  position: relative;
+}
+.rocket-about img {
+  position: absolute;
+  right: 0;
+  top: 80px;
+}
+.rocket-about .about-aether {
+  width: 800px;
+  height: 530px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 200px;
+}
+.rocket-about .about-aether h2 {
+  font-weight: 500;
+  margin: 80px 0 0 250px;
+}
+.rocket-about .about-aether span {
+  display: block;
+  width: 470px;
+  height: 2px;
+  background-color: #987A4D;
+  margin: 40px 0 40px 250px;
+}
+.rocket-about .about-aether h6 {
+  width: 415px;
+  margin-left: 310px;
 }
 
 .rocket-engine img {
@@ -570,7 +701,6 @@ body {
 }
 .rocket-bodyguard ul li:nth-child(2)::before {
   content: "";
-  display: block;
   width: 1px;
   height: 250px;
   background-color: #987A4D;
@@ -582,7 +712,6 @@ body {
 }
 .rocket-bodyguard ul li:nth-child(2)::after {
   content: "";
-  display: block;
   width: 1px;
   height: 250px;
   background-color: #987A4D;
