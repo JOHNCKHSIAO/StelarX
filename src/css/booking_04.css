@@ -1,0 +1,447 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif; /* 預設字體 */
+  font-size: 6.26%;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* 以下為h1-h6 */
+/*字體寬度自己要加上喔*/
+h1 {
+  font-size: 64rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 36rem;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 32rem;
+  line-height: 1.6;
+}
+
+h4 {
+  font-size: 28rem;
+  line-height: 1.6;
+}
+
+h5 {
+  font-size: 24rem;
+  line-height: 1.6;
+}
+
+h6 {
+  font-size: 20rem;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
+/* 以下為title */
+.title1 {
+  font-size: 120rem;
+  line-height: 1.6;
+}
+
+.title2 {
+  font-size: 48rem;
+  line-height: 1.6;
+}
+
+.title3 {
+  font-size: 40rem;
+  line-height: 1.6;
+}
+
+.title4 {
+  font-size: 22rem;
+  line-height: 1.6;
+}
+
+.title5 {
+  font-size: 16rem;
+  line-height: 1.6;
+}
+
+.title6 {
+  font-size: 14rem;
+  line-height: 1.6;
+}
+
+.btn_cta h5 {
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+}
+.btn_cta h5 .btn_radius {
+  width: 380px;
+  height: 70px;
+  color: #EEEEEE;
+  border: 2px solid #EEEEEE;
+  display: block;
+  text-decoration: none;
+  border-radius: 50px;
+}
+.btn_cta h5 .btn_radius:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_general h5 {
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+}
+.btn_general h5 .btn_square {
+  width: 380px;
+  height: 70px;
+  color: #EEEEEE;
+  border: 2px solid #EEEEEE;
+  display: block;
+  text-decoration: none;
+}
+.btn_general h5 .btn_square:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_status {
+  width: 380px;
+  height: 70px;
+}
+.btn_status h5 {
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+}
+.btn_status h5 .btn_square {
+  color: #EEEEEE;
+  border: 2px solid #EEEEEE;
+  display: block;
+  text-decoration: none;
+}
+.btn_status h5 .btn_square:hover {
+  color: #00072E;
+  border: 0;
+  background: #EEEEEE;
+}
+
+.btn_main {
+  width: 200px;
+  height: 200px;
+}
+.btn_main .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  font-size: 24rem;
+}
+.btn_main .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btn_main .btn_circle_text .btn_circle:hover {
+  box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.input_div {
+  box-sizing: content-box;
+}
+.input_div label {
+  display: block;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+.input_div label h5 {
+  color: #EEEEEE;
+}
+.input_div input {
+  display: block;
+  width: 530px;
+  height: 85px;
+  background-color: #191F42;
+  border: #191F42;
+  border-radius: 5px;
+  font-size: 22px;
+  padding-left: 30px;
+  color: #EEEEEE;
+}
+.input_div input:focus {
+  background-color: #987A4D;
+  border: #987A4D;
+  outline: #987A4D;
+}
+
+.input_div_password {
+  position: relative;
+}
+.input_div_password label {
+  display: block;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+.input_div_password label h5 {
+  color: #EEEEEE;
+}
+.input_div_password input {
+  width: 530px;
+  height: 85px;
+  background-color: #191F42;
+  border: #191F42;
+  border-radius: 5px;
+  font-size: 22px;
+  padding-left: 30px;
+  color: #EEEEEE;
+}
+.input_div_password input:focus {
+  background-color: #987A4D;
+  border: #987A4D;
+  outline: #987A4D;
+}
+.input_div_password i {
+  color: #EEEEEE;
+  font-size: 22rem;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+.input_div_password i:hover {
+  cursor: pointer;
+}
+
+.input_div_full {
+  box-sizing: content-box;
+}
+.input_div_full label {
+  display: block;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+.input_div_full label h5 {
+  color: #EEEEEE;
+}
+.input_div_full input {
+  display: block;
+  width: 1080px;
+  height: 85px;
+  background-color: #191F42;
+  border: #191F42;
+  border-radius: 5px;
+  font-size: 22px;
+  padding-left: 30px;
+  color: #EEEEEE;
+}
+.input_div_full input:focus {
+  background-color: #987A4D;
+  border: #987A4D;
+  outline: #987A4D;
+}
+
+body {
+  background-color: #00072E;
+}
+
+/*------ 全域共用區塊 ------*/
+.hrWhit {
+  background-color: #EEEEEE;
+  width: 150px;
+}
+
+.booking_wold h2 {
+  color: #EEEEEE;
+  text-align: center;
+}
+
+.booking_people {
+  margin-bottom: 32px;
+}
+.booking_people h3 {
+  color: #EEEEEE;
+  margin-left: 100px;
+}
+.booking_people .hrLong {
+  width: 910px;
+  margin: auto;
+}
+
+/*------ 全域資訊綁定區塊 ------*/
+.booking_text {
+  margin-top: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 95px;
+}
+.booking_text .input_div {
+  box-sizing: content-box;
+  display: inline-block;
+  margin-bottom: 24px;
+  margin-right: 35px;
+}
+.booking_text .input_div label {
+  display: block;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.booking_text .input_div label h5 {
+  color: #EEEEEE;
+}
+.booking_text .input_div input {
+  display: block;
+  width: 400px;
+  height: 85px;
+  background-color: #191F42;
+  border: #191F42;
+  border-radius: 5px;
+  font-size: 22px;
+  padding-left: 30px;
+  color: #EEEEEE;
+}
+.booking_text .input_div input:focus {
+  background-color: #987A4D;
+  border: #987A4D;
+  outline: #987A4D;
+}
+
+/*------ 進度條顯示區塊 ------*/
+.booking-process {
+  width: 1084px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+/*------ 航班資訊區塊 ------*/
+.com-form {
+  width: 1084px;
+  margin: 0 auto;
+}
+
+/*------ 訂購者資料區塊 ------*/
+.personal {
+  width: 1084px;
+  margin: auto;
+}
+.personal .booking_wold {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+/*------ 同行者資料區塊 ------*/
+.parther {
+  width: 1084px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+/*------ 行前須知區塊 ------*/
+.noticr {
+  width: 1084px;
+  margin: auto;
+  margin-top: 20px;
+}
+.noticr .booking_people {
+  margin-bottom: 5px;
+}
+.noticr .noticr_text {
+  width: 870px;
+  height: 200px;
+  overflow-y: auto;
+  border: 2px solid #EEEEEE;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.noticr .noticr_text p {
+  color: #EEEEEE;
+}
+.noticr .yes_radio {
+  width: 300px;
+  display: flex;
+  margin: auto;
+}
+.noticr .yes_radio input {
+  margin: auto 0;
+  width: 20px;
+  height: 20px;
+}
+.noticr .yes_radio h5 {
+  color: #EEEEEE;
+  margin-left: 15px;
+}
+
+/*------ 上/下一步區塊 ------*/
+.booking_btn {
+  width: 800px;
+  margin: auto;
+  margin-top: 35px;
+  display: flex;
+}
+.booking_btn .btn_status {
+  margin-right: 40px;
+}
+
+/*# sourceMappingURL=booking_04.css.map */

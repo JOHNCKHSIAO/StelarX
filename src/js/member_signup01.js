@@ -45,7 +45,7 @@
     })
    
     submitBtn.addEventListener("click",(e)=>{
-        // submitBtn.setAttribute("data-step","step1");
+        e.preventDefault();
         let account=account_input.value;
         let id=id_input.value;
         console.log(account,id);

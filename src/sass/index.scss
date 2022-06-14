@@ -2,4 +2,261 @@
 // @import 'base/reset';
 // @import 'base/fontSet';
 // @import 'mixin/mixin';
-// @import 'component/btn';
+@import 'component/btn';
+
+
+// 共用間距
+.index_mt120 {
+    margin-top: $spacing_120px;
+}
+
+.index_mt80 {
+    margin-top: $spacing_80px;
+}
+
+.index_mt64 {
+    margin-top: $spacing_64px;
+}
+
+
+.index_mt24 {
+    margin-top: $spacing_24px;
+
+}
+
+.index_mt40 {
+    margin-top: $spacing_40px;
+}
+
+// 共用間距--
+// ----------------------------------------------------------
+// 共用顏色
+.index_white {
+    color: $white;
+
+}
+
+.index_gold {
+    color: $gold;
+
+}
+
+// 共用顏色--
+// ----------------------------------------------------------
+
+// 共用對齊
+.index_tac {
+    text-align: center;
+}
+
+.index_taL {
+    text-align: left;
+}
+
+// 共用對齊--
+// ----------------------------------------------------------
+
+// 共用字寬
+.index_fw400 {
+    font-weight: 400;
+}
+
+.index_fw500 {
+    font-weight: 500;
+}
+
+.index_fw700 {
+    font-weight: 700;
+}
+
+
+// 共用字寬--
+
+// 共用字體--
+.index_font {
+    font-family: $rob_Serif;
+}
+
+// ----------------------------------------------------------
+
+
+
+.index1440 {
+
+    .index1080 {
+        width: 1080px;
+        margin: 0 auto;
+
+        // 太空運輸領航者
+        .index-brief {}
+
+        // 四大服務icon
+        .index-features {
+            .featuresFlex {
+                display: flex;
+                justify-content: space-around;
+
+                .featIcon {
+                    // border: 1px solid $white;
+                    width: 150px;
+
+                    img {
+                        margin: 0 auto;
+                        display: block;
+                        width: 76px;
+                        height: 76px;
+                    }
+                }
+            }
+        }
+
+        //影片插入
+        .index-video {
+            max-width: 1440px;
+
+            margin: 0 auto;
+
+            .index-youtube {
+                // width: 100vw;
+
+            }
+
+        }
+
+        //星際測驗
+        .index-quiz {
+            .btn_cta {
+
+                margin: 0 auto;
+                margin-top: $spacing_64px;
+
+            }
+
+            .quizPlanetFlex {
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+        }
+
+        //最新消息 news
+        .index-news {
+            .index-newsUp {
+                display: flex;
+                justify-content: space-around;
+                padding-top: $spacing_24px;
+                padding-bottom: $spacing_24px;
+                border-top: 1px solid $white;
+                border-bottom: 1px solid $white;
+
+                .index-newsLeft {
+                    h5 {
+                        line-height: 1;
+                        font-weight: 500;
+                    }
+
+                    h2 {
+                        line-height: 1;
+
+                    }
+
+                    .index_news_font {
+                        font-size: 52rem;
+                    }
+                }
+
+                .index-newsRight {
+                    h5 {
+                        font-weight: 500;
+
+                        width: 768px;
+                    }
+                }
+            }
+
+            .index-newsDown {
+                display: flex;
+                justify-content: space-around;
+                padding-top: $spacing_24px;
+                padding-bottom: $spacing_24px;
+                border-bottom: 1px solid $white;
+
+                .index-newsLeft {
+                    h5 {
+                        line-height: 1;
+                        font-weight: 500;
+                    }
+
+                    h2 {
+                        line-height: 1;
+
+                    }
+
+                    .index_news_font {
+                        font-size: 52rem;
+                    }
+                }
+
+                .index-newsRight {
+                    h5 {
+                        font-weight: 500;
+
+                        width: 768px;
+                    }
+                }
+            }
+        }
+
+        // 輪播動畫
+        .index-tourDown {
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+
+                        // 輪播圖片
+                        .index-tourCard1 {
+                          width: 300px;
+                         
+                            background-image:url("../images/index/Rectangle1.png");
+                        }
+
+                        .index-tourCard2 {
+                            background: url("../images/index/Rectangle2.png");
+                        }
+
+                        .index-tourCard3 {
+                            background: url("../images/index/Rectangle3.png");
+                        }
+
+                        .index-tourCard4 {
+                            background: url("../images/index/Rectangle4.png");
+                        }
+
+                        .index-tourCard5 {
+                            background: url("../images/index/Rectangle1.png");
+                        }
+
+                        .index-tourCard6 {
+                            background: url("../images/index/Rectangle2.png");
+                        }
+
+                        .index-tourCard7 {
+                            background: url("../images/index/Rectangle3.png");
+                        }
+
+                        .index-tourCard8 {
+                            background: url("../images/index/Rectangle4.png");
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//輪播動畫
+.swiper {
+    width: 1000px;
+    height: 300px;
+}

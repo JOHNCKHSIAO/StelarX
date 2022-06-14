@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <!-- 連結 FullCalendar -->
+    <link href='main.css' rel='stylesheet' />
+    <script src='main.js'></script>
+
+    <!-- 轉換成中文 -->
+    <script src="./locales-all.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            // locale:'zh-tw',
+            navLinks: true,
+            headerToolbar:{
+                // left: 'prev,next today',
+                // center:'title',
+                // right:'dayGridMonth,timeGridWeek,timeGridDay'
+            },
+
+            events:[
+                {
+                    title:'08:00 GX商務',
+                    start:'2022-07-01',
+                    // end:'2022-07-02'
+                },
+                {
+                    title:'尚餘 3 位',
+                    start:'2022-07-01',
+                    allDay:false
+                    // end:'2022-07-12T16:00:00'
+                },
+                {
+                    title:'練習前端語言',
+                    start:'2022-07-15',
+                    allDay:false
+                } 
+            ]
+        });
+        
+
+        calendar.render();
+      });
+
+    </script>
+  </head>
+  <body>
+    <div class="container">
+        <div id='calendar'>
+
+        </div>
+    </div>  
+  </body>
+</html>

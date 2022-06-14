@@ -16,14 +16,14 @@
     .message-area{
         background-color: rgba(51,51,51,0.7);
         // border:1px solid yellow;
-        width:500px;
-        height:180px;
+        width:400px;
+        height:150px;
         margin: 0 auto;
         padding-top: 50px;
-        h4{
+        p{
             text-align: center;
             color: $white;
-            line-height: 1.5;
+            line-height: 1.6;
         }
     }
 }
