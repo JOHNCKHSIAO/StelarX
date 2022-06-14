@@ -10,6 +10,23 @@
     box-sizing: border-box;
 }
 
+// 進度條
+.g-container {
+    margin: 0 auto;
+    width: 450px;
+    height: 25px;
+    border-radius: 25px;
+    background: #eee;
+}
+.g-progress {
+    width: 0%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: $linear;
+    transition: 1s all;
+    border: 3px solid $white;
+}
+
 // 出發地
 .mileCity {
     display: flex;
@@ -160,6 +177,7 @@ margin-top: $spacing_24px;
 
         // 後面有svg線的背景
         .membMileSVG {
+          
             padding:$spacing_80px  0;
             display: flex;
             gap: 75px;
