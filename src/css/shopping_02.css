@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  /* 預設字體 */
+  font-size: 6.26%;
+  line-height: 1.6;
+}
+
+/* 以下為h1-h6 */
+/*字體寬度自己要加上喔*/
+h1 {
+  font-size: 64rem;
+}
+
+h2 {
+  font-size: 36rem;
+}
+
+h3 {
+  font-size: 32rem;
+}
+
+h4 {
+  font-size: 28rem;
+}
+
+h5 {
+  font-size: 24rem;
+}
+
+h6 {
+  font-size: 20rem;
+}
+
+p {
+  font-size: 18rem;
+}
+
+/* 以下為title */
+.title1 {
+  font-size: 120rem;
+}
+
+.title2 {
+  font-size: 48rem;
+}
+
+.title3 {
+  font-size: 40rem;
+}
+
+.title4 {
+  font-size: 22rem;
+}
+
+.title5 {
+  font-size: 16rem;
+}
+
+.title6 {
+  font-size: 14rem;
+}
+
+.btn_cta {
+  width: 380px;
+  height: 70px;
+}
+.btn_cta h5 {
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+}
+.btn_cta h5 .btn_radius {
+  color: #EEEEEE;
+  border: 2px solid #EEEEEE;
+  display: block;
+  text-decoration: none;
+  border-radius: 50px;
+}
+.btn_cta h5 .btn_radius:hover {
+  border: 0;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_general {
+  width: 380px;
+  height: 70px;
+}
+.btn_general h5 {
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+}
+.btn_general h5 .btn_square {
+  color: #EEEEEE;
+  border: 2px solid #EEEEEE;
+  display: block;
+  text-decoration: none;
+}
+.btn_general h5 .btn_square:hover {
+  border: 0;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  border: 2px solid linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_genera2 {
+  width: 380px;
+  height: 70px;
+}
+.btn_genera2 h5 {
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+}
+.btn_genera2 h5 .btn_square {
+  color: #EEEEEE;
+  border: 0;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  border: 2px solid linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  display: block;
+  text-decoration: none;
+}
+
+.btn_status {
+  width: 380px;
+  height: 70px;
+}
+.btn_status h5 {
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+}
+.btn_status h5 .btn_square {
+  color: #EEEEEE;
+  border: 2px solid #EEEEEE;
+  display: block;
+  text-decoration: none;
+}
+.btn_status h5 .btn_square:hover {
+  color: #00072E;
+  border: 0;
+  background: #EEEEEE;
+}
+
+.btn_main {
+  width: 200px;
+  height: 200px;
+}
+.btn_main .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  font-size: 24rem;
+}
+.btn_main .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btn_main .btn_circle_text .btn_circle:hover {
+  box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+body {
+  color: rgb(255, 255, 255);
+}
+
+.main_top {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main_top .left_image {
+  width: 400px;
+}
+.main_top .left_image .img_1 {
+  margin-bottom: 40px;
+}
+.main_top .left_image .Small_img {
+  display: flex;
+  justify-content: space-between;
+}
+.main_top .left_image .Small_img img {
+  width: 47%;
+}
+.main_top .right_word .commodity_title h3 {
+  margin-bottom: 24px;
+}
+.main_top .right_word .commodity_title h4 {
+  margin-bottom: 64px;
+}
+.main_top .right_word .commodity_title p {
+  line-height: 1.6;
+}
+.main_top .right_word .commodity_title p:last-child {
+  margin-top: 40px;
+}
+.main_top .right_word .exchange {
+  display: flex;
+  margin-top: 100px;
+}
+.main_top .right_word .exchange .click_num {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+.main_top .right_word .exchange .click_num .reduce {
+  display: block;
+  width: 27px;
+  height: 27px;
+  border-radius: 13.5px;
+  background-color: #987A4D;
+  font-size: 40px;
+  text-align: center;
+  line-height: 20px;
+}
+.main_top .right_word .exchange .click_num .add {
+  display: block;
+  width: 27px;
+  height: 27px;
+  border-radius: 13.5px;
+  background-color: #987A4D;
+  font-size: 30px;
+  text-align: center;
+  line-height: 27px;
+}
+.main_top .right_word .exchange .Redeem_now {
+  margin-left: 64px;
+}
+.main_top .right_word .exchange .Redeem_now h6 {
+  width: 85px;
+  margin-top: 10px;
+  transform: translateX(40px);
+  color: #2B7C33;
+  border-bottom: 1px solid #2B7C33;
+}
+.main_top .right_word .mileage {
+  margin-top: 20px;
+}
+
+.main_button {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  border-bottom: 2px solid #987A4D;
+  padding-bottom: 64px;
+}
+
+.main_bottom {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 48px;
+  text-align: center;
+}
+.main_bottom ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+.main_bottom ul li {
+  text-align: center;
+}
+.main_bottom ul li img {
+  width: 350px;
+  height: 360px;
+}
+.main_bottom ul li h4 {
+  margin-top: 40px;
+}
+.main_bottom ul li h5 {
+  margin-top: 24px;
+}
+
+/*# sourceMappingURL=shopping_02.css.map */

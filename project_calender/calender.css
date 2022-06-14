@@ -1,0 +1,33 @@
+body{
+    background-color: #00072E;
+    color: white;
+}
+.container{
+    width: 700px;   
+    height: 600px;
+
+    /* 置中 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    border: 1px solid gray;
+    padding: 20px; 
+
+    /* background-color: #fff; */
+    
+}
+
+.fc .fc-toolbar-title{
+    padding-left: 100px;
+}
+.fc-daygrid-dot-event .fc-event-title{
+    color: #00FF0A;
+}
+.fc-daygrid-event-dot{
+    display: none;
+}
+.fc-direction-ltr .fc-daygrid-event .fc-event-time{
+    display: none;
+}

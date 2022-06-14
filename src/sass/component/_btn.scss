@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // <<<<<<< HEAD
 // =======
@@ -8,84 +9,188 @@
 // >>>>>>> 07c7e7456d46a24e7f0555a53d7c5d14f7a43d4c
 // >>>>>>> dev
 >>>>>>> 7f8a3e8907389a3d7249bc8a75f73307caa8c744
+=======
+//宣告一些變數
+$btnFontSize:16px;
+$btnWidth:250px;
+$btnHeight:46px;
+$btnFontWeight:600;
+
+>>>>>>> e3746a82b348d61f53ec3f709a34ab28f9c76994
 //這是圓角按鈕
+//超連結跟div共用這個樣式
 .btn_cta {
-    h5 {
+    width: $btnWidth;
+    height: $btnHeight; 
+    border: 1px solid $white;
+    border-radius: 50px;
+    cursor: pointer;
+    &:hover {
+        border-color: $blue;
+        background: $linear;
+    }
+    .aLink{
+        display: block;
+        // border:1px solid yellow;
+        margin: 0 auto;
+        text-decoration: none;
+        font-weight: $btnFontWeight;
+        line-height: $btnHeight;
+        color: $white;
+        font-size: $btnFontSize;
         text-align: center;
-        line-height: 40px;
-        font-weight: 600;
+        position: relative; 
+        img{
+            width:10px;
+            position: absolute;
+            top:36%;
+            right:10%
+        } 
+    }
+   
+}
 
-        
-
-        .btn_radius {
-            width: 380px;
-            height: 70px;
-            color: $white;
-            border: 2px solid $white;
-            display: block;
-            text-decoration: none;
-            border-radius: 50px;
-
-            &:hover {
-                border-color: $blue;
-                background: $linear;
-            }
-        }
+//這是圓角按鈕
+//用button  sumbit表單用的
+.btn_cta_submit {
+    width: $btnWidth;
+    height:$btnHeight; 
+    border: 1px solid $white;
+    border-radius: 50px;
+    background: $blue;
+    cursor: pointer;
+    &:hover {
+        border-color: $blue;
+        background: $linear;
+    }
+    .aLink{
+        display: block;
+        // border:1px solid yellow;
+        margin: 0 auto;
+        text-decoration: none;
+        font-weight: $btnFontWeight;
+        line-height:$btnHeight;
+        color: $white;
+        font-size: $btnFontSize;
+        text-align: center;
+        position: relative; 
+        img{
+            width:10px;
+            position: absolute;
+            top:36%;
+            right:10%
+        } 
     }
 }
 
-//這是方形按鈕 有漸層
+//方形有漸層按鈕
+//超連結跟div共用這一樣式
+
 .btn_general {
-
-
-    h5 {
+    width:$btnWidth;
+    height:$btnHeight; 
+    border: 1px solid $white;
+    cursor: pointer;
+    &:hover {
+        border-color: $blue;
+        background: $linear;
+    }
+    .btn_square{
+        display: block;
+        // border:1px solid yellow;
+        margin: 0 auto;
+        text-decoration: none;
+        font-weight: $btnFontWeight;
+        line-height: $btnHeight;
+        color: $white;
+        font-size: $btnFontSize;
         text-align: center;
-        line-height: 70px;
-        font-weight: 600;
-
-        .btn_square {
-
-            width: 380px;
-            height: 70px;
-            color: $white;
-            border: 2px solid $white;
-            display: block;
-            text-decoration: none;
-
-            &:hover {
-                border-color: $blue;
-                background: $linear;
-
-            }
-        }
     }
 }
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> dcfb5bd4d3dfc89903595a92dd0da516b9ecd6c5
+////方形漸層按鈕 submit用
+
+.btn_general_sumbmit {
+    width: $btnWidth;
+    height: $btnHeight; 
+    border: 1px solid $white;
+    background: $blue;
+    cursor: pointer;
+    &:hover {
+        border-color: $blue;
+        background: $linear;
+    }
+    .btn_square{
+        display: block;
+        // border:1px solid yellow;
+        margin: 0 auto;
+        text-decoration: none;
+        font-weight: $btnFontWeight;
+        line-height: $btnHeight;
+        color: $white;
+        font-size: $btnFontSize;
+        text-align: center;
+    }
+}
+
+
+
 
 ////這是方形按鈕 無漸層
 
 .btn_status {
-    width: 380px;
-    height: 70px;
-
-    h5 {
+    width: $btnWidth;
+    height:$btnHeight; 
+    border: 1px solid $white;
+    cursor: pointer;
+    .btn_square{
+        display: block;
+        // border:1px solid yellow;
+        margin: 0 auto;
+        text-decoration: none;
+        font-weight: $btnFontWeight;
+        line-height: $btnHeight;
+        color: $white;
+        font-size: $btnFontSize;
         text-align: center;
-        line-height: 70px;
-        font-weight: 600;
-
-        .btn_square {
-            color: $white;
-            border: 2px solid $white;
-            display: block;
-            text-decoration: none;
-
-            &:hover {
-                color: $blue;
-                border: 0;
-                background: $white;
-            }
+        &:hover {
+            background: $white;
+            color: $blue;
         }
     }
 }
+
+////這是方形按鈕 無漸層 sumbmit專用
+
+.btn_status_submit {
+    width: $btnWidth;
+    height:$btnHeight; 
+    border: 1px solid $white;
+    background: $blue;
+    padding: 0;
+    cursor: pointer;
+    .btn_square{
+        width:100%;
+        height:100%;
+        font-weight: $btnFontWeight;
+        line-height: $btnHeight;
+        color: $white;
+        font-size: $btnFontSize;
+        text-align: center;
+        &:hover {
+            background: $white;
+            color: $blue;
+        }
+    }
+}
+
+
+
+
 
 //這是導覽頁圓型按鈕 有漸層
 .btn_main {
