@@ -68,15 +68,18 @@
 
     .selector_title{
         position:relative;
-
+     
+    
         ::after{
-            content: '';
-            height: 1px;
+            content: "";
+            display: block;
             width: 150px;
-            border-bottom: #eeeeee solid ;
+            border-bottom: 3px solid #EEEEEE;
             position: absolute;
-            top: 120%;
-            right: 41.5%;
+            top: 100%;
+            margin-top: 14px;
+            left: 50%;
+            transform: translate(-50%, 0);
         }
         
         h2{

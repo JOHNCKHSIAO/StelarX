@@ -323,15 +323,10 @@ p {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
-<<<<<<< HEAD
 body {
   color: #eeeeee;
 }
 
-=======
-<<<<<<< HEAD
-=======
->>>>>>> dev
 .booking-process {
   width: 900px;
   display: flex;
@@ -427,7 +422,6 @@ body {
   fill: #987A4D;
 }
 
-<<<<<<< HEAD
 .booking-seats {
   justify-content: space-between;
   width: 600px;
@@ -605,7 +599,4 @@ body {
   margin-top: 120px;
 }
 
-=======
->>>>>>> bff922e7f3f155c64f8f9f3bf6534ada08b6eb27
->>>>>>> dev
 /*# sourceMappingURL=booking_03.css.map */
