@@ -130,8 +130,8 @@ p {
 }
 
 .btn_cta {
-  width: 200px;
-  height: 36px;
+  width: 250px;
+  height: 46px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   cursor: pointer;
@@ -145,9 +145,9 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 46px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   position: relative;
 }
@@ -159,8 +159,8 @@ p {
 }
 
 .btn_cta_submit {
-  width: 200px;
-  height: 36px;
+  width: 250px;
+  height: 46px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   background: #00072E;
@@ -175,9 +175,9 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 46px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   position: relative;
 }
@@ -189,8 +189,8 @@ p {
 }
 
 .btn_general {
-  width: 200px;
-  height: 36px;
+  width: 250px;
+  height: 46px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
@@ -203,15 +203,15 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 46px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 
 .btn_general_sumbmit {
-  width: 200px;
-  height: 36px;
+  width: 250px;
+  height: 46px;
   border: 1px solid #EEEEEE;
   background: #00072E;
   cursor: pointer;
@@ -225,15 +225,15 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 46px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 
 .btn_status {
-  width: 200px;
-  height: 36px;
+  width: 250px;
+  height: 46px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
@@ -242,9 +242,9 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 46px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 .btn_status .btn_square:hover {
@@ -253,8 +253,8 @@ p {
 }
 
 .btn_status_submit {
-  width: 200px;
-  height: 36px;
+  width: 250px;
+  height: 46px;
   border: 1px solid #EEEEEE;
   background: #00072E;
   padding: 0;
@@ -264,9 +264,9 @@ p {
   width: 100%;
   height: 100%;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 46px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 .btn_status_submit .btn_square:hover {
@@ -435,15 +435,18 @@ body {
   font-weight: 500;
 }
 .rocket-engine .engine-info .info-left h1 {
+  line-height: 1;
   margin: 120px 0 64px 80px;
 }
 .rocket-engine .engine-info .info-left span {
+  line-height: 1;
   margin-left: 240px;
 }
 .rocket-engine .engine-info .info-right {
   margin-left: auto;
 }
 .rocket-engine .engine-info .info-right h5 {
+  line-height: 1;
   display: flex;
 }
 .rocket-engine .engine-info .info-right ul {
@@ -458,10 +461,12 @@ body {
   margin: auto;
 }
 .rocket-info .info-data h1 {
+  line-height: 1;
   font-weight: 700;
   margin-bottom: 12px;
 }
 .rocket-info .info-data h5 {
+  line-height: 1;
   font-weight: 500;
   text-align: right;
   color: #a0a0a0;
@@ -511,6 +516,7 @@ body {
   margin-top: 200px;
 }
 .rocket-info .rocket-rocket .rocket-right .eqpt-top h3 {
+  line-height: 1;
   color: #987A4D;
   font-weight: 500;
   text-align: center;
@@ -524,6 +530,7 @@ body {
   border-bottom: 1px solid #EEEEEE;
 }
 .rocket-info .rocket-rocket .rocket-right .eqpt-top .eqpt-detail ul li {
+  line-height: 1;
   flex-grow: 1;
   margin-bottom: 24px;
 }
@@ -546,6 +553,7 @@ body {
   margin: auto;
 }
 .rocket-info .rocket-rocket .rocket-right .eqpt-bottom h3 {
+  line-height: 1;
   color: #987A4D;
   font-weight: 500;
   text-align: center;
@@ -564,6 +572,7 @@ body {
   border-bottom: 1px solid #EEEEEE;
 }
 .rocket-info .rocket-rocket .rocket-right .eqpt-bottom .eqpt-detail ul li {
+  line-height: 1;
   flex-grow: 1;
   margin-bottom: 24px;
 }
@@ -576,6 +585,7 @@ body {
 }
 
 .rocket-cabin h1 {
+  line-height: 1;
   color: #987A4D;
   font-family: "Roboto Serif", serif;
   font-weight: 500;
@@ -587,13 +597,28 @@ body {
   width: 1440px;
   position: relative;
 }
-.rocket-cabin .cabin-intro-top .intro-toggle {
+.rocket-cabin .cabin-intro-top .toggle-switch {
   display: block;
   height: 40px;
   width: 40px;
   margin: auto;
   border-radius: 50%;
   background-color: #987A4D;
+  box-shadow: 5px 0px 10px 0px rgb(255, 255, 255);
+  animation: animate 2s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rocket-cabin .cabin-intro-top .toggle-switch:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-out;
+  box-shadow: 0 0 15px 10px rgb(255, 255, 255);
 }
 .rocket-cabin .cabin-intro-top .intro-pop {
   display: block;
@@ -602,9 +627,13 @@ body {
   text-align: center;
   height: 80px;
   border-radius: 25px;
+  display: none;
 }
 .rocket-cabin .cabin-intro-top .intro-pop h6 {
   line-height: 80px;
+}
+.rocket-cabin .cabin-intro-top .pop-active {
+  display: block;
 }
 .rocket-cabin .cabin-intro-top .intro-toggle1 {
   width: 300px;
@@ -673,6 +702,7 @@ body {
 }
 .rocket-bodyguard h2 {
   font-weight: 500;
+  line-height: 1;
 }
 .rocket-bodyguard .sep-line {
   width: 150px;
@@ -682,6 +712,7 @@ body {
   margin: 24px auto;
 }
 .rocket-bodyguard h5 {
+  line-height: 1;
   margin-bottom: 64px;
 }
 .rocket-bodyguard ul {
@@ -693,6 +724,7 @@ body {
   flex-grow: 1;
 }
 .rocket-bodyguard ul li h4 {
+  line-height: 1;
   font-weight: 700;
   margin: 48px 0 40px 0;
 }
@@ -726,7 +758,54 @@ body {
   width: 1440px;
   height: 750px;
   margin: auto;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  background-image: url("../images/rocket/rocket_plus_star.jpg");
+  position: relative;
+}
+.rocket-plus .plus-info {
+  width: 920px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+.rocket-plus .plus-info h2 {
+  font-weight: 500;
+  line-height: 1;
+  margin: 80px 0 80px 120px;
+}
+.rocket-plus .plus-info h5 {
+  margin-left: 200px;
+}
+
+.rocket-more .more-wrapper {
+  width: 1080px;
+  margin: 150px auto;
+  display: flex;
+  text-align: center;
+  font-weight: 700;
+}
+.rocket-more .more-wrapper .more-btn {
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+}
+.rocket-more .more-wrapper .more-btn h2 {
+  line-height: 300px;
+  color: #EEEEEE;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.rocket-more .more-wrapper .more-btn:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-out;
+  box-shadow: 0 0 60px rgba(255, 255, 255, 0.9);
 }
 
 /*# sourceMappingURL=rocket.css.map */

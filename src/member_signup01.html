@@ -23,23 +23,23 @@
                 <div class="input_div" id="account_div">
                     <label for="account_input"><h5>帳號</h5></label>
                     <input type="text" id="account_input">
-                    <p class="account-check-message" id="accountCheck_message">本帳號已經有人使用，請試試別的名稱!</p>
+                    <p class="account-check-message title6" id="accountCheck_message">本帳號已經有人使用，請試試別的名稱!</p>
                 </div>
                 <div class="input_div" id="id_div">
                     <label for="id_input"><h5>ID</h5></label>
                     <input type="text" id="id_input">
-                    <p class="id-check-message" id="idCheck_message">您已是我們的會員，請點選會員登入!</p>
+                    <p class="id-check-message title6" id="idCheck_message">您已是我們的會員，請點選會員登入!</p>
                 </div>
-                <div class="input_div_password" id="password_div">
+                <div class="input_div_password displaynone" id="password_div">
                     <label for="password_input"><h5>密碼</h5></label>
                     <input type="password"id="password_input"><i class="fa-solid fa-eye-slash"></i>   
                 </div>
-                <div class="input_div_password" id="checkPassword_div">
+                <div class="input_div_password displaynone" id="checkPassword_div">
                     <label for="checkPassword_input"><h5>確認密碼</h5></label>
                     <input type="password" id="checkPassword_input"><i class="fa-solid fa-eye-slash"></i>
-                    <p class="password-wrong" id="checkPassword_message">與密碼不符! 請重新輸入!!</p>
+                    <p class="password-wrong  title6" id="checkPassword_message">與密碼不符! 請重新輸入!!</p>
                 </div>
-                <div class="input_div" id="lastName_div">
+                <div class="input_div displaynone" id="lastName_div">
                     <label for=""><h5>姓</h5></label>
                     <input type="text">
                 </div>
@@ -60,18 +60,14 @@
                     <input type="text">
                 </div>
             </div>
-            <div class="btn_container" id="submitBtn">
-                <div class="btn_general">
-                    <h5>
-                        <a href="" class="btn_square">下一步</a>
-                    </h5>
-                </div>
+            <div class="btn_cta btn" id="submitBtn">
+                <div class="aLink">下一步<img src="./images/ctz_dec.png" alt=""></div>
             </div>
         </form>
 
     </section>
 
     @@include("./layout/footer.html")
-    <!-- <script src="./js/member_signup01.js"></script> -->
+    <script src="./js/member_signup01.js"></script>
 </body>
 </html>

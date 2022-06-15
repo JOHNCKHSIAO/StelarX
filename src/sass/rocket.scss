@@ -143,17 +143,20 @@ body{
             font-weight: 500;
             
             h1{
+                line-height: 1;
                 margin: $spacing_120px 0 $spacing_64px $spacing_80px;
             }
             span{
+                line-height: 1;
                 margin-left: 240px;
             }
         }
-
+        
         .info-right{
             margin-left: auto;
-
+            
             h5{
+                line-height: 1;
                 display: flex;
             }
             ul{
@@ -179,10 +182,12 @@ body{
         width: 1080px;
         margin: auto;
         h1{
+            line-height: 1;
             font-weight: 700;
             margin-bottom: $spacing_12px;
         }
         h5{
+            line-height: 1;
             font-weight: 500;
             text-align: right;
             color: #a0a0a0;
@@ -244,6 +249,7 @@ body{
                     margin-top: 200px;
                 }
                 h3{
+                    line-height: 1;
                     color: $gold;
                     font-weight: 500;
                     text-align: center;
@@ -258,6 +264,7 @@ body{
                         border-bottom: 1px solid $white;
 
                         li{
+                            line-height: 1;
                             flex-grow: 1;
                             margin-bottom: $spacing_24px;
                         }
@@ -285,6 +292,7 @@ body{
                     margin: auto;
                 }
                 h3{
+                    line-height: 1;
                     color: $gold;
                     font-weight: 500;
                     text-align: center;
@@ -305,6 +313,7 @@ body{
                         border-bottom: 1px solid $white;
 
                         li{
+                            line-height: 1;
                             flex-grow: 1;
                             margin-bottom: $spacing_24px;
                         }
@@ -326,6 +335,7 @@ body{
 
 .rocket-cabin{
     h1{
+        line-height: 1;
         color: $gold;
         font-family: $rob_Serif;
         font-weight: 500;
@@ -342,13 +352,37 @@ body{
 
         position: relative;
         
-        .intro-toggle{
+        .toggle-switch{
             display: block;
             height: 40px;
             width: 40px;
             margin: auto;
             border-radius: 50%;
             background-color: $gold;
+
+            box-shadow: 5px 0px 10px 0px rgba(255, 255, 255, 1); 
+            
+            animation: animate 2s linear infinite;
+
+            @keyframes animate {      
+                0%
+                {
+                    transform: rotate(0deg);
+                }
+                100%
+                {
+                    transform: rotate(360deg);
+                }   
+            }
+
+            &:hover{
+                
+                transform: scale(1.1);
+                transition: all .2s ease-out;
+                box-shadow: 0 0 15px 10px rgba(255, 255, 255, 1); 
+            }
+
+
         }
         .intro-pop{
             display: block;
@@ -357,11 +391,18 @@ body{
             text-align: center;
             height: 80px;
             border-radius: 25px;
+
+            display: none;
             
             h6{
                 line-height: 80px;
             }
+
         }
+        .pop-active{
+            display: block;
+        }
+        
         .intro-toggle1{
             width: 300px;
             position: absolute;
@@ -394,6 +435,9 @@ body{
            bottom: $spacing_40px;
            left: 180px;
         }
+
+
+
     }
 
     // -------------- 火箭艙_簡介 --------------
@@ -440,6 +484,7 @@ body{
 
     h2{
         font-weight: 500;
+        line-height: 1;
     }
     .sep-line{
         width: 150px;
@@ -449,17 +494,19 @@ body{
         margin: $spacing_24px auto;
     }
     h5{
+        line-height: 1;
         margin-bottom: $spacing_64px;
     }
     ul{
         display: flex;
         width: 1080px;
         margin: 0 auto $spacing_80px;
-
+        
         li{
             flex-grow: 1;
-
+            
             h4{
+                line-height: 1;
                font-weight: 700;
                margin: $spacing_48px 0 $spacing_40px 0; 
             }
@@ -498,21 +545,74 @@ body{
 
 // -------------------------------- 火箭_加值服務 -----------------------------
 
+
 .rocket-plus{
 
     width: 1440px;
     height: 750px;
     margin: auto;
-    background: $linear;
+    background-image: url('../images/rocket/rocket_plus_star.jpg');
 
-    //https://www.w3schools.com/howto/howto_js_slideshow.asp
-    //https://medium.com/雪狐窩在雜誌社/網頁圖片輪播-775c756dc4c3
-    //https://bootstrap5.hexschool.com/docs/5.0/components/carousel/#via-javascript
-   
+    position: relative;
+
+    .plus-info{
+        width: 920px;
+        height: 450px;
+        background-color: rgb(0, 0, 0, 50%);
+
+        position: absolute;
+        top: $spacing_80px;
+        right: 0;
+        
+        h2{
+            font-weight: 500;
+            line-height: 1;
+            margin: $spacing_80px 0 $spacing_80px $spacing_120px;
+        }
+        h5{
+            margin-left: 200px;
+        }
+    }
 }
 
 // -------------------------------- 火箭_更多連結 -----------------------------
 
+.rocket-more{
 
-//https://www.youtube.com/watch?v=1Aq9OJuS3ok
+    //缺背景
 
+    .more-wrapper{
+        width: 1080px;
+        margin: 150px auto;
+        display: flex;
+        text-align: center;
+        font-weight: 700;
+          
+        .more-btn{
+            margin: auto;
+            border-radius: 50%;
+
+            position: relative;
+          
+            h2{
+                line-height: 300px;
+                color: $white;
+                background-color: rgb(0, 0, 0, 30%);
+                border-radius: 50%;
+                
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            &:hover{
+                transform: scale(1.1);
+                transition: all .2s ease-out;
+                box-shadow: 0 0 60px rgba(255, 255, 255, 0.9);
+            }
+        }    
+    }
+}

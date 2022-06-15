@@ -268,10 +268,7 @@ body {
 }
 .intro .title img {
   width: 350px;
-  margin: 40px 0;
-}
-.intro .title h6 {
-  padding-top: 16px;
+  margin: 35px 0;
 }
 .intro .enter {
   display: flex;
