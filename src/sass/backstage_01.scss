@@ -67,7 +67,7 @@ main{
             background:$white;
             cursor: pointer;
            a{
-            border:2px solid $blue;
+            border:1px solid $blue;
             display: block;
             width:100%;
             text-decoration: none;
@@ -81,12 +81,14 @@ main{
         .thispage > a{
             background:$linear;
             color:$white;
-            border:0;
         }
 
     }
     .info-area{
         // border:1px solid orange;
+        &:nth-child(2n) ul>li {
+                // background-color: #cbcbcb;
+        }
         .member-list-title{
             display: inline-grid;
             grid-template-columns: [line1] 160px [line2] 90px [line3] 90px [line4] 260px [line5] 260px [line6] 110px [line7]106px;
@@ -104,6 +106,7 @@ main{
         .member-list-content{
             display: inline-grid;
             grid-template-columns: [line1] 160px [line2] 90px [line3] 90px [line4] 260px [line5] 260px [line6] 110px [line7]106px;
+          
             li{
                 // border:1px solid red;
                 height:60px;

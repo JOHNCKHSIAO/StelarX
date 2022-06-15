@@ -3,92 +3,116 @@
 @import 'base/fontSet';
 @import 'mixin/mixin';
 @import 'component/btn';
-body{
+
+body {
     color: white;
-    background-color: white;
+    background-color: $blue;
 }
-.wrapper{
+
+.wrapper {
     width: 1080px;
     margin: 0 auto;
     text-align: center;
-    background-color: #00072E;
-    .icon_top{
+    background-color: #191F42;
+    border-radius: 5px;
+
+    .icon_top {
         margin-top: 64px;
     }
-    h2{
+
+    h2 {
         margin: 40px 0 40px 0;
     }
-    h5{
 
-    }
-    .plant{
+    h5 {}
+
+    .plant {
         margin-top: 120px;
     }
-    main{
+
+    main {
         width: 700px;
         margin: 0 auto;
         margin-top: 120px;
-        .item_1{
+
+        .item_1 {
             display: flex;
             justify-content: space-around;
             padding-bottom: 24px;
             border-bottom: 2px solid #987A4D;
         }
-        .personal_information{
+
+        .personal_information {
             display: flex;
             justify-content: space-around;
             margin: 24px 0 64px 0;
         }
-        .item_2{
+
+        .item_2 {
             display: flex;
             justify-content: space-around;
             padding-bottom: 24px;
             border-bottom: 2px solid #987A4D;
-            h6:first-child{
+
+            h6:first-child {
                 margin-left: 35px;
             }
-            h6:last-child{
+
+            h6:last-child {
                 margin-left: 410px;
             }
         }
-        .commodity{
+
+        .commodity {
             display: flex;
             justify-content: space-around;
             align-items: center;
             padding-bottom: 24px;
             margin-top: 24px;
             border-bottom: 2px solid #987A4D;
-            img{
+
+            img {
                 display: block;
                 width: 100px;
                 height: 100px;
             }
-            .align{
+
+            .align {
                 display: flex;
                 justify-content: space-between;
                 width: 400px;
-                h6{
+
+                h6 {
                     line-height: 1.6;
                 }
             }
         }
-        .calculate{
-            height: 70px;
-            display: flex;
-            align-items: center;
-            background-image: url(../images/shopping_cart/Rectangle\ 517.png);
-            margin-top: 120px;
-            h5:first-child{
-                margin-left: 50px;
-            }
-            h5:last-child{
-                margin-left: 410px;
-            }
-        }
+
     }
 
+    .calculate {
+        height: 70px;
+        display: flex;
+        align-items: center;
+   background: rgba(255,255,255,0.1);
+        margin-top: 120px;
+        border-radius: 5px ;
+
+        .calculate_txt {
+            display: flex;
+            justify-content:space-around;
+
+            width: 700px;
+            margin: 0 auto;
+            font-weight: 700;
+       
+           
+        }
+
+    }
 }
-.btn_genera2{
+
+.m0auto {
     margin: 0 auto;
     margin-top: 64px;
 }

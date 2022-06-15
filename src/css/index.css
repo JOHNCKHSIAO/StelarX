@@ -252,6 +252,16 @@
   width: 1080px;
   margin: 0 auto;
 }
+.index1440 .index1080 .index-showcase .index-showcase_line {
+  height: 1px;
+  width: 150px;
+  margin: 0 auto;
+  background-color: #EEEEEE;
+}
+.index1440 .index1080 .index-showcase .btn_cta {
+  margin: 0 auto;
+  margin-top: 64px;
+}
 .index1440 .index1080 .index-features .featuresFlex {
   display: flex;
   justify-content: space-around;
@@ -269,7 +279,7 @@
   position: relative;
 }
 .index1440 .index1080 .index-video video {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .index1440 .index1080 .index-video .index-video_text {
   position: absolute;
