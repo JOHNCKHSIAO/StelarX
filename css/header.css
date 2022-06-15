@@ -1,0 +1,95 @@
+header {
+  width: 100%;
+  height: 100px;
+}
+
+nav {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul {
+  width: 1080px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul li {
+  line-height: 40px;
+}
+
+ul .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul .logo img {
+  width: 180px;
+}
+
+.booking:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.shoppiingicon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item_list {
+  width: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: #987A4D 1px solid;
+  line-height: 40px;
+}
+
+.item_list a {
+  font-weight: 500;
+  color: #eeeeee;
+  text-decoration: none;
+  font-size: 18px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.item_list a:hover {
+  border-bottom: #987A4D 2px solid;
+}
+
+.booking {
+  width: 117px;
+  background: #987A4D;
+  border-radius: 50px;
+}
+
+.booking a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.shoppiingicon svg:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+/*# sourceMappingURL=header.css.map */
