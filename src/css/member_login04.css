@@ -130,16 +130,15 @@ p {
 }
 
 * {
-  line-height: 1.6;
   box-sizing: border-box;
 }
 
 .g-container {
   margin: 0 auto;
   width: 450px;
-  height: 25px;
   border-radius: 25px;
-  background: #eee;
+  background: #EEEEEE;
+  display: flex;
 }
 
 .g-progress {
@@ -147,8 +146,14 @@ p {
   height: inherit;
   border-radius: 25px 0 0 25px;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-  transition: 1s all;
-  border: 3px solid #EEEEEE;
+  transition: 1.5s all;
+  border: 6px solid #EEEEEE;
+}
+
+.rocket {
+  width: 60px;
+  height: 36px;
+  border: 1px solid white;
 }
 
 .mileCity {

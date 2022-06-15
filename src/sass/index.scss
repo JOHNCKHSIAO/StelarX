@@ -6,6 +6,13 @@
 
 
 // 共用間距
+
+.line_h12 {
+    line-height: 1.2;
+    // 讓行高正常
+}
+
+
 .index_mt120 {
     margin-top: $spacing_120px;
 }
@@ -112,14 +119,17 @@
 
         //影片插入
         .index-video {
-            max-width: 1440px;
-
-            margin: 0 auto;
-
-            .index-youtube {
-                // width: 100vw;
-
+            position: relative;
+            video{
+              
+                opacity: .8;
             }
+        .index-video_text{
+            position: absolute;
+            top: 400px;
+            left: 20px;
+            
+        }
 
         }
 
@@ -135,6 +145,9 @@
             .quizPlanetFlex {
                 display: flex;
                 justify-content: space-between;
+
+
+
 
             }
 
@@ -208,55 +221,44 @@
             }
         }
 
-        // 輪播動畫
-        .index-tourDown {
-            .swiper {
-                .swiper-wrapper {
-                    .swiper-slide {
+        //最下面最新活動的輪播那一個區塊動畫
+        .index-tour {
 
-                        // 輪播圖片
-                        .index-tourCard1 {
-                          width: 300px;
-                         
-                            background-image:url("../images/index/Rectangle1.png");
-                        }
+            overflow: hidden;
+            margin-bottom: 120px;
 
-                        .index-tourCard2 {
-                            background: url("../images/index/Rectangle2.png");
-                        }
+            .index-tourUp {
+                display: flex;
+                gap: 10%;
 
-                        .index-tourCard3 {
-                            background: url("../images/index/Rectangle3.png");
-                        }
+            }
 
-                        .index-tourCard4 {
-                            background: url("../images/index/Rectangle4.png");
-                        }
+            .index-tourDown {
+                .swiper {
+                    width: 1200px;
+                    height: 430px;
+                    // border: 1px solid white;zzzzz
 
-                        .index-tourCard5 {
-                            background: url("../images/index/Rectangle1.png");
-                        }
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
 
-                        .index-tourCard6 {
-                            background: url("../images/index/Rectangle2.png");
-                        }
+                            .index-tour_text {
+                                margin-top: -100px;
 
-                        .index-tourCard7 {
-                            background: url("../images/index/Rectangle3.png");
-                        }
-
-                        .index-tourCard8 {
-                            background: url("../images/index/Rectangle4.png");
+                            }
                         }
                     }
                 }
             }
-        }
-    }
-}
 
-//輪播動畫
-.swiper {
-    width: 1000px;
-    height: 300px;
+        }
+
+
+
+
+    }
 }
