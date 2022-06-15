@@ -432,6 +432,10 @@ body {
   color: #EEEEEE;
   text-align: center;
 }
+.booking_wold h3 {
+  color: #EEEEEE;
+  text-align: center;
+}
 
 .booking_people {
   margin-bottom: 32px;
@@ -460,15 +464,50 @@ body {
 
 /*------ 進度條顯示區塊 ------*/
 .booking-process {
-  width: 1084px;
-  height: 150px;
+  width: 950px;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
+}
+.booking-process .booking-process_each {
+  color: #987A4D;
+}
+.booking-process .booking-process_each:not(:last-child) .process-circle ::after {
+  content: "";
+  width: 75px;
+  border-bottom: #987A4D dashed;
+  position: absolute;
+  top: 50%;
+  right: -110%;
+}
+.booking-process .booking-process_each .main {
+  background-color: #987A4D;
+  color: #eeeeee;
+}
+.booking-process .booking-process_each .process-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: #987A4D 2px solid;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+.booking-process .booking-process_each .process-circle h2 {
+  font-size: 28px;
+  line-height: 80px;
+  text-align: center;
+}
+.booking-process .booking-process_each h6 {
+  font-size: 18px;
+  text-align: center;
+  color: #eeeeee;
 }
 
 /*------ 航班資訊區塊 ------*/
 .com-form {
   width: 1084px;
   margin: 0 auto;
+  margin-top: 120px;
 }
 
 /*------ 訂購者資料區塊 ------*/
@@ -538,6 +577,20 @@ body {
 }
 .booking_btn .btn_status {
   margin-right: 40px;
+}
+
+/*----- 付款資料區塊 -----*/
+#com-from_1 {
+  margin-bottom: 80px;
+}
+#com-from_1 .booking_wold {
+  margin-bottom: 80px;
+}
+#com-from_1 .hrplay {
+  width: 100px;
+}
+#com-from_1 #cardNumber input {
+  width: 580px;
 }
 
 /*# sourceMappingURL=booking_04.css.map */

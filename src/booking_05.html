@@ -4,12 +4,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/booking_04.css">
     <title></title>
 </head>
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+     <section class="booking-process">
+        <div class="booking-process_each">
+            <div class="process-circle main">
+                <h2>1</h2>
+            </div>
+            <h6>選擇星球</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>2</h2>
+            </div>
+            <h6>日期 / 艙別</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>3</h2>
+            </div>
+            <h6>座位 / 服務</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>4</h2>
+            </div>
+            <h6>資料填寫</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>5</h2>
+            </div>
+            <h6>確認 / 付款</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>6</h2>
+            </div>
+            <h6>完成</h6>
+        </div>
+    </section>
+    <!------ 資料確認區塊 ------>
+    <section class="com-form">
+        <div class="booking_wold">
+            <h2>資料確認</h2>
+            <hr class="hrWhit">
+        </div>
+        <div class="booking_text">
+            <div class="input_div">
+                <label for=""><h5>日期</h5></label>
+                <input type="text" value="2022/8/15" readonly="readonly">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>航班</h5></label>
+                <input type="text" value="000000" readonly="readonly">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>出發時間</h5></label>
+                <input type="text" value="11:20" readonly="readonly">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>到達時間</h5></label>
+                <input type="text" value="21:20" readonly="readonly">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>艙別</h5></label>
+                <input type="text" value="GX" readonly="readonly">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>座位</h5></label>
+                <input type="text" value="TGD101" readonly="readonly">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>人數</h5></label>
+                <input type="text" value="2" readonly="readonly">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>票價金額</h5></label>
+                <input type="text" value="3000" readonly="readonly">
+            </div>
+        </div>
+    </section>
+    <!------ 訂購者資料區塊 ------>
+    <section class="personal">
+        <div class="booking_people">
+            <h3>訂購者</h3>
+            <hr class="hrLong">
+        </div>
+        <div class="booking_text">
+            <div class="input_div">
+                <label for=""><h5>姓</h5></label>
+                <input type="text" value="LIU">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>名子</h5></label>
+                <input type="text" value="Chia-Tung">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>ID</h5></label>
+                <input type="text" value="Q123456789">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>手機</h5></label>
+                <input type="text" value="0900-000-000">
+            </div>
+        </div>
+    </section>
 
+    <!------ 同行者資料區塊 ------>
+    <section class="parther">
+        <div class="booking_people">
+            <h3>同行者</h3>
+            <hr class="hrLong">
+        </div>
+        <div class="booking_text">
+            <div class="input_div">
+                <label for=""><h5>姓</h5></label>
+                <input type="text">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>名子</h5></label>
+                <input type="text">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>ID</h5></label>
+                <input type="text">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>手機</h5></label>
+                <input type="text">
+            </div>
+        </div>
+    </section>
+    <!------ 付款資料區塊 ------>
+    <section class="com-form" id="com-from_1">
+        <div class="booking_wold">
+            <h3>付款</h3>
+            <hr class="hrplay">
+        </div>
+        <div class="booking_people">
+            <h3>信用卡付款</h3>
+            <hr class="hrLong">
+        </div>
+        <div class="booking_text">
+            <div class="input_div" id="cardNumber">
+                <label for=""><h5>卡號</h5></label>
+                <input type="text">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>日期</h5></label>
+                <input type="text">
+            </div>
+            <div class="input_div">
+                <label for=""><h5>安全碼</h5></label>
+                <input type="text">
+            </div>
+        </div>
+    </section>
+    <!------ 上/下一步區塊 ------>
+    <section class="booking_btn">
+        <div class="btn_status">
+            <h5>
+                <a href="#" class="btn_square">上一步</a>
+            </h5>
+        </div>
+        <div class="btn_general">
+            <h5>
+                <a href="#" class="btn_square">下一步</a>
+            </h5>
+        </div>
+    </section>
     @@include("./layout/footer.html")
 </body>
 </html>

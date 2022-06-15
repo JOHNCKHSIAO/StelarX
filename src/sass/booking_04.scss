@@ -22,6 +22,10 @@ body{
         color: $white;
         text-align: center;
     }
+    h3{
+        color: $white;
+        text-align: center;
+    }
 }
 .booking_people{
     margin-bottom: 32px;
@@ -50,16 +54,64 @@ body{
 
 /*------ 進度條顯示區塊 ------*/
 .booking-process{
-    width: 1084px;
-    height: 150px;
-    // border: 1px solid red;
+    width: 950px;
+    display: flex;
+    // outline: yellow solid 1px;
+    justify-content: space-between;
     margin: 0 auto;
+   
+    .booking-process_each{
+        color:#987A4D;
+        // outline: rgb(0, 183, 255) solid 1px;
+
+        &:not(:last-child){
+            .process-circle{
+                 ::after{
+                content: '';
+                width: 75px;
+                border-bottom: #987A4D dashed;
+                position: absolute;
+                top: 50%;
+                right: -110%;
+            }
+
+            }
+        }
+
+        .main{
+            background-color: #987A4D;
+            color:#eeeeee;
+        }
+
+        .process-circle{
+            position:relative;
+            width: 80px;
+            height: 80px;
+            border: #987A4D 2px solid;
+            border-radius: 50px;
+            margin-bottom: 16px;
+
+           
+            h2{
+                font-size: 28px;
+                line-height: 80px;
+                text-align: center;
+            }
+        }
+
+        h6{
+            font-size: 18px;
+            text-align: center;
+            color: #eeeeee;
+        }
+    }
 }
 /*------ 航班資訊區塊 ------*/
 .com-form{
     width: 1084px;
     // border: 1px solid red;
     margin: 0 auto;
+    margin-top: 120px;
 }
 /*------ 訂購者資料區塊 ------*/
 .personal{
@@ -127,5 +179,20 @@ body{
     display: flex;
     .btn_status{
         margin-right: 40px;
+    }
+}
+/*----- 付款資料區塊 -----*/
+#com-from_1{
+    margin-bottom: 80px;
+    .booking_wold{
+        margin-bottom: 80px;
+    }
+    .hrplay{
+        width: 100px;
+    }
+    #cardNumber{
+        input{
+            width: 580px;
+        }
     }
 }
