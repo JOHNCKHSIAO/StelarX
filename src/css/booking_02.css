@@ -1,13 +1,33 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected selector.\a   \2577 \a 8 \2502  <<<<<<< HEAD\d\a   \2502  ^\a   \2575 \a   src\\sass\\component\\_btn.scss 8:1  @import\a   src\\sass\\booking_02.scss 5:9      root stylesheet";
 }
 
 body {
@@ -350,7 +370,7 @@ body {
 
 .wrapper {
   width: 1080px;
-  height: 2000px;
+  height: 1700px;
   background-color: #191F42;
   border-radius: 10px;
   margin: 0 auto;
@@ -470,7 +490,7 @@ body {
 }
 .booking-calendar .selector_title {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 64px;
 }
 .booking-calendar .selector_title ::after {
   content: "";
@@ -479,7 +499,7 @@ body {
   border-bottom: #eeeeee solid;
   position: absolute;
   top: 120%;
-  right: 43%;
+  right: 42.3%;
 }
 .booking-calendar .selector_title h2 {
   text-align: center;
@@ -491,7 +511,7 @@ body {
 .container {
   width: 700px;
   height: 600px;
-  margin: 50px auto;
+  margin: 0 auto;
   padding: 20px;
   /* background-color: #fff; */
 }
@@ -524,41 +544,22 @@ body {
   height: 60px;
 }
 
-.lattice_1 {
+.booking-price {
   display: flex;
   justify-content: space-around;
   background-color: #262d52;
 }
-.lattice_1 h5 {
+.booking-price h5 {
   line-height: 85px;
+  font-weight: 700;
 }
 
-.main_button {
-  width: 800px;
+.step_button {
+  width: 600px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
-  border-bottom: 2px solid #987A4D;
-  padding-bottom: 64px;
-}
-.main_button .btn_status {
-  width: 300px;
-  height: 60px;
-}
-.main_button .btn_status a {
-  line-height: 60px;
-  font-size: 20px;
-}
-.main_button .btn_general {
-  width: 300px;
-  height: 60px;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-  border: none;
-}
-.main_button .btn_general a {
-  line-height: 60px;
-  font-size: 20px;
+  margin-top: 120px;
 }
 
 /*# sourceMappingURL=booking_02.css.map */

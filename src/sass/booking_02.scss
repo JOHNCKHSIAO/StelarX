@@ -65,7 +65,7 @@ body{
 }
 .wrapper{
     width: 1080px;
-    height: 2000px;
+    height: 1700px;
     background-color: #191F42;
     border-radius: 10px;
     margin: 0 auto;
@@ -119,8 +119,6 @@ body{
 }
 
 .booking-cabin{
-
-
     .selector_title{
         position:relative;
         margin-bottom: 80px;
@@ -196,9 +194,6 @@ body{
     }
 }
 
-
-
-
 .booking-calendar{
     width: 980px;
     margin: 0 auto;
@@ -210,7 +205,7 @@ body{
 
     .selector_title{
         position:relative;
-        margin-bottom: 80px;
+        margin-bottom: 64px;
 
         ::after{
             content: '';
@@ -219,7 +214,7 @@ body{
             border-bottom: #eeeeee solid ;
             position: absolute;
             top: 120%;
-            right: 43%;
+            right: 42.3%;
         }
         
         h2{
@@ -233,7 +228,7 @@ body{
 .container{
     width: 700px;   
     height: 600px;
-    margin: 50px auto;
+    margin: 0 auto;
 
     // border: 1px solid gray;
     padding: 20px; 
@@ -264,38 +259,20 @@ body{
     height: 60px;
 }
 
-.lattice_1{
+.booking-price{
     display: flex;
     justify-content: space-around;
     background-color: #262d52;
     h5{
         line-height: 85px;
+        font-weight: 700;
     }
 }
-.main_button{
-    width: 800px;
+.step_button{
+    width: 600px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-    border-bottom: 2px solid #987A4D;
-    padding-bottom: 64px;
-    .btn_status{
-        width: 300px;
-        height: 60px;
-        a{
-        line-height: 60px;
-        font-size: 20px;
-        }
-    }
-    .btn_general{
-        width: 300px;
-        height: 60px;
-        background: $linear;
-        border: none;
-        a{
-            line-height: 60px;
-            font-size: 20px;
-        }
-    }
+    margin-top: 120px;
+    
 }
