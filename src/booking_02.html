@@ -5,162 +5,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <link rel="shortcut icon" href="./images/shortcut.png">
     <link rel="stylesheet" href="./css/booking_02.css">
-    
     <link href='../project_calender/main.css' rel='stylesheet' />
-    <script src='../project_calender/main.js'></script>
-    
-    <!-- 轉換成中文 -->
-    <script src="../project_calender/locales-all.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <title></title>
+    <title>預約航程</title>
 </head>
 
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+    <section class="booking-process">
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>1</h2>
+            </div>
+            <h6>選擇星球</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle main">
+                <h2>2</h2>
+            </div>
+            <h6>日期 / 艙別</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>3</h2>
+            </div>
+            <h6>座位 / 服務</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>4</h2>
+            </div>
+            <h6>資料填寫</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>5</h2>
+            </div>
+            <h6>確認 / 付款</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>6</h2>
+            </div>
+            <h6>完成</h6>
+        </div>
+    </section>
     <div class="wrapper">
-        <div class="booking-status">
-            <h2>選擇往返星球</h2>
-            <div class="status_out">
-                <div class="status_left">
-                    <h5>起始點</h5>
-                    <button class="btn">
-                        <h5>地球</h5>
-                    </button>
+        <section class="booking-status">
+            <div class="selector_title">
+                <h2>選擇往返星球</h2>
+            </div>
+            <div class="selector">
+                <div>
+                    <p>起始點</p>
+                    <div class="btn_status">
+                        <a class="btn_square" href="#">地球</a>
+                    </div>
                 </div>
-                <div class="status_right">
-                    <h5>起始點</h5>
-                    <button class="btn">
-                        <h5>火星</h5>
-                    </button>
+                <div>
+                    <p>目的地</p>
+                    <div class="btn_status">
+                        <a class="btn_square" href="#">火星</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="booking-cabin">
-            <h2>選擇艙別</h2>
-            <div class="btn_out">
-                <div class="btn">
-                    <img src="./images/booking_img/Ellipse 145.png" alt="">
-                    <div class="word_text">
-                        <h2>GX</h2>
+            <div class="selector_title">
+                <h2>選擇艙別</h2>
+            </div>
+            <div class="cabin">
+                <a class="GX_btn" href="#">
+                    <div class="text">
+                        <span class="title3">GX</span>
                         <h5>Space Ahead</h5>
                     </div>
-                </div>
-                <div class="btn">
-                    <img src="./images/booking_img/white 146.png" alt="">
-                    <div class="word_text black_text">
-                        <h2>X</h2>
+                </a>
+                <a class="X_btn" href="#">
+                    <div class="text">
+                        <span class="title3">X</span>
                         <h5>Beyond Comfort</h5>
                     </div>
-                </div>
+
+                </a>
             </div>
         </div>
         <div class="booking-calendar">
-            <h2>選擇航程日期</h2>
-        </div>
-        <div class="container">
-            <div id='calendar'>
-    
+            <div class="selector_title">
+                <h2>選擇航程日期</h2>
             </div>
+            <!-- 日曆 start  -->
+            <div class="container">
+                <div id='calendar'>
+                </div>
+            </div>
+            <!-- 日曆 end  -->
         </div>
-        <div class="lattice_1">
+
+
+        <div class="booking-price">
             <h5>目前票價總金額</h5>
             <h5>$ 45,000 / 人</h5>
         </div>
-        <div class="main_button">
-            <div class="btn_status">
-                <h5>
-                    <a class="btn_square" href="#">上一步</a>
-                </h5>
-            </div>
-            <div class="btn_general">
-                <h5>
-                    <a class="btn_square" href="#">下一步</a>
-                </h5>
-            </div>
-        </div>  
     </div>
-    <!-- @@include("./layout/footer.html") -->
 
+    <div class="step_button">
+        <div class="btn_general">
+            <h5>
+                <a class="btn_square" href="#">上一步</a>
+            </h5>
+        </div>
+        <div class="btn_general">
+            <h5>
+                <a class="btn_square" href="#">下一步</a>
+            </h5>
+        </div>
+    </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          var calendarEl = document.getElementById('calendar');
-          var calendar = new FullCalendar.Calendar(calendarEl, {
-              initialView: 'dayGridMonth',
-              // locale:'zh-tw',
-              navLinks: true,
-            //   headerToolbar:{
-            //       left: 'prev,next today',
-            //       center:'title',
-            //       right:'dayGridMonth,timeGridWeek,timeGridDay'
-            //   },
-  
-              events:[
-                    {
-                      title:'08:00 GX商務',
-                      start:'2022-06-02',
-                      // end:'2022-07-02'
-                  },
-                  {
-                      title:'尚餘 3 位',
-                      start:'2022-06-02',
-                      allDay:false
-                      // end:'2022-07-12T16:00:00'
-                  },
-                  {
-                      title:'08:00 GX商務',
-                      start:'2022-06-08',
-                      // end:'2022-07-02'
-                  },
-                  {
-                      title:'尚餘 3 位',
-                      start:'2022-06-08',
-                      allDay:false
-                      // end:'2022-07-12T16:00:00'
-                  },
-                    {
-                      title:'08:00 GX商務',
-                      start:'2022-06-17',
-                      // end:'2022-07-02'
-                  },
-                  {
-                      title:'尚餘 3 位',
-                      start:'2022-06-17',
-                      allDay:false
-                      // end:'2022-07-12T16:00:00'
-                  },
-                    {
-                      title:'08:00 GX商務',
-                      start:'2022-06-20',
-                      // end:'2022-07-02'
-                  },
-                  {
-                      title:'尚餘 3 位',
-                      start:'2022-06-20',
-                      allDay:false
-                      // end:'2022-07-12T16:00:00'
-                  },
-                  {
-                      title:'08:00 GX商務',
-                      start:'2022-06-30',
-                      // end:'2022-07-02'
-                  },
-                  {
-                      title:'尚餘 8 位',
-                      start:'2022-06-30',
-                      allDay:false
-                      // end:'2022-07-12T16:00:00'
-                  },
-              ]
-          });
-          
-  
-          calendar.render();
-        });
-  
-      </script>
+    @@include("./layout/footer.html")
+    <script src='../project_calender/main.js'></script>
+    <!-- 轉換成中文 -->
+    <script src="../project_calender/locales-all.js"></script>
+    <script src="../src/js/booking_02.js"></script>
 </body>
 
 </html>
