@@ -133,27 +133,8 @@ p {
   box-sizing: border-box;
 }
 
-.g-container {
-  margin: 0 auto;
-  width: 450px;
-  border-radius: 25px;
-  background: #EEEEEE;
-  display: flex;
-}
-
-.g-progress {
-  width: 0%;
-  height: inherit;
-  border-radius: 25px 0 0 25px;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-  transition: 1.5s all;
-  border: 6px solid #EEEEEE;
-}
-
-.rocket {
-  width: 60px;
-  height: 36px;
-  border: 1px solid white;
+.login04 {
+  background: #000;
 }
 
 .mileCity {
@@ -216,13 +197,24 @@ p {
 .mileBar {
   margin-top: 24px;
 }
-.mileBar .progress {
-  width: 450px;
-  height: 20px;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-  border: 3px solid #EEEEEE;
-  border-radius: 50px;
+.mileBar .g-container {
   margin: 0 auto;
+  width: 450px;
+  border-radius: 25px;
+  background: #EEEEEE;
+  display: flex;
+}
+.mileBar .g-container .g-progress {
+  width: 0%;
+  height: inherit;
+  border-radius: 25px 0 0 25px;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  transition: 1.5s all;
+  border: 6px solid #EEEEEE;
+}
+.mileBar .g-container .rocket {
+  width: 60px;
+  height: 36px;
 }
 .mileBar h5 {
   margin-top: 12px;
@@ -236,7 +228,6 @@ p {
 .login04_1440 .login04_1080 {
   width: 1080px;
   margin: 0 auto;
-  border: 1px solid rgb(255, 255, 255);
 }
 .login04_1440 .login04_1080 h3 {
   text-align: center;
@@ -254,10 +245,29 @@ p {
   display: flex;
   gap: 75px;
 }
+.login04_1440 .login04_1080 .membMileSVG .bgsvg {
+  position: absolute;
+  left: 800px;
+  top: 450px;
+  transition: 2s all;
+  overflow: hidden;
+  height: 0;
+}
 .login04_1440 .login04_1080 .membMileSVG .membMile {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.login04_1440 .login04_1080 .membMileSVG .left {
+  margin-bottom: 500px;
+}
+.login04_1440 .login04_1080 .membMileSVG .right {
+  margin-top: 500px;
+}
+.login04_1440 .login04_1080 .login04_btn {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 120px;
 }
 
 /*# sourceMappingURL=member_login04.css.map */
