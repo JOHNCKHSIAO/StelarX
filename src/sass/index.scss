@@ -93,9 +93,21 @@
     .index1080 {
         width: 1080px;
         margin: 0 auto;
-
+// 星球旋轉預約頁面
+.index-showcase{
+    .index-showcase_line{
+        height: 1px;
+        width: 150px;
+        margin: 0 auto;
+        background-color: $white;
+    }
+    .btn_cta{
+        margin: 0 auto;
+        margin-top: $spacing_64px; ;
+    }
+}
         // 太空運輸領航者
-        .index-brief {}
+        // .index-brief {}
 
         // 四大服務icon
         .index-features {
@@ -122,12 +134,13 @@
             position: relative;
             video{
               
-                opacity: .8;
+                opacity: .7;
             }
         .index-video_text{
             position: absolute;
             top: 400px;
             left: 20px;
+     
             
         }
 

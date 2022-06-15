@@ -54,7 +54,8 @@ table {
 }
 
 html {
-  font-family: "Roboto", sans-serif; /* 預設字體 */
+  font-family: "Roboto", sans-serif;
+  /* 預設字體 */
   font-size: 6.26%;
   line-height: 1.6;
   box-sizing: border-box;
@@ -415,10 +416,6 @@ p {
   outline: #987A4D;
 }
 
-body {
-  background-color: #00072E;
-}
-
 /*------ 全域共用區塊 ------*/
 .hrWhit {
   background-color: #EEEEEE;
@@ -426,19 +423,30 @@ body {
 }
 
 .booking_wold {
-  margin-bottom: 63px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.booking_wold ::after {
+  content: "";
+  height: 1px;
+  width: 150px;
+  border-bottom: #eeeeee solid;
+  position: absolute;
+  top: 120%;
+  right: 43%;
 }
 .booking_wold h2 {
+  font-size: 26px;
+  font-weight: 700;
   color: #EEEEEE;
   text-align: center;
 }
 
-.booking_people {
-  margin-bottom: 32px;
-}
 .booking_people h3 {
   color: #EEEEEE;
   margin-left: 250px;
+  font-size: 24px;
 }
 .booking_people .hrLong {
   width: 600px;
@@ -447,22 +455,57 @@ body {
 
 /*------ 全域資訊綁定區塊 ------*/
 .booking_text {
-  margin-top: 30px;
-  width: 640px;
+  width: 550px;
   box-sizing: border-box;
-  margin: auto;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .booking_text .input_div {
-  display: inline-block;
-  margin: 0 20px;
-  margin-bottom: 40px;
+  margin-top: 45px;
 }
 
 /*------ 進度條顯示區塊 ------*/
 .booking-process {
-  width: 1084px;
-  height: 150px;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
+}
+.booking-process .booking-process_each {
+  color: #987A4D;
+}
+.booking-process .booking-process_each:not(:last-child) .process-circle ::after {
+  content: "";
+  width: 75px;
+  border-bottom: #987A4D dashed;
+  position: absolute;
+  top: 50%;
+  right: -110%;
+}
+.booking-process .booking-process_each .main {
+  background-color: #987A4D;
+  color: #eeeeee;
+}
+.booking-process .booking-process_each .process-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: #987A4D 2px solid;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+.booking-process .booking-process_each .process-circle h2 {
+  font-size: 28px;
+  line-height: 80px;
+  text-align: center;
+}
+.booking-process .booking-process_each h6 {
+  font-size: 18px;
+  text-align: center;
+  color: #eeeeee;
 }
 
 /*------ 航班資訊區塊 ------*/

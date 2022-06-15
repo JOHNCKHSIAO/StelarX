@@ -270,7 +270,7 @@
 }
 .input_div_full input {
   display: block;
-  width: 540px;
+  width: 550px;
   height: 40px;
   background-color: #191F42;
   border: #191F42;
@@ -290,14 +290,14 @@
   height: 70px;
   font-size: 24rem;
   padding-left: 10px;
-  background-color: #00072E;
-  border: 0;
+  background-color: #191F42;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
   margin-bottom: 32px;
 }
 
 .bg1440 {
-  line-height: 1.6;
-  background: linear-gradient(#000000 50%, #00072E 100%);
+  background: linear-gradient(#000000 30%, #00072E 100%);
 }
 .bg1440 .wrapper1080 {
   background-size: contain;
@@ -343,7 +343,7 @@
 .bg1440 .wrapper1080 .qanda1080 .qaline {
   margin: 24px 0;
   background: #EEEEEE;
-  height: 2px;
+  height: 1px;
 }
 .bg1440 .wrapper1080 .qanda1080 .qa_down {
   display: none;
@@ -411,10 +411,13 @@
 .bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleRight .my_pla_sel {
   width: 500px;
   height: 70px;
-  border: 0;
   padding-left: 10px;
   font-size: 24rem;
   margin-bottom: 32px;
+  color: #EEEEEE;
+  background-color: #191F42;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
 }
 .bg1440 .wrapper1080 .my_tra_form .my_tra_down .my_tra_text {
   color: #EEEEEE;
@@ -424,6 +427,9 @@
   height: 300px;
   font-size: 24rem;
   padding-left: 10px;
+  padding-top: 10px;
+  background-color: #191F42;
+  border-radius: 5px;
 }
 .bg1440 .wrapper1080 .my_tra_form .btn_cta {
   margin: 0 auto;

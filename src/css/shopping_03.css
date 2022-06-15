@@ -293,6 +293,36 @@ p {
   border-radius: 50%;
 }
 .btn_main .btn_circle_text .btn_circle:hover {
+<<<<<<< HEAD
+=======
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_main_w {
+  width: 200px;
+  height: 200px;
+}
+.btn_main_w .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  font-size: 24rem;
+}
+.btn_main_w .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #00072E;
+  background: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btn_main_w .btn_circle_text .btn_circle:hover {
+  box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+  color: #EEEEEE;
+>>>>>>> fbe1317e4c5b30bebc59dcf917c8a4b5ccb31f85
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
@@ -321,6 +351,11 @@ p {
   box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
   color: #EEEEEE;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.m0auto {
+  margin: 0 auto;
+  margin-top: 64px;
 }
 
 body {
@@ -370,6 +405,7 @@ body {
 }
 .shopping-list .commodity ul li .wrap .wrap_in .click_num {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 120px;
 }
@@ -449,10 +485,9 @@ body {
   border: 1px solid white;
   border-radius: 10px;
   margin-top: 24px;
-}
-.com-form .lattice_2 .lattice_left .lattice h6 {
-  font-size: 50px;
-  right: 0;
+  color: #EEEEEE;
+  font-size: 24rem;
+  background-color: #191F42;
 }
 .com-form .lattice_2 .lattice_right h5 {
   padding-left: 10px;
@@ -463,10 +498,9 @@ body {
   border: 1px solid white;
   border-radius: 10px;
   margin-top: 24px;
-}
-.com-form .btn_genera2 {
-  margin: 0 auto;
-  margin-top: 64px;
+  background-color: #191F42;
+  color: #EEEEEE;
+  font-size: 24rem;
 }
 
 /*# sourceMappingURL=shopping_03.css.map */

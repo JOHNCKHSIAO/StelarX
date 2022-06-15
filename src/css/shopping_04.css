@@ -325,14 +325,15 @@ p {
 
 body {
   color: white;
-  background-color: white;
+  background-color: #00072E;
 }
 
 .wrapper {
   width: 1080px;
   margin: 0 auto;
   text-align: center;
-  background-color: #00072E;
+  background-color: #191F42;
+  border-radius: 5px;
 }
 .wrapper .icon_top {
   margin-top: 64px;
@@ -392,21 +393,23 @@ body {
 .wrapper main .commodity .align h6 {
   line-height: 1.6;
 }
-.wrapper main .calculate {
+.wrapper .calculate {
   height: 70px;
   display: flex;
   align-items: center;
-  background-image: url(../images/shopping_cart/Rectangle\ 517.png);
+  background: rgba(255, 255, 255, 0.1);
   margin-top: 120px;
+  border-radius: 5px;
 }
-.wrapper main .calculate h5:first-child {
-  margin-left: 50px;
-}
-.wrapper main .calculate h5:last-child {
-  margin-left: 410px;
+.wrapper .calculate .calculate_txt {
+  display: flex;
+  justify-content: space-around;
+  width: 700px;
+  margin: 0 auto;
+  font-weight: 700;
 }
 
-.btn_genera2 {
+.m0auto {
   margin: 0 auto;
   margin-top: 64px;
 }
