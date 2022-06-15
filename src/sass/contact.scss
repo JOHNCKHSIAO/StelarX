@@ -2,7 +2,8 @@
 // @import 'base/reset';
 // @import 'base/fontSet';
 // @import 'mixin/mixin';
-// @import 'component/btn';
+@import 'component/btn';
+@import 'component/input';
 
 // 共用input
 
@@ -12,7 +13,8 @@
     height: 70px;
     font-size: 24rem;
     padding-left: 10px;
-
+    background-color: $blue;
+    border: 0;
     margin-bottom: $spacing_32px;
 
     ;
@@ -236,11 +238,10 @@
 
             // 按鈕
             .btn_cta {
+                margin: 0 auto;
                 margin-top: $spacing_80px;
 
-                .marginBtn {
-                    margin: 0 auto;
-                }
+
 
             }
 
