@@ -416,6 +416,27 @@ p {
   outline: #987A4D;
 }
 
+.selector_title {
+  position: relative;
+}
+.selector_title ::after {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 3px solid #EEEEEE;
+  position: absolute;
+  top: 100%;
+  margin-top: 14px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.selector_title h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #eeeeee;
+}
+
 .personal-info .personal-info-title {
   text-align: center;
   color: #EEEEEE;
