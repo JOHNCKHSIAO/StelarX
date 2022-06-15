@@ -323,4 +323,184 @@ p {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
+<<<<<<< HEAD
+/*------ 進度條顯示區塊 ------*/
+.booking-process {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.booking-process .booking-process_each {
+  color: #987A4D;
+}
+.booking-process .booking-process_each:not(:last-child) .process-circle ::after {
+  content: "";
+  width: 75px;
+  border-bottom: #987A4D dashed;
+  position: absolute;
+  top: 50%;
+  right: -110%;
+}
+.booking-process .booking-process_each .process-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: #987A4D 2px solid;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+.booking-process .booking-process_each .process-circle h2 {
+  font-size: 28px;
+  line-height: 80px;
+  text-align: center;
+}
+.booking-process .booking-process_each h6 {
+  font-size: 18px;
+  text-align: center;
+  color: #eeeeee;
+}
+
+.booking_wold_out {
+  display: flex;
+  justify-content: center;
+}
+.booking_wold_out .booking_wold {
+  color: #eeeeee;
+  width: 160px;
+  margin-top: 120px;
+}
+.booking_wold_out .booking_wold h2 {
+  font-size: 40px;
+}
+.booking_wold_out .booking_wold::after {
+  content: "";
+  display: block;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+main {
+  width: 1080px;
+  background-color: #191F42;
+  margin: 0 auto;
+  margin-top: 80px;
+  color: #eeeeee;
+}
+main .logo_top {
+  text-align: center;
+  padding-top: 64px;
+}
+main .logo_top h3 {
+  margin-top: 32px;
+}
+main .logo_top h5 {
+  margin-top: 24px;
+}
+main .small_title {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+main .small_title .line {
+  border-bottom: 2px solid #303555;
+  color: #303555;
+  width: 750px;
+  position: absolute;
+  top: 850px;
+}
+main .small_title .small_title_in {
+  text-align: center;
+}
+main .small_title .small_title_in .h6_2 {
+  margin-top: 48px;
+}
+
+.Purchaser_out {
+  border: 1px solid #987A4D;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0 0 64px 0;
+}
+
+.Purchaser {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+.Purchaser .Purchaser_top_1 {
+  border-bottom: 1px solid #987A4D;
+  display: flex;
+}
+.Purchaser .Purchaser_top_1 h5 {
+  padding-bottom: 32px;
+  margin-right: 70px;
+}
+.Purchaser .Purchaser_top_2 {
+  display: flex;
+  margin-top: 32px;
+}
+.Purchaser .Purchaser_top_2 h5:first-child {
+  margin-right: 50px;
+}
+.Purchaser .Purchaser_top_2 h5:last-child {
+  margin-left: 170px;
+}
+.Purchaser .Purchaser_top_3 {
+  display: flex;
+  margin-top: 24px;
+}
+.Purchaser .Purchaser_top_3 h5:first-child {
+  margin-right: 95px;
+}
+.Purchaser .Purchaser_top_3 h5:last-child {
+  margin-left: 315px;
+}
+.Purchaser .Purchaser_top_4 {
+  display: flex;
+  margin-top: 24px;
+}
+.Purchaser .Purchaser_top_4 h5:first-child {
+  margin-right: 70px;
+}
+
+.calculate {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 48px;
+  border-radius: 5px;
+}
+.calculate .calculate_txt {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.notice_out .notice {
+  display: flex;
+  justify-content: center;
+}
+.notice_out .notice_in {
+  background-color: #191F42;
+  width: 750px;
+  margin-top: 80px;
+  padding: 40px;
+}
+.notice_out .notice_in p {
+  color: #eeeeee;
+}
+
+.btn_cta {
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+=======
+>>>>>>> dev
 /*# sourceMappingURL=booking_06.css.map */

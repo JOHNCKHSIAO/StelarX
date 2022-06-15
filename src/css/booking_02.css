@@ -364,66 +364,9 @@ p {
   color: #eeeeee;
 }
 
-body {
-  color: #eeeeee;
-}
-
-.wrapper {
-  width: 1080px;
-<<<<<<< HEAD
-  height: 2100px;
-=======
-  height: 1700px;
->>>>>>> bff922e7f3f155c64f8f9f3bf6534ada08b6eb27
-  background-color: #191F42;
-  border-radius: 10px;
-  margin: 0 auto;
-}
-
-.booking-process {
-  width: 900px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding-top: 50px;
-}
-.booking-process .booking-process_each {
-  color: #987A4D;
-}
-.booking-process .booking-process_each:not(:last-child) .process-circle ::after {
-  content: "";
-  width: 75px;
-  border-bottom: #987A4D dashed;
-  position: absolute;
-  top: 50%;
-  right: -110%;
-}
-.booking-process .booking-process_each .main {
-  background-color: #987A4D;
-  color: #eeeeee;
-}
-.booking-process .booking-process_each .process-circle {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  border: #987A4D 2px solid;
-  border-radius: 50px;
-  margin-bottom: 16px;
-}
-.booking-process .booking-process_each .process-circle h2 {
-  font-size: 28px;
-  line-height: 80px;
-  text-align: center;
-}
-.booking-process .booking-process_each h6 {
-  font-size: 18px;
-  text-align: center;
-  color: #eeeeee;
-}
-
 .booking-status {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 120px;
   width: 900px;
   justify-content: space-evenly;
   margin: 0 auto;
@@ -433,12 +376,14 @@ body {
 }
 .booking-status .selector_title ::after {
   content: "";
-  height: 1px;
+  display: block;
   width: 150px;
-  border-bottom: #eeeeee solid;
+  border-bottom: 3px solid #EEEEEE;
   position: absolute;
-  top: 120%;
-  right: 41.5%;
+  top: 100%;
+  margin-top: 14px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .booking-status .selector_title h2 {
   text-align: center;
@@ -460,18 +405,31 @@ body {
   margin-bottom: 16px;
 }
 
+body {
+  color: #eeeeee;
+}
+
+.wrapper {
+  width: 1080px;
+  height: 1800px;
+  background-color: #191F42;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
 .booking-cabin .selector_title {
   position: relative;
-  margin-bottom: 80px;
 }
 .booking-cabin .selector_title ::after {
   content: "";
-  height: 1px;
+  display: block;
   width: 150px;
-  border-bottom: #eeeeee solid;
+  border-bottom: 3px solid #EEEEEE;
   position: absolute;
-  top: 120%;
-  right: 43%;
+  top: 100%;
+  margin-top: 14px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .booking-cabin .selector_title h2 {
   text-align: center;
@@ -487,6 +445,7 @@ body {
   display: flex;
   text-align: center;
   justify-content: space-between;
+  margin-top: 120px;
 }
 .booking-cabin .cabin a {
   color: #0C0521;
@@ -535,16 +494,18 @@ body {
 }
 .booking-calendar .selector_title {
   position: relative;
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 }
 .booking-calendar .selector_title ::after {
   content: "";
-  height: 1px;
+  display: block;
   width: 150px;
-  border-bottom: #eeeeee solid;
+  border-bottom: 3px solid #EEEEEE;
   position: absolute;
-  top: 120%;
-  right: 42.3%;
+  top: 100%;
+  margin-top: 14px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .booking-calendar .selector_title h2 {
   text-align: center;
