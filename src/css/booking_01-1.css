@@ -375,12 +375,14 @@ p {
 }
 .booking-status .selector_title ::after {
   content: "";
-  height: 1px;
+  display: block;
   width: 150px;
-  border-bottom: #eeeeee solid;
+  border-bottom: 3px solid #EEEEEE;
   position: absolute;
-  top: 120%;
-  right: 41.5%;
+  top: 100%;
+  margin-top: 14px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .booking-status .selector_title h2 {
   text-align: center;

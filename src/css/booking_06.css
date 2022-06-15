@@ -323,4 +323,207 @@ p {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
+/*------ 進度條顯示區塊 ------*/
+.booking-process {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+.booking-process .booking-process_each {
+  color: #987A4D;
+}
+.booking-process .booking-process_each:not(:last-child) .process-circle ::after {
+  content: "";
+  width: 75px;
+  border-bottom: #987A4D dashed;
+  position: absolute;
+  top: 50%;
+  right: -110%;
+}
+.booking-process .booking-process_each .main {
+  background-color: #987A4D;
+  color: #eeeeee;
+}
+.booking-process .booking-process_each .process-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: #987A4D 2px solid;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+.booking-process .booking-process_each .process-circle h2 {
+  font-size: 28px;
+  line-height: 80px;
+  text-align: center;
+}
+.booking-process .booking-process_each h6 {
+  font-size: 18px;
+  text-align: center;
+  color: #eeeeee;
+}
+
+.selector_title {
+  position: relative;
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+.selector_title ::after {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 3px solid #EEEEEE;
+  position: absolute;
+  top: 100%;
+  margin-top: 14px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.selector_title h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #eeeeee;
+}
+
+main {
+  border-radius: 10px;
+  width: 1080px;
+  background-color: #191F42;
+  margin: 0 auto;
+  margin-top: 80px;
+  color: #eeeeee;
+}
+main .logo_top {
+  text-align: center;
+  padding-top: 64px;
+}
+main .logo_top h3 {
+  margin-top: 32px;
+}
+main .logo_top h5 {
+  margin-top: 24px;
+}
+main .small_title {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+main .small_title .line {
+  border-bottom: 3px solid #303555;
+  width: 750px;
+  position: absolute;
+  top: 880px;
+}
+main .small_title .small_title_in {
+  text-align: center;
+}
+main .small_title .small_title_in .h6_2 {
+  margin-top: 48px;
+}
+
+.Purchaser_out {
+  border: 3px solid #987A4D;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0 0 64px 0;
+}
+
+.Purchaser {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+.Purchaser .Purchaser_top_1 {
+  border-bottom: 1px solid #987A4D;
+  display: flex;
+}
+.Purchaser .Purchaser_top_1 h5 {
+  padding-bottom: 32px;
+  margin-right: 70px;
+}
+.Purchaser .Purchaser_top_2 {
+  display: flex;
+  margin-top: 32px;
+}
+.Purchaser .Purchaser_top_2 h5:first-child {
+  margin-right: 50px;
+}
+.Purchaser .Purchaser_top_2 h5:last-child {
+  margin-left: 170px;
+}
+.Purchaser .Purchaser_top_3 {
+  display: flex;
+  margin-top: 24px;
+}
+.Purchaser .Purchaser_top_3 h5:first-child {
+  margin-right: 95px;
+}
+.Purchaser .Purchaser_top_3 h5:last-child {
+  margin-left: 315px;
+}
+.Purchaser .Purchaser_top_4 {
+  display: flex;
+  margin-top: 24px;
+}
+.Purchaser .Purchaser_top_4 h5:first-child {
+  margin-right: 70px;
+}
+
+.booking-price {
+  display: flex;
+  justify-content: space-around;
+  background-color: #262d52;
+  margin-top: 80px;
+}
+.booking-price h5 {
+  line-height: 85px;
+  font-weight: 700;
+}
+
+.notice_out .selector_title {
+  position: relative;
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+.notice_out .selector_title ::after {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 3px solid #EEEEEE;
+  position: absolute;
+  top: 100%;
+  margin-top: 14px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.notice_out .selector_title h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #eeeeee;
+}
+.notice_out .notice {
+  display: flex;
+  justify-content: center;
+}
+.notice_out .notice_in {
+  background-color: #191F42;
+  width: 750px;
+  padding: 40px;
+}
+.notice_out .notice_in p {
+  color: #eeeeee;
+}
+
+.btn_cta {
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
 /*# sourceMappingURL=booking_06.css.map */

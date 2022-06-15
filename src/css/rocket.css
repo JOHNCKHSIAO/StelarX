@@ -433,6 +433,7 @@ body {
   color: #987A4D;
   font-family: "Roboto Serif", serif;
   font-weight: 500;
+  flex-basis: 450px;
 }
 .rocket-engine .engine-info .info-left h1 {
   line-height: 1;
@@ -443,17 +444,21 @@ body {
   margin-left: 240px;
 }
 .rocket-engine .engine-info .info-right {
+  flex-basis: 550px;
   margin-left: auto;
+  display: flex;
 }
 .rocket-engine .engine-info .info-right h5 {
   line-height: 1;
-  display: flex;
 }
 .rocket-engine .engine-info .info-right ul {
-  margin: 80px;
+  width: 150px;
+  display: block;
+  margin: 80px auto;
 }
-.rocket-engine .engine-info .info-right li {
-  margin-bottom: 24px;
+.rocket-engine .engine-info .info-right ul li {
+  width: 150px;
+  margin-bottom: 32px;
 }
 
 .rocket-info .info-data {
@@ -669,9 +674,7 @@ body {
 }
 .rocket-cabin .cabin-intro-bottom {
   width: 1440px;
-  margin: auto;
-  margin-top: 220px;
-  margin-bottom: 220px;
+  margin: 220px auto 280px;
 }
 .rocket-cabin .cabin-intro-bottom .bottom-bg {
   width: 1260px;
@@ -699,7 +702,6 @@ body {
 
 .rocket-bodyguard {
   text-align: center;
-  border: 1px solid firebrick;
 }
 .rocket-bodyguard h2 {
   font-weight: 500;
@@ -710,7 +712,7 @@ body {
   height: 3px;
   background-color: #987A4D;
   display: block;
-  margin: 24px auto;
+  margin: 32px auto;
 }
 .rocket-bodyguard h5 {
   line-height: 1;
@@ -719,7 +721,7 @@ body {
 .rocket-bodyguard ul {
   display: flex;
   width: 1080px;
-  margin: 0 auto 80px;
+  margin: 0 auto 180px;
 }
 .rocket-bodyguard ul li {
   flex-grow: 1;
