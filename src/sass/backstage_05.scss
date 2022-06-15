@@ -42,16 +42,18 @@ main{
             width:220px;
             height:40px;
             vertical-align:middle;
-            margin-left: 758px;
+            
         }
         button{
+            display:block;
+            margin-left: 930px;
             background: $blue;
             color:$white;
-            width:90px;
+            width:150px;
             height:40px;
             font-size: 24px;
-            vertical-align:middle;
-            margin-left: 5px;
+            // vertical-align:middle;
+            word-spacing: 1px;
         }
 
     }
@@ -85,13 +87,14 @@ main{
 
     }
     .info-area{
-        // border:1px solid orange;
-        &:nth-child(2n) ul>li {
-                // background-color: #cbcbcb;
-        }
+        border:1px solid orange;
+        width:1080px;
+        // &:nth-child(2n) ul>li {
+        //         // background-color: #cbcbcb;
+        // }
         .member-list-title{
             display: inline-grid;
-            grid-template-columns: [line1] 160px [line2] 90px [line3] 90px [line4] 260px [line5] 260px [line6] 110px [line7]106px;
+            grid-template-columns: [line1] 130px [line2] 150px [line3]270px [line4] 270px [line5] 150px [line6] 110px ;
             li{
                 // border:1px solid red;
                 height:80px;
@@ -105,8 +108,7 @@ main{
         }
         .member-list-content{
             display: inline-grid;
-            grid-template-columns: [line1] 160px [line2] 90px [line3] 90px [line4] 260px [line5] 260px [line6] 110px [line7]106px;
-          
+            grid-template-columns: [line1] 130px [line2] 150px [line3]270px [line4] 270px [line5] 150px [line6] 110px ;
             li{
                 // border:1px solid red;
                 height:60px;
@@ -127,7 +129,7 @@ main{
                     background: $blue;
                 }
                 span{
-                    color:$gold;
+                    color:black;
                 }
 
             }

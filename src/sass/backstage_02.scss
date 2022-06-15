@@ -86,12 +86,13 @@ main{
     }
     .info-area{
         // border:1px solid orange;
-        &:nth-child(2n) ul>li {
-                // background-color: #cbcbcb;
-        }
+        width:1080px;
+        // &:nth-child(2n) ul>li {
+        //         // background-color: #cbcbcb;
+        // }
         .member-list-title{
             display: inline-grid;
-            grid-template-columns: [line1] 160px [line2] 90px [line3] 90px [line4] 260px [line5] 260px [line6] 110px [line7]106px;
+            grid-template-columns: [line1] 100px [line2] 160px [line3]295px [line4] 120px [line5] 295px [line6] 110px ;
             li{
                 // border:1px solid red;
                 height:80px;
@@ -105,7 +106,7 @@ main{
         }
         .member-list-content{
             display: inline-grid;
-            grid-template-columns: [line1] 160px [line2] 90px [line3] 90px [line4] 260px [line5] 260px [line6] 110px [line7]106px;
+            grid-template-columns:  [line1] 100px [line2] 160px [line3]295px [line4] 120px [line5] 295px [line6] 110px ;
           
             li{
                 // border:1px solid red;
