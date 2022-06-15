@@ -22,47 +22,47 @@
             <div class="input-area-member-register">
                 <div class="input_div" id="account_div">
                     <label for="account_input"><h5>帳號</h5></label>
-                    <input type="text" id="account_input">
+                    <input type="text" id="account_input" required >
                     <p class="account-check-message title6" id="accountCheck_message">本帳號已經有人使用，請試試別的名稱!</p>
                 </div>
                 <div class="input_div" id="id_div">
                     <label for="id_input"><h5>ID</h5></label>
-                    <input type="text" id="id_input">
+                    <input type="text" id="id_input" required >
                     <p class="id-check-message title6" id="idCheck_message">您已是我們的會員，請點選會員登入!</p>
                 </div>
-                <div class="input_div_password displaynone" id="password_div">
+                <div class="input_div_password displaynone password-div" id="password_div">
                     <label for="password_input"><h5>密碼</h5></label>
-                    <input type="password"id="password_input"><i class="fa-solid fa-eye-slash"></i>   
+                    <input type="password"id="password_input" required><i class="fa-solid fa-eye-slash"></i>   
                 </div>
-                <div class="input_div_password displaynone" id="checkPassword_div">
+                <div class="input_div_password displaynone checkPassword-div" id="checkPassword_div">
                     <label for="checkPassword_input"><h5>確認密碼</h5></label>
-                    <input type="password" id="checkPassword_input"><i class="fa-solid fa-eye-slash"></i>
+                    <input type="password" id="checkPassword_input" required><i class="fa-solid fa-eye-slash"></i>
                     <p class="password-wrong  title6" id="checkPassword_message">與密碼不符! 請重新輸入!!</p>
                 </div>
-                <div class="input_div displaynone" id="lastName_div">
+                <div class="input_div displaynone lastName-div" id="lastName_div">
                     <label for=""><h5>姓</h5></label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
-                <div class="input_div displaynone" id="name_div">
+                <div class="input_div displaynone name-div" id="name_div">
                     <label for=""><h5>名字</h5></label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
-                <div class="input_div displaynone" id="email_div">
+                <div class="input_div displaynone email-div" id="email_div">
                     <label for=""><h5>E-mail</h5></label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
-                <div class="input_div displaynone" id="cell_div">
+                <div class="input_div displaynone cell-div" id="cell_div">
                     <label for=""><h5>手機</h5></label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
-                <div class="input_div_full displaynone" id="businessNumber_div">
+                <div class="input_div_full displaynone businessNumber-div" id="businessNumber_div">
                     <label for=""><h5>公司識別碼(商務旅客必填)</h5></label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
             </div>
-            <div class="btn_cta btn" id="submitBtn">
+            <button class="btn_cta_submit btn" id="submitBtn">
                 <div class="aLink">下一步<img src="./images/ctz_dec.png" alt=""></div>
-            </div>
+            </button>
         </form>
 
     </section>

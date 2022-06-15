@@ -32,6 +32,33 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: $spacing_48px+15px;
+
+        .password-div{
+            opacity:0;
+    
+        }
+        .checkPassword-div{
+            opacity:0;
+         
+        }
+        .lastName-div{
+            opacity:0;
+        }
+        .name-div{
+            opacity:0;
+        }
+        .email-div{
+            opacity:0;
+            margin-top: 48px;
+        }
+        .cell-div{
+            opacity:0;
+            margin-top: 48px;
+        }
+        .businessNumber-div{
+            opacity:0;
+            margin-top: 48px;
+        }
         .account-check-message{
             color:$error_red;
             margin-top: 20px;
@@ -47,43 +74,29 @@
             margin-top: 20px;
             opacity:0;
         }
-    
+        .fadeIn{
+          animation-name: fadeIn;
+          animation-duration: 2s;
+          animation-fill-mode: forwards;
+        
+        }
+        @keyframes fadeIn{
+            0% {opacity:0; }
+            // 50% {opacity:0.5;}
+            100% {opacity:1;}
+        }
      
     }
     .btn{
-       margin: 0 auto;
-       margin-top: 60px;
-
-    }
-
+        display: block;
+        margin: 0 auto;
+        margin-top: 60px;
+     }
+ 
 }
-// .displaynone{
-//     display:none;
-// }
+.displaynone{
+    display:none;
+}
 .displayblock{
     display:block;
-}
-#password_div{
-    opacity: 1;
-}
-#checkPassword_div{
-    opacity: 1;
-}
-#lastName_div{
-    opacity: 1;
-}
-#name_div{
-    opacity: 1;
-}
-#email_div{
-    opacity: 1;
-    margin-top: 45px;
-}
-#cell_div{
-    opacity: 1;
-    margin-top: 45px;
-}
-#businessNumber_div{
-    opacity: 1;
-    margin-top: 45px;
 }
