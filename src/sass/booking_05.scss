@@ -3,3 +3,14 @@
 @import 'base/fontSet';
 @import 'mixin/mixin';
 @import 'component/btn';
+
+//sass src/sass/booking_05.scss src/css/booking_05.css --watch
+
+#BK_play{
+    .booking_people{
+        margin-top: 80px;
+    }
+    #card_nmb{
+        width: 550px;
+    }
+}
