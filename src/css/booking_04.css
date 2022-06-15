@@ -128,62 +128,149 @@ p {
   line-height: 1.6;
 }
 
-.btn_cta h5 {
-  text-align: center;
-  line-height: 70px;
-  font-weight: 600;
-}
-.btn_cta h5 .btn_radius {
-  width: 380px;
-  height: 70px;
-  color: #EEEEEE;
-  border: 2px solid #EEEEEE;
-  display: block;
-  text-decoration: none;
+.btn_cta {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
   border-radius: 50px;
+  cursor: pointer;
 }
-.btn_cta h5 .btn_radius:hover {
+.btn_cta:hover {
   border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
 }
 
-.btn_general h5 {
-  text-align: center;
-  line-height: 70px;
-  font-weight: 600;
+.btn_cta_submit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  background: #00072E;
+  cursor: pointer;
 }
-.btn_general h5 .btn_square {
-  width: 380px;
-  height: 70px;
-  color: #EEEEEE;
-  border: 2px solid #EEEEEE;
-  display: block;
-  text-decoration: none;
-}
-.btn_general h5 .btn_square:hover {
+.btn_cta_submit:hover {
   border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta_submit .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta_submit .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_general {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+.btn_general:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn_general_sumbmit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  cursor: pointer;
+}
+.btn_general_sumbmit:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general_sumbmit .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
 }
 
 .btn_status {
-  width: 380px;
-  height: 70px;
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
 }
-.btn_status h5 {
-  text-align: center;
-  line-height: 70px;
-  font-weight: 600;
-}
-.btn_status h5 .btn_square {
-  color: #EEEEEE;
-  border: 2px solid #EEEEEE;
+.btn_status .btn_square {
   display: block;
+  margin: 0 auto;
   text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
 }
-.btn_status h5 .btn_square:hover {
-  color: #00072E;
-  border: 0;
+.btn_status .btn_square:hover {
   background: #EEEEEE;
+  color: #00072E;
+}
+
+.btn_status_submit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  padding: 0;
+  cursor: pointer;
+}
+.btn_status_submit .btn_square {
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+.btn_status_submit .btn_square:hover {
+  background: #EEEEEE;
+  color: #00072E;
 }
 
 .btn_main {
@@ -205,7 +292,33 @@ p {
   border-radius: 50%;
 }
 .btn_main .btn_circle_text .btn_circle:hover {
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_main_w {
+  width: 200px;
+  height: 200px;
+}
+.btn_main_w .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  font-size: 24rem;
+}
+.btn_main_w .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #00072E;
+  background: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btn_main_w .btn_circle_text .btn_circle:hover {
   box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+  color: #EEEEEE;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
@@ -214,21 +327,21 @@ p {
 }
 .input_div label {
   display: block;
-  padding-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .input_div label h5 {
   color: #EEEEEE;
+  font-size: 14px;
 }
 .input_div input {
   display: block;
-  width: 530px;
-  height: 85px;
+  width: 260px;
+  height: 40px;
   background-color: #191F42;
   border: #191F42;
   border-radius: 5px;
-  font-size: 22px;
-  padding-left: 30px;
+  font-size: 18px;
+  padding-left: 15px;
   color: #EEEEEE;
 }
 .input_div input:focus {
@@ -242,20 +355,20 @@ p {
 }
 .input_div_password label {
   display: block;
-  padding-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .input_div_password label h5 {
   color: #EEEEEE;
+  font-size: 14px;
 }
 .input_div_password input {
-  width: 530px;
-  height: 85px;
+  width: 260px;
+  height: 40px;
   background-color: #191F42;
   border: #191F42;
   border-radius: 5px;
-  font-size: 22px;
-  padding-left: 30px;
+  font-size: 18px;
+  padding-left: 15px;
   color: #EEEEEE;
 }
 .input_div_password input:focus {
@@ -265,9 +378,9 @@ p {
 }
 .input_div_password i {
   color: #EEEEEE;
-  font-size: 22rem;
+  font-size: 10rem;
   position: absolute;
-  top: 50%;
+  top: 43%;
   right: 5%;
 }
 .input_div_password i:hover {
@@ -279,21 +392,21 @@ p {
 }
 .input_div_full label {
   display: block;
-  padding-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .input_div_full label h5 {
   color: #EEEEEE;
+  font-size: 14px;
 }
 .input_div_full input {
   display: block;
-  width: 1080px;
-  height: 85px;
+  width: 550px;
+  height: 40px;
   background-color: #191F42;
   border: #191F42;
   border-radius: 5px;
-  font-size: 22px;
-  padding-left: 30px;
+  font-size: 18px;
+  padding-left: 15px;
   color: #EEEEEE;
 }
 .input_div_full input:focus {
@@ -302,82 +415,107 @@ p {
   outline: #987A4D;
 }
 
-body {
-  background-color: #00072E;
-}
-
 /*------ 全域共用區塊 ------*/
 .hrWhit {
   background-color: #EEEEEE;
   width: 150px;
 }
 
+.booking_wold {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.booking_wold ::after {
+  content: "";
+  height: 1px;
+  width: 150px;
+  border-bottom: #eeeeee solid;
+  position: absolute;
+  top: 120%;
+  right: 43%;
+}
 .booking_wold h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #EEEEEE;
+  text-align: center;
+}
+.booking_wold h3 {
   color: #EEEEEE;
   text-align: center;
 }
 
-.booking_people {
-  margin-bottom: 32px;
-}
 .booking_people h3 {
   color: #EEEEEE;
-  margin-left: 100px;
+  margin-left: 250px;
+  font-size: 24px;
 }
 .booking_people .hrLong {
-  width: 910px;
+  width: 600px;
   margin: auto;
 }
 
 /*------ 全域資訊綁定區塊 ------*/
 .booking_text {
-  margin-top: 30px;
-  width: 100%;
+  width: 550px;
   box-sizing: border-box;
-  margin-left: 95px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .booking_text .input_div {
-  box-sizing: content-box;
-  display: inline-block;
-  margin-bottom: 24px;
-  margin-right: 35px;
-}
-.booking_text .input_div label {
-  display: block;
-  padding-left: 30px;
-  margin-bottom: 10px;
-}
-.booking_text .input_div label h5 {
-  color: #EEEEEE;
-}
-.booking_text .input_div input {
-  display: block;
-  width: 400px;
-  height: 85px;
-  background-color: #191F42;
-  border: #191F42;
-  border-radius: 5px;
-  font-size: 22px;
-  padding-left: 30px;
-  color: #EEEEEE;
-}
-.booking_text .input_div input:focus {
-  background-color: #987A4D;
-  border: #987A4D;
-  outline: #987A4D;
+  margin-top: 45px;
 }
 
 /*------ 進度條顯示區塊 ------*/
 .booking-process {
-  width: 1084px;
-  height: 150px;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
+}
+.booking-process .booking-process_each {
+  color: #987A4D;
+}
+.booking-process .booking-process_each:not(:last-child) .process-circle ::after {
+  content: "";
+  width: 75px;
+  border-bottom: #987A4D dashed;
+  position: absolute;
+  top: 50%;
+  right: -110%;
+}
+.booking-process .booking-process_each .main {
+  background-color: #987A4D;
+  color: #eeeeee;
+}
+.booking-process .booking-process_each .process-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: #987A4D 2px solid;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+.booking-process .booking-process_each .process-circle h2 {
+  font-size: 28px;
+  line-height: 80px;
+  text-align: center;
+}
+.booking-process .booking-process_each h6 {
+  font-size: 18px;
+  text-align: center;
+  color: #eeeeee;
 }
 
 /*------ 航班資訊區塊 ------*/
 .com-form {
   width: 1084px;
   margin: 0 auto;
+  margin-top: 120px;
 }
 
 /*------ 訂購者資料區塊 ------*/
@@ -387,14 +525,15 @@ body {
 }
 .personal .booking_wold {
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 63px;
 }
 
 /*------ 同行者資料區塊 ------*/
 .parther {
   width: 1084px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 64px;
+  margin-bottom: 80px;
 }
 
 /*------ 行前須知區塊 ------*/
@@ -406,14 +545,18 @@ body {
 .noticr .booking_people {
   margin-bottom: 5px;
 }
+.noticr h3 {
+  margin-left: 100px;
+}
 .noticr .noticr_text {
-  width: 870px;
+  width: 840px;
   height: 200px;
   overflow-y: auto;
   border: 2px solid #EEEEEE;
+  border-radius: 5px;
   margin: auto;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
 }
 .noticr .noticr_text p {
   color: #EEEEEE;
@@ -435,9 +578,9 @@ body {
 
 /*------ 上/下一步區塊 ------*/
 .booking_btn {
-  width: 800px;
+  width: 540px;
   margin: auto;
-  margin-top: 35px;
+  margin-top: 40px;
   display: flex;
 }
 .booking_btn .btn_status {

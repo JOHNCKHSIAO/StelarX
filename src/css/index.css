@@ -1,6 +1,6 @@
 .btn_cta {
-  width: 200px;
-  height: 36px;
+  width: 250px;
+  height: 46px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   cursor: pointer;
@@ -14,9 +14,9 @@
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 46px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   position: relative;
 }
@@ -28,8 +28,8 @@
 }
 
 .btn_cta_submit {
-  width: 200px;
-  height: 36px;
+  width: 250px;
+  height: 46px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   background: #00072E;
@@ -44,9 +44,9 @@
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 46px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   position: relative;
 }
@@ -58,8 +58,8 @@
 }
 
 .btn_general {
-  width: 200px;
-  height: 36px;
+  width: 250px;
+  height: 46px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
@@ -72,15 +72,15 @@
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 46px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 
 .btn_general_sumbmit {
-  width: 200px;
-  height: 36px;
+  width: 250px;
+  height: 46px;
   border: 1px solid #EEEEEE;
   background: #00072E;
   cursor: pointer;
@@ -94,15 +94,15 @@
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 46px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 
 .btn_status {
-  width: 200px;
-  height: 36px;
+  width: 250px;
+  height: 46px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
@@ -111,9 +111,9 @@
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 46px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 .btn_status .btn_square:hover {
@@ -122,8 +122,8 @@
 }
 
 .btn_status_submit {
-  width: 200px;
-  height: 36px;
+  width: 250px;
+  height: 46px;
   border: 1px solid #EEEEEE;
   background: #00072E;
   padding: 0;
@@ -133,9 +133,9 @@
   width: 100%;
   height: 100%;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 46px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 .btn_status_submit .btn_square:hover {
@@ -190,6 +190,10 @@
   box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
   color: #EEEEEE;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.line_h12 {
+  line-height: 1.2;
 }
 
 .index_mt120 {
@@ -248,6 +252,16 @@
   width: 1080px;
   margin: 0 auto;
 }
+.index1440 .index1080 .index-showcase .index-showcase_line {
+  height: 1px;
+  width: 150px;
+  margin: 0 auto;
+  background-color: #EEEEEE;
+}
+.index1440 .index1080 .index-showcase .btn_cta {
+  margin: 0 auto;
+  margin-top: 64px;
+}
 .index1440 .index1080 .index-features .featuresFlex {
   display: flex;
   justify-content: space-around;
@@ -262,8 +276,15 @@
   height: 76px;
 }
 .index1440 .index1080 .index-video {
-  max-width: 1440px;
-  margin: 0 auto;
+  position: relative;
+}
+.index1440 .index1080 .index-video video {
+  opacity: 0.7;
+}
+.index1440 .index1080 .index-video .index-video_text {
+  position: absolute;
+  top: 400px;
+  left: 20px;
 }
 .index1440 .index1080 .index-quiz .btn_cta {
   margin: 0 auto;
@@ -316,35 +337,24 @@
   font-weight: 500;
   width: 768px;
 }
-.index1440 .index1080 .index-tourDown .swiper .swiper-wrapper .swiper-slide .index-tourCard1 {
-  width: 300px;
-  background-image: url("../images/index/Rectangle1.png");
+.index1440 .index1080 .index-tour {
+  overflow: hidden;
+  margin-bottom: 120px;
 }
-.index1440 .index1080 .index-tourDown .swiper .swiper-wrapper .swiper-slide .index-tourCard2 {
-  background: url("../images/index/Rectangle2.png");
+.index1440 .index1080 .index-tour .index-tourUp {
+  display: flex;
+  gap: 10%;
 }
-.index1440 .index1080 .index-tourDown .swiper .swiper-wrapper .swiper-slide .index-tourCard3 {
-  background: url("../images/index/Rectangle3.png");
+.index1440 .index1080 .index-tour .index-tourDown .swiper {
+  width: 1200px;
+  height: 430px;
 }
-.index1440 .index1080 .index-tourDown .swiper .swiper-wrapper .swiper-slide .index-tourCard4 {
-  background: url("../images/index/Rectangle4.png");
+.index1440 .index1080 .index-tour .index-tourDown .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
 }
-.index1440 .index1080 .index-tourDown .swiper .swiper-wrapper .swiper-slide .index-tourCard5 {
-  background: url("../images/index/Rectangle1.png");
-}
-.index1440 .index1080 .index-tourDown .swiper .swiper-wrapper .swiper-slide .index-tourCard6 {
-  background: url("../images/index/Rectangle2.png");
-}
-.index1440 .index1080 .index-tourDown .swiper .swiper-wrapper .swiper-slide .index-tourCard7 {
-  background: url("../images/index/Rectangle3.png");
-}
-.index1440 .index1080 .index-tourDown .swiper .swiper-wrapper .swiper-slide .index-tourCard8 {
-  background: url("../images/index/Rectangle4.png");
-}
-
-.swiper {
-  width: 1000px;
-  height: 300px;
+.index1440 .index1080 .index-tour .index-tourDown .swiper .swiper-wrapper .swiper-slide .index-tour_text {
+  margin-top: -100px;
 }
 
 /*# sourceMappingURL=index.css.map */

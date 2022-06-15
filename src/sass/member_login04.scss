@@ -1,12 +1,12 @@
 @import 'base/var';
 @import 'base/reset';
 @import 'base/fontSet';
-@import 'mixin/mixin';
-@import 'component/btn';
+// @import 'mixin/mixin';
+// @import 'component/btn';
 
 
 // 共用--------------------------------------------------
-* {line-height: 1.6;
+* {
     box-sizing: border-box;
 }
 
@@ -14,17 +14,29 @@
 .g-container {
     margin: 0 auto;
     width: 450px;
-    height: 25px;
+    // height: 25px;
     border-radius: 25px;
-    background: #eee;
+    background: $white;
+    display: flex;
+    
+    
+
 }
 .g-progress {
     width: 0%;
     height: inherit;
     border-radius: 25px 0 0 25px;
     background: $linear;
-    transition: 1s all;
-    border: 3px solid $white;
+    transition: 1.5s all;
+    border: 6px solid $white;
+   
+}
+
+.rocket{
+    width: 60px;
+    height: 36px;
+    border: 1px solid white;
+    // position: absolute;
 }
 
 // 出發地
@@ -49,69 +61,60 @@
     border-radius: 10px;
     margin: 0 auto;
     
-        }
+
+    h5 {
+        text-align: center;
+        font-weight: 700;
+        color: $gold;
+        line-height: $spacing_64px;
+    margin: $spacing_64px 0;
+
     }
-    .flight-info-2022{
-        /*上半部分*/
-        border:1px solid white;
-        display:flex;
-        justify-content: space-between;
+}
 
-        /*左邊卡片收合區*/
-        .milecard-div{
-            border:1px solid yellow;
-            .milecard-title{
-                 /*卡片收起來時露出的上半部分*/
-                border:1px solid red;
-                width:533px;
-                height:64px;
-                h5{
-                    line-height: 64px;
-                    text-align: center;
-                    color:$white;
-                }
-            }
-            .milecard-content{
-                 /*卡片的內容(會收起來)*/
-                border:1px solid green;
-                width:533px;
-                height:300px;
+// 卡片群組
+.mainMile {
+    margin-top: $spacing_80px;
 
-                .pic-div{
-                      /*星球圖跟出發地目的地的區塊*/
-                    display:flex;
-                    .depart{
-                        color:$white;
-                    }
-                    .depart-pic{
-                        width:100px;
-                    }
-                    .dest{
-                        color:$white;
-                    }
-                    .dest-pic{
-                        width:100px;
-                    }
+    // border: 1px solid red;
 
-                }
-                .progress-bar-outer{
-                     /*進度條的裝飾*/
-                    width:454px;
-                    height:30px;
-                    border-radius: 20px;
-                    background-color: $white;
-                    padding-top: 7.5px;
-                    .progress-bar-inner{
-                        height:15px;
-                        width:200px;
-                      
-                        background:$linear;
-                    }
-                }
-                .miles{
-                     /*下方里程的標示*/
-                     text-align: center;
-                     color:$white;
+    // 卡片單張
+    .mileCard {
+       
+        width: 500px;
+        margin-top: $spacing_12px;
+        padding: 10px;
+        background: $blue;
+
+        // 摺疊起來的上面包括字
+        .mileCardUp {
+            color: $gold;
+            line-height: $spacing_64px$spacing_64px;
+            font-weight: 700;
+            font-size: 24rem;
+            text-align: center;
+            cursor: pointer;
+            // border: 1px solid red;
+            line-height: $spacing_48px;
+
+
+        }
+
+        // 摺疊起來的下面有星球的
+        .mileCardDown {
+            margin: $spacing_12px 0;
+            display: none;
+         
+
+
+
+            .mileCardDown_Flex {
+                display: flex;
+                justify-content: space-around;
+
+                // 摺疊起來的下面有星球的左邊
+                .mileCardLeft {
+                    display: flex;
 
 
                 }
@@ -199,14 +202,5 @@ margin-top: $spacing_24px;
             }
 
         }
-        /*右邊年分標籤*/
-        .year-div{
-            border:1px solid white;
-        }
     }
-
 }
-
-
-
-

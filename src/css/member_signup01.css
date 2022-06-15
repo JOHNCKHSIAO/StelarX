@@ -444,6 +444,30 @@ p {
   justify-content: space-between;
   margin-top: 63px;
 }
+.member-register .input-area-member-register .password-div {
+  opacity: 0;
+}
+.member-register .input-area-member-register .checkPassword-div {
+  opacity: 0;
+}
+.member-register .input-area-member-register .lastName-div {
+  opacity: 0;
+}
+.member-register .input-area-member-register .name-div {
+  opacity: 0;
+}
+.member-register .input-area-member-register .email-div {
+  opacity: 0;
+  margin-top: 48px;
+}
+.member-register .input-area-member-register .cell-div {
+  opacity: 0;
+  margin-top: 48px;
+}
+.member-register .input-area-member-register .businessNumber-div {
+  opacity: 0;
+  margin-top: 48px;
+}
 .member-register .input-area-member-register .account-check-message {
   color: #8B2323;
   margin-top: 20px;
@@ -459,44 +483,31 @@ p {
   margin-top: 20px;
   opacity: 0;
 }
+.member-register .input-area-member-register .fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .member-register .btn {
+  display: block;
   margin: 0 auto;
   margin-top: 60px;
 }
 
+.displaynone {
+  display: none;
+}
+
 .displayblock {
   display: block;
-}
-
-#password_div {
-  opacity: 1;
-}
-
-#checkPassword_div {
-  opacity: 1;
-}
-
-#lastName_div {
-  opacity: 1;
-}
-
-#name_div {
-  opacity: 1;
-}
-
-#email_div {
-  opacity: 1;
-  margin-top: 45px;
-}
-
-#cell_div {
-  opacity: 1;
-  margin-top: 45px;
-}
-
-#businessNumber_div {
-  opacity: 1;
-  margin-top: 45px;
 }
 
 /*# sourceMappingURL=member_signup01.css.map */

@@ -3,18 +3,79 @@
 @import 'base/fontSet';
 @import 'mixin/mixin';
 @import 'component/btn'; 
+
+.booking-process{
+    width: 900px;
+    display: flex;
+    // outline: yellow solid 1px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 120px;
+   
+    .booking-process_each{
+        color:#987A4D;
+        // outline: rgb(0, 183, 255) solid 1px;
+
+        &:not(:last-child){
+            .process-circle{
+                 ::after{
+                content: '';
+                width: 75px;
+                border-bottom: #987A4D dashed;
+                position: absolute;
+                top: 50%;
+                right: -110%;
+            }
+
+            }
+        }
+
+        .main{
+            background-color: #987A4D;
+            color:#eeeeee;
+        }
+
+        .process-circle{
+            position:relative;
+            width: 80px;
+            height: 80px;
+            border: #987A4D 2px solid;
+            border-radius: 50px;
+            margin-bottom: 16px;
+
+           
+            h2{
+                font-size: 28px;
+                line-height: 80px;
+                text-align: center;
+            }
+        }
+
+        h6{
+            font-size: 18px;
+            text-align: center;
+            color: #eeeeee;
+        }
+    }
+}
+
 body{
-    background-color: #fff;
-    color: #fff;
+    // background-color: #fff;
+    color: #eeeeee;
 }
 .wrapper{
     width: 1080px;
+<<<<<<< HEAD
     height: 2100px;
+=======
+    height: 1700px;
+>>>>>>> bff922e7f3f155c64f8f9f3bf6534ada08b6eb27
     background-color: #191F42;
-
+    border-radius: 10px;
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .booking-process{
     width: 900px;
     display: flex;
@@ -69,108 +130,131 @@ body{
     }
 }
 
+=======
+>>>>>>> bff922e7f3f155c64f8f9f3bf6534ada08b6eb27
 .booking-status{
-    padding-top: 64px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 900px;
+    // outline: rgb(255, 0, 195) solid 1px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+
+    .selector_title{
+        position:relative;
+
+        ::after{
+            content: '';
+            height: 1px;
+            width: 150px;
+            border-bottom: #eeeeee solid ;
+            position: absolute;
+            top: 120%;
+            right: 41.5%;
+        }
+        
+        h2{
+            text-align: center;
+            font-size: 26px;
+            font-weight: 700;
+            color: #eeeeee;
+        }
+    }
+
+    .selector{
+        width: 900px;
+    display: flex;
+    // outline: rgb(255, 0, 195) solid 1px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+   padding-top: 40px;
+
+   p{
+    font-size: 18px;
+    color: $white;
     text-align: center;
-    h2{
-
-    }
-    h2::after{
-        display: block;
-        margin: 0 auto;
-        width: 200px;
-        content: '';
-
-        border-bottom: 2px solid white;
-    }
-    .status_out{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 80px;
-        .status_left{
-            text-align: center;
-            h5{
-
-            }
-            .btn{
-                width: 350px;
-                height: 75px;
-                color: white;
-                border: none;
-                background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-                cursor: pointer;
-
-                margin-top: 24px;
-              }
-        }
-        .status_right{
-            text-align: center;
-            .btn{
-                width: 350px;
-                height: 75px;
-                color: white;
-                border: none;
-                background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-                cursor: pointer;
-
-                margin-top: 24px;
-              }
-        }
+    margin-bottom: 16px;
+}
     }
 
 }
+
 .booking-cabin{
-    margin-top: 80px;
+    .selector_title{
+        position:relative;
+        margin-bottom: 80px;
 
-    font-weight: 700;
-    h2{
-        text-align: center;
-    }
-    h2::after{
-        display: block;
-        margin: 0 auto;
-        width: 200px;
-        content: '';
-
-        border-bottom: 2px solid white;
-    }
-    .btn_out{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 80px;
-        .btn {
-            background-repeat: no-repeat;
-            width: 400px;
-            height: 400px;
-            position: relative;
-            img{
-                display: block;
-                width: 100%;
-            }
-            .word_text{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                text-align: center;
-                h2{
-                    
-                }
-            }
-            .black_text{
-                color: black;
-                h2::after{
-                    display: block;
-                    margin: 0 auto;
-                    width: 200px;
-                    content: '';
-                    border-bottom: 2px solid rgb(0, 0, 0);
-                }
-            }
+        ::after{
+            content: '';
+            height: 1px;
+            width: 150px;
+            border-bottom: #eeeeee solid ;
+            position: absolute;
+            top: 120%;
+            right: 43%;
+        }
+        
+        h2{
+            text-align: center;
+            font-size: 26px;
+            font-weight: 700;
+            color: #eeeeee;
         }
     }
-    
+
+    .cabin{
+        width: 900px;
+        margin: 0 auto;
+        height: 388px;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+
+        a{
+            color: #0C0521;
+            text-decoration: none;
+        }
+
+        .X_btn, .GX_btn {
+            width: 388px;
+            height: 388px;
+            background-color: #eeeeee;
+            border-radius: 50%;
+
+            .text{
+                height: 388px;
+                font-weight: 600;
+                font-size: 24rem;
+                text-decoration: none;
+                padding-top: 35%;
+
+            }     
+            
+        }
+    }
+
+    .GX_btn:hover{
+        color: #eeeeee;
+        width: 388px;
+        height: 388px;
+        background-image: url(../images/booking/GX.png);
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0.1);
+    }
+
+    .X_btn:hover{
+        color: #eeeeee;
+        width: 388px;
+        height: 388px;
+        background-image: url(../images/booking/X.png);
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0.1);
+    }
 }
+
 .booking-calendar{
     width: 980px;
     margin: 0 auto;
@@ -179,11 +263,33 @@ body{
     h2{
         text-align: center;
     }
+
+    .selector_title{
+        position:relative;
+        margin-bottom: 64px;
+
+        ::after{
+            content: '';
+            height: 1px;
+            width: 150px;
+            border-bottom: #eeeeee solid ;
+            position: absolute;
+            top: 120%;
+            right: 42.3%;
+        }
+        
+        h2{
+            text-align: center;
+            font-size: 26px;
+            font-weight: 700;
+            color: #eeeeee;
+        }
+    }
 }
 .container{
     width: 700px;   
     height: 600px;
-    margin: 50px auto;
+    margin: 0 auto;
 
     // border: 1px solid gray;
     padding: 20px; 
@@ -214,38 +320,20 @@ body{
     height: 60px;
 }
 
-.lattice_1{
+.booking-price{
     display: flex;
     justify-content: space-around;
     background-color: #262d52;
     h5{
         line-height: 85px;
+        font-weight: 700;
     }
 }
-.main_button{
-    width: 800px;
+.step_button{
+    width: 600px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-    border-bottom: 2px solid #987A4D;
-    padding-bottom: 64px;
-    .btn_status{
-        width: 300px;
-        height: 60px;
-        a{
-        line-height: 60px;
-        font-size: 20px;
-        }
-    }
-    .btn_general{
-        width: 300px;
-        height: 60px;
-        background: $linear;
-        border: none;
-        a{
-            line-height: 60px;
-            font-size: 20px;
-        }
-    }
+    margin-top: 120px;
+    
 }

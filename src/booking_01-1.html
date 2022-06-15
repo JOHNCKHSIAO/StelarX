@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/booking_01.css">
+    <link rel="stylesheet" href="./css/booking_01-1.css">
     <title>預約航程</title>
 </head>
 
@@ -56,28 +56,30 @@
             <h2>選擇往返星球</h2>
         </div>
         <div class="selector">
-            <div class="btn_general">
+            <div>
                 <p>起始點</p>
-                <h5>
-                    <a href="" class="btn_square">選擇出發星球</a>
-                </h5>
+                <div class="btn_status">
+                    <div class="btn_square" href="#">選擇出發星球</div>
+                </div>
             </div>
-            <div class="btn_general">
+            <div>
                 <p>目的地</p>
-                <h5>
-                    <a href="" class="btn_square">選擇到達星球</a>
-                </h5>
+                <div class="btn_status">
+                    <a class="btn_square" href="#">選擇到達星球</a>
+                </div>
             </div>
         </div>
     </section>
     <section class="booking-selection">
         <div>
-            <img src="../src/img/booking/display.png" alt="">
+            <img class="choose" src="../src/images/booking/selection.png" alt="">
+            <img class="planet" src="../src/images/booking/earth.png" alt="">
+            <img class="bg" src="../src/images/booking/selector_bg.png" alt="">
         </div>
         <div class="selection-setting">
             <div class="title2">EARTH</div>
             <h5>人類第一個家</h5>
-           <a href="#">請選擇出發星球</a>
+            <a href="#">請選擇出發星球</a>
         </div>
     </section>
     @@include("./layout/footer.html")
