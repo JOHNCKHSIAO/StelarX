@@ -34,6 +34,10 @@
         text-align: center;
         // border:1px solid red;
     }
+    h3{
+        color: $white;
+        text-align: center;
+    }
 }
 .booking_people{
     // margin-bottom: 32px;
@@ -122,6 +126,7 @@
     width: 1084px;
     // border: 1px solid red;
     margin: 0 auto;
+    margin-top: 120px;
 }
 /*------ 訂購者資料區塊 ------*/
 .personal{
