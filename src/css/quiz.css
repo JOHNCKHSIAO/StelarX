@@ -54,8 +54,7 @@ table {
 }
 
 html {
-  font-family: "Roboto", sans-serif;
-  /* 預設字體 */
+  font-family: "Roboto", sans-serif; /* 預設字體 */
   font-size: 6.26%;
   line-height: 1.6;
   box-sizing: border-box;
@@ -328,12 +327,6 @@ body {
 }
 
 /*------- 照片固定參數 -------*/
-img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-}
-
 /*------ 固定文字 -----*/
 .title3 {
   color: #EEEEEE;
@@ -388,6 +381,11 @@ img {
   font-family: "Roboto Serif", serif;
   /*------- 圖片選項section -------*/
 }
+.quiz01 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
 .quiz01 .allimg {
   width: 100%;
   display: flex;
@@ -414,6 +412,11 @@ img {
   margin: auto;
   font-family: "Roboto Serif", serif;
   /*-------------- 圖片選項section --------------*/
+}
+.quiz02_1 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 .quiz02_1 .all_twoimg {
   width: 100%;
@@ -448,6 +451,11 @@ img {
   margin: auto;
   font-family: "Roboto Serif", serif;
   /*-------------- 圖片選項section --------------*/
+}
+.quiz02_2 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 .quiz02_2 .all_twoimg {
   width: 100%;
