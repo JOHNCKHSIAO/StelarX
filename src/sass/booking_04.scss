@@ -7,9 +7,6 @@
 
 //sass src/sass/booking_04.scss src/css/booking_04.css --watch
 
-body{
-    background-color: $blue;
-}
 
 /*------ 全域共用區塊 ------*/
 .hrWhit{
@@ -17,16 +14,32 @@ body{
     width: 150px;
 }
 .booking_wold{
-    margin-bottom: $spacing_48px+15px;
+    margin-top: 80px;
+    margin-bottom:40px;
+    position: relative;
+    // border:1px solid white;
+    ::after{
+        content: '';
+        height: 1px;
+        width: 150px;
+        border-bottom: #eeeeee solid ;
+        position: absolute;
+        top: 120%;
+        right: 43%;
+    }
     h2{
+        font-size: 26px;
+        font-weight: 700;
         color: $white;
         text-align: center;
+        // border:1px solid red;
     }
 }
 .booking_people{
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
     h3{ color: $white;  
         margin-left: 250px;
+        font-size: 24px;
     }
     .hrLong{ 
         width: 600px; 
@@ -36,26 +49,75 @@ body{
 
 /*------ 全域資訊綁定區塊 ------*/
 .booking_text{
-    margin-top: 30px;
-    width: 640px;
+    width: 550px;
     box-sizing: border-box;
-    margin: auto;
+    margin:0 auto;
+    margin-bottom: 120px;
+    // border: 1px solid yellow;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     // border: 1px solid red;
     .input_div{
-        display: inline-block;
-        margin: 0 20px;
-        margin-bottom: 40px;
+      margin-top: 45px;
     }
 }
 
 /*------ 進度條顯示區塊 ------*/
 .booking-process{
-    width: 1084px;
-    height: 150px;
-    // border: 1px solid red;
+    width: 900px;
+    display: flex;
+    // outline: yellow solid 1px;
+    justify-content: space-between;
     margin: 0 auto;
+   
+    .booking-process_each{
+        color:#987A4D;
+        // outline: rgb(0, 183, 255) solid 1px;
+        &:not(:last-child){
+            .process-circle{
+                 ::after{
+                content: '';
+                width: 75px;
+                border-bottom: #987A4D dashed;
+                position: absolute;
+                top: 50%;
+                right: -110%;
+            }
+            }
+        }
+
+        .main{
+            background-color: #987A4D;
+            color:#eeeeee;
+        }
+
+        .process-circle{
+            position:relative;
+            width: 80px;
+            height: 80px;
+            border: #987A4D 2px solid;
+            border-radius: 50px;
+            margin-bottom: 16px;
+
+           
+            h2{
+                font-size: 28px;
+                line-height: 80px;
+                text-align: center;
+            }
+        }
+
+        h6{
+            font-size: 18px;
+            text-align: center;
+            color: #eeeeee;
+        }
+    }
 }
+
 /*------ 航班資訊區塊 ------*/
+
 .com-form{
     width: 1084px;
     // border: 1px solid red;
@@ -117,6 +179,7 @@ body{
             margin-left: 15px;
         }
     }
+   
 }
 /*------ 上/下一步區塊 ------*/
 .booking_btn{
