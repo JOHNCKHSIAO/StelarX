@@ -4,11 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/member_login03.css">
+    <title>個人資料</title>
 </head>
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+    <section class="personal-info">
+        <h2 class="personal-info-title">
+           會員個人資料
+        </h2>
+        <form action="">
+            <div class="input-area-personal-info">
+                <div class="input_div" id="account_div">
+                    <label for="account_input"><h5>帳號</h5></label>
+                    <input type="text" id="account_input">
+                    <p class="account-check-message title6" id="accountCheck_message">本帳號已經有人使用，請試試別的名稱!</p>
+                </div>
+                <div class="input_div" id="id_div">
+                    <label for="id_input"><h5>ID</h5></label>
+                    <input type="text" id="id_input">
+                    <p class="id-check-message title6" id="idCheck_message">您已是我們的會員，請點選會員登入!</p>
+                </div>
+                <div class="input_div_password displaynone" id="password_div">
+                    <label for="password_input"><h5>密碼</h5></label>
+                    <input type="password"id="password_input"><i class="fa-solid fa-eye-slash"></i>   
+                </div>
+                <div class="input_div_password displaynone" id="checkPassword_div">
+                    <label for="checkPassword_input"><h5>確認密碼</h5></label>
+                    <input type="password" id="checkPassword_input"><i class="fa-solid fa-eye-slash"></i>
+                    <p class="password-wrong  title6" id="checkPassword_message">與密碼不符! 請重新輸入!!</p>
+                </div>
+                <div class="input_div displaynone" id="lastName_div">
+                    <label for=""><h5>姓</h5></label>
+                    <input type="text">
+                </div>
+                <div class="input_div displaynone" id="name_div">
+                    <label for=""><h5>名字</h5></label>
+                    <input type="text">
+                </div>
+                <div class="input_div displaynone" id="email_div">
+                    <label for=""><h5>E-mail</h5></label>
+                    <input type="text">
+                </div>
+                <div class="input_div displaynone" id="cell_div">
+                    <label for=""><h5>手機</h5></label>
+                    <input type="text">
+                </div>
+                <div class="input_div_full displaynone" id="businessNumber_div">
+                    <label for=""><h5>公司識別碼</h5></label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="btn-wrapper">
+                <div class="btn_status">
+                    <a class="btn_square" href="./member_login02.html">會員中心</a>
+                </div>
+                <div class="btn_general">
+                    <div class="btn_square">確認</div>
+                </div>
+            </div>
+        </form>
+
+    </section>
 
     @@include("./layout/footer.html")
 </body>
