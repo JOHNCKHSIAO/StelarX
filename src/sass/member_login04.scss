@@ -6,8 +6,37 @@
 
 
 // 共用--------------------------------------------------
-* {line-height: 1.6;
+* {
     box-sizing: border-box;
+}
+
+// 進度條
+.g-container {
+    margin: 0 auto;
+    width: 450px;
+    // height: 25px;
+    border-radius: 25px;
+    background: $white;
+    display: flex;
+    
+    
+
+}
+.g-progress {
+    width: 0%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: $linear;
+    transition: 1.5s all;
+    border: 6px solid $white;
+   
+}
+
+.rocket{
+    width: 60px;
+    height: 36px;
+    border: 1px solid white;
+    // position: absolute;
 }
 
 // 出發地
@@ -160,6 +189,7 @@ margin-top: $spacing_24px;
 
         // 後面有svg線的背景
         .membMileSVG {
+          
             padding:$spacing_80px  0;
             display: flex;
             gap: 75px;
