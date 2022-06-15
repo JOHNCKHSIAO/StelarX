@@ -3,3 +3,109 @@
 @import 'base/fontSet';
 @import 'mixin/mixin';
 @import 'component/btn';
+
+.booking-process{
+    width: 900px;
+    display: flex;
+    // outline: yellow solid 1px;
+    justify-content: space-between;
+    margin: 0 auto;
+   
+    .booking-process_each{
+        color:#987A4D;
+        // outline: rgb(0, 183, 255) solid 1px;
+
+        &:not(:last-child){
+            .process-circle{
+                 ::after{
+                content: '';
+                width: 75px;
+                border-bottom: #987A4D dashed;
+                position: absolute;
+                top: 50%;
+                right: -110%;
+            }
+
+            }
+        }
+
+        .main{
+            background-color: #987A4D;
+            color:#eeeeee;
+        }
+
+        .process-circle{
+            position:relative;
+            width: 80px;
+            height: 80px;
+            border: #987A4D 2px solid;
+            border-radius: 50px;
+            margin-bottom: 16px;
+
+           
+            h2{
+                font-size: 28px;
+                line-height: 80px;
+                text-align: center;
+            }
+        }
+
+        h6{
+            font-size: 18px;
+            text-align: center;
+            color: #eeeeee;
+        }
+    }
+}
+
+.booking-members{
+    padding-top: 80px;
+    margin-bottom: 80px;
+    .selector_title{
+        position:relative;
+     
+
+        ::after{
+            content: "";
+            display: block;
+            width: 150px;
+            border-bottom: 3px solid #EEEEEE;
+            position: absolute;
+            top: 100%;
+            margin-top: 14px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        
+        h2{
+            text-align: center;
+            font-size: 26px;
+            font-weight: 700;
+            color: #eeeeee;
+        }
+    }
+}
+
+.select_ppl{
+    text-align: center;
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 80px;
+    align-items: center;
+
+    h1{
+        line-height: 50px;
+        margin: 0 auto;
+        color: #eeeeee;
+        // margin: 0 60px;
+    }
+
+    .left svg:hover{
+        fill:#987A4D;
+    }
+
+    .right svg:hover{
+        fill:#987A4D;
+    }
+}
