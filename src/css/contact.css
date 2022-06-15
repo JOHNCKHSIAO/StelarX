@@ -296,9 +296,10 @@
   margin-bottom: 32px;
 }
 
-.bg1440 {
+.contact {
   background: linear-gradient(#000000 30%, #00072E 100%);
 }
+
 .bg1440 .wrapper1080 {
   background-size: contain;
   background-image: url("../images/qa/qaearth.jpg");
