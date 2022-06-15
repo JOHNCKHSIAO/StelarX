@@ -323,13 +323,13 @@ p {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
-<<<<<<< HEAD
 /*------ 進度條顯示區塊 ------*/
 .booking-process {
   width: 900px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 120px;
 }
 .booking-process .booking-process_each {
   color: #987A4D;
@@ -341,6 +341,10 @@ p {
   position: absolute;
   top: 50%;
   right: -110%;
+}
+.booking-process .booking-process_each .main {
+  background-color: #987A4D;
+  color: #eeeeee;
 }
 .booking-process .booking-process_each .process-circle {
   position: relative;
@@ -361,26 +365,31 @@ p {
   color: #eeeeee;
 }
 
-.booking_wold_out {
-  display: flex;
-  justify-content: center;
+.selector_title {
+  position: relative;
+  padding-top: 80px;
+  margin-bottom: 80px;
 }
-.booking_wold_out .booking_wold {
-  color: #eeeeee;
-  width: 160px;
-  margin-top: 120px;
-}
-.booking_wold_out .booking_wold h2 {
-  font-size: 40px;
-}
-.booking_wold_out .booking_wold::after {
+.selector_title ::after {
   content: "";
   display: block;
-  padding-bottom: 24px;
-  border-bottom: 2px solid #eeeeee;
+  width: 150px;
+  border-bottom: 3px solid #EEEEEE;
+  position: absolute;
+  top: 100%;
+  margin-top: 14px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.selector_title h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #eeeeee;
 }
 
 main {
+  border-radius: 10px;
   width: 1080px;
   background-color: #191F42;
   margin: 0 auto;
@@ -405,11 +414,10 @@ main .small_title {
   justify-content: space-between;
 }
 main .small_title .line {
-  border-bottom: 2px solid #303555;
-  color: #303555;
+  border-bottom: 3px solid #303555;
   width: 750px;
   position: absolute;
-  top: 850px;
+  top: 880px;
 }
 main .small_title .small_title_in {
   text-align: center;
@@ -419,7 +427,7 @@ main .small_title .small_title_in .h6_2 {
 }
 
 .Purchaser_out {
-  border: 1px solid #987A4D;
+  border: 3px solid #987A4D;
   width: 900px;
   margin: 0 auto;
   margin-top: 40px;
@@ -467,21 +475,39 @@ main .small_title .small_title_in .h6_2 {
   margin-right: 70px;
 }
 
-.calculate {
-  height: 70px;
-  display: flex;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  margin-top: 48px;
-  border-radius: 5px;
-}
-.calculate .calculate_txt {
+.booking-price {
   display: flex;
   justify-content: space-around;
-  margin: 0 auto;
+  background-color: #262d52;
+  margin-top: 80px;
+}
+.booking-price h5 {
+  line-height: 85px;
   font-weight: 700;
 }
 
+.notice_out .selector_title {
+  position: relative;
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+.notice_out .selector_title ::after {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 3px solid #EEEEEE;
+  position: absolute;
+  top: 100%;
+  margin-top: 14px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.notice_out .selector_title h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #eeeeee;
+}
 .notice_out .notice {
   display: flex;
   justify-content: center;
@@ -489,7 +515,6 @@ main .small_title .small_title_in .h6_2 {
 .notice_out .notice_in {
   background-color: #191F42;
   width: 750px;
-  margin-top: 80px;
   padding: 40px;
 }
 .notice_out .notice_in p {
@@ -501,6 +526,4 @@ main .small_title .small_title_in .h6_2 {
   margin-top: 80px;
 }
 
-=======
->>>>>>> dev
 /*# sourceMappingURL=booking_06.css.map */
