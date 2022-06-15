@@ -361,16 +361,16 @@ main .search-bar-div input {
   width: 220px;
   height: 40px;
   vertical-align: middle;
-  margin-left: 758px;
 }
 main .search-bar-div button {
+  display: block;
+  margin-left: 930px;
   background: #00072E;
   color: #EEEEEE;
-  width: 90px;
+  width: 150px;
   height: 40px;
   font-size: 24px;
-  vertical-align: middle;
-  margin-left: 5px;
+  word-spacing: 1px;
 }
 main .toggle-div {
   display: flex;
@@ -398,9 +398,13 @@ main .toggle-div .thispage > a {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
   color: #EEEEEE;
 }
+main .info-area {
+  border: 1px solid orange;
+  width: 1080px;
+}
 main .info-area .member-list-title {
   display: inline-grid;
-  grid-template-columns: [line1] 160px [line2] 90px [line3] 90px [line4] 260px [line5] 260px [line6] 110px [line7] 106px;
+  grid-template-columns: [line1] 130px [line2] 150px [line3] 270px [line4] 270px [line5] 150px [line6] 110px;
 }
 main .info-area .member-list-title li {
   height: 80px;
@@ -412,7 +416,7 @@ main .info-area .member-list-title li {
 }
 main .info-area .member-list-content {
   display: inline-grid;
-  grid-template-columns: [line1] 160px [line2] 90px [line3] 90px [line4] 260px [line5] 260px [line6] 110px [line7] 106px;
+  grid-template-columns: [line1] 130px [line2] 150px [line3] 270px [line4] 270px [line5] 150px [line6] 110px;
 }
 main .info-area .member-list-content li {
   height: 60px;
@@ -434,7 +438,7 @@ main .info-area .member-list-content li div {
   background: #00072E;
 }
 main .info-area .member-list-content li span {
-  color: #987A4D;
+  color: black;
 }
 main .insert-new {
   width: 150px;
@@ -459,4 +463,4 @@ main .insert-new {
   padding: 2px 5px;
 }
 
-/*# sourceMappingURL=backstage_01.css.map */
+/*# sourceMappingURL=backstage_05.css.map */
