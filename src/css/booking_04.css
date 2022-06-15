@@ -54,8 +54,7 @@ table {
 }
 
 html {
-  font-family: "Roboto", sans-serif;
-  /* 預設字體 */
+  font-family: "Roboto", sans-serif; /* 預設字體 */
   font-size: 6.26%;
   line-height: 1.6;
   box-sizing: border-box;
@@ -473,11 +472,7 @@ p {
 
 /*------ 進度條顯示區塊 ------*/
 .booking-process {
-<<<<<<< HEAD
-  width: 950px;
-=======
   width: 900px;
->>>>>>> 63946d876ffe0fc213beffb4fc9f9947e96063b7
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -590,20 +585,6 @@ p {
 }
 .booking_btn .btn_status {
   margin-right: 40px;
-}
-
-/*----- 付款資料區塊 -----*/
-#com-from_1 {
-  margin-bottom: 80px;
-}
-#com-from_1 .booking_wold {
-  margin-bottom: 80px;
-}
-#com-from_1 .hrplay {
-  width: 100px;
-}
-#com-from_1 #cardNumber input {
-  width: 580px;
 }
 
 /*# sourceMappingURL=booking_04.css.map */

@@ -69,11 +69,7 @@
 
 /*------ 進度條顯示區塊 ------*/
 .booking-process{
-<<<<<<< HEAD
-    width: 950px;
-=======
     width: 900px;
->>>>>>> 63946d876ffe0fc213beffb4fc9f9947e96063b7
     display: flex;
     // outline: yellow solid 1px;
     justify-content: space-between;
@@ -82,10 +78,6 @@
     .booking-process_each{
         color:#987A4D;
         // outline: rgb(0, 183, 255) solid 1px;
-<<<<<<< HEAD
-
-=======
->>>>>>> 63946d876ffe0fc213beffb4fc9f9947e96063b7
         &:not(:last-child){
             .process-circle{
                  ::after{
@@ -96,10 +88,6 @@
                 top: 50%;
                 right: -110%;
             }
-<<<<<<< HEAD
-
-=======
->>>>>>> 63946d876ffe0fc213beffb4fc9f9947e96063b7
             }
         }
 
@@ -209,21 +197,3 @@
         margin-right: 40px;
     }
 }
-<<<<<<< HEAD
-/*----- 付款資料區塊 -----*/
-#com-from_1{
-    margin-bottom: 80px;
-    .booking_wold{
-        margin-bottom: 80px;
-    }
-    .hrplay{
-        width: 100px;
-    }
-    #cardNumber{
-        input{
-            width: 580px;
-        }
-    }
-}
-=======
->>>>>>> 63946d876ffe0fc213beffb4fc9f9947e96063b7
