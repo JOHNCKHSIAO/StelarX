@@ -129,62 +129,149 @@ p {
   line-height: 1.6;
 }
 
-.btn_cta h5 {
-  text-align: center;
-  line-height: 40px;
-  font-weight: 600;
-}
-.btn_cta h5 .btn_radius {
-  width: 380px;
-  height: 70px;
-  color: #EEEEEE;
-  border: 2px solid #EEEEEE;
-  display: block;
-  text-decoration: none;
+.btn_cta {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
   border-radius: 50px;
+  cursor: pointer;
 }
-.btn_cta h5 .btn_radius:hover {
+.btn_cta:hover {
   border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
 }
 
-.btn_general h5 {
-  text-align: center;
-  line-height: 70px;
-  font-weight: 600;
+.btn_cta_submit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  background: #00072E;
+  cursor: pointer;
 }
-.btn_general h5 .btn_square {
-  width: 380px;
-  height: 70px;
-  color: #EEEEEE;
-  border: 2px solid #EEEEEE;
-  display: block;
-  text-decoration: none;
-}
-.btn_general h5 .btn_square:hover {
+.btn_cta_submit:hover {
   border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta_submit .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta_submit .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_general {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+.btn_general:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn_general_sumbmit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  cursor: pointer;
+}
+.btn_general_sumbmit:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general_sumbmit .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
 }
 
 .btn_status {
-  width: 380px;
-  height: 70px;
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
 }
-.btn_status h5 {
-  text-align: center;
-  line-height: 70px;
-  font-weight: 600;
-}
-.btn_status h5 .btn_square {
-  color: #EEEEEE;
-  border: 2px solid #EEEEEE;
+.btn_status .btn_square {
   display: block;
+  margin: 0 auto;
   text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
 }
-.btn_status h5 .btn_square:hover {
-  color: #00072E;
-  border: 0;
+.btn_status .btn_square:hover {
   background: #EEEEEE;
+  color: #00072E;
+}
+
+.btn_status_submit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  padding: 0;
+  cursor: pointer;
+}
+.btn_status_submit .btn_square {
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+.btn_status_submit .btn_square:hover {
+  background: #EEEEEE;
+  color: #00072E;
 }
 
 .btn_main {
