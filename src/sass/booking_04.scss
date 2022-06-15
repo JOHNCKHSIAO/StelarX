@@ -17,6 +17,7 @@ body{
     width: 150px;
 }
 .booking_wold{
+    margin-bottom: $spacing_48px+15px;
     h2{
         color: $white;
         text-align: center;
@@ -25,10 +26,10 @@ body{
 .booking_people{
     margin-bottom: 32px;
     h3{ color: $white;  
-        margin-left: 100px;
+        margin-left: 250px;
     }
     .hrLong{ 
-        width: 910px; 
+        width: 600px; 
         margin: auto;
     }
 }
@@ -36,44 +37,14 @@ body{
 /*------ 全域資訊綁定區塊 ------*/
 .booking_text{
     margin-top: 30px;
-    width: 100%;
+    width: 640px;
     box-sizing: border-box;
-    margin-left: 95px;
+    margin: auto;
     // border: 1px solid red;
-
     .input_div{
-        box-sizing: content-box;
         display: inline-block;
-        margin-bottom: 24px;
-        margin-right: 35px;
-        label{
-            display: block;
-            // border:1px solid yellow;
-            padding-left: 30px;
-            margin-bottom: 10px;
-            h5{
-                color:$white;
-            }
-        }
-        input{
-            display:block;
-            width:400px;
-            height:85px;
-            background-color:#191F42;
-            border:#191F42;
-            border-radius: 5px;
-            font-size:22px;
-            padding-left: 30px;
-            color:$white;
-            &:focus{
-                background-color:#987A4D;
-                border:#987A4D;
-                outline:#987A4D;;
-    
-            }
-    
-        }
-    
+        margin: 0 20px;
+        margin-bottom: 40px;
     }
 }
 
@@ -97,7 +68,7 @@ body{
     margin: auto;
     .booking_wold{
         margin-top: 60px;
-        margin-bottom: 30px;
+        margin-bottom: $spacing_48px+15px;
     }
 }
 /*------ 同行者資料區塊 ------*/
@@ -105,7 +76,8 @@ body{
     width: 1084px;
     // border: 1px solid red;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 64px;
+    margin-bottom: 80px;
 }
 /*------ 行前須知區塊 ------*/
 .noticr{
@@ -116,14 +88,16 @@ body{
     .booking_people{
         margin-bottom: 5px;
     }
+    h3{  margin-left: 100px; }
     .noticr_text{
-        width: 870px;
+        width: 840px;
         height: 200px;
         overflow-y: auto;
         border: 2px solid $white;
+        border-radius: 5px;
         margin: auto;
-        padding: 10px;
-        margin-bottom: 20px;
+        padding: 30px;
+        margin-bottom: 40px;
         p{
             color: $white;
         }
@@ -146,9 +120,9 @@ body{
 }
 /*------ 上/下一步區塊 ------*/
 .booking_btn{
-    width: 800px;
+    width: 540px;
     margin: auto;
-    margin-top: 35px;
+    margin-top: 40px;
     // border: 1px solid red;
     display: flex;
     .btn_status{
