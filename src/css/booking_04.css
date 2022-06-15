@@ -54,7 +54,8 @@ table {
 }
 
 html {
-  font-family: "Roboto", sans-serif; /* 預設字體 */
+  font-family: "Roboto", sans-serif;
+  /* 預設字體 */
   font-size: 6.26%;
   line-height: 1.6;
   box-sizing: border-box;
@@ -415,10 +416,6 @@ p {
   outline: #987A4D;
 }
 
-body {
-  background-color: #00072E;
-}
-
 /*------ 全域共用區塊 ------*/
 .hrWhit {
   background-color: #EEEEEE;
@@ -426,9 +423,22 @@ body {
 }
 
 .booking_wold {
-  margin-bottom: 63px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.booking_wold ::after {
+  content: "";
+  height: 1px;
+  width: 150px;
+  border-bottom: #eeeeee solid;
+  position: absolute;
+  top: 120%;
+  right: 43%;
 }
 .booking_wold h2 {
+  font-size: 26px;
+  font-weight: 700;
   color: #EEEEEE;
   text-align: center;
 }
@@ -437,12 +447,10 @@ body {
   text-align: center;
 }
 
-.booking_people {
-  margin-bottom: 32px;
-}
 .booking_people h3 {
   color: #EEEEEE;
   margin-left: 250px;
+  font-size: 24px;
 }
 .booking_people .hrLong {
   width: 600px;
@@ -451,20 +459,25 @@ body {
 
 /*------ 全域資訊綁定區塊 ------*/
 .booking_text {
-  margin-top: 30px;
-  width: 640px;
+  width: 550px;
   box-sizing: border-box;
-  margin: auto;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .booking_text .input_div {
-  display: inline-block;
-  margin: 0 20px;
-  margin-bottom: 40px;
+  margin-top: 45px;
 }
 
 /*------ 進度條顯示區塊 ------*/
 .booking-process {
+<<<<<<< HEAD
   width: 950px;
+=======
+  width: 900px;
+>>>>>>> 63946d876ffe0fc213beffb4fc9f9947e96063b7
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
