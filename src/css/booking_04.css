@@ -54,8 +54,7 @@ table {
 }
 
 html {
-  font-family: "Roboto", sans-serif;
-  /* 預設字體 */
+  font-family: "Roboto", sans-serif; /* 預設字體 */
   font-size: 6.26%;
   line-height: 1.6;
   box-sizing: border-box;
@@ -426,6 +425,9 @@ body {
   width: 150px;
 }
 
+.booking_wold {
+  margin-bottom: 63px;
+}
 .booking_wold h2 {
   color: #EEEEEE;
   text-align: center;
@@ -436,49 +438,24 @@ body {
 }
 .booking_people h3 {
   color: #EEEEEE;
-  margin-left: 100px;
+  margin-left: 250px;
 }
 .booking_people .hrLong {
-  width: 910px;
+  width: 600px;
   margin: auto;
 }
 
 /*------ 全域資訊綁定區塊 ------*/
 .booking_text {
   margin-top: 30px;
-  width: 100%;
+  width: 640px;
   box-sizing: border-box;
-  margin-left: 95px;
+  margin: auto;
 }
 .booking_text .input_div {
-  box-sizing: content-box;
   display: inline-block;
-  margin-bottom: 24px;
-  margin-right: 35px;
-}
-.booking_text .input_div label {
-  display: block;
-  padding-left: 30px;
-  margin-bottom: 10px;
-}
-.booking_text .input_div label h5 {
-  color: #EEEEEE;
-}
-.booking_text .input_div input {
-  display: block;
-  width: 400px;
-  height: 85px;
-  background-color: #191F42;
-  border: #191F42;
-  border-radius: 5px;
-  font-size: 22px;
-  padding-left: 30px;
-  color: #EEEEEE;
-}
-.booking_text .input_div input:focus {
-  background-color: #987A4D;
-  border: #987A4D;
-  outline: #987A4D;
+  margin: 0 20px;
+  margin-bottom: 40px;
 }
 
 /*------ 進度條顯示區塊 ------*/
@@ -501,14 +478,15 @@ body {
 }
 .personal .booking_wold {
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 63px;
 }
 
 /*------ 同行者資料區塊 ------*/
 .parther {
   width: 1084px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 64px;
+  margin-bottom: 80px;
 }
 
 /*------ 行前須知區塊 ------*/
@@ -520,14 +498,18 @@ body {
 .noticr .booking_people {
   margin-bottom: 5px;
 }
+.noticr h3 {
+  margin-left: 100px;
+}
 .noticr .noticr_text {
-  width: 870px;
+  width: 840px;
   height: 200px;
   overflow-y: auto;
   border: 2px solid #EEEEEE;
+  border-radius: 5px;
   margin: auto;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
 }
 .noticr .noticr_text p {
   color: #EEEEEE;
@@ -549,9 +531,9 @@ body {
 
 /*------ 上/下一步區塊 ------*/
 .booking_btn {
-  width: 800px;
+  width: 540px;
   margin: auto;
-  margin-top: 35px;
+  margin-top: 40px;
   display: flex;
 }
 .booking_btn .btn_status {
