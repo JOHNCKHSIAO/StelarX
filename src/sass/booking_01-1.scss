@@ -68,15 +68,18 @@
 
     .selector_title{
         position:relative;
-
+     
+    
         ::after{
-            content: '';
-            height: 1px;
+            content: "";
+            display: block;
             width: 150px;
-            border-bottom: #eeeeee solid ;
+            border-bottom: 3px solid #EEEEEE;
             position: absolute;
-            top: 120%;
-            right: 41.5%;
+            top: 100%;
+            margin-top: 14px;
+            left: 50%;
+            transform: translate(-50%, 0);
         }
         
         h2{
@@ -94,29 +97,41 @@
     justify-content: space-evenly;
     margin: 0 auto;
    padding-top: 40px;
+
+   p{
+    font-size: 18px;
+    color: $white;
+    text-align: center;
+    margin-bottom: 16px;
+}
     }
 
-    .btn_general{
-        text-align: center;
-    }
-
-    p{
-        font-size: 16px;
-        color: $white;
-        margin: 0 auto;
-        margin-bottom: 16px;
-    }
 }
 
 .booking-selection{
     width: 900px;
+    height: 600px;
     display: flex;
     color: #eeeeee;
     margin: 0 auto;
    text-align: center;
    align-items: center;
    background-image: $linear;
+   position: relative;
    
+
+   .choose{
+    position:absolute;
+    top:56%;
+    left:22%;
+    z-index: 1;
+   }
+   
+   .planet{
+    position:absolute;
+    top:25%;
+    left:10%;
+   }
 
    .selection-setting{
     width: 450px;

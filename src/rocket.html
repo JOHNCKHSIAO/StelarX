@@ -4,18 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <link rel="shortcut icon" href="./images/shortcut.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/rocket.css">
-    <title></title>
+    <title>Stellar X | 太空運輸領航者</title>
 </head>
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
 
+    <!--------------------------- 火箭進版 --------------------------->
 
+    <article class="rocket-fv">
+
+        <section class="fv-main">
+
+            <span class="title2">以太號</span>       
+            <span class="title1">AETHER</span>
+            <h5>市場唯一以商務客群為主的火箭預約系統<br>
+                承包八大行星航空站點的太空運輸品牌
+            </h5>
+        </section>
+
+        <section class="rocket-data">
+
+            <ul>
+                <li>
+                    <h1>65253</h1>
+                    <h5>行駛光年</h5>
+                </li>
+                <li>
+                    <h1>213</h1>
+                    <h5>行駛光年</h5>
+                </li>
+                <li>
+                    <h1>1688</h1>
+                    <h5>探索客人數</h5>
+                </li>
+            </ul>      
+        </section>
+    </article>
+
+    <!--------------------------- 火箭介紹 --------------------------->
+
+    <article class="rocket-about">
+
+        <img src="./images/rocket/rocket_about_bg.jpg" alt="">
+
+        <section class="about-aether">
+
+            <h2>關於 AETHER</h2>
+            <span></span>
+            <h6>Stelar X 最新研發的 Merlin - Z 型豪華客艙火箭全長約 117 米，相當於2座自由女神。<br><br>
+                搭載 4 架推進器和 8 座直列式 RS-25 引擎，扣除燃料及其他相關物件，可載重約13萬公斤的物資前往太空，每節車廂最大可乘載16人，包含獨立座位與影音視聽器材，是一架結合生活與智能科技的超級火箭。</h6>
+
+        </section>
+    </article>
 
     <!--------------------------- 火箭引擎 --------------------------->
     <article class="rocket-engine">
@@ -173,29 +222,29 @@
             <img src="./images/rocket/cabin_intro.jpg" alt="">
 
             <section class="intro-toggle1">
-                <span class="intro-toggle"></span>
-                <span class="intro-pop">
+                <span class="toggle-switch" id="toggle-switch1"></span>
+                <span class="intro-pop" id="pop1">
                     <h6>零重力握把</h6>
                 </span>
             </section>
 
             <section class="intro-toggle2">
-                <span class="intro-toggle"></span>
-                <span class="intro-pop">
+                <span class="toggle-switch" id="toggle-switch2"></span>
+                <span class="intro-pop" id="pop2">
                     <h6>寬敞落地景觀窗</h6>
                 </span>
             </section>
 
             <section class="intro-toggle3">
-                <span class="intro-toggle"></span>
-                <span class="intro-pop">
+                <span class="toggle-switch" id="toggle-switch3"></span>
+                <span class="intro-pop" id="pop3">
                     <h6>航班資訊儀表</h6>
                 </span>
             </section>
 
             <section class="intro-toggle4">
-                <span class="intro-toggle"></span>
-                <span class="intro-pop">
+                <span class="toggle-switch" id="toggle-switch4"></span>
+                <span class="intro-pop" id="pop4">
                     <h6>主控台</h6>
                 </span>
             </section>
@@ -266,9 +315,38 @@
     <!--------------------------- 火箭_加值服務 --------------------------->
 
     <article class="rocket-plus">
-        
-        
 
+        <section class="plus-info">
+
+            <h2>座艙景觀室</h2>
+            <h5>
+                遨遊在星際的旅途中，艙內提供絕佳的觀星服務<br>
+                由 360° 全景透明天窗打造成的觀景室<br>
+                讓您在旅途之中也能探索星際之美
+            </h5>
+
+        </section>
+
+    </article>
+
+
+    <!--------------------------- 火箭_更多連結 --------------------------->
+
+    <article class="rocket-more">
+
+        <section class="more-wrapper">
+
+                <a class="more-btn" href="./planet.html">
+
+                    <img src="./images/rocket/more_planet.png" alt="">
+                    <h2>星球介紹</h2>
+                </a>
+
+                <a class="more-btn"href="./booking_01-1.html">
+                    <img src="./images/rocket/more_booking.png" alt="">
+                    <h2>預約航程</h2>
+                </a>
+        </section>
     </article>
 
 
@@ -291,6 +369,10 @@
 
 
 
+
+
     @@include("./layout/footer.html")
+    
+    <script src="./js/rocket.js"></script>
 </body>
 </html>

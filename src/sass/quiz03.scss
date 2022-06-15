@@ -18,21 +18,21 @@ h3{color: $white;}
 h5{color: $white;}
 .title2{color: $white;}
 
-img{
-    width: 550px;
-    height: 550px;
-    position: absolute;
-    top: 0;
-    left: 50px;
-}
-
-.small_planet{
+.small_planet_top{
     width: 100px;
     height: 100px;
     opacity: 70%;
     position: absolute;
     left: 1210px;
     top: 30px;
+}
+.small_planet_bottom{
+    width: 160px;
+    height: 160px;
+    opacity: 70%;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
 }
 
 
@@ -41,63 +41,96 @@ img{
     width: 1440px;
     height: 100%;
     margin: auto;
-    margin-top: 10px;
     overflow: hidden;
     display: flex;
     position: relative;
-    // border: 1px solid red;
-
+    
     /*--------- 圖片右邊區塊 ---------*/
     .quiz_planet{
         width: 680px;
         height: 660px;
         position: relative;
+        img{ 
+            width: 550px;
+            height: 550px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        /*--------- 土星img參數 ---------*/
+        .SATURNimge{
+            width: 700px;
+            height: 400px;
+            position: absolute;
+            top: 140px;
+            left: -20px;
+        }
+        /*--------- 水星img參數 ---------*/
+        .MERCURYimge{
+            width: 600px;
+        }
     }
     /*--------- 文字左邊區塊 ---------*/
     .quiz_wold{
-        margin-left: 10px;
+        margin-left: 80px;
         margin-top: 90px;
-        width: 550px;
+        width: 450px;
         height: 100%;
+        
         h1{
-            width: 450px;
+            line-height: 1;
             margin-bottom: 48px;
         }
         .text_left{
             width: 500px;
-            display: inline-flex;
-            margin-bottom: 40px;
+            display: flex;
 
-            h5{
-                padding-top: 15px;
-                margin-left: 10px;
+            .title2{
+                line-height: 1;
             }
+            h5{
+                margin-left: 50px;
+                line-height: 1;
+                align-self: flex-end;
+            }
+        }
+        .sep-line{
+            width: 400px;
+            height: 2px;
+            margin: 24px 0 ;
+            background-color: $gold;
+            display: block;
         }
         h3{
-            margin-bottom: 23px;
+            line-height: 1;
+            font-weight: 500; 
+            margin-bottom: 80px;
         }
-
-        h5{line-height: 1.5;}
+        .belong-info{
+            width: 450px;
+            margin: auto;           
+        }
     }
-    /*--------- 按鈕下面區塊 ---------*/
-    .quiz_btn{
-        display: flex;
-        position: absolute;
-        top: 540px;
-        right: 90px;
-        .btn_cta{
-            &:first-child{
-                margin-right: 50px;
+}
+
+.quiz_btn{
+    display: flex;
+    width: 1080px;
+    margin: auto;
+    
+    .btn_cta{
+        height: 60px;
+        flex-basis: 380px;
+        margin: auto;        
+
+        .aLink{
+            font-size: 24px;
+            line-height: 60px;
+            
+            img{
+                width: 18px;
             }
         }
     }
 }
 
-/*--------- 土星img參數 ---------*/
-.SATURNimge{
-    width: 700px;
-    height: 400px;
-    position: absolute;
-    top: 100px;
-    left: -20px;
-}

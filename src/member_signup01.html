@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <link rel="shortcut icon" href="./images/shortcut.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/member_signup01.css">
-    <title>會員註冊</title>
+    <title>Stellar X | 太空運輸領航者</title>
 </head>
 <body>
     @@include("./layout/header.html")
@@ -22,47 +25,47 @@
             <div class="input-area-member-register">
                 <div class="input_div" id="account_div">
                     <label for="account_input"><h5>帳號</h5></label>
-                    <input type="text" id="account_input">
+                    <input type="text" id="account_input" required >
                     <p class="account-check-message title6" id="accountCheck_message">本帳號已經有人使用，請試試別的名稱!</p>
                 </div>
                 <div class="input_div" id="id_div">
                     <label for="id_input"><h5>ID</h5></label>
-                    <input type="text" id="id_input">
+                    <input type="text" id="id_input" required >
                     <p class="id-check-message title6" id="idCheck_message">您已是我們的會員，請點選會員登入!</p>
                 </div>
-                <div class="input_div_password displaynone" id="password_div">
+                <div class="input_div_password displaynone password-div" id="password_div">
                     <label for="password_input"><h5>密碼</h5></label>
-                    <input type="password"id="password_input"><i class="fa-solid fa-eye-slash"></i>   
+                    <input type="password"id="password_input" required><i class="fa-solid fa-eye-slash"></i>   
                 </div>
-                <div class="input_div_password displaynone" id="checkPassword_div">
+                <div class="input_div_password displaynone checkPassword-div" id="checkPassword_div">
                     <label for="checkPassword_input"><h5>確認密碼</h5></label>
-                    <input type="password" id="checkPassword_input"><i class="fa-solid fa-eye-slash"></i>
+                    <input type="password" id="checkPassword_input" required><i class="fa-solid fa-eye-slash"></i>
                     <p class="password-wrong  title6" id="checkPassword_message">與密碼不符! 請重新輸入!!</p>
                 </div>
-                <div class="input_div displaynone" id="lastName_div">
+                <div class="input_div displaynone lastName-div" id="lastName_div">
                     <label for=""><h5>姓</h5></label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
-                <div class="input_div displaynone" id="name_div">
+                <div class="input_div displaynone name-div" id="name_div">
                     <label for=""><h5>名字</h5></label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
-                <div class="input_div displaynone" id="email_div">
+                <div class="input_div displaynone email-div" id="email_div">
                     <label for=""><h5>E-mail</h5></label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
-                <div class="input_div displaynone" id="cell_div">
+                <div class="input_div displaynone cell-div" id="cell_div">
                     <label for=""><h5>手機</h5></label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
-                <div class="input_div_full displaynone" id="businessNumber_div">
+                <div class="input_div_full displaynone businessNumber-div" id="businessNumber_div">
                     <label for=""><h5>公司識別碼(商務旅客必填)</h5></label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
             </div>
-            <div class="btn_cta btn" id="submitBtn">
+            <button class="btn_cta_submit btn" id="submitBtn">
                 <div class="aLink">下一步<img src="./images/ctz_dec.png" alt=""></div>
-            </div>
+            </button>
         </form>
 
     </section>
