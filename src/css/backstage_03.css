@@ -398,9 +398,12 @@ main .toggle-div .thispage > a {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
   color: #EEEEEE;
 }
+main .info-area {
+  width: 1080px;
+}
 main .info-area .member-list-title {
   display: inline-grid;
-  grid-template-columns: [line1] 160px [line2] 90px [line3] 90px [line4] 260px [line5] 260px [line6] 110px [line7] 106px;
+  grid-template-columns: [line1] 80px [line2] 150px [line3] 150px [line4] 150px [line5] 150px [line6] 145px [line7] 145px [line8] 110px;
 }
 main .info-area .member-list-title li {
   height: 80px;
@@ -412,7 +415,7 @@ main .info-area .member-list-title li {
 }
 main .info-area .member-list-content {
   display: inline-grid;
-  grid-template-columns: [line1] 160px [line2] 90px [line3] 90px [line4] 260px [line5] 260px [line6] 110px [line7] 106px;
+  grid-template-columns: [line1] 80px [line2] 150px [line3] 150px [line4] 150px [line5] 150px [line6] 145px [line7] 145px [line8] 110px;
 }
 main .info-area .member-list-content li {
   height: 60px;
@@ -434,7 +437,7 @@ main .info-area .member-list-content li div {
   background: #00072E;
 }
 main .info-area .member-list-content li span {
-  color: #987A4D;
+  color: black;
 }
 main .insert-new {
   width: 150px;
@@ -459,4 +462,4 @@ main .insert-new {
   padding: 2px 5px;
 }
 
-/*# sourceMappingURL=backstage_01.css.map */
+/*# sourceMappingURL=backstage_03.css.map */
