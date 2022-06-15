@@ -54,7 +54,8 @@ table {
 }
 
 html {
-  font-family: "Roboto", sans-serif; /* 預設字體 */
+  font-family: "Roboto", sans-serif;
+  /* 預設字體 */
   font-size: 6.26%;
   line-height: 1.6;
   box-sizing: border-box;
@@ -128,62 +129,149 @@ p {
   line-height: 1.6;
 }
 
-.btn_cta h5 {
-  text-align: center;
-  line-height: 70px;
-  font-weight: 600;
-}
-.btn_cta h5 .btn_radius {
-  width: 380px;
-  height: 70px;
-  color: #EEEEEE;
-  border: 2px solid #EEEEEE;
-  display: block;
-  text-decoration: none;
+.btn_cta {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
   border-radius: 50px;
+  cursor: pointer;
 }
-.btn_cta h5 .btn_radius:hover {
+.btn_cta:hover {
   border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
 }
 
-.btn_general h5 {
-  text-align: center;
-  line-height: 70px;
-  font-weight: 600;
+.btn_cta_submit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  background: #00072E;
+  cursor: pointer;
 }
-.btn_general h5 .btn_square {
-  width: 380px;
-  height: 70px;
-  color: #EEEEEE;
-  border: 2px solid #EEEEEE;
-  display: block;
-  text-decoration: none;
-}
-.btn_general h5 .btn_square:hover {
+.btn_cta_submit:hover {
   border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta_submit .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta_submit .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_general {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+.btn_general:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn_general_sumbmit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  cursor: pointer;
+}
+.btn_general_sumbmit:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general_sumbmit .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
 }
 
 .btn_status {
-  width: 380px;
-  height: 70px;
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
 }
-.btn_status h5 {
-  text-align: center;
-  line-height: 70px;
-  font-weight: 600;
-}
-.btn_status h5 .btn_square {
-  color: #EEEEEE;
-  border: 2px solid #EEEEEE;
+.btn_status .btn_square {
   display: block;
+  margin: 0 auto;
   text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
 }
-.btn_status h5 .btn_square:hover {
-  color: #00072E;
-  border: 0;
+.btn_status .btn_square:hover {
   background: #EEEEEE;
+  color: #00072E;
+}
+
+.btn_status_submit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  padding: 0;
+  cursor: pointer;
+}
+.btn_status_submit .btn_square {
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+.btn_status_submit .btn_square:hover {
+  background: #EEEEEE;
+  color: #00072E;
 }
 
 .btn_main {
@@ -205,7 +293,33 @@ p {
   border-radius: 50%;
 }
 .btn_main .btn_circle_text .btn_circle:hover {
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_main_w {
+  width: 200px;
+  height: 200px;
+}
+.btn_main_w .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  font-size: 24rem;
+}
+.btn_main_w .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #00072E;
+  background: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btn_main_w .btn_circle_text .btn_circle:hover {
   box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+  color: #EEEEEE;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
@@ -214,21 +328,21 @@ p {
 }
 .input_div label {
   display: block;
-  padding-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .input_div label h5 {
   color: #EEEEEE;
+  font-size: 14px;
 }
 .input_div input {
   display: block;
-  width: 530px;
-  height: 85px;
+  width: 260px;
+  height: 40px;
   background-color: #191F42;
   border: #191F42;
   border-radius: 5px;
-  font-size: 22px;
-  padding-left: 30px;
+  font-size: 18px;
+  padding-left: 15px;
   color: #EEEEEE;
 }
 .input_div input:focus {
@@ -242,20 +356,20 @@ p {
 }
 .input_div_password label {
   display: block;
-  padding-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .input_div_password label h5 {
   color: #EEEEEE;
+  font-size: 14px;
 }
 .input_div_password input {
-  width: 530px;
-  height: 85px;
+  width: 260px;
+  height: 40px;
   background-color: #191F42;
   border: #191F42;
   border-radius: 5px;
-  font-size: 22px;
-  padding-left: 30px;
+  font-size: 18px;
+  padding-left: 15px;
   color: #EEEEEE;
 }
 .input_div_password input:focus {
@@ -265,9 +379,9 @@ p {
 }
 .input_div_password i {
   color: #EEEEEE;
-  font-size: 22rem;
+  font-size: 10rem;
   position: absolute;
-  top: 50%;
+  top: 43%;
   right: 5%;
 }
 .input_div_password i:hover {
@@ -279,21 +393,21 @@ p {
 }
 .input_div_full label {
   display: block;
-  padding-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .input_div_full label h5 {
   color: #EEEEEE;
+  font-size: 14px;
 }
 .input_div_full input {
   display: block;
-  width: 1080px;
-  height: 85px;
+  width: 550px;
+  height: 40px;
   background-color: #191F42;
   border: #191F42;
   border-radius: 5px;
-  font-size: 22px;
-  padding-left: 30px;
+  font-size: 18px;
+  padding-left: 15px;
   color: #EEEEEE;
 }
 .input_div_full input:focus {

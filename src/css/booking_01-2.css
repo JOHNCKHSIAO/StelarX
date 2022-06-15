@@ -323,187 +323,129 @@ p {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
-body {
-  background-color: #fff;
-  color: #fff;
-}
-
-.wrapper {
-  width: 1080px;
-  height: 1925px;
-  background-color: #191F42;
+.booking-process {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
+}
+.booking-process .booking-process_each {
+  color: #987A4D;
+}
+.booking-process .booking-process_each:not(:last-child) .process-circle ::after {
+  content: "";
+  width: 75px;
+  border-bottom: #987A4D dashed;
+  position: absolute;
+  top: 50%;
+  right: -110%;
+}
+.booking-process .booking-process_each .main {
+  background-color: #987A4D;
+  color: #eeeeee;
+}
+.booking-process .booking-process_each .process-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: #987A4D 2px solid;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+.booking-process .booking-process_each .process-circle h2 {
+  font-size: 28px;
+  line-height: 80px;
+  text-align: center;
+}
+.booking-process .booking-process_each h6 {
+  font-size: 18px;
+  text-align: center;
+  color: #eeeeee;
 }
 
 .booking-status {
-  padding-top: 64px;
-  text-align: center;
-}
-.booking-status h2::after {
-  display: block;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 900px;
+  justify-content: space-evenly;
   margin: 0 auto;
-  width: 200px;
+}
+.booking-status .selector_title {
+  position: relative;
+}
+.booking-status .selector_title ::after {
   content: "";
-  border-bottom: 2px solid white;
+  height: 1px;
+  width: 150px;
+  border-bottom: #eeeeee solid;
+  position: absolute;
+  top: 120%;
+  right: 41.5%;
 }
-.booking-status .status_out {
+.booking-status .selector_title h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #eeeeee;
+}
+.booking-status .selector {
+  width: 900px;
   display: flex;
-  justify-content: space-around;
-  margin-top: 80px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding-top: 40px;
 }
-.booking-status .status_out .status_left {
+.booking-status .selector p {
+  font-size: 18px;
+  color: #EEEEEE;
   text-align: center;
-}
-.booking-status .status_out .status_left .btn {
-  width: 350px;
-  height: 75px;
-  color: white;
-  border: none;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-  cursor: pointer;
-  margin-top: 24px;
-}
-.booking-status .status_out .status_right {
-  text-align: center;
-}
-.booking-status .status_out .status_right .btn {
-  width: 350px;
-  height: 75px;
-  color: white;
-  border: none;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-  cursor: pointer;
-  margin-top: 24px;
+  margin-bottom: 16px;
 }
 
-.booking-cabin {
-  margin-top: 80px;
+.booking-selection {
+  width: 900px;
+  height: 600px;
+  display: flex;
+  color: #eeeeee;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  position: relative;
+}
+.booking-selection .choose {
+  position: absolute;
+  top: 56%;
+  left: 22%;
+  z-index: 1;
+}
+.booking-selection .planet {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.booking-selection .selection-setting {
+  width: 450px;
+}
+.booking-selection .selection-setting .title2 {
+  font-family: Roboto Serif;
+}
+.booking-selection .selection-setting h5 {
+  padding-bottom: 20px;
+}
+.booking-selection .selection-setting a {
+  font-size: 28px;
+  color: #eeeeee;
+}
+.booking-selection .selection-setting .title5 {
+  background-color: #987A4D;
+  letter-spacing: 0.3em;
+  padding: 0.6em 0em 0.6em 0.3em;
   font-weight: 700;
 }
-.booking-cabin h2 {
-  text-align: center;
-}
-.booking-cabin h2::after {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  content: "";
-  border-bottom: 2px solid white;
-}
-.booking-cabin .btn_out {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 80px;
-}
-.booking-cabin .btn_out .btn {
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 400px;
-  position: relative;
-}
-.booking-cabin .btn_out .btn img {
-  display: block;
-  width: 100%;
-}
-.booking-cabin .btn_out .btn .word_text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.booking-cabin .btn_out .btn .black_text {
-  color: black;
-}
-.booking-cabin .btn_out .btn .black_text h2::after {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  content: "";
-  border-bottom: 2px solid rgb(0, 0, 0);
+.booking-selection .selection-setting p {
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 
-.booking-calendar {
-  width: 980px;
-  margin: 0 auto;
-  position: relative;
-  margin-top: 120px;
-}
-.booking-calendar h2 {
-  text-align: center;
-}
-
-.container {
-  width: 700px;
-  height: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  /* background-color: #fff; */
-}
-
-.fc .fc-toolbar-title {
-  padding-left: 100px;
-}
-
-.fc-daygrid-dot-event .fc-event-title {
-  color: #00FF0A;
-}
-
-.fc-daygrid-event-dot {
-  display: none;
-}
-
-.fc-direction-ltr .fc-daygrid-event .fc-event-time {
-  display: none;
-}
-
-.fc-direction-ltr .fc-button-group > .fc-button:not(:last-child) {
-  width: 20px;
-}
-
-.fc-direction-ltr .fc-button-group > .fc-button:not(:first-child) {
-  width: 20px;
-}
-
-.fc .fc-daygrid-day-frame {
-  height: 60px;
-}
-
-.lattice_1 {
-  display: flex;
-  justify-content: space-around;
-  background-color: #262d52;
-}
-.lattice_1 h5 {
-  line-height: 85px;
-}
-
-.main_button {
-  width: 800px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-  border-bottom: 2px solid #987A4D;
-  padding-bottom: 64px;
-}
-.main_button .btn_status {
-  width: 300px;
-  height: 60px;
-}
-.main_button .btn_status a {
-  line-height: 60px;
-  font-size: 20px;
-}
-.main_button .btn_general {
-  width: 300px;
-  height: 60px;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-  border: none;
-}
-.main_button .btn_general a {
-  line-height: 60px;
-  font-size: 20px;
-}
-
-/*# sourceMappingURL=booking_02.css.map */
+/*# sourceMappingURL=booking_01-2.css.map */
