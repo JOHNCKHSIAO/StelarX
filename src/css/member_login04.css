@@ -126,21 +126,13 @@ p {
 
 .title6 {
   font-size: 14rem;
-<<<<<<< HEAD
   line-height: 1.6;
 }
 
 * {
-<<<<<<< HEAD
   box-sizing: border-box;
-=======
-=======
->>>>>>> my
-  line-height: 1.6;
->>>>>>> 5ccc118e7cd901f6b5a3006e4a696c4446bfe463
 }
 
-<<<<<<< HEAD
 .g-container {
   margin: 0 auto;
   width: 450px;
@@ -229,289 +221,43 @@ p {
   height: 20px;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
   border: 3px solid #EEEEEE;
-=======
-.btn_cta {
-  width: 250px;
-  height: 46px;
-  border: 1px solid #EEEEEE;
->>>>>>> my
   border-radius: 50px;
-  cursor: pointer;
-}
-.btn_cta:hover {
-  border-color: #00072E;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-}
-.btn_cta .aLink {
-  display: block;
   margin: 0 auto;
-  text-decoration: none;
-  font-weight: 600;
-  line-height: 46px;
+}
+.mileBar h5 {
+  margin-top: 12px;
   color: #EEEEEE;
-  font-size: 16px;
-  text-align: center;
-  position: relative;
-}
-.btn_cta .aLink img {
-  width: 10px;
-  position: absolute;
-  top: 36%;
-  right: 10%;
-}
-
-.btn_cta_submit {
-  width: 250px;
-  height: 46px;
-  border: 1px solid #EEEEEE;
-  border-radius: 50px;
-  background: #00072E;
-  cursor: pointer;
-}
-.btn_cta_submit:hover {
-  border-color: #00072E;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-}
-.btn_cta_submit .aLink {
-  display: block;
-  margin: 0 auto;
-  text-decoration: none;
-  font-weight: 600;
-  line-height: 46px;
-  color: #EEEEEE;
-  font-size: 16px;
-  text-align: center;
-  position: relative;
-}
-.btn_cta_submit .aLink img {
-  width: 10px;
-  position: absolute;
-  top: 36%;
-  right: 10%;
-}
-
-.btn_general {
-  width: 250px;
-  height: 46px;
-  border: 1px solid #EEEEEE;
-  cursor: pointer;
-}
-.btn_general:hover {
-  border-color: #00072E;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-}
-.btn_general .btn_square {
-  display: block;
-  margin: 0 auto;
-  text-decoration: none;
-  font-weight: 600;
-  line-height: 46px;
-  color: #EEEEEE;
-  font-size: 16px;
   text-align: center;
 }
 
-.btn_general_sumbmit {
-  width: 250px;
-  height: 46px;
-  border: 1px solid #EEEEEE;
-  background: #00072E;
-  cursor: pointer;
+.login04_1440 {
+  background: black;
 }
-.btn_general_sumbmit:hover {
-  border-color: #00072E;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-}
-.btn_general_sumbmit .btn_square {
-  display: block;
-  margin: 0 auto;
-  text-decoration: none;
-  font-weight: 600;
-  line-height: 46px;
-  color: #EEEEEE;
-  font-size: 16px;
-  text-align: center;
-}
-
-.btn_status {
-  width: 250px;
-  height: 46px;
-  border: 1px solid #EEEEEE;
-  cursor: pointer;
-}
-.btn_status .btn_square {
-  display: block;
-  margin: 0 auto;
-  text-decoration: none;
-  font-weight: 600;
-  line-height: 46px;
-  color: #EEEEEE;
-  font-size: 16px;
-  text-align: center;
-}
-.btn_status .btn_square:hover {
-  background: #EEEEEE;
-  color: #00072E;
-}
-
-.btn_status_submit {
-  width: 250px;
-  height: 46px;
-  border: 1px solid #EEEEEE;
-  background: #00072E;
-  padding: 0;
-  cursor: pointer;
-}
-.btn_status_submit .btn_square {
-  width: 100%;
-  height: 100%;
-  font-weight: 600;
-  line-height: 46px;
-  color: #EEEEEE;
-  font-size: 16px;
-  text-align: center;
-}
-.btn_status_submit .btn_square:hover {
-  background: #EEEEEE;
-  color: #00072E;
-}
-
-.btn_main {
-  width: 200px;
-  height: 200px;
-}
-.btn_main .btn_circle_text {
-  text-align: center;
-  line-height: 200px;
-  font-weight: 600;
-  font-size: 24rem;
-}
-.btn_main .btn_circle_text .btn_circle {
-  width: 100%;
-  height: 100%;
-  display: block;
-  color: #EEEEEE;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.btn_main .btn_circle_text .btn_circle:hover {
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-}
-
-.btn_main_w {
-  width: 200px;
-  height: 200px;
-}
-.btn_main_w .btn_circle_text {
-  text-align: center;
-  line-height: 200px;
-  font-weight: 600;
-  width: 200px;
-  height: 200px;
-  font-size: 24rem;
-}
-.btn_main_w .btn_circle_text .btn_circle {
-  width: 100%;
-  height: 100%;
-  display: block;
-  color: #00072E;
-  background: #EEEEEE;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.btn_main_w .btn_circle_text .btn_circle:hover {
-  box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
-  color: #EEEEEE;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
-}
-
-.memberflight {
+.login04_1440 .login04_1080 {
   width: 1080px;
-  border: 1px solid yellow;
   margin: 0 auto;
+  border: 1px solid rgb(255, 255, 255);
 }
-.memberflight .memberflight-title {
-  /*大標題*/
-  text-align: center;
-  color: #EEEEEE;
-  position: relative;
-  /*大標題底線*/
-}
-.memberflight .memberflight-title::before {
-  content: "";
-  display: block;
-  width: 150px;
-  border-bottom: 1px solid #EEEEEE;
-  position: absolute;
-  top: 100%;
-  margin-top: 10px;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.memberflight .flight-info-2022 {
-  /*上半部分*/
-  border: 1px solid white;
-  display: flex;
-  justify-content: space-between;
-  /*左邊卡片收合區*/
-  /*右邊年分標籤*/
-}
-.memberflight .flight-info-2022 .milecard-div {
-  border: 1px solid yellow;
-}
-.memberflight .flight-info-2022 .milecard-div .milecard-title {
-  /*卡片收起來時露出的上半部分*/
-  border: 1px solid red;
-  width: 533px;
-  height: 64px;
-}
-.memberflight .flight-info-2022 .milecard-div .milecard-title h5 {
-  line-height: 64px;
+.login04_1440 .login04_1080 h3 {
   text-align: center;
   color: #EEEEEE;
 }
-.memberflight .flight-info-2022 .milecard-div .milecard-content {
-  /*卡片的內容(會收起來)*/
-  border: 1px solid green;
-  width: 533px;
-  height: 300px;
-}
-.memberflight .flight-info-2022 .milecard-div .milecard-content .pic-div {
-  /*星球圖跟出發地目的地的區塊*/
-  display: flex;
-}
-.memberflight .flight-info-2022 .milecard-div .milecard-content .pic-div .depart {
-  color: #EEEEEE;
-}
-.memberflight .flight-info-2022 .milecard-div .milecard-content .pic-div .depart-pic {
-  width: 100px;
-}
-.memberflight .flight-info-2022 .milecard-div .milecard-content .pic-div .dest {
-  color: #EEEEEE;
-}
-.memberflight .flight-info-2022 .milecard-div .milecard-content .pic-div .dest-pic {
-  width: 100px;
-}
-.memberflight .flight-info-2022 .milecard-div .milecard-content .progress-bar-outer {
-  /*進度條的裝飾*/
-  width: 454px;
-  height: 30px;
-  border-radius: 20px;
+.login04_1440 .login04_1080 .login04Line {
   background-color: #EEEEEE;
-  padding-top: 7.5px;
+  height: 2px;
+  width: 190px;
+  margin: 0 auto;
+  margin-top: 12px;
 }
-.memberflight .flight-info-2022 .milecard-div .milecard-content .progress-bar-outer .progress-bar-inner {
-  height: 15px;
-  width: 200px;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+.login04_1440 .login04_1080 .membMileSVG {
+  padding: 80px 0;
+  display: flex;
+  gap: 75px;
 }
-.memberflight .flight-info-2022 .milecard-div .milecard-content .miles {
-  /*下方里程的標示*/
-  text-align: center;
-  color: #EEEEEE;
-}
-.memberflight .flight-info-2022 .year-div {
-  border: 1px solid white;
+.login04_1440 .login04_1080 .membMileSVG .membMile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=member_login04.css.map */
