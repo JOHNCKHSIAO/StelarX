@@ -5,7 +5,7 @@
 @import 'component/btn';
 .member-login02-wrapper{
     width:1080px;
-    border:1px solid white;
+    // border:1px solid white;
     margin:0 auto;
  
     .member-info{
@@ -14,7 +14,6 @@
        
         .member-info-title{
             color:$white;
-            line-height: 1.5;
             text-align: center;
             position: relative;
             &::before{
@@ -30,26 +29,27 @@
             }
         }
 
-        img{
+        .vip-card{
             display:block;
             width:563px;
             border-radius:26px;
             margin:0 auto;
-            margin-top: 36px;
+            margin-top: 60px;
         }
         .member-type{
             color:$white;
             text-align: center;
             margin-top: 48px;
             margin-bottom: 20px;
-
         }
         p{
             color:$white;
             text-align: center;
             margin-bottom: 48px;
         }
-       
+       .btn{
+        margin:0 auto;
+       }
     }
     .decorate-line{
         width: 1084px;
@@ -60,15 +60,18 @@
     }
     .member-mile{
 
+        .btn{
+            margin:0 auto;
+        }
         .mile-wrapper{
             display: flex;
             justify-content: space-between;
-            border:1px solid red;
+            // border:1px solid red;
             width:950px;
             margin:0 auto;
             margin-bottom: 48px;
             .mile-circle{
-                border:1px solid green;
+                // border:1px solid green;
                 h3{
                     color: $white;
                     text-align: center;
@@ -104,7 +107,7 @@
             }
             .mile-square{
                 align-items: center;
-                border:1px solid white;
+                // border:1px solid white;
                 width:520px;
                 height:240px;
                 // border:1px solid white;
@@ -120,8 +123,8 @@
                 .number-area{
                     display:flex;
                     border-radius: 5px;
-                    border:1px solid green;
-                    margin-top: 80px;
+                    // border:1px solid green;
+                    margin-top: 65px;
                     h6{
                         color:black;
                         background:$white;
@@ -148,9 +151,11 @@
     }
 
     .memeber-shop{
+        .btn{
+            margin: 0 auto;
+        }
         .memeber-shop-title{
             color:$white;
-            line-height: 1.5;
             text-align: center;
             position: relative;
             &::before{
@@ -170,7 +175,7 @@
             text-align: center;
             margin-top: 48px;
         }
-        img{
+        .star{
             width:350px;
             display: block;
             margin: 80px auto 80px auto;
@@ -180,7 +185,6 @@
     .member-message{
         .member-message-title{  
             color:$white;
-            line-height: 1.5;
             text-align: center;
             position: relative;
             &::before{
@@ -197,21 +201,27 @@
 
         }
         .message-wrapper{
+
             // border:1px solid white;
-            margin-top: 100px;
+            margin-top: 92px;
             display:flex;
             justify-content: space-between;
+            .btn{
+                margin: 0 auto;
+            }
             .message-center{
                 width:493px;
                 border:1px solid $gold;
                 padding-top: 48px;
                 padding-bottom: 48px;
                 padding-left: 20px;
+                border-radius: 15px;
                 .messages{
                     width:363px;
                     height:44px;
                     background:$white;
                     border-radius: 15px 15px 15px 0;
+                    margin: 0 auto;
                     margin-bottom: 80px;
                     position: relative;
                     line-height: 2;
@@ -231,18 +241,21 @@
                 width:493px;
                 border:1px solid $gold;
                 padding-top: 48px;
+                padding-bottom: 48px;
+                border-radius: 15px;
                 h5{
                     color:$white;
                     text-align: center;
-                    margin-bottom: 24px;
+                    margin-bottom: 20px;
                 }
                 form{
                     textarea{
+                        border-radius: 5px;
                         display:block;
                         margin: 0 auto;
-                        margin-bottom: 35px;
+                        margin-bottom: 30px;
                         width:365px;
-                        height:170px;
+                        height:160px;
                         padding-top: 20px;
                         padding-left: 20px;
                         padding-right: 20px;
@@ -255,10 +268,6 @@
         }
     }
    
-    .btn_container{
-        width:240px;
-        margin: 0 auto;
-        
-    }
+   
 
 }
