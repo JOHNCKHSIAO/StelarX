@@ -347,8 +347,6 @@ body{
     .cabin-intro-top{
         margin: auto;
         width: 1440px;
-        // height: 700px;
-        // background-image: url('../images/rocket/cabin_intro.jpg');
 
         position: relative;
         
@@ -444,7 +442,7 @@ body{
     .cabin-intro-bottom{
         width: 1440px;
         margin: auto;
-        margin-top: 180px;
+        margin-top: 220px;
         margin-bottom: 220px;
         
         .bottom-bg{
@@ -481,6 +479,7 @@ body{
 
 .rocket-bodyguard{
     text-align: center;
+    border: 1px solid firebrick;
 
     h2{
         font-weight: 500;

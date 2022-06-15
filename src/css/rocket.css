@@ -670,7 +670,7 @@ body {
 .rocket-cabin .cabin-intro-bottom {
   width: 1440px;
   margin: auto;
-  margin-top: 180px;
+  margin-top: 220px;
   margin-bottom: 220px;
 }
 .rocket-cabin .cabin-intro-bottom .bottom-bg {
@@ -699,6 +699,7 @@ body {
 
 .rocket-bodyguard {
   text-align: center;
+  border: 1px solid firebrick;
 }
 .rocket-bodyguard h2 {
   font-weight: 500;
