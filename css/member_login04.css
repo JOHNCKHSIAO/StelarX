@@ -44,7 +44,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -54,12 +54,11 @@ table {
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   /* 預設字體 */
   font-size: 6.26%;
   line-height: 1.6;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 以下為h1-h6 */
@@ -131,23 +130,37 @@ p {
 }
 
 * {
-  line-height: 1.6;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.g-container {
+  margin: 0 auto;
+  width: 450px;
+  border-radius: 25px;
+  background: #EEEEEE;
+  display: flex;
+}
+
+.g-progress {
+  width: 0%;
+  height: inherit;
+  border-radius: 25px 0 0 25px;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  transition: 1.5s all;
+  border: 6px solid #EEEEEE;
+}
+
+.rocket {
+  width: 60px;
+  height: 36px;
+  border: 1px solid white;
 }
 
 .mileCity {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
 }
-
 .mileCity h6 {
   color: #EEEEEE;
 }
@@ -159,7 +172,6 @@ p {
   border-radius: 10px;
   margin: 0 auto;
 }
-
 .date2022 h5 {
   text-align: center;
   font-weight: 700;
@@ -171,14 +183,12 @@ p {
 .mainMile {
   margin-top: 80px;
 }
-
 .mainMile .mileCard {
   width: 500px;
   margin-top: 12px;
   padding: 10px;
   background: #00072E;
 }
-
 .mainMile .mileCard .mileCardUp {
   color: #987A4D;
   line-height: 64px 64px;
@@ -188,46 +198,32 @@ p {
   cursor: pointer;
   line-height: 48px;
 }
-
 .mainMile .mileCard .mileCardDown {
   margin: 12px 0;
   display: none;
 }
-
 .mainMile .mileCard .mileCardDown .mileCardDown_Flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
 .mainMile .mileCard .mileCardDown .mileCardDown_Flex .mileCardLeft {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .mainMile .mileCard .mileCardDown .mileCardDown_Flex .mileCardRight {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .mileBar {
   margin-top: 24px;
 }
-
 .mileBar .progress {
   width: 450px;
   height: 20px;
-  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
   border: 3px solid #EEEEEE;
   border-radius: 50px;
   margin: 0 auto;
 }
-
 .mileBar h5 {
   margin-top: 12px;
   color: #EEEEEE;
@@ -237,18 +233,15 @@ p {
 .login04_1440 {
   background: black;
 }
-
 .login04_1440 .login04_1080 {
   width: 1080px;
   margin: 0 auto;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
 }
-
 .login04_1440 .login04_1080 h3 {
   text-align: center;
   color: #EEEEEE;
 }
-
 .login04_1440 .login04_1080 .login04Line {
   background-color: #EEEEEE;
   height: 2px;
@@ -256,25 +249,15 @@ p {
   margin: 0 auto;
   margin-top: 12px;
 }
-
 .login04_1440 .login04_1080 .membMileSVG {
   padding: 80px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 75px;
 }
-
 .login04_1440 .login04_1080 .membMileSVG .membMile {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 /*# sourceMappingURL=member_login04.css.map */
