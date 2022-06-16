@@ -325,7 +325,7 @@ p {
 
 body {
   position: relative;
-  background-image: url("/src/images/member_intro_bg.png");
+  background-image: url("../images/member_intro_bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
