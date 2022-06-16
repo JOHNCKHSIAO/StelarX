@@ -6,12 +6,14 @@ body{
   
   }
   
-  .intro {
+  // 下面是控制all背景顏色 
+  .star_bg {
     min-height: 100vh;
     background: radial-gradient(ellipse at bottom, #001a37 0%, #090a0f 100%);
     overflow: hidden;
   }
   
+  // 下面控制星星數量
   .stars {
     width: 1px;
     height: 1px;

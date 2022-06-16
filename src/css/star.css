@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-.intro {
+.star_bg {
   min-height: 100vh;
   background: radial-gradient(ellipse at bottom, #001a37 0%, #090a0f 100%);
   overflow: hidden;
