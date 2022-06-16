@@ -9,7 +9,8 @@
 * {
     box-sizing: border-box;
 }
-.login04{
+
+.login04 {
     background: #000;
 }
 
@@ -137,7 +138,7 @@
         .rocket {
             width: 60px;
             height: 36px;
-           
+
         }
 
 
@@ -185,25 +186,26 @@
 
         // 後面有svg線的背景
         .membMileSVG {
-
+            position: relative;
             padding: $spacing_80px 0;
             display: flex;
             gap: 75px;
 
-            .bgsvg{
+            .bgsvg {
                 // border: 1px solid white;
                 position: absolute;
-                left: 800px;
-                top: 450px;
+                left: 380px;
+                top: 400px;
                 transition: 2s all;
                 overflow: hidden;
                 height: 0;
 
-                img{
+                img {
                     // z-index: ;
 
                 }
-            // z-index: 0;
+
+                // z-index: 0;
 
             }
 
@@ -214,16 +216,17 @@
                 justify-content: space-between;
             }
 
-            .left{
+            .left {
                 margin-bottom: 500px;
             }
-            .right{
+
+            .right {
                 margin-top: 500px;
             }
 
         }
 
-        .login04_btn{
+        .login04_btn {
             display: flex;
             justify-content: space-around;
             margin-bottom: 120px;
