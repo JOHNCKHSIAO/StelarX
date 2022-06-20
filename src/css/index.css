@@ -192,6 +192,10 @@
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
+.index {
+  background: transparent;
+}
+
 .line_h12 {
   line-height: 1.2;
 }
