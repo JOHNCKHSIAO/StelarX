@@ -91,6 +91,12 @@
             </ul>
         </div>
     </div>
+    <script>
+        const url = './php/information.php';
+        fetch(url)
+            .then(response => response.json())
+            .then(text => console.log(text));
+    </script>
     @@include("./layout/footer.html")
 </body>
 </html>
