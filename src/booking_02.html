@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="./css/booking_02.css">
     <link href='../project_calender/main.css' rel='stylesheet' />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/vue.js"></script>
     <title>Stellar X | 太空運輸領航者</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -99,11 +101,28 @@
                 <h2>選擇航程日期</h2>
             </div>
             <!-- 日曆 start  -->
-            <div class="container">
+            <!-- <div class="container">
                 <div id='calendar'>
                 </div>
-            </div>
+            </div> -->
             <!-- 日曆 end  -->
+            <div class="calendar" id="calendar">
+                <ul>
+                    <li>
+                        <p @click="select_date" data-day="6/18" data-limit="8">18日</p>
+                        <p>剩餘座位8</p>
+                    </li>
+                    <li>
+                        <p @click="select_date" data-day="6/19" data-limit="6">19日</p>
+                        <p>剩餘座位6</p>
+                    </li>
+                    <li>
+                        <p @click="select_date" data-day="6/20" data-limit="5">20日</p>
+                        <p>剩餘座位5</p>
+                    </li>
+                </ul>
+                <p>人數:<span @click="reduce"> - </span>{{people}}<span @click="add"> + </span></p>
+            </div>
         </div>
 
 
@@ -121,12 +140,17 @@
         </div>
         <div class="btn_general">
             <h5>
-                <a class="btn_square" href="./booking_03.html">下一步</a>
+                <a class="btn_square" href="./booking_03.html" id="nextPage">下一步</a>
             </h5>
         </div>
     </div>
 
     @@include("./layout/footer.html")
+    <script>
+        // new Vue({
+
+        // })
+    </script>
     <script src='./js/project_calender/main.js'></script>
     <!-- 轉換成中文 -->
     <script src="./js/project_calender/locales-all.js"></script>
