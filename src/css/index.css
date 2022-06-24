@@ -192,6 +192,10 @@
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
+.index {
+  background: transparent;
+}
+
 .line_h12 {
   line-height: 1.2;
 }
@@ -248,6 +252,10 @@
   font-family: "Roboto Serif", serif;
 }
 
+.index1440 {
+  position: relative;
+  z-index: 1;
+}
 .index1440 .index1080 {
   width: 1080px;
   margin: 0 auto;

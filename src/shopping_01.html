@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <meta name="description" content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <script src="js/vue.js"></script>
     <link rel="shortcut icon" href="./images/shortcut.png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/shopping_01.css">
+    
     <title>Stellar X | 太空運輸領航者</title>
 </head>
+
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
@@ -18,8 +21,8 @@
         <!-- <img src="./images/shopping_cart/top_banner.jpg" alt=""> -->
         <h2>SHOP STELAR X</h2>
     </div>
-    <div class="wrapper">
-        <div class="commodity">
+    <div class="wrapper" id="shopping_1" v-if="shopping_1_list">
+        <div class="commodity"  >
             <div class="small_title">
                 <h3 class="light-height-1">星球特產</h3>
                 <h6 class="light-height-1">Planet Special</h6>
@@ -27,18 +30,18 @@
             <ul>
                 <li>
                     <img src="./images/shopping_cart/candle.jpg" alt="">
-                    <h4>歐若拉香氛</h4>
-                    <h5>5,000 哩</h5>
+                    <h4>{{shopping_1_list[0][0]}}</h4>
+                    <h5>{{shopping_1_list[0][1]}}哩</h5>
                 </li>
                 <li>
                     <img src="./images/shopping_cart/Image.jpg" alt="">
-                    <h4>星河葡萄酒</h4>
-                    <h5>5,000 哩</h5>
+                    <h4>{{shopping_1_list[1][0]}}</h4>
+                    <h5>{{shopping_1_list[1][1]}}哩</h5>
                 </li>
                 <li>
                     <img src="./images/shopping_cart/jar.jpg" alt="">
-                    <h4>天王冰河凍膜</h4>
-                    <h5>5,000 哩</h5>
+                    <h4>{{shopping_1_list[2][0]}}</h4>
+                    <h5>{{shopping_1_list[2][1]}}哩</h5>
                 </li>
             </ul>
         </div>
@@ -50,18 +53,18 @@
             <ul>
                 <li>
                     <img src="./images/shopping_cart/baseball_cap.jpg" alt="">
-                    <h4>復古老帽</h4>
-                    <h5>5,000 哩</h5>
+                    <h4>{{shopping_1_list[3][0]}}</h4>
+                    <h5>{{shopping_1_list[3][1]}}哩</h5>
                 </li>
                 <li>
                     <img src="./images/shopping_cart/t-shirt.jpg" alt="">
-                    <h4>星河葡萄酒</h4>
-                    <h5>5,000 哩</h5>
+                    <h4>{{shopping_1_list[4][0]}}</h4>
+                    <h5>{{shopping_1_list[4][1]}}哩</h5>
                 </li>
                 <li>
                     <img src="./images/shopping_cart/tote_bag.jpg" alt="">
-                    <h4>環保帆布袋</h4>
-                    <h5>5,000 哩</h5>
+                    <h4>{{shopping_1_list[5][0]}}</h4>
+                    <h5>{{shopping_1_list[5][1]}}哩</h5>
                 </li>
             </ul>
         </div>
@@ -73,24 +76,55 @@
             <ul>
                 <li>
                     <img src="./images/shopping_cart/mug.jpg" alt="">
-                    <h4>品牌太空杯</h4>
-                    <h5>5,000 哩</h5>
+                    <h4>{{shopping_1_list[6][0]}}</h4>
+                    <h5>{{shopping_1_list[6][1]}}哩哩</h5>
                 </li>
                 <li>
                     <img src="./images/shopping_cart/pin_button.jpg" alt="">
-                    <h4>紀念胸章</h4>
-                    <h5>5,000 哩</h5>
+                    <h4>{{shopping_1_list[7][0]}}</h4>
+                    <h5>{{shopping_1_list[7][1]}}哩</h5>
                 </li>
                 <li>
                     <a href="./shopping_02.html">
-                    <img src="./images/shopping_cart/keychain.jpg" alt="">
-                    <h4>皮革鑰匙圈</h4>
-                    <h5>5,000 哩</h5>
+                        <img src="./images/shopping_cart/keychain.jpg" alt="">
+                        <h4>{{shopping_1_list[8][0]}}</h4>
+                        <h5>{{shopping_1_list[8][1]}}哩</h5>
                     </a>
                 </li>
             </ul>
         </div>
     </div>
+    <script>
+    
+
+        // const url = './php/information.php';
+        // fetch(url)
+        //     .then(response => response.json())
+        //     .then(text => console.log(text));
+
+
+        new Vue({
+            el: '#shopping_1', //
+
+            data: {
+                shopping_1_list: [], //
+            },
+            method: {},
+            compute: {},
+            watch: {},
+            created() {
+                let url = './PHP/commodity.php'; //
+                fetch(url)
+                    .then(response => response.json())
+                    .then(text => this.shopping_1_list = text); //
+
+            },
+            mounted(){},
+            destroyed(){},
+
+        })
+    </script>
     @@include("./layout/footer.html")
 </body>
+
 </html>

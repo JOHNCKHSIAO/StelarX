@@ -336,29 +336,29 @@ body {
 }
 .rocket-fv .fv-main {
   width: 650px;
-  height: 400px;
-  margin: 120px auto 0;
+  height: 300px;
+  margin: 120px auto 100px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1254901961) 0%, rgba(255, 255, 255, 0) 100%);
-  font-weight: 500;
   position: relative;
 }
-.rocket-fv .fv-main .title2 {
+.rocket-fv .fv-main h2 {
   text-align: center;
   line-height: 1;
   position: absolute;
   left: 0;
   right: 0;
-  top: -140px;
+  top: -102px;
   margin: auto;
 }
-.rocket-fv .fv-main .title1 {
+.rocket-fv .fv-main h1 {
   font-family: "Roboto Serif", serif;
   text-align: center;
   line-height: 1;
+  font-weight: 500;
   position: absolute;
   left: 0;
   right: 0;
-  top: -48px;
+  top: -34px;
   margin: auto;
 }
 .rocket-fv .fv-main h5 {
@@ -366,7 +366,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: 180px;
+  top: 120px;
   margin: auto;
 }
 .rocket-fv .rocket-data {
@@ -383,7 +383,11 @@ body {
 }
 .rocket-fv .rocket-data ul li h1 {
   font-weight: 500;
+  letter-spacing: 2px;
   color: #987A4D;
+}
+.rocket-fv .rocket-data ul li h5 {
+  font-weight: 300;
 }
 
 .rocket-about {
@@ -405,7 +409,6 @@ body {
   top: 200px;
 }
 .rocket-about .about-aether h2 {
-  font-weight: 500;
   margin: 80px 0 0 250px;
 }
 .rocket-about .about-aether span {
@@ -418,6 +421,7 @@ body {
 .rocket-about .about-aether h6 {
   width: 415px;
   margin-left: 310px;
+  font-weight: 300;
 }
 
 .rocket-engine img {
@@ -432,14 +436,14 @@ body {
 .rocket-engine .engine-info .info-left {
   color: #987A4D;
   font-family: "Roboto Serif", serif;
-  font-weight: 500;
   flex-basis: 450px;
 }
 .rocket-engine .engine-info .info-left h1 {
   line-height: 1;
-  margin: 120px 0 64px 80px;
+  font-weight: 500;
+  margin: 120px 0 64px 40px;
 }
-.rocket-engine .engine-info .info-left span {
+.rocket-engine .engine-info .info-left h2 {
   line-height: 1;
   margin-left: 240px;
 }
@@ -448,7 +452,7 @@ body {
   margin-left: auto;
   display: flex;
 }
-.rocket-engine .engine-info .info-right h5 {
+.rocket-engine .engine-info .info-right h6 {
   line-height: 1;
 }
 .rocket-engine .engine-info .info-right ul {
@@ -464,6 +468,7 @@ body {
 .rocket-info .info-data {
   width: 1080px;
   margin: auto;
+  border: 1px solid firebrick;
 }
 .rocket-info .info-data h1 {
   line-height: 1;

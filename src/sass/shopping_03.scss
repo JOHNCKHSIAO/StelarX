@@ -8,7 +8,7 @@
     margin: 0 auto;
     margin-top: 64px;
 }
-body{
+.shopping03{
     color: white;
 }
 .shopping-list{
@@ -33,8 +33,12 @@ body{
                 padding-left: 240px;
             }
         }
-        ul{
-            li{
+        .shop_03_ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .shop_03_li{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -44,11 +48,13 @@ body{
                     display: block;
                     height: 200px;
                     width: 200px;
+                    
                 }
                 .wrap{
                     display: flex;
                     width: 800px;
                     justify-content: space-between;
+                    margin-left: 10px;
                     h5{
                     }
                     .wrap_in{

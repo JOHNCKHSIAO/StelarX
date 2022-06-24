@@ -6,7 +6,9 @@
 
 
 // 共用間距
-
+.index{
+    background: transparent;
+}
 .line_h12 {
     line-height: 1.2;
     // 讓行高正常
@@ -89,7 +91,8 @@
 
 
 .index1440 {
-
+position: relative;
+z-index: 1;
     .index1080 {
         width: 1080px;
         margin: 0 auto;
