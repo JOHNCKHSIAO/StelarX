@@ -5,27 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <meta name="description"
+        content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
     <link rel="shortcut icon" href="./images/shortcut.png">
-    <link rel="stylesheet" href="./css/booking_02.css">
-    <link href='../project_calender/main.css' rel='stylesheet' />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/booking_01-1.css">
     <title>Stelar X | 太空運輸領航者</title>
-    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.js"></script>
 </head>
 
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+    <div id="app">  <!-- HTML DOM template -->
+        <button @click="content='name'"> Your Name </button>
+        <button @click="content='datetime'"> Datetime </button>
+        <button @click="content='lessons'"> Lessons </button>
+        <button @click="content='apply'"> Apply </button>
+        <button @click="content='nothing'"> Do Nothing </button>
+
+        <!-- 透過 component element(元素) 的 is 屬性去指定要出現哪個組件 -->
+        <component :is='content'></component>
+    </div>
+    <!-- booking process section start -->
     <section class="booking-process">
         <div class="booking-process_each">
-            <div class="process-circle">
+            <div class="process-circle main">
                 <h2>1</h2>
             </div>
             <h6>選擇星球</h6>
         </div>
         <div class="booking-process_each">
-            <div class="process-circle main">
+            <div class="process-circle">
                 <h2>2</h2>
             </div>
             <h6>日期 / 艙別</h6>
@@ -55,7 +66,27 @@
             <h6>完成</h6>
         </div>
     </section>
-    <div class="wrapper">
+    <!-- booking process section end -->
+
+    <!-- step button section start -->
+    <div class="step_button">
+        <div class="btn_general">
+            <h5>
+                <a class="btn_square" href="./booking_01-2.html">上一步</a>
+            </h5>
+        </div>
+        <div class="btn_general">
+            <h5>
+                <a class="btn_square" href="./booking_03.html">下一步</a>
+            </h5>
+        </div>
+    </div>
+    <!-- step button section end -->
+
+    <script>
+        Vue.component('name',{
+            template: `
+            <div class="wrapper">
         <section class="booking-status">
             <div class="selector_title">
                 <h2>選擇往返星球</h2>
@@ -112,32 +143,23 @@
             <h5>目前票價總金額</h5>
             <h5>$ 45,000 / 人</h5>
         </div>
-    </div>
+    </div>   
+            `,
+        })
 
-    <div class="step_button">
-        <div class="btn_general">
-            <h5>
-                <a class="btn_square" href="./booking_01-2.html">上一步</a>
-            </h5>
-        </div>
-        <div class="btn_general">
-            <h5>
-                <a class="btn_square" href="./booking_03.html">下一步</a>
-            </h5>
-        </div>
-    </div>
-    <script>
-        var hammertime = new Hammer(myElement, myOptions);
-hammertime.on('pan', function(ev) {
-	console.log(ev);
-});
+        new Vue({
+            el: '#app',
+            data: {
+                content: 'name',
+            },
+        });
     </script>
-
+    
     @@include("./layout/footer.html")
-    <script src='./js/project_calender/main.js'></script>
+    <script src='../project_calender/main.js'></script>
     <!-- 轉換成中文 -->
-    <script src="./js/project_calender/locales-all.js"></script>
-    <script src="./js/booking_02.js"></script>
+    <script src="../project_calender/locales-all.js"></script>
+    <script src="../src/js/booking_02.js"></script>
 </body>
 
 </html>

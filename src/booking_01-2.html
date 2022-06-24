@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="./images/shortcut.png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/booking_01-2.css">
-    <title>Stellar X | 太空運輸領航者</title>
+    <title>Stelar X | 太空運輸領航者</title>
+    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 </head>
 
 <body>
@@ -73,7 +75,7 @@
         </div>
     </section>
     <section class="booking-selection">
-        <div>
+        <div class="move-display">
             <img class="choose" src="./images/booking/selection.png" alt="">
             <img class="planet" src="./images/booking/mars.png" alt="">
             <img class="bg" src="./images/booking/selector_bg.png" alt="">
@@ -87,6 +89,20 @@
         </div>
     </section>
     @@include("./layout/footer.html")
+
+    <script>
+        let planet = document.querySelector('.move-display')
+        const hammertime = new Hammer(planet);
+        let index = 0
+        hammertime.on('panup', function(ev) {
+            console.log('123');
+            
+	        // hammertime.get('pinch').set({ enable: true });
+            // hammertime.get('rotate').set({ enable: true });
+            // hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+            // hammertime.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+        });
+    </script>
 </body>
 
 </html>
