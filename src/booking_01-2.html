@@ -75,7 +75,7 @@
         </div>
     </section>
     <section class="booking-selection">
-        <div>
+        <div class="move-display">
             <img class="choose" src="./images/booking/selection.png" alt="">
             <img class="planet" src="./images/booking/mars.png" alt="">
             <img class="bg" src="./images/booking/selector_bg.png" alt="">
@@ -91,13 +91,16 @@
     @@include("./layout/footer.html")
 
     <script>
-        let planet = document.querySelector('.planet')
+        let planet = document.querySelector('.move-display')
         const hammertime = new Hammer(planet);
-        hammertime.on('pan', function(ev) {
-	        hammertime.get('pinch').set({ enable: true });
-            hammertime.get('rotate').set({ enable: true });
-            hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-            hammertime.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+        let index = 0
+        hammertime.on('panup', function(ev) {
+            console.log('123');
+            
+	        // hammertime.get('pinch').set({ enable: true });
+            // hammertime.get('rotate').set({ enable: true });
+            // hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+            // hammertime.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
         });
     </script>
 </body>
