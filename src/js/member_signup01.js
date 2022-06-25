@@ -7,7 +7,8 @@
     4.眼睛可以操控看不看的到密碼(type=text 或是 password)  也要切換圖(閉眼或睜開)
     
     */
-    
+  function old(){
+
     let account_input = document.querySelector("#account_input");
     let id_input = document.querySelector("#id_input");
     let accountCheck_message = document.querySelector("#accountCheck_message");
@@ -110,8 +111,156 @@
     })
 
 
+  }  
 
 
+  let vm = new Vue({
+    el: '#memberr_register_area',
+    data: { 
+        accountOpacity:{
+            opacity:0,
+        },
+        idOpacity:{
+            opacity:0,
+        },
+        accountMessage:"帳號長度須介於5~50字元!",
+        idMessage:"請輸入正確格式的個人ID",
+        form_data:{
+            account_input_v:"",
+            id_input_v:"",
+            password_input_v:"",
+            checkPassword_input_v:"",
+            lastName_input_v:"",
+            name_input_v:"",
+            email_input_v:"",
+            cellphone_input_v:"",
+            company_input_v:"",
+        }
+    },
+    methods: {
+        checkAccount(){
+            //有時間加入一個驗證非空白字元
+            // let regex = new RegExp("\f\n\r\t\v");
+            let accountValue = this.form_data.account_input_v;
+            if(accountValue.length < 5 || accountValue.length > 50){
+                this.accountOpacity.opacity = 1;
+                return;
+
+            }else{
+                let url = "./PHP/checkaccount.php";
+                fetch(url, {
+                    body: JSON.stringify({account : accountValue}), // must match 'Content-Type' header
+                    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+                    credentials: 'same-origin', // include, same-origin, *omit
+                    headers: {
+                      'content-type': 'application/json'
+                    },
+                    method: 'POST', 
+                    mode: 'cors',
+                    redirect: 'follow', 
+                    referrer: 'no-referrer', 
+                  })
+                  .then(res=>{
+                    return res.text();
+                  })
+                  .then(res=>{
+                    // alert(res);
+                    if(res=="accountOK"){
+                        return
+                    }else{
+                        this.accountOpacity.opacity= 1;
+                        this.accountMessage = "這個帳號已經有人使用，請試試其他的!";
+                    }
+                  })
+            }
+        },
+        checkID(){
+            //有時間加入正則表達 一英文6數字
+            // let regex = new RegExp("\f\n\r\t\v");
+            let idValue = this.form_data.id_input_v;
+            if((idValue.length) !=7){
+                this.idOpacity.opacity = 1;
+                return;
+            }else{
+                let url = "./PHP/checkaccount.php";
+                fetch(url, {
+                    body: JSON.stringify({inputID : idValue}), // must match 'Content-Type' header
+                    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+                    credentials: 'same-origin', // include, same-origin, *omit
+                    headers: {
+                      'content-type': 'application/json'
+                    },
+                    method: 'POST', 
+                    mode: 'cors',
+                    redirect: 'follow', 
+                    referrer: 'no-referrer', 
+                  })
+                  .then(res=>{
+                    return res.text();
+                  })
+                  .then(res=>{
+                    // alert(res);
+                    if(res=="idOK"){
+                        return
+                    }else{
+                        this.idOpacity.opacity= 1;
+                        this.idMessage = "您已經是我們的會員，請選擇會員登入";
+                    }
+                  })
+            }
+
+        },
+        messageOff(){
+            this.accountOpacity.opacity= 0;
+            this.idOpacity.opacity= 0;
+        }
+    },
+    computed: {
+        // showMessage(){
+        //     switch(this.verify){
+        //         case 1 : return{
+        //             opacity:1,
+        //         };
+
+        //         break;
+            
+        //         case 2 :
+        //         this.verify = 0;
+        //         return{
+        //             opacity:0,
+        //         };
+
+        //        }
+        // }
+        
+    },
+    watch: {},
+    beforeCreate() {
+        
+    },
+    created() {
+        
+    },
+    beforeMount() {
+      
+    },
+    mounted() {
+      
+    },
+    beforeUpdate() {
+       
+    },
+    updated() {
+       
+    },
+    beforeDestroy() {
+        
+    },
+    destroyed() {
+      
+    },
+
+  });
 
 
 
