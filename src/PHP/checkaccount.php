@@ -27,7 +27,7 @@
       // echo $sql;
       $statement = $pdo->query($sql);
       $data = $statement->fetchAll();
-      print_r($data);
+      // print_r($data);
       if(count($data)== 0){
         echo("idOK");
       }else{
