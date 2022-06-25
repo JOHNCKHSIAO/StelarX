@@ -12,9 +12,46 @@ $(document).ready(function () {
         
         $(this).parent().siblings().find('.qa_down').slideUp(200)
     })
- 
+
+    //抓表單
+    let name = document.querySelector("#input_name") //姓名欄位
+    let tel = document.querySelector("#input_tel") //電話欄位
+  let email = document.querySelector("#input_email") //信箱欄位
+let planets =document.querySelector(".my_pla_sel") //下拉選單星球
+let textarwa = document.querySelector("#textarea")//意見欄位
 
   
 
+//   let obj ={
+//     obj_name:name.value,
+//     obj_tel:tel.value,
+//     obj_email:email.value,
+//     obj_sel:planets.value,
+//     obj_textarwa:textarwa.value
+//   }
+// let jsonObj = JSON.stringify(obj);
+$("#btn").click(function(){
 
+    fetch("./PHP/contact.php",{
+        method: "POST",
+        // headers: {
+        //     'Content-Type': 'application/json'
+        // },
+        body: JSON.stringify({
+            obj_name:name.value,
+            obj_tel:tel.value,
+            obj_email:email.value,
+            obj_sel:planets.value,
+            obj_textarwa:textarwa.value
+        })
+    })
+
+})
+// console.log(jsonObj);
+// console.log(obj);
+
+
+
+
+ 
 });

@@ -24,6 +24,11 @@ var swiper = new Swiper(".mySwiper", {
   spaceBetween: 20,// 卡片相隔間距
   slidesPerGroup: 1,// 一次卡點幾張
   loop: true,
+  autoplay: { //開啟自動播放
+    delay: 3000,
+    disableOnInteraction: false, //自動播放後觸控完 繼續自動輪播不停止
+  },
+
  
   // loopFillGroupWithBlank: true,
  
