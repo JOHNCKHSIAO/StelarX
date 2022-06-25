@@ -23,6 +23,7 @@ var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,// 頁面放幾張卡片
   spaceBetween: 20,// 卡片相隔間距
   slidesPerGroup: 1,// 一次卡點幾張
+  mousewheel: true, //滑鼠滾輪
   loop: true,
   autoplay: { //開啟自動播放
     delay: 3000,
