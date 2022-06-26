@@ -272,7 +272,7 @@
                     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
                     credentials: 'same-origin', // include, same-origin, *omit
                     headers: {
-                      'content-type': 'form-data'
+                      'content-type':'application/json'
                     },
                     method: 'POST', 
                     mode: 'cors',

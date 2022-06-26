@@ -7,11 +7,26 @@
    //echo gettype($data); // ok 是array
    $abc = array_key_exists("account",$data); //判斷是否有"account" 這個key 因為有可能要驗證ID
    //  echo $abc; //回傳布林值 但是echo 會是0 或1
+  //  $SQL = "
+  //       select * from MEMBER where username = :username
+  //   ";
+  //   $stmt = $pdo->prepare($SQL);
+  //   $stmt->bindValue(":username", $member["username"]);
+  //   $stmt->execute();
+
+      // $accountValue = $data["account"];
+      // $sql = " SELECT ACCOUNT FROM stellarx.member where ACCOUNT = '$accountValue'" ;
+      // $statement = $pdo->query($sql);
+      // $data = $statement->fetchAll();
+
+
 
     if ($abc==true){
-      $accountValue = $data["account"];
-      $sql = "SELECT ACCOUNT FROM stellarx.member where ACCOUNT = '$accountValue'" ;
-      $statement = $pdo->query($sql);
+      // $accountValue = $data["account"];
+      $sql = " SELECT ACCOUNT FROM stellarx.member where ACCOUNT = :account " ;
+      $statement = $pdo->prepare($sql);
+      $statement->bindValue(":account", $data["account"]);
+      $statement->execute();
       $data = $statement->fetchAll();
       if(count($data)== 0){
         echo("accountOK");
@@ -20,12 +35,11 @@
       }
 
     }else{
-      //echo "elseOK";
       $inputIDValue = $data["inputID"];
-      //echo $inputIDValue;
-      $sql = "SELECT PERSONAL_ID FROM stellarx.member where PERSONAL_ID = '$inputIDValue'";
-      // echo $sql;
-      $statement = $pdo->query($sql);
+      $sql = "SELECT PERSONAL_ID FROM stellarx.member where PERSONAL_ID = :inputId ";
+      $statement = $pdo->prepare($sql);
+      $statement->bindValue(":inputId", $data["inputID"]);
+      $statement->execute();
       $data = $statement->fetchAll();
       // print_r($data);
       if(count($data)== 0){
