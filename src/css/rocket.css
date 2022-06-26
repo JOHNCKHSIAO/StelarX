@@ -382,7 +382,6 @@ body {
   text-align: center;
 }
 .rocket-fv .rocket-data ul li h1 {
-  font-weight: 500;
   letter-spacing: 2px;
   color: #987A4D;
 }
@@ -465,55 +464,29 @@ body {
   margin-bottom: 32px;
 }
 
-.rocket-info .info-data {
+.rocket-info .info-data ul {
+  display: flex;
   width: 1080px;
-  margin: auto;
-  border: 1px solid firebrick;
+  margin: 40px auto 120px;
 }
-.rocket-info .info-data h1 {
-  line-height: 1;
-  font-weight: 700;
-  margin-bottom: 12px;
+.rocket-info .info-data ul li {
+  flex-grow: 1;
+  border: 3px solid darkgreen;
+  text-align: center;
 }
-.rocket-info .info-data h5 {
-  line-height: 1;
-  font-weight: 500;
-  text-align: right;
-  color: #a0a0a0;
-}
-.rocket-info .info-data .data-top {
-  display: flex;
-  margin-top: 80px;
-  align-items: center;
-  justify-content: center;
-}
-.rocket-info .info-data .data-top .weight {
-  margin-right: 40px;
-}
-.rocket-info .info-data .data-bottom {
-  margin: 80px 0 120px 0;
-}
-.rocket-info .info-data .data-bottom ul {
-  display: flex;
-  justify-content: center;
-}
-.rocket-info .info-data .data-bottom ul li {
-  display: flex;
-  align-items: center;
-  margin: 0 120px;
-}
-.rocket-info .info-data .data-bottom ul li .diameter {
-  margin-right: 40px;
-}
-.rocket-info .info-data .data-bottom ul li .height {
-  margin-right: 40px;
+.rocket-info .info-data ul li img {
+  height: 40px;
 }
 .rocket-info .rocket-rocket {
   width: 1080px;
   margin: auto;
   display: flex;
 }
+.rocket-info .rocket-rocket .rocket-left {
+  border: 1px solid firebrick;
+}
 .rocket-info .rocket-rocket .rocket-right {
+  border: 1px solid orange;
   width: 500px;
   margin-left: auto;
 }
@@ -525,7 +498,7 @@ body {
   margin: auto;
   margin-top: 200px;
 }
-.rocket-info .rocket-rocket .rocket-right .eqpt-top h3 {
+.rocket-info .rocket-rocket .rocket-right .eqpt-top h4 {
   line-height: 1;
   color: #987A4D;
   font-weight: 500;
@@ -533,6 +506,7 @@ body {
   margin: 80px 0;
 }
 .rocket-info .rocket-rocket .rocket-right .eqpt-top .eqpt-detail ul {
+  font-weight: 300;
   display: flex;
   width: 380px;
   margin: auto;
@@ -555,6 +529,7 @@ body {
   margin-bottom: 40px;
 }
 .rocket-info .rocket-rocket .rocket-right .eqpt-top h6 {
+  font-weight: 300;
   width: 430px;
   margin: auto;
 }
@@ -562,7 +537,7 @@ body {
   display: block;
   margin: auto;
 }
-.rocket-info .rocket-rocket .rocket-right .eqpt-bottom h3 {
+.rocket-info .rocket-rocket .rocket-right .eqpt-bottom h4 {
   line-height: 1;
   color: #987A4D;
   font-weight: 500;
@@ -570,11 +545,13 @@ body {
   margin: 80px 0;
 }
 .rocket-info .rocket-rocket .rocket-right .eqpt-bottom h6 {
+  font-weight: 300;
   width: 430px;
   margin: auto;
   margin-bottom: 80px;
 }
 .rocket-info .rocket-rocket .rocket-right .eqpt-bottom .eqpt-detail ul {
+  font-weight: 300;
   display: flex;
   width: 380px;
   margin: auto;
@@ -638,6 +615,18 @@ body {
   height: 80px;
   border-radius: 25px;
   display: none;
+  animation: fadein 0.5s linear;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .rocket-cabin .cabin-intro-top .intro-pop h6 {
   line-height: 80px;
@@ -707,6 +696,7 @@ body {
 
 .rocket-bodyguard {
   text-align: center;
+  border: 2px solid orange;
 }
 .rocket-bodyguard h2 {
   font-weight: 500;
@@ -762,14 +752,31 @@ body {
   margin: auto;
 }
 
+/* Slideshow container */
 .rocket-plus {
-  width: 1440px;
-  height: 750px;
-  margin: auto;
-  background-image: url("../images/rocket/rocket_plus_star.jpg");
+  max-width: 1080px;
   position: relative;
+  margin: auto;
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
 }
-.rocket-plus .plus-info {
+.rocket-plus .event-slides {
+  display: none;
+  /* Number text (1/3 etc) */
+}
+.rocket-plus .event-slides .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.rocket-plus .event-slides img {
+  width: 100%;
+}
+.rocket-plus .event-slides .event-info {
   width: 920px;
   height: 450px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -777,15 +784,80 @@ body {
   top: 80px;
   right: 0;
 }
-.rocket-plus .plus-info h2 {
+.rocket-plus .event-slides .event-info h2 {
   font-weight: 500;
   line-height: 1;
   margin: 80px 0 80px 120px;
 }
-.rocket-plus .plus-info h5 {
+.rocket-plus .event-slides .event-info h5 {
   margin-left: 200px;
 }
+.rocket-plus .prev, .rocket-plus .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.rocket-plus .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.rocket-plus .prev:hover, .rocket-plus .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.rocket-more {
+  border: 2px solid red;
+}
 .rocket-more .more-wrapper {
   width: 1080px;
   margin: 150px auto;

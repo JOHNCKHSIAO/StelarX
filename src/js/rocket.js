@@ -1,3 +1,6 @@
+
+// <!-------------- 火箭艙_觸控面板 -------------->
+
 let switch1 = document.querySelector("#toggle-switch1");
 let pop1 = document.querySelector("#pop1");
 let switch2 = document.querySelector("#toggle-switch2");
@@ -6,8 +9,6 @@ let switch3 = document.querySelector("#toggle-switch3");
 let pop3 = document.querySelector("#pop3");
 let switch4 = document.querySelector("#toggle-switch4");
 let pop4 = document.querySelector("#pop4");
-
-
 
 
 switch1.addEventListener("mouseover",function(e){
@@ -40,3 +41,40 @@ switch4.addEventListener("mouseover",function(e){
 switch4.addEventListener("mouseout",function(e){
     pop4.classList.toggle("pop-active");
 })
+
+
+
+
+
+// <!--------------------------- test -------------------------->
+
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("event-slides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
