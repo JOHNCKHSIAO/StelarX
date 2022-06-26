@@ -120,7 +120,49 @@ $btnFontWeight:600;
         text-align: center;
     }
 }
-
+////漣漪效果按鈕
+.btn_flow{
+    position: relative;
+    background-color: #000000;
+    line-height: 60px;
+    font-size: 20px;
+    color: #FFF;
+    width: 300px;
+    text-align: center;
+    background-image: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    z-index: 1;
+    cursor: pointer;
+    &:hover{
+        animation: show 8s linear infinite;
+    }
+    @keyframes show{
+        0%{
+            background-position: 0%;
+        }
+        100%{
+            background-position: 400%;
+        }
+    }
+}
+.btn_flow::before{
+    position: absolute;
+    content:"";
+    top:-5px;
+    left:-5px;
+    right:-5px;
+    bottom:-5px;
+    background-image: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    z-index: -1;
+    filter:blur(20px);
+    opacity:0;
+}
+.btn_flow:hover::before{
+    opacity:1;
+    animation: show 8s linear infinite;
+}
 
 
 
