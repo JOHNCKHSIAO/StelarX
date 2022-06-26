@@ -92,7 +92,6 @@ let vm = new Vue({
             this.select_day=e.target.dataset.day;
             this.limit=e.target.dataset.limit;
             // console.log(this.select_day);
-            
         },
         reduce(e){
             if(this.people>0){
