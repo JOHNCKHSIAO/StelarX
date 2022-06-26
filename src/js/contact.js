@@ -22,32 +22,36 @@ let textarwa = document.querySelector("#textarea")//意見欄位
 
   
 
-//   let obj ={
-//     obj_name:name.value,
-//     obj_tel:tel.value,
-//     obj_email:email.value,
-//     obj_sel:planets.value,
-//     obj_textarwa:textarwa.value
-//   }
-// let jsonObj = JSON.stringify(obj);
+  let obj ={
+    obj_name:name.value,
+    obj_tel:tel.value,
+    obj_email:email.value,
+    obj_sel:planets.value,
+    obj_textarwa:textarwa.value
+  }
+let jsonObj = JSON.stringify(obj);
+
 $("#btn").click(function(){
 
-    fetch("./PHP/contact.php",{
-        method: "POST",
-        // headers: {
-        //     'Content-Type': 'application/json'
-        // },
-        body: JSON.stringify({
-            obj_name:name.value,
-            obj_tel:tel.value,
-            obj_email:email.value,
-            obj_sel:planets.value,
-            obj_textarwa:textarwa.value
-        })
-    })
+    $('#send_data')[0].click();
+    // console.log($('#send_data')[0]);
+    // fetch("./PHP/contact.php",{
+    //     method: "POST",
+    //     // headers: {
+    //     //     'Content-Type': 'application/json'
+    //     // },
+        
+    //     body: JSON.stringify({
+    //         obj_name:name.value,
+    //         obj_tel:tel.value,
+    //         obj_email:email.value,
+    //         obj_sel:planets.value,
+    //         obj_textarwa:textarwa.value
+    //     })
+    // })
+    
 
 })
-// console.log(jsonObj);
 // console.log(obj);
 
 
