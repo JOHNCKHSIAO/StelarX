@@ -154,7 +154,7 @@
                     <h2 class="my_tra_tit2">免費預約諮詢服務</h2>
                     <h4 class="my_tra_tit3">提供您欲搭乘的路線，將有客服提供相關行程安排建議，工作天約 3 - 5 天回信</h4>
                 </div>
-                <form class="my_tra_form" action="">
+                <form class="my_tra_form" action="./PHP/contact.php">
                     <div class="my_traNaTel">
                         <div class="my_traNaTelLeft">
                             <h5 class="my_tra_name">姓名</h5>
@@ -183,7 +183,7 @@
                         <div class="my_traEmPlSeleRight">
                             <h5 class="my_tra_pla">欲到達的行星</h5>
 
-                            <select class="my_pla_sel">
+                            <select class="my_pla_sel" name="option">
                                 <!-- <option>請選擇你的目的地</option> -->
                                 <option value="海王星">海王星</option>
                                 <option value="水星">水星</option>
@@ -205,7 +205,7 @@
                     <div class="my_tra_down">
 
                         <h5 class="my_tra_text">告訴我們您的期待</h5>
-                        <textarea class="my_tra_mes" name="" id="textarea" cols="30" rows="10"></textarea>
+                        <textarea class="my_tra_mes" name="textarea" id="textarea" cols="30" rows="10"></textarea>
                     </div>
 
                     <!-- 按鈕 -->
@@ -214,7 +214,7 @@
                     </div>
                     <!-- 按鈕 -->
 
-                    
+                    <button style="display: none;" id="send_data">送出</button>
                    
                 </form>
 
