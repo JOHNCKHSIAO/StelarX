@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/rocket.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <title>Stelar X | 太空運輸領航者</title>
 </head>
 <body>
@@ -35,15 +38,15 @@
 
             <ul>
                 <li>
-                    <h1 id="rocket-data01">67583</h1>
+                    <h1 class="counter">67583</h1>
                     <h5>行駛光年</h5>
                 </li>
                 <li>
-                    <h1>352</h1>
+                    <h1 class="counter">352</h1>
                     <h5>任務次數</h5>
                 </li>
                 <li>
-                    <h1>2739</h1>
+                    <h1 class="counter">2739</h1>
                     <h5>探索客人數</h5>
                 </li>
             </ul>      
@@ -107,6 +110,7 @@
     <article class="rocket-info">
 
         <!-------------- 火箭資訊_上方數據 -------------->
+
         <section class="info-data">
 
             <ul>
@@ -127,44 +131,6 @@
                 </li>
             </ul>
 
-            
-
-            <!-- <section class="data-top">
-
-                <section class="weight">
-                    <img src="./images/rocket/weight.png" alt="">
-                </section>
-                <section>
-                    <h1>2165 噸</h1>
-                    <h5>WEIGHT</h5>
-                </section>
-
-            </section>
-
-            <section class="data-bottom">
-
-                <ul>
-                    <li>
-                        <section class="diameter">
-                            <img src="./images/rocket/diameter.png" alt="">
-                        </section>
-                        <section>
-                            <h1>21 米</h1>
-                            <h5>DIAMETER</h5>
-                        </section>
-                    </li>
-                    <li>
-                        <section class="height">
-                            <img src="./images/rocket/height.png" alt="">
-                        </section>
-                        <section>
-                            <h1>117 米</h1>
-                            <h5>HEIGHT</h5>
-                        </section>
-                    </li>
-                </ul>
-            </section> -->
-
         </section>
 
         <!-------------- 火箭資訊_整支火箭 -------------->
@@ -182,7 +148,7 @@
                     <h4>真空發動機</h4>
 
                     <section class="eqpt-detail">
-                        <h5>
+                        <h6>
                             <ul>
                                 <li>燃燒時間</li>
                                 <li>375</li>
@@ -193,7 +159,7 @@
                                 <li>801</li>
                                 <li>千牛</li>
                             </ul>
-                        </h5>
+                        </h6>
                     </section>
 
                     <h6>由單個 Merlin 真空發動機提供動力，將Stellar X 的有效載荷送至所需軌道。第二級發動機在級分離後幾秒鐘點燃，並且可以多次重新啟動以將多個有效載荷放置到不同的軌道上。為了獲得最大的可靠性，第二級具有冗餘點火器系統。與第一級一樣，第二級由高強度鋁鋰合金製成。</h6>
@@ -207,7 +173,7 @@
                     <h6>七個第一級 Merlin發動機集中在一起，在飛行過程中可以確保維持穩定動力，保持高速於宇宙間行駛。</h6>
 
                     <section class="eqpt-detail">
-                        <h5>
+                        <h6>
                             <ul>
                                 <li>燃燒時間</li>
                                 <li>180</li>
@@ -223,7 +189,7 @@
                                 <li>6,672</li>
                                 <li>千牛</li>
                             </ul>
-                        </h5>
+                        </h6>
                     </section>
                 </section>
             </section>
@@ -306,136 +272,110 @@
         
         <h2>專屬管家服務</h2>
         <span class="sep-line"></span>
-        <h5>由管家進行一對一的服務，隨時隨地完成您的需求，享受頂級奢華的尊榮感</h5>
+        <h6>由管家進行一對一的服務，隨時隨地完成您的需求，享受頂級奢華的尊榮感</h6>
 
         <ul>
             <li>
                 <img src="./images/rocket/icon_guard_night.png" alt="">
-                <h4>提供客製化過夜包</h4>
-                <h6>因應喜好調整艙位設置<br>
+                <h5>提供客製化過夜包</h5>
+                <p>因應喜好調整艙位設置<br>
                     在星際旅途之中<br>
-                    打造放鬆身心的第二個家！</h6>
+                    打造放鬆身心的第二個家！</p>
             </li>
             <li>
                 <img src="./images/rocket/icon_guard_tour.png" alt="">
-                <h4>引領貴賓進行艙內導覽</h4>
-                <h6>探索火箭工藝之美<br>
+                <h5>引領貴賓進行艙內導覽</h5>
+                <p>探索火箭工藝之美<br>
                     並於航行期間全程開放設施使用<br>
-                    酒吧、交誼廳、親子空間！</h6>
+                    酒吧、交誼廳、親子空間！</p>
             </li>
             <li>
                 <img src="./images/rocket/icon_guard_serve.png" alt="">
-                <h4>享受專屬的加值服務</h4>
-                <h6>創造前所未有的新體驗<br>
+                <h5>享受專屬的加值服務</h5>
+                <p>創造前所未有的新體驗<br>
                     太空漫步、座艙景觀室<br>
-                    與無邊界泳池！</h6>
+                    與無邊界泳池！</p>
             </li>
         </ul>
     </article>
 
     <!--------------------------- 火箭_加值服務 --------------------------->
 
-    <!-- <article class="rocket-plus">
+    <article class="rocket-plus">
 
-        <section class="plus-info">
+        <!-- 座艙景觀室 -->
+        <section class="event-slides fade">
+            <h6 class="numbertext">1 / 4</h6>
+            <img src="./images/rocket/rocket_plus_star.jpg">
 
-            <h2>座艙景觀室</h2>
-            <h5>
+            <div class="event-info">
+                <h2>座艙景觀室</h2>
+                <h5>
                 遨遊在星際的旅途中，艙內提供絕佳的觀星服務<br>
                 由 360° 全景透明天窗打造成的觀景室<br>
                 讓您在旅途之中也能探索星際之美
-            </h5>
-
+                </h5>
+            </div>
+            <div class="text">座艙景觀室</div>
         </section>
 
-    </article> -->
+        <!-- 星際大戰絕地狙擊手 -->
+        <section class="event-slides fade">
+            <h6 class="numbertext">2 / 4</h6>
+            <img src="./images/rocket/rocket_plus_shoot.jpg">
 
+            <div class="event-info">
+                <h2>星際大戰絕地狙擊手</h2>
+                <h5>
+                    Stelar X 最受歡迎的星際大戰狙擊遊戲<br>                
+                    空間採全透明玻璃設計，讓您在遊戲過程中<br>
+                    也可以近距離觀賞星象，享受真實的星際大戰
+                </h5>
+            </div>
+            <div class="text">星際大戰絕地狙擊手</div>
+        </section>
 
-        <!-- Slideshow container -->
-        <article class="rocket-plus">
+        <!-- 太空漫步 -->
+        <section class="event-slides fade">
+            <h6 class="numbertext">3 / 4</h6>
+            <img src="./images/rocket/rocket_plus_walk.jpg">
 
-            <div class="event-slides fade">
-                <div class="numbertext">1 / 4</div>
-                <img src="./images/rocket/rocket_plus_star.jpg">
-    
-                <section class="event-info">
-    
-                    <h2>座艙景觀室</h2>
-                    <h5>
-                    遨遊在星際的旅途中，艙內提供絕佳的觀星服務<br>
-                    由 360° 全景透明天窗打造成的觀景室<br>
-                    讓您在旅途之中也能探索星際之美
-                    </h5>
-                </section>
-    
-                <div class="text">Caption Text</div>
+            <div class="event-info">
+                <h2>太空漫步</h2>
+                <h5>
+                穿著太空衣
+                </h5>
             </div>
-    
+            <div class="text">太空漫步</div>
+        </section>
 
-            <div class="event-slides fade">
-                <div class="numbertext">2 / 4</div>
-                <img src="./images/rocket/rocket_plus_shoot.jpg">
-    
-                <section class="event-info">
-    
-                    <h2>星際大戰絕地狙擊手</h2>
-                    <h5>
-                        Stelar X 最受歡迎的星際大戰狙擊遊戲<br>                
-                        空間採全透明玻璃設計，讓您在遊戲過程中<br>
-                        也可以近距離觀賞星象，享受真實的星際大戰
-                    </h5>
-                </section>
-    
-                <div class="text">Caption Text</div>
+        <!-- 無邊際泳池 -->
+        <section class="event-slides fade">
+            <h6 class="numbertext">4 / 4</h6>
+            <img src="./images/rocket/rocket_plus_pool.jpg">
+
+            <div class="event-info">
+                <h2>無邊際泳池</h2>
+                <h5>
+                泳池
+                </h5>
             </div>
+            <div class="text">無邊際泳池</div>
+        </section>
     
-            <div class="event-slides fade">
-                <div class="numbertext">3 / 4</div>
-                <img src="./images/rocket/rocket_plus_walk.jpg">
-    
-                <section class="event-info">
-    
-                    <h2>太空漫步</h2>
-                    <h5>
-                    穿著太空衣
-                    </h5>
-                </section>
-    
-                <div class="text">Caption Text</div>
-            </div>
-    
-            <div class="event-slides fade">
-                <div class="numbertext">4 / 4</div>
-                <img src="./images/rocket/rocket_plus_pool.jpg">
-    
-                <section class="event-info">
-    
-                    <h2>無邊際泳池</h2>
-                    <h5>
-                    泳池
-                    </h5>
-                </section>
-    
-                <div class="text">Caption Text</div>
-            </div>
-    
-    
-            
-        
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-        </article>
-    
-        
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span> 
-        </div>
+        <!-- 左右按鈕 -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </article>
+
+    <!-- 麵包點點 -->
+    <section style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span> 
+    </section>
 
 
     <!--------------------------- 火箭_更多連結 --------------------------->

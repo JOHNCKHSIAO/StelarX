@@ -1,4 +1,35 @@
 
+
+// <!-------------- 數字跳動 -------------->
+
+$(document).ready(function(){
+    $(".counter").counterUp({
+        delay: 10,
+        time: 1000
+    });
+});
+
+
+// let valueDisplays = document.querySelectorAll(".num")
+// let interval = 50;
+
+// valueDisplays.forEach((valueDisplays) => {
+//     let startValue = 0;
+//     let endValue = parseInt(valueDisplays.getAttribute("data-val"));
+
+//     let duration = Math.floor(interval / endValue);
+//     let counter = setInterval(function(){
+//         startValue += 1 ;
+//         valueDisplays.textContent = startValue;
+//         if (startValue == endValue) {
+//             clearInterval(counter);
+//         }
+//     }, duration);
+// });
+
+
+
+
 // <!-------------- 火箭艙_觸控面板 -------------->
 
 let switch1 = document.querySelector("#toggle-switch1");
@@ -45,20 +76,15 @@ switch4.addEventListener("mouseout",function(e){
 
 
 
-
-// <!--------------------------- test -------------------------->
-
-
+// <!--------------------------- 火箭_加值輪播 -------------------------->
 
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -67,6 +93,7 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("event-slides");
   let dots = document.getElementsByClassName("dot");
+  
   if (n > slides.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
