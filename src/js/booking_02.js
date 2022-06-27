@@ -78,9 +78,9 @@ let vm = new Vue({
     el:'#calendar',
     data:{
         seat:8,
-        select_day:'',//選到的日期
+        select_day:'', //選到的日期
         limit:0,
-        people:0,//人數
+        people:0, //人數
     },
     methods: {
         select_date(e){
@@ -88,7 +88,11 @@ let vm = new Vue({
             
             // console.log($(e.target.closest('ul')).find('p.on'));
             $(e.target.closest('ul')).find('p.on').removeClass("on");
+            // closest 功能為找尋離當前元素最近的父層元素，這裡找到的是ul
+            // removeClass 功能為從被選元素移除一個或多個類名
+
             $(e.target).addClass("on");
+            // addClass 功能是向被選到元素添加一個或多個類名
             this.select_day=e.target.dataset.day;
             this.limit=e.target.dataset.limit;
             // console.log(this.select_day);

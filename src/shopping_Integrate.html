@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <script src="./js/vue.js"></script>
+    <link rel="shortcut icon" href="./images/shortcut.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shopping_Integrate.css">
+    <link rel="stylesheet" href="./css/shopping_01.css">
+    <link rel="stylesheet" href="./css/shopping_02.css">
+    <title>Stellar X | 太空運輸領航者</title>
+</head>
+<body>
+    @@include("./layout/header.html")
+    <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+    <div id="shopping_1" v-if="shopping_1_list">
+        <div class="top_image">
+            <!-- <img src="./images/shopping_cart/top_banner.jpg" alt=""> -->
+            <h2>SHOP STELAR X</h2>
+        </div>
+        <div class="wrapper">
+            <div class="commodity"  >
+                <div class="small_title">
+                    <h3 class="light-height-1">星球特產</h3>
+                    <h6 class="light-height-1">Planet Special</h6>
+                </div>
+                <ul>
+                    <li>
+                        <img src="./images/shopping_cart/candle.jpg" alt="">
+                        <h4>{{shopping_1_list[0][0]}}</h4>
+                        <h5>{{shopping_1_list[0][1]}}哩</h5>
+                    </li>
+                    <li>
+                        <img src="./images/shopping_cart/Image.jpg" alt="">
+                        <h4>{{shopping_1_list[1][0]}}</h4>
+                        <h5>{{shopping_1_list[1][1]}}哩</h5>
+                    </li>
+                    <li>
+                        <img src="./images/shopping_cart/jar.jpg" alt="">
+                        <h4>{{shopping_1_list[2][0]}}</h4>
+                        <h5>{{shopping_1_list[2][1]}}哩</h5>
+                    </li>
+                </ul>
+            </div>
+            <div class="commodity">
+                <div class="small_title">
+                    <h3 class="light-height-1">個人衣物</h3>
+                    <h6 class="light-height-1">Personal Clothing</h6>
+                </div>
+                <ul>
+                    <li>
+                        <img src="./images/shopping_cart/baseball_cap.jpg" alt="">
+                        <h4>{{shopping_1_list[3][0]}}</h4>
+                        <h5>{{shopping_1_list[3][1]}}哩</h5>
+                    </li>
+                    <li>
+                        <img src="./images/shopping_cart/t-shirt.jpg" alt="">
+                        <h4>{{shopping_1_list[4][0]}}</h4>
+                        <h5>{{shopping_1_list[4][1]}}哩</h5>
+                    </li>
+                    <li>
+                        <img src="./images/shopping_cart/tote_bag.jpg" alt="">
+                        <h4>{{shopping_1_list[5][0]}}</h4>
+                        <h5>{{shopping_1_list[5][1]}}哩</h5>
+                    </li>
+                </ul>
+            </div>
+            <div class="commodity">
+                <div class="small_title">
+                    <h3 class="light-height-1">生活用品</h3>
+                    <h6 class="light-height-1">Daily Necessities</h6>
+                </div>
+                <ul>
+                    <li>
+                        <img src="./images/shopping_cart/mug.jpg" alt="">
+                        <h4>{{shopping_1_list[6][0]}}</h4>
+                        <h5>{{shopping_1_list[6][1]}}哩哩</h5>
+                    </li>
+                    <li>
+                        <img src="./images/shopping_cart/pin_button.jpg" alt="">
+                        <h4>{{shopping_1_list[7][0]}}</h4>
+                        <h5>{{shopping_1_list[7][1]}}哩</h5>
+                    </li>
+                    <li>
+                        <a href="./shopping_02.html">
+                            <img src="./images/shopping_cart/keychain.jpg" alt="">
+                            <h4>{{shopping_1_list[8][0]}}</h4>
+                            <h5>{{shopping_1_list[8][1]}}哩</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="shopping_02" v-if="shopping_2_list[4]">
+        <div class="main_top">
+            <div class="left_image">
+                <img class="img_1" :src="bigImg" alt="" >
+                <div class="Small_img">
+                    <img src="./images/shopping_cart/t-shirt 2.jpg" alt="" @click="changeImg">
+                    <img src="./images/shopping_cart/Image-1.jpg" alt="" @click="changeImg">
+                </div>
+            </div>
+            <div class="right_word">
+                <div class="commodity_title">
+                    <h3>{{shopping_2_list[4][0]}}</h3>
+                    <h4>( FREE SIZE 中性款 ）</h4>
+                    <p>・使用特殊加工，表面具適度光澤感的天竺素材。<br>
+                        ・落肩、繭型剪裁和較長的袖子。<br>
+                        ・具高質感的時尚寬版剪裁新款T恤。</p>
+                    <p>・商品貨號：abc8787</p>
+                </div>
+                <div class="exchange">
+                    <div class="click_num">
+                        <div class="reduce">-</div>
+                        <h3>1</h3>
+                        <div class="add">+</div>
+                    </div>
+                    <div class="Redeem_now">
+                        <h3>5,000 哩</h3>
+                        <h6>立即兌換</h6>
+                    </div>
+                </div>
+                <div class="mileage">
+                    <h3>剩餘里程數 33,000 哩</h3>
+                </div>
+                <div class="btn_flow">
+                    <div>繼續選購</div>
+                </div>
+                <div class="btn_flow">
+                    <a href="./shopping_03.html">加入購物車</a>
+                </div>
+            </div>
+        </div>
+        <div class="main_bottom">
+            <h3>YOU MAY ALSO LIKE</h3>
+            <ul>
+                <li>
+                    <img src="./images/shopping_cart/baseball_cap.jpg" alt="">
+                    <h4>復古老帽</h4>
+                    <h5>5,000 哩</h5>
+                </li>
+                <li>
+                    <img src="./images/shopping_cart/Image.jpg" alt="">
+                    <h4>星河葡萄酒</h4>
+                    <h5>5,000 哩</h5>
+                </li>
+                <li>
+                    <img src="./images/shopping_cart/tote_bag.jpg" alt="">
+                    <h4>環保帆布袋</h4>
+                    <h5>5,000 哩</h5>
+                </li>
+            </ul>
+        </div>
+    </div>
+    @@include("./layout/footer.html")
+</body>
+</html>

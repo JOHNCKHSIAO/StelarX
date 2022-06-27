@@ -398,6 +398,7 @@ body {
 }
 .main_top .left_image .Small_img img {
   width: 47%;
+  cursor: pointer;
 }
 .main_top .right_word .commodity_title h4 {
   margin-bottom: 40px;
@@ -429,6 +430,7 @@ body {
   font-size: 40px;
   text-align: center;
   line-height: 20px;
+  cursor: pointer;
 }
 .main_top .right_word .exchange .click_num .add {
   display: block;
@@ -439,13 +441,16 @@ body {
   font-size: 30px;
   text-align: center;
   line-height: 27px;
+  cursor: pointer;
 }
 .main_top .right_word .exchange .Redeem_now {
   margin-left: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .main_top .right_word .exchange .Redeem_now h6 {
   width: 85px;
-  transform: translateX(40px);
   color: #2B7C33;
   border-bottom: 1px solid #2B7C33;
 }
@@ -476,6 +481,27 @@ body {
   margin: 0 auto;
   margin-top: 48px;
   text-align: center;
+}
+.main_bottom h3 {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 2s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 .main_bottom ul {
   display: flex;
