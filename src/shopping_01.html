@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/shopping_01.css">
     
+    
     <title>Stellar X | 太空運輸領航者</title>
 </head>
 
@@ -29,19 +30,25 @@
             </div>
             <ul>
                 <li>
-                    <img src="./images/shopping_cart/candle.jpg" alt="">
-                    <h4>{{shopping_1_list[0][0]}}</h4>
-                    <h5>{{shopping_1_list[0][1]}}哩</h5>
+                    <a href="./shopping_02.html?prods=0">
+                        <img src="./images/shopping_cart/candle.jpg" alt="">
+                        <h4>{{shopping_1_list[0][0]}}</h4>
+                        <h5>{{shopping_1_list[0][1]}} 哩</h5>
+                    </a>
                 </li>
                 <li>
-                    <img src="./images/shopping_cart/Image.jpg" alt="">
-                    <h4>{{shopping_1_list[1][0]}}</h4>
-                    <h5>{{shopping_1_list[1][1]}}哩</h5>
+                    <a href="./shopping_02.html?prods=1">
+                        <img src="./images/shopping_cart/Image.jpg" alt="">
+                        <h4>{{shopping_1_list[1][0]}}</h4>
+                        <h5>{{shopping_1_list[1][1]}} 哩</h5>
+                    </a>
                 </li>
                 <li>
-                    <img src="./images/shopping_cart/jar.jpg" alt="">
-                    <h4>{{shopping_1_list[2][0]}}</h4>
-                    <h5>{{shopping_1_list[2][1]}}哩</h5>
+                    <a href="./shopping_02.html?prods=2">
+                        <img src="./images/shopping_cart/jar.jpg" alt="">
+                        <h4>{{shopping_1_list[2][0]}}</h4>
+                        <h5>{{shopping_1_list[2][1]}} 哩</h5>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -52,19 +59,25 @@
             </div>
             <ul>
                 <li>
-                    <img src="./images/shopping_cart/baseball_cap.jpg" alt="">
-                    <h4>{{shopping_1_list[3][0]}}</h4>
-                    <h5>{{shopping_1_list[3][1]}}哩</h5>
+                    <a href="./shopping_02.html?prods=3">
+                        <img src="./images/shopping_cart/baseball_cap.jpg" alt="">
+                        <h4>{{shopping_1_list[3][0]}}</h4>
+                        <h5>{{shopping_1_list[3][1]}} 哩</h5>
+                    </a>
                 </li>
                 <li>
-                    <img src="./images/shopping_cart/t-shirt.jpg" alt="">
-                    <h4>{{shopping_1_list[4][0]}}</h4>
-                    <h5>{{shopping_1_list[4][1]}}哩</h5>
+                    <a href="./shopping_02.html?prods=4">
+                        <img src="./images/shopping_cart/t-shirt.jpg" alt="">
+                        <h4>{{shopping_1_list[4][0]}}</h4>
+                        <h5>{{shopping_1_list[4][1]}} 哩</h5>
+                    </a>
                 </li>
                 <li>
-                    <img src="./images/shopping_cart/tote_bag.jpg" alt="">
-                    <h4>{{shopping_1_list[5][0]}}</h4>
-                    <h5>{{shopping_1_list[5][1]}}哩</h5>
+                    <a href="./shopping_02.html?prods=5">
+                        <img src="./images/shopping_cart/tote_bag.jpg" alt="">
+                        <h4>{{shopping_1_list[5][0]}}</h4>
+                        <h5>{{shopping_1_list[5][1]}} 哩</h5>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -75,55 +88,31 @@
             </div>
             <ul>
                 <li>
-                    <img src="./images/shopping_cart/mug.jpg" alt="">
-                    <h4>{{shopping_1_list[6][0]}}</h4>
-                    <h5>{{shopping_1_list[6][1]}}哩哩</h5>
+                    <a href="./shopping_02.html?prods=6">
+                        <img src="./images/shopping_cart/mug.jpg" alt="">
+                        <h4>{{shopping_1_list[6][0]}}</h4>
+                        <h5>{{shopping_1_list[6][1]}} 哩</h5>
+                    </a>
                 </li>
                 <li>
-                    <img src="./images/shopping_cart/pin_button.jpg" alt="">
-                    <h4>{{shopping_1_list[7][0]}}</h4>
-                    <h5>{{shopping_1_list[7][1]}}哩</h5>
+                    <a href="./shopping_02.html?prods=7">
+                        <img src="./images/shopping_cart/pin_button.jpg" alt="">
+                        <h4>{{shopping_1_list[7][0]}}</h4>
+                        <h5>{{shopping_1_list[7][1]}} 哩</h5>
+                    </a>
                 </li>
                 <li>
-                    <a href="./shopping_02.html">
+                    <a href="./shopping_02.html?prods=8">
                         <img src="./images/shopping_cart/keychain.jpg" alt="">
                         <h4>{{shopping_1_list[8][0]}}</h4>
-                        <h5>{{shopping_1_list[8][1]}}哩</h5>
+                        <h5>{{shopping_1_list[8][1]}} 哩</h5>
                     </a>
                 </li>
             </ul>
         </div>
     </div>
-    <script>
-    
-
-        // const url = './php/information.php';
-        // fetch(url)
-        //     .then(response => response.json())
-        //     .then(text => console.log(text));
-
-
-        new Vue({
-            el: '#shopping_1', //
-
-            data: {
-                shopping_1_list: [], //
-            },
-            methods: {},
-            compute: {},
-            watch: {},
-            created() {
-                let url = './PHP/commodity.php'; //
-                fetch(url)
-                    .then(response => response.json())
-                    .then(text => this.shopping_1_list = text); //
-            },
-            mounted(){},
-            destroyed(){},
-
-        })
-    </script>
     @@include("./layout/footer.html")
+    <script src="./js/shopping_01.js"></script>
 </body>
 
 </html>
