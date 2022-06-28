@@ -220,9 +220,10 @@
 }
 /*------ 上/下一步區塊 ------*/
 .booking_btn{
-    width: 650px;
-    margin: auto;
+    width: 600px;
+    margin: 0 auto;
     margin-top: 40px;
+    justify-content: space-between;
     // border: 1px solid red;
     display: flex;
     .btn_status{
