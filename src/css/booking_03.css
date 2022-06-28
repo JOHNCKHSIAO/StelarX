@@ -195,8 +195,8 @@ p {
   cursor: pointer;
 }
 .btn_general:hover {
-  border-color: #00072E;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  box-shadow: inset 280px 0 0px linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  transition: ease-out 0.5s;
 }
 .btn_general .btn_square {
   display: block;
@@ -303,23 +303,25 @@ p {
 .btn_status_submit {
   width: 280px;
   height: 50px;
-  border: 1px solid #EEEEEE;
-  background: #00072E;
-  padding: 0;
   cursor: pointer;
 }
 .btn_status_submit .btn_square {
-  width: 100%;
-  height: 100%;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
   font-weight: 600;
   line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
+  transition: ease-out 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
 }
 .btn_status_submit .btn_square:hover {
-  background: #EEEEEE;
   color: #00072E;
+  box-shadow: inset 280px 0 0 0 #EEEEEE;
 }
 
 .btn_main {
