@@ -1,34 +1,34 @@
 //先用一層div包住 裡面有label 還有input
-$h5LableFontSize:14px;
-$inputWidth:260px;
-$inputHeight:40px;
+$h5LableFontSize:18px;
+$inputWidth:430px;
+$inputHeight:62px;
 $inputFontSize:18px;
 $labelSpaceing:15px;
-.input_div{
+.form{
+    position: relative;
     box-sizing: content-box;
     label{
         display: block;
         // border:1px solid yellow;
         margin-bottom:$labelSpaceing;
-        h5{
+        .form__label{
             color:$white;
             font-size: $h5LableFontSize;
         }
     }
-    input{
+    &__input{
         display:block;
         width:$inputWidth;
         height:$inputHeight;
         background-color:#191F42;
-        border:#191F42;
+        border:1px solid #00072E;
         border-radius: 5px;
         font-size:$inputFontSize;
         padding-left: 15px;
         color:$white;
         &:focus{
-            background-color:#987A4D;
-            border:#987A4D;
-            outline:#987A4D;;
+            // background-color:#1A005C;
+            // border:1px solid #5e5e5e;
 
         }
 
@@ -44,7 +44,7 @@ $labelSpaceing:15px;
         display:block;
         // border:1px solid yellow;
         margin-bottom:$labelSpaceing;
-        h5{
+        .form__label{
             color:$white;
             font-size:$h5LableFontSize;
             // border:1px solid green;

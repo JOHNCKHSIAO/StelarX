@@ -53,7 +53,7 @@
 
 /*------ 全域資訊綁定區塊 ------*/
 .booking_text{
-    width: 550px;
+    width: 900px;
     box-sizing: border-box;
     margin:0 auto;
     margin-bottom: 120px;
@@ -157,18 +157,42 @@
     }
     h3{  margin-left: 100px; }
     .noticr_text{
-        width: 840px;
-        height: 200px;
+        width: 900px;
+        height: 400px;
         overflow-y: auto;
-        border: 2px solid $white;
-        border-radius: 5px;
+        border: 1px solid $white;
+        border-radius: 10px;
         margin: auto;
-        padding: 30px;
+        padding: 40px;
         margin-bottom: 40px;
         p{
             color: $white;
         }
+        
     }
+
+   /* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #987A4D; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #78613f; 
+  }
+
     .yes_radio{
         width: 300px;
         display: flex;
@@ -178,7 +202,15 @@
             margin: auto 0;
             width: 20px;
             height: 20px;
+            cursor: pointer;
+            accent-color: #7C7C7C;
+            border-radius: 3px;
+
+             &:checked{
+                accent-color: #987A4D;
+             }
         }
+       
         h5{
             color: $white;
             margin-left: 15px;
@@ -188,7 +220,7 @@
 }
 /*------ 上/下一步區塊 ------*/
 .booking_btn{
-    width: 540px;
+    width: 650px;
     margin: auto;
     margin-top: 40px;
     // border: 1px solid red;
