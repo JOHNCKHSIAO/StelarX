@@ -130,8 +130,8 @@ p {
 }
 
 .btn_cta {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   cursor: pointer;
@@ -145,7 +145,7 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
@@ -159,8 +159,8 @@ p {
 }
 
 .btn_cta_submit {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   background: #00072E;
@@ -175,7 +175,7 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
@@ -189,8 +189,8 @@ p {
 }
 
 .btn_general {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
@@ -203,15 +203,15 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
 }
 
 .btn_general_sumbmit {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   background: #00072E;
   cursor: pointer;
@@ -225,16 +225,60 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
 }
 
+.btn_flow {
+  position: relative;
+  background-color: #000000;
+  line-height: 60px;
+  font-size: 20px;
+  color: #FFF;
+  width: 300px;
+  text-align: center;
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  z-index: 1;
+  cursor: pointer;
+}
+.btn_flow:hover {
+  animation: show 8s linear infinite;
+}
+@keyframes show {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.btn_flow::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0;
+}
+
+.btn_flow:hover::before {
+  opacity: 1;
+  animation: show 8s linear infinite;
+}
+
 .btn_status {
-  width: 250px;
-  height: 46px;
-  border: 1px solid #EEEEEE;
+  width: 280px;
+  height: 50px;
   cursor: pointer;
 }
 .btn_status .btn_square {
@@ -242,19 +286,23 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
+  transition: ease-out 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
 }
 .btn_status .btn_square:hover {
-  background: #EEEEEE;
   color: #00072E;
+  box-shadow: inset 280px 0 0 0 #EEEEEE;
 }
 
 .btn_status_submit {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   background: #00072E;
   padding: 0;
@@ -264,7 +312,7 @@ p {
   width: 100%;
   height: 100%;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
@@ -532,7 +580,8 @@ body {
 .booking-customize {
   width: 900px;
   margin: 0 auto;
-  outline: 3px solid #987A4D;
+  outline: 2px solid #987A4D;
+  border-radius: 5px;
   padding: 40px 0;
   margin-bottom: 80px;
 }
@@ -571,6 +620,18 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   padding-bottom: 24px;
+}
+.booking-customize .customize ul input {
+  margin: auto 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #7C7C7C;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+.booking-customize .customize ul input:checked {
+  accent-color: #987A4D;
 }
 .booking-customize .customize span {
   font-size: 20px;

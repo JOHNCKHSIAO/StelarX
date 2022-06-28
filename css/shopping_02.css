@@ -1,0 +1,590 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  /* 預設字體 */
+  font-size: 6.26%;
+  line-height: 1.6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* 以下為h1-h6 */
+/*字體寬度自己要加上喔*/
+h1 {
+  font-size: 64rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 36rem;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 32rem;
+  line-height: 1.6;
+}
+
+h4 {
+  font-size: 28rem;
+  line-height: 1.6;
+}
+
+h5 {
+  font-size: 24rem;
+  line-height: 1.6;
+}
+
+h6 {
+  font-size: 20rem;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
+/* 以下為title */
+.title1 {
+  font-size: 120rem;
+  line-height: 1.6;
+}
+
+.title2 {
+  font-size: 48rem;
+  line-height: 1.6;
+}
+
+.title3 {
+  font-size: 40rem;
+  line-height: 1.6;
+}
+
+.title4 {
+  font-size: 22rem;
+  line-height: 1.6;
+}
+
+.title5 {
+  font-size: 16rem;
+  line-height: 1.6;
+}
+
+.title6 {
+  font-size: 14rem;
+  line-height: 1.6;
+}
+
+.btn_cta {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn_cta:hover {
+  border-color: #00072E;
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_cta .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+
+.btn_cta .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_cta_submit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  background: #00072E;
+  cursor: pointer;
+}
+
+.btn_cta_submit:hover {
+  border-color: #00072E;
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_cta_submit .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+
+.btn_cta_submit .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_general {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+
+.btn_general:hover {
+  border-color: #00072E;
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_general .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn_general_sumbmit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  cursor: pointer;
+}
+
+.btn_general_sumbmit:hover {
+  border-color: #00072E;
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_general_sumbmit .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn_flow {
+  position: relative;
+  background-color: #000000;
+  line-height: 60px;
+  font-size: 20px;
+  color: #FFF;
+  width: 300px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#03a9f4));
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.btn_flow:hover {
+  -webkit-animation: show 8s linear infinite;
+          animation: show 8s linear infinite;
+}
+
+@-webkit-keyframes show {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+@keyframes show {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.btn_flow::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#03a9f4));
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  z-index: -1;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  opacity: 0;
+}
+
+.btn_flow:hover::before {
+  opacity: 1;
+  -webkit-animation: show 8s linear infinite;
+          animation: show 8s linear infinite;
+}
+
+.btn_status {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+
+.btn_status .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn_status .btn_square:hover {
+  background: #EEEEEE;
+  color: #00072E;
+}
+
+.btn_status_submit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn_status_submit .btn_square {
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn_status_submit .btn_square:hover {
+  background: #EEEEEE;
+  color: #00072E;
+}
+
+.btn_main {
+  width: 200px;
+  height: 200px;
+}
+
+.btn_main .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  font-size: 24rem;
+}
+
+.btn_main .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.btn_main .btn_circle_text .btn_circle:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_main_w {
+  width: 200px;
+  height: 200px;
+}
+
+.btn_main_w .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  font-size: 24rem;
+}
+
+.btn_main_w .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #00072E;
+  background: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.btn_main_w .btn_circle_text .btn_circle:hover {
+  -webkit-box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+          box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+  color: #EEEEEE;
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.light-height-1 {
+  line-height: 1;
+}
+
+.margin0-auto {
+  margin: 0 auto;
+}
+
+body {
+  color: #EEEEEE;
+}
+
+.main_top {
+  width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_top .left_image {
+  width: 400px;
+}
+
+.main_top .left_image .img_1 {
+  margin-bottom: 40px;
+}
+
+.main_top .left_image .Small_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_top .left_image .Small_img img {
+  width: 47%;
+}
+
+.main_top .right_word .commodity_title h4 {
+  margin-bottom: 40px;
+}
+
+.main_top .right_word .commodity_title p {
+  line-height: 1.6;
+}
+
+.main_top .right_word .commodity_title p:last-child {
+  margin-top: 20px;
+}
+
+.main_top .right_word .exchange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 40px;
+}
+
+.main_top .right_word .exchange .click_num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 120px;
+}
+
+.main_top .right_word .exchange .click_num .reduce {
+  display: block;
+  width: 27px;
+  height: 27px;
+  border-radius: 13.5px;
+  background-color: #987A4D;
+  font-size: 40px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.main_top .right_word .exchange .click_num .add {
+  display: block;
+  width: 27px;
+  height: 27px;
+  border-radius: 13.5px;
+  background-color: #987A4D;
+  font-size: 30px;
+  text-align: center;
+  line-height: 27px;
+}
+
+.main_top .right_word .exchange .Redeem_now {
+  margin-left: 64px;
+}
+
+.main_top .right_word .exchange .Redeem_now h6 {
+  width: 85px;
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
+  color: #2B7C33;
+  border-bottom: 1px solid #2B7C33;
+}
+
+.main_top .right_word .mileage {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.main_top .right_word .btn_flow {
+  margin: 20px auto 0;
+}
+
+.main_top .right_word .btn_flow a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.main_button {
+  width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 40px;
+  border-bottom: 2px solid #987A4D;
+  padding-bottom: 64px;
+}
+
+.main_bottom {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.main_bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 48px;
+}
+
+.main_bottom ul li {
+  text-align: center;
+}
+
+.main_bottom ul li img {
+  height: 300px;
+}
+
+.main_bottom ul li h4 {
+  margin-top: 40px;
+}
+
+.main_bottom ul li h5 {
+  margin-top: 24px;
+}
+/*# sourceMappingURL=shopping_02.css.map */
