@@ -462,6 +462,7 @@ p {
 
 .booking-flex {
   width: 50%;
+  position: relative;
 }
 .booking-flex .swiper {
   width: 450px;
@@ -522,8 +523,9 @@ p {
 }
 #mouse-scroll {
   z-index: 9999;
-  position: relative;
-  left: 37.5%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   top: 460px;
 }
 #mouse-scroll .mouse {
