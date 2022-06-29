@@ -41,9 +41,10 @@ VALUES (:name , :CELLPHONE , :E_MAIL ,:DESTINATION , :CONTENT ,Now()); ";
   $statement->bindValue(":E_MAIL", $_POST["email"]);
   $statement->bindValue(":DESTINATION", $_POST["option"]);
   $statement->bindValue(":CONTENT", $_POST["textarea"]);
-  // $statement->bindValue(":email", $arr["email"]);
-  // $statement->bindValue(":cellphone", $arr["cellphone"]);
-  // $statement->bindValue(":companyNum", $arr["companyNum"]);
+  
+  $statement->bindValue(":email", $arr["email"]);
+  $statement->bindValue(":cellphone", $arr["cellphone"]);
+  $statement->bindValue(":companyNum", $arr["companyNum"]);
   $statement->execute(); 
   echo("ok");
 
