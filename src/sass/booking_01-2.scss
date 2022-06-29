@@ -122,13 +122,14 @@
     align-items: center;
     background-image: $linear;
     //    position: relative;
+    
 
 }
 
 // 輪播左邊
 .booking-flex {
     width: 50%;
-
+    position: relative;
     .swiper {
         width: 450px;
         height: 600px;
@@ -223,8 +224,9 @@
 #mouse-scroll {
 
     z-index: 9999;
-    position: relative;
-    left: 37.5%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     top: 460px;
     // -webkit-transform: translateX(-50%);
 

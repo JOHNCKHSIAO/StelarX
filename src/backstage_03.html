@@ -17,6 +17,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/backstage_03.css">
+    <script src="./js/vue.js"></script>
+
     <title>Stellar X | 後臺管理系統</title>
 </head>
 <body>
@@ -48,7 +50,7 @@
                 <a href="./backstage_05.html">收件夾</a>
             </div>
         </div>
-        <section class="info-area">
+        <section class="info-area" id="backstage_03">
             <ul class="member-list-title">
                 <li>
                     <input type="checkbox">
@@ -77,341 +79,43 @@
                
 
             </ul>
-            <ul class="member-list-content">
+            <ul class="member-list-content" v-for="(item, index) in backstage_03">
                 <li>
                     <input type="checkbox">
                  </li>
                  <li>
-                    00001
+                  {{item[1]}}
+
                  </li>
                  <li>
-                    火星火山泥面膜
+                     {{item[2]}}
+                    
                  </li>
                  <li>
-                    2400<span>萬哩</span>
+                  {{item[3]}}
+                  <span>萬哩</span>
                  </li>
                  <li>
-                    100
+                  {{item[5]}}
+
                  </li>
                  <li>
                     30
                  </li>
                  <li>
-                    上架
+                  {{item[4]}}
+
                  </li>
                  <li>
-                    <div>編輯</div>
+                  <div :data-idx="index" @click="edit">編輯</div>
                  </li>
 
             </ul>
-            <ul class="member-list-content">
-                <li>
-                    <input type="checkbox">
-                 </li>
-                 <li>
-                    00001
-                 </li>
-                 <li>
-                    火星火山泥面膜
-                 </li>
-                 <li>
-                    2400<span>萬哩</span>
-                 </li>
-                 <li>
-                    100
-                 </li>
-                 <li>
-                    30
-                 </li>
-                 <li>
-                    上架
-                 </li>
-                 <li>
-                    <div>編輯</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <input type="checkbox">
-                 </li>
-                 <li>
-                    00001
-                 </li>
-                 <li>
-                    火星火山泥面膜
-                 </li>
-                 <li>
-                    2400<span>萬哩</span>
-                 </li>
-                 <li>
-                    100
-                 </li>
-                 <li>
-                    30
-                 </li>
-                 <li>
-                    上架
-                 </li>
-                 <li>
-                    <div>編輯</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <input type="checkbox">
-                 </li>
-                 <li>
-                    00001
-                 </li>
-                 <li>
-                    火星火山泥面膜
-                 </li>
-                 <li>
-                    2400<span>萬哩</span>
-                 </li>
-                 <li>
-                    100
-                 </li>
-                 <li>
-                    30
-                 </li>
-                 <li>
-                    上架
-                 </li>
-                 <li>
-                    <div>編輯</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <input type="checkbox">
-                 </li>
-                 <li>
-                    00001
-                 </li>
-                 <li>
-                    火星火山泥面膜
-                 </li>
-                 <li>
-                    2400<span>萬哩</span>
-                 </li>
-                 <li>
-                    100
-                 </li>
-                 <li>
-                    30
-                 </li>
-                 <li>
-                    上架
-                 </li>
-                 <li>
-                    <div>編輯</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <input type="checkbox">
-                 </li>
-                 <li>
-                    00001
-                 </li>
-                 <li>
-                    火星火山泥面膜
-                 </li>
-                 <li>
-                    2400<span>萬哩</span>
-                 </li>
-                 <li>
-                    100
-                 </li>
-                 <li>
-                    30
-                 </li>
-                 <li>
-                    上架
-                 </li>
-                 <li>
-                    <div>編輯</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <input type="checkbox">
-                 </li>
-                 <li>
-                    00001
-                 </li>
-                 <li>
-                    火星火山泥面膜
-                 </li>
-                 <li>
-                    2400<span>萬哩</span>
-                 </li>
-                 <li>
-                    100
-                 </li>
-                 <li>
-                    30
-                 </li>
-                 <li>
-                    上架
-                 </li>
-                 <li>
-                    <div>編輯</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <input type="checkbox">
-                 </li>
-                 <li>
-                    00001
-                 </li>
-                 <li>
-                    火星火山泥面膜
-                 </li>
-                 <li>
-                    2400<span>萬哩</span>
-                 </li>
-                 <li>
-                    100
-                 </li>
-                 <li>
-                    30
-                 </li>
-                 <li>
-                    上架
-                 </li>
-                 <li>
-                    <div>編輯</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <input type="checkbox">
-                 </li>
-                 <li>
-                    00001
-                 </li>
-                 <li>
-                    火星火山泥面膜
-                 </li>
-                 <li>
-                    2400<span>萬哩</span>
-                 </li>
-                 <li>
-                    100
-                 </li>
-                 <li>
-                    30
-                 </li>
-                 <li>
-                    上架
-                 </li>
-                 <li>
-                    <div>編輯</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <input type="checkbox">
-                 </li>
-                 <li>
-                    00001
-                 </li>
-                 <li>
-                    火星火山泥面膜
-                 </li>
-                 <li>
-                    2400<span>萬哩</span>
-                 </li>
-                 <li>
-                    100
-                 </li>
-                 <li>
-                    30
-                 </li>
-                 <li>
-                    上架
-                 </li>
-                 <li>
-                    <div>編輯</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <input type="checkbox">
-                 </li>
-                 <li>
-                    00001
-                 </li>
-                 <li>
-                    火星火山泥面膜
-                 </li>
-                 <li>
-                    2400<span>萬哩</span>
-                 </li>
-                 <li>
-                    100
-                 </li>
-                 <li>
-                    30
-                 </li>
-                 <li>
-                    上架
-                 </li>
-                 <li>
-                    <div>編輯</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <input type="checkbox">
-                 </li>
-                 <li>
-                    00001
-                 </li>
-                 <li>
-                    火星火山泥面膜
-                 </li>
-                 <li>
-                    2400<span>萬哩</span>
-                 </li>
-                 <li>
-                    100
-                 </li>
-                 <li>
-                    30
-                 </li>
-                 <li>
-                    上架
-                 </li>
-                 <li>
-                    <div>編輯</div>
-                 </li>
-
-            </ul>
-            
-            
-            <div class="insert-new">
-                新增商品<i class="fa-solid fa-plus"></i>
-            </div>
-    
            
         </section>
 
     </main>
-    <section class="page-area">
+    <!-- <section class="page-area">
         <div class="pagenumber" >
             <h6><i class="fa-solid fa-angle-left"></i></h6>
         </div>
@@ -433,7 +137,33 @@
         <div class="pagenumber" >
             <h6><i class="fa-solid fa-angle-right"></i></h6>
         </div>
-    </section>
-    
+    </section> -->
+    <script>
+   
+      new Vue({
+          el: '#backstage_03', //
+
+          data: {
+            backstage_03: [], //
+          },
+          methods: {
+            edit(e){
+               // console.log(e.target.dataset.idx);
+               console.log(this.backstage_03[e.target.dataset.idx]);
+            },
+          },
+          compute: {},
+          watch: {},
+          created() {
+              let url = './PHP/backstage_03.php'; //
+              fetch(url)
+                  .then(response => response.json())
+                  .then(text => this.backstage_03 = text); //
+          },
+          mounteds(){},
+          destroyed(){},
+
+      })
+  </script>
 </body>
 </html>

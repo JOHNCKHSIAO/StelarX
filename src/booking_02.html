@@ -9,7 +9,9 @@
     <link rel="shortcut icon" href="./images/shortcut.png">
     <link rel="stylesheet" href="./css/booking_02.css">
     <link href='../project_calender/main.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/star.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/calendat.css"/> -->
     <title>Stelar X | 太空運輸領航者</title>
     <script src="https://hammerjs.github.io/dist/hammer.js"></script>
     <script src="./js/vue.js"></script>
@@ -17,6 +19,18 @@
 </head>
 
 <body>
+    <section class="star_bg" id="home">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <div class="meteors">
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+        </div>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
     <section class="booking-process">
@@ -97,71 +111,31 @@
                 </a>
             </div>
         </div>
+        <!-- 日曆開始 -->
         <div class="booking-calendar">
-            <div class="selector_title">
-                <h2>選擇航程日期</h2>
-            </div>
-            <!-- 日曆 start  -->
-            <!-- <div class="container">
-                <div id='calendar'>
-                </div>
-            </div> -->
-            <!-- 日曆 end  -->
-            <div class="calendar" id="calendar">
-                <ul>
-                    <li>
-                        <p @click="select_date" data-day="6/18" data-limit="8">18日</p>
-                        <p>剩餘座位8</p>
-                    </li>
-                    <li>
-                        <p @click="select_date" data-day="6/19" data-limit="6">19日</p>
-                        <p>剩餘座位6</p>
-                    </li>
-                    <li>
-                        <p @click="select_date" data-day="6/20" data-limit="5">20日</p>
-                        <p>剩餘座位5</p>
-                    </li>
-                </ul>
-                <p>人數:<span @click="reduce"> - </span>{{people}}<span @click="add"> + </span></p>
-            </div>
+            @@include("./vueCalendar.html")
         </div>
-
+        <!-- 日曆結束 -->
 
         <div class="booking-price">
             <h5>目前票價總金額</h5>
             <h5>$ 45,000 / 人</h5>
         </div>
     </div>
-
-    <div class="step_button">
+     <!------ 上/下一步區塊 ------>
+    <section class="step_button">
         <div class="btn_general">
-            <h5>
-                <a class="btn_square" href="./booking_01-2.html">上一步</a>
-            </h5>
+            <a class="btn_square" href="./booking_01-2.html">上一步</a>
         </div>
         <div class="btn_general">
-            <h5>
-                <a class="btn_square" href="./booking_03.html" id="nextPage">下一步</a>
-            </h5>
+            <a class="btn_square" href="./booking_03.html">下一步</a>
         </div>
-    </div>
-    <script>
-        var hammertime = new Hammer(myElement, myOptions);
-hammertime.on('pan', function(ev) {
-	console.log(ev);
-});
-    </script>
-
+    </section>
+</section>
     @@include("./layout/footer.html")
-    <script>
-        // new Vue({
-
-        // })
-    </script>
-    <script src='./js/project_calender/main.js'></script>
     <!-- 轉換成中文 -->
-    <script src="./js/project_calender/locales-all.js"></script>
     <script src="./js/booking_02.js"></script>
+    <script src="/src/js/calendar.js"></script>
 </body>
 
 </html>
