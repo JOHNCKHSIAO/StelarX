@@ -17,6 +17,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/backstage_05.css">
+    <script src="./js/vue.js"></script>
     <title>Stellar X | 後臺管理系統</title>
 </head>
 <body>
@@ -47,7 +48,7 @@
                 <a href="./backstage_05.html">收件夾</a>
             </div>
         </div>
-        <section class="info-area">
+        <section class="info-area" id="backstage_05">
             <ul class="member-list-title">
                 <li>
                     編號
@@ -71,7 +72,28 @@
                
 
             </ul>
-            <ul class="member-list-content">
+            <ul class="member-list-content" v-for="(item, index) in backstage_05">
+                <li>
+                     {{item[0]}}
+                 </li>
+                 <li>
+                     {{item[1]}}
+                 </li>
+                 <li>
+                     {{item[2]}}
+                 </li>
+                 <li>
+                     {{item[5]}}
+                 </li>
+                 <li>
+                     {{item[6]}}
+                 </li>
+                 <li>
+                    <div :data-idx="index" @click="edit">編輯</div>
+                 </li>
+
+            </ul>
+            <!-- <ul class="member-list-content">
                 <li>
                     000001
                  </li>
@@ -280,28 +302,7 @@
                     <div>編輯</div>
                  </li>
 
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    000001
-                 </li>
-                 <li>
-                    David
-                 </li>
-                 <li>
-                    abcde@gmail.com
-                 </li>
-                 <li>
-                    2022/05/20
-                 </li>
-                 <li>
-                    已回覆
-                 </li>
-                 <li>
-                    <div>編輯</div>
-                 </li>
-
-            </ul>
+            </ul> -->
         </section>
 
     </main>
@@ -328,6 +329,34 @@
             <h6><i class="fa-solid fa-angle-right"></i></h6>
         </div>
     </section>
+
+    <script>
+   
+      new Vue({
+          el: '#backstage_05', //
+
+          data: {
+            backstage_05: [], //
+          },
+          methods: {
+            edit(e){
+               // console.log(e.target.dataset.idx);
+               console.log(this.backstage_05[e.target.dataset.idx]);
+            },
+          },
+          compute: {},
+          watch: {},
+          created() {
+              let url = './PHP/backstage_05.php'; //
+              fetch(url)
+                  .then(response => response.json())
+                  .then(text => this.backstage_05 = text); //
+          },
+          mounteds(){},
+          destroyed(){},
+
+      })
+  </script>
     
 </body>
 </html>
