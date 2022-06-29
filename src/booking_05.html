@@ -7,12 +7,25 @@
     <meta name="description"
         content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
     <link rel="shortcut icon" href="./images/shortcut.png">
+    <link rel="stylesheet" href="css/star.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/booking_04.css">
     <link rel="stylesheet" href="./css/booking_05.css">
     <title>Stelar X | 太空運輸領航者</title>
 </head>
 <body>
+    <section class="star_bg" id="home">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <div class="meteors">
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+        </div>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
     <section class="booking-process">
@@ -149,7 +162,7 @@
         </div>
     </section>
     <!------ 付款資料區塊 ------>
-    <section class="com-form" id="BK_play">
+    <form action="./PHP/pay.php" class="com-form" id="BK_play" method="post">
         <div class="booking_wold">
             <h2>付款</h2>
         </div>
@@ -159,20 +172,19 @@
         </div>
         <div class="booking_text">
             <div class="form">
-                <label for="number" class="form__label"><h5>卡號</h5></label>
+                <label for="number" class="form__label"><h5>電子信箱</h5></label>
                 <input type="text" class="form__input" id="card_nmb">
             </div>
             <div class="form">
-                <label for="date" class="form__label"><h5>日期</h5></label>
+                <label for="date" class="form__label"><h5>姓名</h5></label>
                 <input type="text" class="form__input">
             </div>
             <div class="form">
-                <label for="code" class="form__label"><h5>安全碼</h5></label>
+                <label for="code" class="form__label"><h5>付款方式</h5></label>
                 <input type="text" class="form__input">
             </div>
         </div>
-    </section>
-    <!------ 上/下一步區塊 ------>
+        <!------ 上/下一步區塊 ------>
     <section class="booking_btn">
         <div class="btn_general">
             <h5>
@@ -180,11 +192,15 @@
             </h5>
         </div>
         <div class="btn_general">
-            <h5>
-                <a href="./booking_06.html" class="btn_square">下一步</a>
-            </h5>
+            <button class="btn_square" type="submit">完成結帳</button>
+            <!-- <h5>
+                <a href="./booking_06.html" class="btn_square">前往付款</a>
+            </h5> -->
         </div>
     </section>
+    </form>
+    
+</section>
     @@include("./layout/footer.html")
 </body>
 </html>
