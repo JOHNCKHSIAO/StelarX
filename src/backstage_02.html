@@ -17,6 +17,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/backstage_02.css">
+    <script src="./js/vue.js"></script>
+
     <title>Stellar X | 後臺管理系統</title>
 </head>
 <body>
@@ -48,7 +50,7 @@
                 <a href="./backstage_05.html">收件夾</a>
             </div>
         </div>
-        <section class="info-area">
+        <section class="info-area" id="backstage_02">
             <ul class="member-list-title">
                 <li>
                    狀態
@@ -71,238 +73,33 @@
                
 
             </ul>
-            <ul class="member-list-content">
+            <ul class="member-list-content" v-for="(item, index) in backstage_02">
                 <li>
                     <i class="fa-solid fa-user"></i>
                  </li>
                  <li>
-                    000001
+                  {{item[0]}}
+
                  </li>
                  <li>
-                    andylovestotravel
+                  {{item[1]}}
+
                  </li>
                  <li>
-                    王曉明
+                  {{item[4]}}
+
                  </li>
                  <li>
-                    asdfghj@yahoo.com.tw
+                  {{item[6]}}
+
                  </li>
                  <li>
-                    <div>查看</div>
+                  <div :data-idx="index" @click="edit">查看</div>
+
                  </li>
 
             </ul>
-            <ul class="member-list-content">
-                <li>
-                    <i class="fa-solid fa-user"></i>
-                 </li>
-                 <li>
-                    000001
-                 </li>
-                 <li>
-                    andylovestotravel
-                 </li>
-                 <li>
-                    王曉明
-                 </li>
-                 <li>
-                    asdfghj@yahoo.com.tw
-                 </li>
-                 <li>
-                    <div>查看</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <i class="fa-solid fa-user"></i>
-                 </li>
-                 <li>
-                    000001
-                 </li>
-                 <li>
-                    andylovestotravel
-                 </li>
-                 <li>
-                    王曉明
-                 </li>
-                 <li>
-                    asdfghj@yahoo.com.tw
-                 </li>
-                 <li>
-                    <div>查看</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <i class="fa-solid fa-user"></i>
-                 </li>
-                 <li>
-                    000001
-                 </li>
-                 <li>
-                    andylovestotravel
-                 </li>
-                 <li>
-                    王曉明
-                 </li>
-                 <li>
-                    asdfghj@yahoo.com.tw
-                 </li>
-                 <li>
-                    <div>查看</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <i class="fa-solid fa-user"></i>
-                 </li>
-                 <li>
-                    000001
-                 </li>
-                 <li>
-                    andylovestotravel
-                 </li>
-                 <li>
-                    王曉明
-                 </li>
-                 <li>
-                    asdfghj@yahoo.com.tw
-                 </li>
-                 <li>
-                    <div>查看</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <i class="fa-solid fa-user"></i>
-                 </li>
-                 <li>
-                    000001
-                 </li>
-                 <li>
-                    andylovestotravel
-                 </li>
-                 <li>
-                    王曉明
-                 </li>
-                 <li>
-                    asdfghj@yahoo.com.tw
-                 </li>
-                 <li>
-                    <div>查看</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <i class="fa-solid fa-user"></i>
-                 </li>
-                 <li>
-                    000001
-                 </li>
-                 <li>
-                    andylovestotravel
-                 </li>
-                 <li>
-                    王曉明
-                 </li>
-                 <li>
-                    asdfghj@yahoo.com.tw
-                 </li>
-                 <li>
-                    <div>查看</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <i class="fa-solid fa-user"></i>
-                 </li>
-                 <li>
-                    000001
-                 </li>
-                 <li>
-                    andylovestotravel
-                 </li>
-                 <li>
-                    王曉明
-                 </li>
-                 <li>
-                    asdfghj@yahoo.com.tw
-                 </li>
-                 <li>
-                    <div>查看</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <i class="fa-solid fa-user"></i>
-                 </li>
-                 <li>
-                    000001
-                 </li>
-                 <li>
-                    andylovestotravel
-                 </li>
-                 <li>
-                    王曉明
-                 </li>
-                 <li>
-                    asdfghj@yahoo.com.tw
-                 </li>
-                 <li>
-                    <div>查看</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <i class="fa-solid fa-user"></i>
-                 </li>
-                 <li>
-                    000001
-                 </li>
-                 <li>
-                    andylovestotravel
-                 </li>
-                 <li>
-                    王曉明
-                 </li>
-                 <li>
-                    asdfghj@yahoo.com.tw
-                 </li>
-                 <li>
-                    <div>查看</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    <i class="fa-solid fa-user"></i>
-                 </li>
-                 <li>
-                    000001
-                 </li>
-                 <li>
-                    andylovestotravel
-                 </li>
-                 <li>
-                    王曉明
-                 </li>
-                 <li>
-                    asdfghj@yahoo.com.tw
-                 </li>
-                 <li>
-                    <div>查看</div>
-                 </li>
-
-            </ul>
-          
+            
 
         </section>
 
@@ -331,6 +128,32 @@
             <h6><i class="fa-solid fa-angle-right"></i></h6>
         </div>
     </section>
-    
+    <script>
+   
+      new Vue({
+          el: '#backstage_02', //
+
+          data: {
+            backstage_02: [], //
+          },
+          methods: {
+            edit(e){
+               // console.log(e.target.dataset.idx);
+               console.log(this.backstage_02[e.target.dataset.idx]);
+            },
+          },
+          compute: {},
+          watch: {},
+          created() {
+              let url = './PHP/backstage_02.php'; //
+              fetch(url)
+                  .then(response => response.json())
+                  .then(text => this.backstage_02 = text); //
+          },
+          mounteds(){},
+          destroyed(){},
+
+      })
+  </script>
 </body>
 </html>
