@@ -69,7 +69,6 @@
     .selector_title {
         position: relative;
 
-
         ::after {
             content: "";
             display: block;
@@ -112,16 +111,15 @@
 
 
 .booking-selection {
-    display: flex;
     width: 900px;
-    // height: 600px;
+    height: 600px;
     display: flex;
     color: #eeeeee;
     margin: 0 auto;
     text-align: center;
     align-items: center;
     background-image: $linear;
-    //    position: relative;
+    position: relative;
 
 }
 
