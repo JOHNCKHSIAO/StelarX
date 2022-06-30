@@ -69,7 +69,6 @@
     .selector_title {
         position: relative;
 
-
         ::after {
             content: "";
             display: block;
@@ -104,6 +103,11 @@
             text-align: center;
             margin-bottom: 16px;
         }
+
+        #end{
+            background-color: #eeeeee;
+            color: #00072E;
+        }
     }
 
 }
@@ -112,16 +116,15 @@
 
 
 .booking-selection {
-    display: flex;
     width: 900px;
-    // height: 600px;
+    height: 600px;
     display: flex;
     color: #eeeeee;
     margin: 0 auto;
     text-align: center;
     align-items: center;
     background-image: $linear;
-    //    position: relative;
+       position: relative;
     
 
 }
@@ -174,6 +177,10 @@
     a {
         font-size: 28px;
         color: #eeeeee;
+
+        &:hover{
+           font-weight: 600;
+        }
     }
 
     .title5 {
