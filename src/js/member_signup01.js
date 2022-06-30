@@ -203,7 +203,7 @@
                 password_div.classList.add("fadeIn");
                 checkPassword_div.classList.add("fadeIn");
             }else{
-                alert("請輸入完整內容再按按鈕!");
+              return;
             }
         },
         checkPassWord(arg){

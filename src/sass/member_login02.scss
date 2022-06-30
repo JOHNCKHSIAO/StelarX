@@ -28,14 +28,43 @@
                 transform: translate(-50%,0);
             }
         }
-
-        .vip-card{
-            display:block;
-            width:563px;
-            border-radius:26px;
+        .imgContainer{
+            border: 1px solid white;
+            position: relative;
             margin:0 auto;
             margin-top: 60px;
+            width:570px;
+            .vip-card{
+                display:block;
+                width:563px;
+                border-radius:26px;
+                margin:0 auto;
+            }
+            .member-name{
+                position: absolute;
+                color:$white;
+                top:36%;
+                left:25%;
+            }
+            .member-type-card{
+                position: absolute;
+                color:$white;
+                top:51%;
+                left:28%;
+            }
+            .memmer-code{
+                position: absolute;
+                color:$white;
+                top:80%;
+                left:44%;     
+                span{
+                    color:$white;
+                }
+
+            }
+
         }
+        
         .member-type{
             color:$white;
             text-align: center;

@@ -13,19 +13,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/member_login02.css">
+    <script src="./js/vue.js"></script>
     <title>Stellar X | 太空運輸領航者</title>
 </head>
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
-    <section class="member-login02-wrapper">
+    <section class="member-login02-wrapper" id="member-login02-wrapper">
         <section class="member-info">   
             <h2 class="member-info-title">
                 歡迎回到 StelarX<br>繼續探索我的太空旅程！ 
             </h2>
-            <img class="vip-card" src="./images/member_login/member_card.jpg" alt="">
-            <h5 class="member-type">商務會員</h5>
-            <p>您在 2050/07/08 成為我們的會員！</p>
+            <div class="imgContainer">
+                <img class="vip-card" src="./images/member_login/member_card.jpg" alt="">
+                <h5 class="member-name">{{personal_data.lastName + personal_data.name}}</h5>
+                <p class="member-type-card">{{personal_data.membertype}}</p>
+                <p class="memmer-code"><span>會員編號</span>{{personal_data.memberID}}</p>
+            </div>
+            
+            <h5 class="member-type">{{personal_data.membertype}}</h5>
+            <p>您在<span>{{personal_data.memberDate}}</span>成為我們的會員！</p>
             <div class="btn_cta btn">
                 <a class="aLink" href="./member_login03.html">修改個人資料<img src="./images/ctz_dec.png" alt=""></a>
             </div>
@@ -35,10 +42,10 @@
         <section class="member-mile">
             <div class="mile-wrapper">
                 <div class="mile-circle">
-                    <h3>您已累積1200萬哩程！</h3>
+                    <h3>您已累積<span>{{miles_data.mileAll}}</span>萬哩程！</h3>
                     <div class="circle-outer">
                         <div class="circle-inner">
-                            <span class="bignumber">1200</span><span>萬</span>
+                            <span class="bignumber">{{miles_data.mileAll}}</span><span>萬</span>
                         </div>
                     </div>
                 </div>
@@ -46,18 +53,18 @@
                 <div class="mile-square">
                     <h3>我的哩程</h3>
                     <div class="number-area">
-                        <h6>0</h6>
-                        <h6>0</h6>
-                        <h6>0</h6>
-                        <h6>0</h6>
-                        <h6>0</h6>
-                        <h6>0</h6>
-                        <h6>0</h6>
-                        <h6>0</h6>
-                        <h6>1</h6>
-                        <h6>2</h6>
-                        <h6>0</h6>
-                        <h6>0</h6>
+                        <h6>{{miles[0]}}</h6>
+                        <h6>{{miles[1]}}</h6>
+                        <h6>{{miles[2]}}</h6>
+                        <h6>{{miles[3]}}</h6>
+                        <h6>{{miles[4]}}</h6>
+                        <h6>{{miles[5]}}</h6>
+                        <h6>{{miles[6]}}</h6>
+                        <h6>{{miles[7]}}</h6>
+                        <h6>{{miles[8]}}</h6>
+                        <h6>{{miles[9]}}</h6>
+                        <h6>{{miles[10]}}</h6>
+                        <h6>{{miles[11]}}</h6>
                         <span>萬公里</span>
                     </div>
                 </div>
@@ -70,7 +77,7 @@
 
         <section class="memeber-shop">
             <h2 class="memeber-shop-title">購物中心</h2>
-            <h5>取貨編號 : ABCDE12345</h5>
+            <!-- <h5>取貨編號 : ABCDE12345</h5> -->
             <img class="star" src="./images/member_login/mars.png" alt="">
             <div class="btn_cta btn">
                 <a class="aLink" href="./member_login05.html">查詢購物明細<img src="./images/ctz_dec.png" alt=""></a>
@@ -78,7 +85,7 @@
         </section>
         <div class="decorate-line"></div>
 
-        <section class="member-message">
+        <!-- <section class="member-message">
             <h2 class="member-message-title">訊息中心</h2>
             <div class="message-wrapper">
                 <div class="message-center">
@@ -113,10 +120,11 @@
             </div>
 
 
-        </section>
+        </section> -->
 
 
     </section>
+    <script src="./js/member_login02.js"></script>
 
     @@include("./layout/footer.html")
 </body>

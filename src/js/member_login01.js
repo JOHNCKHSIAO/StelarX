@@ -57,6 +57,7 @@ let vm = new Vue({
                             window.location = "./member_login02.html";
                         },1000)
                        return;
+                       
                     }else if(res=="notAvailable"){
                         this.errorMessage = "您還不是我們的會員，請加入會員!";
                         this.messageOpacity.opacity ="1";
