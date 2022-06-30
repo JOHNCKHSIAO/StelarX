@@ -6,7 +6,7 @@ header{
 nav{
     // background-color: hsl(231, 100%, 9%);
     margin-top: 40px;
-   margin-bottom: 120px;
+    margin-bottom: 120px;
     text-align: center; 
     align-items: center;   
     }
@@ -69,6 +69,7 @@ nav{
     border-radius: 50px;
 
     a{
+        font-size: 16px;
         color: #eeeeee;
         text-decoration: none;
     }
