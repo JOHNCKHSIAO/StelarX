@@ -436,7 +436,7 @@ body {
 
 .wrapper {
   width: 1080px;
-  height: 1800px;
+  height: 2000px;
   background-color: #191F42;
   border-radius: 10px;
   margin: 0 auto;
@@ -619,7 +619,18 @@ body {
   height: 60px;
 }
 
+.calendar-days button {
+  color: #fff;
+  background-color: #987A4D;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
 .booking-price {
+  margin-top: 80px;
   display: flex;
   justify-content: space-around;
   background-color: #262d52;
@@ -659,7 +670,7 @@ body {
   cursor: pointer;
 }
 .calendar ul li p:first-child:hover {
-  background-color: #262d52;
+  background-color: #265228;
   color: white;
 }
 .calendar ul li p.on {
