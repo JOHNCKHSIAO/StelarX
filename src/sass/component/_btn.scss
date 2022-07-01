@@ -1,8 +1,8 @@
 
 //宣告一些變數
 $btnFontSize:16px;
-$btnWidth:250px;
-$btnHeight:46px;
+$btnWidth:280px;
+$btnHeight:50px;
 $btnFontWeight:600;
 
 //這是圓角按鈕
@@ -80,9 +80,16 @@ $btnFontWeight:600;
     border: 1px solid $white;
     cursor: pointer;
     &:hover {
-        border-color: $blue;
+        // border-color: $blue;
+        // background: $linear ;
+        // box-shadow: 
+        //     inset 0px 0px 0px #1A005C,
+        //     inset 0px 0px 0px #660059;
         background: $linear;
+        transition: ease-out 0.5s;
+        border:none;
     }
+
     .btn_square{
         display: block;
         // border:1px solid yellow;
@@ -93,6 +100,21 @@ $btnFontWeight:600;
         color: $white;
         font-size: $btnFontSize;
         text-align: center;
+    }
+
+    .btn_pay{
+        cursor: pointer;
+        display: block;
+        text-decoration: none;
+        border:none;
+        margin: 0 auto;
+        text-decoration: none;
+        font-weight: $btnFontWeight;
+        line-height: $btnHeight;
+        color: $white;
+        font-size: $btnFontSize;
+        text-align: center;
+        background-color: transparent;
     }
 }
 
@@ -175,7 +197,7 @@ $btnFontWeight:600;
     cursor: pointer;
     .btn_square{
         display: block;
-        // border:1px solid yellow;
+        // border:1px solid $linear;
         margin: 0 auto;
         text-decoration: none;
         font-weight: $btnFontWeight;
@@ -183,10 +205,16 @@ $btnFontWeight:600;
         color: $white;
         font-size: $btnFontSize;
         text-align: center;
+        transition: ease 0.3s;
+        background-color: $linear;
+       box-shadow: inset 0 0 0 0 $white;
+        outline: none;
         &:hover {
-            background: $white;
             color: $blue;
+            // box-shadow: inset $btnWidth 0 0 0 $white;
+            box-shadow: inset $btnHeight 0 0 0 0 $white;
         }
+        
     }
 }
 
@@ -195,21 +223,25 @@ $btnFontWeight:600;
 .btn_status_submit {
     width: $btnWidth;
     height:$btnHeight; 
-    border: 1px solid $white;
-    background: $blue;
-    padding: 0;
+    // border: 1px solid $white;
     cursor: pointer;
     .btn_square{
-        width:100%;
-        height:100%;
+        display: block;
+        // border:1px solid $linear;
+        margin: 0 auto;
+        text-decoration: none;
         font-weight: $btnFontWeight;
         line-height: $btnHeight;
         color: $white;
         font-size: $btnFontSize;
         text-align: center;
+        transition: ease-out 0.3s;
+        background-color: $linear;
+       box-shadow: inset 0 0 0 0 $white;
+        outline: none;
         &:hover {
-            background: $white;
             color: $blue;
+            box-shadow: inset $btnWidth 0 0 0 $white;
         }
     }
 }

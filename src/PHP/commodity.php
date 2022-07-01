@@ -3,7 +3,7 @@
        include("connection.php");
 
        //建立SQL語法
-       $sql = "SELECT COMMODITY_NAME,MILE,images,Small_img01,Small_img02 FROM stellarx.commodity;";
+       $sql = "SELECT COMMODITY_NAME,MILE,images,Small_img01,Small_img02 FROM commodity;";
 
        //執行並查詢，會回傳查詢結果的物件，必須使用fetch、fetchAll...等方式取得資料
        $statement = $pdo->query($sql);

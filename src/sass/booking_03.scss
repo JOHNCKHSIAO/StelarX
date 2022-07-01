@@ -179,9 +179,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin: 0 5px;
-
     cursor: pointer;
     &.active {
         background-color: #987A4D;
@@ -250,7 +248,8 @@ body{
 .booking-customize{
     width: 900px;
     margin: 0 auto;
-    outline: 3px solid #987A4D;
+    outline: 2px solid #987A4D;
+    border-radius: 5px;
     padding: 40px 0;
     margin-bottom: 80px;
 
@@ -293,6 +292,20 @@ ul{
     margin: 0 auto;
     justify-content: space-between;
     padding-bottom: 24px;
+
+    input{
+        margin: auto 0;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        accent-color: #7C7C7C;
+        border-radius: 3px;
+        margin-right: 6px;
+
+         &:checked{
+            accent-color: #987A4D;
+         }
+    }
 }  
         span{
             font-size: 20px;
@@ -305,6 +318,40 @@ ul{
     }
 }
 
+.customize-1{
+    // width: 900px;
+    margin-top: 80px;
+    display:flex;
+    justify-content:space-evenly;
+ul{
+    li{
+        margin-bottom: 24px;
+    }
+
+    input{
+        margin: auto 0;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        accent-color: #7C7C7C;
+        border-radius: 3px;
+        margin-right: 6px;
+         &:checked{
+            accent-color: #987A4D;
+         }
+    }
+}  
+        span{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        p{
+            padding-top: 6px;
+            padding-left: 24px;
+        }
+    }
+
+
 .booking-price{
     display: flex;
     justify-content: space-around;
@@ -314,11 +361,11 @@ ul{
         font-weight: 700;
     }
 }
+
 .step_button{
     width: 600px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 120px;
-    
+    margin-top:200px;
 }

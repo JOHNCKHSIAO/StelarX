@@ -31,7 +31,8 @@
     }
 
     .input-area-member-login{
-        width:550px;
+     
+        width:910px;
         // border:1px solid white;
         margin: 0 auto;
         display:flex;
@@ -43,14 +44,15 @@
         color:$white;
         display: block;
         position: absolute;
-        bottom:18%;
-        right:25%;
+        bottom:19%;
+        right:9%;
         // border: 1px solid yellow;
     }
     .password-wrong{
         color:$error_red;
         margin-top: 20px;
         opacity:0;
+       
     }
     .opacity1{
         opacity:1;
@@ -60,12 +62,12 @@
         margin: 0 auto;
         margin-top: 20px;
     }
-    .fas{
-        //張開的眼睛
-    }
-    .fa-eye{
-         //張開的眼睛
-    }
+    // .fas{
+    //     //張開的眼睛
+    // }
+    // .fa-eye{
+    //      //張開的眼睛
+    // }
 }
 
 

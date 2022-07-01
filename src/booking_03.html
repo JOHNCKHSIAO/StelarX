@@ -7,348 +7,374 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
     <link rel="shortcut icon" href="./images/shortcut.png">
+    <link rel="stylesheet" href="css/star.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/booking_03.css">
     <title>Stelar X | 太空運輸領航者</title>
 </head>
 
 <body>
-    @@include("./layout/header.html")
-    <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
-    <section class="booking-process">
-        <div class="booking-process_each">
-            <div class="process-circle">
-                <h2>1</h2>
-            </div>
-            <h6>選擇星球</h6>
+    <section class="star_bg" id="home">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <div class="meteors">
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
         </div>
-        <div class="booking-process_each">
-            <div class="process-circle">
-                <h2>2</h2>
+        @@include("./layout/header.html")
+        <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+        <section class="booking-process">
+            <div class="booking-process_each">
+                <div class="process-circle">
+                    <h2>1</h2>
+                </div>
+                <h6>選擇星球</h6>
             </div>
-            <h6>日期 / 艙別</h6>
-        </div>
-        <div class="booking-process_each">
-            <div class="process-circle main">
-                <h2>3</h2>
+            <div class="booking-process_each">
+                <div class="process-circle">
+                    <h2>2</h2>
+                </div>
+                <h6>日期 / 艙別</h6>
             </div>
-            <h6>座位 / 服務</h6>
-        </div>
-        <div class="booking-process_each">
-            <div class="process-circle">
-                <h2>4</h2>
+            <div class="booking-process_each">
+                <div class="process-circle main">
+                    <h2>3</h2>
+                </div>
+                <h6>座位 / 服務</h6>
             </div>
-            <h6>資料填寫</h6>
-        </div>
-        <div class="booking-process_each">
-            <div class="process-circle">
-                <h2>5</h2>
+            <div class="booking-process_each">
+                <div class="process-circle">
+                    <h2>4</h2>
+                </div>
+                <h6>資料填寫</h6>
             </div>
-            <h6>確認 / 付款</h6>
-        </div>
-        <div class="booking-process_each">
-            <div class="process-circle">
-                <h2>6</h2>
+            <div class="booking-process_each">
+                <div class="process-circle">
+                    <h2>5</h2>
+                </div>
+                <h6>確認 / 付款</h6>
             </div>
-            <h6>完成</h6>
-        </div>
-    </section>
-    <div class="blue_bg">
-        <section class="booking-members">
-            <div class="selector_title">
-                <h2>選擇搭乘人數</h2>
-            </div>
-            <div class="select_ppl">
-                <a class="left" href=""><svg width="20" fill="#eeeeee" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 320 512">
-                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                        <path
-                            d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z" />
-                    </svg></a>
-                <h1>2</h1>
-                <a class="right" href="">
-                    <svg width="20" fill="#eeeeee" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                        <path
-                            d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z" />
-                    </svg>
-                </a>
+            <div class="booking-process_each">
+                <div class="process-circle">
+                    <h2>6</h2>
+                </div>
+                <h6>完成</h6>
             </div>
         </section>
-        <section class="booking-seats">
-            <div class="selector_title">
-                <h2>選擇座艙座位</h2>
-            </div>
-            <div id="app">
-                <div class="wrapper">
-                    <div class="top_out">
-                        <div class="app_top" :class="{'active':seat.one_a_active}"
-                            @click="seat.one_a_active = !seat.one_a_active">
-                            <p>1A</p>
+        <div class="blue_bg">
+            <section class="booking-members">
+                <div class="selector_title">
+                    <h2>選擇搭乘人數</h2>
+                </div>
+                <div class="select_ppl">
+                    <a class="left" href=""><svg width="20" fill="#eeeeee" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z" />
+                        </svg></a>
+                    <h1>2</h1>
+                    <a class="right" href="">
+                        <svg width="20" fill="#eeeeee" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <section class="booking-seats">
+                <div class="selector_title">
+                    <h2>選擇座艙座位</h2>
+                </div>
+                <div id="app">
+                    <div class="wrapper">
+                        <div class="top_out">
+                            <div class="app_top" :class="{'active':seat.one_a_active}"
+                                @click="seat.one_a_active = !seat.one_a_active">
+                                <p>1A</p>
+                            </div>
+                            <div class="app_top" :class="{'active':seat.one_b_active}"
+                                @click="seat.one_b_active = !seat.one_b_active">
+                                <p>1B</p>
+                            </div>
                         </div>
-                        <div class="app_top" :class="{'active':seat.one_b_active}"
-                            @click="seat.one_b_active = !seat.one_b_active">
-                            <p>1B</p>
+                        <div class="midden_out">
+                            <div class="right_out">
+                                <div class="app_right" :class="{'active':seat.one_c_active}"
+                                    @click="seat.one_c_active = !seat.one_c_active">
+                                    <p>1H</p>
+                                </div>
+                                <div class="app_right" :class="{'active':seat.one_d_active}"
+                                    @click="seat.one_d_active = !seat.one_d_active">
+                                    <p>1G</p>
+                                </div>
+                            </div>
+                            <div class="midden">
+                                <h5>GX</h5>
+                            </div>
+                            <div class="left_out">
+                                <div class="app_left" :class="{'active':seat.one_e_active}"
+                                    @click="seat.one_e_active = !seat.one_e_active">
+                                    <p>1C</p>
+                                </div>
+                                <div class="app_left" :class="{'active':seat.one_f_active}"
+                                    @click="seat.one_f_active = !seat.one_f_active">
+                                    <p>1D</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button_out">
+                            <div class="app_top" :class="{'active':seat.one_g_active}"
+                                @click="seat.one_g_active = !seat.one_g_active">
+                                <p>1F</p>
+                            </div>
+                            <div class="app_top" :class="{'active':seat.one_h_active}"
+                                @click="seat.one_h_active = !seat.one_h_active">
+                                <p>1E</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="midden_out">
-                        <div class="right_out">
-                            <div class="app_right" :class="{'active':seat.one_c_active}"
-                                @click="seat.one_c_active = !seat.one_c_active">
-                                <p>1H</p>
+                    <div class="wrapper">
+                        <div class="top_out">
+                            <div class="app_top" :class="{'active':seat.one_a_active}"
+                                @click="seat.one_a_active = !seat.one_a_active">
+                                <p>2A</p>
                             </div>
-                            <div class="app_right" :class="{'active':seat.one_d_active}"
-                                @click="seat.one_d_active = !seat.one_d_active">
-                                <p>1G</p>
-                            </div>
-                        </div>
-                        <div class="midden">
-                            <h5>GX</h5>
-                        </div>
-                        <div class="left_out">
-                            <div class="app_left" :class="{'active':seat.one_e_active}"
-                                @click="seat.one_e_active = !seat.one_e_active">
-                                <p>1C</p>
-                            </div>
-                            <div class="app_left" :class="{'active':seat.one_f_active}"
-                                @click="seat.one_f_active = !seat.one_f_active">
-                                <p>1D</p>
+                            <div class="app_top" :class="{'active':seat.one_b_active}"
+                                @click="seat.one_b_active = !seat.one_b_active">
+                                <p>2B</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="button_out">
-                        <div class="app_top" :class="{'active':seat.one_g_active}"
-                            @click="seat.one_g_active = !seat.one_g_active">
-                            <p>1F</p>
+                        <div class="midden_out">
+                            <div class="right_out">
+                                <div class="app_right" :class="{'active':seat.one_c_active}"
+                                    @click="seat.one_c_active = !seat.one_c_active">
+                                    <p>2H</p>
+                                </div>
+                                <div class="app_right" :class="{'active':seat.one_d_active}"
+                                    @click="seat.one_d_active = !seat.one_d_active">
+                                    <p>2G</p>
+                                </div>
+                            </div>
+                            <div class="midden">
+                                <h5>X</h5>
+                            </div>
+                            <div class="left_out">
+                                <div class="app_left" :class="{'active':seat.one_e_active}"
+                                    @click="seat.one_e_active = !seat.one_e_active">
+                                    <p>2C</p>
+                                </div>
+                                <div class="app_left" :class="{'active':seat.one_f_active}"
+                                    @click="seat.one_f_active = !seat.one_f_active">
+                                    <p>2D</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="app_top" :class="{'active':seat.one_h_active}"
-                            @click="seat.one_h_active = !seat.one_h_active">
-                            <p>1E</p>
+                        <div class="button_out">
+                            <div class="app_top" :class="{'active':seat.one_g_active}"
+                                @click="seat.one_g_active = !seat.one_g_active">
+                                <p>2F</p>
+                            </div>
+                            <div class="app_top" :class="{'active':seat.one_h_active}"
+                                @click="seat.one_h_active = !seat.one_h_active">
+                                <p>2E</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="wrapper">
-                    <div class="top_out">
-                        <div class="app_top" :class="{'active':seat.one_a_active}"
-                            @click="seat.one_a_active = !seat.one_a_active">
-                            <p>2A</p>
-                        </div>
-                        <div class="app_top" :class="{'active':seat.one_b_active}"
-                            @click="seat.one_b_active = !seat.one_b_active">
-                            <p>2B</p>
-                        </div>
-                    </div>
-                    <div class="midden_out">
-                        <div class="right_out">
-                            <div class="app_right" :class="{'active':seat.one_c_active}"
-                                @click="seat.one_c_active = !seat.one_c_active">
-                                <p>2H</p>
-                            </div>
-                            <div class="app_right" :class="{'active':seat.one_d_active}"
-                                @click="seat.one_d_active = !seat.one_d_active">
-                                <p>2G</p>
-                            </div>
-                        </div>
-                        <div class="midden">
-                            <h5>X</h5>
-                        </div>
-                        <div class="left_out">
-                            <div class="app_left" :class="{'active':seat.one_e_active}"
-                                @click="seat.one_e_active = !seat.one_e_active">
-                                <p>2C</p>
-                            </div>
-                            <div class="app_left" :class="{'active':seat.one_f_active}"
-                                @click="seat.one_f_active = !seat.one_f_active">
-                                <p>2D</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="button_out">
-                        <div class="app_top" :class="{'active':seat.one_g_active}"
-                            @click="seat.one_g_active = !seat.one_g_active">
-                            <p>2F</p>
-                        </div>
-                        <div class="app_top" :class="{'active':seat.one_h_active}"
-                            @click="seat.one_h_active = !seat.one_h_active">
-                            <p>2E</p>
-                        </div>
-                    </div>
+            </section>
+            <section class="booking-customize">
+                <div class="selector_title">
+                    <h2 class="current_member">乘客座位2H</h2>
+                    <h2>客製化體驗服務</h2>
                 </div>
-            </div>
-        </section>
-        <section class="booking-customize">
-            <div class="selector_title">
-                <h2 class="current_member">乘客座位2H</h2>
-                <h2>客製化體驗服務</h2>
-            </div>
-            <div class="customize">
-                <ul>
-                    <li><label>
-                            <input type="checkbox" value="報紙">
-                            <span>報紙</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="眼罩">
-                            <span>眼罩</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="枕頭">
-                            <span>枕頭</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="耳塞">
-                            <span>耳塞</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="毛毯">
-                            <span>毛毯</span>
-                        </label></li>
-                </ul>
-                <ul>
-                    <li><label>
-                            <input type="checkbox" value="商品型錄">
-                            <span>商品型錄</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="睡袍">
-                            <span>睡袍</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="護手霜">
-                            <span>護手霜</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="喚醒服務">
-                            <span>喚醒服務</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="盥洗用具">
-                            <span>盥洗用具</span>
-                        </label></li>
-                </ul>
-            </div>
-            <div class="selector_title">
-                <h2>獨享加價購</h2>
-            </div>
-            <div class="customize">
-                <ul>
-                    <li><label>
-                            <input type="checkbox" value="太空漫步">
-                            <span>太空漫步</span>
-                            <p>9,000 哩</p>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="座艙景觀室">
-                            <span>座艙景觀室</span>
-                            <p>9,000 哩</p>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="無邊際太空泳池">
-                            <span>無邊際太空泳池</span>
-                            <p>3,000 哩</p>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="星際大戰">
-                            <span>星際大戰</span>
-                            <p>5,000 哩</p>
-                        </label></li>
-                </ul>
-            </div>
-        </section>
-        <section class="booking-customize">
-            <div class="selector_title">
-                <h2 class="current_member">乘客座位2G</h2>
-                <h2>客製化體驗服務</h2>
-            </div>
-            <div class="customize">
-                <ul>
-                    <li><label>
-                            <input type="checkbox" value="報紙">
-                            <span>報紙</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="眼罩">
-                            <span>眼罩</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="枕頭">
-                            <span>枕頭</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="耳塞">
-                            <span>耳塞</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="毛毯">
-                            <span>毛毯</span>
-                        </label></li>
-                </ul>
-                <ul>
-                    <li><label>
-                            <input type="checkbox" value="商品型錄">
-                            <span>商品型錄</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="睡袍">
-                            <span>睡袍</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="護手霜">
-                            <span>護手霜</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="喚醒服務">
-                            <span>喚醒服務</span>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="盥洗用具">
-                            <span>盥洗用具</span>
-                        </label></li>
-                </ul>
-            </div>
-            <div class="selector_title">
-                <h2>獨享加價購</h2>
-            </div>
-            <div class="customize">
-                <ul>
-                    <li><label>
-                            <input type="checkbox" value="太空漫步">
-                            <span>太空漫步</span>
-                            <p>9,000 哩</p>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="座艙景觀室">
-                            <span>座艙景觀室</span>
-                            <p>9,000 哩</p>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="無邊際太空泳池">
-                            <span>無邊際太空泳池</span>
-                            <p>3,000 哩</p>
-                        </label></li>
-                    <li><label>
-                            <input type="checkbox" value="星際大戰">
-                            <span>星際大戰</span>
-                            <p>5,000 哩</p>
-                        </label></li>
-                </ul>
-            </div>
-        </section>
-        <div class="booking-price">
-            <h5>目前票價總金額</h5>
-            <h5>$ 118,000</h5>
-        </div>
-    </div>
-    <div class="step_button">
-        <div class="btn_general">
-            <a class="btn_square" href="./booking_02.html">上一步</a>
-        </div>
-        <div class="btn_general">
-            <a class="btn_square" href="./booking_04.html">下一步</a>
-        </div>
-    </div>
+                <div class="customize-1">
+                    <ul>
+                        <li><label>
+                                <input type="checkbox" value="報紙">
+                                <span>報紙</span>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="眼罩">
+                                <span>商品型錄</span>
+                            </label></li>
+                    </ul>
+                    <ul>
+                        <li><label>
+                                <input type="checkbox" value="報紙">
+                                <span>眼罩</span>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="眼罩">
+                                <span>睡袍</span>
+                            </label></li>
+                    </ul>
+                    <ul>
+                        <li><label>
+                                <input type="checkbox" value="報紙">
+                                <span>枕頭</span>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="眼罩">
+                                <span>護手霜</span>
+                            </label></li>
+                    </ul>
+                    <ul>
+                        <li><label>
+                                <input type="checkbox" value="報紙">
+                                <span>耳塞</span>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="眼罩">
+                                <span>喚醒服務</span>
+                            </label></li>
+                    </ul>
+                    <ul>
+                        <li><label>
+                                <input type="checkbox" value="報紙">
+                                <span>毛毯</span>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="眼罩">
+                                <span>盥洗用具</span>
+                            </label></li>
+                    </ul>
+                </div>
+                <div class="selector_title">
+                    <h2>獨享加價購</h2>
+                </div>
+                <div class="customize">
+                    <ul>
+                        <li><label>
+                                <input type="checkbox" value="太空漫步">
+                                <span>太空漫步</span>
+                                <p>$ 9,000</p>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="座艙景觀室">
+                                <span>座艙景觀室</span>
+                                <p>$ 9,000</p>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="無邊際太空泳池">
+                                <span>無邊際太空泳池</span>
+                                <p>$ 3,000</p>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="星際大戰">
+                                <span>星際大戰</span>
+                                <p>$ 5,000</p>
+                            </label></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="booking-customize">
+                <div class="selector_title">
+                    <h2 class="current_member">乘客座位2G</h2>
+                    <h2>客製化體驗服務</h2>
+                </div>
+                <div class="customize-1">
+                    <ul>
+                        <li><label>
+                                <input type="checkbox" value="報紙">
+                                <span>報紙</span>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="眼罩">
+                                <span>商品型錄</span>
+                            </label></li>
+                    </ul>
+                    <ul>
+                        <li><label>
+                                <input type="checkbox" value="報紙">
+                                <span>眼罩</span>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="眼罩">
+                                <span>睡袍</span>
+                            </label></li>
+                    </ul>
+                    <ul>
+                        <li><label>
+                                <input type="checkbox" value="報紙">
+                                <span>枕頭</span>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="眼罩">
+                                <span>護手霜</span>
+                            </label></li>
+                    </ul>
+                    <ul>
+                        <li><label>
+                                <input type="checkbox" value="報紙">
+                                <span>耳塞</span>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="眼罩">
+                                <span>喚醒服務</span>
+                            </label></li>
+                    </ul>
+                    <ul>
+                        <li><label>
+                                <input type="checkbox" value="報紙">
+                                <span>毛毯</span>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="眼罩">
+                                <span>盥洗用具</span>
+                            </label></li>
+                    </ul>
+                </div>
+                <div class="selector_title">
+                    <h2>獨享加價購</h2>
+                </div>
+                <div class="customize">
+                    <ul>
+                        <li><label>
+                                <input type="checkbox" value="太空漫步">
+                                <span>太空漫步</span>
+                                <p>$ 9,000</p>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="座艙景觀室">
+                                <span>座艙景觀室</span>
+                                <p>$ 9,000</p>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="無邊際太空泳池">
+                                <span>無邊際太空泳池</span>
+                                <p>$ 3,000</p>
+                            </label></li>
+                        <li><label>
+                                <input type="checkbox" value="星際大戰">
+                                <span>星際大戰</span>
+                                <p>$ 5,000</p>
+                            </label></li>
+                    </ul>
+                </div>
+            </section>
 
-    @@include("./layout/footer.html")
+            <div class="booking-price">
+                <h5>目前票價總金額</h5>
+                <h5>$ 118,000</h5>
+            </div>
+        </div>
+        <div class="step_button">
+            <div class="btn_general">
+                <a class="btn_square" href="./booking_02.html">上一步</a>
+            </div>
+            <div class="btn_general">
+                <a class="btn_square" href="./booking_04.html">下一步</a>
+            </div>
+        </div>
+        @@include("./layout/footer.html")
+    </section>
     <script src="./js/seat_selector.js"></script>
     <script src="./js/booking_03.js"></script>
     <script src="https://kit.fontawesome.com/ea5d4b1a0a.js" crossorigin="anonymous"></script>

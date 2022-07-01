@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="shortcut icon" href="./images/shortcut.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/booking_01-2_test.css">
+    <title>Stelar X | 太空運輸領航者</title>
+</head>
+
+<body>
+    @@include("./layout/header.html")
+    <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+    <section class="booking-process">
+        <div class="booking-process_each">
+            <div class="process-circle main">
+                <h2>1</h2>
+            </div>
+            <h6>選擇星球</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>2</h2>
+            </div>
+            <h6>日期 / 艙別</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>3</h2>
+            </div>
+            <h6>座位 / 服務</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>4</h2>
+            </div>
+            <h6>資料填寫</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>5</h2>
+            </div>
+            <h6>確認 / 付款</h6>
+        </div>
+        <div class="booking-process_each">
+            <div class="process-circle">
+                <h2>6</h2>
+            </div>
+            <h6>完成</h6>
+        </div>
+    </section>
+    <section class="booking-status">
+        <div class="selector_title">
+            <h2>選擇往返星球</h2>
+        </div>
+        <div class="selector">
+            <div>
+                <p>起始點</p>
+                <div class="btn_status">
+                    <a class="btn_square" href="#">地球</a>
+                </div>
+            </div>
+            <div>
+                <p>目的地</p>
+                <div class="btn_status">
+                    <a class="btn_square" id="end" href="./booking_02.html">選擇到達星球</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 滑鼠滾動示意動畫 -->
+    <div class="mouse_animate">
+        
+        <section class="booking-selection">
+            <div class="booking-flex">
+                <div id="mouse-scroll">
+                    <div class="mouse">
+                        <div class="mouse-in"></div>
+                    </div>
+                </div>
+                <!-- 輪播左邊 背景不動 只星球滑動-->
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="move-display">
+                                <!-- <img class="choose" src="./images/booking/selection.png" alt=""> -->
+                                <img class="planet" id="mars" src="./images/booking/mars.png" alt="">
+                                <!-- <img class="bg" src="./images/booking/selector_bg.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="move-display">
+                                <!-- <img class="choose" src="./images/booking/selection.png" alt=""> -->
+                                <img class="planet" id="jupiter" src="./images/booking/jupiter.png" alt="">
+                                <!-- <img class="bg" src="./images/booking/selector_bg.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="move-display">
+                                <!-- <img class="choose" src="./images/booking/selection.png" alt=""> -->
+                                <img class="planet" id="mercury" src="./images/booking/mercury.png" alt="">
+                                <!-- <img class="bg" src="./images/booking/selector_bg.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="move-display">
+                                <!-- <img class="choose" src="./images/booking/selection.png" alt=""> -->
+                                <img class="planet" id="neptune" src="./images/booking/neptune.png" alt="">
+                                <!-- <img class="bg" src="./images/booking/selector_bg.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="move-display">
+                                <!-- <img class="choose" src="./images/booking/selection.png" alt=""> -->
+                                <img class="planet" id="saturn" src="./images/booking/saturn.png" alt="">
+                                <!-- <img class="bg" src="./images/booking/selector_bg.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="move-display">
+                                <!-- <img class="choose" src="./images/booking/selection.png" alt=""> -->
+                                <img class="planet" id="uranus" src="./images/booking/uranus.png" alt="">
+                                <!-- <img class="bg" src="./images/booking/selector_bg.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="move-display">
+                                <!-- <img class="choose" src="./images/booking/selection.png" alt=""> -->
+                                <img class="planet" id="venus" src="./images/booking/venus.png" alt="">
+                                <!-- <img class="bg" src="./images/booking/selector_bg.png" alt=""> -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="selection-setting">
+                <div class="title2">MARS</div>
+                <h5>最繁華的商業之星</h5>
+                <span class="title5">商務客限定</span>
+                <p>飛行時間七小時<br>到地球的距離 5400 萬公里</p>
+                <a href="./booking_02.html">請選擇出發星球</a>
+            </div>
+
+
+        </section>
+
+
+        <script>
+
+            //星球資料array
+            let planet = ['火星', '木星', '水星', '海王星', '土星', '天王星', '金星'];
+
+            // 輪播開始
+            var swiper = new Swiper(".mySwiper", {
+                effect: "cube",
+                grabCursor: true, //手型控制
+                cubeEffect: {
+                    shadow: false, //球體下面陰影
+                    slideShadows: false, //圖片背景陰影
+                    shadowOffset: 5, //陰影偏移
+                    shadowScale: 0.94, //陰影大小
+                },
+                direction: "vertical",
+                slidesPerView: 1,
+                spaceBetween: 30,
+                mousewheel: true, //滾輪控制
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                on: {
+                    //切换结束时，要做的事
+                    slideChangeTransitionEnd: function () {
+                        //this.activeIndex 目前切换到哪個index
+
+                        $('#end').text(planet[this.activeIndex]);
+                    },
+                    
+                }
+                
+            });
+
+        // // 隨圖換目的地
+        // let end = document.querySelector("#end") //目的地
+        // let mars = document.querySelector("#mars").src   // 火星
+        // let jupiter = document.querySelector("#jupiter").src   // 木星
+        // let mercury = document.querySelector("#mercury").src   // 水星
+        // let neptune = document.querySelector("#neptune").src   // 海王星
+        // let saturn = document.querySelector("#saturn").src   // 土星
+        // let uranus = document.querySelector("#uranus").src   // 天王星
+        // let venus = document.querySelector("#venus").src   // 金星
+        </script>
+
+        @@include("./layout/footer.html")
+
+</body>
+
+</html>
