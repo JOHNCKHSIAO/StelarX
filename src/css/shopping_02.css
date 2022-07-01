@@ -449,7 +449,10 @@ body {
   flex-direction: column;
   align-items: flex-end;
 }
-.main_top .right_word .exchange .Redeem_now h6 {
+.main_top .right_word .exchange .Redeem_now a {
+  text-decoration: none;
+}
+.main_top .right_word .exchange .Redeem_now a h6 {
   width: 85px;
   color: #2B7C33;
   border-bottom: 1px solid #2B7C33;
@@ -511,13 +514,17 @@ body {
 .main_bottom ul li {
   text-align: center;
 }
-.main_bottom ul li img {
+.main_bottom ul li a {
+  text-decoration: none;
+  color: #eee;
+}
+.main_bottom ul li a img {
   height: 300px;
 }
-.main_bottom ul li h4 {
+.main_bottom ul li a h4 {
   margin-top: 40px;
 }
-.main_bottom ul li h5 {
+.main_bottom ul li a h5 {
   margin-top: 24px;
 }
 

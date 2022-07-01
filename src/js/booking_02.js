@@ -1,79 +1,3 @@
-// // 日曆
-// document.addEventListener('DOMContentLoaded', function () {
-//     var calendarEl = document.getElementById('calendar');
-//     var calendar = new FullCalendar.Calendar(calendarEl, {
-//         initialView: 'dayGridMonth',
-//         // locale:'zh-tw',
-//         navLinks: true,
-//         //   headerToolbar:{
-//         //       left: 'prev,next today',
-//         //       center:'title',
-//         //       right:'dayGridMonth,timeGridWeek,timeGridDay'
-//         //   },
-
-//         events: [
-//             {
-//                 title: '08:00 GX商務',
-//                 start: '2022-06-02',
-//                 // end:'2022-07-02'
-//             },
-//             {
-//                 title: '尚餘 3 位',
-//                 start: '2022-06-02',
-//                 allDay: false
-//                 // end:'2022-07-12T16:00:00'
-//             },
-//             {
-//                 title: '08:00 GX商務',
-//                 start: '2022-06-08',
-//                 // end:'2022-07-02'
-//             },
-//             {
-//                 title: '尚餘 3 位',
-//                 start: '2022-06-08',
-//                 allDay: false
-//                 // end:'2022-07-12T16:00:00'
-//             },
-//             {
-//                 title: '08:00 GX商務',
-//                 start: '2022-06-17',
-//                 // end:'2022-07-02'
-//             },
-//             {
-//                 title: '尚餘 3 位',
-//                 start: '2022-06-17',
-//                 allDay: false
-//                 // end:'2022-07-12T16:00:00'
-//             },
-//             {
-//                 title: '08:00 GX商務',
-//                 start: '2022-06-20',
-//                 // end:'2022-07-02'
-//             },
-//             {
-//                 title: '尚餘 3 位',
-//                 start: '2022-06-20',
-//                 allDay: false
-//                 // end:'2022-07-12T16:00:00'
-//             },
-//             {
-//                 title: '08:00 GX商務',
-//                 start: '2022-06-30',
-//                 // end:'2022-07-02'
-//             },
-//             {
-//                 title: '尚餘 8 位',
-//                 start: '2022-06-30',
-//                 allDay: false
-//                 // end:'2022-07-12T16:00:00'
-//             },
-//         ]
-//     });
-
-
-//     calendar.render();
-// });
-
 let vm = new Vue({
     el:'#calendar',
     data:{
@@ -84,13 +8,11 @@ let vm = new Vue({
     },
     methods: {
         select_date(e){
-            this.people=0;
-            
+            this.people=0;       
             // console.log($(e.target.closest('ul')).find('p.on'));
             $(e.target.closest('ul')).find('p.on').removeClass("on");
             // closest 功能為找尋離當前元素最近的父層元素，這裡找到的是ul
             // removeClass 功能為從被選元素移除一個或多個類名
-
             $(e.target).addClass("on");
             // addClass 功能是向被選到元素添加一個或多個類名
             this.select_day=e.target.dataset.day;
@@ -133,7 +55,6 @@ let vm = new Vue({
     updated(){
     },
 })
-
 $('#nextPage').click(function(){
     let order = {};
     order['people']=vm.people;

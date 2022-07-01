@@ -98,10 +98,13 @@ body {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
-                h6 {
-                    width: 85px;
-                    color: #2B7C33;
-                    border-bottom: 1px solid #2B7C33;
+                a{
+                    text-decoration: none;
+                    h6 {
+                        width: 85px;
+                        color: #2B7C33;
+                        border-bottom: 1px solid #2B7C33;
+                    }
                 }
             }
         }
@@ -164,17 +167,20 @@ body {
 
         li {
             text-align: center;
-
-            img {
-                height: 300px;
-            }
-
-            h4 {
-                margin-top: 40px;
-            }
-
-            h5 {
-                margin-top: 24px;
+            a{
+                text-decoration: none;
+                color: #eee;
+                img {
+                    height: 300px;
+                }
+    
+                h4 {
+                    margin-top: 40px;
+                }
+    
+                h5 {
+                    margin-top: 24px;
+                }
             }
         }
     }
