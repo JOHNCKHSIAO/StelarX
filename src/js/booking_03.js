@@ -2,6 +2,7 @@ vm = new Vue({
     el:'#ppl',
     data:{
         number:0,
+       
     },
     methods: {
         minus(){
@@ -16,10 +17,6 @@ vm = new Vue({
         },
         
     }
-})
-
-new Vue({
-    
 })
 
 new Vue({
@@ -54,4 +51,6 @@ new Vue({
     computed: {
 
     },
+
+    
 }) 

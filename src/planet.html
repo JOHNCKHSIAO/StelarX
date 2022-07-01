@@ -10,88 +10,85 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/star.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/planet.css">
     <title>Stelar X | 太空運輸領航者</title>
 </head>
 <body>
+    <section class="star_bg" id="home">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <div class="meteors">
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+        </div>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
     <!-- planet intro section -->
-    <section class="planet-intro">
-        <div class="planet-name">
-            <span class="title1">木星</span><br>
-            <span class="title3">JUPITER</span>
-        </div>
-        <div class="planet-desc">
-            <h4>距離地球 7400 萬公里</h4>
-            <h6>原名 Jupiter 發音相近於邱比特，亦被稱為「邱比特之星」，由於特殊的高壓環境，使木星擁有全銀河獨特的「鑽石海」與「鑽石雨」奇景，進而成為約會首選勝地。</h6>
-        </div>
-    </section>
-
-    <!-- planet selection section -->
-    <section class="planet-selection">
-        <main id="main">
-            <div class="wrapper">
-                <div class="circle">
-                    <div :class="classChange">
-                        <div v-for="(name, index) in names" class="label">
-                            <a class="label__link" @click="rotate(index)">
-                                <div class="label__link-box">
-                                    <!-- <div class="label__index">{{index}}</div> -->
-                                    <div class="label__link-box-center -fake">
-                                        <div class="label__link-box-center-center">
-                                            <div class=" label__link-inner">{{name}}</div>
+    <section class="planet">
+        <section class="planet-intro">
+            <div class="planet-name">
+                <span class="title1">木星</span><br>
+                <span class="title3">JUPITER</span>
+            </div>
+            <div class="planet-desc">
+                <h4>距離地球 7400 萬公里</h4>
+                <h6>原名 Jupiter 發音相近於邱比特，亦被稱為「邱比特之星」，由於特殊的高壓環境，使木星擁有全銀河獨特的「鑽石海」與「鑽石雨」奇景，進而成為約會首選勝地。</h6>
+            </div>
+        </section>
+    
+        <!-- planet selection section -->
+        <section class="planet-selection">
+            <main id="main">
+                <div class="wrapper">
+                    <div class="circle">
+                        <div :class="classChange">
+                            <div v-for="(name, index) in names" class="label">
+                                <a class="label__link" @click="rotate(index)">
+                                    <div class="label__link-box">
+                                        <!-- <div class="label__index">{{index}}</div> -->
+                                        <div class="label__link-box-center -fake">
+                                            <div class="label__link-box-center-center">
+                                                <div class=" label__link-inner">{{name}}</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
+                        <img :src="planetImg" alt="">
                     </div>
-                    <img :src="planetImg" alt="">
                 </div>
+    
+            </main>
+        </section>
+    
+        <!-- planet service intro section -->
+        <section class="planet-service">
+            <div class="planet-activity-intro">
+                <span class="title2">星球季節活動</span>
+                <p>在浩瀚的宇宙中，每顆行星都有不同的運轉時間和季節變換，搭乘 Stelar X 探索 8 大行星的奧秘，讓你達成環遊宇宙的夢想。</p>
             </div>
-
-        </main>
-    </section>
-
-
-
-
-
-
-
+        </section>
     
-
-
-
-
-    
-    <!-- planet service intro section -->
-    <section class="planet-service">
-        <div class="planet-activity-intro">
-            <span class="title2">星球季節活動</span>
-            <p>在浩瀚的宇宙中，每顆行星都有不同的運轉時間和季節變換，搭乘 Stelar X 探索 8 大行星的奧秘，讓你達成環遊宇宙的夢想。</p>
-        </div>
+        <!-- planet service slider -->
+        <section class="planet-activity-slider">
+            <ul>
+                <li class="item1">夜探星空</li>
+                <li class="item2">營火露營</li>
+                <li class="item3">夜賞極光</li>
+                <li class="item4">摘星體驗</li>
+            </ul>
+        </section>
     </section>
-
-    <!-- planet service slider -->
-    <section class="planet-activity-slider">
-        <ul>
-            <li class="item1">夜探星空</li>
-            <li class="item2">營火露營</li>
-            <li class="item3">夜賞極光</li>
-            <li class="item4">摘星體驗</li>
-        </ul>
-    </section>
-
-
-
-
-
-
-
     @@include("./layout/footer.html")
+    </section>
     <script src="./js/planet_v.js"></script>
     <script src="./js/planet.js"></script>
 </body>
