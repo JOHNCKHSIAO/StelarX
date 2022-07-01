@@ -13,7 +13,10 @@
     <link rel="shortcut icon" href="./images/shortcut.png">
     <link rel="stylesheet" href="css/star.css">
     <link rel="stylesheet" href="./css/style.css">
+<<<<<<< HEAD
     <!-- <link rel="stylesheet" href="css/booking_01-2_test.css"> -->
+=======
+>>>>>>> my
     <link rel="stylesheet" href="css/booking_01-2.css">
     <title>Stelar X | 太空運輸領航者</title>
 </head>
@@ -170,6 +173,17 @@
                     <p>飛行時間七小時<br>到地球的距離 5400 萬公里</p>
                     <a href="./booking_02.html" id="confirm">確認目的地</a>
                 </div>
+<<<<<<< HEAD
+=======
+            </div>
+            <div class="selection-setting">
+                <div class="title2">MARS</div>
+                <h5>最繁華的商業之星</h5>
+                <span class="title5">商務客限定</span>
+                <p>飛行時間七小時<br>到地球的距離 5400 萬公里</p>
+                <a onclick="sendPlanet()" href="./booking_02.html">請選擇出發星球</a>
+            </div>
+>>>>>>> my
 
 
             </section>
@@ -177,6 +191,7 @@
 
             <script>
 
+<<<<<<< HEAD
                 //星球資料array
                 let planet = ['火星', '木星', '水星', '海王星', '土星', '天王星', '金星'];
 
@@ -189,6 +204,35 @@
                         slideShadows: false, //圖片背景陰影
                         shadowOffset: 5, //陰影偏移
                         shadowScale: 0.94, //陰影大小
+=======
+            //星球資料array
+            let planet = ['火星', '木星', '水星', '海王星', '土星', '天王星', '金星'];
+            
+            // 輪播開始
+            var swiper = new Swiper(".mySwiper", {
+                effect: "cube",
+                grabCursor: true, //手型控制
+                cubeEffect: {
+                    shadow: false, //球體下面陰影
+                    slideShadows: false, //圖片背景陰影
+                    shadowOffset: 5, //陰影偏移
+                    shadowScale: 0.94, //陰影大小
+                },
+                direction: "vertical",
+                slidesPerView: 1,
+                spaceBetween: 30,
+                mousewheel: true, //滾輪控制
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                on: {
+                    //切换结束时，要做的事
+                    slideChangeTransitionEnd: function () {
+                        //this.activeIndex 目前切换到哪個index
+
+                        $('#end').text(planet[this.activeIndex]);
+>>>>>>> my
                     },
                     direction: "vertical",
                     slidesPerView: 1,
@@ -231,9 +275,20 @@
         // let saturn = document.querySelector("#saturn").src   // 土星
         // let uranus = document.querySelector("#uranus").src   // 天王星
         // let venus = document.querySelector("#venus").src   // 金星
+<<<<<<< HEAD
             </script>
             @@include("./layout/footer.html")
     </section>
+=======
+        function sendPlanet(){
+            console.log(end.innerText);
+            localStorage.setItem('sendPlanet',JSON.stringify(end.innerText))
+        }
+        </script>
+
+        @@include("./layout/footer.html")
+
+>>>>>>> my
 </body>
 
 </html>
