@@ -505,5 +505,8 @@ p {
   font-size: 28px;
   color: #eeeeee;
 }
+.booking-selection a:hover {
+  font-weight: 600;
+}
 
 /*# sourceMappingURL=booking_01-1.css.map */

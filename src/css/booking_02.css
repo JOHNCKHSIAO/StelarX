@@ -209,6 +209,20 @@ p {
   font-size: 16px;
   text-align: center;
 }
+.btn_general .btn_pay {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  border: none;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  background-color: transparent;
+}
 
 .btn_general_sumbmit {
   width: 280px;
@@ -292,14 +306,14 @@ p {
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
-  transition: ease-out 0.3s;
+  transition: ease 0.3s;
   background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
   box-shadow: inset 0 0 0 0 #EEEEEE;
   outline: none;
 }
 .btn_status .btn_square:hover {
   color: #00072E;
-  box-shadow: inset 280px 0 0 0 #EEEEEE;
+  box-shadow: inset 50px 0 0 0 0 #EEEEEE;
 }
 
 .btn_status_submit {
@@ -375,6 +389,10 @@ p {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
+body {
+  color: #eeeeee;
+}
+
 .booking-process {
   width: 900px;
   display: flex;
@@ -416,17 +434,24 @@ p {
   color: #eeeeee;
 }
 
-.booking-status {
+.wrapper {
+  width: 1080px;
+  height: 1800px;
+  background-color: #191F42;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.wrapper .booking-status {
   padding-top: 80px;
   padding-bottom: 120px;
-  width: 800px;
+  width: 900px;
   justify-content: space-evenly;
   margin: 0 auto;
 }
-.booking-status .selector_title {
+.wrapper .booking-status .selector_title {
   position: relative;
 }
-.booking-status .selector_title ::after {
+.wrapper .booking-status .selector_title ::after {
   content: "";
   display: block;
   width: 150px;
@@ -437,36 +462,28 @@ p {
   left: 50%;
   transform: translate(-50%, 0);
 }
-.booking-status .selector_title h2 {
+.wrapper .booking-status .selector_title h2 {
   text-align: center;
   font-size: 26px;
   font-weight: 700;
   color: #eeeeee;
 }
-.booking-status .selector {
-  width: 800px;
+.wrapper .booking-status .selector {
+  width: 900px;
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
   padding-top: 40px;
 }
-.booking-status .selector p {
+.wrapper .booking-status .selector p {
   font-size: 18px;
   color: #EEEEEE;
   text-align: center;
   margin-bottom: 16px;
 }
-
-body {
-  color: #eeeeee;
-}
-
-.wrapper {
-  width: 1080px;
-  height: 1800px;
-  background-color: #191F42;
-  border-radius: 10px;
-  margin: 0 auto;
+.wrapper .booking-status .selector .btn_status {
+  width: 280px;
+  height: 50px;
 }
 
 .booking-cabin .selector_title {
@@ -618,6 +635,10 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 120px;
+}
+.step_button .btn_general {
+  width: 280px;
+  height: 50px;
 }
 
 .calendar ul {
