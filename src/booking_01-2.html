@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="shortcut icon" href="./images/shortcut.png">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="css/booking_01-2_test.css">
+    <link rel="stylesheet" href="css/booking_01-2.css">
     <title>Stelar X | 太空運輸領航者</title>
 </head>
 
@@ -154,7 +154,7 @@
                 <h5>最繁華的商業之星</h5>
                 <span class="title5">商務客限定</span>
                 <p>飛行時間七小時<br>到地球的距離 5400 萬公里</p>
-                <a href="./booking_02.html">請選擇出發星球</a>
+                <a onclick="sendPlanet()" href="./booking_02.html">請選擇出發星球</a>
             </div>
 
 
@@ -165,7 +165,7 @@
 
             //星球資料array
             let planet = ['火星', '木星', '水星', '海王星', '土星', '天王星', '金星'];
-
+            
             // 輪播開始
             var swiper = new Swiper(".mySwiper", {
                 effect: "cube",
@@ -205,6 +205,10 @@
         // let saturn = document.querySelector("#saturn").src   // 土星
         // let uranus = document.querySelector("#uranus").src   // 天王星
         // let venus = document.querySelector("#venus").src   // 金星
+        function sendPlanet(){
+            console.log(end.innerText);
+            localStorage.setItem('sendPlanet',JSON.stringify(end.innerText))
+        }
         </script>
 
         @@include("./layout/footer.html")
