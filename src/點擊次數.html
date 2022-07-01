@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>3 click</title>
+    </head>
+    <body>
+        <div id="app">
+            <p>目前已點擊：{{count}}次</p>
+            <span @click="add(-1)">-</span><span>人數：{{people}}次</span><span @click="add(1)">+</span>
+
+            <input type="submit" value="立即送出" v-on:click="clickme" style="cursor:pointer">
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js"></script>
+        <script>
+            new Vue({
+                el:'#app',
+                data:{
+                    count:0,
+                    people:0,
+                },
+                methods:{
+                    add(arg){
+                        if(arg==1){
+                            this.people+= 1;
+
+                        }else if(arg== -1){
+                            this.people-= 1;
+
+                        }else{
+
+                        }
+                    },
+                    clickme(){
+                        if(this.count<this.people){
+                            this.count += 1;
+
+                        }else{
+                            return
+                        }
+
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -13,9 +13,11 @@
     <link rel="shortcut icon" href="./images/shortcut.png">
     <link rel="stylesheet" href="css/star.css">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="css/booking_01-2_test.css"> -->
-    <link rel="stylesheet" href="css/booking_01-2.css">
-    <title>Stelar X | 太空運輸領航者</title>
+    <<<<<<< HEAD <!-- <link rel="stylesheet" href="css/booking_01-2_test.css"> -->
+        =======
+        >>>>>>> my
+        <link rel="stylesheet" href="css/booking_01-2.css">
+        <title>Stelar X | 太空運輸領航者</title>
 </head>
 
 <body>
@@ -163,12 +165,14 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
+            
+
                 <div class="selection-setting">
                     <div class="title2">MARS</div>
                     <h5>最繁華的商業之星</h5>
                     <span class="title5">商務客限定</span>
                     <p>飛行時間七小時<br>到地球的距離 5400 萬公里</p>
-                    <a href="./booking_02.html" id="confirm">確認目的地</a>
+                    <a onclick="sendPlanet()" href="./booking_02.html">確認目的地</a>
                 </div>
 
 
@@ -204,6 +208,21 @@
                             //this.activeIndex 目前切换到哪個index
 
                             $('#end').text(planet[this.activeIndex]);
+                            // },
+                            // direction: "vertical",
+                            // slidesPerView: 1,
+                            // spaceBetween: 30,
+                            // mousewheel: true, //滾輪控制
+                            // pagination: {
+                            //     el: ".swiper-pagination",
+                            //     clickable: true,
+                            // },
+                            // on: {
+                            //     //切换结束时，要做的事
+                            //     slideChangeTransitionEnd: function () {
+                            //         //this.activeIndex 目前切换到哪個index
+
+                            //         $('#end').text(planet[this.activeIndex]);
 
                         },
 
@@ -213,27 +232,32 @@
 
                 // 取目的地值
                 const confirm = document.querySelector('#confirm');
-                confirm.addEventListener('click',(e)=>{
+                confirm.addEventListener('click', (e) => {
                     e.preventDefault();
                     const dest = document.querySelector('#end').textContent;
                     console.log(dest);
                     localStorage.setItem('dest', dest);
-                    window.location.href ='./booking_02.html';
+                    window.location.href = './booking_02.html';
                 })
-               
 
-        // // 隨圖換目的地
-        // let end = document.querySelector("#end") //目的地
-        // let mars = document.querySelector("#mars").src   // 火星
-        // let jupiter = document.querySelector("#jupiter").src   // 木星
-        // let mercury = document.querySelector("#mercury").src   // 水星
-        // let neptune = document.querySelector("#neptune").src   // 海王星
-        // let saturn = document.querySelector("#saturn").src   // 土星
-        // let uranus = document.querySelector("#uranus").src   // 天王星
-        // let venus = document.querySelector("#venus").src   // 金星
+
+                // // 隨圖換目的地
+                // let end = document.querySelector("#end") //目的地
+                // let mars = document.querySelector("#mars").src   // 火星
+                // let jupiter = document.querySelector("#jupiter").src   // 木星
+                // let mercury = document.querySelector("#mercury").src   // 水星
+                // let neptune = document.querySelector("#neptune").src   // 海王星
+                // let saturn = document.querySelector("#saturn").src   // 土星
+                // let uranus = document.querySelector("#uranus").src   // 天王星
+                // let venus = document.querySelector("#venus").src   // 金星
+                function sendPlanet() {
+                    console.log(end.innerText);
+                    localStorage.setItem('sendPlanet', JSON.stringify(end.innerText))
+                }
             </script>
+
             @@include("./layout/footer.html")
-    </section>
+
 </body>
 
 </html>
