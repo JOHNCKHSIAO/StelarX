@@ -4,6 +4,12 @@
 @import 'mixin/mixin';
 @import 'component/btn';
 
+.planet{
+    position: relative;
+    z-index: 10;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
 // planet intro section
 
 .planet-intro{
@@ -213,7 +219,7 @@ main{
                       width: desktop-size(175);
                       height: desktop-size(175);
                       border-radius: 50%;
-                      box-shadow: 0 0 4.7px 0 rgba(0, 0, 0, 0.75);
+                    //   box-shadow: 0 0 4.7px 0 rgba(0, 0, 0, 0.75);
                       transition: all $global-duration $global-duration $global-time-function;
           
                       &.-active {
