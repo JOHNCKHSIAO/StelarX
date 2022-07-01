@@ -71,22 +71,27 @@
                 <div class="selector_title">
                     <h2>選擇搭乘人數</h2>
                 </div>
-                <div class="select_ppl">
-                    <a class="left" href=""><svg width="20" fill="#eeeeee" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 320 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path
-                                d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z" />
-                        </svg></a>
-                    <h1>2</h1>
-                    <a class="right" href="">
-                        <svg width="20" fill="#eeeeee" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path
-                                d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z" />
-                        </svg>
-                    </a>
-                </div>
+                <section id="ppl">
+                    <div class="select_ppl">
+                        <!-- <a @click="minus" class="left" href=""><svg width="20" fill="#eeeeee" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path
+                                    d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z" />
+                            </svg></a> -->
+                            <div @click="minus" class="left" href=""><svg width="20" fill="#eeeeee" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <path
+                                    d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z" />
+                            </svg></div>
+                        <h1>{{number}}</h1>
+                        <div @click="add" class="right" href="">
+                            <svg width="20" fill="#eeeeee" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z" />
+                            </svg>
+                        </div>
+                    </div>
+                </section>
             </section>
             <section class="booking-seats">
                 <div class="selector_title">
@@ -142,23 +147,23 @@
                     </div>
                     <div class="wrapper">
                         <div class="top_out">
-                            <div class="app_top" :class="{'active':seat.one_a_active}"
-                                @click="seat.one_a_active = !seat.one_a_active">
+                            <div class="app_top" :class="{'active':seat.one_2a_active}"
+                                @click="seat.one_2a_active = !seat.one_2a_active">
                                 <p>2A</p>
                             </div>
-                            <div class="app_top" :class="{'active':seat.one_b_active}"
-                                @click="seat.one_b_active = !seat.one_b_active">
+                            <div class="app_top" :class="{'active':seat.one_2b_active}"
+                                @click="seat.one_2b_active = !seat.one_2b_active">
                                 <p>2B</p>
                             </div>
                         </div>
                         <div class="midden_out">
                             <div class="right_out">
-                                <div class="app_right" :class="{'active':seat.one_c_active}"
-                                    @click="seat.one_c_active = !seat.one_c_active">
+                                <div class="app_right" :class="{'active':seat.one_2c_active}"
+                                    @click="seat.one_2c_active = !seat.one_2c_active">
                                     <p>2H</p>
                                 </div>
-                                <div class="app_right" :class="{'active':seat.one_d_active}"
-                                    @click="seat.one_d_active = !seat.one_d_active">
+                                <div class="app_right" :class="{'active':seat.one_2d_active}"
+                                    @click="seat.one_2d_active = !seat.one_2d_active">
                                     <p>2G</p>
                                 </div>
                             </div>
@@ -166,23 +171,23 @@
                                 <h5>X</h5>
                             </div>
                             <div class="left_out">
-                                <div class="app_left" :class="{'active':seat.one_e_active}"
-                                    @click="seat.one_e_active = !seat.one_e_active">
+                                <div class="app_left" :class="{'active':seat.one_2e_active}"
+                                    @click="seat.one_2e_active = !seat.one_2e_active">
                                     <p>2C</p>
                                 </div>
-                                <div class="app_left" :class="{'active':seat.one_f_active}"
-                                    @click="seat.one_f_active = !seat.one_f_active">
+                                <div class="app_left" :class="{'active':seat.one_2f_active}"
+                                    @click="seat.one_2f_active = !seat.one_2f_active">
                                     <p>2D</p>
                                 </div>
                             </div>
                         </div>
                         <div class="button_out">
-                            <div class="app_top" :class="{'active':seat.one_g_active}"
-                                @click="seat.one_g_active = !seat.one_g_active">
+                            <div class="app_top" :class="{'active':seat.one_2g_active}"
+                                @click="seat.one_2g_active = !seat.one_2g_active">
                                 <p>2F</p>
                             </div>
-                            <div class="app_top" :class="{'active':seat.one_h_active}"
-                                @click="seat.one_h_active = !seat.one_h_active">
+                            <div class="app_top" :class="{'active':seat.one_2h_active}"
+                                @click="seat.one_2h_active = !seat.one_2h_active">
                                 <p>2E</p>
                             </div>
                         </div>

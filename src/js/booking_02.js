@@ -133,6 +133,22 @@ let vm = new Vue({
     updated(){
     },
 })
+
+$('#GX_btn').click(function(e){
+    e.preventDefault()
+$('#X_btn').removeClass('checked')
+$(this).addClass('checked')
+localStorage.setItem('cabin','GX')
+})
+
+$('#X_btn').click(function(e){
+    e.preventDefault()
+    $('#GX_btn').removeClass('checked')
+    $(this).addClass('checked')
+    localStorage.setItem('cabin','X')
+    })
+
+
 $('#nextPage').click(function(){
     let order = {};
     order['people']=vm.people;

@@ -199,7 +199,27 @@ body{
         box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0.1);
     }
 
+    .GX_btn.checked{
+        color: #eeeeee;
+        width: 388px;
+        height: 388px;
+        background-image: url(../images/booking/GX.png);
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0.1);
+    }
+
     .X_btn:hover{
+        color: #eeeeee;
+        width: 388px;
+        height: 388px;
+        background-image: url(../images/booking/X.png);
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0.1);
+    }
+
+    .X_btn.checked{
         color: #eeeeee;
         width: 388px;
         height: 388px;

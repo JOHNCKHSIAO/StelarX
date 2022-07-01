@@ -1,3 +1,27 @@
+vm = new Vue({
+    el:'#ppl',
+    data:{
+        number:0,
+    },
+    methods: {
+        minus(){
+            if(this.number>0){
+                this.number--
+            }
+        },
+        add(){
+            if(this.number<8){
+                this.number++
+            }
+        },
+        
+    }
+})
+
+new Vue({
+    
+})
+
 new Vue({
     el: '#app',
     data: {
@@ -12,6 +36,14 @@ new Vue({
             one_f_active: false,
             one_g_active: false,
             one_h_active: false,
+            one_2a_active: false,
+            one_2b_active: false,
+            one_2c_active: false,
+            one_2d_active: false,
+            one_2e_active: false,
+            one_2f_active: false,
+            one_2g_active: false,
+            one_2h_active: false,
         }
     },
     methods: {
