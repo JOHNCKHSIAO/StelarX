@@ -4,6 +4,11 @@
 @import 'mixin/mixin';
 @import 'component/btn'; 
 
+body{
+    // background-color: #fff;
+    color: #eeeeee;
+}
+
 .booking-process{
     width: 900px;
     display: flex;
@@ -59,70 +64,71 @@
     }
 }
 
-.booking-status{
-    padding-top: 80px;
-    padding-bottom: 120px;
-    width: 800px;
-    // outline: rgb(255, 0, 195) solid 1px;
-    justify-content: space-evenly;
-    margin: 0 auto;
 
-    .selector_title{
-        position:relative;
-     
-    
-        ::after{
-            content: "";
-            display: block;
-            width: 150px;
-            border-bottom: 3px solid #EEEEEE;
-            position: absolute;
-            top: 100%;
-            margin-top: 14px;
-            left: 50%;
-            transform: translate(-50%, 0);
-        }
-        
-        h2{
-            text-align: center;
-            font-size: 26px;
-            font-weight: 700;
-            color: #eeeeee;
-        }
-    }
-
-    .selector{
-        width: 800px;
-    display: flex;
-    // outline: rgb(255, 0, 195) solid 1px;
-    justify-content: space-evenly;
-    margin: 0 auto;
-   padding-top: 40px;
-
-   p{
-    font-size: 18px;
-    color: $white;
-    text-align: center;
-    margin-bottom: 16px;
-}
-    }
-
-}
-
-body{
-    // background-color: #fff;
-    color: #eeeeee;
-}
 .wrapper{
     width: 1080px;
-    height: 1800px;
+    height: 2000px;
     background-color: #191F42;
     border-radius: 10px;
     margin: 0 auto;
 
-
+    .booking-status{
+        padding-top: 80px;
+        padding-bottom: 120px;
+        width: 900px;
+        // outline: rgb(255, 0, 195) solid 1px;
+        justify-content: space-evenly;
+        margin: 0 auto;
     
+        .selector_title{
+            position:relative;
+         
+        
+            ::after{
+                content: "";
+                display: block;
+                width: 150px;
+                border-bottom: 3px solid #EEEEEE;
+                position: absolute;
+                top: 100%;
+                margin-top: 14px;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+            
+            h2{
+                text-align: center;
+                font-size: 26px;
+                font-weight: 700;
+                color: #eeeeee;
+            }
+        }
+    
+        .selector{
+            width: 900px;
+            display: flex;
+            // outline: rgb(255, 0, 195) solid 1px;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            padding-top: 40px;
+    
+       p{
+        font-size: 18px;
+        color: $white;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .btn_status{
+        width: 280px;
+        height: 50px;
+    }
+        }
+    
+    }
 }
+
+
 
 
 .booking-cabin{
@@ -271,7 +277,23 @@ body{
     height: 60px;
 }
 
+// 訂購按鈕
+
+.calendar-days{
+    button{
+        color: #fff;
+        background-color: #987A4D;
+        font-size: 16px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+
 .booking-price{
+    margin-top: 80px;
     display: flex;
     justify-content: space-around;
     background-color: #262d52;
@@ -287,6 +309,11 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 120px;
+
+    .btn_general{
+        width: 280px;
+        height: 50px;
+    }
 }
 
 .calendar{
@@ -306,7 +333,7 @@ body{
                 background-color: rgb(174, 174, 174);
                 cursor: pointer;
                 &:hover{
-                    background-color: #262d52;
+                    background-color: #265228;
                     color: white;
                 }
             }

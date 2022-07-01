@@ -168,7 +168,7 @@
                     <h5>最繁華的商業之星</h5>
                     <span class="title5">商務客限定</span>
                     <p>飛行時間七小時<br>到地球的距離 5400 萬公里</p>
-                    <a href="./booking_02.html">確認目的地</a>
+                    <a href="./booking_02.html" id="confirm">確認目的地</a>
                 </div>
 
 
@@ -204,11 +204,23 @@
                             //this.activeIndex 目前切换到哪個index
 
                             $('#end').text(planet[this.activeIndex]);
+
                         },
 
                     }
 
                 });
+
+                // 取目的地值
+                const confirm = document.querySelector('#confirm');
+                confirm.addEventListener('click',(e)=>{
+                    e.preventDefault();
+                    const dest = document.querySelector('#end').textContent;
+                    console.log(dest);
+                    localStorage.setItem('dest', dest);
+                    window.location.href ='./booking_02.html';
+                })
+               
 
         // // 隨圖換目的地
         // let end = document.querySelector("#end") //目的地

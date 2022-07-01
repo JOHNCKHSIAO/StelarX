@@ -7,7 +7,7 @@ body {
 
 .calendar {
   width: 100%;
-  background-color: rgb(116, 116, 116);
+  background-color: #7C7C7C;
   border-radius: 30px;
   padding: 20px;
   position: relative;
@@ -16,9 +16,9 @@ body {
 
 .calendar-header {
   text-align: center;
-  font-size: 25px;
+  font-size: 24px;
   color: rgb(255, 255, 255);
-  padding: 10px;
+  padding: 40px;
 }
 
 .month-picker {
@@ -46,9 +46,11 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   font-weight: 600;
+  background-color: #686868;
 }
 
 .calendar-week-day div {
+  font-size: 16px;
   display: grid;
   place-items: center;
   color: rgb(255, 255, 255);
@@ -85,17 +87,22 @@ body {
 }
 .calendar-days {
   .date {
-    background-color: rgb(214, 214, 214);
+    background-color: #9f9f9f;
   }
   .thisMonth {
-    color: black;
-    background-color: white;
+    color: #00072E;
+    background-color: #eee;
     &.active {
       background-color: rgb(255, 0, 0);
     }
+    div{
+      font-size: 24px;
+      color: #7C7C7C;
+      font-weight: 400;
+    }
   }
   .isToday {
-    background-color: aqua;
+    background-color: #191F42;
   }
 }
 
