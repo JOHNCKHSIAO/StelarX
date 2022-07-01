@@ -20,8 +20,7 @@
         //基本參數(請依系統規劃自行調整)
         $MerchantTradeNo = "Test".time() ;
         $obj->Send['ReturnURL']         = "http://www.ecpay.com.tw/receive.php" ;    //付款完成通知回傳的網址
-        $obj->Send['clientBackURL']         = "http://127.0.0.1/StelarX/dist/booking_06.html" ;    //付款完成返回完成預約
-
+        $obj->Send['ClientBackURL']         = "https://tibamef2e.com/tgd101/g1/dist/booking_06.html" ;    //付款完成返回完成預約
         $obj->Send['MerchantTradeNo']   = $MerchantTradeNo;                          //訂單編號
         $obj->Send['MerchantTradeDate'] = date('Y/m/d H:i:s');                       //交易時間
         $obj->Send['TotalAmount']       = 2000;                                      //交易金額
