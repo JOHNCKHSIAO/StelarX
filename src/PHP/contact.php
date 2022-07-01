@@ -32,8 +32,8 @@
 // echo ($_POST["name"]);
 // $data = $_POST;
 print_r($_POST); //ok 有抓到值
-$sql = " INSERT INTO `stellarx`.`message` ( `NAME`, `CELLPHONE`, `E_MAIL`, `DESTINATION`, `CONTENT`, `MESSAGE_DATE`) 
-VALUES (:name , :CELLPHONE , :E_MAIL ,:DESTINATION , :CONTENT ,Now()); ";
+$sql = " INSERT INTO message( `NAME`, `CELLPHONE`, `E_MAIL`, `DESTINATION`, `CONTENT`, `MESSAGE_DATE`) 
+VALUES (:name , :CELLPHONE , :E_MAIL ,:DESTINATION , :CONTENT ,current_date()); ";
     
   $statement = $pdo->prepare($sql);
   $statement->bindValue(":name", $_POST["name"]);

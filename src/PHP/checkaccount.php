@@ -23,7 +23,7 @@
 
     if ($abc==true){
       // $accountValue = $data["account"];
-      $sql = " SELECT ACCOUNT FROM stellarx.member where ACCOUNT = :account " ;
+      $sql = " SELECT ACCOUNT FROM member where ACCOUNT = :account " ;
       $statement = $pdo->prepare($sql);
       $statement->bindValue(":account", $data["account"]);
       $statement->execute();

@@ -26,10 +26,10 @@ session_start();
 
 // ];
 // print_r($memberData);
-$sql1 = "select * from stellarx.member where ACCOUNT = :account ";
-$sql2 = "select DEPARTURE_TIME, MILEAGE ,ORINGIN , ORINGIN from stellarx.V_member_center_miles2 where ACCOUNT = :account ";
+$sql1 = "select * from member where ACCOUNT = :account ";
+$sql2 = "select DEPARTURE_TIME, MILEAGE ,ORINGIN , ORINGIN from V_member_center_miles2 where ACCOUNT = :account ";
 $sql3 = "select SHOPPING_ID, DELIVERY_DATE ,RECEIVER , RECEIVER_PHONE,RECEIVER_LOCATION, COMMODITY_NAME,QUANTITY 
-        from stellarx.V_member_shopping3 where ACCOUNT = :account ";
+        from V_member_shopping3 where ACCOUNT = :account ";
 
 function select($SESSIONarg,$PDOarg,$SQLarg){ //第一個參數要放Session
     $stmt1 = $PDOarg->prepare($SQLarg);

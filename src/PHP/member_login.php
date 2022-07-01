@@ -21,7 +21,7 @@ include("connection.php");
 
 $member = $_POST;
 
-$sql1 = "select ACCOUNT,PASSWORD from stellarx.member
+$sql1 = "select ACCOUNT,PASSWORD from member
 where ACCOUNT = :account ";
 
 // $sql2 = "select ACCOUNT, PASSWORD from stellarx.member

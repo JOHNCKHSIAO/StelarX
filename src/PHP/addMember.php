@@ -15,7 +15,7 @@
     // VALUES ($data["account".,.'$data["password"]'., .'$data["id"]'., .'$data["name"]'., '$data["lastName"]',.'$data["email"]'., .'$data["cellphone"]'., .'$data['companyNum']'., 'Now()', 1) ";
 
     $arr = json_decode(file_get_contents('php://input'), true);
-    $sql = " INSERT INTO stellarx.member (ACCOUNT, PASSWORD, PERSONAL_ID, NAME, LASTNAME, E_MAIL, CELLPHONE, BUSINESS, MEMBER_DATE, SITUATION) 
+    $sql = " INSERT INTO member (ACCOUNT, PASSWORD, PERSONAL_ID, NAME, LASTNAME, E_MAIL, CELLPHONE, BUSINESS, MEMBER_DATE, SITUATION) 
     VALUES (:account , :password , :personalId , :name , :lastName , :email , :cellphone , :companyNum , current_date() , 1) ";
     
     $statement = $pdo->prepare($sql);
