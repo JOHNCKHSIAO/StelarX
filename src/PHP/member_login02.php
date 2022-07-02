@@ -26,10 +26,10 @@ session_start();
 
 // ];
 // print_r($memberData);
-$sql1 = "select * from member where ACCOUNT = :account ";
-$sql2 = "select DEPARTURE_TIME, MILEAGE ,ORINGIN , ORINGIN from V_member_center_miles2 where ACCOUNT = :account ";
-$sql3 = "select SHOPPING_ID, DELIVERY_DATE ,RECEIVER , RECEIVER_PHONE,RECEIVER_LOCATION, COMMODITY_NAME,QUANTITY 
-        from V_member_shopping3 where ACCOUNT = :account ";
+$sql1 = "select ID, LASTNAME , NAME ,BUSINESS ,MEMBER_DATE from member where ACCOUNT = :account ";
+$sql2 = "select sum(MILEAGE) as TOTALLMILES from v_member_center_miles2 where ACCOUNT = :account ";
+// $sql3 = "select SHOPPING_ID, DELIVERY_DATE ,RECEIVER , RECEIVER_PHONE,RECEIVER_LOCATION, COMMODITY_NAME,QUANTITY 
+//         from V_member_shopping3 where ACCOUNT = :account ";
 
 function select($SESSIONarg,$PDOarg,$SQLarg){ //第一個參數要放Session
     $stmt1 = $PDOarg->prepare($SQLarg);
@@ -61,16 +61,16 @@ function toSingleArr($ARRAYarg){
 
 $Member_Data = select($_SESSION["memberAccount"],$pdo,$sql1);
 $Flight_Data = select($_SESSION["memberAccount"],$pdo,$sql2);
-$Shopping_Data = select($_SESSION["memberAccount"],$pdo,$sql3);
+// $Shopping_Data = select($_SESSION["memberAccount"],$pdo,$sql3);
 
 $Member_DataArr = toSingleArr($Member_Data);
 $Flight_DataArr = toSingleArr($Flight_Data);
-$Shopping_DataArr = toSingleArr($Shopping_Data);
+// $Shopping_DataArr = toSingleArr($Shopping_Data);
 
 $RETURN_ARR = [
     "MEMBER_DATA" => $Member_DataArr,
     "FLIGHT_DATA" => $Flight_DataArr,
-    "SHOPPING_DATA" => $Shopping_DataArr,
+    // "SHOPPING_DATA" => $Shopping_DataArr,
 ];
 
 echo json_encode($RETURN_ARR);

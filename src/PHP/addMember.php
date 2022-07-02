@@ -29,6 +29,20 @@
     $statement->bindValue(":companyNum", $arr["companyNum"]);
     $statement->execute();
 
+ 
+
+      $sql2 = "SELECT * FROM member WHERE ACCOUNT = :account ";
+      $statement = $pdo->prepare($sql2);
+      $statement->bindValue(":account", $arr["account"]);
+      $statement->execute();
+      $data = $statement->fetchAll();
+      // print_r($data);
+      if(count($data)!= 0){
+        echo("OK");
+      }else{
+        echo("False");
+      }
+
 
     // echo gettype($data);
     // print_r($data);

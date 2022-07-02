@@ -11,29 +11,17 @@ const vm = new Vue({
            
         },
         miles_data:{
-           //抓一個二維陣列 透過迴圈把各個陣列取出來 一個陣列渲染一個區塊
-
+            totallmiles:"",
+            milesArray:[],
+          
         },
-        miles:[],//把里程總數->轉成陣列 逐項帶入格子
+       
 
 
         
     },
     methods:{
-        // onloadandfetch(){
-        //     fetch("./PHP/member_login02.php")
-        // .then(res=>res.json())
-        // .then(res=>{
-        //     console.log(res["FLIGHT_DATA"]);
-        //     console.log(res["MEMBER_DATA"]);
-        //     console.log(res["SHOPPING_DATA"]);
-        //     res["MEMBER_DATA"][5] = this.personal_data.lastName;
-        //     res["MEMBER_DATA"][4] = this.personal_data.name;
-        //     res["MEMBER_DATA"][0] = this.personal_data.memberID;
-        //     res["MEMBER_DATA"][9] = this.personal_data.memberDate;
 
-        // })
-        // }
       
 
     },
@@ -42,33 +30,41 @@ const vm = new Vue({
     },
     watch: {},
     beforeCreate() {
-        // fetch("./PHP/member_login02.php")
-        // .then(res=>res.json())
-        // .then(res=>{
-        //     console.log(res["FLIGHT_DATA"]);
-        //     console.log(res["MEMBER_DATA"]);
-        //     console.log(res["SHOPPING_DATA"]);
-        //     res["MEMBER_DATA"][5] = this.personal_data.lastName;
-        //     res["MEMBER_DATA"][4] = this.personal_data.name;
-        //     res["MEMBER_DATA"][0] = this.personal_data.memberID;
-        //     res["MEMBER_DATA"][9] = this.personal_data.memberDate;
-
-        // })
+       
     },
     created() {
         fetch("./PHP/member_login02.php")
         .then(res=>res.json())
         .then(res=>{
-            // console.log(res["FLIGHT_DATA"]);
-            console.log(res["MEMBER_DATA"]);
-            let arr = res["MEMBER_DATA"][0];
-            console.log(arr);
-            this.personal_data.lastName = arr[5];
-            this.personal_data.name = arr[4];
-            this.personal_data.memberID = arr[0]; 
-            this.personal_data.memberDate = arr[9];
-            
+            console.log(res);
+            let MEMBER_DATA = res["MEMBER_DATA"];
+            let FLIGHT_DATA = res["FLIGHT_DATA"];
+            this.personal_data.lastName = MEMBER_DATA[0][1];
+            this.personal_data.name = MEMBER_DATA[0][2];
+            if(MEMBER_DATA[0][3]){
+                this.personal_data.membertype = "商業會員";
+            }else{
+                this.personal_data.membertype ="一般會員";
+            }
+            this.personal_data.memberID =  MEMBER_DATA[0][0];
+            this.personal_data.memberDate = MEMBER_DATA[0][4];
+            //這邊處理里程
+            let miles = FLIGHT_DATA[0][0];
+            miles = (miles/10000);
+            this.miles_data.totallmiles = miles;
+            //里程切成陣列
+            let stringMiles = String(miles);
+            console.log(stringMiles);
+            let  MilesARR = stringMiles.split("");
+            // console.log(MilesARR.length);
+            let count=(11-MilesARR.length);
+            for(let i=0; i<=count; i++){
+                MilesARR.unshift(0);
+            }
+            // console.log(MilesARR);
+            this.miles_data.milesArray = MilesARR;
 
+            
         })
     },
     beforeMount() {
