@@ -252,6 +252,10 @@
   font-family: "Roboto Serif", serif;
 }
 
+.index1440 {
+  position: relative;
+  z-index: 1;
+}
 .index1440 .index1080 {
   width: 1080px;
   margin: 0 auto;

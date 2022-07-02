@@ -154,16 +154,16 @@
                     <h2 class="my_tra_tit2">免費預約諮詢服務</h2>
                     <h4 class="my_tra_tit3">提供您欲搭乘的路線，將有客服提供相關行程安排建議，工作天約 3 - 5 天回信</h4>
                 </div>
-                <form class="my_tra_form" action="">
+                <form class="my_tra_form" id="my_tra_form" name="my_tra_form" enctype="multipart/form-data">
                     <div class="my_traNaTel">
                         <div class="my_traNaTelLeft">
                             <h5 class="my_tra_name">姓名</h5>
-                            <input class="my_tra_in" type="name" name="name" id="">
+                            <input class="my_tra_in" type="name" name="name" id="input_name">
                         </div>
 
                         <div class="my_traNaTelRight">
                             <h5 class="my_tra_tel">電話</h5>
-                            <input class="my_tra_in" type="tel" name="tel" id="">
+                            <input class="my_tra_in" type="tel" name="tel" id="input_tel">
                         </div>
 
 
@@ -177,22 +177,22 @@
                     <div class="my_traEmPlSele">
                         <div class="my_traEmPlSeleLeft">
                             <h5 class="my_tra_email"> 信箱</h5>
-                            <input class="my_tra_in" type="name" name="name" id="">
+                            <input class="my_tra_in" type="name" name="email" id="input_email">
 
                         </div>
                         <div class="my_traEmPlSeleRight">
                             <h5 class="my_tra_pla">欲到達的行星</h5>
 
-                            <select class="my_pla_sel">
-                                <option>請選擇你的目的地</option>
-                                <option>海王星</option>
-                                <option>水星</option>
-                                <option>天王星</option>
-                                <option>木星</option>
-                                <option>火星</option>
-                                <option>地球</option>
-                                <option>金星</option>
-                                <option>土星</option>
+                            <select class="my_pla_sel" name="option">
+                                <!-- <option>請選擇你的目的地</option> -->
+                                <option value="海王星">海王星</option>
+                                <option value="水星">水星</option>
+                                <option value="天王星">天王星</option>
+                                <option value="木星">木星</option>
+                                <option value="火星">火星</option>
+                                <option value="地球">地球</option>
+                                <option value="金星">金星</option>
+                                <option value="土星">土星</option>
 
                             </select>
                         </div>
@@ -205,16 +205,16 @@
                     <div class="my_tra_down">
 
                         <h5 class="my_tra_text">告訴我們您的期待</h5>
-                        <textarea class="my_tra_mes" name="" id="" cols="30" rows="10"></textarea>
+                        <textarea class="my_tra_mes" name="textarea" id="textarea" cols="30" rows="10"></textarea>
                     </div>
 
                     <!-- 按鈕 -->
-                    <div class="btn_cta">
+                    <div class="btn_cta" id="btn">
                         <div class="aLink">立即諮詢<img src="./images/ctz_dec.png" alt=""></div>
                     </div>
                     <!-- 按鈕 -->
 
-                    
+                    <button style="display: none;" id="send_data">送出</button>
                    
                 </form>
 

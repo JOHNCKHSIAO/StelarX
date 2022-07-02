@@ -6,7 +6,7 @@ header{
 nav{
     // background-color: hsl(231, 100%, 9%);
     margin-top: 40px;
-   margin-bottom: 120px;
+    margin-bottom: 120px;
     text-align: center; 
     align-items: center;   
     }
@@ -38,6 +38,25 @@ nav{
 
 .shoppiingicon{
     display: flex;
+    a{
+        position: relative;
+        .Shopp_add{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(245, 40, 40);
+            color: #eee;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+
+            position: absolute;
+            top: -27%;
+            right: -42%;
+
+            z-index: 100;
+        }
+    }
 }
 
 .item_list{
@@ -69,6 +88,7 @@ nav{
     border-radius: 50px;
 
     a{
+        font-size: 16px;
         color: #eeeeee;
         text-decoration: none;
     }

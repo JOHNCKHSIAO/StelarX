@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/calendat.css" />
+  </head>
+  <body>
+    <div id="app">
+      <template>
+        <!-- 月份選擇器，支持左右箭頭修改月份 -->
+
+        <div class="calendar">
+          <div class="calendar-header">
+            <div class="year-picker">
+              <span class="year-change" id="prev-year" @click="reduceMonth()">
+                <pre><</pre>
+              </span>
+              <span id="year"
+                >{{ time.year }}年{{ time.month + 1 > 9 ? time.month + 1 : '0' +
+                (time.month + 1) }}月</span
+              >
+              <span class="year-change" id="next-year" @click="addMonth()">
+                <pre>></pre>
+              </span>
+            </div>
+          </div>
+          <div class="calendar-body">
+            <div class="calendar-week-day">
+              <div>日</div>
+              <div>一</div>
+              <div>二</div>
+              <div>三</div>
+              <div>四</div>
+              <div>五</div>
+              <div>六</div>
+            </div>
+            <div class="calendar-days">
+              <!-- 日曆號 -->
+              <div
+                class="date"
+                :class="[item.thisMonth, item.isToday, item.afterToday,{'active':item.active}]"
+                v-for="(item, index) in visibleCalendar"
+                :key="index"
+                @click="getDate((item.month+1), item.day)"
+              >
+                <div>{{ item.day }}</div>
+                <button>訂購</button>
+              </div>
+            </div>
+          </div>
+          <div class="month-list"></div>
+        </div>
+      </template>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data() {
+          return {
+            time: {
+              year: new Date().getFullYear(),
+              month: new Date().getMonth(),
+            },
+            calendarArr: [],
+          };
+        },
+        computed: {
+          // 獲取當前月份顯示日曆,共42天
+          visibleCalendar: function () {
+            // 獲取今天的年月日
+            const today = new Date();
+            today.setHours(0);
+            today.setMinutes(0);
+            today.setSeconds(0);
+            today.setMilliseconds(0);
+            const calendarArr = [];
+            // 獲取當前月份第一天
+            const currentFirstDay = new Date(
+              this.time.year,
+              this.time.month,
+              1
+            );
+            // 獲取第一天是周幾
+            const weekDay = currentFirstDay.getDay();
+            // 用當前月份第一天减去周幾前面幾天，就是看見的日曆的第一天
+            const startDay = currentFirstDay - (weekDay - 1) * 24 * 3600 * 1000;
+            // 我們統一用42天來顯示當前顯示日曆
+            for (let i = 0; i < 35; i++) {
+              const date = new Date(startDay + i * 24 * 3600 * 1000);
+              calendarArr.push({
+                date: new Date(startDay + i * 24 * 3600 * 1000),
+                year: date.getFullYear(),
+                month: date.getMonth(),
+                day: date.getDate(),
+                // 是否在當月
+                thisMonth:
+                  date.getFullYear() === today.getFullYear() &&
+                  date.getMonth() === today.getMonth()
+                    ? "thisMonth"
+                    : "",
+                // 是否是今天
+                isToday:
+                  date.getFullYear() === today.getFullYear() &&
+                  date.getMonth() === today.getMonth() &&
+                  date.getDate() === today.getDate()
+                    ? "isToday"
+                    : "",
+                // 是否在今天之後
+                afterToday:
+                  date.getTime() >= today.getTime() ? "afterToday" : "",
+              });
+            }
+            return calendarArr;
+          },
+        },
+        methods: {
+          test(e) {
+            console.log(e);
+            console.log(123);
+            e.classList.add("active");
+          },
+          reduceMonth() {
+            if (this.time.month > 0) {
+              this.time.month = this.time.month - 1;
+            } else {
+              this.time.month = 11;
+              this.time.year = this.time.year - 1;
+            }
+          },
+          addMonth() {
+            if (this.time.month < 11) {
+              this.time.month = this.time.month + 1;
+            } else {
+              this.time.month = 0;
+              this.time.year = this.time.year + 1;
+            }
+          },
+          getDate(m, d){
+            alert('天:'+(d));
+
+            
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

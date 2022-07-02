@@ -4,6 +4,7 @@
 @import 'mixin/mixin';
 @import 'component/btn';
 
+
 .booking-process{
     width: 900px;
     display: flex;
@@ -118,7 +119,6 @@
    align-items: center;
    background-image: $linear;
    position: relative;
-   
 
    .choose{
     position:absolute;
@@ -148,5 +148,9 @@
    a{
     font-size: 28px;
     color: #eeeeee;
+
+    &:hover{
+        font-weight: 600;
+     }
    }
 }
