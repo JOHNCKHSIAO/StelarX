@@ -3,10 +3,10 @@
     include("connection.php");
 
     $data = json_decode(file_get_contents('php://input'), true);
-    //echo $data["account"]; //ok 有值
+    // echo $data["account"]; //ok 有值
    //echo gettype($data); // ok 是array
    $abc = array_key_exists("account",$data); //判斷是否有"account" 這個key 因為有可能要驗證ID
-   //  echo $abc; //回傳布林值 但是echo 會是0 或1
+    // echo $abc; //回傳布林值 但是echo 會是0 或1
   //  $SQL = "
   //       select * from MEMBER where username = :username
   //   ";
@@ -21,7 +21,7 @@
 
 
 
-    if ($abc==true){
+    if ($abc==1){
       // $accountValue = $data["account"];
       $sql = " SELECT ACCOUNT FROM member where ACCOUNT = :account " ;
       $statement = $pdo->prepare($sql);
@@ -36,9 +36,11 @@
 
     }else{
       $inputIDValue = $data["inputID"];
-      $sql = "SELECT PERSONAL_ID FROM stellarx.member where PERSONAL_ID = :inputId ";
+      // echo"else";
+      // echo $inputIDValue;
+      $sql = "SELECT PERSONAL_ID FROM member where PERSONAL_ID = :inputId ";
       $statement = $pdo->prepare($sql);
-      $statement->bindValue(":inputId", $data["inputID"]);
+      $statement->bindValue(":inputId", $inputIDValue);
       $statement->execute();
       $data = $statement->fetchAll();
       // print_r($data);
