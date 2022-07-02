@@ -7,42 +7,39 @@
 // planet intro section
 
 .planet-intro{
-    // outline: yellow 2px solid;
+    border: 2px solid firebrick;
     width: 900px;
     color: $white;
     display: flex;
-    justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 64px;
 
     .planet-name{
+        border: 1px solid yellow;
         width: 450px;
         text-align: center;
+        // justify-self: center;
 
-        .title1{
-            font-size: 90px;
-            line-height: 90px;
-        }
+        h1{}
 
-        .title3{
-            font-size: 30px;
+        h5{
             color: $gold;
-            margin-top: 80px;
         }
     }
 
     .planet-desc{
+        border: 1px solid green;
         width: 450px;
 
         h4{
-            font-size: 28px;
-            font-weight: 700;
+            // font-size: 28px;
+            font-weight: 500;
             color: $gold;
         }
 
         h6{
-            font-size: 20px;
-            margin-top: 6px;
+            // font-size: 20px;
+            margin-top: 10px;
         }
     }
 }

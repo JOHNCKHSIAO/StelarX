@@ -17,6 +17,7 @@ body{
     background-repeat: no-repeat;
     padding-top: $spacing_120px;
 
+
     .fv-main{
         width: 650px;
         height: 300px;
@@ -128,12 +129,12 @@ body{
 // -------------------------------- 火箭引擎 --------------------------------
 
 .rocket-engine{
-
-    //缺星空背景
+    // border: 1px solid firebrick;
 
     img{
         display: block;
         margin: auto;
+        position: relative;
     }
 
     .engine-info{
@@ -185,8 +186,6 @@ body{
 
 .rocket-info{
     
-    //缺背景
-    
     
     // -------------- 火箭資訊_上方數據 --------------
     
@@ -226,6 +225,7 @@ body{
             img{
                 width: 300px;
                 margin-left: 100px;
+                position: relative;
             }
         }
 
@@ -578,17 +578,17 @@ body{
         .event-info{
             width: 920px;
             height: 450px;
-            background-color: rgb(0, 0, 0, 50%);
+            background-color: rgb(0, 0, 0, 60%);
     
             position: absolute;
             top: $spacing_80px;
             right: 0;
             
-            h2{
+            h3{
                 line-height: 1;
                 margin: $spacing_80px 0 $spacing_80px $spacing_120px;
             }
-            h5{
+            h6{
                 font-weight: 300;
                 margin-left: 200px;
             }
@@ -660,7 +660,6 @@ body{
 // -------------------------------- 火箭_更多連結 -----------------------------
 
 .rocket-more{
-    //缺背景
 
     .more-wrapper{
         width: 1080px;
