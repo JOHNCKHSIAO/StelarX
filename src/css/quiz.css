@@ -326,7 +326,6 @@ body {
   background-color: #00072E;
 }
 
-/*------- 照片固定參數 -------*/
 /*------ 固定文字 -----*/
 .title3 {
   color: #EEEEEE;
@@ -482,6 +481,127 @@ body {
   width: 300px;
   height: 300px;
   position: relative;
+}
+
+/*-------------- RWD手機板 --------------*/
+@media screen and (max-width: 414.98px) {
+  .text_side {
+    width: 100%;
+  }
+  #WoldHover:hover #wold_quiz {
+    background-color: rgba(31, 31, 31, 0.4);
+    display: none;
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.9);
+  }
+  /*-------------- 第一題測驗遊戲 --------------*/
+  .quiz01 {
+    width: 100%;
+    text-align: center;
+  }
+  .quiz01 .title3 {
+    font-size: 18px;
+  }
+  .quiz01 .hrgold {
+    margin-top: 12px;
+  }
+  .quiz01 .allimg {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 32px;
+    display: block;
+  }
+  .quiz01 .allimg img {
+    width: 200px;
+    height: 200px;
+  }
+  .quiz01 .allimg .playBlock {
+    height: 100%;
+    margin-bottom: 28px;
+  }
+  .quiz01 .allimg .relaxBlock {
+    height: 100%;
+  }
+  .quiz01 .allimg #WoldHover {
+    width: 100%;
+    position: relative;
+  }
+  .quiz01 .allimg #wold_quiz {
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 70px;
+  }
+  /*-------------- 第二題(放鬆)測驗遊戲 --------------*/
+  .quiz02_1 {
+    width: 100%;
+    text-align: center;
+  }
+  .quiz02_1 .title3 {
+    font-size: 18px;
+  }
+  .quiz02_1 .hrgold {
+    margin-top: 12px;
+  }
+  .quiz02_1 .all_twoimg {
+    width: 100%;
+    padding: 0;
+    margin-top: 32px;
+    display: block;
+  }
+  .quiz02_1 .all_twoimg img {
+    width: 200px;
+    height: 200px;
+  }
+  .quiz02_1 .all_twoimg #WoldHover {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .quiz02_1 .all_twoimg #wold_quiz {
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 70px;
+  }
+  /*-------------- 第二(玩樂)題測驗遊戲 --------------*/
+  .quiz02_2 {
+    width: 100%;
+    text-align: center;
+  }
+  .quiz02_2 .title3 {
+    font-size: 18px;
+  }
+  .quiz02_2 .hrgold {
+    margin-top: 12px;
+  }
+  .quiz02_2 .all_twoimg {
+    width: 100%;
+    padding: 0;
+    margin-top: 32px;
+    display: block;
+  }
+  .quiz02_2 .all_twoimg img {
+    width: 200px;
+    height: 200px;
+  }
+  .quiz02_2 .all_twoimg #WoldHover {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .quiz02_2 .all_twoimg #wold_quiz {
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 70px;
+  }
 }
 
 /*# sourceMappingURL=quiz.css.map */
