@@ -75,35 +75,27 @@
         <div class="booking_text">
             <div class="form">
                 <label for="date" class="form__label"><h5>日期</h5></label>
-                <input type="text" class="form__input" value="2022/8/15" readonly="readonly">
+                <input type="text" class="form__input" value="2022/{{m}}/{{d}}" readonly="readonly">
             </div>
             <div class="form">
                 <label for="flight" class="form__label"><h5>航班</h5></label>
                 <input type="text" class="form__input" value="000000" readonly="readonly">
             </div>
             <div class="form">
-                <label for="deptime" class="form__label"><h5>出發時間</h5></label>
-                <input type="text" class="form__input" value="11:20" readonly="readonly">
-            </div>
-            <div class="form">
-                <label for="arrtime" class="form__label"><h5>到達時間</h5></label>
-                <input type="text" class="form__input" value="21:20" readonly="readonly">
-            </div>
-            <div class="form">
                 <label for="gate" class="form__label"><h5>艙別</h5></label>
-                <input type="text" class="form__input" value="GX" readonly="readonly">
+                <input type="text" class="form__input" value="{{cabin}}" readonly="readonly">
             </div>
             <div class="form">
-                <label for="seat" class="form__label"><h5>座位</h5></label>
-                <input type="text" class="form__input" value="TGD101" readonly="readonly">
+                <label for="seat" class="form__label"><h5>目的地</h5></label>
+                <input type="text" class="form__input" value="{{dest}}" readonly="readonly">
             </div>
             <div class="form">
                 <label for="people" class="form__label"><h5>人數</h5></label>
-                <input type="text" class="form__input" value="2" readonly="readonly">
+                <input type="text" class="form__input" value="{{ppl}}" readonly="readonly">
             </div>
             <div class="form">
                 <label for="dollor" class="form__label"><h5>票價金額</h5></label>
-                <input type="text" class="form__input" value="3000" readonly="readonly">
+                <input type="text" class="form__input" value="{{price}}" readonly="readonly">
             </div>
         </div>
     </section>
