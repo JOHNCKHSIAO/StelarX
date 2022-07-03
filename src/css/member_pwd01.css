@@ -130,8 +130,8 @@ p {
 }
 
 .btn_cta {
-  width: 200px;
-  height: 36px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   cursor: pointer;
@@ -145,9 +145,9 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 50px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   position: relative;
 }
@@ -159,8 +159,8 @@ p {
 }
 
 .btn_cta_submit {
-  width: 200px;
-  height: 36px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   background: #00072E;
@@ -175,9 +175,9 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 50px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   position: relative;
 }
@@ -189,29 +189,44 @@ p {
 }
 
 .btn_general {
-  width: 200px;
-  height: 36px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
 .btn_general:hover {
-  border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  transition: ease-out 0.5s;
+  border: none;
 }
 .btn_general .btn_square {
   display: block;
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 50px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
+}
+.btn_general .btn_pay {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  border: none;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  background-color: transparent;
 }
 
 .btn_general_sumbmit {
-  width: 200px;
-  height: 36px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   background: #00072E;
   cursor: pointer;
@@ -225,15 +240,60 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 50px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 
+.btn_flow {
+  position: relative;
+  background-color: #000000;
+  line-height: 60px;
+  font-size: 20px;
+  color: #FFF;
+  width: 300px;
+  text-align: center;
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  z-index: 1;
+  cursor: pointer;
+}
+.btn_flow:hover {
+  animation: show 8s linear infinite;
+}
+@keyframes show {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.btn_flow::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0;
+}
+
+.btn_flow:hover::before {
+  opacity: 1;
+  animation: show 8s linear infinite;
+}
+
 .btn_status {
-  width: 200px;
-  height: 36px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
@@ -242,36 +302,42 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 50px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
+  transition: ease 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
 }
 .btn_status .btn_square:hover {
-  background: #EEEEEE;
   color: #00072E;
+  box-shadow: inset 50px 0 0 0 0 #EEEEEE;
 }
 
 .btn_status_submit {
-  width: 200px;
-  height: 36px;
-  border: 1px solid #EEEEEE;
-  background: #00072E;
-  padding: 0;
+  width: 280px;
+  height: 50px;
   cursor: pointer;
 }
 .btn_status_submit .btn_square {
-  width: 100%;
-  height: 100%;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 50px;
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
+  transition: ease-out 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
 }
 .btn_status_submit .btn_square:hover {
-  background: #EEEEEE;
   color: #00072E;
+  box-shadow: inset 280px 0 0 0 #EEEEEE;
 }
 
 .btn_main {
@@ -323,6 +389,29 @@ p {
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
+.form {
+  position: relative;
+  box-sizing: content-box;
+}
+.form label {
+  display: block;
+  margin-bottom: 15px;
+}
+.form label .form__label {
+  color: #EEEEEE;
+  font-size: 18px;
+}
+.form__input {
+  display: block;
+  width: 430px;
+  height: 62px;
+  background-color: #191F42;
+  border: 1px solid #00072E;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 15px;
+  color: #EEEEEE;
+}
 .input_div {
   box-sizing: content-box;
 }
@@ -332,23 +421,18 @@ p {
 }
 .input_div label h5 {
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 18px;
 }
 .input_div input {
   display: block;
-  width: 260px;
-  height: 40px;
+  width: 430px;
+  height: 62px;
   background-color: #191F42;
   border: #191F42;
   border-radius: 5px;
   font-size: 18px;
   padding-left: 15px;
   color: #EEEEEE;
-}
-.input_div input:focus {
-  background-color: #987A4D;
-  border: #987A4D;
-  outline: #987A4D;
 }
 
 .input_div_password {
@@ -360,11 +444,11 @@ p {
 }
 .input_div_password label h5 {
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 18px;
 }
 .input_div_password input {
-  width: 260px;
-  height: 40px;
+  width: 430px;
+  height: 62px;
   background-color: #191F42;
   border: #191F42;
   border-radius: 5px;
@@ -372,16 +456,11 @@ p {
   padding-left: 15px;
   color: #EEEEEE;
 }
-.input_div_password input:focus {
-  background-color: #987A4D;
-  border: #987A4D;
-  outline: #987A4D;
-}
 .input_div_password i {
   color: #EEEEEE;
-  font-size: 10rem;
+  font-size: 18rem;
   position: absolute;
-  top: 43%;
+  top: 45%;
   right: 5%;
 }
 .input_div_password i:hover {
@@ -397,12 +476,12 @@ p {
 }
 .input_div_full label h5 {
   color: #EEEEEE;
-  font-size: 14px;
+  font-size: 18px;
 }
 .input_div_full input {
   display: block;
-  width: 540px;
-  height: 40px;
+  width: 910px;
+  height: 62px;
   background-color: #191F42;
   border: #191F42;
   border-radius: 5px;
@@ -410,10 +489,25 @@ p {
   padding-left: 15px;
   color: #EEEEEE;
 }
-.input_div_full input:focus {
-  background-color: #987A4D;
-  border: #987A4D;
-  outline: #987A4D;
+.selector_title {
+  position: relative;
+}
+.selector_title ::after {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 3px solid #EEEEEE;
+  position: absolute;
+  top: 100%;
+  margin-top: 14px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.selector_title h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #eeeeee;
 }
 
 .member-forget {

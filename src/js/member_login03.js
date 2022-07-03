@@ -31,7 +31,7 @@ const vm = new Vue({
         password_message:"",
         checkpassword_message:"",
         passwordStatus:true,
-        checkInputValue:true,
+        // checkInputValue:true,
     },
     methods:{
         hideMessage(){
@@ -97,6 +97,31 @@ const vm = new Vue({
         },
         btnClick(){
             
+            let memberInfo = {
+                password : this.form_data.password,
+                lastname: this.form_data.lastName,
+                name: this.form_data.name,
+                email: this.form_data.email,
+                cellphone: this.form_data.cellphone,
+                business: this.form_data.companyCode,
+            }
+            let url = "./PHP/member_login03update.php";
+
+            if((this.passwordStatus == true) && (memberInfo.lastname !="") && (memberInfo.name!="") && (memberInfo.email!="") && (memberInfo.cellphone !="")){
+                // alert("ok");
+                fetch(url,{
+                    body: JSON.stringify(memberInfo),
+                    headers: {
+                        'content-type':'application/json'
+                      },
+                    method: 'POST', 
+                    mode: 'cors',
+                    redirect: 'follow', 
+                    referrer: 'no-referrer', 
+                })
+                .then(res=>{return res.text()})
+                .then(res=>{console.log(res);})
+            }
 
             // let form = document.querySelector("#form");
             // let inputFormData = new FormData(form);

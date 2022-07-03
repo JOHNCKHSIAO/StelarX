@@ -37,7 +37,6 @@
         accountAndIdCheck:{
             account:"",
             id:"",
-            notnull:"",
         },
         accountMessage:"帳號長度須介於5~50字元!",
         idMessage:"請輸入正確格式的個人ID",
@@ -150,19 +149,15 @@
                 switch(whitcharea){
                     case 1:
                         this.error.lastname = true;
-                        this.btnStep = 3;
                         break;
                     case 2:
                         this.error.name = true;
-                        this.btnStep = 3;
                         break;
                     case 3:
                         this.error.email = true;
-                        this.btnStep = 3; 
                         break;
                     case 4:
                         this.error.cellphone = true;
-                        this.btnStep = 3;
                         break;
                 }
             }else{
@@ -194,20 +189,21 @@
             let email_div = document.querySelector("#email_div");
             let cell_div = document.querySelector("#cell_div");
             let cbusinessNumber_div = document.querySelector("#businessNumber_div");
+            let memberInfo = {
+                account : this.form_data.account_input_v,
+                id: this.form_data.id_input_v,
+                password : this.form_data.password_input_v,
+                name: this.form_data.name_input_v,
+                lastName : this.form_data.lastName_input_v,
+                cellphone : this.form_data.cellphone_input_v,
+                companyNum : this.form_data.company_input_v,
+                email : this.form_data.email_input_v
+            }
          
 
-            if(this.btnStep==4){
+            if((this.btnStep==3) && (memberInfo.name !="") && (memberInfo.lastName != "") && (memberInfo.cellphone != "") && (memberInfo.email !="")){
                 // alert("go");
-                let memberInfo = {
-                    account : this.form_data.account_input_v,
-                    id: this.form_data.id_input_v,
-                    password : this.form_data.password_input_v,
-                    name: this.form_data.name_input_v,
-                    lastName : this.form_data.lastName_input_v,
-                    cellphone : this.form_data.cellphone_input_v,
-                    companyNum : this.form_data.company_input_v,
-                    email : this.form_data.email_input_v
-                }
+                
              
                 // console.log(memberInfo);
                 let url ="./PHP/addMember.php";

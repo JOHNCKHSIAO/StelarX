@@ -60,22 +60,22 @@
                 </div>
                 <div class="input_div displaynone lastName-div" id="lastName_div">
                     <label for=""><h5>姓</h5></label>
-                    <input type="text" required id="lastName_input" name="lastName" v-model.trim="form_data.lastName_input_v" @change="checkNotNull(form_data.lastName_input_v,1)">
+                    <input type="text" required id="lastName_input" name="lastName" v-model.trim="form_data.lastName_input_v" @blur="checkNotNull(form_data.lastName_input_v,1)">
                     <p class="password-wrong  title6" :class="{showmessage:error.lastname}">您尚未填寫本欄位</p>
                 </div>
                 <div class="input_div displaynone name-div" id="name_div">
                     <label for=""><h5>名字</h5></label>
-                    <input type="text" required id="name_input" name="name" v-model.trim="form_data.name_input_v"  @change="checkNotNull(form_data.name_input_v,2)">
+                    <input type="text" required id="name_input" name="name" v-model.trim="form_data.name_input_v"  @blur="checkNotNull(form_data.name_input_v,2)">
                     <p class="password-wrong  title6" :class="{showmessage:error.name}">您尚未填寫本欄位</p>
                 </div>
                 <div class="input_div displaynone email-div" id="email_div">
                     <label for=""><h5>E-mail</h5></label>
-                    <input type="text" required id="email_input" name="email" v-model.trim="form_data.email_input_v" @change="checkNotNull(form_data.email_input_v,3)">
+                    <input type="text" required id="email_input" name="email" v-model.trim="form_data.email_input_v" @blur="checkNotNull(form_data.email_input_v,3)">
                     <p class="password-wrong  title6" :class="{showmessage:error.email}">您尚未填寫本欄位</p>
                 </div>
                 <div class="input_div displaynone cell-div" id="cell_div">
                     <label for=""><h5>手機</h5></label>
-                    <input type="text" required id="cellphone-input" name="cellphone" v-model.trim="form_data.cellphone_input_v" pattern="^09[0-9]{8}$" @change="checkNotNull(form_data.cellphone_input_v,4)">
+                    <input type="text" required id="cellphone-input" name="cellphone" v-model.trim="form_data.cellphone_input_v" pattern="^09[0-9]{8}$" @blur="checkNotNull(form_data.cellphone_input_v,4)">
                     <p class="password-wrong  title6" :class="{showmessage:error.cellphone}">您尚未填寫本欄位</p>
                 </div>
                 <div class="input_div_full displaynone businessNumber-div" id="businessNumber_div">
