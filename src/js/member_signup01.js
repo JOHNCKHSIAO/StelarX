@@ -11,6 +11,13 @@
   let vm = new Vue({
     el: '#memberr_register_area',
     data: {
+        error:{
+            lastname:false,
+            name:false,
+            email:false,
+            cellphone:false,
+
+        },
         eyes:"fa-solid fa-eye-slash",
         passwordInputType:"password",
         btnStep:1, 
@@ -30,6 +37,7 @@
         accountAndIdCheck:{
             account:"",
             id:"",
+            notnull:"",
         },
         accountMessage:"帳號長度須介於5~50字元!",
         idMessage:"請輸入正確格式的個人ID",
@@ -136,6 +144,44 @@
             this.passwordOpacity.opacity= 0;
             this.passwordcheckOpacity.opacity = 0;
         },
+        checkNotNull(value,whitcharea){
+            // this.accountAndIdCheck.notnull="false";
+            if((value == null)||(value == "")){
+                switch(whitcharea){
+                    case 1:
+                        this.error.lastname = true;
+                        this.btnStep = 3;
+                        break;
+                    case 2:
+                        this.error.name = true;
+                        this.btnStep = 3;
+                        break;
+                    case 3:
+                        this.error.email = true;
+                        this.btnStep = 3; 
+                        break;
+                    case 4:
+                        this.error.cellphone = true;
+                        this.btnStep = 3;
+                        break;
+                }
+            }else{
+                switch(whitcharea){
+                    case 1:
+                        this.error.lastname = false;
+                        break;
+                    case 2:
+                        this.error.name = false;
+                        break;
+                    case 3:
+                        this.error.email = false;
+                        break;
+                    case 4:
+                        this.error.cellphone = false;
+                        break;
+                }
+            }
+        },
         btnClick(e){
             let password_div = document.querySelector("#password_div");
             let checkPassword_div = document.querySelector("#checkPassword_div");
@@ -150,7 +196,7 @@
             let cbusinessNumber_div = document.querySelector("#businessNumber_div");
          
 
-            if(this.btnStep==3){
+            if(this.btnStep==4){
                 // alert("go");
                 let memberInfo = {
                     account : this.form_data.account_input_v,
@@ -162,7 +208,8 @@
                     companyNum : this.form_data.company_input_v,
                     email : this.form_data.email_input_v
                 }
-                console.log(memberInfo);
+             
+                // console.log(memberInfo);
                 let url ="./PHP/addMember.php";
                 fetch(url, {
                     body: JSON.stringify(memberInfo), // must match 'Content-Type' header
@@ -253,7 +300,9 @@
        
         
     },
-    watch: {},
+    watch: {
+
+    },
     beforeCreate() {
         
     },
