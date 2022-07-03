@@ -41,18 +41,26 @@
 
                     <!-- 左邊大區塊 -->
                     <div class="membMile left">
-
                         <div data-aos="zoom-in-up" data-aos-delay="1000" class="mainMile">
                             <!-- 左邊第一張卡片 -->
-                            <div class="mileCard">
-                                <div @click="card_click" class="mileCardUp">2022年5月25</div>
+                            <div class="mileCard" v-for="(item, index) in member_login04">
+                                <div class="mileCardUp">{{item[0]}}</div>
                                 <div class="mileCardDown">
                                     <div class="mileCardDown_Flex">
                                         <div class="mileCardLeft">
                                             <div class="mileCity">
                                                 <h6>出發地</h6>
-                                                <h6>Earth</h6>
-                                                <h6>地球</h6>
+                                                <h6>{{item[2]}}</h6>
+                                                <h6 v-if="item[2] == 'EARTH'">地球</h6>
+                                                <h6 v-else-if="item[2] == 'MERCURY'">水星</h6>
+                                                <h6 v-else-if="item[2] == 'MARS'">火星</h6>
+                                                <h6 v-else-if="item[2] == 'JUPITER'">木星</h6>
+                                                <h6 v-else-if="item[2] == 'SATURN'">土星</h6>
+                                                <h6 v-else-if="item[2] == 'URANUS'">天王星</h6>
+                                                <h6 v-else-if="item[2] == 'NEPTUNE'">海王星</h6>
+                                                <h6 v-else="item[2] == 'VENUS'">金星</h6>
+
+
                                             </div>
                                             <!-- <div class="mileCardRight"> -->
                                             <img class="MileBall" src="images/member_login/earth.png" alt="">
@@ -61,8 +69,15 @@
                                         <div class="mileCardRight">
                                             <div class="mileCity">
                                                 <h6>目的地</h6>
-                                                <h6>Mars</h6>
-                                                <h6>火星</h6>
+                                                <h6>{{item[3]}}</h6>
+                                                <h6 v-if="item[3] == 'EARTH'">地球</h6>
+                                                <h6 v-else-if="item[3] == 'MERCURY'">水星</h6>
+                                                <h6 v-else-if="item[3] == 'MARS'">火星</h6>
+                                                <h6 v-else-if="item[3] == 'JUPITER'">木星</h6>
+                                                <h6 v-else-if="item[3] == 'SATURN'">土星</h6>
+                                                <h6 v-else-if="item[3] == 'URANUS'">天王星</h6>
+                                                <h6 v-else-if="item[3] == 'NEPTUNE'">海王星</h6>
+                                                <h6 v-else="item[3] == 'VENUS'">金星</h6>
                                             </div>
 
                                             <img class="MileBall" src="images/member_login/mars.png" alt="">
@@ -73,10 +88,10 @@
                                     <div class="mileBarNOFlex">
                                         <div class="mileBar">
                                             <div class="g-container">
-                                                <div class="g-progress"></div>
+                                                <div :data-miles="miles" class="g-progress"></div>
                                                 <img class="rocket" src="images/member_login/rocket.svg" alt="">
                                             </div>
-                                            <h5>里程數:2000萬公里</h5>
+                                            <h5>里程數:{{item[1]/10000}}萬公里</h5>
 
                                         </div>
                                     </div>
@@ -87,7 +102,7 @@
                             </div>
                             <!-- 左邊第二張卡片 -->
                             <div class="mileCard">
-                                <div class="mileCardUp">2022年5月30</div>
+                                <div class="mileCardUp">2022-05-30</div>
                                 <div class="mileCardDown">
                                     <div class="mileCardDown_Flex">
                                         <div class="mileCardLeft">
@@ -126,7 +141,7 @@
                             </div>
                             <!-- 左邊第三張卡片 -->
                             <div class="mileCard">
-                                <div class="mileCardUp">2022年6月15</div>
+                                <div class="mileCardUp">2022-06-15</div>
                                 <div class="mileCardDown">
                                     <div class="mileCardDown_Flex">
                                         <div class="mileCardLeft">
@@ -163,47 +178,9 @@
                                 </div>
 
                             </div>
-                            <!-- 左邊第四張卡片 -->
-                            <div class="mileCard">
-                                <div class="mileCardUp">2022年7月03</div>
-                                <div class="mileCardDown">
-                                    <div class="mileCardDown_Flex">
-                                        <div class="mileCardLeft">
-                                            <div class="mileCity">
-                                                <h6>出發地</h6>
-                                                <h6>Earth</h6>
-                                                <h6>地球</h6>
-                                            </div>
-                                            <!-- <div class="mileCardRight"> -->
-                                            <img class="MileBall" src="images/member_login/earth.png" alt="">
-                                            <!-- </div> -->
-                                        </div>
-                                        <div class="mileCardRight">
-                                            <div class="mileCity">
-                                                <h6>目的地</h6>
-                                                <h6>Mars</h6>
-                                                <h6>火星</h6>
-                                            </div>
 
-                                            <img class="MileBall" src="images/member_login/mars.png" alt="">
-
-                                        </div>
-                                    </div>
-
-                                    <div class="mileBarNOFlex">
-                                        <div class="mileBar">
-                                            <div class="progress"></div>
-                                            <h5>里程數:2000萬公里</h5>
-
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                            </div>
                             <div class="date2022">
-                                <h5>2021年</h5>
+                                <h5>2022年</h5>
                             </div>
                         </div>
                     </div>
@@ -220,7 +197,7 @@
                             </div>
                             <!-- 第一張卡片 -->
                             <div class="mileCard">
-                                <div class="mileCardUp">2022年5月25</div>
+                                <div class="mileCardUp">2022-05-25</div>
                                 <div class="mileCardDown">
                                     <div class="mileCardDown_Flex">
                                         <div class="mileCardLeft">
@@ -259,7 +236,7 @@
                             </div>
                             <!-- 第二張卡片 -->
                             <div class="mileCard">
-                                <div class="mileCardUp">2022年5月25</div>
+                                <div class="mileCardUp">2022-5-25</div>
                                 <div class="mileCardDown">
                                     <div class="mileCardDown_Flex">
                                         <div class="mileCardLeft">
@@ -298,7 +275,7 @@
                             </div>
                             <!-- 第三張卡片 -->
                             <div class="mileCard">
-                                <div class="mileCardUp">2022年5月25</div>
+                                <div class="mileCardUp">2022-05-25</div>
                                 <div class="mileCardDown">
                                     <div class="mileCardDown_Flex">
                                         <div class="mileCardLeft">
@@ -337,7 +314,7 @@
                             </div>
                             <!-- 第四張卡片 -->
                             <div class="mileCard">
-                                <div class="mileCardUp">2022年5月25</div>
+                                <div class="mileCardUp">2022-05-25</div>
                                 <div class="mileCardDown">
                                     <div class="mileCardDown_Flex">
                                         <div class="mileCardLeft">
@@ -394,45 +371,57 @@
 
         @@include("./layout/footer.html")
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script src="js/vue.js"></script>
     <script>
-        $(document).ready(function () {
-    $('.mileCardUp').click(function () {
-        $(this).parent().find('.mileCardDown').slideToggle(200);
-        $(this).parent().siblings().find('.mileCardDown').slideUp(200)
-        $(".g-progress").css("width", "300");   //進度條動畫
 
-    })
-
-
-});
-$(window).scroll(function () {
-    var scroll = $(this).scrollTop()
-    if (scroll >= $('.mainMile').position().top - 100) {
-        $('.bgsvg').css("height", 700); //線條動畫
-
-    }
-
-});
         new Vue({
-    el: '#login04', //
+            el: '#login04', //
 
-    data: {
-        
-    },
-    methods: {
-       
-    },
-    compute: {},
-    watch: {},
-    created() {
-    },
-    mounteds(){},
-    destroyed(){},
+            data: {
 
-})
+                member_login04: [],
+
+
+            },
+            methods: {
+                rename() {
+                    let start = document.querySelector(".start")
+                    console.log(start.textContent);
+                }
+            },
+            compute: {},
+            watch: {},
+
+            created() {
+                let url = './PHP/member_login04.php'; //
+                fetch(url)
+                    .then(response => response.json())
+                    .then(text => this.member_login04 = text); //
+            },
+            mounted() {
+
+
+            },
+            updated() {
+                $('.mileCardUp').click(function (e) {
+                    $(e.target).parent().find('.mileCardDown').slideToggle(200);
+                    $(e.target).parent().siblings().find('.mileCardDown').slideUp(200)
+                    $(".g-progress").css("width", "300");   //進度條動畫
+
+                })
+                $(window).scroll(function (e) {
+                    var scroll = $(e.target).scrollTop()
+                    if (scroll >= $('.mainMile').position().top - 100) {
+                        $('.bgsvg').css("height", 700); //線條動畫
+                    }
+                })
+
+            },
+            destroyed() { },
+
+        })
     </script>
     <!-- <script src="js/member_login04_vue.js"></script> -->
 </body>
