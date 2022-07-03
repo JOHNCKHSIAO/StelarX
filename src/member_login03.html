@@ -42,7 +42,7 @@
         <h2 class="personal-info-title">
            會員個人資料
         </h2>
-        <form action="">
+        <form action="./PHP/member_login03.php" enctype = "multipart/form-data" id = "form">
             <div class="input-area-personal-info">
                 <div class="input_div" id="account_div">
                     <label for="account_input"><h5>帳號</h5></label>
@@ -56,48 +56,55 @@
                 </div>
                 <div class="input_div_password " id="password_div">
                     <label for="password_input"><h5>密碼</h5></label>
-                    <input type="password"id="password_input" v-model="form_data.password"><i class="fa-solid fa-eye-slash"></i>   
+                    <input :type="passwordInputType"id="password_input" v-model.trim="form_data.password" name="password" @keyup="hideMessage" @blur="checkpassword"><i :class="eyes" @click="eyesToggle"></i> 
+                    <p class="password-wrong  title6" id="checkPassword_message" :style="messageOpacity">{{password_message}}</p>  
                 </div>
                 <div class="input_div_password" id="checkPassword_div">
                     <label for="checkPassword_input"><h5>確認密碼</h5></label>
-                    <input type="password" id="checkPassword_input" v-model="form_data.passwordCheck" @keyup="hideMessage"><i class="fa-solid fa-eye-slash"></i>
+                    <input :type="passwordInputType" id="checkPassword_input" v-model.trim="form_data.passwordCheck" @keyup="hideMessage" @blur="checkpassword"><i :class="eyes" @click="eyesToggle"></i>
                     <p class="password-wrong  title6" id="checkPassword_message" :style="messageOpacity">與密碼不符! 請重新輸入!!</p>
                 </div>
                 <div class="input_div" id="lastName_div">
                     <label for=""><h5>姓</h5></label>
-                    <input type="text" v-model="form_data.lastName">
+                    <input type="text" v-model.trim="form_data.lastName" name="lastname" required @change="checkNotNull(form_data.lastName,1)">
+                    <p class="password-wrong  title6" :class="{showmessage:error.lastname}">您尚未填寫本欄位</p>
                 </div>
                 <div class="input_div" id="name_div">
                     <label for=""><h5>名字</h5></label>
-                    <input type="text" v-model="form_data.name">
+                    <input type="text" v-model.trim="form_data.name" name="name" required @change="checkNotNull(form_data.name,2)">
+                    <p class="password-wrong  title6" :class="{showmessage:error.name}">您尚未填寫本欄位</p>
                 </div>
-                <div class="input_div displaynone" id="email_div">
+                <div class="input_div " id="email_div">
                     <label for=""><h5>E-mail</h5></label>
-                    <input type="text" v-model="form_data.email">
+                    <input type="text" v-model.trim="form_data.email" name="email" required @change="checkNotNull(form_data.email,3)">
+                    <p class="password-wrong  title6" :class="{showmessage:error.email}">您尚未填寫本欄位</p>
                 </div>
-                <div class="input_div displaynone" id="cell_div">
+                <div class="input_div" id="cell_div">
                     <label for=""><h5>手機</h5></label>
-                    <input type="text" v-model="form_data.cellphone">
+                    <input type="text" v-model.trim="form_data.cellphone" name="cellphone" required pattern="^09[0-9]{8}$" @change="checkNotNull(form_data.cellphone,4)">
+                    <p class="password-wrong  title6" :class="{showmessage:error.cellphone}">您尚未填寫本欄位</p>
                 </div>
-                <div class="input_div_full displaynone" id="businessNumber_div">
+                <div class="input_div_full" id="businessNumber_div">
                     <label for=""><h5>公司識別碼</h5></label>
-                    <input type="text" v-model="form_data.companyCode">
+                    <input type="text" v-model.trim="form_data.companyCode" name="business" maxlength="6">
                 </div>
             </div>
             <div class="btn-wrapper">
                 <div class="btn_status">
                     <a class="btn_square" href="./member_login02.html">會員中心</a>
                 </div>
-                <div class="btn_general" @click="btnClick">
+                <button class="btn_general_sumbmit" @click.prevent="btnClick">
                     <div class="btn_square">確認</div>
-                </div>
+                </button>
             </div>
         </form>
 
-        <script src="./js/member_login03.js"> </script>
+        
     </section>
+
 
     @@include("./layout/footer.html")
 </section>
+<script src="./js/member_login03.js"> </script>
 </body>
 </html>
