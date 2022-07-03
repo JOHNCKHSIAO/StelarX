@@ -549,10 +549,13 @@ h5 {
     margin: auto;
   }
   .quiz_test .quiz_planet .SATURNimge {
-    width: 390px;
-    height: 250px;
+    width: 380px;
+    height: 240px;
     position: absolute;
     top: 20px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
   }
   .quiz_test .quiz_planet .MERCURYimge {
     width: 380px;

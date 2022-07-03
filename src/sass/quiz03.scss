@@ -162,10 +162,13 @@ h5{color: $white;}
             }
         /*--------- 土星img參數 ---------*/
         .SATURNimge{
-            width: 390px;
-            height: 250px;
+            width: 380px;
+            height: 240px;
             position: absolute;
             top: 20px;
+            left: 0;
+            bottom: 0;
+            margin: auto;
         }
         /*--------- 水星img參數 ---------*/
         .MERCURYimge{
