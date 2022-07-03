@@ -14,10 +14,6 @@ $heigth: 300px;
 body{
     background-color: $blue;
 }
-
-/*------- 照片固定參數 -------*/
-
-
 /*------ 固定文字 -----*/
 .title3{
     color: $white;
@@ -99,7 +95,6 @@ body{
         }
      }
 }
-
 
 /*-------------- 第二題(放鬆)測驗遊戲 --------------*/
 .quiz02_1{
@@ -183,6 +178,142 @@ body{
             width: $width;
             height: $heigth;
             position: relative;
+        }
+    }
+}
+
+/*-------------- RWD手機板 --------------*/
+@media screen and (max-width:414.98px) {
+
+    .text_side{
+        // border: 1px solid red;
+        width: 100%;
+    }
+    #WoldHover{
+        &:hover #wold_quiz{
+        background-color:$hoverColor;
+        display: none;
+        box-shadow: $boxShadow;
+        }
+    }
+
+    /*-------------- 第一題測驗遊戲 --------------*/
+    .quiz01{
+        width: 100%;
+        // border: 1px solid red;
+        text-align: center;
+        .title3{
+            font-size: 18px;
+        }
+        .hrgold{
+            margin-top: 12px;
+        }
+
+        .allimg{
+            width: 100%;
+            padding-left: 0px;
+            margin-top: 32px;
+            // border: 1px solid red;
+            display: block;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            .playBlock{
+                height: 100%;
+                margin-bottom: 28px;
+            }
+            .relaxBlock{
+                height: 100%;
+            }
+            #WoldHover{
+                // border: 1px solid red;
+                width: 100%;
+                position: relative;
+            }
+            #wold_quiz{
+                display: block;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 70px;
+            }
+        }
+    }
+    /*-------------- 第二題(放鬆)測驗遊戲 --------------*/
+    .quiz02_1{
+        width: 100%;
+        // border: 1px solid red;
+        text-align: center;
+        .title3{
+            font-size: 18px;
+        }
+        .hrgold{
+            margin-top: 12px;
+        }
+        .all_twoimg{
+            width: 100%;
+            padding: 0;
+            margin-top: 32px;
+            // border: 1px solid red;
+            display: block;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            #WoldHover{
+                // border: 1px solid red;
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                position: relative;
+                margin-bottom: 10px;
+            }
+            #wold_quiz{
+                display: block;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 70px;
+            }
+        }
+    }
+    /*-------------- 第二(玩樂)題測驗遊戲 --------------*/
+    .quiz02_2{
+        width: 100%;
+        // border: 1px solid red;
+        text-align: center;
+        .title3{
+            font-size: 18px;
+        }
+        .hrgold{
+            margin-top: 12px;
+        }
+        .all_twoimg{
+            width: 100%;
+            padding: 0;
+            margin-top: 32px;
+            // border: 1px solid red;
+            display: block;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            #WoldHover{
+                // border: 1px solid red;
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                position: relative;
+                margin-bottom: 10px;
+            }
+            #wold_quiz{
+                display: block;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 70px;
+            }
         }
     }
 }
