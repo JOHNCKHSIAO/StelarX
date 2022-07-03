@@ -68,35 +68,46 @@
             </div>
         </section>
         <!------ 確認資訊區塊 ------>
-
         <section class="com-form">
             <div class="form_title">
                 <h2>航班資訊</h2>
             </div>
             <div class="form_info">
                 <div class="form">
-                    <label for="date" class="form__label"><h5>日期</h5></label>
-                    <input type="text" class="form__input" value="2022/{{m}}/{{d}}" readonly="readonly">
+                    <label for="date" class="form__label">
+                        <h5>日期</h5>
+                    </label>
+                    <input type="text" class="form__input" value="2022/07/15" placeholder="2022/03/14" readonly="readonly">
                 </div>
                 <div class="form">
-                    <label for="flight" class="form__label"><h5>航班</h5></label>
-                    <input type="text" class="form__input" value="0314" readonly="readonly">
+                    <label for="flight" class="form__label">
+                        <h5>航班</h5>
+                    </label>
+                    <input type="text" class="form__input" value="0314" placeholder="0314" readonly="readonly">
                 </div>
                 <div class="form">
-                    <label for="gate" class="form__label"><h5>艙別</h5></label>
-                    <input type="text" class="form__input" value="{{cabin}}" readonly="readonly">
+                    <label for="gate" class="form__label">
+                        <h5>艙別</h5>
+                    </label>
+                    <input type="text" class="form__input" value="GX" placeholder="GX" readonly="readonly">
                 </div>
                 <div class="form">
-                    <label for="seat" class="form__label"><h5>目的地</h5></label>
-                    <input type="text" class="form__input" value="{{dest}}" readonly="readonly">
+                    <label for="seat" class="form__label">
+                        <h5>目的地</h5>
+                    </label>
+                    <input type="text" class="form__input" value="海王星" placeholder="火星" readonly="readonly">
                 </div>
                 <div class="form">
-                    <label for="people" class="form__label"><h5>人數</h5></label>
-                    <input type="text" class="form__input" value="{{ppl}}" readonly="readonly">
+                    <label for="people" class="form__label">
+                        <h5>人數</h5>
+                    </label>
+                    <input type="text" class="form__input" value="2" placeholder="18" readonly="readonly">
                 </div>
                 <div class="form">
-                    <label for="dollor" class="form__label"><h5>票價金額</h5></label>
-                    <input type="text" class="form__input" value="{{price}}" readonly="readonly">
+                    <label for="dollor" class="form__label">
+                        <h5>票價金額</h5>
+                    </label>
+                    <input type="text" class="form__input" value="100000" placeholder="80000" readonly="readonly">
                 </div>
             </div>
         </section>
@@ -114,57 +125,62 @@
                     <label for="lastname" class="form__label">
                         <h5>姓</h5>
                     </label>
-                    <input type="text" class="form__input" value="LIU">
+                    <input id="lastname" type="text" class="form__input" placeholder="Lui">
                 </div>
                 <div class="form">
                     <label for="firstname" class="form__label">
                         <h5>名字</h5>
                     </label>
-                    <input type="text" class="form__input" value="Chia-Tung">
+                    <input id="name" type="text" class="form__input" placeholder="Chia-Tung">
                 </div>
                 <div class="form">
                     <label for="ID" class="form__label">
                         <h5>ID</h5>
                     </label>
-                    <input type="text" class="form__input" value="Q123456789">
+                    <input id="id" type="text" class="form__input" placeholder="Q123456789">
                 </div>
                 <div class="form">
                     <label for="phone" class="form__label">
                         <h5>手機</h5>
                     </label>
-                    <input type="text" class="form__input" value="0900-000-000">
+                    <input id="phone" type="text" class="form__input" placeholder="0900-000-000">
                 </div>
             </div>
         </section>
 
-        <!------ 訂購者資料區塊 ------>
-    <section class="personal">
-        <!-- <div class="form_title">
-            <h2>填寫個人資料</h2>
-        </div> -->
-        <div class="subtitle">
-            <h3>同行者</h3>
-            <hr class="hrLong">
-        </div>
-        <div class="form_info">
-            <div class="form">
-                <label for="lastname" class="form__label"><h5>姓</h5></label>
-                <input type="text" class="form__input" value="LIU">
+        <!------ 同行者資料確認區塊 ------>
+        <section class="partner">
+            <div class="subtitle">
+                <h3>同行者</h3>
+                <hr class="hrLong">
             </div>
-            <div class="form">
-                <label for="firstname" class="form__label"><h5>名字</h5></label>
-                <input type="text" class="form__input" value="Chia-Tung">
+            <div class="form_info">
+                <div class="form">
+                    <label for="lastname" class="form__label">
+                        <h5>姓</h5>
+                    </label>
+                    <input id="colastname" type="text" class="form__input" placeholder="Lui">
+                </div>
+                <div class="form">
+                    <label for="firstname" class="form__label">
+                        <h5>名字</h5>
+                    </label>
+                    <input id="coname" type="text" class="form__input" placeholder="Chia-Tung">
+                </div>
+                <div class="form">
+                    <label for="ID" class="form__label">
+                        <h5>ID</h5>
+                    </label>
+                    <input id="coid" type="text" class="form__input" placeholder="Q123456789">
+                </div>
+                <div class="form">
+                    <label for="cophone" class="form__label">
+                        <h5>手機</h5>
+                    </label>
+                    <input id="cophone" type="text" class="form__input" placeholder="0900-000-000">
+                </div>
             </div>
-            <div class="form">
-                <label for="ID" class="form__label"><h5>ID</h5></label>
-                <input type="text" class="form__input" value="Q123456789">
-            </div>
-            <div class="form">
-                <label for="phone" class="form__label"><h5>手機</h5></label>
-                <input type="text" class="form__input" value="0900-000-000">
-            </div>
-        </div>
-    </section>
+        </section>
         <!------ 付款資料區塊 ------>
         <form action="./PHP/pay.php" class="com-form" id="BK_play" method="post">
             <div class="form_title">
@@ -179,13 +195,13 @@
                     <label for="number" class="form__label">
                         <h5>電子信箱</h5>
                     </label>
-                    <input type="text" class="form__input" id="card_nmb">
+                    <input type="text" class="form__input" id="card_nmb" placeholder="mars@stelarx.com">
                 </div>
                 <div class="form">
                     <label for="date" class="form__label">
                         <h5>姓名</h5>
                     </label>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" placeholder="Lui Chia-Tung">
                 </div>
                 <div class="form">
                     <label for="code" class="form__label">
@@ -216,7 +232,49 @@
         </form>
         @@include("./layout/footer.html")
     </section>
+<script>
+    // 訂購者
+     getLastname();
+    function getLastname(){        
+        document.getElementById('lastname').value= localStorage.getItem('customlastName');
+    }
 
+    getName();
+    function getName(){        
+        document.getElementById('name').value= localStorage.getItem('customName');
+    }
+
+    getId();
+    function getId(){        
+        document.getElementById('id').value= localStorage.getItem('customId');
+    }
+
+    getPhone();
+    function getPhone(){        
+        document.getElementById('phone').value= localStorage.getItem('customPhone');
+    }
+
+    // 同行者
+    getcoLastname();
+    function getcoLastname(){        
+        document.getElementById('colastname').value= localStorage.getItem('customcolastName');
+    }
+
+    getcoName();
+    function getcoName(){        
+        document.getElementById('coname').value= localStorage.getItem('customcoName');
+    }
+
+    getcoId();
+    function getcoId(){        
+        document.getElementById('coid').value= localStorage.getItem('customcoId');
+    }
+
+    getcoPhone();
+    function getcoPhone(){        
+        document.getElementById('cophone').value= localStorage.getItem('customcoPhone');
+    }
+</script>
 </body>
 
 </html>

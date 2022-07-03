@@ -68,7 +68,6 @@
         </section>
 
         <!------ 航班資訊區塊 ------>
-
         <section class="com-form">
             <div class="form_title">
                 <h2>航班資訊</h2>
@@ -78,38 +77,37 @@
                     <label for="date" class="form__label">
                         <h5>日期</h5>
                     </label>
-                    <input type="text" v-model="form.date" class="form__input" value="2022/{{m}}/{{d}}"
-                        readonly="readonly">
+                    <input type="text" class="form__input" value="2022/07/15" placeholder="2022/03/14" readonly="readonly">
                 </div>
                 <div class="form">
                     <label for="flight" class="form__label">
                         <h5>航班</h5>
                     </label>
-                    <input type="text" class="form__input" value="0314" readonly="readonly">
+                    <input type="text" class="form__input" value="0314" placeholder="0314" readonly="readonly">
                 </div>
                 <div class="form">
                     <label for="gate" class="form__label">
                         <h5>艙別</h5>
                     </label>
-                    <input type="text" v-model="form.cabin" class="form__input" value="{{cabin}}" readonly="readonly">
+                    <input type="text" class="form__input" value="GX" placeholder="GX" readonly="readonly">
                 </div>
                 <div class="form">
                     <label for="seat" class="form__label">
                         <h5>目的地</h5>
                     </label>
-                    <input type="text" v-model="form.dest" class="form__input" value="{{dest}}" readonly="readonly">
+                    <input type="text" class="form__input" value="海王星" placeholder="火星" readonly="readonly">
                 </div>
                 <div class="form">
                     <label for="people" class="form__label">
                         <h5>人數</h5>
                     </label>
-                    <input type="text" v-model="form.ppl" class="form__input" value="{{ppl}}" readonly="readonly">
+                    <input type="text" class="form__input" value="2" placeholder="18" readonly="readonly">
                 </div>
                 <div class="form">
                     <label for="dollor" class="form__label">
                         <h5>票價金額</h5>
                     </label>
-                    <input type="text" v-model="form.price" class="form__input" value="{{price}}" readonly="readonly">
+                    <input type="text" class="form__input" value="100000" placeholder="80000" readonly="readonly">
                 </div>
             </div>
         </section>
@@ -127,25 +125,25 @@
                     <label for="lastname" class="form__label">
                         <h5>姓</h5>
                     </label>
-                    <input type="text" v-model="form.lastname" class="form__input" value="LIU">
+                    <input id="lastname" type="text" class="form__input" placeholder="Lui">
                 </div>
                 <div class="form">
                     <label for="firstname" class="form__label">
                         <h5>名字</h5>
                     </label>
-                    <input type="text" v-model="form.name" class="form__input" value="Chia-Tung">
+                    <input id="name" type="text" class="form__input" placeholder="Chia-Tung">
                 </div>
                 <div class="form">
                     <label for="ID" class="form__label">
                         <h5>ID</h5>
                     </label>
-                    <input type="text" v-model="form.id" class="form__input" value="Q123456789">
+                    <input id="id" type="text" class="form__input" placeholder="Q123456789">
                 </div>
                 <div class="form">
                     <label for="phone" class="form__label">
                         <h5>手機</h5>
                     </label>
-                    <input type="text" v-model="form.phone" class="form__input" value="0900-000-000">
+                    <input id="phone" type="text" class="form__input" placeholder="0900-000-000">
                 </div>
             </div>
         </section>
@@ -161,25 +159,25 @@
                     <label for="lastname" class="form__label">
                         <h5>姓</h5>
                     </label>
-                    <input v-model="form.colastname" type="text" class="form__input">
+                    <input id="colastname" type="text" class="form__input" placeholder="Lui">
                 </div>
                 <div class="form">
                     <label for="firstname" class="form__label">
                         <h5>名字</h5>
                     </label>
-                    <input v-model="form.coname" type="text" class="form__input">
+                    <input id="coname" type="text" class="form__input" placeholder="Chia-Tung">
                 </div>
                 <div class="form">
                     <label for="ID" class="form__label">
                         <h5>ID</h5>
                     </label>
-                    <input v-model="form.coid" type="text" class="form__input">
+                    <input id="coid" type="text" class="form__input" placeholder="Q123456789">
                 </div>
                 <div class="form">
                     <label for="cophone" class="form__label">
                         <h5>手機</h5>
                     </label>
-                    <input v-model="form.phone" type="text" class="form__input">
+                    <input id="cophone" type="text" class="form__input" placeholder="0900-000-000">
                 </div>
             </div>
         </section>
@@ -224,60 +222,61 @@
                 <a href="./booking_03.html" class="btn_square">上一步</a>
             </div>
             <div class="btn_general">
-                <a href="./booking_05.html" class="btn_square">下一步</a>
+                <a href="javascript:;" class="btn_square" onclick="SetLastname(), SetName(), SetId(), SetPhone(),SetcoLastname(), SetcoName(), SetcoId(), SetcoPhone()">下一步</a>
             </div>
         </section>
         @@include("./layout/footer.html")
     </section>
     <script>
-        var app = new Vue({
-            el: "#form",
-            data: {
-                form:{
-                    date:'',
-                    cabin:'',
-                    dest:'',
-                    ppl:'',
-                    price:'',
-                    lastname:'',
-                    name:'',
-                    id:'',
-                    phone:'',
-                    colastname:'',
-                    coname:'',
-                    coid:'',
-                    cophone:'',
-        },
-                    },
-            
-            },
-        
-        watch: { },
-        beforeCreate() {
+        // 訂購者
+        function SetLastname(){
+            var lastname = document.getElementById('lastname').value;
+            localStorage.setItem('customlastName',lastname);
+            window.location.href="./booking_05.html";
+        }
 
-        },
-        created() {
-            this. = localStorage.getItem('');
-        },
-        beforeMount() {
+        function SetName(){
+            var name = document.getElementById('name').value;
+            localStorage.setItem('customName',name);
+            window.location.href="./booking_05.html";
+        }
 
-        },
-        mounted() {
+        function SetId(){
+            var id = document.getElementById('id').value;
+            localStorage.setItem('customId',id);
+            window.location.href="./booking_05.html";
+        }
 
-        },
-        beforeUpdate() {
+        function SetPhone(){
+            var phone = document.getElementById('phone').value;
+            localStorage.setItem('customPhone',phone);
+            window.location.href="./booking_05.html";
+        }
 
-        },
-        updated() {
+        // 同行者
+        function SetcoLastname(){
+            var colastname = document.getElementById('colastname').value;
+            localStorage.setItem('customcolastName',colastname);
+            window.location.href="./booking_05.html";
+        }
 
-        },
-        beforeDestroy() {
+        function SetcoName(){
+            var coname = document.getElementById('coname').value;
+            localStorage.setItem('customcoName',coname);
+            window.location.href="./booking_05.html";
+        }
 
-        },
-        destroyed() {
+        function SetcoId(){
+            var coid = document.getElementById('coid').value;
+            localStorage.setItem('customcoId',coid);
+            window.location.href="./booking_05.html";
+        }
 
-        },
-        });
+        function SetcoPhone(){
+            var cophone = document.getElementById('cophone').value;
+            localStorage.setItem('customcoPhone',cophone);
+            window.location.href="./booking_05.html";
+        }
     </script>
 </body>
 
