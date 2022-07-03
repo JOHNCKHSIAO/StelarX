@@ -6,6 +6,8 @@
 .member_login05{
     width:1080px;
     margin:0 auto;
+    position: relative;
+    z-index: 999;
     // border:1px solid yellow;
    
     .member_login05-title{
@@ -119,5 +121,5 @@
     }
 }
 .displaynone{
-    display:none;
+    // display:none;
 }

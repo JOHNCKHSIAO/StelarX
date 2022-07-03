@@ -511,17 +511,12 @@ p {
 }
 
 /*------ 全域共用區塊 ------*/
-.hrWhit {
-  background-color: #EEEEEE;
-  width: 150px;
-}
-
-.booking_wold {
+.form_title {
   margin-top: 80px;
   margin-bottom: 40px;
   position: relative;
 }
-.booking_wold ::after {
+.form_title ::after {
   content: "";
   height: 1px;
   width: 150px;
@@ -530,29 +525,29 @@ p {
   top: 120%;
   right: 43%;
 }
-.booking_wold h2 {
+.form_title h2 {
   font-size: 26px;
   font-weight: 700;
   color: #EEEEEE;
   text-align: center;
 }
-.booking_wold h3 {
+.form_title h3 {
   color: #EEEEEE;
   text-align: center;
 }
 
-.booking_people h3 {
+.subtitle h3 {
   color: #EEEEEE;
   margin-left: 250px;
   font-size: 24px;
 }
-.booking_people .hrLong {
+.subtitle .hrLong {
   width: 600px;
   margin: auto;
 }
 
 /*------ 全域資訊綁定區塊 ------*/
-.booking_text {
+.form_info {
   width: 900px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -561,7 +556,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.booking_text .input_div {
+.form_info .input_div {
   margin-top: 45px;
 }
 
@@ -626,13 +621,13 @@ p {
   width: 1084px;
   margin: auto;
 }
-.personal .booking_wold {
+.personal .form_title {
   margin-top: 60px;
   margin-bottom: 63px;
 }
 
 /*------ 同行者資料區塊 ------*/
-.parther {
+.partner {
   width: 1084px;
   margin: auto;
   margin-top: 64px;
@@ -640,7 +635,7 @@ p {
 }
 
 /*------ 行前須知區塊 ------*/
-.noticr {
+.notice {
   width: 1084px;
   margin: auto;
   margin-top: 20px;
@@ -649,13 +644,13 @@ p {
   /* Handle */
   /* Handle on hover */
 }
-.noticr .booking_people {
-  margin-bottom: 5px;
+.notice .subtitle {
+  margin-bottom: 20px;
 }
-.noticr h3 {
+.notice h3 {
   margin-left: 100px;
 }
-.noticr .noticr_text {
+.notice .notice_list {
   width: 900px;
   height: 400px;
   overflow-y: auto;
@@ -665,29 +660,29 @@ p {
   padding: 40px;
   margin-bottom: 40px;
 }
-.noticr .noticr_text p {
+.notice .notice_list p {
   color: #EEEEEE;
 }
-.noticr ::-webkit-scrollbar {
+.notice ::-webkit-scrollbar {
   width: 20px;
 }
-.noticr ::-webkit-scrollbar-track {
+.notice ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
-.noticr ::-webkit-scrollbar-thumb {
+.notice ::-webkit-scrollbar-thumb {
   background: #987A4D;
   border-radius: 10px;
 }
-.noticr ::-webkit-scrollbar-thumb:hover {
+.notice ::-webkit-scrollbar-thumb:hover {
   background: #78613f;
 }
-.noticr .yes_radio {
+.notice .checkedread {
   width: 300px;
   display: flex;
   margin: auto;
 }
-.noticr .yes_radio input {
+.notice .checkedread input {
   margin: auto 0;
   width: 20px;
   height: 20px;
@@ -695,10 +690,10 @@ p {
   accent-color: #7C7C7C;
   border-radius: 3px;
 }
-.noticr .yes_radio input:checked {
+.notice .checkedread input:checked {
   accent-color: #987A4D;
 }
-.noticr .yes_radio h5 {
+.notice .checkedread h5 {
   color: #EEEEEE;
   margin-left: 15px;
 }

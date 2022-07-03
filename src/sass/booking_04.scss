@@ -9,11 +9,7 @@
 
 
 /*------ 全域共用區塊 ------*/
-.hrWhit{
-    background-color: $white;
-    width: 150px;
-}
-.booking_wold{
+.form_title{
     margin-top: 80px;
     margin-bottom:40px;
     position: relative;
@@ -39,7 +35,8 @@
         text-align: center;
     }
 }
-.booking_people{
+
+.subtitle{
     // margin-bottom: 32px;
     h3{ color: $white;  
         margin-left: 250px;
@@ -52,7 +49,7 @@
 }
 
 /*------ 全域資訊綁定區塊 ------*/
-.booking_text{
+.form_info{
     width: 900px;
     box-sizing: border-box;
     margin:0 auto;
@@ -143,13 +140,13 @@
     width: 1084px;
     // border: 1px solid red;
     margin: auto;
-    .booking_wold{
+    .form_title{
         margin-top: 60px;
         margin-bottom: $spacing_48px+15px;
     }
 }
 /*------ 同行者資料區塊 ------*/
-.parther{
+.partner{
     width: 1084px;
     // border: 1px solid red;
     margin: auto;
@@ -157,16 +154,16 @@
     margin-bottom: 80px;
 }
 /*------ 行前須知區塊 ------*/
-.noticr{
+.notice{
     width: 1084px;
     margin: auto;
     // border: 1px solid red;
     margin-top: 20px;
-    .booking_people{
-        margin-bottom: 5px;
+    .subtitle{
+        margin-bottom: 20px;
     }
     h3{  margin-left: 100px; }
-    .noticr_text{
+    .notice_list{
         width: 900px;
         height: 400px;
         overflow-y: auto;
@@ -203,7 +200,7 @@
     background: #78613f; 
   }
 
-    .yes_radio{
+    .checkedread{
         width: 300px;
         display: flex;
         margin: auto;
