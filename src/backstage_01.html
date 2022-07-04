@@ -17,13 +17,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/backstage_01.css">
+    <script src="./js/vue.js"></script>
     <title>Stellar X | 後臺管理系統</title>
 </head>
 <body>
     <header class="header">
         <img src="./images/logo.png" alt=""><h3>後台管理系統</h3>
     </header>
-    <main>
+    <main id="app">
         <h2 class="backstage-title" id="backstage_title">
             班次管理
         </h2>
@@ -73,7 +74,31 @@
                 </li>
 
             </ul>
-            <ul class="member-list-content">
+            <ul class="member-list-content" v-for="(item, index) in data_list[page]">
+                <li>
+                    00000{{item[1]}}
+                </li>
+                <li>
+                    {{switchName(item[3])}}
+                </li>
+                <li>
+                    {{switchName(item[4])}}
+                </li>
+                <li>
+                    {{item[5]}}
+                </li>
+                <li>
+                    {{item[6]}}
+                </li>
+                <li>
+                    <span>{{item[7] + item[8]}}</span>/16
+                </li>
+                <li>
+                    <div :data-index="index">明細</div>
+                </li>
+
+            </ul>
+            <!-- <ul class="member-list-content">
                 <li>
                     000001
                 </li>
@@ -240,61 +265,100 @@
                     <div>明細</div>
                 </li>
 
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    000001
-                </li>
-                <li>
-                    地球
-                </li>
-                <li>
-                    火星
-                </li>
-                <li>
-                    2022/5/30 (一) 08:00 AM
-                </li>
-                <li>
-                    2022/5/30 (一) 08:00 AM
-                </li>
-                <li>
-                    <span>3</span>/16
-                </li>
-                <li>
-                    <div>明細</div>
-                </li>
-
-            </ul>
+            </ul> -->
 
         </section>
         <div class="insert-new">
             新增班次<i class="fa-solid fa-plus"></i>
         </div>
 
+        <section class="page-area">
+            <div class="pagenumber" >
+                <h6><i class="fa-solid fa-angle-left"></i></h6>
+            </div>
+            <div class="pagenumber" v-for="(p,i) in data_list.length">
+                <h6 :data-page="i" @click="changePage">{{p}}</h6>
+            </div>
+            <!-- <div class="pagenumber" >
+                <h6>2</h6>
+            </div>
+            <div class="pagenumber" >
+                <h6>3</h6>
+            </div>
+            <div class="pagenumber" >
+                <h6>4</h6>
+            </div>
+            <div class="pagenumber" >
+                <h6>5</h6>
+            </div> -->
+            <div class="pagenumber" >
+                <h6><i class="fa-solid fa-angle-right"></i></h6>
+            </div>
+        </section>
     </main>
-    <section class="page-area">
-        <div class="pagenumber" >
-            <h6><i class="fa-solid fa-angle-left"></i></h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>1</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>2</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>3</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>4</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>5</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6><i class="fa-solid fa-angle-right"></i></h6>
-        </div>
-    </section>
+
+    <script>
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                data_list:[],
+                page:0,
+            },
+            methods: {
+                switchName(name){
+                    switch(name){
+                        case 'EARTH':
+                            return '地球';
+                            break;
+                    
+                        case 'MARS':
+                            return '火星';
+                            break;
+
+                        case 'MERCURY':
+                            return '水星';
+                            break;
+                        
+                        case 'VENUS':
+                            return '金星';
+                            break;
+
+                        case 'JUPITER':
+                            return '木星';
+                            break;
+
+                        case 'SATURN':
+                            return '土星';
+                            break;
+
+                        case 'URANUS':
+                            return '天王星';
+                            break;
+                        
+                        case 'NEPTUNE':
+                            return '海王星';
+                            break;
+
+                        default:
+                            return '未知';
+                    }
+                },
+                changePage(e){
+                    this.page = e.target.dataset.page;
+                    // console.log(e.target);
+                },
+            },
+            mounted() {
+                const url = './PHP/backstage_01.php';
+                fetch(url)
+                    .then(response => response.json())
+                    // .then(text => console.log(text))
+                    .then(text => this.data_list = text)
+            },
+            
+                    
+        });
+    </script>
     
 </body>
 </html>

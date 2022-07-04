@@ -13,22 +13,23 @@
     <script src="./js/vue.js"></script>
     <title>Stellar X | 太空運輸領航者</title>
 </head>
-
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
     <div id="shopping_02" v-if="shopping_2_list[4]">
         <div class="main_top">
             <div class="left_image">
-                <img class="img_1" :src="bigImg" alt="" >
+                <img style="width: 100%" class="img_1" :src="bigImg" alt="" >
+                                                       <!-- 切換步驟 -->
                 <div class="Small_img">
-                    <img src="./images/shopping_cart/t-shirt 2.jpg" alt="" @click="changeImg">
-                    <img src="./images/shopping_cart/Image-1.jpg" alt="" @click="changeImg">
+                    <img :src="shopping_2_list[vue_prod_num][3]" alt="" @click="changeImg(shopping_2_list[vue_prod_num][3])">
+                    <img :src="shopping_2_list[vue_prod_num][4]" alt="" @click="changeImg(shopping_2_list[vue_prod_num][4])">
+                                                                                       <!-- 切換步驟 -->
                 </div>
             </div>
             <div class="right_word">
                 <div class="commodity_title">
-                    <h3>{{shopping_2_list[4][0]}}</h3>
+                    <h3>{{shopping_2_list[vue_prod_num][0]}}</h3>
                     <h4>( FREE SIZE 中性款 ）</h4>
                     <p>・使用特殊加工，表面具適度光澤感的天竺素材。<br>
                         ・落肩、繭型剪裁和較長的袖子。<br>
@@ -37,23 +38,28 @@
                 </div>
                 <div class="exchange">
                     <div class="click_num">
-                        <div class="reduce">-</div>
-                        <h3>1</h3>
-                        <div class="add">+</div>
+                        <div class="reduce" @click="reduce">-</div>
+                        <h3>{{quantity}}</h3>
+                        <div class="add" @click="add">+</div>
                     </div>
                     <div class="Redeem_now">
-                        <h3>5,000 哩</h3>
-                        <h6>立即兌換</h6>
+                        <h3>{{total_mile}} 哩</h3>
+                        <!-- <h3>{{shopping_2_list[vue_prod_num][1]}} 哩</h3> -->
+                        <a href="./shopping_03.html">
+                            <h6>立即兌換</h6>
+                        </a>
                     </div>
                 </div>
                 <div class="mileage">
-                    <h3>剩餘里程數 33,000 哩</h3>
+                    <h3>剩餘里程數 {{lave_mile}} 哩</h3>
                 </div>
                 <div class="btn_flow">
-                    <div>繼續選購</div>
+                    <a href="./shopping_01.html">
+                        <div>返回購物頁面</div>
+                    </a>
                 </div>
                 <div class="btn_flow">
-                    <a href="./shopping_03.html">加入購物車</a>
+                    <a href="#" @click="join_in">加入購物車</a>
                 </div>
             </div>
         </div>
@@ -61,52 +67,32 @@
             <h3>YOU MAY ALSO LIKE</h3>
             <ul>
                 <li>
-                    <img src="./images/shopping_cart/baseball_cap.jpg" alt="">
-                    <h4>復古老帽</h4>
-                    <h5>5,000 哩</h5>
+                    <a href="./shopping_02.html?prods=3">
+                        <img src="./images/shopping_cart/baseball_cap.jpg" alt="">
+                        <h4>復古老帽</h4>
+                        <h5>92000000 哩</h5>
+                    </a>
                 </li>
                 <li>
-                    <img src="./images/shopping_cart/Image.jpg" alt="">
-                    <h4>星河葡萄酒</h4>
-                    <h5>5,000 哩</h5>
+                    <a href="./shopping_02.html?prods=1">
+                        <img src="./images/shopping_cart/Image.jpg" alt="">
+                        <h4>星河葡萄酒</h4>
+                        <h5>162000000 哩</h5>
+                    </a>
                 </li>
                 <li>
-                    <img src="./images/shopping_cart/tote_bag.jpg" alt="">
-                    <h4>環保帆布袋</h4>
-                    <h5>5,000 哩</h5>
+                    <a href="./shopping_02.html?prods=5">
+                        <img src="./images/shopping_cart/tote_bag.jpg" alt="">
+                        <h4>環保帆布袋</h4>
+                        <h5>84000000 哩</h5>
+                    </a>
                 </li>
             </ul>
         </div>
     </div>
-    <script>
-            new Vue({
-            el:'#shopping_02',
-            data:{
-                shopping_2_list:[],
-                bigImg:'./images/shopping_cart/t-shirt 2.jpg',
-            },
-            methods: {
-                changeImg(e){
-                    // console.log(e.target.getAttribute("src"));
-                    this.bigImg = e.target.getAttribute("src");
-                },
-            },
-            compute: {},
-            watch: {},
-            created() {
-                let url = './PHP/commodity.php'; //
-                fetch(url)
-                    .then(response => response.json())
-                    .then(
-                        text => this.shopping_2_list = text
-                    ); //
-            },
-            mounted(){},
-            destroyed(){},
-        })
-    </script>
-    @@include("./layout/footer.html")
     
+    @@include("./layout/footer.html")
+    <script src="./js/shopping_02.js"></script>
 </body>
 
 </html>

@@ -3,15 +3,15 @@ header{
     height: 100px;
 }
 
-nav{
+.header{
     // background-color: hsl(231, 100%, 9%);
     margin-top: 40px;
-   margin-bottom: 120px;
+    margin-bottom: 120px;
     text-align: center; 
     align-items: center;   
     }
 
-    ul{
+    .header-ul{
         width: 1080px;
         display: flex;
         margin: 0 auto;
@@ -30,52 +30,72 @@ nav{
                 width: 180px;
             }
         }
+        
+        .booking:hover{
+            transform: scale(1.05);
+        }
+        
+        .shoppiingicon{
+            display: flex;
+            a{
+                position: relative;
+                .Shopp_add{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgb(245, 40, 40);
+                    color: #eee;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+        
+                    position: absolute;
+                    top: -27%;
+                    right: -42%;
+        
+                    z-index: 100;
+                }
+            }
+        }
+        
+        .item_list{
+            width: 580px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: #987A4D 1px solid;
+            line-height: 40px; 
+            // outline: 2px solid rgb(21, 255, 0);
+        
+            a{
+            // width: 55%;
+            font-weight: 500;
+            color: #eeeeee;
+            text-decoration: none;
+            font-size: 18px;
+            height: 40px; 
+            box-sizing: border-box;
+            }
+        
+            a:hover{
+                border-bottom: #987A4D 2px solid;
+            }
+        }
+        
+        .booking{
+            width: 117px;
+            background: #987A4D;
+            border-radius: 50px;
+        
+            a{
+                font-size: 16px;
+                color: #eeeeee;
+                text-decoration: none;
+            }
+        }
+        
+        .shoppiingicon svg:hover{
+            transform: scale(1.05);
+        }
+        
+            
 }
-
-.booking:hover{
-    transform: scale(1.05);
-}
-
-.shoppiingicon{
-    display: flex;
-}
-
-.item_list{
-    width: 580px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: #987A4D 1px solid;
-    line-height: 40px; 
-    // outline: 2px solid rgb(21, 255, 0);
-
-    a{
-    // width: 55%;
-    font-weight: 500;
-    color: #eeeeee;
-    text-decoration: none;
-    font-size: 18px;
-    height: 40px; 
-    box-sizing: border-box;
-    }
-
-    a:hover{
-        border-bottom: #987A4D 2px solid;
-    }
-}
-
-.booking{
-    width: 117px;
-    background: #987A4D;
-    border-radius: 50px;
-
-    a{
-        color: #eeeeee;
-        text-decoration: none;
-    }
-}
-
-.shoppiingicon svg:hover{
-    transform: scale(1.05);
-}
-
-    

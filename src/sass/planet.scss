@@ -4,7 +4,15 @@
 @import 'mixin/mixin';
 @import 'component/btn';
 
+
+.planet{
+    position: relative;
+    z-index: 120;
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
 // planet intro section
+
 
 .planet-intro{
     border: 2px solid firebrick;
@@ -75,7 +83,6 @@ main{
         margin: 0 auto;
 
         .circle{
-  
             width: 900px;
             height: 1200px;
             position: relative;
@@ -210,7 +217,7 @@ main{
                       width: desktop-size(175);
                       height: desktop-size(175);
                       border-radius: 50%;
-                      box-shadow: 0 0 4.7px 0 rgba(0, 0, 0, 0.75);
+                    //   box-shadow: 0 0 4.7px 0 rgba(0, 0, 0, 0.75);
                       transition: all $global-duration $global-duration $global-time-function;
           
                       &.-active {
@@ -284,19 +291,6 @@ main{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // planet service intro section
 .planet-service{
     // border: 2px solid firebrick;
@@ -327,12 +321,14 @@ main{
 // planet service slider
 
 .planet-activity-slider{
+    
     ul{
         width: 100%;
         height: 900px;
         margin: 0 auto;
         display: flex;
         margin-top: -400px;
+        
     }
     
     li{
@@ -344,11 +340,13 @@ main{
         font-size: 40px;
         text-align: center;
         padding-top: 200px;
+        
     }
     
     .item1{
         background-image: url(../images/planet/activity/001.jpg);
         flex-grow: 2;
+       
     }
     
     .item2{

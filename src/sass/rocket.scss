@@ -6,6 +6,12 @@
 
 body{
     color: $white;
+    background-color: #05081A;
+}
+.rocket-header{
+    margin: 0 !important;
+    padding: 40px 0 120px;
+    background-color: black;
 }
 
 // -------------------------------- 火箭進版 --------------------------------
@@ -130,13 +136,13 @@ body{
 
 .rocket-engine{
     // border: 1px solid firebrick;
-
+    position: relative;
+    
     img{
         display: block;
         margin: auto;
-        position: relative;
     }
-
+    
     .engine-info{
         width: 1080px;
         margin: auto;

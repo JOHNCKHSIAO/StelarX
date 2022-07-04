@@ -3,46 +3,60 @@ header {
   height: 100px;
 }
 
-nav {
+.header {
   margin-top: 40px;
   margin-bottom: 120px;
   text-align: center;
   align-items: center;
 }
 
-ul {
+.header-ul {
   width: 1080px;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
-ul li {
+.header-ul li {
   line-height: 40px;
 }
-ul .logo {
+.header-ul .logo {
   display: flex;
 }
-ul .logo img {
+.header-ul .logo img {
   width: 180px;
 }
-
-.booking:hover {
+.header-ul .booking:hover {
   transform: scale(1.05);
 }
-
-.shoppiingicon {
+.header-ul .shoppiingicon {
   display: flex;
 }
-
-.item_list {
+.header-ul .shoppiingicon a {
+  position: relative;
+}
+.header-ul .shoppiingicon a .Shopp_add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 40, 40);
+  color: #eee;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -27%;
+  right: -42%;
+  z-index: 100;
+}
+.header-ul .item_list {
   width: 580px;
   display: flex;
   justify-content: space-between;
   border-bottom: #987A4D 1px solid;
   line-height: 40px;
 }
-.item_list a {
+.header-ul .item_list a {
   font-weight: 500;
   color: #eeeeee;
   text-decoration: none;
@@ -50,21 +64,20 @@ ul .logo img {
   height: 40px;
   box-sizing: border-box;
 }
-.item_list a:hover {
+.header-ul .item_list a:hover {
   border-bottom: #987A4D 2px solid;
 }
-
-.booking {
+.header-ul .booking {
   width: 117px;
   background: #987A4D;
   border-radius: 50px;
 }
-.booking a {
+.header-ul .booking a {
+  font-size: 16px;
   color: #eeeeee;
   text-decoration: none;
 }
-
-.shoppiingicon svg:hover {
+.header-ul .shoppiingicon svg:hover {
   transform: scale(1.05);
 }
 

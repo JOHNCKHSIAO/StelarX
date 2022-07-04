@@ -52,11 +52,12 @@ let vm = new Vue({
                   })
                   .then(res=>{
                     if(res=="loginOK"){
-                        alert("登入成功，即將轉至會員中心");
+                        // alert("登入成功，即將轉至會員中心");
                         setTimeout(()=>{
                             window.location = "./member_login02.html";
                         },1000)
                        return;
+                       
                     }else if(res=="notAvailable"){
                         this.errorMessage = "您還不是我們的會員，請加入會員!";
                         this.messageOpacity.opacity ="1";

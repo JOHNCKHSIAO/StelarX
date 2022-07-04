@@ -28,14 +28,46 @@
                 transform: translate(-50%,0);
             }
         }
-
-        .vip-card{
-            display:block;
-            width:563px;
-            border-radius:26px;
+        .imgContainer{
+            // border: 1px solid white;
+            position: relative;
             margin:0 auto;
             margin-top: 60px;
+            width:570px;
+            .vip-card{
+                display:block;
+                width:563px;
+                border-radius:26px;
+                margin:0 auto;
+            }
+            .member-name{
+                font-size: 34px;
+                position: absolute;
+                color:$white;
+                top:35%;
+                left:23%;
+                transform: translate(-50%,0);
+            }
+            .member-type-card{
+                position: absolute;
+                font-size: 16px;
+                color:$white;
+                top:56%;
+                left:18%;
+            }
+            .memmer-code{
+                position: absolute;
+                color:$white;
+                top:80%;
+                left:72%;     
+                span{
+                    color:$white;
+                }
+
+            }
+
         }
+        
         .member-type{
             color:$white;
             text-align: center;
@@ -84,6 +116,7 @@
                     border-radius: 50%;
                     padding-top:20px;
                     .circle-inner{
+                        border:1px solid white;
                         width:312px;
                         height:312px;
                         background: $blue;
@@ -91,11 +124,15 @@
                         margin-left: 20px;
                         border-radius: 50%;
                         line-height: 312px;
+                        position: relative;
                         .bignumber{
-                            font-size: 80rem;
+                            font-size: 60rem;
                             color:$white;
-                            margin-left: 50px;
-
+                            position: absolute;
+                            top:50%;
+                            left:50%;
+                            transform: translate(-50%,-50%);
+                            
                         }
                         span{
                             font-size: 30rem;

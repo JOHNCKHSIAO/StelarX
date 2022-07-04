@@ -100,6 +100,51 @@
   text-align: center;
 }
 
+.btn_flow {
+  position: relative;
+  background-color: #000000;
+  line-height: 60px;
+  font-size: 20px;
+  color: #FFF;
+  width: 300px;
+  text-align: center;
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  z-index: 1;
+  cursor: pointer;
+}
+.btn_flow:hover {
+  animation: show 8s linear infinite;
+}
+@keyframes show {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.btn_flow::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0;
+}
+
+.btn_flow:hover::before {
+  opacity: 1;
+  animation: show 8s linear infinite;
+}
+
 .btn_status {
   width: 250px;
   height: 46px;
@@ -285,6 +330,27 @@
   outline: #987A4D;
 }
 
+.selector_title {
+  position: relative;
+}
+.selector_title ::after {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 3px solid #EEEEEE;
+  position: absolute;
+  top: 100%;
+  margin-top: 14px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.selector_title h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #eeeeee;
+}
+
 .my_tra_in {
   width: 500px;
   height: 70px;
@@ -294,6 +360,7 @@
   border: 1px solid #EEEEEE;
   border-radius: 5px;
   margin-bottom: 32px;
+  color: #EEEEEE;
 }
 
 .contact {
@@ -430,6 +497,7 @@
   padding-left: 10px;
   padding-top: 10px;
   background-color: #191F42;
+  color: #EEEEEE;
   border-radius: 5px;
 }
 .bg1440 .wrapper1080 .my_tra_form .btn_cta {

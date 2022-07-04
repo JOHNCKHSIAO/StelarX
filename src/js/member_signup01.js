@@ -49,9 +49,11 @@
     },
     methods: {
         checkAccount(){
-            //有時間加入一個驗證非空白字元
+            //有時間加入一個驗證非空白字元  還要削去首尾空白
             // let regex = new RegExp("\f\n\r\t\v");
-            let accountValue = this.form_data.account_input_v;
+            
+             let accvalue = this.form_data.account_input_v;
+             let accountValue = accvalue.trim(); 
             if(accountValue.length < 5 || accountValue.length > 50){
                 this.accountOpacity.opacity = 1;
                 this.accountAndIdCheck.account = false;
@@ -90,7 +92,8 @@
         checkID(){
             //有時間加入正則表達 一英文6數字
             // let regex = new RegExp("\f\n\r\t\v");
-            let idValue = this.form_data.id_input_v;
+            let idinput =  this.form_data.id_input_v;
+            let idValue = idinput.trim();
             if((idValue.length) !=7){
                 this.idOpacity.opacity = 1;
                 this.idMessage = "請輸入正確格式的個人ID";
@@ -148,7 +151,7 @@
          
 
             if(this.btnStep==3){
-                alert("go");
+                // alert("go");
                 let memberInfo = {
                     account : this.form_data.account_input_v,
                     id: this.form_data.id_input_v,
@@ -174,8 +177,8 @@
                     referrer: 'no-referrer', 
                   })
                   .then(res=>{return res.text();})
-                  .then(res=>{if(res=="ok"){
-                    window.location = "./member_signup02.html"
+                  .then(res=>{if(res=="OK"){
+                    window.location.href = "./member_signup03.html";
                   }})
                 
             }else if(this.btnStep==2) {
@@ -203,7 +206,7 @@
                 password_div.classList.add("fadeIn");
                 checkPassword_div.classList.add("fadeIn");
             }else{
-                alert("請輸入完整內容再按按鈕!");
+              return;
             }
         },
         checkPassWord(arg){

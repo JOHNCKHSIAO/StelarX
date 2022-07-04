@@ -1,10 +1,44 @@
 //先用一層div包住 裡面有label 還有input
-$h5LableFontSize:14px;
-$inputWidth:260px;
-$inputHeight:40px;
+$h5LableFontSize:18px;
+$inputWidth:430px;
+$inputHeight:62px;
 $inputFontSize:18px;
 $labelSpaceing:15px;
+.form{
+    position: relative;
+    box-sizing: content-box;
+    label{
+        display: block;
+        // border:1px solid yellow;
+        margin-bottom:$labelSpaceing;
+        .form__label{
+            color:$white;
+            font-size: $h5LableFontSize;
+        }
+    }
+    &__input{
+        display:block;
+        width:$inputWidth;
+        height:$inputHeight;
+        background-color:#191F42;
+        border:1px solid #00072E;
+        border-radius: 5px;
+        font-size:$inputFontSize;
+        padding-left: 15px;
+        color:$white;
+        &:focus{
+            // background-color:#1A005C;
+            // border:1px solid #5e5e5e;
+
+        }
+
+    }
+
+}
+
+//先用一層div包住 裡面有label 還有input
 .input_div{
+    // position: relative;
     box-sizing: content-box;
     label{
         display: block;
@@ -25,18 +59,9 @@ $labelSpaceing:15px;
         font-size:$inputFontSize;
         padding-left: 15px;
         color:$white;
-        &:focus{
-            background-color:#987A4D;
-            border:#987A4D;
-            outline:#987A4D;;
-
-        }
-
     }
-
 }
-
-//先用一層div包住 裡面有label 還有input
+//舊版input 尺寸改成新的
 .input_div_password{
     // border:1px solid pink;
     position: relative;
@@ -60,17 +85,17 @@ $labelSpaceing:15px;
             padding-left: 15px;
             color:$white;
             &:focus{
-                background-color:#987A4D;
-                border:#987A4D;
-                outline:#987A4D;;
+                // background-color:#987A4D;
+                // border:#987A4D;
+                // outline:#987A4D;;
     
             }
     }
     i{
         color:$white;
-        font-size:10rem;
+        font-size:18rem;
         position:absolute;
-        top:43%;
+        top:45%;
         right:5%;
         &:hover{
             cursor: pointer;
@@ -92,8 +117,8 @@ $labelSpaceing:15px;
     }
     input{
         display:block;
-        width:550px;
-        height:40px;
+        width:910px;
+        height:$inputHeight;
         background-color:#191F42;
         border:#191F42;
         border-radius: 5px;
@@ -101,9 +126,9 @@ $labelSpaceing:15px;
         padding-left: 15px;
         color:$white;
         &:focus{
-            background-color:#987A4D;
-            border:#987A4D;
-            outline:#987A4D;;
+            // background-color:#987A4D;
+            // border:#987A4D;
+            // outline:#987A4D;;
         }
 
     }

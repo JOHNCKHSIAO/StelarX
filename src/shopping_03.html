@@ -10,13 +10,14 @@
     <link rel="shortcut icon" href="./images/shortcut.png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/shopping_03.css">
+    <script src="./js/vue.js"></script>
     <title>Stellar X | 太空運輸領航者</title>
 </head>
 
 <body class="shopping03">
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
-    <div class="shopping-list">
+    <div class="shopping-list" id="shopping_03">
         <h3>購物車</h3>
         <div class="commodity">
             <div class="on_title">
@@ -25,31 +26,17 @@
                 <h5>哩數</h5>
             </div>
             <ul class="shop_03_ul">
-                <li class="shop_03_li">
-                    <img src="./images/shopping_cart/t-shirt 2s.jpg" alt="">
+                <li class="shop_03_li" v-for="item in order_list_local" :key="item.index">
+                    <img :src="item['商品圖']" alt="">
                     <div class="wrap">
-                        <h5>品牌T恤</h5>
+                        <h5>{{item['商品名稱']}}</h5>
                         <div class="wrap_in">
                             <div class="click_num">
                                 <div class="reduce">-</div>
-                                <h3>1</h3>
+                                <h3>{{item['商品數量']}}</h3>
                                 <div class="add">+</div>
                             </div>
-                            <h3>5,000 哩</h3>
-                        </div>
-                    </div>
-                </li>
-                <li class="shop_03_li">
-                    <img src="./images/shopping_cart/t-shirt 3s.jpg" alt="">
-                    <div class="wrap">
-                        <h5>歐若拉香氛</h5>
-                        <div class="wrap_in">
-                            <div class="click_num">
-                                <div class="reduce">-</div>
-                                <h3>1</h3>
-                                <div class="add">+</div>
-                            </div>
-                            <h3>5,000 哩</h3>
+                            <h3>{{item['商品數量'] * item['里程數']}} 哩</h3>
                         </div>
                     </div>
                 </li>
@@ -59,10 +46,10 @@
         <div class="button_in">
             <div class="btn_status">
                 <h5>
-                    <a class="btn_square" href="#">繼續選購</a>
+                    <a class="btn_square" href="#" >繼續選購</a>
                 </h5>
             </div>
-            <h2>剩餘里程數 33,000 哩</h2>
+            <h2>剩餘里程數 300000 哩</h2>
         </div>
     </div>
     <div class="com-form">
@@ -111,7 +98,7 @@
             <div class="lattice_left">
                 <h5>取貨人</h5>
                 <div class="lattice">
-
+                    
                 </div>
             </div>
             <div class="lattice_right">
@@ -126,6 +113,7 @@
         </div>
     </div>
     @@include("./layout/footer.html")
+    <script src="./js/shopping_03.js"></script>
 </body>
 
 </html>
