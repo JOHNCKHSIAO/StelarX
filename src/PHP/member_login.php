@@ -21,7 +21,7 @@ include("connection.php");
 
 $member = $_POST;
 
-$sql1 = "select ACCOUNT,PASSWORD from member
+$sql1 = "select ID ,ACCOUNT,PASSWORD from member
 where ACCOUNT = :account ";
 
 // $sql2 = "select ACCOUNT, PASSWORD from stellarx.member
@@ -49,6 +49,7 @@ if (count($result)==0){ //比對帳號  無帳號回報沒有帳號
        if ($arr["PASSWORD"] == $member["password"]){
         session_start();
         $_SESSION["memberAccount"] = $arr["ACCOUNT"];
+        $_SESSION["ID"] = $arr["ID"];
         echo("loginOK");
         
 
