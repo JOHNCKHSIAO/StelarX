@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Stelar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <meta name="description" content="Stelar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <script src="https://kit.fontawesome.com/ea5d4b1a0a.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./images/shortcut.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/star.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/planet.css">
     <title>Stelar X | 太空運輸領航者</title>
 </head>
+
 <body>
     <section class="star_bg" id="home">
         <div class="stars"></div>
@@ -28,68 +32,165 @@
             <div class="meteor"></div>
             <div class="meteor"></div>
         </div>
-    @@include("./layout/header.html")
-    <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
-
-    <!-- planet intro section -->
-    <section class="planet-intro">
-        <div class="planet-name">
-            <h1>木星</h1>
-            <h5>JUPITER</h5>
-        </div>
-        <div class="planet-desc">
-            <h4>距離地球 7400 萬公里</h4>
-            <h6>原名 Jupiter 發音相近於邱比特，亦被稱為「邱比特之星」，由於特殊的高壓環境，使木星擁有全銀河獨特的「鑽石海」與「鑽石雨」奇景，進而成為約會首選勝地。</h6>
-        </div>
-    </section>
-
-    <!-- planet selection section -->
-    <section class="planet-selection">
-        <main id="main">
-            <div class="wrapper">
-                <div class="circle">
-                    <div :class="classChange">
-                        <div v-for="(name, index) in names" class="label">
-                            <a class="label__link" @click="rotate(index)">
-                                <div class="label__link-box">
-                                    <!-- <div class="label__index">{{index}}</div> -->
-                                    <div class="label__link-box-center -fake">
-                                        <div class="label__link-box-center-center">
-                                            <div class=" label__link-inner">{{name}}</div>
-                                        </div>
-                                    </div>
-                                </a>
+        @@include("./layout/header.html")
+        <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+        <!-- planet intro section -->
+        <section class="planet">
+            <!-- planet selection section -->
+            <section class="planet-selection">
+                <main id="main">
+                    <div class="wrapper">
+                        <div class="planet-intro">
+                            <div class="planet-name">
+                                <h1>火星</h1>
+                                <h5>MARS</h5>
                             </div>
+                            <div class="planet-desc">
+                                <h4>距離地球 5400 萬公里</h4>
+                                <h6>坐落於太陽系的黃金地段，現為最繁華的商業之星。大量的金融貿易、科技、文化與最完善的交通、通信等現代化設施，為火星軟體園區最重要之奠基石。</h6>
+                            </div>
+                            <!-- <div class="planet-name">
+                                <div :class="title1">{{planetname}}</div><br>
+                                <div :class="title3">{{planetename}}</div>
+                            </div>
+                            <div class="planet-desc">
+                                <h4>{{planetdist}}</h4>
+                                <h6>{{planetdesc}}</h6>
+                            </div> -->
                         </div>
-                        <img :src="planetImg" alt="">
+                        <div class="circle">
+                            <div :class="classChange">
+                                <div v-for="(name, index) in names" class="label">
+                                    <a class="label__link" @click="rotate(index)">
+                                        <div class="label__link-box">
+                                            <!-- <div class="label__index">{{index}}</div> -->
+                                            <div class="label__link-box-center -fake">
+                                                <div class="label__link-box-center-center">
+                                                    <div class=" label__link-inner">{{name}}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <img :src="planetImg" alt="">
+
+                        </div>
                     </div>
-                </div>
+
+                </main>
+            </section>
+            
+
+
+            
+
+
+            <!--------------------------- 季節活動 --------------------------->
+
+
+            <section class="season-intro">
+
+                <h2>星球季節活動</h2>
+                <h6>在浩瀚的宇宙中，每顆行星都有不同的運轉時間和季節變換<br>
+                     Stelar X 探索 8 大行星的奧秘，讓你達成環遊宇宙的夢想
+                </h6>
+            </section>
+
+
+            <article class="season-event">
+
+                <!-- 夜探星空 -->
+                <section class="event-slides">
+                    <h6 class="numbertext fade">1 / 4</h6>
+                    <img src="./images/planet/event/nightView.jpg">
+
+                    <div class="event-info fade">
+                        <h3>夜探星空</h3>
+                        <h6>
+                            五至六月是木星最有名的鑽石雨季<br>
+                            下過雨後的晚上是欣賞鑽石星空的最佳時機<br>
+                            於星空廣場觀賞的同時也有酒吧與當地歌手駐唱<br>
+                            適合小酌一杯與重要的人增進情感
+                        </h6>
+                    </div>
+                    <div class="text">夜探星空</div>
+                </section>
+
+                <!-- 夜賞極光 -->
+                <section class="event-slides">
+                    <h6 class="numbertext fade">2 / 4</h6>
+                    <img src="./images/planet/event/aurora.jpg">
+
+                    <div class="event-info fade">
+                        <h3>夜賞極光</h3>
+                        <h6>
+                            水星一年有三分之二的時間都能夠以肉眼目睹極光<br>
+                            因此有著極光之星的美名，並且因地質影響還有極地溫泉<br>
+                            可以讓人邊泡著溫泉享受滿天星空的感動
+                        </h6>
+                    </div>
+                    <div class="text">夜賞極光</div>
+                </section>
+
+                <!-- 摘星體驗 -->
+                <section class="event-slides">
+                    <h6 class="numbertext fade">3 / 4</h6>
+                    <img src="./images/planet/event/starPick.jpg">
+
+                    <div class="event-info fade">
+                        <h3>摘星體驗</h3>
+                        <h6>
+                            億年冰封的極地，恍若宇宙盡頭<br>
+                            位於太陽系極點90°的天王星，經上億年冰河刻蝕而成的壯烈冰谷星球<br>
+                            在那永晝的日與夜間，在天空形成許多顆小小閃亮星星<br>
+                            讓遊客體驗摘星活動，摘一顆屬於你的小流星作為紀念
+                        </h6>
+                    </div>
+                    <div class="text">摘星體驗</div>
+                </section>
+
+                <!-- 營火露營 -->
+                <section class="event-slides">
+                    <h6 class="numbertext fade">4 / 4</h6>
+                    <img src="./images/planet/event/camp.jpg">
+
+                    <div class="event-info fade">
+                        <h3>營火露營</h3>
+                        <h6>
+                            厭倦了都市喧囂與路上的車水馬龍，高壓的生活壓得我們無法喘氣<br>
+                            何不給自己一個放鬆的機會，來土星體驗星球露營<br>
+                            這裡可以讓心靈獲得平靜與放鬆，小孩可以嬉戲，大人可歌唱跳舞<br>
+                            累了就席地而坐，圍繞著營火分享著彼此的故事
+                        </h6>
+                    </div>
+                    <div class="text">營火露營</div>
+                </section>
     
-            </main>
+                <!-- 左右按鈕 -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </article>
+
+            <!-- 麵包點點 -->
+            <section style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span> 
+            </section>
+
+
+
+
+
         </section>
-    
-        <!-- planet service intro section -->
-        <section class="planet-service">
-            <div class="planet-activity-intro">
-                <span class="title2">星球季節活動</span>
-                <p>在浩瀚的宇宙中，每顆行星都有不同的運轉時間和季節變換，搭乘 Stelar X 探索 8 大行星的奧秘，讓你達成環遊宇宙的夢想。</p>
-            </div>
-        </section>
-    
-        <!-- planet service slider -->
-        <section class="planet-activity-slider">
-            <ul>
-                <li class="item1">夜探星空</li>
-                <li class="item2">營火露營</li>
-                <li class="item3">夜賞極光</li>
-                <li class="item4">摘星體驗</li>
-            </ul>
-        </section>
-    </section>
-    @@include("./layout/footer.html")
+        @@include("./layout/footer.html")
     </section>
     <script src="./js/planet_v.js"></script>
     <script src="./js/planet.js"></script>
+    <script src="./js/planet_slider.js"></script>
 </body>
 
 </html>

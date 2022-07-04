@@ -54,8 +54,7 @@ table {
 }
 
 html {
-  font-family: "Roboto", sans-serif;
-  /* 預設字體 */
+  font-family: "Roboto", sans-serif; /* 預設字體 */
   font-size: 6.26%;
   line-height: 1.6;
   box-sizing: border-box;
@@ -130,8 +129,8 @@ p {
 }
 
 .btn_cta {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   cursor: pointer;
@@ -145,7 +144,7 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
@@ -159,8 +158,8 @@ p {
 }
 
 .btn_cta_submit {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   background: #00072E;
@@ -175,7 +174,7 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
@@ -189,29 +188,44 @@ p {
 }
 
 .btn_general {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
 .btn_general:hover {
-  border-color: #00072E;
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  transition: ease-out 0.5s;
+  border: none;
 }
 .btn_general .btn_square {
   display: block;
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
 }
+.btn_general .btn_pay {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  border: none;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  background-color: transparent;
+}
 
 .btn_general_sumbmit {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   background: #00072E;
   cursor: pointer;
@@ -225,15 +239,60 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
 }
 
+.btn_flow {
+  position: relative;
+  background-color: #000000;
+  line-height: 60px;
+  font-size: 20px;
+  color: #FFF;
+  width: 300px;
+  text-align: center;
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  z-index: 1;
+  cursor: pointer;
+}
+.btn_flow:hover {
+  animation: show 8s linear infinite;
+}
+@keyframes show {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.btn_flow::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0;
+}
+
+.btn_flow:hover::before {
+  opacity: 1;
+  animation: show 8s linear infinite;
+}
+
 .btn_status {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
@@ -242,36 +301,42 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
+  transition: ease 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
 }
 .btn_status .btn_square:hover {
-  background: #EEEEEE;
   color: #00072E;
+  box-shadow: inset 50px 0 0 0 0 #EEEEEE;
 }
 
 .btn_status_submit {
-  width: 250px;
-  height: 46px;
-  border: 1px solid #EEEEEE;
-  background: #00072E;
-  padding: 0;
+  width: 280px;
+  height: 50px;
   cursor: pointer;
 }
 .btn_status_submit .btn_square {
-  width: 100%;
-  height: 100%;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
+  transition: ease-out 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
 }
 .btn_status_submit .btn_square:hover {
-  background: #EEEEEE;
   color: #00072E;
+  box-shadow: inset 280px 0 0 0 #EEEEEE;
 }
 
 .btn_main {
@@ -344,17 +409,17 @@ h5 {
 }
 
 .small_planet_top {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   opacity: 70%;
   position: absolute;
-  left: 1210px;
+  left: 1000px;
   top: 30px;
 }
 
 .small_planet_bottom {
-  width: 160px;
-  height: 160px;
+  width: 100px;
+  height: 100px;
   opacity: 70%;
   position: absolute;
   right: 30px;
@@ -363,7 +428,7 @@ h5 {
 
 /*--------- 星球測驗答案 ---------*/
 .quiz_test {
-  width: 1440px;
+  width: 1200px;
   height: 100%;
   margin: auto;
   overflow: hidden;
@@ -373,38 +438,38 @@ h5 {
   /*--------- 文字左邊區塊 ---------*/
 }
 .quiz_test .quiz_planet {
-  width: 680px;
-  height: 660px;
+  width: 500px;
+  height: 500px;
   position: relative;
   /*--------- 土星img參數 ---------*/
   /*--------- 水星img參數 ---------*/
 }
 .quiz_test .quiz_planet img {
-  width: 550px;
-  height: 550px;
+  width: 450px;
+  height: 450px;
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 10px;
+  left: 30px;
 }
 .quiz_test .quiz_planet .SATURNimge {
-  width: 700px;
-  height: 400px;
+  width: 530px;
+  height: 330px;
   position: absolute;
-  top: 140px;
-  left: -20px;
+  top: 90px;
+  left: 10px;
 }
 .quiz_test .quiz_planet .MERCURYimge {
-  width: 600px;
+  width: 480px;
 }
 .quiz_test .quiz_wold {
-  margin-left: 80px;
-  margin-top: 90px;
+  margin-left: 60px;
+  margin-top: 30px;
   width: 450px;
   height: 100%;
 }
 .quiz_test .quiz_wold h1 {
   line-height: 1;
-  margin-bottom: 48px;
+  margin-bottom: 38px;
 }
 .quiz_test .quiz_wold .text_left {
   width: 500px;
@@ -428,7 +493,7 @@ h5 {
 .quiz_test .quiz_wold h3 {
   line-height: 1;
   font-weight: 500;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .quiz_test .quiz_wold .belong-info {
   width: 450px;
@@ -451,6 +516,90 @@ h5 {
 }
 .quiz_btn .btn_cta .aLink img {
   width: 18px;
+}
+
+/*-------------- RWD手機板 --------------*/
+@media screen and (max-width: 414.98px) {
+  .small_planet_top {
+    display: none;
+  }
+  .small_planet_bottom {
+    display: none;
+  }
+  .quiz_test {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .quiz_test .quiz_planet {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    /*--------- 土星img參數 ---------*/
+    /*--------- 水星img參數 ---------*/
+  }
+  .quiz_test .quiz_planet img {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .quiz_test .quiz_planet .SATURNimge {
+    width: 380px;
+    height: 240px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .quiz_test .quiz_planet .MERCURYimge {
+    width: 380px;
+  }
+  .quiz_test .quiz_wold {
+    width: 370px;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+  }
+  .quiz_test .quiz_wold h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+  .quiz_test .quiz_wold .text_left {
+    width: 260px;
+    margin: auto;
+  }
+  .quiz_test .quiz_wold .text_left .title2 {
+    font-size: 32px;
+  }
+  .quiz_test .quiz_wold .sep-line {
+    width: 300px;
+    margin: 15px auto;
+  }
+  .quiz_test .quiz_wold h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .quiz_test .quiz_wold .belong-info {
+    font-size: 20px;
+    width: 350px;
+    margin: auto;
+  }
+  .quiz_btn {
+    width: 100%;
+    display: block;
+  }
+  .quiz_btn #quiz_btn {
+    margin-top: 24px;
+    margin-bottom: 15px;
+  }
 }
 
 /*# sourceMappingURL=quiz03.css.map */

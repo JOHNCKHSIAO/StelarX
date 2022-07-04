@@ -11,12 +11,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="shortcut icon" href="./images/shortcut.png">
+    <link rel="stylesheet" href="css/star.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="css/booking_01-2.css">
     <title>Stelar X | 太空運輸領航者</title>
 </head>
 
 <body>
+    <section class="star_bg" id="home">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <div class="meteors">
+          <div class="meteor"></div>
+          <div class="meteor"></div>
+          <div class="meteor"></div>
+          <div class="meteor"></div>
+          <div class="meteor"></div>
+          <div class="meteor"></div>
+        </div>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
     <section class="booking-process">
@@ -71,7 +84,7 @@
             <div>
                 <p>目的地</p>
                 <div class="btn_status">
-                    <a class="btn_square" id="end" href="./booking_02.html">選擇到達星球</a>
+                    <a class="btn_square" id="end" href="#" onclick(e)="e.preventDefault()">滾動圖片，選擇到達星球</a>
                 </div>
             </div>
         </div>
@@ -149,24 +162,18 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <!-- <div class="selection-setting">
-                <div class="title2">MARS</div>
-                <h5>最繁華的商業之星</h5>
-                <span class="title5">商務客限定</span>
-                <p>飛行時間七小時<br>到地球的距離 5400 萬公里</p>
-                <a onclick="dest()" href="./booking_02.html">請選擇出發星球</a>
-            </div> -->
             <div class="selection-setting">
                 <div class="title2">EARTH</div>
                 <h5>人類第一個家</h5>
                 <span class="title5">預約航程</span>
                 <p>選擇欲前往行星<br>開啟你的星際旅程</p>
-                <a onclick="dest()" href="./booking_02.html">確定目的地</a>
+                <a onclick="sendPlanet()" href="./booking_02.html">下一步</a>
             </div>
 
 
         </section>
-
+        @@include("./layout/footer.html")
+</section>
 
         <script>
 
@@ -212,13 +219,13 @@
         // let saturn = document.querySelector("#saturn").src   // 土星
         // let uranus = document.querySelector("#uranus").src   // 天王星
         // let venus = document.querySelector("#venus").src   // 金星
-        function dest(){
+        function sendPlanet(){
             console.log(end.innerText);
-            localStorage.setItem('dest',(end.innerText))
+            localStorage.setItem('dest',JSON.stringify(end.innerText))
         }
         </script>
 
-        @@include("./layout/footer.html")
+        
 
 </body>
 

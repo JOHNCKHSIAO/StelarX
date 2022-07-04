@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/star.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/booking_06.css">
+    <script src="./js/vue.js"></script>
     <title>Stelar X | 太空運輸領航者</title>
 </head>
 
@@ -67,7 +68,8 @@
             </div>
         </section>
 
-        <main>
+<!------ 完成預約區塊 ------>
+        <main id="booking06">
             <div class="selector_title">
                 <h2>完成預約</h2>
             </div>
@@ -80,7 +82,7 @@
                 <div class="line">.</div>
                 <div class="small_title_in">
                     <h6>日期</h6>
-                    <h6 class="h6_2">2052/07/15</h6>
+                    <h6 class="h6_2"></h6>
                 </div>
                 <div class="small_title_in">
                     <h6>航班</h6>
@@ -164,6 +166,37 @@
         </div>
         @@include("./layout/footer.html")
     </section>
+    <script>
+    
+// 預約流程最後要寫入的資料
+// 1. 路線  
+// 2. 會員ID 
+// 3.  X艙人數  如果沒有  要帶0進去
+// 4. GX 艙人數  如果沒有要帶0進去
+// 5. 總金額   
+// 6. 同行 乘客的個人資料  
+// 7.  同行乘客  搭哪一個位置 
+// 8.   同行乘客  選了哪些服務   這些服務會是一個陣列  有選的服務寫1  沒選的寫0  每一個欄位都要有直
+
+// let list = {
+//                 date : this.form_data.account_input_v,
+//                 flight: this.form_data.id_input_v,
+//                 cabin : this.form_data.password_input_v,
+//                 dest: this.form_data.name_input_v,
+//                 ppl : this.form_data.lastName_input_v,
+//                 price : this.form_data.cellphone_input_v,
+//                 lastname : localStorage.getItem('customlastName'),
+//                 name : localStorage.getItem('customName'),
+//                 id : localStorage.getItem('customId'),
+//                 phone : localStorage.getItem('customPhone'),
+//                 colastname : localStorage.getItem('customcolastName'),
+//                 coname : localStorage.getItem('customcoName'),
+//                 coid : localStorage.getItem('customcoId'),
+//                 cophone : localStorage.getItem('customcoPhone'),
+
+//             }
+    </script>
+    <script src="./js/booking_06.js"></script>
 </body>
 
 </html>

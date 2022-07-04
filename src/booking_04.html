@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <meta name="description" content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
     <link rel="shortcut icon" href="./images/shortcut.png">
     <link rel="stylesheet" href="css/star.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/booking_04.css">
+    <script src="./js/vue.js"></script>
     <title>Stelar X | 太空運輸領航者</title>
 </head>
+
 <body>
-    <section class="star_bg" id="home">
+    <section class="star_bg" id="form">
         <div class="stars"></div>
         <div class="stars2"></div>
         <div class="stars3"></div>
@@ -25,177 +27,294 @@
             <div class="meteor"></div>
             <div class="meteor"></div>
         </div>
-    @@include("./layout/header.html")
-    <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
-    <section class="booking-process">
-        <div class="booking-process_each">
-            <div class="process-circle ">
-                <h2>1</h2>
+        @@include("./layout/header.html")
+        <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+        <section class="booking-process">
+            <div class="booking-process_each">
+                <div class="process-circle ">
+                    <h2>1</h2>
+                </div>
+                <h6>選擇星球</h6>
             </div>
-            <h6>選擇星球</h6>
-        </div>
-        <div class="booking-process_each">
-            <div class="process-circle">
-                <h2>2</h2>
+            <div class="booking-process_each">
+                <div class="process-circle">
+                    <h2>2</h2>
+                </div>
+                <h6>日期 / 艙別</h6>
             </div>
-            <h6>日期 / 艙別</h6>
-        </div>
-        <div class="booking-process_each">
-            <div class="process-circle">
-                <h2>3</h2>
+            <div class="booking-process_each">
+                <div class="process-circle">
+                    <h2>3</h2>
+                </div>
+                <h6>座位 / 服務</h6>
             </div>
-            <h6>座位 / 服務</h6>
-        </div>
-        <div class="booking-process_each ">
-            <div class="process-circle main">
-                <h2>4</h2>
+            <div class="booking-process_each ">
+                <div class="process-circle main">
+                    <h2>4</h2>
+                </div>
+                <h6>資料填寫</h6>
             </div>
-            <h6>資料填寫</h6>
-        </div>
-        <div class="booking-process_each">
-            <div class="process-circle">
-                <h2>5</h2>
+            <div class="booking-process_each">
+                <div class="process-circle">
+                    <h2>5</h2>
+                </div>
+                <h6>確認 / 付款</h6>
             </div>
-            <h6>確認 / 付款</h6>
-        </div>
-        <div class="booking-process_each">
-            <div class="process-circle">
-                <h2>6</h2>
+            <div class="booking-process_each">
+                <div class="process-circle">
+                    <h2>6</h2>
+                </div>
+                <h6>完成</h6>
             </div>
-            <h6>完成</h6>
-        </div>
-    </section>
+        </section>
 
-    <!------ 航班資訊區塊 ------>
+        <!------ 航班資訊區塊 ------>
+        <div id="booking04">
+            <section class="com-form">
+                <div class="form_title">
+                    <h2>航班資訊</h2>
+                </div>
+                <div class="form_info">
+                    <div class="form">
+                        <label for="date" class="form__label">
+                            <h5>日期</h5>
+                        </label>
+                        <input type="text" class="form__input" :value="month+'/'+day" placeholder="2022/03/14" readonly="readonly">
+                    </div>
+                    <div class="form">
+                        <label for="flight" class="form__label">
+                            <h5>航班</h5>
+                        </label>
+                        <input type="text" class="form__input" value="x0314" placeholder="x0314" readonly="readonly">
+                    </div>
+                    <div class="form">
+                        <label for="gate" class="form__label">
+                            <h5>艙別</h5>
+                        </label>
+                        <input v-model="cabin" type="text" class="form__input" readonly="readonly">
+                    </div>
+                    <div class="form">
+                        <label for="destination" class="form__label">
+                            <h5>目的地</h5>
+                        </label>
+                        <input v-model="dest" type="text" class="form__input"  readonly="readonly">
+                    </div>
+                    <div class="form">
+                        <label for="people" class="form__label">
+                            <h5>人數</h5>
+                        </label>
+                        <input v-model="ppl" type="text" class="form__input"readonly="readonly">
+                    </div>
+                    <div class="form">
+                        <label for="dollor" class="form__label">
+                            <h5>票價金額</h5>
+                        </label>
+                        <input type="text" class="form__input" value="100,000" readonly="readonly">
+                    </div>
+                </div>
+            </section>
+            <!------ 訂購者資料區塊 ------>
+            <section class="personal">
+                <div class="form_title">
+                    <h2>填寫個人資料</h2>
+                </div>
+                <div class="subtitle">
+                    <h3>訂購者</h3>
+                    <hr class="hrLong">
+                </div>
+                <div class="form_info">
+                    <!-- <div class="form">
+                        <label for="seat" class="form__label">
+                            <h5>座位</h5>
+                        </label>
+                        <input v-model="seat1" type="text" class="form__input" value="1A" placeholder="1A" readonly="readonly">
+                    </div>
+                    <div class="form">
+                        <label for="people" class="form__label">
+                            <h5>客製化服務</h5>
+                        </label>
+                        <input v-model="service1" type="text" class="form__input" value="毛毯, 盥洗用具" placeholder="毛毯, 盥洗用具" readonly="readonly">
+                    </div> -->
+                    <div class="form">
+                        <label for="lastname" class="form__label">
+                            <h5>姓</h5>
+                        </label>
+                        <input id="lastname" type="text" class="form__input" placeholder="Lui">
+                    </div>
+                    <div class="form">
+                        <label for="firstname" class="form__label">
+                            <h5>名字</h5>
+                        </label>
+                        <input id="name" type="text" class="form__input" placeholder="Chia-Tung">
+                    </div>
+                    <div class="form">
+                        <label for="ID" class="form__label">
+                            <h5>ID</h5>
+                        </label>
+                        <input id="id" type="text" class="form__input" placeholder="Q123456789">
+                    </div>
+                    <div class="form">
+                        <label for="phone" class="form__label">
+                            <h5>手機</h5>
+                        </label>
+                        <input id="phone" type="text" class="form__input" placeholder="0900-000-000">
+                    </div>
+                </div>
+            </section>
+    
+            <!------ 同行者資料區塊 ------>
+            <section class="partner">
+                
+                <div class="subtitle">
+                    <h3>同行者</h3>
+                    <hr class="hrLong">
+                </div>
+                <div class="form_info">
+                    <!-- <div class="form">
+                        <label for="seat" class="form__label">
+                            <h5>座位</h5>
+                        </label>
+                        <input v-model="seat2" type="text" class="form__input" value="1B" placeholder="1B" readonly="readonly">
+                    </div>
+                    <div class="form">
+                        <label for="people" class="form__label">
+                            <h5>客製化服務</h5>
+                        </label>
+                        <input v-model="service2" type="text" class="form__input" value="毛毯, 盥洗用具" placeholder="毛毯, 盥洗用具" readonly="readonly">
+                    </div> -->
+                    <div class="form">
+                        <label for="lastname" class="form__label">
+                            <h5>姓</h5>
+                        </label>
+                        <input id="colastname" type="text" class="form__input" placeholder="Lui">
+                    </div>
+                    <div class="form">
+                        <label for="firstname" class="form__label">
+                            <h5>名字</h5>
+                        </label>
+                        <input id="coname" type="text" class="form__input" placeholder="Chia-Tung">
+                    </div>
+                    <div class="form">
+                        <label for="ID" class="form__label">
+                            <h5>ID</h5>
+                        </label>
+                        <input id="coid" type="text" class="form__input" placeholder="Q123456789">
+                    </div>
+                    <div class="form">
+                        <label for="cophone" class="form__label">
+                            <h5>手機</h5>
+                        </label>
+                        <input id="cophone" type="text" class="form__input" placeholder="0900-000-000">
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!------ 行前須知區塊 ------>
+        <section class="notice">
+            <div class="subtitle">
+                <h3>行前須知</h3>
+            </div>
+            <div class="notice_list">
+                <p class="title5">
+                    搭乘現代化先進的 Stellar X
+                    雖然快速，便捷又安全；但由於客艙環境先天上受到限制，而與地面運輸工具環境有著極大的差異，如高空低壓的的影響，客艙環境的特性(艙內空氣品質、低濕度)，暈箭跡象以及長時間處於客艙的空間，還是會對一般身體不適的人造成一定程度的影響，值得適當的關注與防範。<br>
+                    <br>
+                    ● 下降時若耳部及鼻竇感到不適時，可利用吞嚥、咀嚼或張口動作來協助氣體的流通。<br>
+                    ● 潛水後 24 小時內不建議搭乘火箭。<br>
+                    ● 火箭上飲食要清淡，多喝水及果汁；少喝酒精及含咖啡因飲料。<br>
+                    ● 客艙空氣品質遠高過一般辦公室與家庭標準；但身處在客艙內就有如一般公共場所有遭受感染的可能，所以患有
+                    傳染性疾病的人絕對不可搭乘。<br>
+                    ● 建議攜帶使用皮膚保濕乳液。<br>
+                    <br>
+                    疾病旅客注意事項:<br>
+                    <br>
+                    ● 氣喘病:<br>
+                    氣喘病患者搭機前請確認攜帶了常用的助吸器，且要避開任何引起氣喘發作的原因。<br>
+                    ● 心臟病:<br>
+                    在空中心臟病發作的機會是地面的兩倍，如果最近才發生心臟病，建議最好不要搭乘。<br>
+                    ● 深部靜脈血栓症:<br>
+                    長時間踡坐在狹窄空間, 容易使得下肢血液難以順暢流動, 導致腿部深部靜脈血栓症產生, 這對一般健康的旅客影響不大, 但對心臟病患,近期接受過腿部靜脈手術,
+                    患靜脈血管炎或抗凝血機能異常等病症高危險群旅客就有較嚴重影響。
+                </p>
+            </div>
+            <div class="checkedread">
+                <input type="checkbox" value="None">
+                <h5>我同意且已詳閱以上需知</h5>
+            </div>
+        </section>
 
-    <section class="com-form">
-        <div class="booking_wold">
-            <h2>航班資訊</h2>
-        </div>
-        <div class="booking_text">
-            <div class="form">
-                <label for="date" class="form__label"><h5>日期</h5></label>
-                <input type="text" class="form__input" value="2022/{{m}}/{{d}}" readonly="readonly">
-            </div>
-            <div class="form">
-                <label for="flight" class="form__label"><h5>航班</h5></label>
-                <input type="text" class="form__input" value="000000" readonly="readonly">
-            </div>
-            <div class="form">
-                <label for="gate" class="form__label"><h5>艙別</h5></label>
-                <input type="text" class="form__input" value="{{cabin}}" readonly="readonly">
-            </div>
-            <div class="form">
-                <label for="seat" class="form__label"><h5>目的地</h5></label>
-                <input type="text" class="form__input" value="{{dest}}" readonly="readonly">
-            </div>
-            <div class="form">
-                <label for="people" class="form__label"><h5>人數</h5></label>
-                <input type="text" class="form__input" value="{{ppl}}" readonly="readonly">
-            </div>
-            <div class="form">
-                <label for="dollor" class="form__label"><h5>票價金額</h5></label>
-                <input type="text" class="form__input" value="{{price}}" readonly="readonly">
-            </div>
-        </div>
-    </section>
-    <!------ 訂購者資料區塊 ------>
-    <section class="personal">
-        <div class="booking_wold">
-            <h2>填寫個人資料</h2>
-        </div>
-        <div class="booking_people">
-            <h3>訂購者</h3>
-            <hr class="hrLong">
-        </div>
-        <div class="booking_text">
-            <div class="form">
-                <label for="lastname" class="form__label"><h5>姓</h5></label>
-                <input type="text" class="form__input" value="LIU">
-            </div>
-            <div class="form">
-                <label for="firstname" class="form__label"><h5>名字</h5></label>
-                <input type="text" class="form__input" value="Chia-Tung">
-            </div>
-            <div class="form">
-                <label for="ID" class="form__label"><h5>ID</h5></label>
-                <input type="text" class="form__input" value="Q123456789">
-            </div>
-            <div class="form">
-                <label for="phone" class="form__label"><h5>手機</h5></label>
-                <input type="text" class="form__input" value="0900-000-000">
-            </div>
-        </div>
-    </section>
-
-    <!------ 同行者資料區塊 ------>
-    <section class="parther">
-        <div class="booking_people">
-            <h3>同行者</h3>
-            <hr class="hrLong">
-        </div>
-        <div class="booking_text">
-            <div class="form">
-                <label for="lastname" class="form__label"><h5>姓</h5></label>
-                <input type="text" class="form__input">
-            </div>
-            <div class="form">
-                <label for="firstname" class="form__label"><h5>名字</h5></label>
-                <input type="text" class="form__input">
-            </div>
-            <div class="form">
-                <label for="ID" class="form__label"><h5>ID</h5></label>
-                <input type="text" class="form__input">
-            </div>
-            <div class="form">
-                <label for="phone" class="form__label"><h5>手機</h5></label>
-                <input type="text" class="form__input">
-            </div>
-        </div>
-    </section>
-
-    <!------ 行前須知區塊 ------>
-    <section class="noticr">
-        <div class="booking_people">
-            <h3>行前須知</h3>
-        </div>
-        <div class="noticr_text">
-            <p class="title5">
-                搭乘現代化先進的 Stellar X 雖然快速，便捷又安全；但由於客艙環境先天上受到限制，而與地面運輸工具環境有著極大的差異，如高空低壓的的影響，客艙環境的特性(艙內空氣品質、低濕度)，暈箭跡象以及長時間處於客艙的空間，還是會對一般身體不適的人造成一定程度的影響，值得適當的關注與防範。<br>
-                <br>
-                ● 下降時若耳部及鼻竇感到不適時，可利用吞嚥、咀嚼或張口動作來協助氣體的流通。<br>
-                ● 潛水後 24 小時內不建議搭乘火箭。<br>
-                ● 火箭上飲食要清淡，多喝水及果汁；少喝酒精及含咖啡因飲料。<br>
-                ● 客艙空氣品質遠高過一般辦公室與家庭標準；但身處在客艙內就有如一般公共場所有遭受感染的可能，所以患有
-                傳染性疾病的人絕對不可搭乘。<br>
-                ● 建議攜帶使用皮膚保濕乳液。<br>
-                <br>
-                疾病旅客注意事項:<br>
-                <br>
-                ● 氣喘病:<br>
-                氣喘病患者搭機前請確認攜帶了常用的助吸器，且要避開任何引起氣喘發作的原因。<br>
-                ● 心臟病:<br>
-                在空中心臟病發作的機會是地面的兩倍，如果最近才發生心臟病，建議最好不要搭乘。<br>
-                ● 深部靜脈血栓症:<br>
-                長時間踡坐在狹窄空間, 容易使得下肢血液難以順暢流動, 導致腿部深部靜脈血栓症產生, 這對一般健康的旅客影響不大, 但對心臟病患,近期接受過腿部靜脈手術, 患靜脈血管炎或抗凝血機能異常等病症高危險群旅客就有較嚴重影響。
-            </p>
-        </div>
-        <div class="yes_radio">
-            <input type="checkbox" value="None">
-            <h5>我同意且已詳閱以上需知</h5>
-        </div>
-    </section>
-
-    <!------ 上/下一步區塊 ------>
-    <section class="booking_btn">
-        <div class="btn_general">
+        <!------ 上/下一步區塊 ------>
+        <section class="booking_btn">
+            <div class="btn_general">
                 <a href="./booking_03.html" class="btn_square">上一步</a>
-        </div>
-        <div class="btn_general">
-                <a href="./booking_05.html" class="btn_square">下一步</a>
-        </div>
+            </div>
+            <div class="btn_general">
+                <a href="javascript:;" class="btn_square" onclick="formlist()">下一步</a>
+                <!-- SetLastname(), SetName(), SetId(), SetPhone(),SetcoLastname(), SetcoName(), SetcoId(), SetcoPhone() -->
+            </div>
+        </section>
+        @@include("./layout/footer.html")
     </section>
-    @@include("./layout/footer.html")
-</section>
+    <script>
+
+        // 訂購者
+        function SetLastname(){
+            var lastname = document.getElementById('lastname').value;
+            localStorage.setItem('customlastName',lastname);
+            // window.location.href="./booking_05.html";
+        }
+
+        function SetName(){
+            var name = document.getElementById('name').value;
+            localStorage.setItem('customName',name);
+            // window.location.href="./booking_05.html";
+        }
+
+        function SetId(){
+            var id = document.getElementById('id').value;
+            localStorage.setItem('customId',id);
+            // window.location.href="./booking_05.html";
+        }
+
+        function SetPhone(){
+            var phone = document.getElementById('phone').value;
+            localStorage.setItem('customPhone',phone);
+            // window.location.href="./booking_05.html";
+        }
+
+        // 同行者
+        function SetcoLastname(){
+            var colastname = document.getElementById('colastname').value;
+            localStorage.setItem('customcolastName',colastname);
+            // window.location.href="./booking_05.html";
+        }
+
+        function SetcoName(){
+            var coname = document.getElementById('coname').value;
+            localStorage.setItem('customcoName',coname);
+            // window.location.href="./booking_05.html";
+        }
+
+        function SetcoId(){
+            var coid = document.getElementById('coid').value;
+            localStorage.setItem('customcoId',coid);
+            // window.location.href="./booking_05.html";
+        }
+
+        function SetcoPhone(){
+            var cophone = document.getElementById('cophone').value;
+            localStorage.setItem('customcoPhone',cophone);
+            // window.location.href="./booking_05.html";
+        }
+
+        function formlist(){
+            SetLastname(); SetName(); SetId(); SetPhone();SetcoLastname(); SetcoName(); SetcoId(); SetcoPhone()
+            window.location.href="./booking_05.html";
+        }
+    </script>
+    <script src="./js/booking_04.js"></script>
+    
 </body>
+
 </html>

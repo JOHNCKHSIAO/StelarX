@@ -51,6 +51,31 @@ ul .logo img {
   display: flex;
 }
 
+.shoppiingicon a {
+  position: relative;
+}
+
+.shoppiingicon a .Shopp_add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f52828;
+  color: #eee;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -27%;
+  right: -42%;
+  z-index: 100;
+}
+
 .item_list {
   width: 580px;
   display: -webkit-box;
@@ -84,6 +109,7 @@ ul .logo img {
 }
 
 .booking a {
+  font-size: 16px;
   color: #eeeeee;
   text-decoration: none;
 }

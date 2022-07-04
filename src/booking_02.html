@@ -142,10 +142,25 @@
                 </div>
                 <div class="calendar-days">
                   <!-- 日曆號 -->
-                  <div class="date" :class="[item.thisMonth, item.isToday, item.afterToday,{'active':item.active}]"
-                    v-for="(item, index) in visibleCalendar" :key="index" @click="getDate((item.month+1), item.day)">
+                  <div class="date" :class="[item.thisMonth, item.afterToday,{'active':item.active}]"
+                    v-for="(item, index) in visibleCalendar" :key="index">
                     <div>{{ item.day }}</div>
-                    <button>訂購</button>
+                    <div v-if="item.afterToday" style="display: flex;">
+                      <p style="font-size: 14px;">選擇人數</p>
+                      <select name="" id="" @change="choosePoeple">
+                        <option value="1">1位</option>
+                        <option value="2">2位</option>
+                        <option value="3">3位</option>
+                        <option value="4">4位</option>
+                        <option value="5">5位</option>
+                        <option value="6">6位</option>
+                        <option value="7">7位</option>
+                        <option value="8">8位</option>
+                      </select>
+
+                    </div>
+                    <br>
+                    <button  @click="order" :data-m="item.month+1" :data-d="item.day" v-if="item.afterToday">選擇</button>
                   </div>
                 </div>
               </div>
@@ -165,7 +180,7 @@
     <div class="step_button">
         <div class="btn_general">
             <h5>
-                <a class="btn_square" href="./booking_01-2.html">上一步</a>
+                <a class="btn_square" href="./booking_02.html">上一步</a>
             </h5>
         </div>
         <div class="btn_general">
@@ -194,6 +209,7 @@
             month: new Date().getMonth(),
           },
           calendarArr: [],
+          people: 1,
         };
       },
       computed: {
@@ -267,45 +283,60 @@
             this.time.year = this.time.year + 1;
           }
         },
-        getDate(m, d) {
+        order(e) {
           //   alert('天:'+(d));
-          console.log(m, d);
-          localStorage.setItem('month', m);
-          localStorage.setItem('day', d);
+          // console.log(m, d);
+          localStorage.setItem('month', e.target.dataset.m);
+          localStorage.setItem('day', e.target.dataset.d);
+          localStorage.setItem('people', this.people);
+          $('div.isToday').removeClass('isToday');
+          $(e.target.closest('div.date')).addClass('isToday');
+          
         },
+        choosePoeple(e){
+          // console.log(e.target.value);
+          this.people = e.target.value;
+        }
       },
       watch: {},
-      beforeCreate() {
-
-      },
       created() {
-        this.dest = localStorage.getItem('dest');
-      },
-      beforeMount() {
-
+        this.dest = JSON.parse(localStorage.getItem('dest'));
       },
       mounted() {
-
-      },
-      beforeUpdate() {
 
       },
       updated() {
 
       },
-      beforeDestroy() {
-
-      },
-      destroyed() {
-
-      },
     });
 
-        // 取得目的地值
+    
+    $('#GX_btn').click(function(e){
+        e.preventDefault()
+        $('#X_btn').removeClass('checked')
+        $(this).addClass('checked')
+        localStorage.setItem('cabin','GX')
+    })
+
+    $('#X_btn').click(function(e){
+        e.preventDefault()
+        $('#GX_btn').removeClass('checked')
+        $(this).addClass('checked')
+        localStorage.setItem('cabin','X')
+    })
+
+
+    $('#nextPage').click(function(){
+        let order = {};
+        order['people']=vm.people;
+        order['select_day']=vm.select_day;
+        console.log(order);
+        localStorage.setItem('order', JSON.stringify(order));
+    })
 
   </script>
   <!-- 轉換成中文 -->
-  <script src="./js/booking_02.js"></script>
+  <!-- <script src="./js/booking_02.js"></script> -->
   <!-- <script src="/src/js/calendar.js"></script> -->
 </body>
 

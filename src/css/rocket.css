@@ -694,7 +694,8 @@ body {
 }
 .rocket-cabin .cabin-intro-top .intro-pop {
   display: block;
-  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  border: 3px solid #987A4D;
+  background-color: rgba(0, 0, 0, 0.5);
   margin-top: 12px;
   text-align: center;
   height: 80px;

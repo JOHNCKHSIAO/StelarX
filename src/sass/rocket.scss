@@ -391,7 +391,9 @@ body{
         }
         .intro-pop{
             display: block;
-            background: $linear;
+            border: 3px solid $gold;
+            background-color: rgb(0, 0, 0, .5);
+            // background: $linear;
             margin-top: 12px;
             text-align: center;
             height: 80px;

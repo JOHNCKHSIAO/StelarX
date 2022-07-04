@@ -1,9 +1,9 @@
 <?php
 
 <<<<<<< HEAD
-    //MySQL相關資訊
-=======
     // MySQL相關資訊
+=======
+    //MySQL相關資訊
 >>>>>>> my
     $db_host = "stellarx02.cpvupuwvckud.us-west-1.rds.amazonaws.com";
     $db_user = "stelarx";
