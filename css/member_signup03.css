@@ -131,8 +131,8 @@ p {
 }
 
 .btn_cta {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   cursor: pointer;
@@ -149,7 +149,7 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
@@ -164,8 +164,8 @@ p {
 }
 
 .btn_cta_submit {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   background: #00072E;
@@ -183,7 +183,7 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
@@ -198,16 +198,18 @@ p {
 }
 
 .btn_general {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
 
 .btn_general:hover {
-  border-color: #00072E;
   background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+  border: none;
 }
 
 .btn_general .btn_square {
@@ -215,15 +217,30 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
 }
 
+.btn_general .btn_pay {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  border: none;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  background-color: transparent;
+}
+
 .btn_general_sumbmit {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   background: #00072E;
   cursor: pointer;
@@ -240,7 +257,7 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
@@ -308,8 +325,8 @@ p {
 }
 
 .btn_status {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
@@ -319,39 +336,51 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  -webkit-box-shadow: inset 0 0 0 0 #EEEEEE;
+          box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
 }
 
 .btn_status .btn_square:hover {
-  background: #EEEEEE;
   color: #00072E;
+  -webkit-box-shadow: inset 50px 0 0 0 0 #EEEEEE;
+          box-shadow: inset 50px 0 0 0 0 #EEEEEE;
 }
 
 .btn_status_submit {
-  width: 250px;
-  height: 46px;
-  border: 1px solid #EEEEEE;
-  background: #00072E;
-  padding: 0;
+  width: 280px;
+  height: 50px;
   cursor: pointer;
 }
 
 .btn_status_submit .btn_square {
-  width: 100%;
-  height: 100%;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  -webkit-box-shadow: inset 0 0 0 0 #EEEEEE;
+          box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
 }
 
 .btn_status_submit .btn_square:hover {
-  background: #EEEEEE;
   color: #00072E;
+  -webkit-box-shadow: inset 280px 0 0 0 #EEEEEE;
+          box-shadow: inset 280px 0 0 0 #EEEEEE;
 }
 
 .btn_main {
@@ -544,8 +573,8 @@ p {
 }
 
 .btn_cta {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   cursor: pointer;
@@ -562,7 +591,7 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
@@ -577,8 +606,8 @@ p {
 }
 
 .btn_cta_submit {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   background: #00072E;
@@ -596,7 +625,7 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
@@ -611,16 +640,18 @@ p {
 }
 
 .btn_general {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
 
 .btn_general:hover {
-  border-color: #00072E;
   background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+  border: none;
 }
 
 .btn_general .btn_square {
@@ -628,15 +659,30 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
 }
 
+.btn_general .btn_pay {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  border: none;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  background-color: transparent;
+}
+
 .btn_general_sumbmit {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   background: #00072E;
   cursor: pointer;
@@ -653,7 +699,7 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
@@ -712,8 +758,8 @@ p {
 }
 
 .btn_status {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
@@ -723,39 +769,51 @@ p {
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  -webkit-box-shadow: inset 0 0 0 0 #EEEEEE;
+          box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
 }
 
 .btn_status .btn_square:hover {
-  background: #EEEEEE;
   color: #00072E;
+  -webkit-box-shadow: inset 50px 0 0 0 0 #EEEEEE;
+          box-shadow: inset 50px 0 0 0 0 #EEEEEE;
 }
 
 .btn_status_submit {
-  width: 250px;
-  height: 46px;
-  border: 1px solid #EEEEEE;
-  background: #00072E;
-  padding: 0;
+  width: 280px;
+  height: 50px;
   cursor: pointer;
 }
 
 .btn_status_submit .btn_square {
-  width: 100%;
-  height: 100%;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  -webkit-box-shadow: inset 0 0 0 0 #EEEEEE;
+          box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
 }
 
 .btn_status_submit .btn_square:hover {
-  background: #EEEEEE;
   color: #00072E;
+  -webkit-box-shadow: inset 280px 0 0 0 #EEEEEE;
+          box-shadow: inset 280px 0 0 0 #EEEEEE;
 }
 
 .btn_main {

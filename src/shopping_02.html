@@ -16,25 +16,25 @@
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
-    <div id="shopping_02" v-if="shopping_2_list[4]">
+    <div id="shopping_02">
         <div class="main_top">
             <div class="left_image">
-                <img style="width: 100%" class="img_1" :src="bigImg" alt="" >
+                <img style="width: 100%" class="img_1" :src="bigImg">
                                                        <!-- 切換步驟 -->
                 <div class="Small_img">
-                    <img :src="shopping_2_list[vue_prod_num][3]" alt="" @click="changeImg(shopping_2_list[vue_prod_num][3])">
-                    <img :src="shopping_2_list[vue_prod_num][4]" alt="" @click="changeImg(shopping_2_list[vue_prod_num][4])">
+                    <img :src="shopping_2_list[vue_prod_num][3]" @click="changeImg(shopping_2_list[vue_prod_num][3])">
+                    <img :src="shopping_2_list[vue_prod_num][4]" @click="changeImg(shopping_2_list[vue_prod_num][4])">
                                                                                        <!-- 切換步驟 -->
                 </div>
             </div>
             <div class="right_word">
                 <div class="commodity_title">
                     <h3>{{shopping_2_list[vue_prod_num][0]}}</h3>
-                    <h4>( FREE SIZE 中性款 ）</h4>
-                    <p>・使用特殊加工，表面具適度光澤感的天竺素材。<br>
-                        ・落肩、繭型剪裁和較長的袖子。<br>
-                        ・具高質感的時尚寬版剪裁新款T恤。</p>
-                    <p>・商品貨號：abc8787</p>
+                    <h4 style="color: #987A4D;">{{shopping_2_list[vue_prod_num][5]}}</h4>
+                    <h5>{{shopping_2_list[vue_prod_num][7]}}<br>
+                        {{shopping_2_list[vue_prod_num][8]}}<br>
+                        {{shopping_2_list[vue_prod_num][9]}}</h5>
+                    <p>{{shopping_2_list[vue_prod_num][6]}}</p>
                 </div>
                 <div class="exchange">
                     <div class="click_num">
@@ -46,7 +46,7 @@
                         <h3>{{total_mile}} 哩</h3>
                         <!-- <h3>{{shopping_2_list[vue_prod_num][1]}} 哩</h3> -->
                         <a href="./shopping_03.html">
-                            <h6>立即兌換</h6>
+                            <h6 @click="rightNow">立即兌換</h6>
                         </a>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                     </a>
                 </div>
                 <div class="btn_flow">
-                    <a href="#" @click="join_in">加入購物車</a>
+                    <a href="#" @click="join_in" id="addToCart">加入購物車</a>
                 </div>
             </div>
         </div>
@@ -68,23 +68,23 @@
             <ul>
                 <li>
                     <a href="./shopping_02.html?prods=3">
-                        <img src="./images/shopping_cart/baseball_cap.jpg" alt="">
+                        <img src="./images/shopping_cart/baseball_cap.jpg">
                         <h4>復古老帽</h4>
-                        <h5>92000000 哩</h5>
+                        <h5>92000 哩</h5>
                     </a>
                 </li>
                 <li>
                     <a href="./shopping_02.html?prods=1">
-                        <img src="./images/shopping_cart/Image.jpg" alt="">
+                        <img src="./images/shopping_cart/Image.jpg">
                         <h4>星河葡萄酒</h4>
-                        <h5>162000000 哩</h5>
+                        <h5>102000 哩</h5>
                     </a>
                 </li>
                 <li>
                     <a href="./shopping_02.html?prods=5">
-                        <img src="./images/shopping_cart/tote_bag.jpg" alt="">
+                        <img src="./images/shopping_cart/tote_bag.jpg">
                         <h4>環保帆布袋</h4>
-                        <h5>84000000 哩</h5>
+                        <h5>84000 哩</h5>
                     </a>
                 </li>
             </ul>

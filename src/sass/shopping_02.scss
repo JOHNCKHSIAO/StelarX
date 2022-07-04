@@ -46,13 +46,13 @@ body {
 
             }
             h4 {
-                margin-bottom: 40px;
+                margin-bottom: 20px;
             }
-            p {
+            h5 {
                 line-height: 1.6;
             }
             p:last-child {
-                margin-top: 20px;
+                margin-top: 10px;
             }
         }
         .exchange {
@@ -163,10 +163,12 @@ body {
     ul {
         display: flex;
         justify-content: space-between;
+        width: 1000px;
         margin-top: 48px;
 
         li {
             text-align: center;
+            border: 1px solid white;
             a{
                 text-decoration: none;
                 color: #eee;
@@ -181,6 +183,10 @@ body {
                 h5 {
                     margin-top: 24px;
                 }
+            }
+            &:hover{
+                transform: scale(1.05);
+                transition: all .35s ease;
             }
         }
     }
