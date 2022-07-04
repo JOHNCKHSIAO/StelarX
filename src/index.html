@@ -10,9 +10,12 @@
         content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
     <link rel="shortcut icon" href="./images/shortcut.png">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css.css">
     <link rel="stylesheet" href="css/star.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+   
+
 
 </head>
 
@@ -47,30 +50,48 @@
                 </div>
                 <!-- 預約航程按鈕 -->
                 <p class="index_white index_tac index_mt24"><a class="index_white index_tac" href="#">看更多時刻表</a></p>
+                <div class="relative">
+                    <div class="absolute inset-0 flex-center-center">
+                        <div class="relative z-10 index_tac">
+                            <h2 class="index_white">選擇你的星際旅程</h2>
+                            <div class="flex justify-between">
+                                <button id="venus-button-prev">←</button>
+                                <button id="venus-button-next">→</button>
+                            </div>
+                        </div>
+                    </div>
                 <div class="venus-container" id="venus-container">
                     <div class="venus-base invisible">
-                        <img src="images/index/mars.png" alt="">
+                        <h3 class="index_tac index_white">火星</h3>
+                        <img class="planets" src="images/index/mars.png" alt="">
                     </div>
                     <div class="venus-base invisible">
-                        <img src="images/index/Mercury.png" alt="">
+                        <h3 class="index_tac index_white">水星</h3>
+                        <img class="planets" src="images/index/Mercury.png" alt="">
                     </div>
                     <div class="venus-base invisible">
-                        <img src="images/index/earth.png" alt="">
+                        <h3 class="index_tac index_white">地球</h3>
+                        <img class="planets" src="images/index/earth.png" alt="">
                     </div>
                     <div class="venus-base invisible">
-                        <img src="images/index/Saturn.png" alt="">
+                        <h3 class="index_tac index_white">土星</h3>
+                        <img class="planets" src="images/index/Saturn.png" alt="">
                     </div>
                     <div class="venus-base invisible">
-                        <img src="images/index/Jupiter.png" alt="">
+                        <h3 class="index_tac index_white">木星</h3>
+                        <img class="planets" src="images/index/Jupiter.png" alt="">
                     </div>
                     <div class="venus-base invisible">
-                        <img src="images/index/Venus.png" alt="">
+                        <h3 class="index_tac index_white">金星</h3>
+                        <img class="planets" src="images/index/Venus.png" alt="">
                     </div>
                     <div class="venus-base invisible">
-                        <img src="images/index/Uranus.png" alt="">
+                        <h3 class="index_tac index_white">天王星</h3>
+                        <img class="planets" src="images/index/Uranus.png" alt="">
                     </div>
                     <div class="venus-base invisible">
-                        <img src="images/index/Neptune.png" alt="">
+                        <h3 class="index_tac index_white">海王星</h3>
+                        <img class="planets" src="images/index/Neptune.png" alt="">
                     </div>
                 </div>
             </div>
@@ -93,7 +114,7 @@
                         <h5 class="index_gold index_fw500 index_mt24">選擇航程星球</h5>
                     </div>
                     <div class="featIcon">
-                        <img src="images/index/features2.png" alt="">
+                        <img  src="images/index/features2.png" alt="">
                         <h5 class="index_gold index_fw500 index_mt24">頂級商務艙別</h5>
                     </div>
                     <div class="featIcon">
@@ -137,13 +158,13 @@
                 </div>
                 <!-- 星際測驗按鈕 -->
                 <div class="quizPlanetFlex index_mt80">
-                    <img class="quizPlanet1" src="images/index/quizPlanet1.png" alt="">
-                    <img class="quizPlanet2" src="images/index/quizPlanet2.png" alt="">
-                    <img class="quizPlanet3" src="images/index/quizPlanet3.png" alt="">
-                    <img class="quizPlanet4" src="images/index/quizPlanet4.png" alt="">
-                    <img class="quizPlanet5" src="images/index/quizPlanet5.png" alt="">
-                    <img class="quizPlanet6" src="images/index/quizPlanet6.png" alt="">
-                    <img class="quizPlanet7" src="images/index/quizPlanet7.png" alt="">
+                    <img class="quizPlanet1 planets" src="images/index/quizPlanet1.png" alt="">
+                    <img class="quizPlanet2 planets" src="images/index/quizPlanet2.png" alt="">
+                    <img class="quizPlanet3 planets" src="images/index/quizPlanet3.png" alt="">
+                    <img class="quizPlanet4 planets" src="images/index/quizPlanet4.png" alt="">
+                    <img class="quizPlanet5 planets" src="images/index/quizPlanet5.png" alt="">
+                    <img class="quizPlanet6 planets" src="images/index/quizPlanet6.png" alt="">
+                    <img class="quizPlanet7 planets" src="images/index/quizPlanet7.png" alt="">
                 </div>
             </div>
             <!-- 最新消息 -->
@@ -271,7 +292,9 @@
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/index_planet.js"></script>
 <script src="js/index.js"></script>
+
 
 </body>
 
