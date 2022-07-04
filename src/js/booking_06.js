@@ -8,10 +8,8 @@ new Vue({
         dest:'',
         ppl:'',
         price:'',
-        seat1:'',
-        service1:'',
-        seat2:'',
-        service2:'',
+        seat:'',
+        service:'',
     },
     methods: {
         
@@ -20,25 +18,28 @@ new Vue({
 
     },
     mounted() {
-        this.day = localStorage.getItem('day');
-        // this.day = JSON.parse(this.day);
+        this.lastname = localStorage.getItem('customlastName');
+        this.name = localStorage.getItem('customName');
 
+        this.colastname = localStorage.getItem('customcolastName');
+        this.coname = localStorage.getItem('customcoName');
+
+        this.day = localStorage.getItem('day');
         this.month = localStorage.getItem('month');
-        // this.month = JSON.parse(this.month);
 
         this.ppl = localStorage.getItem('people');
         this.ppl = JSON.parse(this.ppl);
 
         this.cabin = localStorage.getItem('cabin');
-        // this.cabin = JSON.parse(this.cabin);
 
         this.dest = localStorage.getItem('dest');
         this.dest = JSON.parse(this.dest);
 
-        this.seat1 = localStorage.getItem('seat_service');
-        this.seat1 = JSON.parse(this.seat1);
+        // object.keys(seat)
+        this.seat = localStorage.getItem('seat_service');
+        // object.keys(seat).this.seat = JSON.parse(this.seat);
 
-        },
+},
 
 
     updated() {

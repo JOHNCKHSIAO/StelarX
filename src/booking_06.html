@@ -82,39 +82,33 @@
                 <div class="line">.</div>
                 <div class="small_title_in">
                     <h6>日期</h6>
-                    <h6 class="h6_2"></h6>
+                    <h6 v-model="month+'/'+day" class="h6_2">{{month+'/'+day}}</h6>
                 </div>
                 <div class="small_title_in">
                     <h6>航班</h6>
-                    <h6 class="h6_2">BNS-EM-0800</h6>
+                    <h6 class="h6_2">x0314</h6>
                 </div>
                 <div class="small_title_in">
-                    <h6>出發時間</h6>
-                    <h6 class="h6_2">0800</h6>
+                    <h6>目的地</h6>
+                    <h6 v-model="dest" class="h6_2">{{dest}}</h6>
                 </div>
                 <div class="small_title_in">
-                    <h6>到達時間</h6>
-                    <h6 class="h6_2">0800 +1</h6>
+                    <h6>艙別</h6>
+                    <h6 v-model="cabin" class="h6_2">{{cabin}}</h6>
                 </div>
             </div>
             <div class="Purchaser_out">
                 <div class="Purchaser">
                     <div class="Purchaser_top_1">
                         <h5>訂購人</h5>
-                        <h5>Jackson Browne</h5>
+                        <h5 v-model="name+'/'+lastname">{{name+' '+lastname}}</h5>
                     </div>
                     <div class="Purchaser_top_2">
-                        <h5>票卡編號</h5>
-                        <h5>BNS-EM-GX-1H</h5>
-                        <h5>電話 0912-345-678</h5>
+                        <h5>座位</h5>
+                        <h5 v-model="seat">{{seat}}</h5>
                     </div>
                     <div class="Purchaser_top_3">
-                        <h5>艙別</h5>
-                        <h5>GX</h5>
-                        <h5>座位 1H</h5>
-                    </div>
-                    <div class="Purchaser_top_4">
-                        <h5>加價購</h5>
+                        <h5>客製化服務</h5>
                         <h5>太空漫步,座艙景觀室</h5>
                     </div>
                 </div>
@@ -122,22 +116,16 @@
             <div class="Purchaser_out">
                 <div class="Purchaser">
                     <div class="Purchaser_top_1">
-                        <h5>同行人</h5>
-                        <h5>Lily Allen</h5>
+                        <h5>同行者</h5>
+                        <h5 v-model="coname+'/'+colastname">{{coname+' '+colastname}}</h5>
                     </div>
                     <div class="Purchaser_top_2">
-                        <h5>票卡編號</h5>
-                        <h5>BNS-EM-GX-1G</h5>
-                        <h5>電話 0987-654-321</h5>
+                        <h5>座位</h5>
+                        <h5>1H</h5>
                     </div>
                     <div class="Purchaser_top_3">
-                        <h5>艙別</h5>
-                        <h5>GX</h5>
-                        <h5>座位 1G</h5>
-                    </div>
-                    <div class="Purchaser_top_4">
-                        <h5>加價購</h5>
-                        <h5>太空漫步,無邊界淋浴間, 無重力油壓按摩</h5>
+                        <h5>客製化服務</h5>
+                        <h5>太空漫步,座艙景觀室</h5>
                     </div>
                 </div>
             </div>
@@ -161,7 +149,7 @@
                 </div>
             </div>
         </div>
-        <div class="btn_cta m0auto">
+        <div class="btn_cta">
             <a class="aLink" href="./member_intro.html">會員管理<img src="./images/ctz_dec.png" alt=""></a>
         </div>
         @@include("./layout/footer.html")

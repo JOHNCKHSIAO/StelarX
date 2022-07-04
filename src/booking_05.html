@@ -79,7 +79,8 @@
                         <label for="date" class="form__label">
                             <h5>日期</h5>
                         </label>
-                        <input type="text" class="form__input" :value="month+'/'+day" placeholder="2022/03/14" readonly="readonly">
+                        <input type="text" class="form__input" :value="month+'/'+day" placeholder="2022/03/14"
+                            readonly="readonly">
                     </div>
                     <div class="form">
                         <label for="flight" class="form__label">
@@ -97,13 +98,13 @@
                         <label for="destination" class="form__label">
                             <h5>目的地</h5>
                         </label>
-                        <input v-model="dest" type="text" class="form__input"  readonly="readonly">
+                        <input v-model="dest" type="text" class="form__input" readonly="readonly">
                     </div>
                     <div class="form">
                         <label for="people" class="form__label">
                             <h5>人數</h5>
                         </label>
-                        <input v-model="ppl" type="text" class="form__input"readonly="readonly">
+                        <input v-model="ppl" type="text" class="form__input" readonly="readonly">
                     </div>
                     <div class="form">
                         <label for="dollor" class="form__label">
@@ -161,10 +162,10 @@
                     </div>
                 </div>
             </section>
-    
+
             <!------ 同行者資料區塊 ------>
             <section class="partner">
-                
+
                 <div class="subtitle">
                     <h3>同行者</h3>
                     <hr class="hrLong">
@@ -242,71 +243,71 @@
                         <!-- <input type="text" class="form__input"> -->
                     </div>
                 </div>
-        </div>
-        
-            <!------ 上/下一步區塊 ------>
-            <section class="booking_btn">
-                <div class="btn_general">
+                    
 
-                    <a href="./booking_04.html" class="btn_square">上一步</a>
+                <!------ 上/下一步區塊 ------>
+                <section class="booking_btn">
+                        <div class="btn_general">
 
-                </div>
-                <div class="btn_general">
-                    <button type="submit" class="btn_pay">確認結帳</button>
-                    <!-- <h5>
-                <a href="./booking_06.html" class="btn_square">前往付款</a>
-            </h5> -->
-                </div>
-            </section>
-        </form>
+                            <a href="./booking_04.html" class="btn_square">上一步</a>
+
+                        </div>
+                        <div class="btn_general">
+                            <button type="submit" class="btn_pay">確認結帳</button>
+                            <!-- <h5>
+                            <a href="./booking_06.html" class="btn_square">前往付款</a>
+                        </h5> -->
+                        </div>
+                </section>
+            </form>
         @@include("./layout/footer.html")
     </section>
-<script>
-    
+    <script>
+
     // // 訂購者
     //  getLastname();
-    // function getLastname(){        
+    // function getLastname(){
     //     document.getElementById('lastname').value= localStorage.getItem('customlastName');
     //     console.log(document.getElementById('lastname'));
     // }
 
     // getName();
-    // function getName(){        
+    // function getName(){
     //     document.getElementById('name').value= localStorage.getItem('customName');
     // }
 
     // getId();
-    // function getId(){        
+    // function getId(){
     //     document.getElementById('id').value= localStorage.getItem('customId');
     // }
 
     // getPhone();
-    // function getPhone(){        
+    // function getPhone(){
     //     document.getElementById('phone').value= localStorage.getItem('customPhone');
     // }
 
     // // 同行者
     // getcoLastname();
-    // function getcoLastname(){        
+    // function getcoLastname(){
     //     document.getElementById('colastname').value= localStorage.getItem('customcolastName');
     // }
 
     // getcoName();
-    // function getcoName(){        
+    // function getcoName(){
     //     document.getElementById('coname').value= localStorage.getItem('customcoName');
     // }
 
     // getcoId();
-    // function getcoId(){        
+    // function getcoId(){
     //     document.getElementById('coid').value= localStorage.getItem('customcoId');
     // }
 
     // getcoPhone();
-    // function getcoPhone(){        
+    // function getcoPhone(){
     //     document.getElementById('cophone').value= localStorage.getItem('customcoPhone');
     // }
-</script>
-<script src="./js/booking_05.js"></script>
+    </script>
+    <script src="./js/booking_05.js"></script>
 </body>
 
 </html>
