@@ -436,7 +436,7 @@ body {
 
 .blue_bg {
   width: 1080px;
-  height: 2240px;
+  height: 2345px;
   background-color: #191F42;
   border-radius: 10px;
   margin: 0 auto;
@@ -631,6 +631,7 @@ body {
 }
 .booking-customize .customize {
   margin-top: 80px;
+  display: flex;
 }
 .booking-customize .customize ul {
   width: 750px;
@@ -661,9 +662,15 @@ body {
 }
 
 .customize-1 {
+  width: 750px;
+  margin: 0 auto;
   margin-top: 80px;
   display: flex;
   justify-content: space-evenly;
+}
+.customize-1 ul {
+  width: 100%;
+  display: block;
 }
 .customize-1 ul li {
   margin-bottom: 24px;
