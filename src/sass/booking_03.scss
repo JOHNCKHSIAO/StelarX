@@ -65,7 +65,7 @@ body{
 
 .blue_bg{
     width: 1080px;
-    height: 2240px;
+    height: 2345px;
     background-color: #191F42;
     border-radius: 10px;
     margin: 0 auto;
@@ -285,7 +285,7 @@ body{
 
     .customize{
 margin-top: 80px;
-// display: flex;
+display: flex;
 ul{
     width: 750px;
     display:flex;
@@ -319,11 +319,14 @@ ul{
 }
 
 .customize-1{
-    // width: 900px;
+    width: 750px;
+    margin: 0 auto;
     margin-top: 80px;
     display:flex;
     justify-content:space-evenly;
 ul{
+    width: 100%;
+    display: block;
     li{
         margin-bottom: 24px;
     }
