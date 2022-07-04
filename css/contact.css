@@ -1,6 +1,6 @@
 .btn_cta {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   cursor: pointer;
@@ -17,7 +17,7 @@
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
@@ -32,8 +32,8 @@
 }
 
 .btn_cta_submit {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   border-radius: 50px;
   background: #00072E;
@@ -51,7 +51,7 @@
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
@@ -66,16 +66,18 @@
 }
 
 .btn_general {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
 
 .btn_general:hover {
-  border-color: #00072E;
   background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+  border: none;
 }
 
 .btn_general .btn_square {
@@ -83,15 +85,30 @@
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
 }
 
+.btn_general .btn_pay {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  border: none;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  background-color: transparent;
+}
+
 .btn_general_sumbmit {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   background: #00072E;
   cursor: pointer;
@@ -108,7 +125,7 @@
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
@@ -176,8 +193,8 @@
 }
 
 .btn_status {
-  width: 250px;
-  height: 46px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
 }
@@ -187,39 +204,51 @@
   margin: 0 auto;
   text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  -webkit-box-shadow: inset 0 0 0 0 #EEEEEE;
+          box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
 }
 
 .btn_status .btn_square:hover {
-  background: #EEEEEE;
   color: #00072E;
+  -webkit-box-shadow: inset 50px 0 0 0 0 #EEEEEE;
+          box-shadow: inset 50px 0 0 0 0 #EEEEEE;
 }
 
 .btn_status_submit {
-  width: 250px;
-  height: 46px;
-  border: 1px solid #EEEEEE;
-  background: #00072E;
-  padding: 0;
+  width: 280px;
+  height: 50px;
   cursor: pointer;
 }
 
 .btn_status_submit .btn_square {
-  width: 100%;
-  height: 100%;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  -webkit-box-shadow: inset 0 0 0 0 #EEEEEE;
+          box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
 }
 
 .btn_status_submit .btn_square:hover {
-  background: #EEEEEE;
   color: #00072E;
+  -webkit-box-shadow: inset 280px 0 0 0 #EEEEEE;
+          box-shadow: inset 280px 0 0 0 #EEEEEE;
 }
 
 .btn_main {
@@ -280,6 +309,34 @@
   background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
 }
 
+.form {
+  position: relative;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form label .form__label {
+  color: #EEEEEE;
+  font-size: 18px;
+}
+
+.form__input {
+  display: block;
+  width: 430px;
+  height: 62px;
+  background-color: #191F42;
+  border: 1px solid #00072E;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 15px;
+  color: #EEEEEE;
+}
+
 .input_div {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -299,18 +356,12 @@
   display: block;
   width: 430px;
   height: 62px;
-  background-color: #191F55;
-  border: #191F55;
+  background-color: #191F42;
+  border: #191F42;
   border-radius: 5px;
   font-size: 18px;
   padding-left: 15px;
   color: #EEEEEE;
-}
-
-.input_div input:focus {
-  background-color: #535564;
-  border: #535564;
-  outline: #535564;
 }
 
 .input_div_password {
@@ -338,17 +389,11 @@
   color: #EEEEEE;
 }
 
-.input_div_password input:focus {
-  background-color: #987A4D;
-  border: #987A4D;
-  outline: #987A4D;
-}
-
 .input_div_password i {
   color: #EEEEEE;
-  font-size: 10rem;
+  font-size: 18rem;
   position: absolute;
-  top: 43%;
+  top: 45%;
   right: 5%;
 }
 
@@ -373,20 +418,14 @@
 
 .input_div_full input {
   display: block;
-  width: 550px;
-  height: 40px;
+  width: 910px;
+  height: 62px;
   background-color: #191F42;
   border: #191F42;
   border-radius: 5px;
   font-size: 18px;
   padding-left: 15px;
   color: #EEEEEE;
-}
-
-.input_div_full input:focus {
-  background-color: #987A4D;
-  border: #987A4D;
-  outline: #987A4D;
 }
 
 .selector_title {
@@ -422,6 +461,7 @@
   border: 1px solid #EEEEEE;
   border-radius: 5px;
   margin-bottom: 32px;
+  color: #EEEEEE;
 }
 
 .contact {
@@ -600,6 +640,7 @@
   padding-left: 10px;
   padding-top: 10px;
   background-color: #191F42;
+  color: #EEEEEE;
   border-radius: 5px;
 }
 

@@ -530,6 +530,7 @@ body {
 .main_bottom ul {
   display: flex;
   justify-content: space-between;
+  width: 1000px;
   margin-top: 48px;
 }
 .main_bottom ul li {

@@ -65,6 +65,7 @@ body {
 
             li {
                 text-align: center;
+                border: 1px solid white;
                 a{
                     text-decoration: none;
                     color:$white;
@@ -80,6 +81,10 @@ body {
 
                 h5 {
                     margin-top: 24px;
+                }
+                &:hover{
+                    transform: scale(1.05);
+                    transition: all .35s ease;
                 }
             }
         }

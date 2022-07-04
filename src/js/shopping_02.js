@@ -8,6 +8,7 @@ var shopping_vm = new Vue({
         quantity: 1, //商品數量
         Add_to: 1, //加入購物車
 
+        // 1.
         order_list:[],
         already_exist:false,
     },
@@ -28,7 +29,7 @@ var shopping_vm = new Vue({
         join_in(e){
             e.preventDefault();  //為了讓他不要去執行到外層a連結的動作
             this.Add_to++
-            // 2.
+            // 3.
             if(this.already_exist){
                 for(let i=0; i<this.order_list.length; i++ ){
                     if(this.order_list[i]['商品ID'] === this.vue_prod_num){
@@ -77,7 +78,35 @@ var shopping_vm = new Vue({
                     this.vue_prod_num = prod_num
                     this.bigImg = this.shopping_2_list[this.vue_prod_num][2] // 切換步驟
                 }) 
-        }
+        },
+        rightNow(){
+            if(this.already_exist){
+                for(let i=0; i<this.order_list.length; i++ ){
+                    if(this.order_list[i]['商品ID'] === this.vue_prod_num){
+                        // 幾個產品就跑幾次
+                        this.order_list[i]['商品數量'] = this.quantity;
+                        //因為已經存在，所以只要改商品數量
+                    }
+                }
+            }else{//如果不存在的話
+                let order_item = {
+                    '商品ID': this.vue_prod_num,
+                    '商品數量': this.quantity,
+                    '商品圖':this.shopping_2_list[this.vue_prod_num][2],
+                    '里程數':this.shopping_2_list[this.vue_prod_num][1],
+                    '商品名稱':this.shopping_2_list[this.vue_prod_num][0],
+                };
+                if(this.order_list){//如果order_list 有其他商品資料的話，push到後面
+                    this.order_list.push(order_item);
+                }else{//如果order_list 沒資料的話，直接存入order_item
+                    this.order_list = order_item;
+                }
+                this.already_exist = true;
+                // console.log(this.order_list);
+            }
+            //localStorage.setItem意思是把資料存進localStorage裡
+            localStorage.setItem('order_list', JSON.stringify(this.order_list));
+        },
     },
     computed: {
         total_mile(){
@@ -103,7 +132,7 @@ var shopping_vm = new Vue({
         this.lave_mile = 300000
     },
     mounted(){ //綁html，和html畫面有關
-        // 1.
+        // 2.
         let search_obj = new URLSearchParams(location.search); //抓網址上面戴的參數
         
         if(localStorage['order_list']){ //如果localStorage有order_list這個資料ˋ的話做下面的事情

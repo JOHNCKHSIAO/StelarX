@@ -10,17 +10,17 @@
     <link rel="shortcut icon" href="./images/shortcut.png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/shopping_04.css">
+    <script src="./js/vue.js"></script>
     <title>Stellar X | 太空運輸領航者</title>
 </head>
-
 <body>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
-    <div class="wrapper">
-        <img class="icon_top" src="./images/shopping_cart/icon.png" alt="">
+    <div class="wrapper" id="shopping_04">
+        <img class="icon_top" src="./images/shopping_cart/icon.png">
         <h2>兌換完成</h2>
         <h5>取貨編號 : ITEM0001 </h5>
-        <img class="plant" src="./images/shopping_cart/Group 1245.png" alt="">
+        <img class="plant" :src="img">
         <main>
             <div class="item_1">
                 <h6>取貨日期</h6>
@@ -29,42 +29,36 @@
                 <h6>取貨星球</h6>
             </div>
             <div class="personal_information">
-                <h6>2052/07/15</h6>
-                <h6>蘇貞昌</h6>
-                <h6>0987878787</h6>
-                <h6>地球</h6>
+                <h6>{{user_pick.Pickup_data}}</h6>
+                <h6>{{user_pick.Pickup_people}}</h6>
+                <h6>{{user_pick.Pickup_Tel}}</h6>
+                <h6>{{user_pick.Pickup_Location}}</h6>
             </div>
             <div class="item_2">
                 <h6>商品</h6>
                 <h6>數量</h6>
             </div>
-            <div class="commodity">
-                <img src="images/shopping_cart/t-shirt2xs.jpg" alt="">
+            <div class="commodity" v-for="(item, index) in order_list_local" :key="item.index">
+                <img :src="item['商品圖']">
                 <div class="align">
-                    <h6>LOGO 印花短袖Ｔ恤<br>(FREE SIZE 中性款）</h6>
-                    <h6>1</h6>
+                    <h6>{{item['商品名稱']}}</h6>
+                    <h6>{{item['商品數量']}}</h6>
                 </div>
             </div>
-            <div class="commodity">
-                <img src="images/shopping_cart/t-shirt3xs.jpg" alt="">
-                <div class="align">
-                    <h6>歐若拉香氛</h6>
-                    <h6>1</h6>
-                </div>
-            </div>
-
+            <h3 style="margin-top: 20px;">以兌換里程數 <span style="color: #987A4D;">{{shopping03_total_mile}}</span> 哩</h3>
         </main>
         <div class="calculate">
             <div class="calculate_txt">
                 <h5>剩餘哩數</h5>
-                <h5>33,000 哩</h5>
+                <h5>{{300000 - shopping03_total_mile}}哩</h5>
             </div>
         </div>
     </div>
     <div class="btn_cta m0auto">
-        <a class="aLink" href="./member_intro.html">會員管理<img src="./images/ctz_dec.png" alt=""></a>
+        <a class="aLink" href="./member_intro.html">會員管理<img src="./images/ctz_dec.png"></a>
     </div>
     @@include("./layout/footer.html")
+    <script src="./js/shopping_04.js"></script>
 </body>
 
 </html>
