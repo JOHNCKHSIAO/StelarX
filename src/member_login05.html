@@ -34,16 +34,16 @@
    
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
-    <section class="member_login05">
-        <h2 class="member_login05-title">我的購物明細</h2>
+    <section class="member_login05" id="login05">
+        <h2 class="member_login05-title"v-for="(item, index) in member_login05">我的購物明細</h2>
         <div class="shopping-item">
-            <h5 class="shopping-number">取貨編號:ITEM0001</h5>
-            <h5 class="shopping-date">取貨日期:2022/4/5</h5>
+            <h5 class="shopping-number">取貨編號:{{item[0]}}</h5>
+            <h5 class="shopping-date">取貨日期:{{item[1]}}</h5>
         </div>
         <!--第一筆-->
         <div class="shopping-detail">
             <div class="wrapper displaynone">
-                <h5>取貨編號 : ITEM0001 </h5>
+                <h5>取貨編號 : {{item[0]}} </h5>
                 <main>
                     <div class="item_1">
                         <h6>取貨日期</h6>
@@ -52,10 +52,10 @@
                         <h6>取貨星球</h6>
                     </div>
                     <div class="personal_information">
-                        <h6>2052/07/15</h6>
-                        <h6>蘇貞昌</h6>
-                        <h6>0987878787</h6>
-                        <h6>地球</h6>
+                        <h6>{{item[1]}}</h6>
+                        <h6>{{item[2]}}{{item[3]}}</h6>
+                        <h6>{{item[4]}}</h6>
+                        <h6>{{item[5]}}</h6>
                     </div>
                     <div class="item_2">
                         <h6>商品</h6>
@@ -64,8 +64,8 @@
                     <div class="commodity">
                         <img src="./images/shopping_cart/t-shirt_01.jpg" alt="">
                         <div class="align">
-                            <h6>LOGO 印花短袖Ｔ恤<br>(FREE SIZE 中性款）</h6>
-                            <h6>1</h6>
+                            <h6>{{item[6]}}</h6>
+                            <h6>{{item[7]}}</h6>
                         </div>
                     </div>
                     <div class="commodity">
@@ -311,5 +311,9 @@
 
     @@include("./layout/footer.html")
 </section>
+<script src="js/vue.js"></script>
+<script src="js/member_login05.js"></script>
+
+
 </body>
 </html>
