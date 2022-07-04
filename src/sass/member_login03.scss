@@ -42,6 +42,10 @@
     .password-wrong {
         margin-top: 20px;
         opacity:0;
+        color:$error_red;
+    }
+    .showmessage{
+        opacity:1;
     }
     .btn-wrapper{
         // border:1px solid yellow;

@@ -3,28 +3,7 @@
 include("connection.php");
 session_start();
 // echo $_SESSION["memberAccount"];
-// $memberData = [
-   
-//         "ID" => "",
-//         "ACCOUNT" => "",
-//         "PASSWORD" => "",
-//         "PERSONAL_ID"=> "",
-//         "NAME" => "",
-//         "LASTNAME"=>"",
-//         "E_MAIL"=>"",
-//         "CELLPHONE"=>"",
-//         "BUSINESS"=>"",
-//         "MEMBER_DATE"=>"",
-//         "MEMBER_DATE" => "",
 
-//     "travel" =>[
-
-//     ],
-//     "shopping"=>[
-
-//     ],
-
-// ];
 // print_r($memberData);
 $sql1 = "select ID, LASTNAME , NAME ,BUSINESS ,MEMBER_DATE from member where ACCOUNT = :account ";
 $sql2 = "select sum(MILEAGE) as TOTALLMILES from v_member_center_miles2 where ACCOUNT = :account ";
