@@ -94,7 +94,7 @@
 
 .index1440 {
 position: relative;
-z-index: 1;
+z-index: 9999;
     .index1080 {
         width: 1080px;
         margin: 0 auto;
@@ -114,7 +114,13 @@ z-index: 1;
 }
 //-------------------------------------------------------------  
 
+<<<<<<< HEAD
 
+=======
+.invisible {
+    visibility: hidden;
+  }
+>>>>>>> my
   
   .relative {
     position: relative;
@@ -197,6 +203,16 @@ z-index: 1;
     max-width: 100%;
     max-height: 100%;
   }
+
+//   星球轉動按鈕
+.index_btn{
+    cursor: pointer;
+
+width: 64px;
+height: 64px;
+
+}
+
 //-------------------------------------------------------------  
         // 太空運輸領航者
         // .index-brief {}
@@ -226,7 +242,7 @@ z-index: 1;
             position: relative;
             video{
               
-                opacity: .7;
+                // opacity: .7;
             }
         .index-video_text{
             position: absolute;
@@ -371,6 +387,11 @@ z-index: 1;
     animation: fly 2s linear infinite;
 
 }
+.saturn{
+    //單獨給土星
+    animation: fly2 2s linear infinite;
+
+}
 @keyframes fly {
     0% {
         transform: translateY(10px);
@@ -392,6 +413,31 @@ z-index: 1;
         transform: translateY(10px);
         box-shadow: 2px 2px 10px 1px rgba(255, 255, 255, 0.732);
         border-radius: 50%;
+
+
+    }
+}
+@keyframes fly2 {
+    0% {
+        transform: translateY(10px);
+        
+        // box-shadow: 2px 2px 3px 1px rgba(255, 255, 255, 0.523);
+        // border-radius: 50%;
+
+    }
+
+    50% {
+        transform: translateY(6px);
+        // box-shadow: 2px 2px 10px 1px rgba(255, 255, 255, 0.732);
+        // border-radius: 50%;
+      
+    }
+
+
+    100% {
+        transform: translateY(10px);
+        // box-shadow: 2px 2px 10px 1px rgba(255, 255, 255, 0.732);
+        // border-radius: 50%;
 
 
     }
