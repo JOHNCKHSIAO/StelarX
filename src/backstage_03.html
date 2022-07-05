@@ -25,7 +25,7 @@
     <header class="header">
         <img src="./images/logo.png" alt=""><h3>後台管理系統</h3>
     </header>
-    <main>
+    <main id="backstage_03">
         <h2 class="backstage-title" id="backstage_title">
             商品管理
         </h2>
@@ -50,11 +50,9 @@
                 <a href="./backstage_05.html">收件夾</a>
             </div>
         </div>
-        <section class="info-area" id="backstage_03">
+        <section class="info-area" >
             <ul class="member-list-title">
-                <li>
-                    <input type="checkbox">
-                </li>
+               
                 <li>
                     商品編號
                 </li>
@@ -79,32 +77,26 @@
                
 
             </ul>
-            <ul class="member-list-content" v-for="(item, index) in backstage_03">
-                <li>
-                    <input type="checkbox">
+            <ul class="member-list-content" v-for="(item, index) in backstage_02[page]">
+               
+                 <li>
+                  {{item[0]}}
                  </li>
                  <li>
-                  {{item[1]}}
-
+                    {{item[1]}}
                  </li>
                  <li>
-                     {{item[2]}}
-                    
-                 </li>
-                 <li>
-                  {{item[3]}}
+                  {{item[2]/1000}}
                   <span>萬哩</span>
                  </li>
                  <li>
-                  {{item[5]}}
-
+                  {{item[3]}}
                  </li>
                  <li>
-                    30
+                    {{item[4]}}
                  </li>
                  <li>
-                  {{item[4]}}
-
+                    上架
                  </li>
                  <li>
                   <div :data-idx="index" @click="edit">編輯</div>
@@ -113,57 +105,14 @@
             </ul>
            
         </section>
+        <section class="page-area">
+            <div class="pagenumber" v-for="(p,i) in backstage_03.length">
+                <h6 :data-page="i" @click="changePage">{{p}}</h6>
+            </div>
+        </section>
 
     </main>
-    <!-- <section class="page-area">
-        <div class="pagenumber" >
-            <h6><i class="fa-solid fa-angle-left"></i></h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>1</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>2</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>3</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>4</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>5</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6><i class="fa-solid fa-angle-right"></i></h6>
-        </div>
-    </section> -->
-    <script>
-   
-      new Vue({
-          el: '#backstage_03', //
-
-          data: {
-            backstage_03: [], //
-          },
-          methods: {
-            edit(e){
-               // console.log(e.target.dataset.idx);
-               console.log(this.backstage_03[e.target.dataset.idx]);
-            },
-          },
-          compute: {},
-          watch: {},
-          created() {
-              let url = './PHP/backstage_03.php'; //
-              fetch(url)
-                  .then(response => response.json())
-                  .then(text => this.backstage_03 = text); //
-          },
-          mounteds(){},
-          destroyed(){},
-
-      })
-  </script>
+    
+    <script src="./js/backstage_03.js"></script>
 </body>
 </html>
