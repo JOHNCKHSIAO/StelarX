@@ -65,16 +65,16 @@ function genStyle() {
     },
     v2: {
       offsetX: Math.floor(parentWidth / 2) * -1,
-      offsetY: 0, //控制中心偏移 旋轉半徑大小
+      offsetY: 2, //控制中心偏移 旋轉半徑大小
       scale: 0.3, //控制左右星球大小比例
     },
     v3: {
       offsetX: Math.floor(parentWidth / 2),
-      offsetY: 0, //控制中心偏移 旋轉半徑大小
+      offsetY: 2, //控制中心偏移 旋轉半徑大小
       scale: 0.3, //控制左右星球大小比例
     },
     v4: {
-      offsetX: 0, //控制中心偏移 旋轉半徑大小
+      offsetX: 2, //控制中心偏移 旋轉半徑大小
       offsetY: Math.floor(parentHeight / 2) * -1,
       scale: 0, //最後面消失的那一顆星球 大小為0
     },
