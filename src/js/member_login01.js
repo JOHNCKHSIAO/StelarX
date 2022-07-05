@@ -54,7 +54,7 @@ let vm = new Vue({
                     if(res=="loginOK"){
                         // alert("登入成功，即將轉至會員中心");
                         setTimeout(()=>{
-                            // window.location = "./member_login02.html";
+                            window.location = "./member_login02.html";
                         },1000)
                        return;
                        

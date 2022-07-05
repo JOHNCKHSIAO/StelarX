@@ -1,5 +1,5 @@
 
-new Vue({
+let vm = new Vue({
     el: '#booking06',
     data: {
         day:'',
@@ -53,10 +53,15 @@ new Vue({
         this.dest = JSON.parse(this.dest);
 
         // object.keys(seat)
+<<<<<<< HEAD
         this.seat = JSON.parse(localStorage.getItem('seat_service'));
         // object.keys(seat) = JSON.parse(this.seat);
         console.log(Object.values(this.seat));
 
+=======
+        this.seat = localStorage.getItem('seat_service');
+        // object.keys(seat) = JSON.parse(this.seat);
+>>>>>>> dev
 
 },
 
@@ -67,7 +72,7 @@ new Vue({
     },
 
     
-}) 
+}) ;
 
 // document.getElementById('btn_next').addEventListener('click', e => {
 //     document.getElementById('confirm').click();

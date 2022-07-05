@@ -4,8 +4,10 @@
        session_start();
 
        //建立SQL語法
-       $sql = "select SHOPPING_ID , DELIVERY_DATE ,LAST_NAME ,NAME, RECEIVER_PHONE ,RECEIVER_LOCATION ,COMMODITY_NAME ,QUANTITY
-       from v_member_shopping3 where ACCOUNT = :account";
+       $sql = "select v.SHOPPING_ID , v.DELIVERY_DATE ,v.LAST_NAME ,v.NAME, v.RECEIVER_PHONE ,v.RECEIVER_LOCATION ,v.COMMODITY_NAME ,v.QUANTITY,c.images
+       from v_member_shopping3 v
+              join commodity c
+                     on v.COMMODITY_NAME = c.COMMODITY_NAME where ACCOUNT = :account";
 
        //執行並查詢，會回傳查詢結果的物件，必須使用fetch、fetchAll...等方式取得資料
        // $statement = $pdo->query($sql);

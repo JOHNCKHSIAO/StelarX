@@ -516,6 +516,7 @@ main .insert-new {
   margin-top: 24px;
 }
 main .page-area {
+  opacity: 0;
   width: 1080px;
   margin: 0 auto;
   margin-bottom: 50px;
