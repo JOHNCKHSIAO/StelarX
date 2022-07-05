@@ -71,7 +71,7 @@ new Vue({
                 alert('哩程數不足');
             }else{
                 localStorage.setItem('Pickup_Information', JSON.stringify(this.user_pick));
-                // window.location.href = "./shopping_04.html";
+                window.location.href = "./shopping_04.html";
             }
 
             

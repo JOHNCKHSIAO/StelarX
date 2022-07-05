@@ -48,7 +48,6 @@ body{
         margin: 0 auto;
         justify-content: space-between;
         align-items: center;
-        // outline: 2px solid red;
         li{
             line-height: 40px;
         }
@@ -69,18 +68,24 @@ body{
         
         .shoppiingicon{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgb(245, 40, 40);
-            color: #eee;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-
-            position: absolute;
-            top: -50%;
-            right: -42%;
-            z-index: 100;
+            a{
+                position: relative;
+                .Shopp_add{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgb(245, 40, 40);
+                    color: #eee;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+        
+                    position: absolute;
+                    top: -50%;
+                    right: -42%;
+                    z-index: 100;
+                }
+            }
         }
     }
 

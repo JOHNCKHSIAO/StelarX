@@ -433,6 +433,7 @@ body {
 }
 .wrapper .commodity ul li {
   text-align: center;
+  border: 1px solid white;
 }
 .wrapper .commodity ul li a {
   text-decoration: none;
@@ -443,6 +444,10 @@ body {
 }
 .wrapper .commodity ul li h5 {
   margin-top: 24px;
+}
+.wrapper .commodity ul li:hover {
+  transform: scale(1.05);
+  transition: all 0.35s ease;
 }
 
 /*# sourceMappingURL=shopping_01.css.map */
