@@ -38,17 +38,12 @@
                 align-items: center;
             }
         }
-}
-
-.booking:hover{
-    transform: scale(1.05);
-}
-
-.shoppiingicon{
-    display: flex;
-    a{
-        position: relative;
-        .Shopp_add{
+        
+        .booking:hover{
+            transform: scale(1.05);
+        }
+        
+        .shoppiingicon{
             display: flex;
             justify-content: center;
             align-items: center;

@@ -209,6 +209,20 @@ p {
   font-size: 16px;
   text-align: center;
 }
+.btn_general .btn_pay {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  border: none;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  background-color: transparent;
+}
 
 .btn_general_sumbmit {
   width: 280px;
@@ -280,10 +294,7 @@ p {
 .btn_status {
   width: 280px;
   height: 50px;
-<<<<<<< HEAD
-=======
   border: 1px solid #EEEEEE;
->>>>>>> Crystal
   cursor: pointer;
 }
 .btn_status .btn_square {
@@ -295,25 +306,19 @@ p {
   color: #EEEEEE;
   font-size: 16px;
   text-align: center;
-  transition: ease-out 0.3s;
+  transition: ease 0.3s;
   background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
   box-shadow: inset 0 0 0 0 #EEEEEE;
   outline: none;
 }
 .btn_status .btn_square:hover {
   color: #00072E;
-  box-shadow: inset 280px 0 0 0 #EEEEEE;
+  box-shadow: inset 50px 0 0 0 0 #EEEEEE;
 }
 
 .btn_status_submit {
   width: 280px;
   height: 50px;
-<<<<<<< HEAD
-  border: 1px solid #EEEEEE;
-  background: #00072E;
-  padding: 0;
-=======
->>>>>>> Crystal
   cursor: pointer;
 }
 .btn_status_submit .btn_square {
@@ -511,34 +516,21 @@ main .small_title .small_title_in .h6_2 {
 }
 .Purchaser .Purchaser_top_1 h5 {
   padding-bottom: 32px;
-  margin-right: 70px;
+  margin: 0 auto;
 }
 .Purchaser .Purchaser_top_2 {
   display: flex;
   margin-top: 32px;
 }
-.Purchaser .Purchaser_top_2 h5:first-child {
-  margin-right: 50px;
-}
-.Purchaser .Purchaser_top_2 h5:last-child {
-  margin-left: 170px;
+.Purchaser .Purchaser_top_2 h5 {
+  margin: 0 auto;
 }
 .Purchaser .Purchaser_top_3 {
   display: flex;
   margin-top: 24px;
 }
-.Purchaser .Purchaser_top_3 h5:first-child {
-  margin-right: 95px;
-}
-.Purchaser .Purchaser_top_3 h5:last-child {
-  margin-left: 315px;
-}
-.Purchaser .Purchaser_top_4 {
-  display: flex;
-  margin-top: 24px;
-}
-.Purchaser .Purchaser_top_4 h5:first-child {
-  margin-right: 70px;
+.Purchaser .Purchaser_top_3 h5 {
+  margin: 0 auto;
 }
 
 .booking-price {

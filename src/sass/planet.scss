@@ -14,11 +14,9 @@
 
 
 .planet-intro{
-    // outline: yellow 2px solid;
     width: 900px;
     color: $white;
     display: flex;
-    justify-content: space-between;
     margin: 0 auto;
     margin-bottom: 64px;
     // padding-bottom: 200px;
@@ -26,16 +24,12 @@
     .planet-name{
         width: 450px;
         text-align: center;
+        // justify-self: center;
 
-        .title1{
-            font-size: 90px;
-            line-height: 90px;
-        }
+        h1{}
 
-        .title3{
-            font-size: 30px;
+        h5{
             color: $gold;
-            margin-top: 0px;
         }
     }
 
@@ -43,14 +37,14 @@
         width: 450px;
 
         h4{
-            font-size: 28px;
-            font-weight: 700;
+            // font-size: 28px;
+            font-weight: 500;
             color: $gold;
         }
 
         h6{
-            font-size: 20px;
-            margin-top: 6px;
+            // font-size: 20px;
+            margin-top: 10px;
         }
     }
 }
@@ -294,146 +288,128 @@ main{
 }
 
 
-// planet service intro section
-.planet-service{
-    // border: 2px solid firebrick;
-    height: 650px;
-    // background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(8, 5, 15, 0) 0.01%, #00072E 59.51%);
-    // outline: yellow 2px solid;
-}
 
-.planet-activity-intro{
+
+
+
+
+// -------------------------------- 季節活動 -----------------------------
+
+.season-intro{
     width: 700px;
-    color: $white;
-    margin: 0 auto;
-    position: relative;
-    margin-top: -550px;
+    color: #eeeeee;
+    margin: auto;
+    margin-top: -600px;
+    text-align: center;
+    margin-bottom: 100px;
     
-
-    .title2{
-        font-size: 40px;
-        line-height: 28px;
+    h2{
+        margin-bottom: $spacing_24px;
     }
-
-    p{
-        font-size: 20px;
-        margin-top: 20px;
+    h6{
+        font-weight: 300;
     }
 }
 
-// planet service slider
-.activity-slider-container{
-    width:1440px;
-    // width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    margin-top: -400px;
-    overflow: hidden;
+
+.season-event{
+    max-width: 1440px;
     position: relative;
-
-    #prevBtn{
-position: absolute;
-top:50%;
-z-index: 10;
-left: 5%;
-cursor: pointer;
-opacity: 0.5;
-    }
-
-    #nextBtn{
-        position: absolute;
-        top:50%;
-        z-index: 10;
-        right: 5%;
-        cursor: pointer;
-        opacity: 0.5;
-    }
-
-    .activity-sliders{
-        display:flex;
-        width: 100%;
-        height: 750px;
-        
-    }
-
-    .activity-slider{
-        width: 100%;
-        position: relative;
+    margin: auto;
+    color: #eeeeee;
     
-        .activity-info{
-            
-            width: 900px;
+
+    // Hide the images by default
+    .event-slides{
+        display: none;
+
+        .numbertext {
+            color: $white;
+            line-height: 1;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+        }
+        img{
+            width: 100%;
+        }
+        .event-info{
+            width: 920px;
             height: 450px;
-            background-color: rgb(0, 0, 0, 50%);
+            background-color: rgb(0, 0, 0, 60%);
+    
             position: absolute;
             top: $spacing_80px;
             right: 0;
             
-            
-            h2{
-                color: #eeeeee;
-                font-weight: 500;
+            h3{
                 line-height: 1;
                 margin: $spacing_80px 0 $spacing_80px $spacing_120px;
             }
-            h5{
-                color: #eeeeee;
-                margin: 0 80px 0 200px;
+            h6{
+                font-weight: 300;
+                margin-left: 200px;
             }
+        }
+        .text{
+          color: $white;
+          font-size: 18px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
         }
     }
 
-    button{
-        position: relative;
-        z-index: 10;
-    }
-    
-}
-// .planet-activity-slider{
-    
-//     ul{
-//         width: 100%;
-//         height: 900px;
-//         margin: 0 auto;
-//         display: flex;
-//         margin-top: -400px;
-        
-//     }
-    
-//     li{
-//         height: 100vh;
-//         background-size: cover;
-//         background-position: center center;
-//         transition: .5s;
-//         color: $white;
-//         font-size: 40px;
-//         text-align: center;
-//         padding-top: 200px;
-        
-//     }
-    
-//     .item1{
-//         background-image: url(../images/planet/activity/001.jpg);
-//         flex-grow: 2;
-       
-//     }
-    
-//     .item2{
-//         background-image: url(../images/planet/activity/002.jpg);
-//         flex-grow: 2;
-//     }
-    
-//     .item3{
-//         background-image: url(../images/planet/activity/003.jpg);
-//         flex-grow: 2;
-//     }
+    // 左右按鈕
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 48px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
 
-//     .item4{
-//         background-image: url(../images/planet/activity/004.jpg);
-//         flex-grow: 2;
-//     }
-    
-//     li:hover{
-//         flex-grow: 15;
-//     }
-// }
+        &:hover{
+            background-color: rgba(0,0,0,0.8);
+        }
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+}
+
+// 麵包點點
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: $gold;
+}
+
+// Fading animation 
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

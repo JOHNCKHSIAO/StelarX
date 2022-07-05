@@ -149,8 +149,10 @@ main{
 }
 .page-area{
     // border:1px solid red;
+    opacity: 0;
     width:1080px;
     margin:0 auto;
+    margin-bottom: 50px;
     display:flex;
     justify-content: end;
     margin-top: 24px;

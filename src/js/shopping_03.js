@@ -71,9 +71,28 @@ new Vue({
                 alert('哩程數不足');
             }else{
                 localStorage.setItem('Pickup_Information', JSON.stringify(this.user_pick));
-                window.location.href = "./shopping_04.html";
+                // window.location.href = "./shopping_04.html";
             }
-            
+
+            // let url = ;
+            fetch('./PHP/exchange.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    Pickup_Location: this.user_pick.Pickup_Location,
+                    Pickup_data: this.user_pick.Pickup_data,
+                    Pickup_people: this.user_pick.Pickup_people,
+                    Pickup_Tel: this.user_pick.Pickup_Tel,
+                })
+                
+            }).then(res=>{
+                return res.text();
+              })
+              .then(res=>{
+                console.log(res);
+              })
         }
     },
 })

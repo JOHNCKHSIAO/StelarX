@@ -17,13 +17,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/backstage_04.css">
+    <script src="./js/vue.js"></script>
     <title>Stellar X | 後臺管理系統</title>
 </head>
 <body>
     <header class="header">
         <img src="./images/logo.png" alt=""><h3>後台管理系統</h3>
     </header>
-    <main>
+    <main id="backstage_04">
         <h2 class="backstage-title" id="backstage_title">
             訂單管理
         </h2>
@@ -72,223 +73,35 @@
                
 
             </ul>
-            <ul class="member-list-content">
+            <ul class="member-list-content" v-for="(item, index) in backstage_04">
                 <li>
-                    000001
+                  {{item[0]}}
                  </li>
                  <li>
-                    2022/07/14
+                  {{item[1]}}
                  </li>
                  <li>
-                    T0641 陳建宏
+                  {{item[2]+item[3]}}
                  </li>
                  <li>
-                    5000<span>萬哩</span>
+                  {{item[4]/10000}}<span>萬哩</span>
                  </li>
                  <li>
-                    正常
+                   正常
                  </li>
                  <li>
-                    <div>明細</div>
+                    <div :data-idx="index" @click="edit">明細</div>
                  </li>
 
             </ul>
-            <ul class="member-list-content">
-                <li>
-                    000001
-                 </li>
-                 <li>
-                    2022/07/14
-                 </li>
-                 <li>
-                    T0641 陳建宏
-                 </li>
-                 <li>
-                    5000<span>萬哩</span>
-                 </li>
-                 <li>
-                    正常
-                 </li>
-                 <li>
-                    <div>明細</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    000001
-                 </li>
-                 <li>
-                    2022/07/14
-                 </li>
-                 <li>
-                    T0641 陳建宏
-                 </li>
-                 <li>
-                    5000<span>萬哩</span>
-                 </li>
-                 <li>
-                    正常
-                 </li>
-                 <li>
-                    <div>明細</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    000001
-                 </li>
-                 <li>
-                    2022/07/14
-                 </li>
-                 <li>
-                    T0641 陳建宏
-                 </li>
-                 <li>
-                    5000<span>萬哩</span>
-                 </li>
-                 <li>
-                    正常
-                 </li>
-                 <li>
-                    <div>明細</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    000001
-                 </li>
-                 <li>
-                    2022/07/14
-                 </li>
-                 <li>
-                    T0641 陳建宏
-                 </li>
-                 <li>
-                    5000<span>萬哩</span>
-                 </li>
-                 <li>
-                    正常
-                 </li>
-                 <li>
-                    <div>明細</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    000001
-                 </li>
-                 <li>
-                    2022/07/14
-                 </li>
-                 <li>
-                    T0641 陳建宏
-                 </li>
-                 <li>
-                    5000<span>萬哩</span>
-                 </li>
-                 <li>
-                    正常
-                 </li>
-                 <li>
-                    <div>明細</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    000001
-                 </li>
-                 <li>
-                    2022/07/14
-                 </li>
-                 <li>
-                    T0641 陳建宏
-                 </li>
-                 <li>
-                    5000<span>萬哩</span>
-                 </li>
-                 <li>
-                    正常
-                 </li>
-                 <li>
-                    <div>明細</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    000001
-                 </li>
-                 <li>
-                    2022/07/14
-                 </li>
-                 <li>
-                    T0641 陳建宏
-                 </li>
-                 <li>
-                    5000<span>萬哩</span>
-                 </li>
-                 <li>
-                    正常
-                 </li>
-                 <li>
-                    <div>明細</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    000001
-                 </li>
-                 <li>
-                    2022/07/14
-                 </li>
-                 <li>
-                    T0641 陳建宏
-                 </li>
-                 <li>
-                    5000<span>萬哩</span>
-                 </li>
-                 <li>
-                    正常
-                 </li>
-                 <li>
-                    <div>明細</div>
-                 </li>
-
-            </ul>
-            <ul class="member-list-content">
-                <li>
-                    000001
-                 </li>
-                 <li>
-                    2022/07/14
-                 </li>
-                 <li>
-                    T0641 陳建宏
-                 </li>
-                 <li>
-                    5000<span>萬哩</span>
-                 </li>
-                 <li>
-                    正常
-                 </li>
-                 <li>
-                    <div>明細</div>
-                 </li>
-
-            </ul>
+           
         </section>
 
     </main>
-    <!-- <section class="page-area">
-        <div class="pagenumber" >
+    <section class="page-area">
+        <!-- <div class="pagenumber" >
             <h6><i class="fa-solid fa-angle-left"></i></h6>
-        </div>
+        </div> -->
         <div class="pagenumber" >
             <h6>1</h6>
         </div>
@@ -304,35 +117,13 @@
         <div class="pagenumber" >
             <h6>5</h6>
         </div>
-        <div class="pagenumber" >
+        <!-- <div class="pagenumber" >
             <h6><i class="fa-solid fa-angle-right"></i></h6>
-        </div>
-    </section> -->
+        </div> -->
+    </section>
 
-    <script>
-      new Vue({
-          el: '#backstage_04',
-
-          data: {
-            backstage_04: [],
-          },
-          methods: {
-            edit(e){
-               // console.log(e.target.dataset.idx);
-               console.log(this.backstage_04[e.target.dataset.idx]);
-            },
-          },
-          compute: {},
-          watch: {},
-          created() {
-              let url = './PHP/backstage_04.php';
-              fetch(url)
-                  .then(response => response.json())
-                  .then(text => this.backstage_04 = text);
-          },
-          mounteds(){},
-          destroyed(){},
-      })
+    <script src="./js/backstage_04.js">
+      
   </script>
 </body>
 </html>

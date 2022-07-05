@@ -135,6 +135,7 @@ main{
     // margin-bottom: 80px;
 }
 .Purchaser{
+    // outline: pink 2px solid;
     width: 750px;
     margin: 0 auto;
     margin-top: 64px;
@@ -143,34 +144,21 @@ main{
         display: flex;
         h5{
             padding-bottom: 32px;
-            margin-right:70px;
+            margin: 0 auto;
         }
     }
     .Purchaser_top_2{
         display: flex;
         margin-top: 32px;
-        h5:first-child{
-            margin-right:50px;
-        }
-        h5:last-child{
-            margin-left: 170px;
+        h5{
+            margin: 0 auto;
         }
     }
     .Purchaser_top_3{
         display: flex;
         margin-top: 24px;
-        h5:first-child{
-            margin-right:95px;
-        }
-        h5:last-child{
-            margin-left: 315px;
-        }
-    }
-    .Purchaser_top_4{
-        display: flex;
-        margin-top: 24px;
-        h5:first-child{
-            margin-right:70px;
+        h5{
+            margin: 0 auto;
         }
     }
 }

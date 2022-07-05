@@ -6,6 +6,12 @@
 
 body{
     color: $white;
+    background-color: #05081A;
+}
+.rocket-header{
+    margin: 0 !important;
+    padding: 40px 0 120px;
+    background-color: black;
 }
 
 // -------------------------------- 火箭進版 --------------------------------
@@ -16,6 +22,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     padding-top: $spacing_120px;
+
 
     .fv-main{
         width: 650px;
@@ -71,7 +78,6 @@ body{
                 text-align: center;
 
                 h1{
-                    font-weight: 500;
                     letter-spacing: 2px;
                     color: $gold;
                 }
@@ -129,14 +135,14 @@ body{
 // -------------------------------- 火箭引擎 --------------------------------
 
 .rocket-engine{
-
-    //缺星空背景
-
+    // border: 1px solid firebrick;
+    position: relative;
+    
     img{
         display: block;
         margin: auto;
     }
-
+    
     .engine-info{
         width: 1080px;
         margin: auto;
@@ -163,9 +169,6 @@ body{
             margin-left: auto;
             display: flex;
 
-            h6{
-                line-height: 1;
-            }
             ul{
                 width: 150px;
                 display: block;
@@ -174,6 +177,10 @@ body{
                 li{
                     width: 150px;
                     margin-bottom: $spacing_32px;
+
+                    h6{
+                        line-height: 1;
+                    }
                 }
             }
         }
@@ -185,60 +192,33 @@ body{
 
 .rocket-info{
     
-    //缺背景
-
-
+    
     // -------------- 火箭資訊_上方數據 --------------
+    
     .info-data{
-        width: 1080px;
-        margin: auto;
-        border: 1px solid firebrick;
-        
-        h1{
-            line-height: 1;
-            font-weight: 700;
-            margin-bottom: $spacing_12px;
-        }
-        h5{
-            line-height: 1;
-            font-weight: 500;
-            text-align: right;
-            color: #a0a0a0;
-        }
 
-        .data-top{
+        ul{
             display: flex;
-            margin-top: $spacing_80px;
-            align-items: center;
-            justify-content: center;
-            
-            .weight{
-                margin-right: $spacing_40px;
+            width: 1080px;
+            margin: $spacing_40px auto $spacing_120px;
+
+            li{
+                flex-basis: 200px;
+                height: 200px;
+                margin: auto;
+                border-radius: 10px;
+                border-bottom: 10px solid $gold;
+                background-color: rgb(255, 255, 255, .1);
+                text-align: center;
+                
+                img{
+                    margin: 30px auto 15px;
+                    height: 40px;
+                }
             }
         }
-
-        .data-bottom{
-            margin: $spacing_80px 0 $spacing_120px 0;
-
-            ul{
-                display: flex;
-                justify-content: center;
-                
-                li{
-                    display: flex;
-                    align-items: center;
-                    margin: 0 $spacing_120px;
-
-                    .diameter{
-                        margin-right: $spacing_40px;
-                    }
-                    .height{
-                        margin-right: $spacing_40px;
-                    }
-                }
-            }        
-        }
     }
+    
 
     // -------------- 火箭資訊_整支火箭 --------------
     .rocket-rocket{
@@ -246,10 +226,17 @@ body{
         margin: auto;
         display: flex;
 
-        .rocket-left{    
+        .rocket-left{   
+
+            img{
+                width: 300px;
+                margin-left: 100px;
+                position: relative;
+            }
         }
 
         .rocket-right{
+
             width: 500px;
             margin-left: auto;
             
@@ -258,18 +245,20 @@ body{
 
                 img{
                     display: block;
+                    width: 200px;
                     margin: auto;
-                    margin-top: 200px;
+                    margin-top: $spacing_64px;
                 }
-                h3{
+                h4{
                     line-height: 1;
                     color: $gold;
                     font-weight: 500;
                     text-align: center;
-                    margin: $spacing_80px 0;
+                    margin: $spacing_64px 0 $spacing_40px;
                 }
                 .eqpt-detail{                
                     ul{
+                        font-weight: 300;
                         display: flex;
                         width: 380px;
                         margin: auto;
@@ -294,6 +283,7 @@ body{
                     }
                 }
                 h6{
+                    font-weight: 300;
                     width: 430px;
                     margin: auto;
                 }
@@ -302,16 +292,18 @@ body{
             .eqpt-bottom{       
                 img{
                     display: block;
+                    width: 200px;
                     margin: auto;
                 }
-                h3{
+                h4{
                     line-height: 1;
                     color: $gold;
                     font-weight: 500;
                     text-align: center;
-                    margin: $spacing_80px 0;
+                    margin: $spacing_64px 0 $spacing_40px;
                 }
                 h6{
+                    font-weight: 300;
                     width: 430px;
                     margin: auto;
                     margin-bottom: $spacing_80px;
@@ -319,6 +311,7 @@ body{
 
                 .eqpt-detail{                
                     ul{
+                        font-weight: 300;
                         display: flex;
                         width: 380px;
                         margin: auto;
@@ -336,6 +329,7 @@ body{
                         li:last-child{
                             flex-basis: $spacing_80px;
                             flex-grow: 0;
+                            margin-bottom: 0;
                         }
                     }  
                 }
@@ -397,17 +391,36 @@ body{
         }
         .intro-pop{
             display: block;
-            background: $linear;
+            border: 3px solid $gold;
+            background-color: rgb(0, 0, 0, .5);
+            // background: $linear;
             margin-top: 12px;
             text-align: center;
             height: 80px;
             border-radius: 25px;
 
             display: none;
-            
+
+            animation: fadein .5s linear; 
+               
+            @keyframes fadein {
+                0%
+                {
+                    opacity:0;
+                }
+                50%
+                {
+                    opacity:0.5;
+                }
+                100%
+                {
+                    opacity:1;
+                }
+            }
+
             h6{
                 line-height: 80px;
-            }
+            }     
 
         }
         .pop-active{
@@ -440,8 +453,7 @@ body{
             right: 0;
             margin: auto;
         }
-        h4{
-           font-weight: 500;           
+        h4{       
            position: absolute;
            bottom: $spacing_40px;
            left: 180px;
@@ -489,18 +501,18 @@ body{
     text-align: center;
 
     h2{
-        font-weight: 500;
         line-height: 1;
     }
     .sep-line{
         width: 150px;
-        height: 3px;
+        height: 2px;
         background-color: $gold;
         display: block;
         margin: $spacing_32px auto;
     }
-    h5{
+    h6{
         line-height: 1;
+        font-weight: 300;
         margin-bottom: $spacing_64px;
     }
     ul{
@@ -511,12 +523,13 @@ body{
         li{
             flex-grow: 1;
             
-            h4{
+            h5{
                 line-height: 1;
-               font-weight: 700;
-               margin: $spacing_48px 0 $spacing_40px 0; 
+                font-weight: 500;
+                margin: $spacing_48px 0 $spacing_40px 0; 
             }
-            h6{
+            p{
+                font-weight: 300;
             }
         }
         li:nth-child(2){
@@ -551,48 +564,116 @@ body{
 
 // -------------------------------- 火箭_加值服務 -----------------------------
 
-
 .rocket-plus{
-
-    width: 1440px;
-    height: 750px;
-    margin: auto;
-    background-image: url('../images/rocket/rocket_plus_star.jpg');
-
+    max-width: 1440px;
     position: relative;
+    margin: auto;
 
-    .plus-info{
-        width: 920px;
-        height: 450px;
-        background-color: rgb(0, 0, 0, 50%);
+    // Hide the images by default
+    .event-slides{
+        display: none;
 
-        position: absolute;
-        top: $spacing_80px;
-        right: 0;
-        
-        h2{
-            font-weight: 500;
+        .numbertext {
+            color: $white;
             line-height: 1;
-            margin: $spacing_80px 0 $spacing_80px $spacing_120px;
+            padding: 20px;
+            position: absolute;
+            top: 0;
         }
-        h5{
-            margin-left: 200px;
+        img{
+            width: 100%;
+        }
+        .event-info{
+            width: 920px;
+            height: 450px;
+            background-color: rgb(0, 0, 0, 60%);
+    
+            position: absolute;
+            top: $spacing_80px;
+            right: 0;
+            
+            h3{
+                line-height: 1;
+                margin: $spacing_80px 0 $spacing_80px $spacing_120px;
+            }
+            h6{
+                font-weight: 300;
+                margin-left: 200px;
+            }
+        }
+        .text{
+          color: $white;
+          font-size: 18px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
         }
     }
+
+    // 左右按鈕
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 48px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+
+        &:hover{
+            background-color: rgba(0,0,0,0.8);
+        }
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
 }
+
+// 麵包點點
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: $gold;
+}
+
+// Fading animation 
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 
 // -------------------------------- 火箭_更多連結 -----------------------------
 
 .rocket-more{
-
-    //缺背景
 
     .more-wrapper{
         width: 1080px;
         margin: 150px auto;
         display: flex;
         text-align: center;
-        font-weight: 700;
           
         .more-btn{
             margin: auto;
@@ -625,19 +706,4 @@ body{
 
 
 
-
-//https://www.w3schools.com/howto/howto_js_slideshow.asp
-//https://medium.com/雪狐窩在雜誌社/網頁圖片輪播-775c756dc4c3
-//https://bootstrap5.hexschool.com/docs/5.0/components/carousel/#via-javascript
-// 按鈕 麵包屑？
-
-//火箭上方資訊 跑掉
-//火箭艙 資訊
-//火箭管家
-//火箭頁 字體
-//https://rog.asus.com/tw/desktops/small-form-factor/rog-huracan-g21-series/
-
-//https://www.asus.com/tw/Mobile/Phones/ZenFone/Zenfone-8/
-
-//https://www.tesla.com/zh_tw/model3
 

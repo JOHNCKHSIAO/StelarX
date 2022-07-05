@@ -92,7 +92,7 @@ main{
         // }
         .member-list-title{
             display: inline-grid;
-            grid-template-columns: [line1] 100px [line2] 160px [line3]295px [line4] 120px [line5] 295px [line6] 110px ;
+            grid-template-columns: [line1] 100px [line2] 160px [line3]270px [line4] 120px [line5] 320px [line6] 110px ;
             li{
                 // border:1px solid red;
                 height:80px;
@@ -106,7 +106,7 @@ main{
         }
         .member-list-content{
             display: inline-grid;
-            grid-template-columns:  [line1] 100px [line2] 160px [line3]295px [line4] 120px [line5] 295px [line6] 110px ;
+            grid-template-columns:  [line1] 100px [line2] 160px [line3]270px [line4] 120px [line5] 320px [line6] 110px ;
           
             li{
                 // border:1px solid red;
@@ -130,7 +130,9 @@ main{
                 span{
                     color:$gold;
                 }
-
+                .iconcolor{
+                    color:$gold;
+                }
             }
         }
     }
@@ -145,16 +147,21 @@ main{
         margin-top: 24px;
     }
 
-}
-.page-area{
-    // border:1px solid red;
-    width:1080px;
-    margin:0 auto;
-    display:flex;
-    justify-content: end;
-    margin-top: 24px;
-    .pagenumber{
-        border:1px solid $gold;
-        padding:2px 5px;
+    .page-area{
+        // border:1px solid red;
+        cursor: pointer;
+        width:1080px;
+        margin:0 auto;
+        margin-bottom: 50px;
+        display:flex;
+        justify-content: end;
+        margin-top: 24px;
+        .pagenumber{
+            width:34px;
+            text-align: center;
+            border:1px solid $gold;
+            padding:2px 5px;
+        }
     }
+
 }
