@@ -37,7 +37,7 @@ new Vue({
 
         // object.keys(seat)
         this.seat = localStorage.getItem('seat_service');
-        // object.keys(seat).this.seat = JSON.parse(this.seat);
+        object.keys(seat) = JSON.parse(this.seat);
 
 },
 

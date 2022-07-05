@@ -10,12 +10,7 @@
     // z-index: 1000;
 }
 
-<<<<<<< HEAD
-.header{
-    // background-color: hsl(231, 100%, 9%);
-=======
 .header_nav{
->>>>>>> dev
     margin-top: 40px;
     margin-bottom: 120px;
     text-align: center; 
@@ -23,11 +18,7 @@
 
     }
 
-<<<<<<< HEAD
-    .header-ul{
-=======
     .header_ul{
->>>>>>> dev
         width: 1080px;
         display: flex;
         margin: 0 auto;
@@ -54,70 +45,6 @@
         
         .shoppiingicon{
             display: flex;
-<<<<<<< HEAD
-            a{
-                position: relative;
-                .Shopp_add{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: rgb(245, 40, 40);
-                    color: #eee;
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 50%;
-        
-                    position: absolute;
-                    top: -27%;
-                    right: -42%;
-        
-                    z-index: 100;
-                }
-            }
-        }
-        
-        .item_list{
-            width: 580px;
-            display: flex;
-            justify-content: space-between;
-            border-bottom: #987A4D 1px solid;
-            line-height: 40px; 
-            // outline: 2px solid rgb(21, 255, 0);
-        
-            a{
-            // width: 55%;
-            font-weight: 500;
-            color: #eeeeee;
-            text-decoration: none;
-            font-size: 18px;
-            height: 40px; 
-            box-sizing: border-box;
-            }
-        
-            a:hover{
-                border-bottom: #987A4D 2px solid;
-            }
-        }
-        
-        .booking{
-            width: 117px;
-            background: #987A4D;
-            border-radius: 50px;
-        
-            a{
-                font-size: 16px;
-                color: #eeeeee;
-                text-decoration: none;
-            }
-        }
-        
-        .shoppiingicon svg:hover{
-            transform: scale(1.05);
-        }
-        
-            
-}
-=======
             justify-content: center;
             align-items: center;
             background-color: rgb(245, 40, 40);
@@ -170,4 +97,3 @@
     align-items: center;
 }
     
->>>>>>> dev
