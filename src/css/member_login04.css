@@ -141,6 +141,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-right: 10px;
 }
 .mileCity h6 {
   color: #EEEEEE;
