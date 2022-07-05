@@ -74,7 +74,7 @@ new Vue({
                 // window.location.href = "./shopping_04.html";
             }
 
-            // let url = ;
+            
             fetch('./PHP/exchange.php', {
                 method: 'POST',
                 headers: {
