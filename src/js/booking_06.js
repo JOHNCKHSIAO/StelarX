@@ -10,9 +10,26 @@ new Vue({
         price:'',
         seat:'',
         service:'',
+        name:'',
+        lastname:'',
+        coname:'',
+        colastname:'',
     },
     methods: {
-        
+        service_list(index){
+            let str = '';
+            let temp = Object.values(this.seat)[index];
+            // console.log(Object.values(this.seat)[index]);
+            console.log(temp);
+            for(let i=0;i<temp.length;i++){
+                if(i == (temp.length-1)){
+                    str +=temp[i];
+                }else{
+                    str += temp[i]+', ';
+                }
+            }
+            return str;
+        }
     },
     computed: {
 
@@ -36,8 +53,10 @@ new Vue({
         this.dest = JSON.parse(this.dest);
 
         // object.keys(seat)
-        this.seat = localStorage.getItem('seat_service');
-        object.keys(seat) = JSON.parse(this.seat);
+        this.seat = JSON.parse(localStorage.getItem('seat_service'));
+        // object.keys(seat) = JSON.parse(this.seat);
+        console.log(Object.values(this.seat));
+
 
 },
 
