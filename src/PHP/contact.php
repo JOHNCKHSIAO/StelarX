@@ -27,26 +27,22 @@
 //    echo $_GET['option'];
 
  //---------------------------------------------------
-
  include("connection.php");
-// echo ($_POST["name"]);
-// $data = $_POST;
-print_r($_POST); //ok 有抓到值
-$sql = " INSERT INTO message( `NAME`, `CELLPHONE`, `E_MAIL`, `DESTINATION`, `CONTENT`, `MESSAGE_DATE`) 
-VALUES (:name , :CELLPHONE , :E_MAIL ,:DESTINATION , :CONTENT ,current_date()); ";
-    
-  $statement = $pdo->prepare($sql);
-  $statement->bindValue(":name", $_POST["name"]);
-  $statement->bindValue(":CELLPHONE", $_POST["tel"]);
-  $statement->bindValue(":E_MAIL", $_POST["email"]);
-  $statement->bindValue(":DESTINATION", $_POST["option"]);
-  $statement->bindValue(":CONTENT", $_POST["textarea"]);
-  
-  $statement->bindValue(":email", $arr["email"]);
-  $statement->bindValue(":cellphone", $arr["cellphone"]);
-  $statement->bindValue(":companyNum", $arr["companyNum"]);
-  $statement->execute(); 
-  echo("ok");
+ // echo ($_POST["name"]);
+ // $data = $_POST;
+ print_r($_POST); //ok 有抓到值
+ $sql = " INSERT INTO message( NAME, CELLPHONE, E_MAIL, DESTINATION, CONTENT, MESSAGE_DATE) 
+ VALUES (:name , :CELLPHONE , :E_MAIL ,:DESTINATION , :CONTENT ,current_date()) ";
+     
+   $statement = $pdo->prepare($sql);
+   $statement->bindValue(":name", $_POST["name"]);
+   $statement->bindValue(":CELLPHONE", $_POST["tel"]);
+   $statement->bindValue(":E_MAIL", $_POST["email"]);
+   $statement->bindValue(":DESTINATION", $_POST["option"]);
+   $statement->bindValue(":CONTENT", $_POST["textarea"]);
+   $statement->execute(); 
+   echo("ok");
+
 
 
 
