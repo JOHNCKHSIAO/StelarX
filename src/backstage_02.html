@@ -25,7 +25,7 @@
     <header class="header">
         <img src="./images/logo.png" alt=""><h3>後台管理系統</h3>
     </header>
-    <main>
+    <main id="backstage_02">
         <h2 class="backstage-title" id="backstage_title">
             會員管理
         </h2>
@@ -50,7 +50,7 @@
                 <a href="./backstage_05.html">收件夾</a>
             </div>
         </div>
-        <section class="info-area" id="backstage_02">
+        <section class="info-area" >
             <ul class="member-list-title">
                 <li>
                    狀態
@@ -73,9 +73,9 @@
                
 
             </ul>
-            <ul class="member-list-content" v-for="(item, index) in backstage_02">
+            <ul class="member-list-content" v-for="(item, index) in backstage_02[page]">
                 <li>
-                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-user iconcolor"></i>
                  </li>
                  <li>
                   {{item[0]}}
@@ -86,7 +86,7 @@
 
                  </li>
                  <li>
-                  {{item[4]}}
+                  {{item[5]+item[4]}}
 
                  </li>
                  <li>
@@ -103,57 +103,17 @@
 
         </section>
 
+        <section class="page-area">
+            <div class="pagenumber" v-for="(p,i) in backstage_02.length">
+                <h6 :data-page="i" @click="changePage">{{p}}</h6>
+            </div>
+        </section>
 
     </main>
-    <!-- <section class="page-area">
-        <div class="pagenumber" >
-            <h6><i class="fa-solid fa-angle-left"></i></h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>1</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>2</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>3</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>4</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>5</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6><i class="fa-solid fa-angle-right"></i></h6>
-        </div>
-    </section> -->
+  
 
-    <script>
-      new Vue({
-          el: '#backstage_02', //
-
-          data: {
-            backstage_02: [], //
-          },
-          methods: {
-            edit(e){
-               // console.log(e.target.dataset.idx);
-               console.log(this.backstage_02[e.target.dataset.idx]);
-            },
-          },
-          compute: {},
-          watch: {},
-          created() {
-              let url = './PHP/backstage_02.php'; //
-              fetch(url)
-                  .then(response => response.json())
-                  .then(text => this.backstage_02 = text); //
-          },
-          mounteds(){},
-          destroyed(){},
-
-      })
+    <script src="./js/backstage_02.js">
+      
   </script>
 </body>
 </html>

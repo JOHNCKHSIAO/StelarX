@@ -38,6 +38,7 @@ function toSingleArr($ARRAYarg){
     return $result;
 }
 
+
 $Member_Data = select($_SESSION["memberAccount"],$pdo,$sql1);
 $Flight_Data = select($_SESSION["memberAccount"],$pdo,$sql2);
 // $Shopping_Data = select($_SESSION["memberAccount"],$pdo,$sql3);

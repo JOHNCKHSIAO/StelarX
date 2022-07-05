@@ -92,8 +92,8 @@ main{
         // }
         .member-list-title{
             display: inline-grid;
-            grid-template-columns: [line1] 80px [line2] 150px [line3]150px [line4] 150px [line5] 150px 
-            [line6] 145px [line7]145px  [line8]110px;
+            grid-template-columns: [line1] 190px [line2] 150px [line3]150px [line4] 150px [line5] 150px 
+            [line6] 145px [line7]145px;
             li{
                 // border:1px solid red;
                 height:80px;
@@ -107,8 +107,8 @@ main{
         }
         .member-list-content{
             display: inline-grid;
-            grid-template-columns:  [line1] 80px [line2] 150px [line3]150px [line4] 150px [line5] 150px 
-            [line6] 145px [line7]145px  [line8]110px;
+            grid-template-columns:  [line1] 190px [line2] 150px [line3]150px [line4] 150px [line5] 150px 
+            [line6] 145px [line7]145px ;
             li{
                 // border:1px solid red;
                 height:60px;
@@ -146,16 +146,18 @@ main{
         margin-top: 24px;
     }
 
-}
-.page-area{
-    // border:1px solid red;
-    width:1080px;
-    margin:0 auto;
-    display:flex;
-    justify-content: end;
-    margin-top: 24px;
-    .pagenumber{
-        border:1px solid $gold;
-        padding:2px 5px;
+    .page-area{
+        // border:1px solid red;
+        width:1080px;
+        margin:0 auto;
+        margin-bottom: 50px;
+        display:flex;
+        justify-content: end;
+        margin-top: 24px;
+        .pagenumber{
+            border:1px solid $gold;
+            padding:2px 5px;
+        }
     }
+
 }

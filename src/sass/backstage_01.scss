@@ -147,12 +147,16 @@ main{
 }
 .page-area{
     // border:1px solid red;
+    cursor: pointer;
     width:1080px;
     margin:0 auto;
     display:flex;
-    justify-content: end;
+    justify-content: center;
     margin-top: 24px;
+    margin-bottom: 50px;
     .pagenumber{
+        text-align: center;
+        width:34px;
         border:1px solid $gold;
         padding:2px 5px;
     }

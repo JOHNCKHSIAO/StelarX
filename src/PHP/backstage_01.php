@@ -26,11 +26,11 @@
 
     include("connection.php");
 
-    $sql = "SELECT * FROM stellarx.V_route_flight_time";
+    $sql = "SELECT * FROM v_route_flight_time";
     $statement = $pdo->query($sql);
     $data = $statement->fetchAll();
 
-
+    
     echo json_encode(data_slice($data));
 
 
