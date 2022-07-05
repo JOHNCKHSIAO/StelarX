@@ -53,15 +53,10 @@ let vm = new Vue({
         this.dest = JSON.parse(this.dest);
 
         // object.keys(seat)
-<<<<<<< HEAD
         this.seat = JSON.parse(localStorage.getItem('seat_service'));
         // object.keys(seat) = JSON.parse(this.seat);
         console.log(Object.values(this.seat));
 
-=======
-        this.seat = localStorage.getItem('seat_service');
-        // object.keys(seat) = JSON.parse(this.seat);
->>>>>>> dev
 
 },
 
