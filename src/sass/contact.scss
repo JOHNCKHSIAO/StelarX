@@ -3,14 +3,14 @@
 // @import 'base/fontSet';
 // @import 'mixin/mixin';
 @import 'component/btn';
-@import 'component/input';
+// @import 'component/input';
 
 // 共用input
 
 // 表單input輸入框
 .my_tra_in {
-    width: 500px;
-    height: 70px;
+    width: 430px;
+    height: 60px;
     font-size: 24rem;
     padding-left: 10px;
     background-color: #191F42;
@@ -202,8 +202,8 @@
 
                     // 下拉選星球
                     .my_pla_sel {
-                        width: 500px;
-                        height: 70px;
+                        width:430px;
+                        height: 60px;
                         padding-left: 10px;
                         font-size: 24rem;
                         margin-bottom: $spacing_32px;

@@ -54,8 +54,9 @@ $("#btn").click(function(){
     .then(res=>{return res.text()})
     .then(res=>{
       if(res=="ok"){ alert("成功")} 
+    alert("已送出")
+
     })
-    
 
 })
 // console.log(obj);
