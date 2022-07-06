@@ -143,6 +143,12 @@ main{
                             transform: rotate(#{-360deg*($k - 1)/20  + ($i*18deg)}) translate(0, -50%);
                             .label__link {
                                 transform: rotate(#{360deg*($k - 1)/20  - ($i*18deg)});
+                                .label__link-inner{
+                                    cursor: pointer;
+                                }
+                                .label__link-inner:hover{
+                                    color: #987A4D;
+                                }
                             }
                         }
                     }

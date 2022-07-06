@@ -9,7 +9,7 @@
     margin-top: 64px;
 }
 .shopping03{
-    color: white;
+    color: #eee;
 }
 .shopping-list{
     width: 1080px;
@@ -53,7 +53,7 @@
                         width: 100%;
                         height: 100%;
                     &:hover{
-                        border: 1px solid white;
+                        border: 1px solid #eee;
                     }    
                     }
                 }
@@ -122,9 +122,9 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        color: white;
+        color: #eee;
         h2{
-            color: white;
+            color: #eee;
         }
     }   
 }
@@ -162,7 +162,7 @@
             .lattice{
                 width: 530px;
                 height: 85px;
-                border: 1px solid white;
+                border: 1px solid #eee;
                 border-radius: 10px;
                 margin-top: 24px;
            color: $white;
@@ -179,7 +179,7 @@ font-size: 24rem;
             .lattice{
                 width: 530px;
                 height: 85px;
-                border: 1px solid white;
+                border: 1px solid #eee;
                 border-radius: 10px;
                 margin-top: 24px;
             background-color: #191F42;

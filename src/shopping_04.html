@@ -8,56 +8,72 @@
     <meta name="description"
         content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
     <link rel="shortcut icon" href="./images/shortcut.png">
+    <link rel="stylesheet" href="css/star.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/shopping_04.css">
     <script src="./js/vue.js"></script>
     <title>Stellar X | 太空運輸領航者</title>
 </head>
 <body>
-    @@include("./layout/header.html")
-    <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
-    <div class="wrapper" id="shopping_04">
-        <img class="icon_top" src="./images/shopping_cart/icon.png">
-        <h2>兌換完成</h2>
-        <h5>取貨編號 : ITEM0001 </h5>
-        <img class="plant" :src="img">
-        <main>
-            <div class="item_1">
-                <h6>取貨日期</h6>
-                <h6>取貨人</h6>
-                <h6>電話</h6>
-                <h6>取貨星球</h6>
-            </div>
-            <div class="personal_information">
-                <h6>{{user_pick.Pickup_data}}</h6>
-                <h6>{{user_pick.Pickup_people}}</h6>
-                <h6>{{user_pick.Pickup_Tel}}</h6>
-                <h6>{{user_pick.Pickup_Location}}</h6>
-            </div>
-            <div class="item_2">
-                <h6>商品</h6>
-                <h6>數量</h6>
-            </div>
-            <div class="commodity" v-for="(item, index) in order_list_local" :key="item.index">
-                <img :src="item['商品圖']">
-                <div class="align">
-                    <h6>{{item['商品名稱']}}</h6>
-                    <h6>{{item['商品數量']}}</h6>
+    <section class="star_bg" id="home" style="z-index: -1;">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <div class="meteors">
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+        </div>
+        @@include("./layout/header.html")
+        <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+        <div class="wrapper_out">
+            <div class="wrapper" id="shopping_04">
+                <img class="icon_top" src="./images/shopping_cart/icon.png">
+                <h2>兌換完成</h2>
+                <h5>取貨編號 : 5310001 </h5>
+                <img class="plant" :src="img" style="z-index: 1000; width: 400px;">
+                <main>
+                    <div class="item_1">
+                        <h6>取貨日期</h6>
+                        <h6>取貨人</h6>
+                        <h6>電話</h6>
+                        <h6>取貨星球</h6>
+                    </div>
+                    <div class="personal_information">
+                        <h6>{{user_pick.Pickup_data}}</h6>
+                        <h6>{{user_pick.Pickup_people}}</h6>
+                        <h6>{{user_pick.Pickup_Tel}}</h6>
+                        <h6>{{user_pick.Pickup_Location}}</h6>
+                    </div>
+                    <div class="item_2">
+                        <h6>商品</h6>
+                        <h6>數量</h6>
+                    </div>
+                    <div class="commodity" v-for="(item, index) in order_list_local" :key="item.index">
+                        <img :src="item['商品圖']">
+                        <div class="align">
+                            <h6>{{item['商品名稱']}}</h6>
+                            <h6>{{item['商品數量']}}</h6>
+                        </div>
+                    </div>
+                    <h3 style="margin-top: 20px;">以兌換里程數 <span style="color: #987A4D;">{{shopping03_total_mile}}</span> 哩</h3>
+                </main>
+                <div class="calculate">
+                    <div class="calculate_txt">
+                        <h5>剩餘哩數</h5>
+                        <h5>{{300000 - shopping03_total_mile}}哩</h5>
+                    </div>
                 </div>
             </div>
-            <h3 style="margin-top: 20px;">以兌換里程數 <span style="color: #987A4D;">{{shopping03_total_mile}}</span> 哩</h3>
-        </main>
-        <div class="calculate">
-            <div class="calculate_txt">
-                <h5>剩餘哩數</h5>
-                <h5>{{300000 - shopping03_total_mile}}哩</h5>
+            <div class="btn_cta m0auto">
+                <a class="aLink" href="./member_intro.html">會員管理<img src="./images/ctz_dec.png"></a>
             </div>
         </div>
-    </div>
-    <div class="btn_cta m0auto">
-        <a class="aLink" href="./member_intro.html">會員管理<img src="./images/ctz_dec.png"></a>
-    </div>
-    @@include("./layout/footer.html")
+        @@include("./layout/footer.html")
+    </section>
     <script src="./js/shopping_04.js"></script>
 </body>
 

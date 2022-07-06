@@ -8,6 +8,7 @@
     <meta name="description"
         content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
     <link rel="shortcut icon" href="./images/shortcut.png">
+    <link rel="stylesheet" href="css/star.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/shopping_03.css">
     <script src="./js/vue.js"></script>
@@ -15,100 +16,112 @@
 </head>
 
 <body class="shopping03">
-    @@include("./layout/header.html")
-    <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
-    <div class="shopping-list" id="shopping_03">
-        <h3>購物車</h3>
-        <div class="commodity">
-            <div class="on_title">
-                <h5>商品</h5>
-                <h5>數量</h5>
-                <h5>哩數</h5>
-            </div>
-            <ul class="shop_03_ul">
-                <li class="shop_03_li" v-for="(item, index) in order_list_local" :key="item.index">
-                    <div class="delete_dad"><img src="./images/shopping_cart/delete_icon.png" class="delete_img"  :data-idx="index" @click="deleteItem"></div>
-                    <img :src="item['商品圖']">
-                    <div class="wrap">
-                        <h5>{{item['商品名稱']}}</h5>
-                        <div class="wrap_in">
-                            <div class="click_num">
-                                <div class="reduce" :data-idx="index" @click="reduce">-</div>
-                                <h3>{{item['商品數量']}}</h3>
-                                <div class="add" :data-idx="index" @click="add">+</div>
+    <section class="star_bg" id="home">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <div class="meteors">
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+        </div>
+        @@include("./layout/header.html")
+        <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+        <div class="wrapper">
+            <div class="shopping-list" id="shopping_03">
+                <h3>購物車</h3>
+                <div class="commodity">
+                    <div class="on_title">
+                        <h5>商品</h5>
+                        <h5>數量</h5>
+                        <h5>哩數</h5>
+                    </div>
+                    <ul class="shop_03_ul">
+                        <li class="shop_03_li" v-for="(item, index) in order_list_local" :key="item.index">
+                            <div class="delete_dad"><img src="./images/shopping_cart/delete_icon.png" class="delete_img"  :data-idx="index" @click="deleteItem"></div>
+                            <img :src="item['商品圖']">
+                            <div class="wrap">
+                                <h5>{{item['商品名稱']}}</h5>
+                                <div class="wrap_in">
+                                    <div class="click_num">
+                                        <div class="reduce" :data-idx="index" @click="reduce">-</div>
+                                        <h3>{{item['商品數量']}}</h3>
+                                        <div class="add" :data-idx="index" @click="add">+</div>
+                                    </div>
+                                    <h3>{{item['商品數量'] * item['里程數']}} 哩</h3>
+                                </div>
                             </div>
-                            <h3>{{item['商品數量'] * item['里程數']}} 哩</h3>
+                        </li>
+                    </ul>
+                </div>
+                <h2>兌換里程數 {{shopping03_total_mile}} 哩</h2>
+                <div class="button_in">
+                    <div class="btn_general" style="margin-left: 50px; margin-bottom:10px;">
+                            <a class="btn_square" href="./shopping_01.html" @click="saveLocalStorage">繼續選購</a>
+                    </div>
+                    <h2>剩餘里程數 300000 哩</h2>
+                </div>
+            </div>
+            <div id="fill_in">
+                <div class="com-form">
+                    <h3>填寫取貨資訊</h3>
+                    <div class="lattice_1">
+                        <h5>付款方式</h5>
+                        <div class="lattice_in">
+                            <h5>取貨付款</h5>
                         </div>
                     </div>
-                </li>
-            </ul>
-        </div>
-        <h2>兌換里程數 {{shopping03_total_mile}} 哩</h2>
-        <div class="button_in">
-            <div class="btn_status">
-                <h5>
-                    <a class="btn_square" href="./shopping_01.html" @click="saveLocalStorage">繼續選購</a>
-                </h5>
-            </div>
-            <h2>剩餘里程數 300000 哩</h2>
-        </div>
-    </div>
-    <div id="fill_in">
-        <div class="com-form">
-            <h3>填寫取貨資訊</h3>
-            <div class="lattice_1">
-                <h5>付款方式</h5>
-                <div class="lattice_in">
-                    <h5>取貨付款</h5>
-                </div>
-            </div>
-            <div class="lattice_2">
-                <div class="lattice_left">
-                    <h5>取貨日期</h5>
-                    <select class="lattice" v-model="user_pick.Pickup_data">
-                    <!-- v-model:一般只用在select和input上面
-                    功能為雙向綁定，意思是html上的select或input做了變動就會影響到vue裡面的data，相反的vue裡面的變數也會跟著改變 -->
-                        <option>07/11</option>
-                        <option>07/13</option>
-                        <option>07/15</option>
-                        <option>07/18</option>
-                        <option>07/20</option>
-                        <option>07/22</option>
-                        <option>07/25</option>
-                        <option>07/27</option>
-                    </select>
-                </div>
-                <div class="lattice_right">
-                    <h5>取貨星球</h5>
-                    <select class="lattice" v-model="user_pick.Pickup_Location">
-                        <option>海王星</option>
-                        <option>水星</option>
-                        <option>天王星</option>
-                        <option>木星</option>
-                        <option>火星</option>
-                        <option>地球</option>
-                        <option>金星</option>
-                        <option>土星</option>
-                    </select>
-                </div>
-            </div>
-                <div class="lattice_2">
-                    <div class="lattice_left">
-                        <h5>取貨人</h5>
-                        <input class="lattice" v-model="user_pick.Pickup_people">
+                    <div class="lattice_2">
+                        <div class="lattice_left">
+                            <h5>取貨日期</h5>
+                            <select class="lattice" v-model="user_pick.Pickup_data">
+                            <!-- v-model:一般只用在select和input上面
+                            功能為雙向綁定，意思是html上的select或input做了變動就會影響到vue裡面的data，相反的vue裡面的變數也會跟著改變 -->
+                                <option>07/11</option>
+                                <option>07/13</option>
+                                <option>07/15</option>
+                                <option>07/18</option>
+                                <option>07/20</option>
+                                <option>07/22</option>
+                                <option>07/25</option>
+                                <option>07/27</option>
+                            </select>
+                        </div>
+                        <div class="lattice_right">
+                            <h5>取貨星球</h5>
+                            <select class="lattice" v-model="user_pick.Pickup_Location">
+                                <option>海王星</option>
+                                <option>水星</option>
+                                <option>天王星</option>
+                                <option>木星</option>
+                                <option>火星</option>
+                                <option>地球</option>
+                                <option>金星</option>
+                                <option>土星</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="lattice_right">
-                        <h5>電話</h5>
-                        <input class="lattice" v-model="user_pick.Pickup_Tel">
+                        <div class="lattice_2">
+                            <div class="lattice_left">
+                                <h5>取貨人</h5>
+                                <input class="lattice" v-model="user_pick.Pickup_people">
+                            </div>
+                            <div class="lattice_right">
+                                <h5>電話</h5>
+                                <input class="lattice" v-model="user_pick.Pickup_Tel">
+                            </div>
+                        </div>
+                        <div class="btn_general m0auto">
+                            <a class="btn_square" @click="exchange">確認兌換</a>
+                        </div>
                     </div>
-                </div>
-                <div class="btn_general m0auto">
-                    <a class="btn_square" @click="exchange">確認兌換</a>
-                </div>
             </div>
         </div>
-    </div>
-    @@include("./layout/footer.html")
+        @@include("./layout/footer.html")
+    </section>
     <script src="./js/shopping_03.js"></script>
 </body>
 
