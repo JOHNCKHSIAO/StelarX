@@ -56,7 +56,7 @@ let vm = new Vue({
                         setTimeout(()=>{
                             window.location = "./member_login02.html";
                         },1000)
-                       return;
+                    //    return;
                        
                     }else if(res=="notAvailable"){
                         this.errorMessage = "您還不是我們的會員，請加入會員!";
