@@ -517,7 +517,7 @@ main .insert-new {
 }
 
 .page-area {
-  opacity: 0;
+  cursor: pointer;
   width: 1080px;
   margin: 0 auto;
   margin-bottom: 50px;

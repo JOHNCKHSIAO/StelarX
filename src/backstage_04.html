@@ -73,7 +73,7 @@
                
 
             </ul>
-            <ul class="member-list-content" v-for="(item, index) in backstage_04">
+            <ul class="member-list-content" v-for="(item, index) in backstage_04[page]">
                 <li>
                   {{item[0]}}
                  </li>
@@ -96,27 +96,18 @@
             </ul>
            
         </section>
+        <section class="page-area">
+            <div class="pagenumber" v-for="(p,i) in backstage_04.length">
+                <h6 :data-page="i" @click="changePage">{{p}}</h6>
+            </div>
+        </section>
 
     </main>
-    <section class="page-area">
+    <!-- <section class="page-area"> -->
         <!-- <div class="pagenumber" >
             <h6><i class="fa-solid fa-angle-left"></i></h6>
         </div> -->
-        <div class="pagenumber" >
-            <h6>1</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>2</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>3</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>4</h6>
-        </div>
-        <div class="pagenumber" >
-            <h6>5</h6>
-        </div>
+        
         <!-- <div class="pagenumber" >
             <h6><i class="fa-solid fa-angle-right"></i></h6>
         </div> -->
