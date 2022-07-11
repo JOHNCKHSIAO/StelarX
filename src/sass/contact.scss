@@ -5,29 +5,12 @@
 @import 'component/btn';
 // @import 'component/input';
 
-// 共用input
 
-// 表單input輸入框
-.my_tra_in {
-    width: 430px;
-    height: 60px;
-    font-size: 24rem;
-    padding-left: 10px;
-    background-color: #191F42;
-    border: 1px solid $white;
-    border-radius: 5px;
-    margin-bottom: $spacing_32px;
-    color: $white;
 
-    ;
-
-}
-
-// 共用input
-
-.contact{
+.contact {
     background: linear-gradient(#000000 30%, $blue 100%);
 }
+
 .bg1440 {
     // line-height: 1.6;
     // background: linear-gradient(#000000 30%, $blue 100%);
@@ -141,9 +124,6 @@
 
         // 表單開始
         .my_tra_form {
-
-
-
             .my_traNaTel {
                 display: flex;
                 justify-content: space-between;
@@ -157,6 +137,23 @@
                         color: $white;
                     }
 
+                 
+
+                    // 表單input輸入框
+                    .my_tra_in {
+                        width: 430px;
+                        height: 60px;
+                        font-size: 24rem;
+                        padding-left: 10px;
+                        background-color: #191F42;
+                        border: 1px solid $white;
+                        border-radius: 5px;
+                        margin-bottom: $spacing_32px;
+                        color: $white;
+
+                    }
+
+                   
                 }
 
                 .my_traNaTelRight {
@@ -169,6 +166,21 @@
                         color: $white;
 
                     }
+
+                    // 表單input輸入框
+                    .my_tra_in {
+                        width: 430px;
+                        height: 60px;
+                        font-size: 24rem;
+                        padding-left: 10px;
+                        background-color: #191F42;
+                        border: 1px solid $white;
+                        border-radius: 5px;
+                        margin-bottom: $spacing_32px;
+                        color: $white;
+
+                    }
+
                 }
 
 
@@ -185,11 +197,29 @@
                 .my_traEmPlSeleLeft {
                     text-align: left;
 
-
+                    // 信箱
                     .my_tra_email {
                         color: $white;
 
                     }
+
+                   
+
+                    // 表單input輸入框
+                    .my_tra_in {
+                        width: 430px;
+                        height: 60px;
+                        font-size: 24rem;
+                        padding-left: 10px;
+                        background-color: #191F42;
+                        border: 1px solid $white;
+                        border-radius: 5px;
+                        margin-bottom: $spacing_32px;
+                        color: $white;
+
+                    }
+
+                  
                 }
 
                 .my_traEmPlSeleRight {
@@ -202,7 +232,7 @@
 
                     // 下拉選星球
                     .my_pla_sel {
-                        width:430px;
+                        width: 430px;
                         height: 60px;
                         padding-left: 10px;
                         font-size: 24rem;
@@ -263,5 +293,315 @@
 
     }
 
+
+}
+
+// rwd 428以下
+@media screen and (max-width: 428px) {
+
+    .bg1440 {
+        // line-height: 1.6;
+        // background: linear-gradient(#000000 30%, $blue 100%);
+    
+    
+        .wrapper1080 {
+            background-size: contain;
+            background-image: url("../images/qa/qaearth.jpg");
+            background-repeat: no-repeat;
+            width: calc(100% - 10px); //rwd修改的地方
+            margin: 0 auto;
+    
+            // 聯絡我們
+            .qa_tith1 {
+                font-size: 48rem;//rwd修改的地方
+                text-align: center;
+                font-weight: 600; //rwd修改的地方
+                color: $white;
+            }
+    
+            // any 
+            .qa_tith2 {
+                text-align: center;
+                margin-top: 50px;
+                font-weight: 400;//rwd修改的地方
+                color: $white;
+            }
+    
+            // Q&A
+            .qa {
+                text-align: center;
+                margin-top: 30px;  //rwd修改的地方
+                font-weight: 400;//rwd修改的地方
+                color: $gold;
+            }
+    
+            .qanda1080 {
+                padding: 10px; //rwd修改的地方
+                // border: 1px solid $white;
+                margin-top: $spacing_24px;//rwd修改的地方
+                margin-bottom: $spacing_24px;//rwd修改的地方
+    
+                .qa_up {
+                    cursor: pointer;
+                    margin-top: $spacing_32px;//rwd修改的地方
+                    display: flex;
+                    align-items:flex-start;//rwd修改的地方
+                    justify-content: space-between;
+                   
+    
+                    .ques {
+                        font-size: 20rem;//rwd修改的地方
+                        color: $white;
+                    }
+    
+                    img {
+                        transition: all .5s;
+                    }
+    
+                }
+    
+                .qaline {
+                    margin: $spacing_12px 0;//rwd修改的地方
+                    background: $white;
+                    height: 1px;
+                }
+    
+                .qa_down {
+                    display: none;
+    
+                    .answer {
+                        font-weight: 400;
+                        color: $white;
+                        font-size: 20rem;//rwd修改的地方
+
+                    }
+                }
+            }
+    
+            // 我的星際旅程1080外框
+            .my_tra_1080 {
+                width: calc(100% - 10px);//rwd修改的地方
+                margin: 0 auto;//rwd修改的地方
+                // border: 1px solid blanchedalmond;
+    
+                .my_tra_txt {
+                    text-align: center;
+    
+                    // 我的星際旅程
+                    .my_tra_tit1 {
+                        font-size: 42rem;//rwd修改的地方
+                        color: $gold;
+                        font-weight: 600;//rwd修改的地方
+    
+                    }
+    
+                    .my_traline {
+                        margin: 0 auto;
+                        margin-top:0;//rwd修改的地方
+                        width: 250px;//rwd修改的地方
+                        border: 1px solid $gold;
+                    }
+    
+                    // 免費預約諮詢
+                    .my_tra_tit2 {
+                        font-size: 40rem;//rwd修改的地方
+                        color: $white;
+                        font-weight: 500;
+                        margin-top: $spacing_12px;//rwd修改的地方
+    
+                    }
+    
+                    // 提供您欲搭乘的路線
+                    .my_tra_tit3 {
+                        font-size: 20rem;//rwd修改的地方
+                        color: $white;
+                        margin-top: $spacing_12px;//rwd修改的地方
+                    }
+                }
+            }
+    
+            // 表單開始
+            .my_tra_form {
+                .my_traNaTel {
+                    display: flex;
+                    flex-direction: column;//rwd修改的地方
+                    justify-content: space-between;
+    
+                    .my_traNaTelLeft {
+                        margin-top: $spacing_48px;//rwd修改的地方
+                        text-align: left;
+    
+                        // 姓名
+                        .my_tra_name {
+                            font-size: 22rem;//rwd修改的地方
+                            color: $white;
+                        }
+    
+                     
+    
+                        // 表單input輸入框
+                        .my_tra_in {
+                            width: 100%;//rwd修改的地方
+                            height: 60px;
+                            font-size: 24rem;
+                            padding-left: 10px;
+                            background-color: #191F42;
+                            border: 1px solid $white;
+                            border-radius: 5px;
+                            margin-bottom: $spacing_32px;
+                            color: $white;
+    
+                        }
+    
+                       
+                    }
+    
+                    .my_traNaTelRight {
+                        margin-top: 0;//rwd修改的地方
+                        text-align: left;
+    
+                        // 電話
+                        .my_tra_tel {
+                            font-size: 22rem;//rwd修改的地方
+                            color: $white;
+    
+                        }
+    
+                        // 表單input輸入框
+                        .my_tra_in {
+                            width: 100%;//rwd修改的地方
+                            height: 60px;
+                            font-size: 24rem;
+                            padding-left: 10px;
+                            background-color: #191F42;
+                            border: 1px solid $white;
+                            border-radius: 5px;
+                            margin-bottom: $spacing_32px;
+                            color: $white;
+    
+                        }
+    
+                    }
+    
+    
+    
+    
+                }
+    
+    
+                .my_traEmPlSele {
+                    display: flex;
+                    flex-direction: column;//rwd修改的地方
+                    justify-content: space-between;
+    
+    
+                    .my_traEmPlSeleLeft {
+                        text-align: left;
+    
+                        // 信箱
+                        .my_tra_email {
+                            font-size: 22rem;//rwd修改的地方
+
+                            color: $white;
+    
+                        }
+    
+                       
+    
+                        // 表單input輸入框
+                        .my_tra_in {
+                            width: 100%;//rwd修改的地方
+
+                            height: 60px;
+                            font-size: 24rem;
+                            padding-left: 10px;
+                            background-color: #191F42;
+                            border: 1px solid $white;
+                            border-radius: 5px;
+                            margin-bottom: $spacing_32px;
+                            color: $white;
+    
+                        }
+    
+                      
+                    }
+    
+                    .my_traEmPlSeleRight {
+                        text-align: left;
+    
+                        .my_tra_pla {
+                            font-size: 22rem;//rwd修改的地方
+
+                            color: $white;
+    
+                        }
+    
+                        // 下拉選星球
+                        .my_pla_sel {
+                            width: 100%;//rwd修改的地方
+                            height: 60px;
+                            padding-left: 10px;
+                            font-size: 24rem;
+                            margin-bottom: $spacing_32px;
+                            color: $white;
+                            background-color: #191F42;
+                            border: 1px solid $white;
+                            border-radius: 5px;
+    
+                        }
+    
+                    }
+    
+    
+    
+    
+    
+                }
+    
+    
+    
+    
+                .my_tra_down {
+                    .my_tra_text {
+                        color: $white;
+                        font-size: 22rem;//rwd修改的地方
+
+    
+    
+                    }
+    
+                    // 告訴我們您的期待 留言
+    
+                    .my_tra_mes {
+                        width: 100%;
+                        height: 300px;
+                        font-size: 24rem;
+                        padding-left: 10px;
+                        padding-top: 10px;
+                        background-color: #191F42;
+                        color: $white;
+                        border-radius: 5px;
+    
+                    }
+    
+                }
+    
+                // 按鈕
+                .btn_cta {
+                    margin: 0 auto;
+                    margin-top: $spacing_48px;//rwd修改的地方
+    
+    
+    
+                }
+    
+    
+            }
+    
+    
+        }
+    
+    
+    }
 
 }
