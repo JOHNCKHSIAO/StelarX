@@ -86,25 +86,3 @@ let vm = new Vue({
 });
 
 
-// new Vue({
-//     e1: "#backstage_01",
-//     data:{
-//         backstage_01:[],
-//     },
-//     methods:{
-//         edit(e){
-//         console.log(this.backstage_01[e.target.dataset.idx]);
-//         },
-//     },
-//     compute: {},
-//     watch: {},
-//     created() {
-//       let url = './PHP/backstage_01.php';
-//       fetch(url)
-//           .then(response => response.json())
-//           .then(text =>{this.backstage_01 = text
-//             console.log(text);});
-//   },
-//   mounteds(){},
-//   destroyed(){},
-// })

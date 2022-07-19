@@ -5,7 +5,7 @@
 
        //建立SQL語法
        $sql = "select v.SHOPPING_ID , v.DELIVERY_DATE ,v.LAST_NAME ,v.NAME, v.RECEIVER_PHONE ,v.RECEIVER_LOCATION ,v.COMMODITY_NAME ,v.QUANTITY,c.images
-       from v_member_shopping3 v
+       from v_member_shopping v
               join commodity c
                      on v.COMMODITY_NAME = c.COMMODITY_NAME where ACCOUNT = :account";
 

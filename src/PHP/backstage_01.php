@@ -1,6 +1,8 @@
 <?php
 
 
+
+
     function data_slice($data){
         $process_data = [];
         $ten_list = [];
@@ -23,10 +25,11 @@
 
         return $process_data;
     }
-
+    
     include("connection.php");
+  
 
-    $sql = "SELECT * FROM v_route_flight_time";
+    $sql = "SELECT * FROM stellarx.v_route_flight_time";
     $statement = $pdo->query($sql);
     $data = $statement->fetchAll();
 

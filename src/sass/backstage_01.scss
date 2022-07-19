@@ -161,3 +161,135 @@ main{
         padding:2px 5px;
     }
 }
+.detail{
+    border:1px solid red;
+    width:900px;
+    margin:0 auto;
+    background: $blue;
+
+}
+.detail-header{
+    width:500px;
+    height:50px;
+    border:1px solid blue;
+    margin: 0 auto;
+    position: relative;
+    font-size: 24px;
+    color:white;
+
+    .flightNum{
+        font-size: 24px;
+        color:white;
+    }
+    .flightNumValue{
+
+    }
+    .closeBtn{
+
+        position: absolute;
+        top:10px;
+        right:10px;
+
+
+    }
+
+
+}
+.detail-main{
+    background-color: #fff;
+    width:850px;
+    margin:0 auto;
+    margin-bottom: 20px;
+
+    .detail-main-title{
+
+        // background-color: yellow;
+        margin:0 auto;
+        text-align: center;
+
+    }
+
+    .g-cabin-seat{
+        display:flex;
+        width:820px;
+        margin: 0 auto;
+
+        li{
+
+            width:100px;
+            border:1px solid blue;
+        }
+
+    }
+
+    .gx-cabin-seat{
+
+        display:flex;
+        width:820px;
+        margin: 0 auto;
+
+        li{
+
+            width:100px;
+            border:1px solid blue;
+        }
+
+
+    }
+}
+
+.information-container{
+
+    
+}
+.information-header{
+
+    ol{
+        margin-top: 20px;
+        display: flex;
+        background-color: yellow;
+        justify-content: space-around;
+
+        li{
+
+            span{
+
+
+            }
+        }
+    }
+}
+
+.information-main{
+
+    .single-info{
+
+        .single-info-header{
+            background-color: green;
+            span{
+
+
+            }
+        }
+        .basic-servise{
+            display: flex;
+
+            li{
+
+
+            }
+        
+        }
+
+        .other-servise{
+            display: flex;
+
+
+            li{
+
+            }
+        }
+
+
+    }
+}

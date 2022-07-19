@@ -4,7 +4,7 @@
        session_start();
 
        //建立SQL語法
-       $sql = "select DATE(DEPARTURE_TIME), MILEAGE, ORINGIN, DESTINATION from v_member_center_miles2 where ACCOUNT = :account";
+       $sql = "select DATE(DEPARTURE_TIME), MILEAGE, ORINGIN, DESTINATION from v_member_center_miles where ACCOUNT = :account";
        //執行並查詢，會回傳查詢結果的物件，必須使用fetch、fetchAll...等方式取得資料
        // $statement = $pdo->query($sql);
 
