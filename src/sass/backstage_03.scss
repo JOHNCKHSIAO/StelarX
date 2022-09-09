@@ -162,3 +162,25 @@ main{
     }
 
 }
+
+.detail{
+    width:600px;
+    border:2px solid red;
+    margin:0 auto;
+    // background-color: $blue;
+    padding-bottom: 20px;
+}
+.closex-btn{
+    width:24px;
+    height:24px;
+    border:1px solid white;
+    margin-left: auto; 
+    margin-right: 10px;
+    border:1px solid black;
+    // color:white;
+    text-align:center;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-right: 10px;
+}

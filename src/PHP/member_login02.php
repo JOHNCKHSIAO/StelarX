@@ -6,7 +6,7 @@ session_start();
 
 // print_r($memberData);
 $sql1 = "select ID, LASTNAME , NAME ,BUSINESS ,MEMBER_DATE from member where ACCOUNT = :account ";
-$sql2 = "select sum(MILEAGE) as TOTALLMILES from v_member_center_miles2 where ACCOUNT = :account ";
+$sql2 = "select sum(MILEAGE) as TOTALLMILES from v_member_center_miles where ACCOUNT = :account ";
 // $sql3 = "select SHOPPING_ID, DELIVERY_DATE ,RECEIVER , RECEIVER_PHONE,RECEIVER_LOCATION, COMMODITY_NAME,QUANTITY 
 //         from V_member_shopping3 where ACCOUNT = :account ";
 

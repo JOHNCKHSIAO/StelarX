@@ -165,3 +165,65 @@ main{
     }
 
 }
+
+.detail{
+    width:600px;
+    border:2px solid red;
+    margin:0 auto;
+    background-color: $blue;
+    padding-bottom: 20px;
+    .detail-header{
+        width:100%;
+        border:1px solid green;
+        margin:0 auto;
+        display:flex;
+        justify-content: end;
+        
+        .closex-btn{
+            width:24px;
+            height:24px;
+            border:1px solid white;
+            color:white;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+    }
+    .detail-content{
+        width:570px;
+        border:1px solid blue;
+        margin:0 auto;
+        padding: 10px;
+        background-color: #fff;
+        margin-top: 10px;
+        .content-info{
+            display:flex;
+            flex-wrap: wrap;
+            li{
+                width:270px;
+                border:1px solid yellow;
+            }
+        }
+
+    }
+    .manipulate-area{
+        width:100%;
+        border:1px solid green;
+        display: flex;
+        justify-content: end;
+        .close-btn{
+            border:1px solid blue;
+            padding:5px;
+            margin-right: 10px;
+        }
+
+        .permission-toggle-btn{
+            border:1px solid blue;
+            padding:5px;
+           
+        }
+    }
+}

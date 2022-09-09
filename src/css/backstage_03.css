@@ -529,4 +529,25 @@ main .page-area .pagenumber {
   padding: 2px 5px;
 }
 
+.detail {
+  width: 600px;
+  border: 2px solid red;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.closex-btn {
+  width: 24px;
+  height: 24px;
+  border: 1px solid white;
+  margin-left: auto;
+  margin-right: 10px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
 /*# sourceMappingURL=backstage_03.css.map */
