@@ -1,0 +1,319 @@
+@import 'base/var';
+@import 'base/reset';
+@import 'base/fontSet';
+@import 'mixin/mixin';
+@import 'component/btn';
+
+// sass src/sass/quiz.scss src/css/quiz.css --watch
+//quiz變數宣告:
+$boxShadow:0 0 60px rgba(255, 255, 255, 0.9);
+$hoverColor:rgba(31, 31, 31, 0.4);
+$width: 300px;
+$heigth: 300px;
+
+body{
+    background-color: $blue;
+}
+/*------ 固定文字 -----*/
+.title3{
+    color: $white;
+}
+
+/*------- 文字敘述section -------*/
+ .text_side{
+    width: 590px;
+    // border: 1px solid yellow;
+    margin: auto;
+    text-align: center;
+}
+/*------- 分隔線section -------*/
+.hrgold{
+    background-color: $gold;
+    width: 150px;
+    border: 1px solid $gold;
+    margin-top: $spacing_24px;;
+}
+
+/*------- 文字主要參數 -------*/
+#wold_quiz{
+    width: $width;
+    height: $heigth;
+    line-height: 7.5;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+        
+    display: none;
+}
+/*----------- 文字hover顯示 -----------*/
+#WoldHover{
+    &:hover{
+        transform: scale(1.1);
+        transition: all .2s ease-out;
+    }
+    &:hover #wold_quiz{
+    background-color:$hoverColor;
+    display: block;
+    box-shadow: $boxShadow;
+    }
+}
+
+/*-------------- 第一題測驗遊戲 --------------*/
+.quiz01{
+    width: 1084px;
+    margin: auto;
+    font-family: $rob_Serif;
+    img{
+        width: $width;
+        height: $heigth;
+        border-radius: 50%;
+    }
+    /*------- 圖片選項section -------*/
+     .allimg{
+        width: 100%;
+        display: flex;
+        margin-top: $spacing_120px;
+        padding-left: 110px;
+        // border: 1px solid red;
+        /*----------- 玩樂路線 -----------*/
+        .playBlock{
+            width: $width;
+            height: $heigth;
+            margin-right: 260px;
+            position: relative;
+        }
+        /*----------- 放鬆路線 -----------*/
+        .relaxBlock{
+            width: $width;
+            height: $heigth;
+            position: relative;
+        }
+     }
+}
+
+/*-------------- 第二題(放鬆)測驗遊戲 --------------*/
+.quiz02_1{
+    width: 1084px;
+    margin: auto;
+    font-family: $rob_Serif;
+    img{
+        width: $width;
+        height: $heigth;
+        border-radius: 50%;
+    }
+
+    /*-------------- 圖片選項section --------------*/
+    .all_twoimg{
+        width: 100%;
+        display: flex;
+        margin-top: $spacing_120px;
+        padding-left: 10px;
+
+        /*----------- 海島度假 -----------*/
+        .island{
+            width: $width;
+            height: $heigth;
+            margin-right: 80px;
+            position: relative;
+        }
+
+        /*----------- 鑽石雨 -----------*/
+        .diamond{
+            width: $width;
+            height: $heigth;
+            margin-right: 80px;
+            position: relative;
+        }
+
+        /*----------- 夜賞極光 -----------*/
+        .aurora{
+            width: $width;
+            height: $heigth;
+            position: relative;
+        }
+    }
+}
+
+/*-------------- 第二(玩樂)題測驗遊戲 --------------*/
+.quiz02_2{
+    width: 1084px;
+    margin: auto;
+    font-family: $rob_Serif;
+    img{
+        width: $width;
+        height: $heigth;
+        border-radius: 50%;
+    }
+
+    /*-------------- 圖片選項section --------------*/
+    .all_twoimg{
+        width: 100%;
+        display: flex;
+        margin-top: $spacing_120px;
+        padding-left: 10px;
+
+        /*----------- 飛船競賽 -----------*/
+        .spaceship{
+            width: $width;
+            height: $heigth;
+            margin-right: 80px;
+            position: relative;
+        }
+    
+        /*----------- 極地探險 -----------*/
+        .polar{
+            width: $width;
+            height: $heigth;
+            margin-right: 80px;
+            position: relative;
+        }
+    
+        /*----------- 火山探險 -----------*/
+        .volcano{
+            width: $width;
+            height: $heigth;
+            position: relative;
+        }
+    }
+}
+
+/*-------------- RWD手機板 --------------*/
+@media screen and (max-width:414.98px) {
+
+    .text_side{
+        // border: 1px solid red;
+        width: 100%;
+    }
+    #WoldHover{
+        &:hover #wold_quiz{
+        background-color:$hoverColor;
+        display: none;
+        box-shadow: $boxShadow;
+        }
+    }
+
+    /*-------------- 第一題測驗遊戲 --------------*/
+    .quiz01{
+        width: 100%;
+        // border: 1px solid red;
+        text-align: center;
+        .title3{
+            font-size: 18px;
+        }
+        .hrgold{
+            margin-top: 12px;
+        }
+
+        .allimg{
+            width: 100%;
+            padding-left: 0px;
+            margin-top: 32px;
+            // border: 1px solid red;
+            display: block;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            .playBlock{
+                height: 100%;
+                margin-bottom: 28px;
+            }
+            .relaxBlock{
+                height: 100%;
+            }
+            #WoldHover{
+                // border: 1px solid red;
+                width: 100%;
+                position: relative;
+            }
+            #wold_quiz{
+                display: block;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 70px;
+            }
+        }
+    }
+    /*-------------- 第二題(放鬆)測驗遊戲 --------------*/
+    .quiz02_1{
+        width: 100%;
+        // border: 1px solid red;
+        text-align: center;
+        .title3{
+            font-size: 18px;
+        }
+        .hrgold{
+            margin-top: 12px;
+        }
+        .all_twoimg{
+            width: 100%;
+            padding: 0;
+            margin-top: 32px;
+            // border: 1px solid red;
+            display: block;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            #WoldHover{
+                // border: 1px solid red;
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                position: relative;
+                margin-bottom: 10px;
+            }
+            #wold_quiz{
+                display: block;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 70px;
+            }
+        }
+    }
+    /*-------------- 第二(玩樂)題測驗遊戲 --------------*/
+    .quiz02_2{
+        width: 100%;
+        // border: 1px solid red;
+        text-align: center;
+        .title3{
+            font-size: 18px;
+        }
+        .hrgold{
+            margin-top: 12px;
+        }
+        .all_twoimg{
+            width: 100%;
+            padding: 0;
+            margin-top: 32px;
+            // border: 1px solid red;
+            display: block;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            #WoldHover{
+                // border: 1px solid red;
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                position: relative;
+                margin-bottom: 10px;
+            }
+            #wold_quiz{
+                display: block;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 70px;
+            }
+        }
+    }
+}

@@ -1,15 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta name="description" content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <script src="./js/vue.js"></script>
+    <link rel="shortcut icon" href="./images/shortcut.png">
+    <link rel="stylesheet" href="css/star.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shopping_01.css">
+    
+    
+    <title>Stellar X | 太空運輸領航者</title>
 </head>
-<body>
-    @@include("./layout/header.html")
-    <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
 
-    @@include("./layout/footer.html")
+<body>
+    <section class="star_bg" id="home">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <div class="meteors">
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+        </div>
+        @@include("./layout/header.html")
+        <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+        <div class="top_image" style="z-index: 10000;">
+            <!-- <img src="./images/shopping_cart/top_banner.jpg" alt=""> -->
+            <h2>SHOP STELAR X</h2>
+        </div>
+        <div class="wrapper"> 
+            <div class="wrapper" id="shopping_1" v-if="shopping_1_list">
+                <div class="commodity"  >
+                    <div class="small_title">
+                        <h3 class="light-height-1">星球特產</h3>
+                        <h6 class="light-height-1">Planet Special</h6>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./shopping_02.html?prods=0">
+                                <img src="./images/shopping_cart/candle.jpg">
+                                <h4>{{shopping_1_list[0][0]}}</h4>
+                                <h5>{{shopping_1_list[0][1]}} 哩</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./shopping_02.html?prods=1">
+                                <img src="./images/shopping_cart/Image.jpg">
+                                <h4>{{shopping_1_list[1][0]}}</h4>
+                                <h5>{{shopping_1_list[1][1]}} 哩</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./shopping_02.html?prods=2">
+                                <img src="./images/shopping_cart/jar.jpg">
+                                <h4>{{shopping_1_list[2][0]}}</h4>
+                                <h5>{{shopping_1_list[2][1]}} 哩</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="commodity">
+                    <div class="small_title">
+                        <h3 class="light-height-1">個人衣物</h3>
+                        <h6 class="light-height-1">Personal Clothing</h6>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./shopping_02.html?prods=3">
+                                <img src="./images/shopping_cart/baseball_cap.jpg">
+                                <h4>{{shopping_1_list[3][0]}}</h4>
+                                <h5>{{shopping_1_list[3][1]}} 哩</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./shopping_02.html?prods=4">
+                                <img src="./images/shopping_cart/t-shirt.jpg">
+                                <h4>{{shopping_1_list[4][0]}}</h4>
+                                <h5>{{shopping_1_list[4][1]}} 哩</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./shopping_02.html?prods=5">
+                                <img src="./images/shopping_cart/tote_bag.jpg">
+                                <h4>{{shopping_1_list[5][0]}}</h4>
+                                <h5>{{shopping_1_list[5][1]}} 哩</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="commodity">
+                    <div class="small_title">
+                        <h3 class="light-height-1">生活用品</h3>
+                        <h6 class="light-height-1">Daily Necessities</h6>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./shopping_02.html?prods=6">
+                                <img src="./images/shopping_cart/mug.jpg">
+                                <h4>{{shopping_1_list[6][0]}}</h4>
+                                <h5>{{shopping_1_list[6][1]}} 哩</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./shopping_02.html?prods=7">
+                                <img src="./images/shopping_cart/pin_button.jpg">
+                                <h4>{{shopping_1_list[7][0]}}</h4>
+                                <h5>{{shopping_1_list[7][1]}} 哩</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./shopping_02.html?prods=8">
+                                <img src="./images/shopping_cart/keychain.jpg">
+                                <h4>{{shopping_1_list[8][0]}}</h4>
+                                <h5>{{shopping_1_list[8][1]}} 哩</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        @@include("./layout/footer.html")
+    </section>
+    <script src="./js/shopping_01.js"></script>
 </body>
 </html>

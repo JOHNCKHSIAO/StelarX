@@ -1,0 +1,627 @@
+.btn_cta {
+  width: 280px;
+  height: 50px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.btn_cta:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_cta_submit {
+  width: 280px;
+  height: 50px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  background: #00072E;
+  cursor: pointer;
+}
+.btn_cta_submit:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta_submit .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta_submit .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_general {
+  width: 280px;
+  height: 50px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+.btn_general:hover {
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  transition: ease-out 0.5s;
+  border: none;
+}
+.btn_general .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+.btn_general .btn_pay {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  border: none;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.btn_general_sumbmit {
+  width: 280px;
+  height: 50px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  cursor: pointer;
+}
+.btn_general_sumbmit:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general_sumbmit .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn_flow {
+  position: relative;
+  background-color: #000000;
+  line-height: 60px;
+  font-size: 20px;
+  color: #FFF;
+  width: 300px;
+  text-align: center;
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  z-index: 1;
+  cursor: pointer;
+}
+.btn_flow:hover {
+  animation: show 8s linear infinite;
+}
+@keyframes show {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.btn_flow::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0;
+}
+
+.btn_flow:hover::before {
+  opacity: 1;
+  animation: show 8s linear infinite;
+}
+
+.btn_status {
+  width: 280px;
+  height: 50px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+.btn_status .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  transition: ease 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
+}
+.btn_status .btn_square:hover {
+  color: #00072E;
+  box-shadow: inset 50px 0 0 0 0 #EEEEEE;
+}
+
+.btn_status_submit {
+  width: 280px;
+  height: 50px;
+  cursor: pointer;
+}
+.btn_status_submit .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  transition: ease-out 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
+}
+.btn_status_submit .btn_square:hover {
+  color: #00072E;
+  box-shadow: inset 280px 0 0 0 #EEEEEE;
+}
+
+.btn_main {
+  width: 200px;
+  height: 200px;
+}
+.btn_main .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  font-size: 24rem;
+}
+.btn_main .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btn_main .btn_circle_text .btn_circle:hover {
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_main_w {
+  width: 200px;
+  height: 200px;
+}
+.btn_main_w .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  font-size: 24rem;
+}
+.btn_main_w .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #00072E;
+  background: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btn_main_w .btn_circle_text .btn_circle:hover {
+  box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+  color: #EEEEEE;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.contact {
+  background: linear-gradient(#000000 30%, #00072E 100%);
+}
+
+.bg1440 .wrapper1080 {
+  background-size: contain;
+  background-image: url("../images/qa/qaearth.jpg");
+  background-repeat: no-repeat;
+  width: 1080px;
+  margin: 0 auto;
+}
+.bg1440 .wrapper1080 .qa_tith1 {
+  text-align: center;
+  font-weight: 700;
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .qa_tith2 {
+  text-align: center;
+  margin-top: 70px;
+  font-weight: 500;
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .qa {
+  text-align: center;
+  margin-top: 500px;
+  font-weight: 500;
+  color: #987A4D;
+}
+.bg1440 .wrapper1080 .qanda1080 {
+  padding: 15px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.bg1440 .wrapper1080 .qanda1080 .qa_up {
+  cursor: pointer;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.bg1440 .wrapper1080 .qanda1080 .qa_up .ques {
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .qanda1080 .qa_up img {
+  transition: all 0.5s;
+}
+.bg1440 .wrapper1080 .qanda1080 .qaline {
+  margin: 24px 0;
+  background: #EEEEEE;
+  height: 1px;
+}
+.bg1440 .wrapper1080 .qanda1080 .qa_down {
+  display: none;
+}
+.bg1440 .wrapper1080 .qanda1080 .qa_down .answer {
+  font-weight: 400;
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt {
+  text-align: center;
+}
+.bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt .my_tra_tit1 {
+  color: #987A4D;
+  font-weight: 700;
+}
+.bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt .my_traline {
+  margin: 0 auto;
+  margin-top: 24px;
+  width: 288px;
+  border: 1px solid #987A4D;
+}
+.bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt .my_tra_tit2 {
+  color: #EEEEEE;
+  font-weight: 500;
+  margin-top: 80px;
+}
+.bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt .my_tra_tit3 {
+  color: #EEEEEE;
+  margin-top: 24px;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traNaTel {
+  display: flex;
+  justify-content: space-between;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelLeft {
+  margin-top: 80px;
+  text-align: left;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelLeft .my_tra_name {
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelLeft .my_tra_in {
+  width: 430px;
+  height: 60px;
+  font-size: 24rem;
+  padding-left: 10px;
+  background-color: #191F42;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+  margin-bottom: 32px;
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelRight {
+  margin-top: 80px;
+  text-align: left;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelRight .my_tra_tel {
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelRight .my_tra_in {
+  width: 430px;
+  height: 60px;
+  font-size: 24rem;
+  padding-left: 10px;
+  background-color: #191F42;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+  margin-bottom: 32px;
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele {
+  display: flex;
+  justify-content: space-between;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleLeft {
+  text-align: left;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleLeft .my_tra_email {
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleLeft .my_tra_in {
+  width: 430px;
+  height: 60px;
+  font-size: 24rem;
+  padding-left: 10px;
+  background-color: #191F42;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+  margin-bottom: 32px;
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleRight {
+  text-align: left;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleRight .my_tra_pla {
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleRight .my_pla_sel {
+  width: 430px;
+  height: 60px;
+  padding-left: 10px;
+  font-size: 24rem;
+  margin-bottom: 32px;
+  color: #EEEEEE;
+  background-color: #191F42;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_tra_down .my_tra_text {
+  color: #EEEEEE;
+}
+.bg1440 .wrapper1080 .my_tra_form .my_tra_down .my_tra_mes {
+  width: 100%;
+  height: 300px;
+  font-size: 24rem;
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: #191F42;
+  color: #EEEEEE;
+  border-radius: 5px;
+}
+.bg1440 .wrapper1080 .my_tra_form .btn_cta {
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 428px) {
+  .bg1440 .wrapper1080 {
+    background-size: contain;
+    background-image: url("../images/qa/qaearth.jpg");
+    background-repeat: no-repeat;
+    width: calc(100% - 10px);
+    margin: 0 auto;
+  }
+  .bg1440 .wrapper1080 .qa_tith1 {
+    font-size: 48rem;
+    text-align: center;
+    font-weight: 600;
+    color: #EEEEEE;
+  }
+  .bg1440 .wrapper1080 .qa_tith2 {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 400;
+    color: #EEEEEE;
+  }
+  .bg1440 .wrapper1080 .qa {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 400;
+    color: #987A4D;
+  }
+  .bg1440 .wrapper1080 .qanda1080 {
+    padding: 10px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .bg1440 .wrapper1080 .qanda1080 .qa_up {
+    cursor: pointer;
+    margin-top: 32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .bg1440 .wrapper1080 .qanda1080 .qa_up .ques {
+    font-size: 20rem;
+    color: #EEEEEE;
+  }
+  .bg1440 .wrapper1080 .qanda1080 .qa_up img {
+    transition: all 0.5s;
+  }
+  .bg1440 .wrapper1080 .qanda1080 .qaline {
+    margin: 12px 0;
+    background: #EEEEEE;
+    height: 1px;
+  }
+  .bg1440 .wrapper1080 .qanda1080 .qa_down {
+    display: none;
+  }
+  .bg1440 .wrapper1080 .qanda1080 .qa_down .answer {
+    font-weight: 400;
+    color: #EEEEEE;
+    font-size: 20rem;
+  }
+  .bg1440 .wrapper1080 .my_tra_1080 {
+    width: calc(100% - 10px);
+    margin: 0 auto;
+  }
+  .bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt {
+    text-align: center;
+  }
+  .bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt .my_tra_tit1 {
+    font-size: 42rem;
+    color: #987A4D;
+    font-weight: 600;
+  }
+  .bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt .my_traline {
+    margin: 0 auto;
+    margin-top: 0;
+    width: 250px;
+    border: 1px solid #987A4D;
+  }
+  .bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt .my_tra_tit2 {
+    font-size: 40rem;
+    color: #EEEEEE;
+    font-weight: 500;
+    margin-top: 12px;
+  }
+  .bg1440 .wrapper1080 .my_tra_1080 .my_tra_txt .my_tra_tit3 {
+    font-size: 20rem;
+    color: #EEEEEE;
+    margin-top: 12px;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_traNaTel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelLeft {
+    margin-top: 48px;
+    text-align: left;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelLeft .my_tra_name {
+    font-size: 22rem;
+    color: #EEEEEE;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelLeft .my_tra_in {
+    width: 100%;
+    height: 60px;
+    font-size: 24rem;
+    padding-left: 10px;
+    background-color: #191F42;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    margin-bottom: 32px;
+    color: #EEEEEE;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelRight {
+    margin-top: 0;
+    text-align: left;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelRight .my_tra_tel {
+    font-size: 22rem;
+    color: #EEEEEE;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_traNaTel .my_traNaTelRight .my_tra_in {
+    width: 100%;
+    height: 60px;
+    font-size: 24rem;
+    padding-left: 10px;
+    background-color: #191F42;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    margin-bottom: 32px;
+    color: #EEEEEE;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleLeft {
+    text-align: left;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleLeft .my_tra_email {
+    font-size: 22rem;
+    color: #EEEEEE;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleLeft .my_tra_in {
+    width: 100%;
+    height: 60px;
+    font-size: 24rem;
+    padding-left: 10px;
+    background-color: #191F42;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    margin-bottom: 32px;
+    color: #EEEEEE;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleRight {
+    text-align: left;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleRight .my_tra_pla {
+    font-size: 22rem;
+    color: #EEEEEE;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_traEmPlSele .my_traEmPlSeleRight .my_pla_sel {
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    font-size: 24rem;
+    margin-bottom: 32px;
+    color: #EEEEEE;
+    background-color: #191F42;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_tra_down .my_tra_text {
+    color: #EEEEEE;
+    font-size: 22rem;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .my_tra_down .my_tra_mes {
+    width: 100%;
+    height: 300px;
+    font-size: 24rem;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: #191F42;
+    color: #EEEEEE;
+    border-radius: 5px;
+  }
+  .bg1440 .wrapper1080 .my_tra_form .btn_cta {
+    margin: 0 auto;
+    margin-top: 48px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

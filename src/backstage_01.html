@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Stelar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <link rel="shortcut icon" href="./images/shortcut.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/backstage_01.css">
+    <script src="./js/vue.js"></script>
+    <title>Stelar X | 後臺管理系統</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./images/logo.png" alt=""><h3>後台管理系統</h3>
+    </header>
+    <main id="app">
+        <h2 class="backstage-title" id="backstage_title">
+            班次管理
+        </h2>
+        <!-- <div class="search-bar-div">
+            <input type="text">
+            <button class="search-bar-btn" id="searchBar_btn">搜尋</button>
+        </div> -->
+        <div class="toggle-div">
+            <div class="toggle-btn thispage">
+                <a href="./backstage_01.html">班次管理</a>
+            </div>
+            <div class="toggle-btn" >
+                <a href="./backstage_02.html">會員管理</a>
+            </div>
+            <div class="toggle-btn">
+                <a href="./backstage_03.html">商品管理</a>
+            </div>
+            <div class="toggle-btn">
+                <a href="./backstage_04.html">訂單管理</a>
+            </div>
+            <div class="toggle-btn">
+                <a href="./backstage_05.html">收件夾</a>
+            </div>
+        </div>
+        <section class="info-area">
+            <ul class="member-list-title">
+                <li>
+                    月份
+                </li>
+                <li>
+                    起點
+                </li>
+                <li>
+                    目的地
+                </li>
+                <li>
+                    出發時間
+                </li>
+                <li>
+                    到站時間
+                </li>
+                <li>
+                    預約人數
+                </li>
+                <li>
+                    操作
+                </li>
+
+            </ul>
+            <ul class="member-list-content" v-for="(item, index) in data_list[page]">
+                <li>
+                    {{item[0]}}
+                </li>
+                <li>
+                    {{switchName(item[3])}}
+                </li>
+                <li>
+                    {{switchName(item[4])}}
+                </li>
+                <li>
+                    {{item[5]}}
+                </li>
+                <li>
+                    {{item[6]}}
+                </li>
+                <li>
+                    <span>{{Number(item[7]) + Number(item[8])}}</span>/16
+                </li>
+                <li>
+                    <div :data-index="index">明細</div>
+                </li>
+
+            </ul>
+            
+
+        </section>
+        <!-- <div class="insert-new">
+            新增班次<i class="fa-solid fa-plus"></i>
+        </div> -->
+
+        <section class="page-area">
+            <!-- <div class="pagenumber" >
+                <h6><i class="fa-solid fa-angle-left"></i></h6>
+            </div> -->
+            <div class="pagenumber" v-for="(p,i) in data_list.length">
+                <h6 :data-page="i" @click="changePage">{{p}}</h6>
+            </div>
+            <!-- <div class="pagenumber" >
+                <h6>2</h6>
+            </div>
+            <div class="pagenumber" >
+                <h6>3</h6>
+            </div>
+            <div class="pagenumber" >
+                <h6>4</h6>
+            </div>
+            <div class="pagenumber" >
+                <h6>5</h6>
+            </div> -->
+            <!-- <div class="pagenumber" >
+                <h6><i class="fa-solid fa-angle-right"></i></h6>
+            </div> -->
+        </section>
+
+        <!-- <section class="detail">
+            <div class="detail-header">
+                
+                <span class="flightNum">
+                    班次編號:
+                </span>
+                <span id="" class="flightNumValue">
+                   
+                </span>
+
+                <span class="closeBtn">
+                    <i class="fa-solid fa-x"></i>
+                </span>
+
+            </div>
+           
+
+            <div class="detail-main">
+                <p class="detail-main-title">
+                    座位總覽
+                </p>
+                <ol class="g-cabin-seat">
+                    <li>1A</li>
+                    <li>1B</li>
+                    <li>1C</li>
+                    <li>1D</li>
+                    <li>1E</li>
+                    <li>1F</li>
+                    <li>1G</li>
+                    <li>1H</li>
+                </ol>
+
+                <ol class="gx-cabin-seat">
+                    <li>2A</li>
+                    <li>2B</li>
+                    <li>2C</li>
+                    <li>2D</li>
+                    <li>2E</li>
+                    <li>2F</li>
+                    <li>2G</li>
+                    <li>2H</li>
+                </ol>
+
+                <div class="information-container">
+
+                    <div class="information-header">
+                        <ol>
+                            <li>
+                                訂單編號<span></span>
+                            </li>
+                            <li>
+                                預約人數<span></span>
+                            </li>
+                            <li>
+                                訂單金額<span></span>
+                            </li>
+                        </ol>
+                
+                    </div>
+    
+                    <div class="information-main">
+                        <div class="single-info">
+                            <div class="single-info-header">
+                                <span>訂購人:<span></span></span>
+                                <span>會員編號:<span></span></span>
+                                <span>手機:<span></span></span>
+                            </div>
+                            <ol class="basic-servise">
+                                <li>報紙:</li>
+                                <li>眼罩:</li>
+                                <li>枕頭:</li>
+                                <li>型錄:</li>
+                                <li>耳塞:</li>
+                                <li>毯子:</li>
+                                <li>睡衣:</li>
+                                <li>護手霜:</li>
+                                <li>喚醒服務:</li>
+                                <li>盥洗用具:</li>
+        
+                            </ol>
+                            <ol class="other-servise">
+                                <li>太空景觀:</li>
+                                <li>游泳池:</li>
+                                <li>太空漫步:</li>
+                            </ol>
+    
+                        </div>
+    
+                    </div>
+                  
+    
+                </div>
+
+            </div>
+          
+
+         
+
+
+        </section> -->
+    </main>
+
+    <script src="./js/backstage_01.js">
+       
+    </script>
+    
+</body>
+</html>

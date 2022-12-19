@@ -1,0 +1,219 @@
+@import 'base/var';
+@import 'base/reset';
+@import 'base/fontSet';
+@import 'mixin/mixin';
+@import 'component/btn';
+
+/*------ 進度條顯示區塊 ------*/
+h5{
+    font-size: 20px;
+}
+.booking-process{
+    width: 900px;
+    display: flex;
+    // outline: yellow solid 1px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 120px;
+   
+    .booking-process_each{
+        color:#987A4D;
+        // outline: rgb(0, 183, 255) solid 1px;
+
+        &:not(:last-child){
+            .process-circle{
+                 ::after{
+                content: '';
+                width: 75px;
+                border-bottom: #987A4D dashed;
+                position: absolute;
+                top: 50%;
+                right: -110%;
+            }
+
+            }
+        }
+
+        .main{
+            background-color: #987A4D;
+            color:#eeeeee;
+        }
+
+        .process-circle{
+            position:relative;
+            width: 80px;
+            height: 80px;
+            border: #987A4D 2px solid;
+            border-radius: 50px;
+            margin-bottom: 16px;
+
+           
+            h2{
+                font-size: 28px;
+                line-height: 80px;
+                text-align: center;
+            }
+        }
+
+        h6{
+            font-size: 18px;
+            text-align: center;
+            color: #eeeeee;
+        }
+    }
+}
+.selector_title{
+    position:relative;
+    padding-top: 80px;
+    margin-bottom: 80px;
+
+    ::after{
+        content: "";
+        display: block;
+        width: 150px;
+        border-bottom: 3px solid #EEEEEE;
+        position: absolute;
+        top: 100%;
+        margin-top: 14px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    
+    h2{
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        color: #eeeeee;
+    }
+}
+
+main{
+    border-radius: 10px;
+    width: 1080px;
+    background-color: #191F42;
+    margin: 0 auto;
+    margin-top: 80px;
+    color: #eeeeee;
+    .logo_top{
+        text-align: center;
+        padding-top: 64px;
+        h3{
+            margin-top: 32px;
+        }
+        h5{
+            margin-top: 24px;
+        }
+    }
+    .small_title{
+        .line{
+            border-bottom: 3px solid #303555;
+            width: 750px;
+            position: absolute;
+            top: 880px;
+        }
+        width: 750px;
+        margin: 0 auto;
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        .small_title_in{
+            text-align: center;
+            .h6_2{
+                margin-top: 48px;
+            }
+        }
+    }
+}
+
+.Purchaser_out{
+    outline: 2px solid #987A4D;
+    border-radius: 5px;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px 0 80px 0;
+    // margin-bottom: 80px;
+}
+.Purchaser{
+    // outline: pink 2px solid;
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 64px;
+    .Purchaser_top_1{
+        border-bottom: 1px solid #987A4D;
+        display: flex;
+        h5{
+            padding-bottom: 32px;
+            margin: 0 auto;
+        }
+    }
+    .Purchaser_top_2{
+        display: flex;
+        margin-top: 32px;
+        h5{
+            margin: 0 auto;
+        }
+    }
+    .Purchaser_top_3{
+        display: flex;
+        margin-top: 24px;
+        h5{
+            margin: 0 auto;
+        }
+    }
+}
+.booking-price{
+    display: flex;
+    justify-content: space-around;
+    background-color: #262d52;
+    margin-top: 80px;
+    h5{
+        line-height: 85px;
+        font-weight: 700;
+    }
+}
+.notice_out{
+
+    .selector_title{
+        position:relative;
+        padding-top: 80px;
+        margin-bottom: 80px;
+    
+        ::after{
+            content: "";
+            display: block;
+            width: 150px;
+            border-bottom: 3px solid #EEEEEE;
+            position: absolute;
+            top: 100%;
+            margin-top: 14px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        
+        h2{
+            text-align: center;
+            font-size: 26px;
+            font-weight: 700;
+            color: #eeeeee;
+        }
+    }
+
+    .notice{
+        display: flex;
+        justify-content: center;
+    }
+    .notice_in{
+        background-color: #191F42;
+        width: 750px;
+        padding: 40px;
+        p{
+            color: #eeeeee;
+            
+        }
+    }
+}
+.btn_cta{
+    margin: 0 auto;
+    margin-top: 80px;
+}

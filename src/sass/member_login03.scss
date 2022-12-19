@@ -1,0 +1,77 @@
+@import 'base/var';
+@import 'base/reset';
+@import 'base/fontSet';
+@import 'mixin/mixin';
+@import 'component/btn';
+@import 'component/input';
+
+.personal-info{
+    .personal-info-title{
+        text-align:center;
+        color:$white;
+        position: relative;
+        &::before{
+            content: "";
+            display:block;
+            width:150px;
+            border-bottom: 1px solid $white;
+            position:absolute;
+            top:100%;
+            margin-top:10px;
+            left:50%;
+            transform: translate(-50%,0);
+        }
+    }
+    .input-area-personal-info{
+        width:910px;
+        // border:1px solid yellow;
+        margin: 0 auto;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: $spacing_48px+15px;
+    }
+    .account-check-message{
+        margin-top: 20px;
+        opacity:0;
+    }
+    .id-check-message{
+        margin-top: 20px;
+        opacity:0;
+    }
+    .password-wrong {
+        margin-top: 20px;
+        opacity:0;
+        color:$error_red;
+    }
+    .showmessage{
+        opacity:1;
+    }
+    .btn-wrapper{
+        // border:1px solid yellow;
+        width:560px;
+        margin: 0 auto;
+        display:flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    .btn{
+        margin: 0 auto;
+        margin-top: 60px;
+ 
+     }
+
+     #email_div{
+        opacity: 1;
+        margin-top: 45px;
+    }
+    #cell_div{
+        opacity: 1;
+        margin-top: 45px;
+    }
+    #businessNumber_div{
+        opacity: 1;
+        margin-top: 45px;
+    }
+}

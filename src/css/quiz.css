@@ -1,0 +1,607 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif; /* 預設字體 */
+  font-size: 6.26%;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* 以下為h1-h6 */
+/*字體寬度自己要加上喔*/
+h1 {
+  font-size: 64rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 36rem;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 32rem;
+  line-height: 1.6;
+}
+
+h4 {
+  font-size: 28rem;
+  line-height: 1.6;
+}
+
+h5 {
+  font-size: 24rem;
+  line-height: 1.6;
+}
+
+h6 {
+  font-size: 20rem;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
+/* 以下為title */
+.title1 {
+  font-size: 120rem;
+  line-height: 1.6;
+}
+
+.title2 {
+  font-size: 48rem;
+  line-height: 1.6;
+}
+
+.title3 {
+  font-size: 40rem;
+  line-height: 1.6;
+}
+
+.title4 {
+  font-size: 22rem;
+  line-height: 1.6;
+}
+
+.title5 {
+  font-size: 16rem;
+  line-height: 1.6;
+}
+
+.title6 {
+  font-size: 14rem;
+  line-height: 1.6;
+}
+
+.btn_cta {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.btn_cta:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_cta_submit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  background: #00072E;
+  cursor: pointer;
+}
+.btn_cta_submit:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_cta_submit .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+.btn_cta_submit .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_general {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+.btn_general:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn_general_sumbmit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  cursor: pointer;
+}
+.btn_general_sumbmit:hover {
+  border-color: #00072E;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+.btn_general_sumbmit .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn_status {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+.btn_status .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+.btn_status .btn_square:hover {
+  background: #EEEEEE;
+  color: #00072E;
+}
+
+.btn_status_submit {
+  width: 250px;
+  height: 46px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  padding: 0;
+  cursor: pointer;
+}
+.btn_status_submit .btn_square {
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  line-height: 46px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+.btn_status_submit .btn_square:hover {
+  background: #EEEEEE;
+  color: #00072E;
+}
+
+.btn_main {
+  width: 200px;
+  height: 200px;
+}
+.btn_main .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  font-size: 24rem;
+}
+.btn_main .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btn_main .btn_circle_text .btn_circle:hover {
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_main_w {
+  width: 200px;
+  height: 200px;
+}
+.btn_main_w .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  font-size: 24rem;
+}
+.btn_main_w .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #00072E;
+  background: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btn_main_w .btn_circle_text .btn_circle:hover {
+  box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+  color: #EEEEEE;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+body {
+  background-color: #00072E;
+}
+
+/*------ 固定文字 -----*/
+.title3 {
+  color: #EEEEEE;
+}
+
+/*------- 文字敘述section -------*/
+.text_side {
+  width: 590px;
+  margin: auto;
+  text-align: center;
+}
+
+/*------- 分隔線section -------*/
+.hrgold {
+  background-color: #987A4D;
+  width: 150px;
+  border: 1px solid #987A4D;
+  margin-top: 24px;
+}
+
+/*------- 文字主要參數 -------*/
+#wold_quiz {
+  width: 300px;
+  height: 300px;
+  line-height: 7.5;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+}
+
+/*----------- 文字hover顯示 -----------*/
+#WoldHover:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-out;
+}
+#WoldHover:hover #wold_quiz {
+  background-color: rgba(31, 31, 31, 0.4);
+  display: block;
+  box-shadow: 0 0 60px rgba(255, 255, 255, 0.9);
+}
+
+/*-------------- 第一題測驗遊戲 --------------*/
+.quiz01 {
+  width: 1084px;
+  margin: auto;
+  font-family: "Roboto Serif", serif;
+  /*------- 圖片選項section -------*/
+}
+.quiz01 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.quiz01 .allimg {
+  width: 100%;
+  display: flex;
+  margin-top: 120px;
+  padding-left: 110px;
+  /*----------- 玩樂路線 -----------*/
+  /*----------- 放鬆路線 -----------*/
+}
+.quiz01 .allimg .playBlock {
+  width: 300px;
+  height: 300px;
+  margin-right: 260px;
+  position: relative;
+}
+.quiz01 .allimg .relaxBlock {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+/*-------------- 第二題(放鬆)測驗遊戲 --------------*/
+.quiz02_1 {
+  width: 1084px;
+  margin: auto;
+  font-family: "Roboto Serif", serif;
+  /*-------------- 圖片選項section --------------*/
+}
+.quiz02_1 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.quiz02_1 .all_twoimg {
+  width: 100%;
+  display: flex;
+  margin-top: 120px;
+  padding-left: 10px;
+  /*----------- 海島度假 -----------*/
+  /*----------- 鑽石雨 -----------*/
+  /*----------- 夜賞極光 -----------*/
+}
+.quiz02_1 .all_twoimg .island {
+  width: 300px;
+  height: 300px;
+  margin-right: 80px;
+  position: relative;
+}
+.quiz02_1 .all_twoimg .diamond {
+  width: 300px;
+  height: 300px;
+  margin-right: 80px;
+  position: relative;
+}
+.quiz02_1 .all_twoimg .aurora {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+/*-------------- 第二(玩樂)題測驗遊戲 --------------*/
+.quiz02_2 {
+  width: 1084px;
+  margin: auto;
+  font-family: "Roboto Serif", serif;
+  /*-------------- 圖片選項section --------------*/
+}
+.quiz02_2 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.quiz02_2 .all_twoimg {
+  width: 100%;
+  display: flex;
+  margin-top: 120px;
+  padding-left: 10px;
+  /*----------- 飛船競賽 -----------*/
+  /*----------- 極地探險 -----------*/
+  /*----------- 火山探險 -----------*/
+}
+.quiz02_2 .all_twoimg .spaceship {
+  width: 300px;
+  height: 300px;
+  margin-right: 80px;
+  position: relative;
+}
+.quiz02_2 .all_twoimg .polar {
+  width: 300px;
+  height: 300px;
+  margin-right: 80px;
+  position: relative;
+}
+.quiz02_2 .all_twoimg .volcano {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+/*-------------- RWD手機板 --------------*/
+@media screen and (max-width: 414.98px) {
+  .text_side {
+    width: 100%;
+  }
+  #WoldHover:hover #wold_quiz {
+    background-color: rgba(31, 31, 31, 0.4);
+    display: none;
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.9);
+  }
+  /*-------------- 第一題測驗遊戲 --------------*/
+  .quiz01 {
+    width: 100%;
+    text-align: center;
+  }
+  .quiz01 .title3 {
+    font-size: 18px;
+  }
+  .quiz01 .hrgold {
+    margin-top: 12px;
+  }
+  .quiz01 .allimg {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 32px;
+    display: block;
+  }
+  .quiz01 .allimg img {
+    width: 200px;
+    height: 200px;
+  }
+  .quiz01 .allimg .playBlock {
+    height: 100%;
+    margin-bottom: 28px;
+  }
+  .quiz01 .allimg .relaxBlock {
+    height: 100%;
+  }
+  .quiz01 .allimg #WoldHover {
+    width: 100%;
+    position: relative;
+  }
+  .quiz01 .allimg #wold_quiz {
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 70px;
+  }
+  /*-------------- 第二題(放鬆)測驗遊戲 --------------*/
+  .quiz02_1 {
+    width: 100%;
+    text-align: center;
+  }
+  .quiz02_1 .title3 {
+    font-size: 18px;
+  }
+  .quiz02_1 .hrgold {
+    margin-top: 12px;
+  }
+  .quiz02_1 .all_twoimg {
+    width: 100%;
+    padding: 0;
+    margin-top: 32px;
+    display: block;
+  }
+  .quiz02_1 .all_twoimg img {
+    width: 200px;
+    height: 200px;
+  }
+  .quiz02_1 .all_twoimg #WoldHover {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .quiz02_1 .all_twoimg #wold_quiz {
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 70px;
+  }
+  /*-------------- 第二(玩樂)題測驗遊戲 --------------*/
+  .quiz02_2 {
+    width: 100%;
+    text-align: center;
+  }
+  .quiz02_2 .title3 {
+    font-size: 18px;
+  }
+  .quiz02_2 .hrgold {
+    margin-top: 12px;
+  }
+  .quiz02_2 .all_twoimg {
+    width: 100%;
+    padding: 0;
+    margin-top: 32px;
+    display: block;
+  }
+  .quiz02_2 .all_twoimg img {
+    width: 200px;
+    height: 200px;
+  }
+  .quiz02_2 .all_twoimg #WoldHover {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .quiz02_2 .all_twoimg #wold_quiz {
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 70px;
+  }
+}
+
+/*# sourceMappingURL=quiz.css.map */

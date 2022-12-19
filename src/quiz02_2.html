@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Stelar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <link rel="shortcut icon" href="./images/shortcut.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/star.css">
+    <title>Stelar X | 太空運輸領航者</title>
+</head>
+<body>
+    
+    <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+    <section class="star_bg" id="home">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <div class="meteors">
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+        </div>
+    @@include("./layout/header.html")    
+    <section class="quiz02_2">
+
+        <div class="text_side">
+            <text class="title3">如果想參加行程</text><br>
+            <title3 class="title3">會喜歡以下哪些觀光行程</title3>
+        </div>
+
+        <hr class="hrgold"> <!--分隔實線-->
+
+        <div class="all_twoimg">
+
+            <div class="spaceship" id="WoldHover">
+                <a href="./quiz04_3.html" target="_self">
+                    <img class="spaceship_imge" src="./images/quiz/spaceship_qulz.png" alt="">
+                    <title3 class="title3" id="wold_quiz">飛船競賽</title3>
+                </a>
+            </div>
+
+            <div class="polar"  id="WoldHover">
+                <a href="./quiz04_2.html" target="_self">
+                    <img class="polar_imge" src="./images/quiz/polar_qulz.jpg" alt="">
+                    <title3 class="title3" id="wold_quiz">極地探險</title3>
+                </a>
+            </div>
+            
+            <div class="volcano"  id="WoldHover">
+                <a href="./quiz04_1.html" target="_self">
+                    <img class="volcano_imge" src="./images/quiz/volcano_qulz.png" alt="">
+                    <title3 class="title3" id="wold_quiz">火山探險</title3>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    @@include("./layout/footer.html")
+</body>
+</html>

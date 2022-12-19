@@ -1,15 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+  <link rel="shortcut icon" href="./images/shortcut.png">
+  <link rel="stylesheet" href="./css/booking_02.css">
+  <!-- <link href='../project_calender/main.css' rel='stylesheet' /> -->
+  <link rel="stylesheet" href="css/star.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/calendat.css" />
+  <title>Stelar X | 太空運輸領航者</title>
+  <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+  <script src="./js/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
 </head>
+
 <body>
+  <section class="star_bg" id="home">
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+    <div class="meteors">
+      <div class="meteor"></div>
+      <div class="meteor"></div>
+      <div class="meteor"></div>
+      <div class="meteor"></div>
+      <div class="meteor"></div>
+      <div class="meteor"></div>
+    </div>
     @@include("./layout/header.html")
     <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+    <section class="booking-process">
+      <div class="booking-process_each">
+        <div class="process-circle">
+          <h2>1</h2>
+        </div>
+        <h6>選擇星球</h6>
+      </div>
+      <div class="booking-process_each">
+        <div class="process-circle main">
+          <h2>2</h2>
+        </div>
+        <h6>日期 / 艙別</h6>
+      </div>
+      <div class="booking-process_each">
+        <div class="process-circle">
+          <h2>3</h2>
+        </div>
+        <h6>座位 / 服務</h6>
+      </div>
+      <div class="booking-process_each">
+        <div class="process-circle">
+          <h2>4</h2>
+        </div>
+        <h6>資料填寫</h6>
+      </div>
+      <div class="booking-process_each">
+        <div class="process-circle">
+          <h2>5</h2>
+        </div>
+        <h6>確認 / 付款</h6>
+      </div>
+      <div class="booking-process_each">
+        <div class="process-circle">
+          <h2>6</h2>
+        </div>
+        <h6>完成</h6>
+      </div>
+    </section>
+    <div class="wrapper">
+      <section class="booking-status">
+        <div class="selector_title">
+          <h2>選擇往返星球</h2>
+        </div>
+        <div class="selector">
+          <div>
+            <p>起始點</p>
+            <div class="btn_status">
+              <a class="btn_square" href="#">地球</a>
+            </div>
+          </div>
+          <div>
+            <p>目的地</p>
+            <div class="btn_status">
+              <a class="btn_square" href="#">{{dest}}</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="booking-cabin">
+        <div class="selector_title">
+          <h2>選擇艙別</h2>
+        </div>
+        <div class="cabin">
+          <a class="GX_btn" id="GX_btn" href="#">
+            <div class="text">
+              <span class="title3">GX</span>
+              <h5>Space Ahead</h5>
+            </div>
+          </a>
+          <a class="X_btn" id="X_btn" href="#">
+            <div class="text">
+              <span class="title3">X</span>
+              <h5>Beyond Comfort</h5>
+            </div>
+
+          </a>
+        </div>
+      </div>
+      <!-- 日曆開始 -->
+      <div class="booking-calendar">
+        <div id="calendarapp">
+          <template>
+            <!-- 月份選擇器，支持左右箭頭修改月份 -->
+
+            <div class="calendar">
+              <div class="calendar-header">
+                <div class="year-picker">
+                  <span class="year-change" id="prev-year" @click="reduceMonth()">
+                    <pre><</pre>
+                  </span>
+                  <span id="year">{{ time.year }} / {{ time.month + 1 > 9 ? time.month + 1 : '0' +
+                    (time.month + 1) }}</span>
+                  <span class="year-change" id="next-year" @click="addMonth()">
+                    <pre>></pre>
+                  </span>
+                </div>
+              </div>
+              <div class="calendar-body">
+                <div class="calendar-week-day">
+                  <div>日</div>
+                  <div>一</div>
+                  <div>二</div>
+                  <div>三</div>
+                  <div>四</div>
+                  <div>五</div>
+                  <div>六</div>
+                </div>
+                <div class="calendar-days">
+                  <!-- 日曆號 -->
+                  <div class="date" :class="[item.thisMonth, item.afterToday,{'active':item.active}]"
+                    v-for="(item, index) in visibleCalendar" :key="index">
+                    <div>{{ item.day }}</div>
+                    <div v-if="item.afterToday" style="display: flex;">
+                      <p style="font-size: 14px;">選擇人數</p>
+                      <select name="" id="" @change="choosePoeple">
+                        <option value="1">1位</option>
+                        <option value="2">2位</option>
+                        <option value="3">3位</option>
+                        <option value="4">4位</option>
+                        <option value="5">5位</option>
+                        <option value="6">6位</option>
+                        <option value="7">7位</option>
+                        <option value="8">8位</option>
+                      </select>
+
+                    </div>
+                    <br>
+                    <button  @click="order" :data-m="item.month+1" :data-d="item.day" v-if="item.afterToday">選擇</button>
+                  </div>
+                </div>
+              </div>
+              <div class="month-list"></div>
+            </div>
+          </template>
+        </div>
+      </div>
+      <!-- 日曆結束 -->
+
+      <div class="booking-price">
+        <h5>目前票價總金額</h5>
+        <h5>$ 45,000 / 人</h5>
+      </div>
+    </div>
+
+    <div class="step_button">
+        <div class="btn_general">
+            <h5>
+                <a class="btn_square" href="./booking_02.html">上一步</a>
+            </h5>
+        </div>
+        <div class="btn_general">
+            <h5>
+                <a class="btn_square" href="./booking_03.html" id="nextPage">下一步</a>
+            </h5>
+        </div>
+    </div>
+    <!-- <script>
+        var hammertime = new Hammer(myElement, myOptions);
+        hammertime.on('pan', function(ev) {
+	    console.log(ev);
+        });
+    </script> -->
 
     @@include("./layout/footer.html")
+  </section>
+  <script>
+    var app = new Vue({
+      el: "#home",
+      data() {
+        dest = '';
+        return {
+          time: {
+            year: new Date().getFullYear(),
+            month: new Date().getMonth(),
+          },
+          calendarArr: [],
+          people: 1,
+        };
+      },
+      computed: {
+        // 獲取當前月份顯示日曆,共42天
+        visibleCalendar: function () {
+          // 獲取今天的年月日
+          const today = new Date();
+          today.setHours(0);
+          today.setMinutes(0);
+          today.setSeconds(0);
+          today.setMilliseconds(0);
+          const calendarArr = [];
+          // 獲取當前月份第一天
+          const currentFirstDay = new Date(
+            this.time.year,
+            this.time.month,
+            1
+          );
+          // 獲取第一天是周幾
+          const weekDay = currentFirstDay.getDay();
+          // 用當前月份第一天减去周幾前面幾天，就是看見的日曆的第一天
+          const startDay = currentFirstDay - (weekDay - 1) * 24 * 3600 * 1000;
+          // 我們統一用42天來顯示當前顯示日曆
+          for (let i = 0; i < 35; i++) {
+            const date = new Date(startDay + i * 24 * 3600 * 1000);
+            calendarArr.push({
+              date: new Date(startDay + i * 24 * 3600 * 1000),
+              year: date.getFullYear(),
+              month: date.getMonth(),
+              day: date.getDate(),
+              // 是否在當月
+              thisMonth:
+                date.getFullYear() === today.getFullYear() &&
+                  date.getMonth() === today.getMonth()
+                  ? "thisMonth"
+                  : "",
+              // 是否是今天
+              isToday:
+                date.getFullYear() === today.getFullYear() &&
+                  date.getMonth() === today.getMonth() &&
+                  date.getDate() === today.getDate()
+                  ? "isToday"
+                  : "",
+              // 是否在今天之後
+              afterToday:
+                date.getTime() >= today.getTime() ? "afterToday" : "",
+            });
+          }
+          return calendarArr;
+        },
+      },
+      methods: {
+        test(e) {
+          console.log(e);
+          console.log(123);
+          e.classList.add("active");
+        },
+        reduceMonth() {
+          if (this.time.month > 0) {
+            this.time.month = this.time.month - 1;
+          } else {
+            this.time.month = 11;
+            this.time.year = this.time.year - 1;
+          }
+        },
+        addMonth() {
+          if (this.time.month < 11) {
+            this.time.month = this.time.month + 1;
+          } else {
+            this.time.month = 0;
+            this.time.year = this.time.year + 1;
+          }
+        },
+        order(e) {
+          //   alert('天:'+(d));
+          // console.log(m, d);
+          localStorage.setItem('month', e.target.dataset.m);
+          localStorage.setItem('day', e.target.dataset.d);
+          localStorage.setItem('people', this.people);
+          $('div.isToday').removeClass('isToday');
+          $(e.target.closest('div.date')).addClass('isToday');
+          
+        },
+        choosePoeple(e){
+          // console.log(e.target.value);
+          this.people = e.target.value;
+        }
+      },
+      watch: {},
+      created() {
+        this.dest = JSON.parse(localStorage.getItem('dest'));
+      },
+      mounted() {
+
+      },
+      updated() {
+
+      },
+    });
+
+    
+    $('#GX_btn').click(function(e){
+        e.preventDefault()
+        $('#X_btn').removeClass('checked')
+        $(this).addClass('checked')
+        localStorage.setItem('cabin','GX')
+    })
+
+    $('#X_btn').click(function(e){
+        e.preventDefault()
+        $('#GX_btn').removeClass('checked')
+        $(this).addClass('checked')
+        localStorage.setItem('cabin','X')
+    })
+
+
+    $('#nextPage').click(function(){
+        let order = {};
+        order['people']=vm.people;
+        order['select_day']=vm.select_day;
+        console.log(order);
+        localStorage.setItem('order', JSON.stringify(order));
+    })
+
+  </script>
+  <!-- 轉換成中文 -->
+  <!-- <script src="./js/booking_02.js"></script> -->
+  <!-- <script src="/src/js/calendar.js"></script> -->
 </body>
+
 </html>

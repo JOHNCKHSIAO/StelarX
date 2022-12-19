@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/sass/shopping_Integrate.scss"
+    ],
+    "names": [],
+    "file": "shopping_Integrate.css"
+}

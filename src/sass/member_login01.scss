@@ -1,0 +1,73 @@
+@import 'base/var';
+@import 'base/reset';
+@import 'base/fontSet';
+@import 'mixin/mixin';
+@import 'component/btn';
+@import 'component/input';
+
+.member-login{
+    width:1080px;
+    margin:0 auto;
+    // border:1px solid white;
+    position: relative;
+    .member-login-title{
+        // border:1px solid white;
+                // padding:1px;
+        color:$white;
+        text-align: center;
+        position: relative;
+        &::before{
+            content: "";
+            display:block;
+            width:150px;
+            border-bottom: 1px solid $white;
+            position:absolute;
+            top:100%;
+            margin-top: 14px;
+            left:50%;
+            transform: translate(-50%,0);
+        }
+
+    }
+
+    .input-area-member-login{
+     
+        width:910px;
+        // border:1px solid white;
+        margin: 0 auto;
+        display:flex;
+        // border:1px solid white;
+        justify-content: space-around;
+        margin-top: $spacing_48px+10px;//24px被底線占掉了
+    }
+    .forget-password{
+        color:$white;
+        display: block;
+        position: absolute;
+        bottom:19%;
+        right:9%;
+        // border: 1px solid yellow;
+    }
+    .password-wrong{
+        color:$error_red;
+        margin-top: 20px;
+        opacity:0;
+       
+    }
+    .opacity1{
+        opacity:1;
+     }
+    .btn{
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    // .fas{
+    //     //張開的眼睛
+    // }
+    // .fa-eye{
+    //      //張開的眼睛
+    // }
+}
+
+

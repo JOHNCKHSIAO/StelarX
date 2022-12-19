@@ -1,0 +1,232 @@
+@import 'base/var';
+@import 'base/reset';
+@import 'base/fontSet';
+// @import 'mixin/mixin';
+// @import 'component/btn';
+
+
+// 共用--------------------------------------------------
+* {
+    box-sizing: border-box;
+}
+
+.login04 {
+    background: #000;
+}
+
+
+
+// 出發地
+.mileCity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+
+    h6 {
+        color: $white;
+
+    }
+}
+
+
+
+// 日期2022 2021年標籤
+.date2022 {
+    background: $white;
+    width: 235px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 0 auto;
+
+
+    h5 {
+        text-align: center;
+        font-weight: 700;
+        color: $gold;
+        line-height: $spacing_64px;
+        margin: $spacing_64px 0;
+
+    }
+}
+
+// 卡片群組
+.mainMile {
+    margin-top: $spacing_80px;
+
+    // border: 1px solid red;
+
+    // 卡片單張
+    .mileCard {
+
+        width: 500px;
+        margin-top: $spacing_12px;
+        padding: 10px;
+        background: $blue;
+
+        // 摺疊起來的上面包括字
+        .mileCardUp {
+            color: $gold;
+            line-height: $spacing_64px$spacing_64px;
+            font-weight: 700;
+            font-size: 24rem;
+            text-align: center;
+            cursor: pointer;
+            // border: 1px solid red;
+            line-height: $spacing_48px;
+
+
+        }
+
+        // 摺疊起來的下面有星球的
+        .mileCardDown {
+            margin: $spacing_12px 0;
+            display: none;
+
+
+
+
+            .mileCardDown_Flex {
+                display: flex;
+                justify-content: space-around;
+
+                // 摺疊起來的下面有星球的左邊
+                .mileCardLeft {
+                    display: flex;
+
+
+                }
+
+                // 摺疊起來的下面有星球的右邊
+
+                .mileCardRight {
+                    display: flex;
+
+
+                }
+
+            }
+
+
+        }
+
+    }
+}
+
+// 進度條動畫
+
+.mileBar {
+    margin-top: $spacing_24px;
+
+    .g-container {
+        margin: 0 auto;
+        width: 450px;
+        // height: 25px;
+        border-radius: 25px;
+        background: $white;
+        display: flex;
+
+        .g-progress {
+            width: 0%;
+            height: inherit;
+            border-radius: 25px 0 0 25px;
+            background: $linear;
+            transition: 1.5s all;
+            border: 6px solid $white;
+
+        }
+
+        .rocket {
+            width: 60px;
+            height: 36px;
+        }
+    }
+
+    h5 {
+        margin-top: $spacing_12px;
+        color: $white;
+        text-align: center;
+    }
+}
+
+// 進度條動畫
+
+
+// 共用--------------------------------------------------
+
+
+.login04_1440 {
+    // background: black;
+
+
+    .login04_1080 {
+        // background: $white;
+        width: 1080px;
+        margin: 0 auto;
+        // border: 1px solid rgb(255, 255, 255);
+
+        // 會員行程資料
+        h3 {
+            text-align: center;
+            color: $white;
+
+        }
+
+        // 會員行程資料下面的線
+        .login04Line {
+            background-color: $white;
+            height: 2px;
+            width: 190px;
+            margin: 0 auto;
+            margin-top: $spacing_12px;
+        }
+
+        // 後面有svg線的背景
+        .membMileSVG {
+            position: relative;
+            padding: $spacing_80px 0;
+            display: flex;
+            gap: 75px;
+
+            .bgsvg {
+                // border: 1px solid white;
+                position: absolute;
+                left: 380px;
+                top: 400px;
+                transition: 2s all;
+                overflow: hidden;
+                height: 0;
+
+                img {
+                    // z-index: ;
+
+                }
+
+                // z-index: 0;
+
+            }
+
+            //   左右大區塊
+            .membMile {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .left {
+                margin-bottom: 500px;
+            }
+
+            .right {
+                margin-top: 500px;
+            }
+
+        }
+
+        .login04_btn {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 120px;
+        }
+    }
+}

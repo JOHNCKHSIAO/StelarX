@@ -151,13 +151,18 @@ function clear() {
   .pipe(clean({force: true})); //強制刪除檔案 
 }
 
+function mvallphp() {
+    return src('./src/PHP/*.php').pipe(dest('dist/PHP'));
+}
+exports.mvphp = mvallphp;
+
 //test
 exports.c = clear; 
 
 exports.minify = min_images;
 
 //開發用
-exports.default =  series(parallel(sassstyle, includeHTML , miniJs ,mvimages), browser) 
+exports.default =  series(parallel(sassstyle, includeHTML , miniJs ,mvimages,mvallphp), browser) 
 
 //上線用
 exports.package = series(clear , parallel(sassstyle , includeHTML , miniJs , min_images))

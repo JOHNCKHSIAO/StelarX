@@ -1,0 +1,193 @@
+@import 'base/var';
+@import 'base/reset';
+@import 'base/fontSet';
+@import 'mixin/mixin';
+@import 'component/btn';
+
+.light-height-1 {
+    line-height: 1;
+}
+
+.margin0-auto {
+    margin: 0 auto;
+}
+
+body {
+    color: $white;
+}
+
+.main_top {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .left_image {
+        width: 400px;
+
+        .img_1 {
+            margin-bottom: 40px;
+        }
+
+        .Small_img {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 47%;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .right_word {
+        .commodity_title {
+            h3 {
+
+            }
+            h4 {
+                margin-bottom: 20px;
+            }
+            h5 {
+                line-height: 1.6;
+            }
+            p:last-child {
+                margin-top: 10px;
+            }
+        }
+        .exchange {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 40px;
+            .click_num {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 120px;
+                .reduce {
+                    display: block;
+                    width: 27px;
+                    height: 27px;
+                    border-radius: 13.5px;
+                    background-color: #987A4D;
+                    font-size: 40px;
+                    text-align: center;
+                    line-height: 20px;
+                    cursor: pointer;
+                }
+
+                h3 {}
+
+                .add {
+                    display: block;
+                    width: 27px;
+                    height: 27px;
+                    border-radius: 13.5px;
+                    background-color: #987A4D;
+                    font-size: 30px;
+                    text-align: center;
+                    line-height: 27px;
+                    cursor: pointer;
+                }
+            }
+
+            .Redeem_now {
+                margin-left: 64px;
+                // 為了不讓畫面裡'立即兌換'因為里程數增加而跑版而加以下三行
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                a{
+                    text-decoration: none;
+                    h6 {
+                        width: 85px;
+                        color: #2B7C33;
+                        border-bottom: 1px solid #2B7C33;
+                    }
+                }
+            }
+        }
+        .mileage {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .btn_flow{
+            margin: 20px auto 0;
+            a{
+                color: #eee;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.main_button {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 40px;
+    border-bottom: 2px solid #987A4D;
+    padding-bottom: 64px;
+}
+
+.main_bottom {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 48px;
+    text-align: center;
+    h3 {
+        position: relative;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        overflow: hidden;
+        background: linear-gradient(90deg, #000, #eee, #000);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: animate 2s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+        @keyframes animate {
+            0% {
+            background-position: -500%;
+            }
+            100% {
+            background-position: 500%;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 1000px;
+        margin-top: 48px;
+
+        li {
+            text-align: center;
+            border: 1px solid white;
+            a{
+                text-decoration: none;
+                color: #eee;
+                img {
+                    height: 300px;
+                }
+    
+                h4 {
+                    margin-top: 40px;
+                }
+    
+                h5 {
+                    margin-top: 24px;
+                }
+            }
+            &:hover{
+                transform: scale(1.05);
+                transition: all .35s ease;
+            }
+        }
+    }
+}

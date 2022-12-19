@@ -1,0 +1,42 @@
+@import 'base/var';
+@import 'base/reset';
+@import 'base/fontSet';
+@import 'mixin/mixin';
+@import 'component/btn';
+@import 'component/input';
+.member-forget{
+    width:1080px;
+    margin:0 auto;
+    // border:1px solid white;
+    .member-forget-title{
+        box-sizing: content-box;
+        // border: 1px solid white;
+        color:$white;
+        text-align: center;
+        position: relative;
+        &::before{
+            content: "";
+            display:block;
+            width:150px;
+            border-bottom: 1px solid $white;
+            position:absolute;
+            top:100%;
+            margin-top:15px;
+            left:50%;
+            transform: translate(-50%,0);
+        }
+    }
+    .input-area-member-forget{
+        display: flex;
+        //  border:1px solid white;
+         justify-content: space-around;
+         margin-top: $spacing_48px+10px;//24px被底線占掉了
+         margin-bottom:60px;
+     }
+     .btn{
+        margin:0 auto;
+    }
+    }
+
+ 
+

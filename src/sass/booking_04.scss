@@ -1,0 +1,239 @@
+@import 'base/var';
+// @import 'base/reset';
+@import 'base/fontSet';
+@import 'mixin/mixin';
+@import 'component/btn';
+@import 'component/input';
+
+//sass src/sass/booking_04.scss src/css/booking_04.css --watch
+
+
+/*------ 全域共用區塊 ------*/
+.form_title{
+    margin-top: 80px;
+    margin-bottom:40px;
+    position: relative;
+    // border:1px solid white;
+    ::after{
+        content: '';
+        height: 1px;
+        width: 150px;
+        border-bottom: #eeeeee solid ;
+        position: absolute;
+        top: 120%;
+        right: 43%;
+    }
+    h2{
+        font-size: 26px;
+        font-weight: 700;
+        color: $white;
+        text-align: center;
+        // border:1px solid red;
+    }
+    h3{
+        color: $white;
+        text-align: center;
+    }
+}
+
+.subtitle{
+    // margin-bottom: 32px;
+    h3{ color: $white;  
+        margin-left: 250px;
+        font-size: 24px;
+    }
+    .hrLong{ 
+        width: 600px; 
+        margin: auto;
+    }
+}
+
+/*------ 全域資訊綁定區塊 ------*/
+.form_info{
+    width: 900px;
+    box-sizing: border-box;
+    margin:0 auto;
+    margin-bottom: 120px;
+    // border: 1px solid yellow;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // border: 1px solid red;
+    .input_div{
+      margin-top: 45px;
+    }
+}
+
+/*------ 進度條顯示區塊 ------*/
+.booking-process{
+    width: 900px;
+    display: flex;
+    // outline: yellow solid 1px;
+    justify-content: space-between;
+    margin: 0 auto;
+   
+    .booking-process_each{
+        color:#987A4D;
+        // outline: rgb(0, 183, 255) solid 1px;
+        &:not(:last-child){
+            .process-circle{
+                 ::after{
+                content: '';
+                width: 75px;
+                border-bottom: #987A4D dashed;
+                position: absolute;
+                top: 50%;
+                right: -110%;
+            }
+            }
+        }
+
+        .main{
+            background-color: #987A4D;
+            color:#eeeeee;
+        }
+
+        .process-circle{
+            position:relative;
+            width: 80px;
+            height: 80px;
+            border: #987A4D 2px solid;
+            border-radius: 50px;
+            margin-bottom: 16px;
+
+           
+            h2{
+                font-size: 28px;
+                line-height: 80px;
+                text-align: center;
+            }
+        }
+
+        h6{
+            font-size: 18px;
+            text-align: center;
+            color: #eeeeee;
+        }
+    }
+}
+
+/*------ 航班資訊區塊 ------*/
+
+.com-form{
+    width: 1084px;
+    // border: 1px solid red;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.form{
+    h5{
+        color: #eeeeee;
+        font-size: 18px;
+        padding-left: 15px;
+        margin-top: 30px;
+        margin-bottom: -8px;
+    }
+}
+/*------ 訂購者資料區塊 ------*/
+.personal{
+    width: 1084px;
+    // border: 1px solid red;
+    margin: auto;
+    .form_title{
+        margin-top: 60px;
+        margin-bottom: $spacing_48px+15px;
+    }
+}
+/*------ 同行者資料區塊 ------*/
+.partner{
+    width: 1084px;
+    // border: 1px solid red;
+    margin: auto;
+    margin-top: 64px;
+    margin-bottom: 80px;
+}
+/*------ 行前須知區塊 ------*/
+.notice{
+    width: 1084px;
+    margin: auto;
+    // border: 1px solid red;
+    margin-top: 20px;
+    .subtitle{
+        margin-bottom: 20px;
+    }
+    h3{  margin-left: 100px; }
+    .notice_list{
+        width: 900px;
+        height: 400px;
+        overflow-y: auto;
+        border: 1px solid $white;
+        border-radius: 10px;
+        margin: auto;
+        padding: 40px;
+        margin-bottom: 40px;
+        p{
+            color: $white;
+        }
+        
+    }
+
+   /* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #987A4D; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #78613f; 
+  }
+
+    .checkedread{
+        width: 300px;
+        display: flex;
+        margin: auto;
+        // border: 1px solid red;
+        input{
+            margin: auto 0;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: #7C7C7C;
+            border-radius: 3px;
+
+             &:checked{
+                accent-color: #987A4D;
+             }
+        }
+       
+        h5{
+            color: $white;
+            margin-left: 15px;
+        }
+    }
+   
+}
+/*------ 上/下一步區塊 ------*/
+.booking_btn{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+    justify-content: space-between;
+    // border: 1px solid red;
+    display: flex;
+    .btn_status{
+        margin-right: 40px;
+    }
+}

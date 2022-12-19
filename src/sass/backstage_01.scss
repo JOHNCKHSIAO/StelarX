@@ -1,0 +1,295 @@
+@import 'base/var';
+@import 'base/reset';
+@import 'base/fontSet';
+@import 'mixin/mixin';
+@import 'component/btn';
+body{
+    background-color: #fff;
+}
+.header{
+    width:100%;
+    height:100px;
+    background:$linear;
+    display: flex;
+    margin-bottom: 60px;
+    img{
+        // display:block;
+        height: 25px;
+        // border:1px solid white;
+        margin-top: 37px;
+        margin-left: 140px;
+        vertical-align:middle;
+    }
+    h3{
+        color:$white;
+        // border:1px solid white;
+        height:35px;
+        margin-top: 25px;
+    }
+}
+main{
+    width:1080px;
+    margin:0 auto;
+    // border:1px solid green;
+    .backstage-title{   
+        color:$gold;
+        text-align: center;
+    }
+    .search-bar-div{   
+        // border:1px solid red;
+        margin-top: 24px;
+        input{
+            width:220px;
+            height:40px;
+            vertical-align:middle;
+            margin-left: 758px;
+        }
+        button{
+            background: $blue;
+            color:$white;
+            width:90px;
+            height:40px;
+            font-size: 24px;
+            vertical-align:middle;
+            margin-left: 5px;
+        }
+
+    }
+    .toggle-div{
+        display:flex;
+        justify-content: space-around;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        // border: 1px solid green;
+        .toggle-btn{
+            width:150px;
+            height:50px;
+            background:$white;
+            cursor: pointer;
+           a{
+            border:1px solid $blue;
+            display: block;
+            width:100%;
+            text-decoration: none;
+            color:$blue;
+            text-align: center;
+            font-size: 24px;
+            line-height: 50px;
+           }
+           
+        }
+        .thispage > a{
+            background:$linear;
+            color:$white;
+        }
+
+    }
+    .info-area{
+        // border:1px solid orange;
+        &:nth-child(2n) ul>li {
+                // background-color: #cbcbcb;
+        }
+        .member-list-title{
+            display: inline-grid;
+            grid-template-columns: [line1] 160px [line2] 90px [line3] 90px [line4] 260px [line5] 260px [line6] 110px [line7]106px;
+            li{
+                // border:1px solid red;
+                height:80px;
+                font-size: 18rem;
+                text-align: center;
+                line-height: 80px;
+                color:$white;
+                background: $blue;
+
+            }
+        }
+        .member-list-content{
+            display: inline-grid;
+            grid-template-columns: [line1] 160px [line2] 90px [line3] 90px [line4] 260px [line5] 260px [line6] 110px [line7]106px;
+          
+            li{
+                // border:1px solid red;
+                height:60px;
+                font-size: 18rem;
+                text-align: center;
+                line-height:60px;
+                color:black;
+                background: $white;
+                div{
+                    line-height:40px;
+                    width:60px;
+                    height:40px;
+                    border:1px solid black;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    border-radius: 5px;
+                    color:$white;
+                    background: $blue;
+                }
+                span{
+                    color:$gold;
+                }
+
+            }
+        }
+    }
+    .insert-new{
+        width:150px;
+        height:50px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 50px;
+        background: $linear;
+        color:$white;
+        margin-top: 24px;
+    }
+
+}
+.page-area{
+    // border:1px solid red;
+    cursor: pointer;
+    width:1080px;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 50px;
+    .pagenumber{
+        text-align: center;
+        width:34px;
+        border:1px solid $gold;
+        padding:2px 5px;
+    }
+}
+.detail{
+    border:1px solid red;
+    width:900px;
+    margin:0 auto;
+    background: $blue;
+
+}
+.detail-header{
+    width:500px;
+    height:50px;
+    border:1px solid blue;
+    margin: 0 auto;
+    position: relative;
+    font-size: 24px;
+    color:white;
+
+    .flightNum{
+        font-size: 24px;
+        color:white;
+    }
+    .flightNumValue{
+
+    }
+    .closeBtn{
+
+        position: absolute;
+        top:10px;
+        right:10px;
+
+
+    }
+
+
+}
+.detail-main{
+    background-color: #fff;
+    width:850px;
+    margin:0 auto;
+    margin-bottom: 20px;
+
+    .detail-main-title{
+
+        // background-color: yellow;
+        margin:0 auto;
+        text-align: center;
+
+    }
+
+    .g-cabin-seat{
+        display:flex;
+        width:820px;
+        margin: 0 auto;
+
+        li{
+
+            width:100px;
+            border:1px solid blue;
+        }
+
+    }
+
+    .gx-cabin-seat{
+
+        display:flex;
+        width:820px;
+        margin: 0 auto;
+
+        li{
+
+            width:100px;
+            border:1px solid blue;
+        }
+
+
+    }
+}
+
+.information-container{
+
+    
+}
+.information-header{
+
+    ol{
+        margin-top: 20px;
+        display: flex;
+        background-color: yellow;
+        justify-content: space-around;
+
+        li{
+
+            span{
+
+
+            }
+        }
+    }
+}
+
+.information-main{
+
+    .single-info{
+
+        .single-info-header{
+            background-color: green;
+            span{
+
+
+            }
+        }
+        .basic-servise{
+            display: flex;
+
+            li{
+
+
+            }
+        
+        }
+
+        .other-servise{
+            display: flex;
+
+
+            li{
+
+            }
+        }
+
+
+    }
+}

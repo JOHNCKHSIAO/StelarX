@@ -1,0 +1,310 @@
+@import 'base/var';
+@import 'base/reset';
+@import 'base/fontSet';
+@import 'mixin/mixin';
+@import 'component/btn';
+.member-login02-wrapper{
+    width:1080px;
+    // border:1px solid white;
+    margin:0 auto;
+ 
+    .member-info{
+        width:100%;
+        // border:1px solid yellow;
+       
+        .member-info-title{
+            color:$white;
+            text-align: center;
+            position: relative;
+            &::before{
+                content: "";
+                display:block;
+                width:150px;
+                border-bottom: 1px solid $white;
+                position:absolute;
+                top:100%;
+                margin-top: 10px;
+                left:50%;
+                transform: translate(-50%,0);
+            }
+        }
+        .imgContainer{
+            // border: 1px solid white;
+            position: relative;
+            margin:0 auto;
+            margin-top: 60px;
+            width:570px;
+            .vip-card{
+                display:block;
+                width:563px;
+                border-radius:26px;
+                margin:0 auto;
+            }
+            .member-name{
+                font-size: 34px;
+                position: absolute;
+                color:$white;
+                top:35%;
+                left:23%;
+                transform: translate(-50%,0);
+            }
+            .member-type-card{
+                position: absolute;
+                font-size: 16px;
+                color:$white;
+                top:56%;
+                left:18%;
+            }
+            .memmer-code{
+                position: absolute;
+                color:$white;
+                top:80%;
+                left:72%;     
+                span{
+                    color:$white;
+                }
+
+            }
+
+        }
+        
+        .member-type{
+            color:$white;
+            text-align: center;
+            margin-top: 48px;
+            margin-bottom: 20px;
+        }
+        p{
+            color:$white;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+       .btn{
+        margin:0 auto;
+       }
+    }
+    .decorate-line{
+        width: 1084px;
+        height:2px;
+        border-top:1px solid $gold;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    .member-mile{
+
+        .btn{
+            margin:0 auto;
+        }
+        .mile-wrapper{
+            display: flex;
+            justify-content: space-between;
+            // border:1px solid red;
+            width:950px;
+            margin:0 auto;
+            margin-bottom: 48px;
+            .mile-circle{
+                // border:1px solid green;
+                h3{
+                    color: $white;
+                    text-align: center;
+                    margin-bottom:24px;
+                }
+                .circle-outer{
+                    width:352px;
+                    height:352px;
+                    background-color:rgba(238,238,238,0.6);
+                    border-radius: 50%;
+                    padding-top:20px;
+                    .circle-inner{
+                        border:1px solid white;
+                        width:312px;
+                        height:312px;
+                        background: $blue;
+                        // margin-top:20px;
+                        margin-left: 20px;
+                        border-radius: 50%;
+                        line-height: 312px;
+                        position: relative;
+                        .bignumber{
+                            font-size: 60rem;
+                            color:$white;
+                            position: absolute;
+                            top:50%;
+                            left:50%;
+                            transform: translate(-50%,-50%);
+                            
+                        }
+                        span{
+                            font-size: 30rem;
+                            color:$white;
+                        }
+                    }
+                }
+
+            }
+            .mile-square{
+                align-items: center;
+                // border:1px solid white;
+                width:520px;
+                height:240px;
+                // border:1px solid white;
+                border-radius: 5px;
+                margin-top: 100px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                background: $linear;
+                h3{
+                    color:$white;
+                    text-align: center;
+                }
+                .number-area{
+                    display:flex;
+                    border-radius: 5px;
+                    // border:1px solid green;
+                    margin-top: 65px;
+                    h6{
+                        color:black;
+                        background:$white;
+                        border-radius: 5px;
+                        margin:3px;
+                        width:31px;
+                        height:40px;
+                        font-size: 20px;
+                        text-align: center;
+                       line-height: 40px;
+
+                    }
+                    span{
+                        color:white;
+                        margin:5px;
+                        font-size: 20px;
+                        line-height: 40px;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    .memeber-shop{
+        .btn{
+            margin: 0 auto;
+        }
+        .memeber-shop-title{
+            color:$white;
+            text-align: center;
+            position: relative;
+            &::before{
+                content: "";
+                display:block;
+                width:150px;
+                border-bottom: 1px solid $white;
+                position:absolute;
+                top:100%;
+                margin-top: 10px;
+                left:50%;
+                transform: translate(-50%,0);
+            }
+        }
+        h5{
+            color:$white;
+            text-align: center;
+            margin-top: 48px;
+        }
+        .star{
+            width:350px;
+            display: block;
+            margin: 80px auto 80px auto;
+        }
+        
+    }
+    .member-message{
+        .member-message-title{  
+            color:$white;
+            text-align: center;
+            position: relative;
+            &::before{
+                content: "";
+                display:block;
+                width:150px;
+                border-bottom: 1px solid $white;
+                position:absolute;
+                top:100%;
+                margin-top: 10px;
+                left:50%;
+                transform: translate(-50%,0);
+            }
+
+        }
+        .message-wrapper{
+
+            // border:1px solid white;
+            margin-top: 92px;
+            display:flex;
+            justify-content: space-between;
+            .btn{
+                margin: 0 auto;
+            }
+            .message-center{
+                width:493px;
+                border:1px solid $gold;
+                padding-top: 48px;
+                padding-bottom: 48px;
+                padding-left: 20px;
+                border-radius: 15px;
+                .messages{
+                    width:363px;
+                    height:44px;
+                    background:$white;
+                    border-radius: 15px 15px 15px 0;
+                    margin: 0 auto;
+                    margin-bottom: 80px;
+                    position: relative;
+                    line-height: 2;
+                    padding-right:20px;
+                    h5{
+                        text-align: right;
+                    }
+                    p{
+                        color:$white;
+                        position: absolute;
+                        top:100%;
+                        right:0%;
+                    }
+                }
+            }
+            .textarea-div{
+                width:493px;
+                border:1px solid $gold;
+                padding-top: 48px;
+                padding-bottom: 48px;
+                border-radius: 15px;
+                h5{
+                    color:$white;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                form{
+                    textarea{
+                        border-radius: 5px;
+                        display:block;
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+                        width:365px;
+                        height:160px;
+                        padding-top: 20px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        font-size: 20px;
+                        font-family: 'Roboto';
+
+                    }
+                }
+            }
+        }
+    }
+   
+   
+
+}

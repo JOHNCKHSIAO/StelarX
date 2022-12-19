@@ -1,0 +1,25 @@
+.shoppiingicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 40, 40);
+  color: #eee;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50%;
+  right: -42%;
+  z-index: 100;
+}
+
+.shoppiingicon svg:hover {
+  transform: scale(1.05);
+}
+
+#shopping_cart_top {
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=header.css.map */

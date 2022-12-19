@@ -4,11 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta name="description"
+        content="Stellar X 乘載你的太空夢想 Carry Your Dreams 市場唯一第一家以商務客群為主的火箭預約系統，唯一承包八大行星航空站點的太空運輸品牌。">
+    <link rel="shortcut icon" href="./images/shortcut.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/star.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/member_pwd02.css">
+    <title>Stellar X | 太空運輸領航者</title>
 </head>
 <body>
+    <section class="star_bg" id="home">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <div class="meteors">
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+        </div>
+    
     @@include("./layout/header.html")
-    <!--請在兩個include之間打程式碼.到時候這邊會自己匯入header footer-->
+    <section class="member-forget02">
+        <h5 class="member-forget02-title">請重新設定密碼並確認</h5><!--記得要做轉換-->
+        <form action="">
+            <div class="input-area-member-forget02">
+                <div class="input_div_password">
+                    <label for=""><h5>請輸入新密碼</h5></label>
+                        <input type="password"><i class="fa-solid fa-eye-slash"></i>                 
+                </div>
+                <div class="input_div_password">
+                    <label for=""><h5>再次輸入新密碼</h5></label>
+                        <input type="password"><i class="fa-solid fa-eye-slash"></i>
+                    <p class="password-wrong title6">與密碼不符! 請重新輸入!!</p>
+                </div>
+               
+            </div>
+            <div class="btn_general btn">
+                <a class="btn_square" href="./member_intro.html">確認密碼</a>
+            </div>
+        </form>
+    </section>
 
     @@include("./layout/footer.html")
 </body>

@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  /* 預設字體 */
+  font-size: 6.26%;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* 以下為h1-h6 */
+/*字體寬度自己要加上喔*/
+h1 {
+  font-size: 64rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 36rem;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 32rem;
+  line-height: 1.6;
+}
+
+h4 {
+  font-size: 28rem;
+  line-height: 1.6;
+}
+
+h5 {
+  font-size: 24rem;
+  line-height: 1.6;
+}
+
+h6 {
+  font-size: 20rem;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
+/* 以下為title */
+.title1 {
+  font-size: 120rem;
+  line-height: 1.6;
+}
+
+.title2 {
+  font-size: 48rem;
+  line-height: 1.6;
+}
+
+.title3 {
+  font-size: 40rem;
+  line-height: 1.6;
+}
+
+.title4 {
+  font-size: 22rem;
+  line-height: 1.6;
+}
+
+.title5 {
+  font-size: 16rem;
+  line-height: 1.6;
+}
+
+.title6 {
+  font-size: 14rem;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.login04 {
+  background: #000;
+}
+
+.mileCity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+.mileCity h6 {
+  color: #EEEEEE;
+}
+
+.date2022 {
+  background: #EEEEEE;
+  width: 235px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.date2022 h5 {
+  text-align: center;
+  font-weight: 700;
+  color: #987A4D;
+  line-height: 64px;
+  margin: 64px 0;
+}
+
+.mainMile {
+  margin-top: 80px;
+}
+.mainMile .mileCard {
+  width: 500px;
+  margin-top: 12px;
+  padding: 10px;
+  background: #00072E;
+}
+.mainMile .mileCard .mileCardUp {
+  color: #987A4D;
+  line-height: 64px 64px;
+  font-weight: 700;
+  font-size: 24rem;
+  text-align: center;
+  cursor: pointer;
+  line-height: 48px;
+}
+.mainMile .mileCard .mileCardDown {
+  margin: 12px 0;
+  display: none;
+}
+.mainMile .mileCard .mileCardDown .mileCardDown_Flex {
+  display: flex;
+  justify-content: space-around;
+}
+.mainMile .mileCard .mileCardDown .mileCardDown_Flex .mileCardLeft {
+  display: flex;
+}
+.mainMile .mileCard .mileCardDown .mileCardDown_Flex .mileCardRight {
+  display: flex;
+}
+
+.mileBar {
+  margin-top: 24px;
+}
+.mileBar .g-container {
+  margin: 0 auto;
+  width: 450px;
+  border-radius: 25px;
+  background: #EEEEEE;
+  display: flex;
+}
+.mileBar .g-container .g-progress {
+  width: 0%;
+  height: inherit;
+  border-radius: 25px 0 0 25px;
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  transition: 1.5s all;
+  border: 6px solid #EEEEEE;
+}
+.mileBar .g-container .rocket {
+  width: 60px;
+  height: 36px;
+}
+.mileBar h5 {
+  margin-top: 12px;
+  color: #EEEEEE;
+  text-align: center;
+}
+
+.login04_1440 .login04_1080 {
+  width: 1080px;
+  margin: 0 auto;
+}
+.login04_1440 .login04_1080 h3 {
+  text-align: center;
+  color: #EEEEEE;
+}
+.login04_1440 .login04_1080 .login04Line {
+  background-color: #EEEEEE;
+  height: 2px;
+  width: 190px;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+.login04_1440 .login04_1080 .membMileSVG {
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  gap: 75px;
+}
+.login04_1440 .login04_1080 .membMileSVG .bgsvg {
+  position: absolute;
+  left: 380px;
+  top: 400px;
+  transition: 2s all;
+  overflow: hidden;
+  height: 0;
+}
+.login04_1440 .login04_1080 .membMileSVG .membMile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.login04_1440 .login04_1080 .membMileSVG .left {
+  margin-bottom: 500px;
+}
+.login04_1440 .login04_1080 .membMileSVG .right {
+  margin-top: 500px;
+}
+.login04_1440 .login04_1080 .login04_btn {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 120px;
+}
+
+/*# sourceMappingURL=member_login04.css.map */

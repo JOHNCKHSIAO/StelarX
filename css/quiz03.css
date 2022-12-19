@@ -1,0 +1,596 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  /* 預設字體 */
+  font-size: 6.26%;
+  line-height: 1.6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* 以下為h1-h6 */
+/*字體寬度自己要加上喔*/
+h1 {
+  font-size: 64rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 36rem;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 32rem;
+  line-height: 1.6;
+}
+
+h4 {
+  font-size: 28rem;
+  line-height: 1.6;
+}
+
+h5 {
+  font-size: 24rem;
+  line-height: 1.6;
+}
+
+h6 {
+  font-size: 20rem;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 18rem;
+  line-height: 1.6;
+}
+
+/* 以下為title */
+.title1 {
+  font-size: 120rem;
+  line-height: 1.6;
+}
+
+.title2 {
+  font-size: 48rem;
+  line-height: 1.6;
+}
+
+.title3 {
+  font-size: 40rem;
+  line-height: 1.6;
+}
+
+.title4 {
+  font-size: 22rem;
+  line-height: 1.6;
+}
+
+.title5 {
+  font-size: 16rem;
+  line-height: 1.6;
+}
+
+.title6 {
+  font-size: 14rem;
+  line-height: 1.6;
+}
+
+.btn_cta {
+  width: 280px;
+  height: 50px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn_cta:hover {
+  border-color: #00072E;
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_cta .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+
+.btn_cta .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_cta_submit {
+  width: 280px;
+  height: 50px;
+  border: 1px solid #EEEEEE;
+  border-radius: 50px;
+  background: #00072E;
+  cursor: pointer;
+}
+
+.btn_cta_submit:hover {
+  border-color: #00072E;
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_cta_submit .aLink {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+
+.btn_cta_submit .aLink img {
+  width: 10px;
+  position: absolute;
+  top: 36%;
+  right: 10%;
+}
+
+.btn_general {
+  width: 280px;
+  height: 50px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+
+.btn_general:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+  border: none;
+}
+
+.btn_general .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn_general .btn_pay {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  border: none;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.btn_general_sumbmit {
+  width: 280px;
+  height: 50px;
+  border: 1px solid #EEEEEE;
+  background: #00072E;
+  cursor: pointer;
+}
+
+.btn_general_sumbmit:hover {
+  border-color: #00072E;
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_general_sumbmit .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn_flow {
+  position: relative;
+  background-color: #000000;
+  line-height: 60px;
+  font-size: 20px;
+  color: #FFF;
+  width: 300px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#03a9f4));
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.btn_flow:hover {
+  -webkit-animation: show 8s linear infinite;
+          animation: show 8s linear infinite;
+}
+
+@-webkit-keyframes show {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+@keyframes show {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.btn_flow::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#03a9f4));
+  background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  z-index: -1;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  opacity: 0;
+}
+
+.btn_flow:hover::before {
+  opacity: 1;
+  -webkit-animation: show 8s linear infinite;
+          animation: show 8s linear infinite;
+}
+
+.btn_status {
+  width: 280px;
+  height: 50px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+
+.btn_status .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  -webkit-box-shadow: inset 0 0 0 0 #EEEEEE;
+          box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
+}
+
+.btn_status .btn_square:hover {
+  color: #00072E;
+  -webkit-box-shadow: inset 50px 0 0 0 0 #EEEEEE;
+          box-shadow: inset 50px 0 0 0 0 #EEEEEE;
+}
+
+.btn_status_submit {
+  width: 280px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.btn_status_submit .btn_square {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 50px;
+  color: #EEEEEE;
+  font-size: 16px;
+  text-align: center;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+  background-color: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+  -webkit-box-shadow: inset 0 0 0 0 #EEEEEE;
+          box-shadow: inset 0 0 0 0 #EEEEEE;
+  outline: none;
+}
+
+.btn_status_submit .btn_square:hover {
+  color: #00072E;
+  -webkit-box-shadow: inset 280px 0 0 0 #EEEEEE;
+          box-shadow: inset 280px 0 0 0 #EEEEEE;
+}
+
+.btn_main {
+  width: 200px;
+  height: 200px;
+}
+
+.btn_main .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  font-size: 24rem;
+}
+
+.btn_main .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.btn_main .btn_circle_text .btn_circle:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+.btn_main_w {
+  width: 200px;
+  height: 200px;
+}
+
+.btn_main_w .btn_circle_text {
+  text-align: center;
+  line-height: 200px;
+  font-weight: 600;
+  width: 200px;
+  height: 200px;
+  font-size: 24rem;
+}
+
+.btn_main_w .btn_circle_text .btn_circle {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #00072E;
+  background: #EEEEEE;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.btn_main_w .btn_circle_text .btn_circle:hover {
+  -webkit-box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+          box-shadow: 0px 0px 5px 20px rgba(255, 255, 255, 0.1);
+  color: #EEEEEE;
+  background: -webkit-gradient(linear, left top, right top, from(#660059), to(#1A005C));
+  background: linear-gradient(90deg, #660059 0%, #1A005C 100%);
+}
+
+body {
+  background-color: #00072E;
+}
+
+h1 {
+  color: #987A4D;
+}
+
+h3 {
+  color: #EEEEEE;
+}
+
+h5 {
+  color: #EEEEEE;
+}
+
+.title2 {
+  color: #EEEEEE;
+}
+
+.small_planet_top {
+  width: 100px;
+  height: 100px;
+  opacity: 70%;
+  position: absolute;
+  left: 1210px;
+  top: 30px;
+}
+
+.small_planet_bottom {
+  width: 160px;
+  height: 160px;
+  opacity: 70%;
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+}
+
+/*--------- 星球測驗答案 ---------*/
+.quiz_test {
+  width: 1440px;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  /*--------- 圖片右邊區塊 ---------*/
+  /*--------- 文字左邊區塊 ---------*/
+}
+
+.quiz_test .quiz_planet {
+  width: 680px;
+  height: 660px;
+  position: relative;
+  /*--------- 土星img參數 ---------*/
+  /*--------- 水星img參數 ---------*/
+}
+
+.quiz_test .quiz_planet img {
+  width: 550px;
+  height: 550px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.quiz_test .quiz_planet .SATURNimge {
+  width: 700px;
+  height: 400px;
+  position: absolute;
+  top: 140px;
+  left: -20px;
+}
+
+.quiz_test .quiz_planet .MERCURYimge {
+  width: 600px;
+}
+
+.quiz_test .quiz_wold {
+  margin-left: 80px;
+  margin-top: 90px;
+  width: 450px;
+  height: 100%;
+}
+
+.quiz_test .quiz_wold h1 {
+  line-height: 1;
+  margin-bottom: 48px;
+}
+
+.quiz_test .quiz_wold .text_left {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quiz_test .quiz_wold .text_left .title2 {
+  line-height: 1;
+}
+
+.quiz_test .quiz_wold .text_left h5 {
+  margin-left: 50px;
+  line-height: 1;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.quiz_test .quiz_wold .sep-line {
+  width: 400px;
+  height: 2px;
+  margin: 24px 0;
+  background-color: #987A4D;
+  display: block;
+}
+
+.quiz_test .quiz_wold h3 {
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 80px;
+}
+
+.quiz_test .quiz_wold .belong-info {
+  width: 450px;
+  margin: auto;
+}
+
+.quiz_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1080px;
+  margin: auto;
+}
+
+.quiz_btn .btn_cta {
+  height: 60px;
+  -ms-flex-preferred-size: 380px;
+      flex-basis: 380px;
+  margin: auto;
+}
+
+.quiz_btn .btn_cta .aLink {
+  font-size: 24px;
+  line-height: 60px;
+}
+
+.quiz_btn .btn_cta .aLink img {
+  width: 18px;
+}
+/*# sourceMappingURL=quiz03.css.map */
